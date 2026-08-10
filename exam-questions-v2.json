@@ -1,0 +1,1002 @@
+[
+  {
+    "Question_Number": 101,
+    "Question_Text": "Under the Central Civil Services (Conduct) Rules, 1964, what must a Government servant do if they enter into a transaction of movable property (either in their own name or in the name of a family member) exceeding the prescribed financial limit?",
+    "Option_A": "Report the transaction to the prescribed authority within one month of the transaction.",
+    "Option_B": "Obtain prior sanction from the Government before entering into the transaction.",
+    "Option_C": "Report the transaction during the annual property return filing in January.",
+    "Option_D": "No report is required if the transaction is in the name of a family member.",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Under Rule 18(3) of the CCS (Conduct) Rules, 1964, a Government servant must report any transaction of movable property exceeding the prescribed limit to the prescribed authority within one month of such transaction."
+  },
+  {
+    "Question_Number": 102,
+    "Question_Text": "Under the GFR 2017, what is the procurement methodology known as 'Limited Tender Enquiry' (LTE), and when can it be adopted as a general rule?",
+    "Option_A": "When goods are procured up to a value of Rs. 2.5 Lakhs from a single source.",
+    "Option_B": "When the estimated value of the goods is up to Rs. 25 Lakhs, and bids are invited from registered suppliers.",
+    "Option_C": "When the estimated value of goods is above Rs. 25 Lakhs, and bids are opened publicly.",
+    "Option_D": "When goods are of an proprietary nature and procured from a selected OEM.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "According to GFR 2017 Rule 162, Limited Tender Enquiry (LTE) is adopted as a general rule when the estimated value of the goods to be procured is up to Rs. 25 Lakhs. Bids are invited from firms borne on the list of registered suppliers."
+  },
+  {
+    "Question_Number": 103,
+    "Question_Text": "According to GFR 2017, a Price Variation Clause (PVC) is legally permissible and justifiable only in which type of contracts?",
+    "Option_A": "Short-term contracts where the delivery period is less than 6 months.",
+    "Option_B": "Proprietary procurement contracts from single suppliers.",
+    "Option_C": "Long-term contracts where the delivery period of the goods extends beyond 18 months.",
+    "Option_D": "All rate contracts concluded on the GeM portal.",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Under the General Financial Rules (GFR) 2017, a Price Variation Clause can be provided only in long-term contracts where the delivery period extends beyond eighteen (18) months."
+  },
+  {
+    "Question_Number": 104,
+    "Question_Text": "Which of the following items of expenditure is classified as 'Revenue Expenditure' rather than 'Capital Expenditure' under GFR 2017?",
+    "Option_A": "Expenditure incurred on the first construction of a project.",
+    "Option_B": "Expenditure for additions and improvements that enhance the useful life of an asset.",
+    "Option_C": "Expenditure incurred on routine maintenance, repairs, and upkeep of school assets.",
+    "Option_D": "Expenditure incurred on the acquisition of land for building a school extension.",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Routine maintenance, repairs, and upkeep of assets are classified as Revenue Expenditure because they do not lead to the creation of new assets or extend the original design lifespan of existing assets."
+  },
+  {
+    "Question_Number": 105,
+    "Question_Text": "According to the GFR 2017, for what duration must the 'Performance Security' of a successful bidder remain valid?",
+    "Option_A": "Up to the date of completion of all supply obligations only.",
+    "Option_B": "For a period of thirty (30) days beyond the date of completion of all contractual obligations.",
+    "Option_C": "For a period of sixty (60) days beyond the date of completion of all contractual obligations of the supplier, including warranty obligations.",
+    "Option_D": "For one year after the contract signing date, irrespective of supply timelines.",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Rule 171 of GFR 2017 mandates that Performance Security must remain valid for a period of sixty (60) days beyond the date of completion of all contractual obligations, including warranty obligations."
+  },
+  {
+    "Question_Number": 106,
+    "Question_Text": "Under GFR 2017 Rule 154, what is the maximum value of goods that can be procured on each occasion without inviting competitive bids or quotations, based on a personal satisfaction certificate recorded by the competent authority?",
+    "Option_A": "Rs. 10,000",
+    "Option_B": "Rs. 15,000",
+    "Option_C": "Rs. 25,000",
+    "Option_D": "Rs. 50,000",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "GFR 2017 Rule 154 permits the direct purchase of goods up to a value of Rs. 25,000 on each occasion without inviting quotations or bids, based on the competent authority recording a certificate of price reasonability and quality."
+  },
+  {
+    "Question_Number": 107,
+    "Question_Text": "Under GFR 2017 Rule 155, when purchasing goods valued between Rs. 25,001 and Rs. 2,50,000, procurement is made on the recommendations of a Local Purchase Committee. How many members must compose this committee?",
+    "Option_A": "At least two members.",
+    "Option_B": "Exactly three members.",
+    "Option_C": "Four members, including one external expert.",
+    "Option_D": "Five members, including the Head of Office.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "GFR Rule 155 dictates that for purchases of goods between Rs. 25,001 and Rs. 2,50,000, a Local Purchase Committee consisting of exactly three (3) members must survey the market and recommend a reliable supplier."
+  },
+  {
+    "Question_Number": 108,
+    "Question_Text": "Under the CCS (Conduct) Rules, 1964, a Government servant is deemed to have speculated in stock or share investments if they engage in which of the following activities?",
+    "Option_A": "Making a long-term investment in mutual funds.",
+    "Option_B": "Frequent purchase or sale of shares, securities, or other investments.",
+    "Option_C": "Buying government bonds on maturity.",
+    "Option_D": "Permitting a family member to buy shares using their own independent income.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 16 of the CCS (Conduct) Rules, 1964 prohibits speculation. Frequent purchase or sale of shares, securities, or other investments is treated as speculation under these rules and is strictly prohibited."
+  },
+  {
+    "Question_Number": 109,
+    "Question_Text": "Under the CCS (Leave) Rules, 1972, if a female Government servant validly adopts a child below the age of one year, what is her entitlement for Child Adoption Leave?",
+    "Option_A": "90 days of leave immediately after the date of valid adoption.",
+    "Option_B": "120 days of leave immediately after the date of valid adoption.",
+    "Option_C": "180 days of leave immediately after the date of valid adoption.",
+    "Option_D": "No adoption leave is admissible under CCS rules.",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Rule 43-B of the CCS (Leave) Rules, 1972 provides that a female Government servant with less than two surviving children is eligible for Child Adoption Leave for a period of 180 days immediately following legal adoption of a child below the age of one year."
+  },
+  {
+    "Question_Number": 110,
+    "Question_Text": "Under the GFR 2017 and GeM bidding portal regulations, which of the following categories of bidders is generally exempted from furnishing an Earnest Money Deposit (EMD)?",
+    "Option_A": "All private limited firms with a turnover exceeding Rs. 50 Crores.",
+    "Option_B": "Micro and Small Enterprises (MSEs) and Central/State Public Sector Undertakings (PSUs).",
+    "Option_C": "Only firms that have prior contracts with the specific Ministry.",
+    "Option_D": "No entities are exempted from EMD for procurements above Rs. 5 Lakhs.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "According to GFR rules and GeM guidelines, Micro and Small Enterprises (MSEs), Central/State Public Sector Undertakings (PSUs), and entities registered with the Ministry/Department are exempted from furnishing EMD (Bid Security)."
+  },
+  {
+    "Question_Number": 111,
+    "Question_Text": "According to the RTE Act, 2009, school teachers are strictly prohibited from engaging in which of the following activities?",
+    "Option_A": "Participating in academic seminars or national workshops.",
+    "Option_B": "Engaging in private tuition or private teaching activities.",
+    "Option_C": "Conducting remedial classes for weaker students in their own school.",
+    "Option_D": "Undertaking research projects under the SCERT.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Section 28 of the Right of Children to Free and Compulsory Education Act, 2009 explicitly prohibits teachers from engaging in private tuition or private teaching activities."
+  },
+  {
+    "Question_Number": 112,
+    "Question_Text": "Under the Right to Information Act, 2005, which of the following categories of information is exempted from disclosure?",
+    "Option_A": "Information related to the procedure followed in the decision-making process in the organization.",
+    "Option_B": "Information, disclosure of which would constitute contempt of court or is expressly forbidden by a court of law.",
+    "Option_C": "The rules, regulations, instructions, and manuals held by the organization for discharging its functions.",
+    "Option_D": "Details of subsidies and administrative grants distributed by the department.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Under Section 8(1)(b) of the RTI Act, 2005, any information which has been expressly forbidden to be published by any court of law or tribunal or the disclosure of which may constitute contempt of court is exempted from disclosure."
+  },
+  {
+    "Question_Number": 113,
+    "Question_Text": "As per the Central Civil Services (Classification, Control and Appeal) Rules, 1965, which of the following is NOT classified as a formalized disciplinary penalty under Rule 11?",
+    "Option_A": "Censure",
+    "Option_B": "Withholding of promotion",
+    "Option_C": "Suspension from service",
+    "Option_D": "Reduction to a lower stage in the time-scale of pay",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Suspension is an administrative order placing an employee under a temporary status pending inquiry or criminal proceedings. It is not a penalty listed under Rule 11 of the CCS (CCA) Rules, 1965."
+  },
+  {
+    "Question_Number": 114,
+    "Question_Text": "According to the official guidelines regarding the use of Hindi as the Official Language in Central Government libraries, what percentage of the total library book budget must be spent on purchasing Hindi books?",
+    "Option_A": "25%",
+    "Option_B": "33%",
+    "Option_C": "50%",
+    "Option_D": "75%",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Official Language implementation guidelines require that at least 50% of the total budget allocated for the purchase of library books in Central Government offices must be utilized for Hindi books."
+  },
+  {
+    "Question_Number": 115,
+    "Question_Text": "Under GFR 2017, who is designated as the 'Chief Accounting Authority' in a Central Government Ministry?",
+    "Option_A": "The Chief Controller of Accounts of the Ministry.",
+    "Option_B": "The Secretary of the respective Ministry or Department.",
+    "Option_C": "The Financial Adviser of the Ministry.",
+    "Option_D": "The Public Accounts Committee Chairperson.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "In the administrative and financial structure of the Government of India, the Secretary of the respective Ministry or Department is designated as the Chief Accounting Authority."
+  },
+  {
+    "Question_Number": 116,
+    "Question_Text": "As per the GFR 2017 definition, which of the following services is NOT included in the category of 'Goods' on the Government e-Marketplace (GeM)?",
+    "Option_A": "Intangible software products.",
+    "Option_B": "Technology transfer contracts.",
+    "Option_C": "Transportation and installation services strictly incidental to the supply of goods.",
+    "Option_D": "Standalone public works or construction services.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Under GFR 2017, 'Goods' includes physical products, software, and services incidental to their supply (like installation or transport of those specific goods). Technology transfer and standalone transport are classified as separate service/consultancy contracts, not goods."
+  },
+  {
+    "Question_Number": 117,
+    "Question_Text": "Under the CCS (Conduct) Rules, 1964, a Government servant is exempt from obtaining prior sanction to undertake which of the following private activities, provided it does not interfere with their official duties?",
+    "Option_A": "Participating in sports as an amateur.",
+    "Option_B": "Acting as a commercial agent for an insurance company.",
+    "Option_C": "Undertaking a part-time salaried lectureship in a private college.",
+    "Option_D": "Managing a private commercial trading firm.",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Rule 15 of CCS (Conduct) Rules, 1964 permits a Government servant to engage in amateur sports, honorary social or charitable work, or occasional literary, artistic, or scientific work without prior official sanction."
+  },
+  {
+    "Question_Number": 118,
+    "Question_Text": "A Government servant ceases to retain a 'lien' on their permanent post under Central Civil Services Rules in which of the following circumstances?",
+    "Option_A": "During the period they are placed under suspension.",
+    "Option_B": "While proceeding on foreign service or deputation to another department.",
+    "Option_C": "Immediately upon their permanent absorption in a post outside their parent cadre or service.",
+    "Option_D": "While they are on extraordinary leave (EOL) on medical grounds.",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "A Government servant permanently ceases to hold a lien on their parent post immediately from the date of their permanent absorption in a public sector undertaking, autonomous body, or external cadre."
+  },
+  {
+    "Question_Number": 119,
+    "Question_Text": "Under 'The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013' (POSH), what is the statutory minimum proportion of women members required in the 'Internal Complaints Committee' (ICC)?",
+    "Option_A": "Not less than one-fourth of the total members.",
+    "Option_B": "Not less than one-third of the total members.",
+    "Option_C": "Not less than one-half of the total members.",
+    "Option_D": "At least two-third of the total members.",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The POSH Act, 2013 mandates that at least one-half (50%) of the total members nominated to the Internal Complaints Committee (ICC) must be women."
+  },
+  {
+    "Question_Number": 120,
+    "Question_Text": "Which type of educational evaluation is specifically conducted at the end of a course of instruction to grade and certify student achievement?",
+    "Option_A": "Placement Evaluation",
+    "Option_B": "Formative Evaluation",
+    "Option_C": "Diagnostic Evaluation",
+    "Option_D": "Summative Evaluation",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Summative evaluation is conducted at the end of an instructional unit or term to assess pupils' overall achievement, grade them, and certify their performance."
+  },
+  {
+    "Question_Number": 121,
+    "Question_Text": "Which of the following is considered a major methodological approach in Qualitative Educational Research?",
+    "Option_A": "Causal-Comparative Approach",
+    "Option_B": "Experimental and Quasi-Experimental Design",
+    "Option_C": "Interpretive and Critical Approaches",
+    "Option_D": "Correlational and Survey Analysis",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Interpretive (understanding meaning) and Critical (addressing social inequality/power) approaches are fundamental methodologies in qualitative research, whereas experimental and causal-comparative are quantitative."
+  },
+  {
+    "Question_Number": 122,
+    "Question_Text": "The process of determining whether a newly developed psychological test uniformly measures a specific theoretical trait or construct is known as establishing its:",
+    "Option_A": "Content Validity",
+    "Option_B": "Construct Validity",
+    "Option_C": "Concurrent Validity",
+    "Option_D": "Predictive Validity",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Construct validity determines how well a test translates a theoretical construct or trait (such as aptitude, verbal comprehension, or anxiety) into actual operational measures."
+  },
+  {
+    "Question_Number": 123,
+    "Question_Text": "In educational measurement, which scale of measurement represents ranks or ordered categories without assuming equal intervals between them?",
+    "Option_A": "Nominal Scale",
+    "Option_B": "Ordinal Scale",
+    "Option_C": "Interval Scale",
+    "Option_D": "Ratio Scale",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "An ordinal scale places objects or individuals in order (such as ranking students 1st, 2nd, and 3rd in a class), but does not assume equal physical distance or intervals between those ranks."
+  },
+  {
+    "Question_Number": 124,
+    "Question_Text": "According to the National Education Policy (NEP) 2020, what is the role and scope of the 'State School Standards Authority' (SSSA)?",
+    "Option_A": "It will serve as the curriculum-prescribing body for government schools only.",
+    "Option_B": "It will be an independent state body set up to establish common, minimal uniform standards across public, private, and philanthropic schools.",
+    "Option_C": "It is a central body designed to evaluate teacher training institutions.",
+    "Option_D": "It is a body to finance infrastructure development in rural secondary schools.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "NEP 2020 proposes setting up an independent State School Standards Authority (SSSA) in each state to enforce basic common, minimal standards of safety, security, and infrastructure across all types of schools."
+  },
+  {
+    "Question_Number": 125,
+    "Question_Text": "Under the Right of Children to Free and Compulsory Education Rules, 2010, within how many days must a Block Level Grievance Redressal Committee resolve a teacher's grievance?",
+    "Option_A": "15 days",
+    "Option_B": "30 days",
+    "Option_C": "45 days",
+    "Option_D": "60 days",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The statutory grievance redressal machinery at the block level is mandated to resolve and redress teachers' grievances within a period of thirty (30) days from receipt."
+  },
+  {
+    "Question_Number": 126,
+    "Question_Text": "Under GFR 2017, what is the retention period of the Service Book of a permanent Government servant who retires from service and whose pension has been settled?",
+    "Option_A": "1 year from the date of retirement.",
+    "Option_B": "3 years from the date of retirement.",
+    "Option_C": "5 years from the date of retirement.",
+    "Option_D": "10 years from the date of retirement.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Service books of Central Government officials are preserved for a period of 3 years following their retirement and the final settlement of their pension/gratuity benefits."
+  },
+  {
+    "Question_Number": 127,
+    "Question_Text": "Which of the following is correct regarding 'Half Pay Leave' (HPL) under the CCS Leave Rules, 1972?",
+    "Option_A": "HPL can only be granted on production of a medical certificate.",
+    "Option_B": "HPL is credited in advance at the rate of 15 days on the 1st of January and July.",
+    "Option_C": "HPL can be commuted into full pay leave on medical grounds, and double the number of HPL days are debited from the account.",
+    "Option_D": "HPL cannot be accumulated beyond 180 days.",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Under CCS Leave Rules, a Government servant can commute their HPL into full pay Commuted Leave on medical grounds, in which case twice the number of HPL days is debited from their HPL account."
+  },
+  {
+    "Question_Number": 128,
+    "Question_Text": "According to NEP 2020, what is the structure and duration of the 'Preparatory Stage' of school education?",
+    "Option_A": "3 years (from Grade 3 to 5) corresponding to the age group of 8-11 years.",
+    "Option_B": "5 years (from preschool to Grade 2) corresponding to the age group of 3-8 years.",
+    "Option_C": "3 years (from Grade 6 to 8) corresponding to the age group of 11-14 years.",
+    "Option_D": "4 years (from Grade 9 to 12) corresponding to the age group of 14-18 years.",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The Preparatory Stage under NEP 2020 spans 3 years (Grades 3, 4, and 5) and is designed for children in the age range of 8 to 11 years."
+  },
+  {
+    "Question_Number": 129,
+    "Question_Text": "Under GFR 2017 Rule 154, when a competent authority makes a purchase up to Rs. 25,000, they must record a certificate of satisfaction. Which of the following is NOT a mandatory component of this certificate?",
+    "Option_A": "Satisfied that the goods are of requisite quality.",
+    "Option_B": "Satisfied that the supplier is reliable.",
+    "Option_C": "Satisfied that the price of the goods is reasonable.",
+    "Option_D": "Satisfied that the goods are of indigenous origin under 'Make in India'.",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "The Rule 154 certificate strictly requires the purchaser to certify three things: that the goods are of requisite quality, the supplier is reliable, and the price is reasonable. Indigenisation is not a mandatory component of this specific certificate."
+  },
+  {
+    "Question_Number": 130,
+    "Question_Text": "In a school, there are four classes with 40, 50, 60, and 50 students respectively. The pass percentages in these classes are 50%, 60%, 50%, and 60% respectively. What is the total percentage of failed students in the entire school?",
+    "Option_A": "42%",
+    "Option_B": "45%",
+    "Option_C": "50%",
+    "Option_D": "56%",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Total students = 200. Passed = (0.5 * 40) + (0.6 * 50) + (0.5 * 60) + (0.6 * 50) = 20 + 30 + 30 + 30 = 110. Failed = 200 - 110 = 90. Percentage failed = (90 / 200) * 100 = 45%."
+  },
+  {
+    "Question_Number": 131,
+    "Question_Text": "Which type of statistical test is the Student's t-test, and what is its primary purpose in educational research?",
+    "Option_A": "A non-parametric test used to determine correlations between two nominal variables.",
+    "Option_B": "A parametric test used to determine whether there is a statistically significant difference between the means of two groups.",
+    "Option_C": "A non-parametric test used to analyze skewed ordinal scales.",
+    "Option_D": "A test to calculate the standard error of measurement.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The t-test is a parametric test used to compare the means of two groups to check if they are significantly different from each other under assumptions of normality and homogeneity."
+  },
+  {
+    "Question_Number": 132,
+    "Question_Text": "Under GFR 2017, which of the following is correct regarding a 'Limited Tender Enquiry' (LTE)?",
+    "Option_A": "It can only be adopted if there is a single manufacturer of the goods.",
+    "Option_B": "It is adopted as a general rule when the estimated value of goods is up to Rs. 25 Lakhs, and the number of invited firms must be more than three.",
+    "Option_C": "It is used only for emergency procurements during natural disasters.",
+    "Option_D": "LTE bids must remain open for public viewing for at least 45 days.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 162 of GFR 2017 specifies that LTE is the standard procurement method for goods up to Rs. 25 Lakhs. The bids are invited from registered suppliers, and at least three firms should be involved."
+  },
+  {
+    "Question_Number": 133,
+    "Question_Text": "According to the POCSO Act, 2012, which of the following statements is correct regarding a false complaint or false information made by a child?",
+    "Option_A": "A child who makes a false complaint under POCSO shall be punished with up to 6 months imprisonment.",
+    "Option_B": "No punishment shall be imposed on a child for making a false complaint under this Act.",
+    "Option_C": "The child shall be punished with a heavy financial fine paid by the parents.",
+    "Option_D": "The child shall be sent to a juvenile reform home for up to one year.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Under Section 22(2) of the POCSO Act, 2012, if a child makes a false complaint or provides false information under this Act, no punishment or penalty of any kind shall be imposed on the child."
+  },
+  {
+    "Question_Number": 134,
+    "Question_Text": "As per the CCS (Conduct) Rules, 1964, a Government servant is prohibited from doing which of the following regarding political activities?",
+    "Option_A": "Casting their vote in a state legislative assembly election.",
+    "Option_B": "Being a member of, or otherwise associated with, any political party or taking part in an election campaign.",
+    "Option_C": "Expressing private political views to their family members.",
+    "Option_D": "Attending a public meeting as a neutral spectator.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 5 of the CCS (Conduct) Rules, 1964 strictly prohibits Government servants from being members of, or being associated with, any political party, and from taking part in, subscribing in aid of, or assisting in any political movement or election."
+  },
+  {
+    "Question_Number": 135,
+    "Question_Text": "Under the CCS (Leave) Rules, 1972, what is the maximum number of days of Child Care Leave (CCL) that can be granted to a single female parent in a calendar year, and in how many spells?",
+    "Option_A": "Up to 365 days in 3 spells.",
+    "Option_B": "Up to 180 days in a maximum of 5 spells.",
+    "Option_C": "CCL can be granted in a maximum of 6 spells in a calendar year for single mothers.",
+    "Option_D": "There is no limit on spells for single mothers.",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "While normal female employees are allowed a maximum of 3 spells of CCL in a calendar year, the government has extended this to a maximum of 6 spells in a calendar year for single female parents (single mothers)."
+  },
+  {
+    "Question_Number": 136,
+    "Question_Text": "Under GFR 2017, if a department decides to purchase an item of a proprietary nature from a single OEM (Original Equipment Manufacturer), which procurement method must be adopted?",
+    "Option_A": "Advertised Tender Enquiry",
+    "Option_B": "Limited Tender Enquiry",
+    "Option_C": "Single Tender Enquiry",
+    "Option_D": "Direct Purchase on GeM",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Rule 166 of GFR 2017 states that procurement from a single source (Single Tender Enquiry) is appropriate when the required item is proprietary and only a specific OEM or its authorized dealer can supply it."
+  },
+  {
+    "Question_Number": 137,
+    "Question_Text": "In educational measurement, if a test has a reliability coefficient of 0.64, what proportion of the observed variance in scores is accounted for by true differences in student ability?",
+    "Option_A": "32%",
+    "Option_B": "40%",
+    "Option_C": "64%",
+    "Option_D": "80%",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "By definition, the reliability coefficient (0.64) represents the ratio of true score variance to the total observed score variance. Hence, a coefficient of 0.64 means 64% of the variance reflects true ability."
+  },
+  {
+    "Question_Number": 138,
+    "Question_Text": "In a standard normal distribution curve, what is the probability or percentage of observations that fall in the region above Mean + 1.96 Standard Deviations (M + 1.96\u03c3)?",
+    "Option_A": "2.5%",
+    "Option_B": "5.0%",
+    "Option_C": "16.0%",
+    "Option_D": "34.0%",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "In a standard normal curve, approximately 95% of the data falls within +/- 1.96 SDs of the mean. The remaining 5% is split equally in the two tails, meaning 2.5% lies above +1.96 SDs."
+  },
+  {
+    "Question_Number": 139,
+    "Question_Text": "Under the Right of Children to Free and Compulsory Education Act, 2009, which body is assigned the statutory responsibility for independent monitoring of the implementation of the Act?",
+    "Option_A": "The National Council of Educational Research and Training (NCERT).",
+    "Option_B": "The National Commission for Protection of Child Rights (NCPCR) and State Commissions (SCPCR).",
+    "Option_C": "The Central Advisory Board of Education (CABE).",
+    "Option_D": "The District Education Officer (DEO).",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Section 31 of the RTE Act, 2009 assigns the task of monitoring the implementation of the Act and investigating complaints of child rights violations to the NCPCR and SCPCRs."
+  },
+  {
+    "Question_Number": 140,
+    "Question_Text": "As per the School Safety Policy, 2016, which of the following is considered a possible structural or non-structural hazard in a school? 1. Faulty construction and poor maintenance of buildings. 2. Loosely placed heavy almirahs or shelves. 3. Uneven flooring or wet toilet surfaces. 4. Inadequate sanitation facilities.",
+    "Option_A": "1 and 2 only",
+    "Option_B": "1, 2 and 3 only",
+    "Option_C": "1, 2 and 4 only",
+    "Option_D": "1, 2, 3 and 4",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "The School Safety Policy (2016) identifies all listed elements\u2014faulty construction, loose heavy objects, uneven flooring, and inadequate sanitation\u2014as potential structural or non-structural school safety hazards."
+  },
+  {
+    "Question_Number": 141,
+    "Question_Text": "Under the CCS (Leave) Rules, 1972, what is the maximum duration of Maternity Leave that can be granted to a female Government servant in the event of child adoption?",
+    "Option_A": "90 days",
+    "Option_B": "120 days",
+    "Option_C": "180 days",
+    "Option_D": "No leave is allowed for adoption.",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Rule 43-B provides that a female Government servant with less than two surviving children, on valid adoption of a child below the age of one year, is entitled to 180 days of Child Adoption Leave."
+  },
+  {
+    "Question_Number": 142,
+    "Question_Text": "Under the GFR 2017, a performance security deposit is normally what percentage of the total value of the contract?",
+    "Option_A": "1% to 3%",
+    "Option_B": "3% to 5%",
+    "Option_C": "5% to 10%",
+    "Option_D": "10% to 15%",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "According to GFR Rule 171, Performance Security is ordinarily obtained from the successful bidder for an amount of five (5) to ten (10) percent of the total value of the contract."
+  },
+  {
+    "Question_Number": 143,
+    "Question_Text": "Under the official language rules of the Government of India, Region 'A' comprises which of the following states?",
+    "Option_A": "Maharashtra, Gujarat, Punjab, and Chandigarh.",
+    "Option_B": "Bihar, Haryana, Himachal Pradesh, Madhya Pradesh, Rajasthan, Uttar Pradesh, Uttarakhand, Chhattisgarh, Jharkhand, and Delhi.",
+    "Option_C": "West Bengal, Odisha, Andhra Pradesh, and Tamil Nadu.",
+    "Option_D": "Assam, Manipur, Meghalaya, and Nagaland.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Region A includes Hindi-speaking states and UTs: Bihar, Haryana, HP, MP, Rajasthan, UP, Uttarakhand, Chhattisgarh, Jharkhand, and Delhi. Region B includes Gujarat, Maharashtra, Punjab, etc. Region C includes all other states."
+  },
+  {
+    "Question_Number": 144,
+    "Question_Text": "According to the POCSO Guidelines for schools, what is the 'Child Abuse Monitoring Committee' (CAMC), and what is its composition?",
+    "Option_A": "A committee comprising only external police and medical officers.",
+    "Option_B": "A school-level committee designated to prevent child abuse and monitor POCSO guidelines, including at least one independent child rights expert.",
+    "Option_C": "A district-level advisory board chaired by the District Magistrate.",
+    "Option_D": "A parent-teacher association formed to audit school budgets.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Schools must designate/constitute a Child Abuse Monitoring Committee (CAMC) to prevent child abuse and monitor guidelines, and it must include at least one independent member with experience in child rights issues."
+  },
+  {
+    "Question_Number": 145,
+    "Question_Text": "In psychometrics, the extent to which an achievement test representatively samples the exact syllabus or subject matter that was taught is known as its:",
+    "Option_A": "Predictive Validity",
+    "Option_B": "Content Validity",
+    "Option_C": "Construct Validity",
+    "Option_D": "Criterion-Related Validity",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Content validity measures how adequately and representatively a test's items sample the domain or subject matter of instruction (syllabus) it is intended to measure."
+  },
+  {
+    "Question_Number": 146,
+    "Question_Text": "Under the CCS (Leave) Rules, 1972, what is the maximum duration of continuous 'Extraordinary Leave' (EOL) that can be granted on a medical certificate to a permanent employee?",
+    "Option_A": "90 days",
+    "Option_B": "180 days",
+    "Option_C": "360 days",
+    "Option_D": "No limit, up to the maximum continuous leave ceiling of 5 years.",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "For permanent Government servants, EOL on medical certificate can be granted as required, subject to the overall statutory maximum continuous leave ceiling of 5 years."
+  },
+  {
+    "Question_Number": 147,
+    "Question_Text": "Under GFR 2017, what is 'Earnest Money Deposit' (EMD) or 'Bid Security', and what is its typical range as a percentage of the estimated value of the goods?",
+    "Option_A": "1% to 2% of the contract value, paid after winning the bid.",
+    "Option_B": "2% to 5% of the estimated value of the goods, submitted along with the bid to secure bid validity.",
+    "Option_C": "5% to 10% of the estimated value, submitted only by non-registered suppliers.",
+    "Option_D": "A fixed amount of Rs. 10,000 for all open tenders.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Under GFR Rule 170, Bid Security (or EMD) is required from bidders (except those exempt) and ranges from two (2) to five (5) percent of the estimated value of the goods to prevent frivolous bidding."
+  },
+  {
+    "Question_Number": 148,
+    "Question_Text": "Under the Right of Children to Free and Compulsory Education Act, 2009, what is the statutory Pupil-Teacher Ratio (PTR) prescribed for primary classes (Grades 1 to 5) in schools?",
+    "Option_A": "1:25",
+    "Option_B": "1:30",
+    "Option_C": "1:35",
+    "Option_D": "1:40",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The Schedule under the RTE Act, 2009 mandates a Pupil-Teacher Ratio (PTR) of 1:30 (one teacher for every thirty students) for primary classes."
+  },
+  {
+    "Question_Number": 149,
+    "Question_Text": "According to the CCS (Conduct) Rules, 1964, a Government servant is prohibited from accepting gifts exceeding what value on any occasion without prior government sanction (for Group 'A' and 'B' officers)?",
+    "Option_A": "Rs. 1,500",
+    "Option_B": "Rs. 5,000",
+    "Option_C": "Rs. 7,500",
+    "Option_D": "Rs. 10,000",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Under Rule 13 of the CCS Conduct Rules, Group 'A' and 'B' Government servants must obtain prior sanction if they accept gifts exceeding Rs. 5,000 on weddings, anniversaries, or other social occasions."
+  },
+  {
+    "Question_Number": 150,
+    "Question_Text": "In a derangement problem involving invigilation: There are three school sections A, B, and C with class teachers P, Q, and R. At exam time, no class teacher can invigilate their own section. How many distinct combinations of invigilators are possible?",
+    "Option_A": "2",
+    "Option_B": "3",
+    "Option_C": "6",
+    "Option_D": "9",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "This is a derangement of 3 elements. D_3 = 3! * (1/2! - 1/3!) = 6 * (1/2 - 1/6) = 6 * (2/6) = 2. The only two possible derangements are: Section A-Q, B-R, C-P or Section A-R, B-P, C-Q."
+  },
+  {
+    "Question_Number": 151,
+    "Question_Text": "According to the NEP 2020, what is 'PARAKH'?",
+    "Option_A": "A standardized entrance examination for central universities.",
+    "Option_B": "A National Assessment Centre set up to define evaluation standards, student assessment guidelines, and promote holistic development.",
+    "Option_C": "An online tracking portal for children with disabilities.",
+    "Option_D": "A national accreditation council for teacher education colleges.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "PARAKH (Performance Assessment, Review, and Analysis of Knowledge for Holistic Development) is envisioned under NEP 2020 as a national standard-setting assessment center under the Ministry of Education."
+  },
+  {
+    "Question_Number": 152,
+    "Question_Text": "Under the CCS (Leave) Rules, 1972, what is 'Dies-non', and how does it affect a Government servant's service record?",
+    "Option_A": "It is a regular kind of leave granted during public holidays.",
+    "Option_B": "It refers to a day that does not count for service benefits, increment, or pension, typically due to unauthorized absence or strike.",
+    "Option_C": "It is half-pay leave applied without medical certificate.",
+    "Option_D": "It is a day of compensatory off given for working on a Sunday.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Dies-non is a period of unauthorized absence, strike, or overstayal that is officially ordered as 'not counting' for service benefits, increment, or pension calculation."
+  },
+  {
+    "Question_Number": 153,
+    "Question_Text": "Under GFR 2017, what is 'Single Tender Enquiry' (STE), and under what specific condition is it justified?",
+    "Option_A": "When bids are invited from three local firms.",
+    "Option_B": "When procurement is done from a single source because the item is highly urgent or is a proprietary product of a specific manufacturer.",
+    "Option_C": "When the value of procurement is less than Rs. 25,000.",
+    "Option_D": "When only one bidder responds to an Advertised Tender Enquiry.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "GFR 2017 Rule 166 states that Single Tender Enquiry (procurement from a single source) is justified under emergency situations or when the item is proprietary (only one OEM exists)."
+  },
+  {
+    "Question_Number": 154,
+    "Question_Text": "In statistical evaluation, if the values of the Median and Mode of a test's score distribution are found to be very low relative to the maximum marks, this indicates that the distribution is:",
+    "Option_A": "Negatively skewed, representing an easy test.",
+    "Option_B": "Positively skewed, representing a hard test.",
+    "Option_C": "Perfectly symmetrical and normal.",
+    "Option_D": "Bimodal and highly flat.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "When the median and mode are very low and located to the left of the mean, it results in a positively skewed distribution, indicating that the test was difficult for most students."
+  },
+  {
+    "Question_Number": 155,
+    "Question_Text": "According to the POCSO Act, 2012, if a school staff member learns of an offence committed against a child but fails to report it to the police, what is the maximum punishment prescribed?",
+    "Option_A": "Departmental warning and deduction of one month's salary.",
+    "Option_B": "Imprisonment for a term which may extend to six months, or fine, or both.",
+    "Option_C": "Imprisonment for up to one year and mandatory dismissal from service.",
+    "Option_D": "Fine of Rs. 10,000 only.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Section 21(1) of the POCSO Act, 2012 mandates that any individual who fails to report an offence under the Act shall be punished with imprisonment up to six months or fine or both."
+  },
+  {
+    "Question_Number": 156,
+    "Question_Text": "As per the CCS (Conduct) Rules, 1964, a Government servant is prohibited from doing which of the following regarding public media and broadcasts?",
+    "Option_A": "Writing a purely scientific or literary article in a private journal.",
+    "Option_B": "Broadcasting or publishing any statement of fact or opinion that has the effect of an adverse criticism of any current policy of the Central Government.",
+    "Option_C": "Participating in an amateur sports broadcast on television.",
+    "Option_D": "Writing a school textbook on a non-political subject.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 9 of the CCS (Conduct) Rules, 1964 prohibits any Government servant from making or publishing any statement of fact or opinion that criticizes or embarrasses the Central or State Governments."
+  },
+  {
+    "Question_Number": 157,
+    "Question_Text": "Under GFR 2017, what is 'Two Bid System' (or Simultaneous Two-Envelope Bidding), and when must it be adopted?",
+    "Option_A": "When goods are procured below Rs. 2.5 Lakhs.",
+    "Option_B": "When procuring high-value, technically complex goods where the technical bid and the financial bid are submitted separately and evaluated sequentially.",
+    "Option_C": "When a proprietary item is procured from a single source.",
+    "Option_D": "When bids are invited on the GeM portal under direct purchase.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 163 of GFR 2017 mandates a Two-Bid system for high-value or technically complex procurements. Bidders submit separate technical and financial bids; financial bids of only technically qualified bidders are opened."
+  },
+  {
+    "Question_Number": 158,
+    "Question_Text": "Under the Right of Children to Free and Compulsory Education Act, 2009, what is the mandatory minimum workload or teaching hours per week prescribed for a teacher?",
+    "Option_A": "30 hours excluding preparation hours.",
+    "Option_B": "40 hours including preparation hours.",
+    "Option_C": "45 hours including preparation hours.",
+    "Option_D": "50 hours excluding preparation hours.",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The Schedule under the RTE Act, 2009 mandates a minimum of forty-five (45) teaching-cum-preparation hours per week for school teachers."
+  },
+  {
+    "Question_Number": 159,
+    "Question_Text": "Under the CCS (Leave) Rules, 1972, what is the maximum duration of Child Care Leave (CCL) that can be availed by a female Government servant during her entire service career?",
+    "Option_A": "365 days (1 year)",
+    "Option_B": "540 days (1.5 years)",
+    "Option_C": "730 days (2 years)",
+    "Option_D": "900 days (2.5 years)",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Rule 43-C of the CCS Leave Rules provides that a female Government servant can avail of Child Care Leave (CCL) up to a maximum of 730 days (two years) in her entire service career."
+  },
+  {
+    "Question_Number": 160,
+    "Question_Text": "In a school examination, a student's score of 40 out of 50 is scaled to 16 out of 20 for internal assessment. If the class average of the original test was 30 out of 50, what will be the scaled class average out of 20, and what is the percentage change?",
+    "Option_A": "15 out of 20, representing no percentage change.",
+    "Option_B": "12 out of 20, representing a 60% reduction in the absolute score, while the percentage pass rate remains unchanged.",
+    "Option_C": "10 out of 20, representing a 50% score reduction.",
+    "Option_D": "8 out of 20, representing a 60% reduction.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The scaling factor is 20/50 = 0.4. The scaled average = 30 * 0.4 = 12 out of 20. The score reduces by 60% (from 30 to 12), but the relative performance (percentage pass rate) of the class remains identical."
+  },
+  {
+    "Question_Number": 161,
+    "Question_Text": "Under GFR 2017, which of the following is correct regarding 'GeM SPV' (Special Purpose Vehicle) and 'Procuring Authority' responsibilities?",
+    "Option_A": "GeM SPV is responsible for checking the quality of goods, while the Procuring Authority is responsible for supplier registration.",
+    "Option_B": "GeM SPV is responsible for supplier credentials verification, while the Procuring Authority is responsible for certifying the reasonability of rates.",
+    "Option_C": "Both GeM SPV and Procuring Authority are jointly liable for warranty claims.",
+    "Option_D": "The supplier is solely responsible for both credentials and rate reasonability.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Under GFR 2017 GeM guidelines, the portal (GeM SPV) verifies and registers the credentials of the suppliers, but the buying Procuring Authority remains responsible for ensuring the reasonability of rates."
+  },
+  {
+    "Question_Number": 162,
+    "Question_Text": "Under the Right to Information Act, 2005, what is the maximum penalty that can be imposed on a Public Information Officer (PIO) by the Central Information Commission (CIC) for unreasonably delaying or denying information?",
+    "Option_A": "Rs. 5,000",
+    "Option_B": "Rs. 10,000",
+    "Option_C": "Rs. 25,000",
+    "Option_D": "Rs. 50,000",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Section 20(1) of the RTI Act, 2005 authorizes the Information Commission to impose a penalty of Rs. 250 per day, subject to a maximum overall cap of Rs. 25,000, on a PIO who defaults without reasonable cause."
+  },
+  {
+    "Question_Number": 163,
+    "Question_Text": "According to the NEP 2020, what is the 'School Complex' grouping, and what is its primary administrative purpose?",
+    "Option_A": "Grouping primary schools with private vocational colleges to share corporate funds.",
+    "Option_B": "Grouping one secondary school as the hub with all lower-grade schools and Anganwadis in a 5-10 km radius to share physical and teacher resources.",
+    "Option_C": "Integrating government high schools into central university campuses.",
+    "Option_D": "Merging public and private schools under a single administrative board.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "NEP 2020 recommends grouping one secondary school with neighboring lower-grade schools and Anganwadis (within a 5-10 km radius) to form a School Complex to share resources, teachers, and improve governance."
+  },
+  {
+    "Question_Number": 164,
+    "Question_Text": "Under the CCS (Leave) Rules, 1972, what is 'Leave Not Due' (LND), and under what condition can it be granted to a permanent Government servant?",
+    "Option_A": "Leave granted when no leave is due, on medical certificate, up to a limit of 360 days in entire service.",
+    "Option_B": "Leave granted for leisure or travel, up to 180 days.",
+    "Option_C": "Leave granted to temporary employees during their probation.",
+    "Option_D": "Leave granted only for international study tours, up to 90 days.",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Rule 31 of CCS Leave Rules specifies that Leave Not Due (LND) is granted on medical certificate when no leave stands to credit. It is capped at 360 days during entire service and is debited against future HPL credits."
+  },
+  {
+    "Question_Number": 165,
+    "Question_Text": "In a standard normal distribution curve, approximately what percentage of all observations or data points lies within two standard deviations of the mean (M +/- 2\u03c3)?",
+    "Option_A": "68.26%",
+    "Option_B": "95.44%",
+    "Option_C": "99.00%",
+    "Option_D": "99.73%",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "In a standard normal distribution, approximately 95.44% of all data points or observations lie within two standard deviations (+/- 2 SD) of the mean."
+  },
+  {
+    "Question_Number": 166,
+    "Question_Text": "As per 'The Protection of Children from Sexual Offences Act, 2012' (POCSO), which of the following is correct regarding the recording of a child's statement by a police officer?",
+    "Option_A": "The statement must be recorded at a police station and the child must wear a police uniform.",
+    "Option_B": "The statement should be recorded at the child's residence or a place of their choice, and the police officer must not be in uniform.",
+    "Option_C": "The police officer must record the statement in a court of law in the presence of the accused.",
+    "Option_D": "The statement can only be recorded in the presence of a judicial magistrate.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Section 24 of the POCSO Act, 2012 specifies that a child's statement must be recorded at their home or choice of place, by a police officer not in uniform, and the accused must not be present."
+  },
+  {
+    "Question_Number": 167,
+    "Question_Text": "Under the GFR 2017, when a procurement contract involves the supply of imported goods, who is responsible for paying the customs duty and managing clearance?",
+    "Option_A": "The GeM SPV portal.",
+    "Option_B": "The Procuring Authority directly through the customs department.",
+    "Option_C": "The supplier, as per the Standard Incoterms (DDP/Delivered Duty Paid) unless specified otherwise.",
+    "Option_D": "Customs duty is completely exempted for all Central Government procurements.",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "In GFR procurement contracts, unless specified otherwise, the supplier is responsible for paying all duties, including customs duty, and managing port clearance under Delivered Duty Paid (DDP) terms."
+  },
+  {
+    "Question_Number": 168,
+    "Question_Text": "According to the SWAYAM portal under digital education initiatives, which of the following national coordinators is responsible for managing curriculum courses for under-graduate education?",
+    "Option_A": "NCERT",
+    "Option_B": "NPTEL",
+    "Option_C": "CEC (Consortium for Educational Communication)",
+    "Option_D": "IGNOU",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "SWAYAM designates different National Coordinators: NCERT for school education (Class IX-XII), CEC for non-technical undergraduate education, and NPTEL for technical/engineering courses."
+  },
+  {
+    "Question_Number": 169,
+    "Question_Text": "Under the CCS (Conduct) Rules, 1964, what is the restriction on a Government servant regarding the acceptance of commercial employment within two years of retirement?",
+    "Option_A": "They can accept any job but must inform their parent department within 30 days.",
+    "Option_B": "Group 'A' officers must obtain previous permission of the Government before accepting any commercial employment within two years of retirement.",
+    "Option_C": "They cannot accept any commercial employment whatsoever for two years after retirement.",
+    "Option_D": "The restriction applies only to public sector enterprise jobs.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 10 of CCS (Pension) Rules and Conduct guidelines mandate that Group 'A' retired officers must obtain prior government permission before accepting commercial employment within two years of retirement."
+  },
+  {
+    "Question_Number": 170,
+    "Question_Text": "Which metric in test analysis is defined as the standard deviation of error scores and measures the consistency or margin of fluctuation in individual test scores?",
+    "Option_A": "Standard Error of Mean (SEM)",
+    "Option_B": "Standard Error of Measurement (SE_meas)",
+    "Option_C": "Reliability Coefficient",
+    "Option_D": "Variance of the distribution",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The Standard Error of Measurement measures the dispersion of error scores around a student's true score. It is calculated using the test's standard deviation and its reliability coefficient."
+  },
+  {
+    "Question_Number": 171,
+    "Question_Text": "Under 'The Protection of Children from Sexual Offences Act, 2012', which authority is responsible for designating Special Public Prosecutors for conducting POCSO cases in Special Courts?",
+    "Option_A": "The State Government, in consultation with the High Court.",
+    "Option_B": "The District Magistrate directly.",
+    "Option_C": "The Child Welfare Committee (CWC).",
+    "Option_D": "The Ministry of Women and Child Development.",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Section 32 of the POCSO Act, 2012 mandates that the State Government, by notification, appoints a Special Public Prosecutor for every Special Court to conduct cases under the Act."
+  },
+  {
+    "Question_Number": 172,
+    "Question_Text": "Under GFR 2017, when procuring goods through GeM, direct purchase without comparative bidding can be done for values up to:",
+    "Option_A": "Rs. 10,000",
+    "Option_B": "Rs. 25,000",
+    "Option_C": "Rs. 50,000",
+    "Option_D": "Rs. 1,00,000",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 149 of GFR 2017 allows direct purchase of goods of requisite quality on GeM up to a value of Rs. 25,000 on each occasion, without inviting comparative bids."
+  },
+  {
+    "Question_Number": 173,
+    "Question_Text": "According to the SWAYAM PRABHA digital education initiative, SWAYAM PRABHA is a group of how many high-quality educational channels broadcasting 24/7 using GSAT-15 satellite?",
+    "Option_A": "12 channels",
+    "Option_B": "24 channels",
+    "Option_C": "34 channels",
+    "Option_D": "50 channels",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "SWAYAM PRABHA was launched as a group of 34 high-quality DTH educational television channels broadcasting 24/7 using GSAT-15 satellite."
+  },
+  {
+    "Question_Number": 174,
+    "Question_Text": "Under the CCS (Leave) Rules, 1972, what is the maximum duration of half-pay leave (HPL) that can be commuted into full pay Commuted Leave during the entire service career for study purposes (without MC)?",
+    "Option_A": "90 days",
+    "Option_B": "180 days",
+    "Option_C": "240 days",
+    "Option_D": "No commuted leave without MC is allowed for study.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 30 of CCS Leave Rules allows a Government servant to commute HPL into full pay Commuted Leave up to 180 days in entire service without MC, if it is for prosecuting an approved course of study in public interest."
+  },
+  {
+    "Question_Number": 175,
+    "Question_Text": "In test development, if a teacher splits a 50-item test into two halves (even-numbered items and odd-numbered items) and correlates the scores of the two halves to check consistency, this method is known as:",
+    "Option_A": "Test-Retest Method",
+    "Option_B": "Parallel Forms Method",
+    "Option_C": "Split-Half Reliability Method",
+    "Option_D": "Kuder-Richardson Method",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The Split-Half method involves splitting a single test into equivalent halves and calculating the correlation between them to estimate the test's internal consistency reliability."
+  },
+  {
+    "Question_Number": 176,
+    "Question_Text": "Under GFR 2017, which of the following is correct regarding 'Proprietary Article Certificate' (PAC) procurement?",
+    "Option_A": "PAC purchases require approval from the local purchase committee only.",
+    "Option_B": "PAC purchases are done under Single Tender Enquiry when only a specific manufacturer's goods can fulfill the technical requirement.",
+    "Option_C": "PAC purchases are restricted to values below Rs. 25,000.",
+    "Option_D": "PAC can be issued by any supplier on GeM.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Under GFR Rule 166, PAC procurement is executed under Single Tender Enquiry when the competent authority signs a certificate stating that only a specific proprietary item of a specific manufacturer is suitable."
+  },
+  {
+    "Question_Number": 177,
+    "Question_Text": "According to the commissions for protection of child rights, what is the age limit for a child to be eligible under the Commission's grievance monitoring mechanism under the CPCR Act, 2005?",
+    "Option_A": "Below 14 years",
+    "Option_B": "Below 16 years",
+    "Option_C": "Below 18 years",
+    "Option_D": "Below 21 years",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Under the CPCR Act, 2005, a child is defined as a person who has not completed eighteen (18) years of age, aligning with international child rights conventions."
+  },
+  {
+    "Question_Number": 178,
+    "Question_Text": "Under the CCS (Conduct) Rules, 1964, what are the restrictions on a Government servant regarding the acquisition of immovable property?",
+    "Option_A": "No immovable property can be acquired except with prior sanction of the prescribed authority.",
+    "Option_B": "Prior sanction is required only if the transaction is with a person having official dealings with the Government servant.",
+    "Option_C": "Any purchase of immovable property must be reported to the local tax authorities only.",
+    "Option_D": "A Government servant can acquire immovable property freely, but must declare it once in 5 years.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Under Rule 18(2), a Government servant must obtain prior sanction if the transaction of immovable property is with a person having official dealings. For other transactions, prior intimation or reporting is required."
+  },
+  {
+    "Question_Number": 179,
+    "Question_Text": "Under GFR 2017, which of the following is correct regarding the 'Limited Tender Enquiry' (LTE) procurement method?",
+    "Option_A": "The invitation to bid must be published in national newspapers.",
+    "Option_B": "The number of supplier firms invited to bid should be more than three, and bids are sent directly to registered suppliers.",
+    "Option_C": "Bids can only be accepted through the GeM portal under direct purchase.",
+    "Option_D": "LTE is used only when the value of the procurement exceeds Rs. 10 Crores.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 162 of GFR 2017 specifies that in LTE, the number of supplier firms invited should be more than three, and the inquiry is sent directly to registered suppliers to secure competition."
+  },
+  {
+    "Question_Number": 180,
+    "Question_Text": "Which measure of central tendency is calculated by arranging all scores in order of magnitude and finding the exact middle score?",
+    "Option_A": "Arithmetic Mean",
+    "Option_B": "Median",
+    "Option_C": "Mode",
+    "Option_D": "Harmonic Mean",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The Median is defined as the midpoint or middle score of a distribution when all scores are arranged in order of ascending or descending magnitude."
+  },
+  {
+    "Question_Number": 181,
+    "Question_Text": "Under the Right of Children to Free and Compulsory Education Act, 2009, school teachers are prohibited from being deployed for non-educational duties, EXCEPT for which of the following?",
+    "Option_A": "Local census, disaster relief duties, and duties relating to elections to local authorities, state legislatures, and parliament.",
+    "Option_B": "Managing state-level trade fairs or cultural festivals.",
+    "Option_C": "Conducting health surveys for private pharmaceutical companies.",
+    "Option_D": "Assisting local banks in distributing agricultural loans.",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Section 27 of the RTE Act, 2009 strictly prohibits deploying teachers for any non-educational work except for decennial census, disaster relief, and election-related duties."
+  },
+  {
+    "Question_Number": 182,
+    "Question_Text": "Under the CCS (Leave) Rules, 1972, what is the maximum duration of half-pay leave (HPL) that can be credited to an employee's leave account in a year?",
+    "Option_A": "15 days",
+    "Option_B": "20 days",
+    "Option_C": "30 days",
+    "Option_D": "45 days",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "HPL is credited in advance in two installments of 10 days each on 1st January and 1st July, resulting in a maximum credit of 20 days in a single year."
+  },
+  {
+    "Question_Number": 183,
+    "Question_Text": "Under GFR 2017, what is 'Global Tender Enquiry' (GTE), and when must it be adopted as a general rule?",
+    "Option_A": "When goods are procured below Rs. 2.5 Lakhs from international vendors.",
+    "Option_B": "When the estimated value of the goods is above Rs. 200 Crores, or when domestic sources cannot supply the required goods.",
+    "Option_C": "When the purchase is of a proprietary article from a single source.",
+    "Option_D": "When any open tender is published on the international GeM portal.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 161 of GFR 2017 governs GTE. High-value open tenders or cases where domestic suppliers cannot fulfill technical requirements necessitate GTE. The Government of India placed a limit on GTE for values under Rs. 200 Crores to promote domestic bidders."
+  },
+  {
+    "Question_Number": 184,
+    "Question_Text": "In test design, a 'Table of Specifications' acts as a blueprint of the test. What are the two dimensions represented in a standard two-way grid Table of Specifications?",
+    "Option_A": "Class average and standard deviation.",
+    "Option_B": "Content topics (instructional content) and educational objectives (cognitive levels).",
+    "Option_C": "Test length and reliability coefficient.",
+    "Option_D": "Item difficulty and discrimination index.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "A standard Table of Specifications (TOS) is a double-entry table showing Content Areas along one axis and Cognitive Levels/Educational Objectives (e.g., Knowledge, Application) along the other."
+  },
+  {
+    "Question_Number": 185,
+    "Question_Text": "According to 'The Protection of Children from Sexual Offences Act, 2012', the trial of an offence under the Act must be completed by the Special Court, as far as possible, within which timeframe?",
+    "Option_A": "Six months from the date of recording the child's statement.",
+    "Option_B": "One year from the date of taking cognizance of the offence.",
+    "Option_C": "Two years from the date of filing the FIR.",
+    "Option_D": "Within ninety days of the arrest of the accused.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Section 35(2) of the POCSO Act, 2012 mandates that the Special Court shall complete the trial, as far as possible, within a period of one year from the date of taking cognizance."
+  },
+  {
+    "Question_Number": 186,
+    "Question_Text": "Under the CCS (Conduct) Rules, 1964, what must a Government servant do if they find that a close relative is applying for employment or a contract in an office directly under their control?",
+    "Option_A": "They can approve the contract if the relative is technically qualified.",
+    "Option_B": "They must intimate the fact to their official superior and recuse themselves from any involvement in the selection or approval process.",
+    "Option_C": "They must ask the relative to withdraw their application immediately.",
+    "Option_D": "They can proceed with the process but must report it within one month of contract award.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 4 of Conduct Rules requires that a Government servant must recuse themselves from any decision-making process involving the appointment or business contract of a relative, reporting the facts to their official superior."
+  },
+  {
+    "Question_Number": 187,
+    "Question_Text": "Under GFR 2017, what is 'Pre-qualification Bidding', and what is its primary purpose?",
+    "Option_A": "Bidding where only public sector undertakings are allowed to bid.",
+    "Option_B": "An initial stage of evaluation to screen and qualify technically and financially competent bidders before inviting formal bids.",
+    "Option_C": "Bidding where the lowest price is decided before evaluating quality.",
+    "Option_D": "Bidding restricted to local suppliers under GFR Rule 154.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Pre-qualification bidding is used in complex or high-value contracts to screen out incompetent or non-complying firms before inviting detailed technical and commercial bids."
+  },
+  {
+    "Question_Number": 188,
+    "Question_Text": "Under the Right of Children to Free and Compulsory Education Act, 2009, what is the age group of children who are entitled to free and compulsory education?",
+    "Option_A": "3 to 14 years",
+    "Option_B": "6 to 14 years",
+    "Option_C": "6 to 16 years",
+    "Option_D": "6 to 18 years",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Section 3 of the RTE Act, 2009 guarantees the fundamental right of free and compulsory elementary education to all children in the age group of 6 to 14 years."
+  },
+  {
+    "Question_Number": 189,
+    "Question_Text": "Under the CCS (Leave) Rules, 1972, what is the maximum duration of continuous 'Half Pay Leave' (HPL) that can be granted to a Government servant on medical certificate?",
+    "Option_A": "180 days",
+    "Option_B": "240 days",
+    "Option_C": "360 days",
+    "Option_D": "No limit, subject to the overall continuous leave ceiling of 5 years.",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Half Pay Leave (HPL) on medical grounds is not subject to a specific HPL-only duration limit and can be granted up to the maximum continuous leave ceiling of five years, provided HPL is at credit."
+  },
+  {
+    "Question_Number": 190,
+    "Question_Text": "In educational evaluation, if a teacher correlates scores of students on a newly designed test with their scores on an established, validated standardized test administered at the same time, this represents:",
+    "Option_A": "Construct Validity",
+    "Option_B": "Concurrent Validity (a type of Criterion Validity)",
+    "Option_C": "Predictive Validity",
+    "Option_D": "Content Validity",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Concurrent validity evaluates how well test scores correlate with an external, established criterion or standard administered at the same time."
+  },
+  {
+    "Question_Number": 191,
+    "Question_Text": "Under the GFR 2017, what is 'Buy-Back Offer' (or Trade-In), and when is it utilized in procurement?",
+    "Option_A": "When a supplier offers a discount for purchasing goods in bulk.",
+    "Option_B": "When a department procures new goods by trading in old, obsolete, or unusable items of the same category to reduce net cost.",
+    "Option_C": "When a department buys back shares of its own PSU.",
+    "Option_D": "When the government takes back unsold goods from a cooperative.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 176 of GFR 2017 allows departments to replace existing obsolete or worn-out items by trading them in under a buy-back offer, reducing the net purchase cost of the new goods."
+  },
+  {
+    "Question_Number": 192,
+    "Question_Text": "According to the DIKSHA portal, what is 'DIKSHA' under NCERT and Central Government digital education initiatives?",
+    "Option_A": "A national teacher recruitment portal.",
+    "Option_B": "Digital Infrastructure for Knowledge Sharing - a national platform containing high-quality e-learning materials for students and teachers.",
+    "Option_C": "An online feedback tracking portal for parent complaints.",
+    "Option_D": "A DTH educational television broadcast network.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "DIKSHA is a national digital education platform of the Ministry of Education, providing curriculum-aligned high-quality e-content and resources for teachers, students, and parents."
+  },
+  {
+    "Question_Number": 193,
+    "Question_Text": "Under the CCS (Conduct) Rules, 1964, what is the restriction on a Government servant regarding the acceptance of commercial employment within two years of retirement?",
+    "Option_A": "They can accept any job but must inform their parent department within 30 days.",
+    "Option_B": "Group 'A' officers must obtain previous permission of the Government before accepting any commercial employment within two years of retirement.",
+    "Option_C": "They cannot accept any commercial employment whatsoever for two years after retirement.",
+    "Option_D": "The restriction applies only to public sector enterprise jobs.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 10 of CCS (Pension) Rules and Conduct guidelines mandate that Group 'A' retired officers must obtain prior government permission before accepting commercial employment within two years of retirement."
+  },
+  {
+    "Question_Number": 194,
+    "Question_Text": "Which scale of measurement has arbitrary equal intervals but lacks a true, non-arbitrary absolute zero point, meaning a score of zero does not represent the complete absence of the trait?",
+    "Option_A": "Nominal Scale",
+    "Option_B": "Ordinal Scale",
+    "Option_C": "Interval Scale",
+    "Option_D": "Ratio Scale",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "An interval scale (such as Fahrenheit temperature or IQ scores) has equal intervals but an arbitrary zero. Since there is no absolute zero, ratio comparisons (like 'twice as hot' or 'twice as smart') are mathematically invalid."
+  },
+  {
+    "Question_Number": 195,
+    "Question_Text": "According to 'The Protection of Children from Sexual Offences Act, 2012', the 'Special Juvenile Police Unit' (SJPU) or local police must report a registered case to the Child Welfare Committee (CWC) within what time period?",
+    "Option_A": "Within 24 hours of registering the case.",
+    "Option_B": "Within 48 hours of registering the case.",
+    "Option_C": "Within 3 days of registering the case.",
+    "Option_D": "Within one week of registering the case.",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Section 19(6) of the POCSO Act, 2012 mandates that the Special Juvenile Police Unit or the local police must report any registered case of child abuse to the CWC within twenty-four (24) hours."
+  },
+  {
+    "Question_Number": 196,
+    "Question_Text": "Under the CCS (Leave) Rules, 1972, what is 'Commuted Leave', and what is the maximum duration that can be granted without a Medical Certificate to a female Government servant in continuation of Maternity Leave?",
+    "Option_A": "Up to 30 days.",
+    "Option_B": "Up to 60 days.",
+    "Option_C": "Up to 90 days.",
+    "Option_D": "Up to 120 days.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 43 specifies that Commuted Leave up to 60 days and Leave Not Due can be granted without medical certificate in continuation of Maternity Leave to a female Government servant."
+  },
+  {
+    "Question_Number": 197,
+    "Question_Text": "According to GFR 2017, the term 'E-Publishing' refers to the mandatory publishing of tender enquiries and contract award details on which portal?",
+    "Option_A": "The Ministry's own website only.",
+    "Option_B": "The Central Public Procurement Portal (CPPP).",
+    "Option_C": "The GeM bidding portal only.",
+    "Option_D": "National daily newspapers only.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 159 of GFR 2017 mandates that all government entities must publish their tender enquiries, bidding documents, and award details on the Central Public Procurement Portal (CPPP)."
+  },
+  {
+    "Question_Number": 198,
+    "Question_Text": "In educational evaluation, the consistency and reproducibility of test scores under identical conditions is called:",
+    "Option_A": "Validity",
+    "Option_B": "Reliability",
+    "Option_C": "Usability",
+    "Option_D": "Objectivity",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Reliability refers to the consistency, stability, and dependability of test scores or measurement results across different administrations of the same test."
+  },
+  {
+    "Question_Number": 199,
+    "Question_Text": "Under 'The Protection of Children from Sexual Offences Act, 2012' (POCSO), who is legally defined as a 'child'?",
+    "Option_A": "Any person below the age of 14 years.",
+    "Option_B": "Any person below the age of 16 years.",
+    "Option_C": "Any person below the age of 18 years.",
+    "Option_D": "Any person below the age of 21 years.",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Section 2(1)(d) of the POCSO Act, 2012 strictly defines a child as any person who has not completed eighteen (18) years of age."
+  },
+  {
+    "Question_Number": 200,
+    "Question_Text": "Which of the following is correct regarding 'Casual Leave' (CL) for Central Government staff under executive instructions?",
+    "Option_A": "CL can be combined with Earned Leave.",
+    "Option_B": "Casual Leave is not a regular kind of leave and is not covered under the CCS (Leave) Rules, 1972.",
+    "Option_C": "A Government servant on CL is officially treated as absent from duty.",
+    "Option_D": "Saturdays and Sundays falling during CL are debited from the CL account.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Casual Leave is not a recognized form of leave under the statutory CCS (Leave) Rules, 1972. It is governed by executive instructions, and an official on CL is treated as on duty (not absent)."
+  }
+]
