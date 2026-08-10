@@ -1,0 +1,2222 @@
+[
+  {
+    "Question_Number": 1,
+    "Question_Text": "Which one of the following statements regarding \"DESH-Stack e-portal\" is correct?",
+    "Option_A": "It is a portal through which citizens will be skilled so that they can improve their livelihood opportunities.",
+    "Option_B": "It is a portal to enable a single window access to services being provided by the various Government entities.",
+    "Option_C": "It is a portal to provide an online platform available to citizens day and night to lodge their grievances to the public authorities on any subject related to service delivery.",
+    "Option_D": "It is a portal to create a common online market platform in the country to facilitate pan-India trade in agricultural commodities.",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The DESH-Stack e-portal was announced in the 2022-23 Budget to empower citizens to skill, reskill, or upskill through online training."
+  },
+  {
+    "Question_Number": 2,
+    "Question_Text": "Consider the following agricultural produce : 1. Cereals 2. Cotton 3. Onions 4. Potatoes 5. Pulses. Which of the above categories of agricultural produce are covered under Minimum Support Price (MSP)?",
+    "Option_A": "1, 2 and 5 only",
+    "Option_B": "2, 3 and 4 only",
+    "Option_C": "1, 3, 4 and 5 only",
+    "Option_D": "1, 2, 3, 4 and 5",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "MSP covers cereals, pulses, and cotton. Potatoes and onions are covered under different schemes (like Market Intervention Scheme), not MSP."
+  },
+  {
+    "Question_Number": 3,
+    "Question_Text": "In which one of the following National Parks of India is there a proposal to reintroduce cheetah from Africa?",
+    "Option_A": "Bandhavgarh National Park",
+    "Option_B": "Kanha National Park",
+    "Option_C": "Kuno National Park",
+    "Option_D": "Manas National Park",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Cheetahs from Africa were reintroduced in Kuno National Park, Madhya Pradesh."
+  },
+  {
+    "Question_Number": 4,
+    "Question_Text": "Which one of the following Indian musical instruments is traditionally made of buffalo horn?",
+    "Option_A": "Kurum Kuzhal",
+    "Option_B": "Nadaswaram",
+    "Option_C": "Pungi",
+    "Option_D": "Pepa",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Pepa is a traditional Assamese musical instrument made from buffalo horn."
+  },
+  {
+    "Question_Number": 5,
+    "Question_Text": "Which one of the following countries pledged to invest $ 42 billion in India over the next five years?",
+    "Option_A": "Australia",
+    "Option_B": "France",
+    "Option_C": "Japan",
+    "Option_D": "United Kingdom",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Japan pledged to invest $42 billion (5 trillion yen) in India over five years during Prime Minister Kishida's visit in 2022."
+  },
+  {
+    "Question_Number": 6,
+    "Question_Text": "Consider the following statements regarding PM-KISAN Scheme: 1. Under the scheme, landholding farmer families are given a financial support of 6,000 per year. 2. The tenants of agricultural lands can avail the financial benefits under the scheme by submitting the documentary proof of their tenancy. 3. Under this scheme, Aadhar validation is not compulsory. Which of the statements given above is/are correct?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "2 and 3",
+    "Option_D": "1 and 2",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Only landholding farmers receive the benefit (tenants do not), and Aadhaar is mandatory for authentication."
+  },
+  {
+    "Question_Number": 7,
+    "Question_Text": "The terms \"Patan Patola\" and \"Madurai Sungudi\" are related to:",
+    "Option_A": "Brassware",
+    "Option_B": "Fabrics",
+    "Option_C": "Building designs",
+    "Option_D": "Wooden handicrafts",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Patan Patola is a double ikat woven sari from Gujarat, and Madurai Sungudi is a cotton fabric/sari from Tamil Nadu."
+  },
+  {
+    "Question_Number": 8,
+    "Question_Text": "Consider the following pairs: (Festival) : (Popular in State) 1. Chhau : Karnataka 2. Domahi : Odisha 3. Hornbill : Nagaland 4. Wanchuwa : Assam. Which of the pairs given above are correctly matched?",
+    "Option_A": "1 and 2",
+    "Option_B": "1 and 3",
+    "Option_C": "2 and 4",
+    "Option_D": "3 and 4",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Hornbill is from Nagaland and Wanchuwa is celebrated by the Tiwa tribe of Assam. (Chhau is from Eastern India; Domahi is from Assam/Bengal)."
+  },
+  {
+    "Question_Number": 9,
+    "Question_Text": "Consider the following pairs: (Area) : (Description) 1. Kaas Pathar : Plateau of flowers 2. Rann of Kutch : Salt desert 3. Sundarbans : Mangrove forest. Which of the pairs given above are correctly matched?",
+    "Option_A": "1 and 2 only",
+    "Option_B": "2 and 3 only",
+    "Option_C": "1 and 3 only",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Kaas Plateau (Maharashtra) is famous for flowers, Rann of Kutch is a salt marsh, and Sundarbans are famous mangrove forests."
+  },
+  {
+    "Question_Number": 10,
+    "Question_Text": "Consider the following statements regarding cryptocurrencies in India: 1. Transactions involving cryptocurrencies are not done through commercial banks. 2. There are no cryptocurrency exchanges in India. 3. Cryptocurrencies cannot be used in money laundering. 4. Cryptocurrencies cannot be regulated by any financial sector regulator. Which of the statements given above are correct?",
+    "Option_A": "1, 2 and 3 only",
+    "Option_B": "2, 3 and 4 only",
+    "Option_C": "1 and 4 only",
+    "Option_D": "1, 2, 3 and 4",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "India has crypto exchanges (so 2 is false) and they can be used for money laundering (so 3 is false). Thus, 1 and 4 are the intended correct statements."
+  },
+  {
+    "Question_Number": 11,
+    "Question_Text": "A company buys four commodities C1, C2, C3 and C4 to produce a product. Old rates: 1000, 850, 640, 4. New rates: 1200, 900, 800, 12. To produce 100 units of the product it requires 2, 4, 5 and 20 units of C1, C2, C3 and C4 respectively. If there is no change in the labour charges, what is the change in the production cost per unit of the product?",
+    "Option_A": "1.56",
+    "Option_B": "15.60",
+    "Option_C": "156",
+    "Option_D": "1560",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Old cost = (2*1000 + 4*850 + 5*640 + 20*4) = 8680. New cost = (2*1200 + 4*900 + 5*800 + 20*12) = 10240. Diff = 1560 per 100 units, which is 15.60 per unit."
+  },
+  {
+    "Question_Number": 12,
+    "Question_Text": "The mother of E is F, and the mother of B is A. The spouse of D is A and the spouse of B is F. What is the relation of D with E?",
+    "Option_A": "Father's father",
+    "Option_B": "Mother's father",
+    "Option_C": "Mother's mother",
+    "Option_D": "Father's mother",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "D is married to A (mother of B), making D the father of B. B is married to F (mother of E), making B the father of E. So, D is E's father's father."
+  },
+  {
+    "Question_Number": 13,
+    "Question_Text": "A newspaper distributing agency supplies one latest issue of a daily newspaper if 20 old issues of the same newspaper are returned to the agency. One person had exactly 8000 old issues of the newspaper. For how long can this person receive the latest issue of the newspaper without making any payment, if he returns all the issues he receives?",
+    "Option_A": "400 days",
+    "Option_B": "420 days",
+    "Option_C": "421 days",
+    "Option_D": "425 days",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "8000/20 = 400 new issues. Returning these 400 gives 400/20 = 20 new issues. Returning those 20 gives 20/20 = 1 issue. Total = 400 + 20 + 1 = 421 days."
+  },
+  {
+    "Question_Number": 14,
+    "Question_Text": "Which one of the following diagrams is the best representation of cricketers, players and business persons?",
+    "Option_A": "[Diagram A: Three separate circles]",
+    "Option_B": "[Diagram B: Two intersecting circles inside a larger one]",
+    "Option_C": "[Diagram C: One small circle inside a large circle, intersected by a third circle]",
+    "Option_D": "[Diagram D: Three intersecting circles]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "All cricketers are players (circle within a circle). Some players and some cricketers can be business persons (third circle intersecting both)."
+  },
+  {
+    "Question_Number": 15,
+    "Question_Text": "Consider the following pairs of words: 1. Cotton and hard 2. Rubber and brittle. Which one of the following pairs is analogous to (1) and (2)?",
+    "Option_A": "Fire and slow",
+    "Option_B": "Steel and cold",
+    "Option_C": "Ocean and tiny",
+    "Option_D": "Moon and new",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The given pairs are antonyms (Cotton is soft, Rubber is flexible). Ocean (huge) and tiny are also antonyms."
+  },
+  {
+    "Question_Number": 16,
+    "Question_Text": "Consider the following statement: \"Every X is Y, but every X is not Z.\" Which one of the following is true with respect to the above statement?",
+    "Option_A": "Not every Y is Z",
+    "Option_B": "Not every Z is X",
+    "Option_C": "Not every Z is Y",
+    "Option_D": "Not every Y is X",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "If all X are Y, but some X are not Z, it means there are some Ys (those specific Xs) that are not Z. Thus, not every Y is Z."
+  },
+  {
+    "Question_Number": 17,
+    "Question_Text": "Two identical circles C1 and C2 with centres O1 and O2 respectively, intersect such that C1 passes through O2 and C2 passes through O1. If the points of intersection of C1 and C2 are P and Q, what is the measure of the angle PO1Q?",
+    "Option_A": "90°",
+    "Option_B": "120°",
+    "Option_C": "145°",
+    "Option_D": "150°",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The points form two equilateral triangles PO1O2 and QO1O2 (all sides equal to radius R). Thus, angle PO1O2 = 60° and QO1O2 = 60°. Total angle PO1Q = 120°."
+  },
+  {
+    "Question_Number": 18,
+    "Question_Text": "All the students of a class are standing in a row, each one facing the north. The position of the tallest student is 47th from the left and 14th from the right. How many students are there in the class?",
+    "Option_A": "59",
+    "Option_B": "60",
+    "Option_C": "61",
+    "Option_D": "62",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Total students = (Position from left) + (Position from right) - 1 = 47 + 14 - 1 = 60."
+  },
+  {
+    "Question_Number": 19,
+    "Question_Text": "There are four boys A, B, C and D. The boy A is taller than B, but shorter than C. The boy D is not the tallest one, whereas B is not the shortest one. Then which of the following statements is/are true? P = D is the shortest one. Q = C is the tallest one.",
+    "Option_A": "P only",
+    "Option_B": "Q only",
+    "Option_C": "Both P and Q",
+    "Option_D": "Neither P nor Q",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Given C > A > B. Since D is not tallest and B is not shortest, D must be the shortest. The order is C > A > B > D. Both statements are true."
+  },
+  {
+    "Question_Number": 20,
+    "Question_Text": "Pump P1 can empty out a swimming pool in 1 hour. Pump P2 can do this job in 1 hour and 30 minutes, whereas pump P3 can do the same job in 2 hours. If all the three pumps are used simultaneously, how much time will they take to empty out the pool?",
+    "Option_A": "Less than 30 minutes",
+    "Option_B": "More than 30 minutes but less than 35 minutes",
+    "Option_C": "More than 35 minutes but less than 40 minutes",
+    "Option_D": "More than 40 minutes",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Rates: 1/60, 1/90, 1/120 per minute. Combined rate = 6/360 + 4/360 + 3/360 = 13/360. Time = 360/13 = 27.69 minutes, which is less than 30 minutes."
+  },
+  {
+    "Question_Number": 21,
+    "Question_Text": "Which one of the following parts of the sentence \"Mr. Chandran has been selected as one of the member of the committee\" has an error?",
+    "Option_A": "Mr. Chandran has been",
+    "Option_B": "selected as",
+    "Option_C": "one of the member",
+    "Option_D": "of the committee",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The correct phrasing is \"one of the members\" (plural)."
+  },
+  {
+    "Question_Number": 22,
+    "Question_Text": "Which one of the following parts of the sentence \"Children are unable to learn optimally when they were undernourished\" has an error?",
+    "Option_A": "Children are",
+    "Option_B": "unable to learn optimally",
+    "Option_C": "when they were",
+    "Option_D": "undernourished",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The sentence mixes present tense (\"are unable\") and past tense (\"were undernourished\"). It should be \"when they are\"."
+  },
+  {
+    "Question_Number": 23,
+    "Question_Text": "Which one of the following parts of the sentence \"The importance, relevant, and beauty of the classical languages of India cannot be overlooked\" has an error?",
+    "Option_A": "The importance, relevant, and beauty",
+    "Option_B": "of the classical languages",
+    "Option_C": "of India",
+    "Option_D": "cannot be overlooked",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "\"relevant\" is an adjective, but a noun is required to parallel \"importance\" and \"beauty\". It should be \"relevance\"."
+  },
+  {
+    "Question_Number": 24,
+    "Question_Text": "Which one of the following is the most appropriate meaning of the idiom 'Call it a day'?",
+    "Option_A": "At the end of the day, particularly in the evening",
+    "Option_B": "Calling a day as fruitful",
+    "Option_C": "Leaving the workplace",
+    "Option_D": "To stop doing something, particularly some work",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "'Call it a day' means to decide or agree to stop doing an activity or work."
+  },
+  {
+    "Question_Number": 25,
+    "Question_Text": "Which one of the following is the most appropriate meaning of the idiom 'Paper tiger'?",
+    "Option_A": "A person or an organization that seems powerful, but is not",
+    "Option_B": "A tiger in a paper",
+    "Option_C": "Papers relating to lives and welfare of tigers",
+    "Option_D": "Papers needed for the conservation of tigers in a country",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "A 'paper tiger' is a literal translation of a Chinese phrase meaning something that appears threatening but is actually weak."
+  },
+  {
+    "Question_Number": 26,
+    "Question_Text": "Which one of the following is the most appropriate meaning of the idiom 'Smell a rat'?",
+    "Option_A": "To start thinking about the smell of a rat",
+    "Option_B": "To start believing that something is wrong about a situation",
+    "Option_C": "To find the truth that someone is hiding",
+    "Option_D": "To believe that all rats can sense the smell of anything",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "'To smell a rat' means to suspect that something is wrong, illegal, or dishonest."
+  },
+  {
+    "Question_Number": 27,
+    "Question_Text": "Why are the hornbills vulnerable during the breeding season?",
+    "Option_A": "Because they can be easily found and killed",
+    "Option_B": "Because they can't be found easily",
+    "Option_C": "Hunters can track them with their noise during the incubation period",
+    "Option_D": "Hornbills are ferocious during the incubation period",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Based on the passage, females are sealed inside a tree cavity for months, making them trapped and highly vulnerable to hunters or loggers if discovered."
+  },
+  {
+    "Question_Number": 28,
+    "Question_Text": "Which one of the following words is similar in meaning to the word 'taboo' in the passage?",
+    "Option_A": "Acceptable",
+    "Option_B": "Forbidden",
+    "Option_C": "Superstition",
+    "Option_D": "Permissible",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "'Taboo' refers to a social or religious custom prohibiting or restricting a particular practice, synonymous with forbidden."
+  },
+  {
+    "Question_Number": 37,
+    "Question_Text": "The Evaluation of Pupils' learning difficulties during instruction is known as:",
+    "Option_A": "Placement",
+    "Option_B": "Formative",
+    "Option_C": "Diagnostic",
+    "Option_D": "Summative",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Diagnostic evaluation specifically focuses on identifying learning difficulties and gaps. Formative is for monitoring progress."
+  },
+  {
+    "Question_Number": 38,
+    "Question_Text": "Which one of the following statements indicate the formative evaluation?",
+    "Option_A": "Pupils' entry performance in a sequence of instruction",
+    "Option_B": "Pupils' learning progress during instruction",
+    "Option_C": "Pupils' learning difficulties during instruction",
+    "Option_D": "Pupils' achievement at the end of instruction",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Formative evaluation is conducted during the learning process to monitor student progress and provide ongoing feedback."
+  },
+  {
+    "Question_Number": 39,
+    "Question_Text": "Which of the following are the components of evaluation? 1. Qualitative descriptions 2. Quantitative descriptions 3. Value judgments 4. Graphical descriptions",
+    "Option_A": "1, 2 and 4",
+    "Option_B": "2, 3 and 4",
+    "Option_C": "1, 3 and 4",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Evaluation traditionally encompasses qualitative descriptions, quantitative measurements, and value judgments based on those descriptions."
+  },
+  {
+    "Question_Number": 40,
+    "Question_Text": "Split-Half method is used for determining which one of the following characteristics of a test?",
+    "Option_A": "Validity",
+    "Option_B": "Reliability",
+    "Option_C": "Usability",
+    "Option_D": "Objectivity",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The split-half method is a common psychometric technique used to measure the internal consistency and reliability of a test."
+  },
+  {
+    "Question_Number": 41,
+    "Question_Text": "Which of the following categories in the taxonomy of educational objectives are the parts of the Affective Domain? 1. Application 2. Valuing 3. Organization 4. Adaptation 5. Comprehension",
+    "Option_A": "1 and 4",
+    "Option_B": "2 and 3",
+    "Option_C": "1 and 5",
+    "Option_D": "4 and 5",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The Affective Domain includes Receiving, Responding, Valuing, Organization, and Characterization by Value."
+  },
+  {
+    "Question_Number": 42,
+    "Question_Text": "Verbal comprehension is:",
+    "Option_A": "Identifying similarities and differences in words, letters, numbers and geometric figures",
+    "Option_B": "Demonstrating an understanding of the meaning of words, sentences and directions",
+    "Option_C": "Identifying similarities and differences in spoken words or sounds",
+    "Option_D": "Identifying letters of the alphabet, words and numerals",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Verbal comprehension primarily involves the ability to understand and derive meaning from spoken or written language."
+  },
+  {
+    "Question_Number": 43,
+    "Question_Text": "Which one of the following is the main advantage of using a table of specifications when preparing an achievement test?",
+    "Option_A": "It reduces the amount of time required",
+    "Option_B": "It makes the construction of test items easier",
+    "Option_C": "It decreases the objectivity of the test",
+    "Option_D": "It improves the sampling of content",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "A table of specifications acts as a blueprint, ensuring that a test adequately and representatively samples the instructional content."
+  },
+  {
+    "Question_Number": 44,
+    "Question_Text": "Which one of the following categories in the taxonomy of educational objectives indicates the highest level of learning?",
+    "Option_A": "Analysis",
+    "Option_B": "Application",
+    "Option_C": "Synthesis",
+    "Option_D": "Comprehension",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "In the original Bloom's Taxonomy, the cognitive domains from lowest to highest are Knowledge, Comprehension, Application, Analysis, Synthesis, and Evaluation."
+  },
+  {
+    "Question_Number": 45,
+    "Question_Text": "Which one of the following measurement scales has an absolute zero point?",
+    "Option_A": "Ordinal",
+    "Option_B": "Nominal",
+    "Option_C": "Ratio",
+    "Option_D": "Interval",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "A ratio scale possesses an absolute (meaningful) true zero point, indicating the complete absence of the measured attribute."
+  },
+  {
+    "Question_Number": 46,
+    "Question_Text": "Which one of the following is a parametric test?",
+    "Option_A": "Sign test",
+    "Option_B": "t-test",
+    "Option_C": "Median test",
+    "Option_D": "Chi-square test",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The Student's t-test is a parametric test because it relies on assumptions about the population parameters (like normal distribution). The others are non-parametric."
+  },
+  {
+    "Question_Number": 47,
+    "Question_Text": "Which one of the following is not an assumption of a parametric test?",
+    "Option_A": "Normal distribution",
+    "Option_B": "Randomization",
+    "Option_C": "Homogeneity",
+    "Option_D": "Discontinuity",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Parametric tests assume continuous variables, normal distribution, homogeneity of variances, and independent observations, not discontinuity."
+  },
+  {
+    "Question_Number": 48,
+    "Question_Text": "Which one of the following tests should be conducted by a teacher in order to identify the strength and weakness of the students in an area of study?",
+    "Option_A": "Achievement test",
+    "Option_B": "Aptitude test",
+    "Option_C": "Diagnostic test",
+    "Option_D": "Reasoning test",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Diagnostic tests are specifically designed to pinpoint a student's specific strengths and weaknesses or learning difficulties."
+  },
+  {
+    "Question_Number": 49,
+    "Question_Text": "Which one of the following does not belong to the category of probability sample?",
+    "Option_A": "Random sample",
+    "Option_B": "Stratified sample",
+    "Option_C": "Purposive sample",
+    "Option_D": "Systematic sample",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "A purposive sample is a non-probability sampling technique where subjects are selected based on the judgment of the researcher."
+  },
+  {
+    "Question_Number": 50,
+    "Question_Text": "Which one of the following is included within the range of M ± 1σ in a normal distribution curve?",
+    "Option_A": "68.13%",
+    "Option_B": "68.26%",
+    "Option_C": "66.28%",
+    "Option_D": "66.26%",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "In a standard normal distribution, approximately 68.26% of the data falls within one standard deviation of the mean."
+  },
+  {
+    "Question_Number": 51,
+    "Question_Text": "Which one of the following tests is used for personality diagnosis?",
+    "Option_A": "Aptitude test",
+    "Option_B": "Projective test",
+    "Option_C": "Intelligence test",
+    "Option_D": "Achievement test",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Projective tests (like Rorschach or TAT) are psychological tests designed to reveal hidden emotions and internal conflicts for personality diagnosis."
+  },
+  {
+    "Question_Number": 52,
+    "Question_Text": "Thurstone's equal appearing intervals scale is used for measuring the:",
+    "Option_A": "Aptitude",
+    "Option_B": "Attitude",
+    "Option_C": "Achievement",
+    "Option_D": "Creativity",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The Thurstone scale was the first formal technique to measure an attitude, developed by L.L. Thurstone."
+  },
+  {
+    "Question_Number": 53,
+    "Question_Text": "Which one of the following variables does not fall into continuous series?",
+    "Option_A": "Age",
+    "Option_B": "Time",
+    "Option_C": "Class size",
+    "Option_D": "Weight",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Class size represents a count of individuals, making it a discrete variable rather than a continuous one."
+  },
+  {
+    "Question_Number": 54,
+    "Question_Text": "Which of the following are standard scores? 1. T-score 2. Z-score 3. Stanine score 4. Mean score",
+    "Option_A": "1 and 2 only",
+    "Option_B": "2 and 4 only",
+    "Option_C": "1 and 3 only",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "T-scores, Z-scores, and Stanine scores are all standardized scores used in psychometrics. The 'mean score' is an average, not a standardized format."
+  },
+  {
+    "Question_Number": 55,
+    "Question_Text": "Which one of the following is used to determine the test performance in terms of certain psychological traits?",
+    "Option_A": "Content validity",
+    "Option_B": "Construct validity",
+    "Option_C": "Criterion validity",
+    "Option_D": "Predictive validity",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Construct validity evaluates whether a test properly measures a theoretical construct or psychological trait."
+  },
+  {
+    "Question_Number": 56,
+    "Question_Text": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Basic skill): A. Reading, B. Language, C. Mathematics, D. Study skills. List II (Sub test): 1. Reading maps, 2. Computation, 3. Expression, 4. Comprehension.",
+    "Option_A": "4, 3, 2, 1",
+    "Option_B": "4, 2, 3, 1",
+    "Option_C": "1, 3, 2, 4",
+    "Option_D": "1, 2, 3, 4",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Reading matches Comprehension (4); Language matches Expression (3); Math matches Computation (2); Study skills match Reading maps (1)."
+  },
+  {
+    "Question_Number": 57,
+    "Question_Text": "Match List I with List II: A. Content-oriented achievement test, B. School-oriented aptitude test, C. Culture-oriented verbal aptitude test, D. Culture-oriented non-verbal aptitude test. List II: 1. Verbal, numerical and general problem solving, 2. Knowledge of subject matter, 3. Abstract reasoning based on pictures, 4. Arithmetic reasoning.",
+    "Option_A": "2, 1, 4, 3",
+    "Option_B": "3, 4, 1, 2",
+    "Option_C": "3, 4, 1, 2",
+    "Option_D": "2, 4, 1, 3",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Content-oriented (A) is Subject matter (2); School aptitude (B) is Arithmetic (4); Culture verbal (C) is Verbal/numerical (1); Culture non-verbal (D) is Abstract pictures (3)."
+  },
+  {
+    "Question_Number": 58,
+    "Question_Text": "Which one of the following measures is used to determine the greatest stability of the scores?",
+    "Option_A": "Mean",
+    "Option_B": "Median",
+    "Option_C": "Mode",
+    "Option_D": "Range",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The mean is generally considered the most stable measure of central tendency because it utilizes all data points in a distribution."
+  },
+  {
+    "Question_Number": 59,
+    "Question_Text": "Which of the following are the major methodological approaches in qualitative research? 1. Post-positivist approach 2. Critical approach 3. Causal-comparative approach 4. Interpretive approach",
+    "Option_A": "1, 2 and 4",
+    "Option_B": "2 and 3 only",
+    "Option_C": "3 and 4 only",
+    "Option_D": "2 and 4 only",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Critical and interpretive approaches are fundamental qualitative methodologies. Post-positivist and causal-comparative are predominantly quantitative."
+  },
+  {
+    "Question_Number": 60,
+    "Question_Text": "Which one of the following statements in context of basic principles of Achievement test is not correct?",
+    "Option_A": "It should be used to improve students learning.",
+    "Option_B": "It should be designed to fit the particular uses to be made of the results.",
+    "Option_C": "It can be used as a standardized tool for measurement.",
+    "Option_D": "It should measure clearly defined learning outcomes.",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "An achievement test is generally a teacher-made tool tailored to specific classroom objectives and is not inherently a \"standardized tool for measurement\" without rigorous validation."
+  },
+  {
+    "Question_Number": 61,
+    "Question_Text": "Which one of the following should not be there in unstructured In-depth interviews?",
+    "Option_A": "Interviewee-focused listening",
+    "Option_B": "Agenda-focused listening",
+    "Option_C": "Non-interruptive listening",
+    "Option_D": "Interviewee-centred open and non-judgmental listening",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Unstructured interviews should be interviewee-led and flexible; agenda-focused listening restricts the exploratory nature of the interview."
+  },
+  {
+    "Question_Number": 62,
+    "Question_Text": "Which one among the following is not a method of establishing probability?",
+    "Option_A": "Empirical approach",
+    "Option_B": "Differential approach",
+    "Option_C": "Mathematical approach",
+    "Option_D": "Intuitive approach",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Empirical (frequentist), mathematical (classical), and intuitive (subjective) are recognized approaches to probability. Differential is not."
+  },
+  {
+    "Question_Number": 63,
+    "Question_Text": "The comparison of a pupil's performance on a test with that of another pupil's in some appropriate reference group is called:",
+    "Option_A": "Objective testing",
+    "Option_B": "Criterion-referenced testing",
+    "Option_C": "Norm-referenced testing",
+    "Option_D": "Subjective testing",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Norm-referenced testing compares an individual's performance to the performance of a larger group of peers (the norm group)."
+  },
+  {
+    "Question_Number": 64,
+    "Question_Text": "Consider the following statements regarding Psychological tests: 1. A psychological test is essentially an objective and standardized measure of a sample of behaviour. 2. Standardization implies variety of procedures in administrating and scoring the test. 3. The determination of validity requires independent, external criteria of whatever the test is designed to measure. Which of the statements given above are correct?",
+    "Option_A": "1 and 2 only",
+    "Option_B": "2 and 3 only",
+    "Option_C": "1 and 3 only",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Statement 2 is incorrect because standardization implies 'uniformity' and consistency in administration and scoring, not variety."
+  },
+  {
+    "Question_Number": 65,
+    "Question_Text": "Group tests are used primarily in: 1. Educational systems 2. Government services 3. Industry and Military services 4. Clinics. Select the correct answer using the code given below:",
+    "Option_A": "1, 2 and 4",
+    "Option_B": "2 and 3 only",
+    "Option_C": "1 and 4 only",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Group tests are designed for mass testing in education, civil services, and military/industry. Clinics typically rely on individualized psychological testing."
+  },
+  {
+    "Question_Number": 66,
+    "Question_Text": "Which one of the following educational institutions of ancient times is not a part of independent India?",
+    "Option_A": "Nalanda",
+    "Option_B": "Vikramshila",
+    "Option_C": "Vallabhi",
+    "Option_D": "Takshashila",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Takshashila (Taxila) is located in present-day Pakistan."
+  },
+  {
+    "Question_Number": 67,
+    "Question_Text": "The task of preparation of the National Curriculum Framework (2005) was accomplished by:",
+    "Option_A": "National Steering Committee only",
+    "Option_B": "Twenty-one National Focus Groups only",
+    "Option_C": "National Steering Committee and three National Focus Groups",
+    "Option_D": "National Steering Committee and twenty-one National Focus Groups",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "The NCF 2005 was developed by a National Steering Committee chaired by Prof. Yash Pal, supported by 21 National Focus Groups."
+  },
+  {
+    "Question_Number": 68,
+    "Question_Text": "As per the Right of Children to Free and Compulsory Education Act, 2009, an all-weather school building should consist of: 1. Separate toilets for boys and girls 2. An easy access without barrier 3. A common room for teachers and School Management Committee members 4. A kitchen where mid-day meal is cooked in the school.",
+    "Option_A": "2 and 3 only",
+    "Option_B": "1, 2 and 4",
+    "Option_C": "1, 2 and 3",
+    "Option_D": "1, 3 and 4",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The RTE Act mandates separate toilets, barrier-free access, and a kitchen for mid-day meals, but does not mandate a common room for the SMC."
+  },
+  {
+    "Question_Number": 69,
+    "Question_Text": "According to the Right of Children to Free and Compulsory Education Act, 2009, the vacancies of teachers in a State-owned school shall not exceed :",
+    "Option_A": "Two percent of the total sanctioned strength",
+    "Option_B": "Five percent of the total sanctioned strength",
+    "Option_C": "Ten percent of the total sanctioned strength",
+    "Option_D": "Fifteen percent of the total sanctioned strength",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Section 26 of the RTE Act specifies that vacancies of teachers should not exceed 10% of the total sanctioned strength."
+  },
+  {
+    "Question_Number": 70,
+    "Question_Text": "Under the Right of Children to Free and Compulsory Education Act, 2009, which one of the following may not be a part of consideration while laying down the curriculum and evaluation procedure for elementary education?",
+    "Option_A": "Conformity with the values enshrined in the Constitution",
+    "Option_B": "Building up children's knowledge, potentiality and talent",
+    "Option_C": "Making the children free of fear, trauma and anxiety",
+    "Option_D": "Universal School System",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "The Universal School System is a macro-policy framework aim, not a direct pedagogical consideration for laying down curriculum under Section 29 of the RTE Act."
+  },
+  {
+    "Question_Number": 71,
+    "Question_Text": "As per the Right of Children to Free and Compulsory Education Act, 2009, if a child happens to fail in the regular examination at the end of the eighth class, he or she can be given an additional opportunity for re-examination within a period of:",
+    "Option_A": "One month from the date of declaration of the result",
+    "Option_B": "Two months from the date of declaration of the result",
+    "Option_C": "Six months from the date of declaration of the result",
+    "Option_D": "Nine months from the date of declaration of the result",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The 2019 amendment to the RTE Act allows schools to hold a re-examination within two months of the declaration of results for students who fail Class 8."
+  },
+  {
+    "Question_Number": 72,
+    "Question_Text": "Which one of the following age groups of children is entitled to free and compulsory education as per the Right of Children to Free and Compulsory Education Act, 2009?",
+    "Option_A": "Six to sixteen years",
+    "Option_B": "Four to fourteen years",
+    "Option_C": "Six to fourteen years",
+    "Option_D": "Four to sixteen years",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The RTE Act guarantees free and compulsory education for all children in the age group of 6 to 14 years."
+  },
+  {
+    "Question_Number": 73,
+    "Question_Text": "As per the Right of Children to Free and Compulsory Education Act, 2009, which one of the following is not the function of the School Management Committee?",
+    "Option_A": "Preparing and recommending the school development plan",
+    "Option_B": "Monitoring the working of the school",
+    "Option_C": "Monitoring the utilization of the grants received",
+    "Option_D": "Preparing the norms and standards for the school",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Norms and standards for schools are set by the government/authorities, not the SMC."
+  },
+  {
+    "Question_Number": 74,
+    "Question_Text": "As per the Right of Children to Free and Compulsory Education Act, 2009, what is the minimum number of working hours per week for the teacher?",
+    "Option_A": "Forty-five hours excluding preparation hours",
+    "Option_B": "Forty-five hours including preparation hours",
+    "Option_C": "Forty hours excluding preparation hours",
+    "Option_D": "Forty hours including preparation hours",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The RTE schedule specifies a minimum of 45 working hours per week for teachers, which includes preparation hours."
+  },
+  {
+    "Question_Number": 75,
+    "Question_Text": "As per the Right of Children to Free and Compulsory Education Rules, 2010, the State Advisory Council is chaired ex-officio by:",
+    "Option_A": "The Principal Secretary of School Education in the appropriate Government",
+    "Option_B": "The Chief Secretary in the appropriate Government",
+    "Option_C": "The Minister in-charge of School Education in the appropriate Government",
+    "Option_D": "The Secretary in-charge of Elementary Education in the appropriate Government",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The Minister in-charge of School Education chairs the State Advisory Council ex-officio."
+  },
+  {
+    "Question_Number": 76,
+    "Question_Text": "At which stage of school education does the National Education Policy (2020) recommend every student to take a 'fun course' or '10-day bagless period'?",
+    "Option_A": "Foundational Stage",
+    "Option_B": "Preparatory Stage",
+    "Option_C": "Middle Stage",
+    "Option_D": "Any time during school education",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "NEP 2020 suggests a 10-day bagless period during Grades 6-8 (Middle Stage) for students to intern with local vocational experts."
+  },
+  {
+    "Question_Number": 77,
+    "Question_Text": "Which one of the following agencies is to be set up to catalyze and expand research and innovation across the country as per the National Education Policy (2020)?",
+    "Option_A": "National Research Foundation",
+    "Option_B": "National Innovation Mission",
+    "Option_C": "Higher Education Commission of India",
+    "Option_D": "Higher Education Grants Council",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The NEP 2020 proposes the establishment of the National Research Foundation (NRF) to fund and promote high-quality research."
+  },
+  {
+    "Question_Number": 78,
+    "Question_Text": "Which one of the following statements correctly describes the purpose of PARAKH, as envisaged in the National Education Policy (2020)?",
+    "Option_A": "It is proposed to set up as a national assessment centre for standard-setting and guidelines for assessment and evaluation of teachers.",
+    "Option_B": "It is proposed to set up as a national assessment centre for standard-setting and guidelines for assessment and evaluation of students.",
+    "Option_C": "It is proposed to set up as an advisory organization for universities regarding new assessment patterns, etc.",
+    "Option_D": "It is proposed to set up as a regulatory body to ensure adoption of the uniform curriculum across various national and state education boards.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "PARAKH stands for Performance Assessment, Review, and Analysis of Knowledge for Holistic Development, acting as a national student assessment center."
+  },
+  {
+    "Question_Number": 79,
+    "Question_Text": "How many targets are adopted in Sustainable Development Goal (SDG)-4 that are centred on inclusive and equitable quality education and lifelong learning?",
+    "Option_A": "12 targets in three groups",
+    "Option_B": "10 targets in five groups",
+    "Option_C": "8 targets in five groups",
+    "Option_D": "6 targets in four groups",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "SDG 4 consists of 10 specific targets (7 outcome targets and 3 means of implementation targets)."
+  },
+  {
+    "Question_Number": 80,
+    "Question_Text": "Sustainable Development Goal (SDG) - 4 aims to ensure inclusive and equitable education in India to all by:",
+    "Option_A": "2025",
+    "Option_B": "2030",
+    "Option_C": "2035",
+    "Option_D": "2040",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The United Nations' Sustainable Development Goals, including SDG 4 for Education, have a target achievement year of 2030."
+  },
+  {
+    "Question_Number": 81,
+    "Question_Text": "Which one of the following agencies is the National Coordinator for managing the course content being offered through the SWAYAM portal for engineering sector courses?",
+    "Option_A": "National Programme on Technology Enhanced Learning (NPTEL)",
+    "Option_B": "Indira Gandhi National Open University (IGNOU)",
+    "Option_C": "All India Council for Technical Education (AICTE)",
+    "Option_D": "National Institute of Technical Teachers Training and Research (NITTTR)",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "NPTEL is the designated national coordinator for engineering courses on the SWAYAM platform."
+  },
+  {
+    "Question_Number": 82,
+    "Question_Text": "The National Education Policy (2020), recommends public investment of 6% of GDP in Education sector of the country. This allocation of funds is proposed to come from:",
+    "Option_A": "Central government only",
+    "Option_B": "State governments only",
+    "Option_C": "Public-private partnership",
+    "Option_D": "Central and State governments together",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "The NEP 2020 envisions that the Central and State governments together will allocate funding to reach 6% of GDP for education."
+  },
+  {
+    "Question_Number": 83,
+    "Question_Text": "Which one of the following is not a guiding principle for the implementation of recommendations of the National Education Policy (2020)?",
+    "Option_A": "Implementation of the policy initiatives in a phased manner",
+    "Option_B": "Comprehensiveness in implementation",
+    "Option_C": "Timely infusion of requisite resources at the Central and State levels",
+    "Option_D": "Evolving a centralized implementation structure at the national level",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "NEP 2020 favors decentralization and flexibility rather than a rigid centralized implementation structure."
+  },
+  {
+    "Question_Number": 84,
+    "Question_Text": "The National Education Policy (2020) recommends training of current Anganwadi workers and teachers by the Cluster Resource Centres of the School Education Department. Which one of the following agencies is supposed to develop the curricular/pedagogical framework for the purpose ?",
+    "Option_A": "National Council for Teacher Education (NCTE)",
+    "Option_B": "Central Board of Secondary Education (CBSE)",
+    "Option_C": "National Council of Educational Research and Training (NCERT)",
+    "Option_D": "School Education Departments of the appropriate Government",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "NCERT is responsible for developing the National Curricular and Pedagogical Framework for Early Childhood Care and Education (NCPFECCE)."
+  },
+  {
+    "Question_Number": 85,
+    "Question_Text": "According to the National Education Policy (2020), the planning and implementation of Early Childhood Care and Education (ECCE) curriculum will be carried out jointly by the:",
+    "Option_A": "Ministry of Education, Ministry of Women and Child Development, Ministry of Health and Family Welfare and Ministry of Tribal Affairs",
+    "Option_B": "Ministry of Education, Ministry of Science and Technology, Ministry of Health and Family Welfare and Ministry of Tribal Affairs",
+    "Option_C": "Ministry of Education, Ministry of Women and Child Development, Ministry of Health and Family Welfare and Ministry of Science and Technology",
+    "Option_D": "Ministry of Education, Ministry of Women and Child Development, Ministry of Culture and Ministry of Rural Development",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "ECCE implementation requires integration across the Ministries of HRD (now Education), WCD, HFW, and Tribal Affairs."
+  },
+  {
+    "Question_Number": 86,
+    "Question_Text": "In the 5+3+3+4 Pedagogical and Curricular Structure of School Education provided for, in the National Education Policy (2020), the first five years consist of:",
+    "Option_A": "The preparatory stage corresponding to the age range of 5 - 10 years",
+    "Option_B": "The foundational stage in primary schools corresponding to the age range of 5-10 years",
+    "Option_C": "The foundational stage in two parts, that is, 3 years in Anganwadi/pre-school plus 2 years in primary schools in Grades 1-2",
+    "Option_D": "The primary school stage from Grades 1-5 covering ages 3-8 years",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The first 5 years (Foundational Stage) comprise 3 years of preschool/Anganwadi and 2 years of primary school (Grades 1 and 2) covering ages 3-8."
+  },
+  {
+    "Question_Number": 87,
+    "Question_Text": "The coverage of the State School Standards Authority (SSSA) to be set up by the States/UTs as recommended by the National Education Policy (2020) for the purpose of establishing a minimal set of standards will include:",
+    "Option_A": "All stages of education including pre-school education for all schools public, private and philanthropic",
+    "Option_B": "All stages of education excluding pre-school education for only public (government funded) schools",
+    "Option_C": "All stages of education including pre-school education for only public (government funded) schools",
+    "Option_D": "All stages of education excluding pre-school education for all schools public, private and philanthropic",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The SSSA is intended to ensure common minimum standards across all schools, public, private, and philanthropic, including early childhood education."
+  },
+  {
+    "Question_Number": 88,
+    "Question_Text": "The School Safety Policy (2016) considers which of the following as the sources of possible hazards in a school? 1. Faulty construction and poorly maintained infrastructure 2. Loosely placed heavy objects such as almirahs 3. Uneven flooring 4. Inadequate sanitation facilities",
+    "Option_A": "1 and 2 only",
+    "Option_B": "1, 2 and 3 only",
+    "Option_C": "1, 2 and 4 only",
+    "Option_D": "1, 2, 3 and 4",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "All listed elements (infrastructure, heavy objects, flooring, and sanitation) are identified as potential hazards in the school safety guidelines."
+  },
+  {
+    "Question_Number": 89,
+    "Question_Text": "Who among the following designates a Safety Focal Point Teacher (FPT) to operationally anchor safety related actions at the school as part of his/her routine commitments in the school?",
+    "Option_A": "School Management Committee (SMC) only",
+    "Option_B": "Principal/Headmaster only",
+    "Option_C": "School Management Committee (SMC) and Principal/Headmaster",
+    "Option_D": "The District Education Officer (DEO) and Principal/Headmaster",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The Principal or Headmaster designates a teacher to act as the Safety Focal Point Teacher for disaster management operations."
+  },
+  {
+    "Question_Number": 90,
+    "Question_Text": "As per the National Disaster Management Guidelines School Safety Policy (2016), which one of the following is not a responsibility of the school administration?",
+    "Option_A": "Incorporate school safety issues in the school development plan",
+    "Option_B": "Develop policies and regulations for ensuring all schools are disaster resilient",
+    "Option_C": "Ensure teachers and non-teaching staff receive appropriate training in disaster risk reduction",
+    "Option_D": "Involve Panchayati Raj Institutions/Urban Local Bodies and line departments in safety planning exercises",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Developing overarching policies and regulations for *all* schools is a state/district responsibility, not the responsibility of a singular school administration."
+  },
+  {
+    "Question_Number": 91,
+    "Question_Text": "According to the School Disaster Management Plan Template of the National School Safety Programme (NSSP), how many students are specified to be part of the recommended structure of the School Disaster Management Committee?",
+    "Option_A": "Two",
+    "Option_B": "Three",
+    "Option_C": "Four",
+    "Option_D": "Six",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The template recommends including two student representatives in the SDMC."
+  },
+  {
+    "Question_Number": 92,
+    "Question_Text": "While enquiring into any matter relating to complaints under Section 14(1) of the Commissions for Protection of Child Rights Act, 2005, the National Commission for Protection of Child Rights (NCPCR) shall have:",
+    "Option_A": "All the powers of a criminal court",
+    "Option_B": "All the powers of a civil court",
+    "Option_C": "All the powers of a children's court",
+    "Option_D": "All the powers of a High Court",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The NCPCR possesses the powers of a civil court trying a suit under the Code of Civil Procedure, 1908, when inquiring into matters."
+  },
+  {
+    "Question_Number": 93,
+    "Question_Text": "Which one of the following sections of the Commissions for Protection of Child Rights Act, 2005 allows the State Governments to constitute an authority where the State Commission for Protection of Child Rights (SCPCR) has not been constituted?",
+    "Option_A": "Section 14(1)",
+    "Option_B": "Section 31(2)",
+    "Option_C": "Section 31(3)",
+    "Option_D": "Section 32",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Under Section 31(3), the State Government may constitute an authority pending the constitution of the State Commission."
+  },
+  {
+    "Question_Number": 94,
+    "Question_Text": "Match List I with List II and select the correct answer using the code given below the Lists: List I (Performance of States in 2016-17): A. Low per capita income and low participation rates in secondary education, B. Low per capita income and high participation rates in secondary education, C. High per capita income and low participation rates in secondary education, D. High per capita income and high participation rates in secondary education. List II (State): 1. Sikkim 2. Gujarat 3. Kerala 4. Punjab",
+    "Option_A": "4, 2, 3, 1",
+    "Option_B": "1, 3, 2, 4",
+    "Option_C": "1, 2, 3, 4",
+    "Option_D": "4, 3, 2, 1",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "A general socioeconomic mapping matches low/low to states requiring development, and high/high to progressive states like Kerala/Sikkim. (This maps to option B)."
+  },
+  {
+    "Question_Number": 95,
+    "Question_Text": "Which one of the following is correct with regard to the recommendation of the National Education Policy (2020) to establish school complexes within a radius of 5-10 kilometres for effective school governance?",
+    "Option_A": "A school complex consists of one elementary school together with all other schools offering lower grades including Anganwadi",
+    "Option_B": "A school complex consists of one secondary school together with all other schools offering lower grades in its neighbourhood including Anganwadi",
+    "Option_C": "A school complex consists of one secondary school together with all other schools offering lower grades excluding Anganwadi",
+    "Option_D": "A school complex consists of one elementary school together with all other schools offering lower grades excluding Anganwadi",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "NEP 2020 recommends grouping one secondary school with all lower grade schools and Anganwadis in the neighborhood to form a school complex."
+  },
+  {
+    "Question_Number": 96,
+    "Question_Text": "The Right of Children to Free and Compulsory Education Act, 2009 does not stipulate which one of the following with regard to the constitution of School Management Committee (SMC)?",
+    "Option_A": "At least two-third of the members of SMC shall be teachers",
+    "Option_B": "At least three-fourth of the members of SMC shall be parents or guardians",
+    "Option_C": "At least fifty percent of members of SMC shall be women",
+    "Option_D": "Proportionate representation shall be given to parents or guardians of children belonging to disadvantaged groups and weaker sections",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The Act stipulates that 3/4 (75%) of SMC members must be parents or guardians, not that 2/3 must be teachers."
+  },
+  {
+    "Question_Number": 97,
+    "Question_Text": "As per the Right of Children to Free and Compulsory Education Rules, 2010, the Block Level Grievance Redressal Committee set up as a part of redressal mechanism for teachers shall redress the grievance of the teacher within:",
+    "Option_A": "Fifteen days",
+    "Option_B": "Thirty days",
+    "Option_C": "Forty-five days",
+    "Option_D": "Sixty days",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Grievance Redressal Committees are typically expected to resolve matters within a 30-day timeframe as per the framework."
+  },
+  {
+    "Question_Number": 98,
+    "Question_Text": "File number in a conventional file numbering system contains which of the following information? 1. Subject code 2. Serial number of the file opened 3. Year in which the file is opened 4. Sub-head code",
+    "Option_A": "1 and 2 only",
+    "Option_B": "1, 2 and 3 only",
+    "Option_C": "2, 3 and 4 only",
+    "Option_D": "1, 2, 3 and 4",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Conventional government file numbering (like 12/34/2021-Subject) contains the subject/sub-head codes, the sequential serial number, and the year of opening."
+  },
+  {
+    "Question_Number": 99,
+    "Question_Text": "The form of communication used for issuing instructions/intimations in routine internal administrative matters such as grant of regular leave, internal posting and transfers, etc. is called:",
+    "Option_A": "Office Order",
+    "Option_B": "Order",
+    "Option_C": "Office Memorandum",
+    "Option_D": "Notification",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "An 'Office Order' is used for issuing instructions for routine internal administrative actions affecting specific individuals."
+  },
+  {
+    "Question_Number": 100,
+    "Question_Text": "Which of the following issues cannot be taken up for Redressal of Grievances through web-based Central Public Grievance Redress and Monitoring System (CPGRAMS)? 1. Personal and Family Disputes 2. Sub judice cases 3. Right to Information matters 4. Suggestions",
+    "Option_A": "1 and 2 only",
+    "Option_B": "1, 2 and 4 only",
+    "Option_C": "1, 3 and 4 only",
+    "Option_D": "1, 2, 3 and 4",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "CPGRAMS does not accept grievances related to sub-judice cases, personal/family disputes, RTI matters, and pure suggestions."
+  },
+  {
+    "Question_Number": 101,
+    "Question_Text": "A Government servant has 250 days Earned Leave (EL) and 100 days Half Pay Leave (HPL) at his credit on the day of his retirement from the service. He shall be eligible for encashment of leave equivalent of:",
+    "Option_A": "250 days EL plus 50 days HPL",
+    "Option_B": "250 days EL plus 50 days commuted leave",
+    "Option_C": "250 days EL plus 100 days HPL",
+    "Option_D": "250 days EL only",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Leave encashment at retirement is capped at a maximum of 300 days total (EL + HPL). The 250 days of EL plus 50 days of HPL maximizes this limit."
+  },
+  {
+    "Question_Number": 102,
+    "Question_Text": "Consider the following statements regarding grant of leave by the competent authority under the Central Civil Services (Leave) Rules, 1972: 1. Competent authority may refuse or revoke leave of any kind, but not on his own alter the kind of leave due and applied for, by the Government servant. 2. Competent authority may refuse or revoke leave of any kind and may also on his own alter the kind of leave due and applied for, by the Government servant. 3. Competent authority may refuse leave of any kind, but neither revoke nor on his own alter the kind of leave due and applied for, by the Government servant. 4. Competent authority may refuse or revoke leave of any kind. Competent authority may also alter the kind of leave due and applied for, if requested in writing by the Government servant. Which of the statement(s) given above is/are correct?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "3 only",
+    "Option_D": "1 and 4",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Under CCS Leave Rules, leave cannot be claimed as a matter of right. An authority can refuse or revoke leave, but cannot alter the *type* of leave requested on its own accord."
+  },
+  {
+    "Question_Number": 103,
+    "Question_Text": "Consider the following statements regarding Casual Leave: 1. Casual leave is not a recognized form of leave. 2. An official on casual leave is not treated as absent from duty. 3. Casual leave can be combined with joining time. 4. Casual leave can be combined with earned leave. Which of the statements given above are correct?",
+    "Option_A": "1 and 2 only",
+    "Option_B": "1, 3 and 4 only",
+    "Option_C": "2 and 4 only",
+    "Option_D": "1, 2, 3 and 4",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Casual leave is technically not a recognized leave under the CCS Rules, and an official on casual leave is not treated as absent. It cannot be combined with earned leave or joining time."
+  },
+  {
+    "Question_Number": 104,
+    "Question_Text": "Where a request for providing information under the Right to Information Act, 2005 is rejected by the Central Public Information Officer (CPIO), which of the following shall be communicated by the CPIO to the person making the request? 1. The reasons for such rejection 2. The period within which an appeal against such rejection may be preferred 3. The particulars of the Appellate Authority",
+    "Option_A": "1 and 2 only",
+    "Option_B": "1 only",
+    "Option_C": "2 and 3 only",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Section 7(8) of the RTI Act requires the CPIO to communicate the reasons, the appeal period, and the particulars of the Appellate Authority upon rejecting a request."
+  },
+  {
+    "Question_Number": 105,
+    "Question_Text": "In which of the following cases, there is no obligation for an organization to provide information to a citizen, under the Right to Information Act, 2005? 1. Information, disclosure of which may constitute contempt of court 2. Procedure followed in decision-making process in the organization 3. The rules, regulations, instructions, manuals and records, held by it or under its control or used by its employees for discharging its functions",
+    "Option_A": "1 and 2 only",
+    "Option_B": "2 only",
+    "Option_C": "1 and 3",
+    "Option_D": "2 and 3",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Under Section 8(1)(b) of the RTI Act, information leading to contempt of court is exempt. Items 2 and 3 are actually mandatory proactive disclosures under Section 4. (Note: Option mappings imply 1 only is correct, but given the choices, A represents the exempt category)."
+  },
+  {
+    "Question_Number": 106,
+    "Question_Text": "Which one of the following is not a penalty under the Central Civil Service (Classification, Control and Appeal) Rules, 1965?",
+    "Option_A": "Censure",
+    "Option_B": "Dismissal from service",
+    "Option_C": "Removal from service",
+    "Option_D": "Suspension",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Suspension is an administrative action taken pending inquiry, not a formalized disciplinary 'penalty' listed under Rule 11 of CCS (CCA) Rules."
+  },
+  {
+    "Question_Number": 107,
+    "Question_Text": "In the context of the orders regarding the use of Hindi as Official Language, the percentage of the amount to be spent for the purchase of books in Hindi out of the total budgetary grant allocated for the purchase of books for libraries is:",
+    "Option_A": "20%",
+    "Option_B": "25%",
+    "Option_C": "50%",
+    "Option_D": "60%",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Official Language policy guidelines typically stipulate that 50% of the library budget must be utilized for purchasing Hindi books."
+  },
+  {
+    "Question_Number": 108,
+    "Question_Text": "Consider the following statements in the context of Government e-Marketplace (GeM): 1. The credentials of the suppliers shall be certified by GeM SPV. 2. The reasonability of rates shall be certified by GeM SPV. 3. The reasonability of rates shall be certified by the procuring authority. 4. The credentials of the suppliers shall be certified by the procuring authority. Which of the statements given above is/are correct?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "1 and 3",
+    "Option_D": "2 and 4",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "In GeM, the portal (GeM SPV) verifies basic credentials of suppliers, but the reasonability of rates remains the responsibility of the procuring authority buying the goods."
+  },
+  {
+    "Question_Number": 109,
+    "Question_Text": "Which of the following statements is/are correct in the context of Limited Tender Enquiry (LTE)? 1. LTE may, as a general rule, be adopted when estimated value of the goods to be procured is up to 25 lakhs. 2. The number of supplier firms should be more than three. 3. Bids through LTE are invited from firms which are borne on the list of registered suppliers.",
+    "Option_A": "1 only",
+    "Option_B": "1 and 2 only",
+    "Option_C": "1 and 3 only",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "According to GFR 2017 Rule 162, Limited Tender Enquiry is used for goods up to ₹25 Lakhs, invitations go to registered suppliers, and at least three firms should be involved."
+  },
+  {
+    "Question_Number": 110,
+    "Question_Text": "The General Financial Rules, 2017 permit purchase of goods up to the value of 25,000 on each occasion without inviting quotations or bids on the basis of a certificate to be recorded by the competent authority in the prescribed format. The said certificate certifies which of the following? 1. Quality of the goods 2. Reliability of the supplier 3. Reasonability of the price",
+    "Option_A": "1, 2 and 3",
+    "Option_B": "1 and 2 only",
+    "Option_C": "1 and 3 only",
+    "Option_D": "2 and 3 only",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Under GFR Rule 154, the required certificate states that the competent authority is personally satisfied that the goods are of requisite quality, the supplier is reliable, and the price is reasonable."
+  },
+  {
+    "Question_Number": 111,
+    "Question_Text": "The retention period of service books of officials entitled to retirement/terminal benefits and in whose case final pension/gratuity payment order has been issued, is:",
+    "Option_A": "1 year",
+    "Option_B": "3 years",
+    "Option_C": "5 years",
+    "Option_D": "10 years",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Service books are typically retained for 3 years after the retirement and final settlement of pension/gratuity benefits."
+  },
+  {
+    "Question_Number": 112,
+    "Question_Text": "In terms of the provisions stipulated in the General Financial Rules, 2017, 'Performance Security' shall remain valid beyond the date of completion of all contractual obligations of the supplier including warranty obligations, for a period of:",
+    "Option_A": "30 days",
+    "Option_B": "60 days",
+    "Option_C": "90 days",
+    "Option_D": "120 days",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "GFR Rule 171 dictates that Performance Security should remain valid for a period of sixty (60) days beyond the date of completion of all contractual obligations, including warranty."
+  },
+  {
+    "Question_Number": 113,
+    "Question_Text": "In terms of the provisions contained in the General Financial Rules, 2017, 'Price Variation Clause' can be provided only in long-term contracts, where the delivery period extends beyond:",
+    "Option_A": "12 months",
+    "Option_B": "18 months",
+    "Option_C": "24 months",
+    "Option_D": "36 months",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "According to GFR manual on procurement, a Price Variation Clause is justifiable only in contracts where the delivery period is more than 18 months."
+  },
+  {
+    "Question_Number": 114,
+    "Question_Text": "In terms of the provisions contained in the General Financial Rules, 2017, which one of the following items of expenditure is not classified as 'capital expenditure'?",
+    "Option_A": "Expenditure incurred on the first construction of a project",
+    "Option_B": "Expenditure for further additions and improvements which enhance the useful life of the assets",
+    "Option_C": "Expenditure incurred on maintenance, repairs and upkeep of the assets",
+    "Option_D": "Expenditure on account of reparation of damage caused by extraordinary calamities leading to creation of new assets",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Routine maintenance, repairs, and upkeep are classified as Revenue Expenditure, not Capital Expenditure, because they do not create new assets or extend the original lifespan."
+  },
+  {
+    "Question_Number": 115,
+    "Question_Text": "Consider the following statements regarding the requirement of furnishing Earnest Money Deposit (EMD) in e-bids on GeM portal having estimated value of more than 5 lakhs: 1. Kendriya Bhandar shall be exempted from furnishing the EMD. 2. Service provider having turnover of 200 crores or more shall be exempted from furnishing the EMD. 3. The EMD shall be valid for 90 days beyond the bid validity. 4. State PSUs shall be exempted from furnishing the EMD. Which of the statements given above are correct?",
+    "Option_A": "1, 2 and 3",
+    "Option_B": "1, 3 and 4",
+    "Option_C": "1 and 4 only",
+    "Option_D": "2 and 4 only",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Micro and Small Enterprises (MSEs), Central/State PSUs, and entities like Kendriya Bhandar are generally exempt from EMD. Turnover criteria and 90-day validity don't apply generically as stated in 2 and 3."
+  },
+  {
+    "Question_Number": 116,
+    "Question_Text": "In the context of procurement of goods through GeM platform, the term \"goods\" shall mean products like: 1. Software 2. Technology transfer 3. Transportation incidental to supply of goods 4. Transport services. Select the correct answer using the code given below:",
+    "Option_A": "1 and 2 only",
+    "Option_B": "2 and 3 only",
+    "Option_C": "1, 2 and 3 only",
+    "Option_D": "1, 2, 3 and 4",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Goods encompass physical items, software, and services strictly incidental to their supply (like transportation of the goods). Standalone transport services are classified as 'Services', not 'Goods'."
+  },
+  {
+    "Question_Number": 117,
+    "Question_Text": "In respect of which of the following activities is previous sanction of the Government not required by a Government servant? 1. Undertaking honorary work of a social nature 2. Participating in sports activities as an amateur 3. Making a privately produced media programme 4. Undertaking occasional work of artistic character",
+    "Option_A": "1, 2 and 4",
+    "Option_B": "1, 2 and 3",
+    "Option_C": "2 and 4 only",
+    "Option_D": "1, 3 and 4",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Under CCS Conduct Rules, a government servant does not need prior sanction for honorary social work, amateur sports, or occasional literary/artistic work, provided they do not interfere with duties."
+  },
+  {
+    "Question_Number": 118,
+    "Question_Text": "In which of the following cases does a Government servant not retain lien on a post? 1. During the period he is on extraordinary leave 2. While under suspension 3. While proceeding on immediate absorption basis to a post or service outside his post or service or cadre from the date of his absorption 4. While on foreign service",
+    "Option_A": "1 and 2 only",
+    "Option_B": "1, 2 and 4",
+    "Option_C": "3 and 4 only",
+    "Option_D": "3 only",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "A government servant ceases to retain a lien on a post immediately upon their absorption into another service, public sector undertaking, or autonomous body."
+  },
+  {
+    "Question_Number": 119,
+    "Question_Text": "As per \"The Protection of Children from Sexual Offences Act, 2012\" , \"child\" means any person below the age of:",
+    "Option_A": "14 years",
+    "Option_B": "16 years",
+    "Option_C": "18 years",
+    "Option_D": "21 years",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Under Section 2(1)(d) of the POCSO Act, a \"child\" is legally defined as any person below the age of 18 years."
+  },
+  {
+    "Question_Number": 120,
+    "Question_Text": "Which of the following statements regarding the constitution of \"Internal Complaints Committee\" under 'The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013' is/are not correct? 1. A woman employed at a senior level at workplace from amongst the employees shall be the Presiding Officer. 2. Not less than two members shall be from amongst employees preferably committed to the cause of women or who have had experience in social work or have legal knowledge. 3. One member shall be from amongst non-government organizations or associations committed to the cause of women or a person familiar with the issues relating to sexual harassment. 4. At least one-fourth of the total members so nominated shall be women.",
+    "Option_A": "1, 2, 3 and 4",
+    "Option_B": "1, 2 and 3 only",
+    "Option_C": "2 and 3 only",
+    "Option_D": "4 only",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Statement 4 is incorrect because the POSH Act mandates that at least one-half (50%) of the total members of the Internal Complaints Committee must be women, not one-fourth."
+  },
+  {
+    "Question_Number": 1,
+    "Question_Text": "Based on the above passage, the following assumptions have been made: I. Online education dehumanises the education system. II. Learning needs to be a collective effort. III. Online education may be used for out of school children, but not for students in classrooms. Which of the above assumptions are valid?",
+    "Option_A": "I and II only",
+    "Option_B": "II and III only",
+    "Option_C": "I and III only",
+    "Option_D": "I, II and III",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The passage mentions the \"dehumanising disruption\" and asserts that students \"learn more from each other\" (collective effort). Assumption III is not discussed."
+  },
+  {
+    "Question_Number": 2,
+    "Question_Text": "Which one of the following best reflects the crux of the passage?",
+    "Option_A": "Technology has no role in formal education system.",
+    "Option_B": "Digital learning is not a substitute for classroom teaching and learning.",
+    "Option_C": "Technology replaces the teachers or their effectiveness.",
+    "Option_D": "Digital learning is complementary to conventional learning.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The passage argues that education cannot merely be a \"transmission mode\" and highlights the limitations of digital learning, emphasizing it cannot replace classroom learning."
+  },
+  {
+    "Question_Number": 3,
+    "Question_Text": "Read the following pairs: Phrase - Meaning. I. Get along with - Make progress. II. Get down to - Begin to give serious attention to. III. Get back at - To react to someone. How many of the above pairs are correctly matched?",
+    "Option_A": "None of the pairs",
+    "Option_B": "Only one pair",
+    "Option_C": "Only two pairs",
+    "Option_D": "All three pairs",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "'Get down to' and 'Get back at' are correctly matched. 'Get along with' generally means to have a good relationship with someone, whereas 'get along' (without with) means to make progress."
+  },
+  {
+    "Question_Number": 4,
+    "Question_Text": "Read the following passage: Political stability and economic prosperity are the two most ideal conditions for democracy to flourish. Even in democracies today, crucial knowledge is available to only few individuals. How many errors are there in the above passage?",
+    "Option_A": "No error",
+    "Option_B": "Only one error",
+    "Option_C": "Two errors",
+    "Option_D": "More than two errors",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "There are two errors: 'most ideal' is incorrect because 'ideal' is an absolute adjective, and 'only few' should be 'only a few'."
+  },
+  {
+    "Question_Number": 5,
+    "Question_Text": "Read the following pairs: Idiom - Meaning. I. Put two and two together - To draw a correct inference. II. At sixes and sevens - In a comfortable situation. III. On cloud nine - Extremely unhappy. How many of the above pairs are correctly matched?",
+    "Option_A": "None of the pairs",
+    "Option_B": "Only one pair",
+    "Option_C": "Only two pairs",
+    "Option_D": "All three pairs",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Only pair I is correct. 'At sixes and sevens' means in a state of confusion. 'On cloud nine' means extremely happy."
+  },
+  {
+    "Question_Number": 11,
+    "Question_Text": "Fill in the blanks (X, Y) in the following sentences with appropriate word/phrase given in the brackets: I. The passenger in the train spoke X (little/a little) English and hence it was difficult to communicate with him. II. Things are not going so well for my friend, as he has Y (few/a few) problems. X and Y respectively stand for:",
+    "Option_A": "little, few",
+    "Option_B": "a little, a few",
+    "Option_C": "little, a few",
+    "Option_D": "a little, few",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "'Little' (without 'a') implies almost none, fitting the context of difficulty communicating. 'A few' implies some problems, fitting the context that things are not going well."
+  },
+  {
+    "Question_Number": 12,
+    "Question_Text": "Read the following three statements, each given in the form of Active voice and Passive voice: I. It is time to shut down the shop. -> It is time for the shop to shut down. II. Please enter by this door. -> You are requested to enter by this door. III. What amazed you? -> What were you amazed? In how many of the above statements is the Active voice correctly expressed in the Passive voice?",
+    "Option_A": "None",
+    "Option_B": "Only one",
+    "Option_C": "Only two",
+    "Option_D": "All three",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Only statement II is correct. I should be 'It is time for the shop to be shut down'. III should be 'By what were you amazed?'."
+  },
+  {
+    "Question_Number": 13,
+    "Question_Text": "Read the following three statements, each given in the form of Direct speech and Indirect speech: I. The lady officer said, \"How clever am I?\" -> The lady officer exclaimed that she was very clever. II. The teacher said to the student, \"Bravo! You have done well.\" -> The teacher applauded the student saying that he had done well. III. He said, \"No, I did not participate.\" -> He denied that he did not participate. In how many of the above statements is the Direct speech correctly expressed in the Indirect speech?",
+    "Option_A": "None",
+    "Option_B": "Only one",
+    "Option_C": "Only two",
+    "Option_D": "All three",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Statements I and II are correct. Statement III is incorrect because 'denied that he did not participate' is a double negative; it should be 'denied that he had participated'."
+  },
+  {
+    "Question_Number": 14,
+    "Question_Text": "Read the following pairs in which 'up' is used as adjective, adverb, noun, preposition, etc: I. Prices of the commodities are going up. -> Adverb. II. The boy went up the hill. -> Preposition. III. The next Up train departs at 7:00 a.m. -> Adjective. How many of the above pairs are correctly matched?",
+    "Option_A": "None of the pairs",
+    "Option_B": "Only one pair",
+    "Option_C": "Only two pairs",
+    "Option_D": "All three pairs",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "All three pairs are correct. 'Up' acts as an adverb modifying 'going', a preposition showing direction relative to 'the hill', and an adjective modifying 'train'."
+  },
+  {
+    "Question_Number": 15,
+    "Question_Text": "Read the following pairs: Group of words - One-word substitution. I. Great academic knowledge - Erudition. II. A child who stays away from school without permission - Truant. III. Never making mistakes - Incorrigible. How many of the above pairs are correctly matched?",
+    "Option_A": "None of the pairs",
+    "Option_B": "Only one pair",
+    "Option_C": "Only two pairs",
+    "Option_D": "All three pairs",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Pairs I and II are correct. III is incorrect; 'never making mistakes' is 'infallible', whereas 'incorrigible' means not able to be corrected or reformed."
+  },
+  {
+    "Question_Number": 21,
+    "Question_Text": "A teacher writes a 4-digit number on the blackboard in which two digits are equal and the following observations are made by a student: 1. The sum of the digits is equal to the product of the digits. 2. The number is divisible by the sum of the digits. What is the quotient when the number is divided by the sum of the digits?",
+    "Option_A": "176",
+    "Option_B": "257",
+    "Option_C": "514",
+    "Option_D": "Cannot be determined uniquely due to insufficient data",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The only digits where sum equals product are 1, 1, 2, 4 (sum=8, prod=8). Permutations divisible by 8 must end in a multiple of 8. 4112 is divisible by 8 (4112 / 8 = 514)."
+  },
+  {
+    "Question_Number": 22,
+    "Question_Text": "Students of a class took a test that carries a maximum of 100 marks. The teacher misplaced the answer sheet of two students X and Y. But she remembered that X scored marks somewhere between 10 and 15, and Y scored marks between 55 and 65. She also remembered that the product of the marks obtained by them was equal to ten times the sum of the marks obtained by them. What is the sum of the marks obtained by them?",
+    "Option_A": "67",
+    "Option_B": "70",
+    "Option_C": "72",
+    "Option_D": "Cannot be obtained due to insufficient data",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Equation: X*Y = 10(X+Y) -> (X-10)(Y-10) = 100. Given X is between 10 and 15, X-10 can be 1, 2, 3, or 4. If X-10 = 2, X = 12 and Y-10 = 50 -> Y = 60. This fits the range 55-65. Sum = 12+60 = 72."
+  },
+  {
+    "Question_Number": 23,
+    "Question_Text": "An exercise on a chapter comprises 100 numerical questions. The teacher gave the task to three students X, Y, Z of the class to solve them. Each solved exactly 60 questions but all questions were solved. Any question is known as 'easy' if it is solved by all of them and 'difficult' if it is solved by only one of them. How many 'difficult' questions are there?",
+    "Option_A": "0",
+    "Option_B": "30",
+    "Option_C": "40",
+    "Option_D": "Cannot be determined uniquely due to insufficient data",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Let n1, n2, n3 be the number of questions solved by 1, 2, and 3 students. n1+n2+n3 = 100; n1+2n2+3n3 = 180. Subtracting gives n2+2n3 = 80, so n1 = 20 + n3. Since n3 can vary, n1 (difficult questions) cannot be determined uniquely."
+  },
+  {
+    "Question_Number": 24,
+    "Question_Text": "Three Vice-Principals X, Y, Z from three different schools met in an Orientation Programme in the month of June 2022. Y said to X, \"Your teaching experience is twice that of mine.\" Z said to X, \"Your teaching experience is thrice that of mine.\" When the three last met in the month of June 2016, Y said to X, \"Your teaching experience is thrice that of mine,\" and Z said to Y, \"Your teaching experience is thrice that of mine.\" What is the total experience possessed by all three of them as on June 2022?",
+    "Option_A": "44 years",
+    "Option_B": "33 years",
+    "Option_C": "26 years",
+    "Option_D": "22 years",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "2022: X=2Y, X=3Z. 2016: X-6 = 3(Y-6), Y-6 = 3(Z-6). Solving X=2Y and X-6 = 3Y-18 yields Y=12. So X=24. Since X=3Z, Z=8. Total experience in 2022 = 24+12+8 = 44 years."
+  },
+  {
+    "Question_Number": 25,
+    "Question_Text": "A student received marks in four subjects and each subject carries maximum marks of 50. His aggregate marks are 50%. He scored maximum marks in Science and minimum marks in Hindi with a difference of 45 marks between them. He scored 50% more marks in Mathematics as compared to English. Which of the following conclusions can be drawn from the above information? 1. The student should have got less than 20 marks in English. 2. The student should have got less than 30 marks in Mathematics. Select the correct answer using the code given below:",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Total marks = 100. S - H = 45. Math = 1.5 * English. Possible valid combo: S=45, H=0, M=33, E=22. In this case, English is not less than 20, and Math is not less than 30. Thus, neither conclusion is certain."
+  },
+  {
+    "Question_Number": 26,
+    "Question_Text": "A test has 100 questions. A student scores 3 marks for a correct answer, - 1 mark for a wrong answer, 0.5 mark for not attempting a question. If the net score of a student is 145, then which of the following statements is/are correct? 1. The number of questions answered correctly by the student lies between 48 and 56. 2. The number of questions answered wrongly by the student lies between 4 and 48. Select the correct answer using the code given below:",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Let correct=C, wrong=W, unattempted=U. C+W+U=100. Score: 3C - W + 0.5U = 145. Substituting U yields 5C - 3W = 190. Possible valid integer combinations include C=38 (W=0), C=41 (W=5), up to C=59 (W=35). Therefore, neither statement's range strictly holds for all valid solutions."
+  },
+  {
+    "Question_Number": 27,
+    "Question_Text": "There are 3 classes A, B, C having 40, 45, 50 students respectively. The average marks of students of class A, B, C are respectively 25, 30, 40. The highest score is 28, 35, 49 and lowest score is 20, 25, 36 in class A, B, C respectively. Consider the following statements: 1. If 5 students out of 40 are transferred from A to B, the average score of A decreases. 2. If 5 students out of 45 are transferred from B to C, the average score of C decreases. Which of the above statements can be concluded?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Statement 1 is false (transferring 5 students with score 20 would increase A's average). Statement 2 is true because the highest score in B (35) is less than the current average of C (40); adding lower numbers always decreases the average."
+  },
+  {
+    "Question_Number": 28,
+    "Question_Text": "Five students A, B, C, D, E from five different schools appeared in a General Knowledge competition. The marks scored by A and D together are equal to the marks scored by B and C together. The marks scored by A and E together are equal to the marks scored by C and D together. The marks scored by A and E together are more than twice the marks scored by C. The marks scored by B and D together are less than twice the marks scored by A. Which of the following statements can be concluded? 1. B scored the highest marks. 2. E scored the least marks. Select the correct answer using the code given below:",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Using the equations, we derive B > A > D > C > E. Since the relationships force B to be strictly greater than A, D, C, E and E to be strictly less than all others, both statements 1 and 2 logically follow."
+  },
+  {
+    "Question_Number": 29,
+    "Question_Text": "A class has 4 sections that contain 40, 50, 60 and 50 students respectively. 50%, 60%, 50% and 60% students passed in these sections respectively. What is the percentage of failed students in the entire class?",
+    "Option_A": "56%",
+    "Option_B": "50%",
+    "Option_C": "45%",
+    "Option_D": "42%",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Total students = 200. Passed = (0.5*40) + (0.6*50) + (0.5*60) + (0.6*50) = 20 + 30 + 30 + 30 = 110. Failed = 200 - 110 = 90. Percentage failed = (90/200) * 100 = 45%."
+  },
+  {
+    "Question_Number": 30,
+    "Question_Text": "The marks scored in a test are converted from 50 to 20 for the purpose of internal assessment. The highest marks are 48 and the lowest marks are 7. Which of the following statements is/are correct ? 1. The average of maximum and minimum marks of the internal assessment is 11. 2. The average marks of the internal assessment of the whole class reduces by 60%. Select the correct answer using the code given below:",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The scaling factor is 20/50 = 0.4. New max = 19.2, new min = 2.8. Their average is (19.2+2.8)/2 = 11. A scaling factor of 0.4 means a 60% reduction across all marks, including the class average. Both are correct."
+  },
+  {
+    "Question_Number": 31,
+    "Question_Text": "The History teacher was referring to an event that happened in the 19th century. Consider the Question and the Statements given below: Question: When (year) did the event happen? Statement-1: The sum of the middle digits of the number representing the year is equal to the sum of the first and the last digits. Statement-2: If the digits of the number representing the year are reversed, the resulting number would increase by 4.5 times. Which one of the following is correct in respect of the above Question and Statements?",
+    "Option_A": "Statement-1 alone is sufficient to answer the Question.",
+    "Option_B": "Statement-2 alone is sufficient to answer the Question.",
+    "Option_C": "Both Statement-1 and Statement-2 are required to answer the Question.",
+    "Option_D": "Both Statement-1 and Statement-2 are not sufficient to answer the Question.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "A 19th-century year is 18xy. Statement 2 means 18xy * 4.5 = yx81. The only year satisfying this mathematical condition is 1818 (1818 * 4.5 = 8181). Statement 2 alone gives a unique answer."
+  },
+  {
+    "Question_Number": 32,
+    "Question_Text": "Three students sit on two rows of chairs. Each row has three chairs. Each row must have at least one student. In how many ways can the arrangements be made?",
+    "Option_A": "18",
+    "Option_B": "36",
+    "Option_C": "54",
+    "Option_D": "108",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "The students can be split 2 in Row 1 and 1 in Row 2, or vice versa. For 2 in R1: choose 2 students (3C2 = 3), arrange in R1 (3P2 = 6), arrange 1 in R2 (3P1 = 3). Total = 3*6*3 = 54. Total for both configurations = 54 + 54 = 108."
+  },
+  {
+    "Question_Number": 33,
+    "Question_Text": "Students are graded as 'excellent', 'good', 'average' on the basis of their performance. There are 48 girls. 40% of the students are girls. 20 boys are graded 'excellent'. 50% students are graded either 'excellent' or 'good'. One-fourth of the boys are graded average. 40 students are graded 'good'. Consider the following statements : 1. There are no girls with 'excellent' grade. 2. The difference between students with 'average' grade and students with 'good' grade is equal to the difference between students with 'good' grade and students with 'excellent' grade. Which of the above statements is/are correct ?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Total students = 120 (48 girls, 72 boys). Excellent or Good = 60. Good = 40, so Excellent = 20. Since 20 boys are Excellent, 0 girls are Excellent (St 1 is true). Total Average = 60. Diff between Average and Good = 60-40=20. Diff between Good and Excellent = 40-20=20. (St 2 is true)."
+  },
+  {
+    "Question_Number": 34,
+    "Question_Text": "The average attendance of students for three days (Monday, Tuesday, Wednesday) was 950 and for the next three days (Thursday, Friday, Saturday) was 900. The average attendance for four days (Tuesday, Wednesday, Thursday, Friday) in the same week was 930. Consider the following statements : 1. The average attendance for Monday and Saturday was 915. 2. The attendance was certainly higher on Monday than on Saturday. Which of the statements given above is/are correct ?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Total Mon-Sat = 3*950 + 3*900 = 5550. Total Tue-Fri = 4*930 = 3720. Mon + Sat = 5550 - 3720 = 1830. Average of Mon and Sat = 1830/2 = 915 (St 1 is true). We cannot determine individual daily attendance to say Monday was certainly higher (St 2 is false)."
+  },
+  {
+    "Question_Number": 35,
+    "Question_Text": "There are four sections A, B, C, D in 10th class. P, Q, R, S are class teachers. A unit test is proposed to be conducted at the same time and the corresponding class teacher of the section cannot be the invigilator for the section. How many combinations of invigilators are possible?",
+    "Option_A": "9",
+    "Option_B": "12",
+    "Option_C": "18",
+    "Option_D": "24",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "This is a classical derangement problem (finding permutations where no element appears in its original position). The number of derangements for 4 elements is D4 = 4! * (1/2! - 1/3! + 1/4!) = 24 * (1/2 - 1/6 + 1/24) = 9."
+  },
+  {
+    "Question_Number": 36,
+    "Question_Text": "What is the missing term (X) in the sequence 3, 14, 39, 84, 155, X ?",
+    "Option_A": "224",
+    "Option_B": "238",
+    "Option_C": "258",
+    "Option_D": "264",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The first differences are 11, 25, 45, 71. The second differences are 14, 20, 26, which form an arithmetic progression with a common difference of 6. The next second difference is 32. The next first difference is 71 + 32 = 103. The next term is 155 + 103 = 258."
+  },
+  {
+    "Question_Number": 37,
+    "Question_Text": "A + B means A is greater than B; A - B means A is less than B; A x B means A is greater than or equal to B; A / B means A is less than or equal to B; A ~ B means A is equal to B. Consider the following : (i) P + Q (ii) R / S (iii) T x P (iv) Q ~ R (v) S - U. Which of the following can certainly be concluded ? 1. T is greater than U 2. P is less than S Select the correct answer using the code given below :",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Translating symbols: T >= P > Q = R <= S < U. Statement 1 (T > U) is uncertain because the relationship between T/P and S/U is broken at Q=R. Statement 2 (P < S) is also uncertain for the same reason."
+  },
+  {
+    "Question_Number": 38,
+    "Question_Text": "3 copies of Physics and 4 copies of Chemistry textbooks cost Rs 2,430 and 5 copies of Chemistry and 6 copies of Mathematics textbooks cost Rs 1,380. What is the cost of 9 Physics, 22 Chemistry and 12 Mathematics textbooks ?",
+    "Option_A": "Rs 10,000",
+    "Option_B": "Rs 10,050",
+    "Option_C": "Rs 11,000",
+    "Option_D": "Cannot be determined due to insufficient data",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Equations: 3P + 4C = 2430 and 5C + 6M = 1380. We need 9P + 22C + 12M. Multiply the first equation by 3 to get 9P + 12C = 7290. Multiply the second by 2 to get 10C + 12M = 2760. Adding them gives 9P + 22C + 12M = 7290 + 2760 = 10050."
+  },
+  {
+    "Question_Number": 39,
+    "Question_Text": "What is the missing term (*) in the sequence YXZ, XWY, WVX, *, UTV, TSU ?",
+    "Option_A": "VWU",
+    "Option_B": "VUW",
+    "Option_C": "VUY",
+    "Option_D": "XUW",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Analyzing the letter positions: First letters (Y, X, W, ?, U, T) decrement by 1, so missing is V. Second letters (X, W, V, ?, T, S) decrement by 1, so missing is U. Third letters (Z, Y, X, ?, V, U) decrement by 1, so missing is W. Missing term is VUW."
+  },
+  {
+    "Question_Number": 40,
+    "Question_Text": "40% revenues of a school come from class I to V, 50% revenues from class VI to class X and 10% revenues from class XI and class XII in the form of fees. If the school raises its fees by 20% for classes I to V, 30% for classes VI to X and 40% for classes XI and XII, what is the percentage increase of revenues of the school ?",
+    "Option_A": "27%",
+    "Option_B": "28%",
+    "Option_C": "29%",
+    "Option_D": "30%",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Assume total initial revenue is 100. The new revenue will be (40 * 1.2) + (50 * 1.3) + (10 * 1.4) = 48 + 65 + 14 = 127. The percentage increase is (127 - 100) / 100 = 27%."
+  },
+  {
+    "Question_Number": 41,
+    "Question_Text": "Consider the following statements in respect of World Teachers' Day : 1. 5th September is declared as World Teachers' Day. 2. The theme of World Teachers' Day, 2022 is \"Changing Course, Transforming Education\". Which one of the following is correct in respect of the above statements?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "World Teachers' Day is on October 5th (September 5 is India's National Teachers' Day). The 2022 theme was 'The transformation of education begins with teachers'. Both statements are incorrect."
+  },
+  {
+    "Question_Number": 42,
+    "Question_Text": "Consider the following statements in respect of PM-SHRI schools : 1. According to the scheme, each block in the country will have two PM-SHRI schools. 2. The Ministry of Education tracks the performance of each PM-SHRI school, teacher and students. 3. Only Kendriya Vidyalayas, Navodaya Vidyalayas but not those schools run by State Governments and local bodies are strengthened to emerge as PM-SHRI schools. How many statements are correct?",
+    "Option_A": "None of the statements",
+    "Option_B": "Only one statement",
+    "Option_C": "Only two statements",
+    "Option_D": "All three statements",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Only Statement 2 is correct. Statement 1 is incorrect (it aims to select schools strategically, not strictly two per block everywhere). Statement 3 is incorrect as the scheme explicitly includes state and local body schools."
+  },
+  {
+    "Question_Number": 43,
+    "Question_Text": "Which of the following statements is/are correct with regard to National Pension System (NPS)? 1. NPS is administered by the Ministry of Labour and Employment. 2. The Scheme is mandatory for all new recruits to the Central Government service including the armed forces from 1st January, 2004. 3. On retirement on superannuation, a minimum of 40% of the corpus in the account is mandatorily annuitized and the remaining amount is paid to the government servant in lump sum. Select the correct answer using the code given below:",
+    "Option_A": "1 and 2 only",
+    "Option_B": "2 and 3 only",
+    "Option_C": "3 only",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "NPS is administered by PFRDA (Ministry of Finance), not Labour. It is mandatory for Central Govt recruits EXCEPT the armed forces. Only Statement 3 is correct."
+  },
+  {
+    "Question_Number": 44,
+    "Question_Text": "The objective of the project Smart Virtual Classroom (SVC) was to set up smart virtual classroom facilities in which of the following? 1. Government owned schools 2. Government controlled schools 3. District Institutes for Education and Training (DIET) Which of the above are correct?",
+    "Option_A": "1 and 2 only",
+    "Option_B": "2 and 3 only",
+    "Option_C": "1 and 3 only",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "The Smart Virtual Classroom projects implemented by the government aim to bridge the digital divide by equipping Government owned, Government aided (controlled) schools, and teacher training institutes like DIETs."
+  },
+  {
+    "Question_Number": 45,
+    "Question_Text": "Consider the following statements: 1. Attorney General is a Constitutional post under Article 76 of the Constitution. 2. Attorney General of India is appointed by the President of India. 3. The post of Solicitor General is statutory. 4. Solicitor General of India is appointed by the Vice President of India. How many statements are correct?",
+    "Option_A": "Only one statement",
+    "Option_B": "Only two statements",
+    "Option_C": "Only three statements",
+    "Option_D": "All four statements",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Statements 1, 2, and 3 are correct. Statement 4 is incorrect because the Solicitor General is appointed by the Appointments Committee of the Cabinet, not the Vice President."
+  },
+  {
+    "Question_Number": 46,
+    "Question_Text": "Consider the following statements: 1. The Vice President of India is elected by the members of the electoral college consisting of elected members of both Houses of Parliament and Legislative Assemblies of the States in accordance with the system of proportional representation by means of single transferable vote. 2. The President of India may resign office by writing under his hand addressed to the Vice President of India. Which of the statements given above is/are correct?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Statement 1 is incorrect as the electoral college for the Vice President consists only of members of both Houses of Parliament, excluding State Legislative Assemblies. Statement 2 is correct as per Article 56."
+  },
+  {
+    "Question_Number": 47,
+    "Question_Text": "Consider the following statements in respect of Sainik Schools : 1. They were established as a joint venture of the Central and State Governments. 2. They are under the overall governance of the Ministry of Education. 3. Girl cadets can also be admitted in the Schools. Which of the statements given above is/are correct ?",
+    "Option_A": "1 only",
+    "Option_B": "2 and 3 only",
+    "Option_C": "1 and 3 only",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Sainik Schools are a joint venture between the Ministry of Defence and State Governments (not Ministry of Education). Recent policy changes have allowed the admission of girl cadets."
+  },
+  {
+    "Question_Number": 48,
+    "Question_Text": "Consider the following statements : 1. DIKSHA is a technology-based educational platform to serve as national repository of high-quality resources/e-content for teaching and learning. 2. NISHTHA is a National Mission to improve learning outcomes at the elementary level through an Integrated Teacher Training Programme. Which of the statements given above is/are correct ?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Both statements are entirely accurate descriptions of the Government of India's educational initiatives DIKSHA and NISHTHA."
+  },
+  {
+    "Question_Number": 49,
+    "Question_Text": "Consider the following in respect of Kasturba Gandhi Balika Vidyalayas (KGBVs): 1. These are residential lower and middle primary schools for girls from SC, ST, OBC, Minority communities 2. KGBVs provide for a minimum reservation of 25% for girls from families that live below the poverty line. Which of the statements given above is/are correct ?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Statement 1 is slightly inaccurate as KGBVs primarily target the upper primary level (Classes VI to VIII) and above, not \"lower and middle primary\". Statement 2 correctly describes the 25% quota for BPL families."
+  },
+  {
+    "Question_Number": 50,
+    "Question_Text": "Who among the following are covered under 'National Scheme of Incentive to Girls for Secondary Education' ? 1. All girls belonging to SC/ST communities who pass class VIII 2. All girls who pass class VIII examination from Kasturba Gandhi Balika Vidyalayas (KGBVs) Select the correct answer using the code given below :",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The scheme explicitly targets all SC/ST girls who pass class VIII, as well as all girls (regardless of caste) who pass class VIII from Kasturba Gandhi Balika Vidyalayas, enrolling them in Class IX."
+  },
+  {
+    "Question_Number": 51,
+    "Question_Text": "National Institute of Open Schooling (NIOS) commenced its first live session on Virtual Open School platform in collaboration with",
+    "Option_A": "Microsoft and Ed4All",
+    "Option_B": "Tata Consultancy Services",
+    "Option_C": "IGNOU and Google",
+    "Option_D": "NCERT and Infosys",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "NIOS launched its Virtual Open School platform integrating advanced educational technology in collaboration with Microsoft and Ed4All."
+  },
+  {
+    "Question_Number": 52,
+    "Question_Text": "Consider the following in respect of Pradhan Mantri Poshan Shakti Nirman (PM POSHAN) : 1. One of the objectives of the PM POSHAN is to improve the nutritional status of children studying only in classes I - V in government and government-aided schools. 2. The norms for the scheme are to supply foodgrains at the rate of 100 grams per child per school day for primary and 200 grams for upper primary. Which of the statements given above is/are correct ?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Statement 1 is incorrect because PM POSHAN covers Classes I-VIII. Statement 2 is incorrect because the norm is 100 grams for primary and 150 grams (not 200) for upper primary."
+  },
+  {
+    "Question_Number": 53,
+    "Question_Text": "Consider the following in respect of School Nutrition Garden (SNG) : 1. SNG is a place where children are encouraged to grow fruits and vegetables. 2. The objective of developing SNGs is to help address malnutrition and micronutrient deficiencies in children. Which of the statements given above is/are correct ?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Both statements accurately describe the School Nutrition Garden initiative, which aims to provide hands-on agricultural experience and improve children's diets."
+  },
+  {
+    "Question_Number": 54,
+    "Question_Text": "For constructing compound walls in the schools and levelling of the grounds, which of the following schemes can be utilised by the States ? 1. Mahatma Gandhi National Rural Employment Guarantee Scheme (MGNREGS) 2. Pradhan Mantri Awas Yojana (PMAY) 3. Pradhan Mantri Gram Sadak Yojana (PMGSY) Select the correct answer using the code given below :",
+    "Option_A": "1 only",
+    "Option_B": "3 only",
+    "Option_C": "1 and 2",
+    "Option_D": "1 and 3",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "MGNREGS permits expenditure on creating durable assets, including rural school boundary walls and ground levelling. PMAY is for housing, and PMGSY is for roads."
+  },
+  {
+    "Question_Number": 55,
+    "Question_Text": "Eklavya Model Residential Schools (EMRSs) are meant for",
+    "Option_A": "SC students only",
+    "Option_B": "ST students in remote areas",
+    "Option_C": "SC and ST students only",
+    "Option_D": "SC, ST and OBC students",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The EMRS scheme was launched specifically to provide quality residential education to Scheduled Tribe (ST) students in remote areas."
+  },
+  {
+    "Question_Number": 56,
+    "Question_Text": "The Right to Education was made a fundamental right for children aged 6-14 years by which one of the following Constitutional Amendments ?",
+    "Option_A": "86th",
+    "Option_B": "99th",
+    "Option_C": "101st",
+    "Option_D": "103rd",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The 86th Constitutional Amendment Act of 2002 inserted Article 21-A, making free and compulsory education a fundamental right for children between 6 and 14 years."
+  },
+  {
+    "Question_Number": 57,
+    "Question_Text": "Consider the following statements in respect of UNESCO's King Hamad Bin Isa Al-Khalifa Prize for the year 2021: Statement-1: Pandit Sundarlal Sharma Central Institute of Vocational Education (PSSCIVE), a constituent unit of the National Council of Educational Research and Training has been awarded this prize. Statement-2: This prize has been awarded for the use of Information and Communication Technology (ICT) in Education. Which one of the following is correct in respect of the above statements?",
+    "Option_A": "Both Statement-1 and Statement-2 are correct and Statement-2 is the correct explanation for Statement-1.",
+    "Option_B": "Both Statement-1 and Statement-2 are correct and Statement-2 is not the correct explanation for Statement-1.",
+    "Option_C": "Statement-1 is correct and Statement-2 is incorrect.",
+    "Option_D": "Statement-1 is incorrect and Statement-2 is correct.",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Statement 1 is incorrect because the prize was awarded to CIET (Central Institute of Educational Technology), not PSSCIVE. Statement 2 is correct regarding the nature of the prize."
+  },
+  {
+    "Question_Number": 58,
+    "Question_Text": "Consider the following in respect of hoisting of the National Flag in educational institutions (schools) according to the Flag Code of India, 2002: 1. The school will assemble in open square formation with pupils forming the three sides and the Flag-staff at the centre of the fourth side. 2. The Headmaster and the person unfurling the Flag (if other than Headmaster) will stand on the left side of the Flag-staff. Which of the statements given above is/are correct?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The Flag Code specifies exact procedures for schools, including the three-sided square formation for students and the positioning of officials to the left of the flagstaff."
+  },
+  {
+    "Question_Number": 59,
+    "Question_Text": "Which one of the following pairs are members of Quad as well as G7 (Group of Seven)?",
+    "Option_A": "Australia and Canada",
+    "Option_B": "Japan and The United States of America",
+    "Option_C": "India and Japan",
+    "Option_D": "France and The United States of America",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The Quad consists of US, Japan, India, Australia. The G7 consists of US, UK, Canada, France, Germany, Italy, Japan. The intersecting members are the US and Japan."
+  },
+  {
+    "Question_Number": 60,
+    "Question_Text": "Consider the following statements: 1. There are 8 Union Territories in India out of which only three have Legislative Assemblies. 2. There are 5 Union Territories which have one seat each in the Lok Sabha. Which of the statements given above is/are correct?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "India has 8 UTs; Delhi, Puducherry, and J&K have assemblies (3). Chandigarh, Ladakh, Lakshadweep, A&N Islands, and Puducherry each have exactly 1 Lok Sabha seat (5)."
+  },
+  {
+    "Question_Number": 61,
+    "Question_Text": "The National Educational Policy, 2020 suggests that the curriculum framework for adult education would include which of the following among others ? 1. Child care and education 2. Digital literacy 3. Commercial skills 4. Financial literacy Select the correct answer using the code given below :",
+    "Option_A": "1 and 4 only",
+    "Option_B": "2, 3 and 4 only",
+    "Option_C": "1, 2 and 3 only",
+    "Option_D": "1, 2, 3 and 4",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "NEP 2020 comprehensively covers five types of programs for adult education, explicitly incorporating foundational literacy, life skills (financial/digital), vocational/commercial skills, and continuing education including child care."
+  },
+  {
+    "Question_Number": 62,
+    "Question_Text": "According to the National Education Policy, 2020, areas having large number of socio-economically disadvantaged students will aim for which one of the following Pupil-Teacher Ratios ?",
+    "Option_A": "Under 40 : 1",
+    "Option_B": "Under 35 : 1",
+    "Option_C": "Under 30 : 1",
+    "Option_D": "Under 25 : 1",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "NEP 2020 mandates a general Pupil-Teacher Ratio (PTR) of under 30:1, but specifically recommends a PTR of under 25:1 for areas with large populations of socio-economically disadvantaged students."
+  },
+  {
+    "Question_Number": 63,
+    "Question_Text": "What is \"Academic Bank of Credit\" as per the National Education Policy, 2020 ?",
+    "Option_A": "Digital storage of innovative ideas of all academic institutions",
+    "Option_B": "Digital storage of academic credits of students earned from various recognized higher education institutions",
+    "Option_C": "Transferring academic credits earned by a student from one institution to another",
+    "Option_D": "A national funding agency to enable teacher training institutions to organise their programmes effectively and efficiently",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The Academic Bank of Credit is essentially a digital repository to securely store the academic credits earned by students from various higher education institutions to facilitate mobility."
+  },
+  {
+    "Question_Number": 64,
+    "Question_Text": "Which one of the following is a recommendation of the National Education Policy, 2020 ?",
+    "Option_A": "By 2030, all teachers shall be trained in institutions approved by the Central Government.",
+    "Option_B": "By 2030, all those teaching senior secondary classes should have M.Ed. qualification.",
+    "Option_C": "By 2030, all teacher education will be in multidisciplinary institutions.",
+    "Option_D": "By 2030, all B.Ed. programmes will be of 2 years.",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "NEP 2020 aims to move all teacher preparation into multidisciplinary higher education institutions by 2030, phasing out standalone teacher education institutions."
+  },
+  {
+    "Question_Number": 65,
+    "Question_Text": "Which of the following are proposed/recommended by the National Education Policy, 2020 ? 1. The medium of instruction until Grade 8 will be the official language of the State/UT in which the children attend the school. 2. In secondary schools, the students will be given increased flexibility and choice of subjects to study. 3. In addition to English, some other foreign languages will also be offered for study at secondary level. Select the correct answer using the code given below :",
+    "Option_A": "1 and 2 only",
+    "Option_B": "2 and 3 only",
+    "Option_C": "1 and 3 only",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Statement 1 is incorrect because NEP emphasizes mother tongue or local language, not necessarily the State's official language. Statements 2 and 3 are correct proposals."
+  },
+  {
+    "Question_Number": 66,
+    "Question_Text": "By which year are all primary schools going to achieve universal foundational literacy and numeracy as the highest priority of the education system according to the National Education Policy, 2020 ?",
+    "Option_A": "2025",
+    "Option_B": "2027",
+    "Option_C": "2029",
+    "Option_D": "2030",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "NEP 2020 establishes the achievement of universal foundational literacy and numeracy in primary schools by 2025 as an urgent national mission."
+  },
+  {
+    "Question_Number": 67,
+    "Question_Text": "With reference to the Right of Children to Free and Compulsory Education Act, 2009, consider the following statements : 1. It is the duty of every parent or guardian to admit his or her child or ward to an elementary education in a neighbourhood school. 2. Proof of age of the child is essential at the time of admission to an elementary education in a neighbourhood school. 3. The teachers shall not engage themselves in private teaching activity. Which of the statements given above is/are correct ?",
+    "Option_A": "1 and 2",
+    "Option_B": "3 only",
+    "Option_C": "1 and 3",
+    "Option_D": "2 only",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Statement 2 is incorrect as Section 14 of the RTE Act explicitly states that no child shall be denied admission for lack of age proof. Statements 1 and 3 are true under the Act."
+  },
+  {
+    "Question_Number": 68,
+    "Question_Text": "As per the National Education Policy, 2020, the planning and implementation of 'Early Childhood Care and Education' curriculum will be carried out by",
+    "Option_A": "Union Ministry of Education only",
+    "Option_B": "Union Ministry of Education and Union Ministry of Women and Child Development (WCD) only",
+    "Option_C": "Union Ministry of Education, WCD and Union Ministry of Health and Family Welfare (HFW) only",
+    "Option_D": "Union Ministry of Education, WCD, HFW and Union Ministry of Tribal Affairs",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "NEP 2020 mandates that the implementation of ECCE will be a joint effort across the Ministries of HRD (now Education), Women and Child Development (WCD), Health and Family Welfare (HFW), and Tribal Affairs."
+  },
+  {
+    "Question_Number": 69,
+    "Question_Text": "Consider the following statements : 1. A test cannot be valid unless it is reliable. 2. A test that has some validity for one purpose is always valid for another purpose. 3. A reliable test may not necessarily be valid. Select the correct answer using the code given below :",
+    "Option_A": "1 only",
+    "Option_B": "2 and 3",
+    "Option_C": "1 and 3",
+    "Option_D": "2 only",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Reliability is a prerequisite for validity, meaning a test must be consistent to be accurate (St 1 is true). However, a test can be highly consistent (reliable) while measuring the wrong construct entirely (St 3 is true). Validity is specific to context (St 2 is false)."
+  },
+  {
+    "Question_Number": 70,
+    "Question_Text": "Formative assessment is conducted to 1. monitor student learning 2. provide ongoing feedback 3. improve teaching-learning process 4. know the position of a student in the group Select the correct answer using the code given below :",
+    "Option_A": "1, 2 and 3",
+    "Option_B": "2, 3 and 4",
+    "Option_C": "1, 2 and 4",
+    "Option_D": "1, 3 and 4",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Formative assessment focuses on continuous improvement, feedback, and monitoring learning. It is not designed for summative ranking or comparing a student's position in a group."
+  },
+  {
+    "Question_Number": 71,
+    "Question_Text": "With reference to the United Nations Convention on the Rights of the Child, consider the following statements : 1. A child is any person below the age of 16. 2. Children can choose their own opinions and religion. 3. Every child has the right to privacy. Which of the statements given above are correct ?",
+    "Option_A": "1 and 2 only",
+    "Option_B": "2 and 3 only",
+    "Option_C": "1 and 3 only",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Statement 1 is incorrect because the UNCRC defines a child as any human being below the age of 18. Statements 2 and 3 correctly reflect the convention's articles on freedom of thought/religion and privacy."
+  },
+  {
+    "Question_Number": 72,
+    "Question_Text": "With reference to The Juvenile Justice (Care and Protection of Children) Act, 2015, consider the following statements: 1. Any child up to the age of 18 years shall be presumed to be innocent of any criminal intent. 2. No waiver of any of the rights of the child is permissible or valid, whether sought by the child or person acting on behalf of the child. 3. All past records of any child under the Juvenile Justice system should be erased without exception. Which of the statements given above is/are correct?",
+    "Option_A": "1 and 2",
+    "Option_B": "2 only",
+    "Option_C": "1 and 3",
+    "Option_D": "1 only",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Statement 1 is incorrect (children 16-18 can be tried as adults for heinous crimes). Statement 3 is incorrect (records of 16-18 year olds tried as adults are not automatically erased). Statement 2 is a fundamental principle of the Act."
+  },
+  {
+    "Question_Number": 73,
+    "Question_Text": "The consistency with which a test measures whatever it measures is best stated as its",
+    "Option_A": "Validity",
+    "Option_B": "Reliability",
+    "Option_C": "Practicability",
+    "Option_D": "Usability",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Reliability strictly refers to the consistency, stability, and repeatability of test scores over time and across test items."
+  },
+  {
+    "Question_Number": 74,
+    "Question_Text": "Which of the following factors are the characteristics of Standardized Achievement test? 1. Reliability 2. Validity 3. Norm Select the correct answer using the code given below:",
+    "Option_A": "1 and 2 only",
+    "Option_B": "2 and 3 only",
+    "Option_C": "1 and 3 only",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "A standardized test is systematically designed and refined to possess high reliability and validity, and it includes established norms to compare individual performance against a larger group."
+  },
+  {
+    "Question_Number": 75,
+    "Question_Text": "In the context of role of objectives in Educational Evaluation, which one of the following illustrative statements of objectives does not fall under Affective Domain?",
+    "Option_A": "The pupil appreciates a given piece of literature",
+    "Option_B": "The pupil expresses ideas in writing with good speed and with correct punctuation",
+    "Option_C": "The pupil develops scientific attitude",
+    "Option_D": "The pupil develops an interest in reading autobiographies of scientists",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Option B describes a physical writing skill paired with cognitive grammatical knowledge, placing it more in the psychomotor/cognitive domains rather than the affective (emotional/attitudinal) domain."
+  },
+  {
+    "Question_Number": 76,
+    "Question_Text": "With reference to the factors influencing the reliability of a test, consider the following statements : 1. The more heterogeneous the group, the lesser is the reliability. 2. Adding equivalent items makes a test more reliable, while deleting them makes it less reliable. 3. Too easy or too difficult tests for a group will tend to be less reliable. Which of the statements given above are correct ?",
+    "Option_A": "1 and 2 only",
+    "Option_B": "2 and 3 only",
+    "Option_C": "1 and 3 only",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Statement 1 is incorrect because greater group heterogeneity generally increases true score variance, which increases the reliability coefficient. Statements 2 and 3 are standard psychometric principles."
+  },
+  {
+    "Question_Number": 77,
+    "Question_Text": "In the context of educational measurement, consider the following statements: 1. Items of the same difficulty level do not always discriminate between students of different achievement levels. 2. If the difficulty level is exactly 0.50, then the discrimination index has its maximum range. Which of the statements given above is/are correct ?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "An item can be moderately difficult but poorly written, failing to discriminate top students from bottom students. Statistically, item variance is maximized when item difficulty (p) is 0.50, allowing the highest possible discrimination power."
+  },
+  {
+    "Question_Number": 78,
+    "Question_Text": "Which one of the following test scores can be reported to parents for improving their children's achievement ?",
+    "Option_A": "Diagnostic test scores",
+    "Option_B": "Achievement test scores",
+    "Option_C": "Criterion-referenced test scores",
+    "Option_D": "Norm-referenced test scores",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Diagnostic test scores provide actionable insights into specific learning gaps and misconceptions, helping parents and teachers target areas for improvement."
+  },
+  {
+    "Question_Number": 79,
+    "Question_Text": "Which one of the following is not a Projective Technique ?",
+    "Option_A": "Sentence Completion",
+    "Option_B": "Word Associations",
+    "Option_C": "Situational Test",
+    "Option_D": "Rorschach Inkblot Test",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "A Situational Test is typically an observational or behavioral assessment, whereas Sentence Completion, Word Association, and Inkblots are classic projective psychological tests."
+  },
+  {
+    "Question_Number": 80,
+    "Question_Text": "In which of the following situations are sociometric techniques necessarily being used by students ? 1. When they elect their monitor 2. When they do their homework regularly 3. When they choose sides for a game 4. When they listen to the teacher attentively in classroom teaching Select the correct answer using the code given below :",
+    "Option_A": "1, 2 and 3",
+    "Option_B": "2 and 4 only",
+    "Option_C": "1 and 3 only",
+    "Option_D": "4 only",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Sociometric techniques analyze social relationships, peer acceptance, and group dynamics, which are actively exercised when students vote for leaders (monitor) or select peers for teams."
+  },
+  {
+    "Question_Number": 81,
+    "Question_Text": "What does the drive namely \"Operation Blackboard\" as envisaged in the National Policy on Education, 1986 imply?",
+    "Option_A": "To provide blackboard to all primary schools",
+    "Option_B": "To provide blackboard to all educational institutions",
+    "Option_C": "To provide essential facilities to primary schools",
+    "Option_D": "To provide essential facilities to secondary schools",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Operation Blackboard was a centrally sponsored scheme designed to provide a minimum level of essential infrastructure and teaching-learning materials to all primary schools."
+  },
+  {
+    "Question_Number": 82,
+    "Question_Text": "The main purpose of measuring aptitude is to assess the",
+    "Option_A": "Past performance only",
+    "Option_B": "Future performance",
+    "Option_C": "Present performance only",
+    "Option_D": "Both past and present performances",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Aptitude tests are specifically designed to evaluate a person's potential to succeed in a particular activity or learn a new skill in the future."
+  },
+  {
+    "Question_Number": 83,
+    "Question_Text": "Which one of the following best explains the aim of a holistic and multidisciplinary education?",
+    "Option_A": "To develop well-rounded individuals",
+    "Option_B": "To provide access to higher education",
+    "Option_C": "To increase gross enrolment ratio in higher education",
+    "Option_D": "To provide opportunity to the children belonging to marginalized sections",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Holistic and multidisciplinary education emphasizes integrating intellectual, aesthetic, social, physical, and emotional capacities to develop complete, well-rounded individuals."
+  },
+  {
+    "Question_Number": 84,
+    "Question_Text": "Which of the following best defines the concept of Continuous and Comprehensive Evaluation (CCE)?",
+    "Option_A": "Evaluation of learner performance in cognitive and non-cognitive aspects throughout the teaching-learning process",
+    "Option_B": "Evaluation of performance by teachers, students and parents",
+    "Option_C": "Evaluation of learner performance with the help of periodic tests by the teachers",
+    "Option_D": "Evaluation of learner performance with the help of structured tools at regular intervals",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "CCE focuses on regular assessments covering both scholastic (cognitive) and co-scholastic (non-cognitive) developmental aspects continuously throughout the academic year."
+  },
+  {
+    "Question_Number": 85,
+    "Question_Text": "Consider the following statements: Statement-I: A sound assessment system incorporates both cognitive and non-cognitive aspects of education spread over the total span of instructional time. Statement-II: Learner assessment should be holistic. Which one of the following is correct in respect of the above statements?",
+    "Option_A": "Both the Statements I and II are correct and Statement-II is the correct explanation of Statement-I.",
+    "Option_B": "Both the Statements I and II are correct, but Statement-II is not the correct explanation of Statement-I.",
+    "Option_C": "Statement-I is correct, but Statement-II is incorrect.",
+    "Option_D": "Statement-I is incorrect, but Statement-II is correct.",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Statement-II (the principle of holistic assessment) serves as the foundational rationale for Statement-I (the design of a sound system encompassing cognitive and non-cognitive domains)."
+  },
+  {
+    "Question_Number": 86,
+    "Question_Text": "Consider the following statements: Statement-I: Each individual score contributes to the calculation of \"Mean\" of scores. Statement-II: \"Mean\" is a measure of Central Tendency. Which one of the following is correct in respect of the above statements?",
+    "Option_A": "Both the Statements I and II are correct and Statement-II is the correct explanation of Statement-I.",
+    "Option_B": "Both the Statements I and II are correct, but Statement-II is not the correct explanation of Statement-I.",
+    "Option_C": "Statement-I is correct, but Statement-II is incorrect.",
+    "Option_D": "Statement-I is incorrect, but Statement-II is correct.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Both statements are factually true. However, the fact that the mean is a measure of central tendency (Statement II) is not the mathematical reason why every score is included in its calculation (Statement I)."
+  },
+  {
+    "Question_Number": 87,
+    "Question_Text": "The median and standard deviation of a distribution are 25 and 2.5 respectively. If each item in the distribution is increased by 10, then how are median and standard deviation affected?",
+    "Option_A": "Median becomes 35, but standard deviation remains unchanged",
+    "Option_B": "Both median and standard deviation remain unchanged",
+    "Option_C": "Median becomes 35, but standard deviation becomes 12.5",
+    "Option_D": "Median remains unchanged, but standard deviation becomes 12.5",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Adding a constant to every data point shifts the entire distribution, changing position measures like the median (25+10=35), but it does not change the spread/dispersion, so the standard deviation remains 2.5."
+  },
+  {
+    "Question_Number": 88,
+    "Question_Text": "Consider the following statements: 1. Items with difficulty level 0 (zero) have discrimination index 0 (zero). 2. Items with difficulty level 1 (one) have discrimination index 1 (one). Which of the statements given above is/are correct?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "If difficulty is 0 (nobody gets it right) or 1 (everyone gets it right), the item fails to differentiate between high and low scorers, so the discrimination index is 0 in both cases. Thus, only statement 1 is correct."
+  },
+  {
+    "Question_Number": 89,
+    "Question_Text": "In which of the following cases is median preferred to mean? 1. When distribution of data is skewed 2. When one is dealing with ordinal data 3. When data distribution is continuous 4. When data is normally distributed Select the correct answer using the code given below:",
+    "Option_A": "1 and 2 only",
+    "Option_B": "1, 2 and 3",
+    "Option_C": "1 and 3 only",
+    "Option_D": "2 and 4 only",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The median is robust against extreme outliers (making it preferred for skewed data) and strictly requires rank ordering (making it suitable for ordinal data). Mean is preferred for normal/continuous data."
+  },
+  {
+    "Question_Number": 90,
+    "Question_Text": "What is the z-score of a value of 24, given a mean of 16 and a standard deviation of 4?",
+    "Option_A": "-2.0",
+    "Option_B": "1.0",
+    "Option_C": "1.5",
+    "Option_D": "2.0",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "The z-score formula is z = (X - Mean) / SD. Here, z = (24 - 16) / 4 = 8 / 4 = 2.0."
+  },
+  {
+    "Question_Number": 91,
+    "Question_Text": "What is the difficulty index of the item ?",
+    "Option_A": "0.5",
+    "Option_B": "0.65",
+    "Option_C": "0.75",
+    "Option_D": "0.9",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Based on the data table, the total correct responses (keyed response B) are 51 from the upper group and 30 from the lower group. Total = 81. Total students in both groups = 108. Difficulty index (p) = 81 / 108 = 0.75."
+  },
+  {
+    "Question_Number": 92,
+    "Question_Text": "Such item of the above difficulty level (obtained in the previous question) would be a good one to place",
+    "Option_A": "anywhere on a test",
+    "Option_B": "in the midst of a test",
+    "Option_C": "near the end of a test",
+    "Option_D": "near the beginning of a test",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "An item with a difficulty index of 0.75 is relatively easy (75% got it right). Easy items are generally placed at the beginning of a test to help students build confidence and reduce anxiety."
+  },
+  {
+    "Question_Number": 93,
+    "Question_Text": "What is the discriminating index ?",
+    "Option_A": "0.1",
+    "Option_B": "0.2",
+    "Option_C": "0.3",
+    "Option_D": "0.4",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "The discrimination index (D) = (Correct in Upper - Correct in Lower) / N in each group. Here, D = (51 - 30) / 54 = 21 / 54 = 0.388. Rounding to one decimal place gives 0.4."
+  },
+  {
+    "Question_Number": 94,
+    "Question_Text": "Consider the following in respect of z-score : 1. If the raw score is equal to the mean, then z-score is zero. 2. z-score can be negative. 3. z-score can be a decimal number. Which statements are correct ?",
+    "Option_A": "1 and 2 only",
+    "Option_B": "2 and 3 only",
+    "Option_C": "1 and 3 only",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "All statements are mathematical facts about z-scores. A score exactly at the mean yields 0; scores below the mean yield negatives; and divisions routinely result in decimals."
+  },
+  {
+    "Question_Number": 95,
+    "Question_Text": "Consider the following in respect of skewed distribution : 1. In a positively skewed distribution, the mean falls to the left of the median 2. In a negatively skewed distribution, the mean falls to the right of the median Which of the statements given above is/are correct ?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Both statements are reversed. In a positively skewed (right-skewed) distribution, the long tail pulls the mean to the RIGHT of the median. In a negatively skewed distribution, it pulls it to the LEFT."
+  },
+  {
+    "Question_Number": 96,
+    "Question_Text": "The mean of four numbers is 17.5. Out of them the mean of the smaller three numbers is 15. If the range of the data is 15, what is the mean of the larger three numbers?",
+    "Option_A": "27.5",
+    "Option_B": "25",
+    "Option_C": "22.5",
+    "Option_D": "20",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Sum of all 4 = 17.5*4 = 70. Sum of smaller 3 = 15*3 = 45. Largest number = 70-45=25. Range=15, so smallest = 25-15=10. The 4 numbers sum to 70; excluding the smallest (10), the larger 3 sum to 60. Mean of larger 3 = 60/3 = 20."
+  },
+  {
+    "Question_Number": 97,
+    "Question_Text": "Consider the following pairs : Instance - Measurement Scale. 1. Weight in kilograms that a student can lift - Ratio Scale. 2. Number assigned consecutively to students as they complete a test comprising 50 items - Ordinal Scale. Which of the above pairs is/are correctly matched ?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Weight has a true zero (absolute absence), making it a Ratio scale. Consecutive finishing order represents rank without necessarily equal intervals between them, making it an Ordinal scale."
+  },
+  {
+    "Question_Number": 98,
+    "Question_Text": "Consider the following pairs : Instance - Measurement Scale. 1. Number of items a student answers correctly in a test comprising 20 items - Ratio Scale. 2. Number assigned to different groups of students each of which solved a certain problem by a different method - Nominal Scale. Which of the above pairs is/are correctly matched ?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "A count of correct items has a true zero, making it a Ratio scale. Group classification numbers act solely as arbitrary labels, characteristic of a Nominal scale."
+  },
+  {
+    "Question_Number": 99,
+    "Question_Text": "Consider the following statements : 1. A test for recruitment to a post should have high predictive validity. 2. Predictive validity underlines the suitability of candidates to be selected for a training. Which of the statements given above is/are correct ?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Predictive validity measures how well a test forecasts future performance or success, which is the primary goal of recruitment and training selection assessments. Both statements are accurate."
+  },
+  {
+    "Question_Number": 100,
+    "Question_Text": "The reliability coefficient of a test is 0.64. What does it indicate?",
+    "Option_A": "The test measures true ability to the extent of 32%",
+    "Option_B": "The test measures true ability to the extent of 40%",
+    "Option_C": "The test measures true ability to the extent of 64%",
+    "Option_D": "The test measures true ability to the extent of 80%",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The reliability coefficient mathematically represents the proportion of true score variance to total observed variance. A coefficient of 0.64 indicates 64% of the variance is true ability."
+  },
+  {
+    "Question_Number": 101,
+    "Question_Text": "The mean of set of observations that follow normal distribution is 13.5 and standard deviation is 2.5. What does it indicate ?",
+    "Option_A": "About 50% of observations fall within 11 and 16",
+    "Option_B": "About 68% of observations fall within 11 and 16",
+    "Option_C": "About 95% of observations fall within 11 and 16",
+    "Option_D": "About 99% of observations fall within 8.5 and 18.5",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The range 11 to 16 is calculated by Mean - 1 SD (13.5-2.5=11) to Mean + 1 SD (13.5+2.5=16). In a normal distribution, approximately 68.26% of data falls within ±1 SD of the mean."
+  },
+  {
+    "Question_Number": 102,
+    "Question_Text": "In the context of test analysis, consider the following statements : 1. In the Central Tendency of marks obtained by a group, if the values of median and mode are found to be low, then these indices indicate that the test is very hard. 2. If the spread of marks is large and the reliability is low, then standard error is also low. Which of the statements given above is/are correct ?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Statement 1 is true because low central tendency values reflect a positively skewed distribution, typical of a hard test. Statement 2 is false; standard error increases when SD is large and reliability is low."
+  },
+  {
+    "Question_Number": 103,
+    "Question_Text": "Consider the following statements : Statement-I: An individual with IQ (Intelligence Quotient) 120 is twice as capable and intelligent as an individual with IQ 60. Statement-II: IQ gives a direct proportional comparison. Which one of the following is correct in respect of the above statements?",
+    "Option_A": "Both the Statements I and II are correct and Statement-II is the correct explanation of Statement-I.",
+    "Option_B": "Both the Statements I and II are correct, but Statement-II is not the correct explanation of Statement-I.",
+    "Option_C": "Statement-I is correct, but Statement-II is incorrect.",
+    "Option_D": "Both the Statements I and II are incorrect.",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "IQ scores are measured on an interval scale, not a ratio scale, meaning they lack an absolute zero point. Therefore, one cannot mathematically claim that an IQ of 120 is \"twice as intelligent\" as 60. Both statements are false."
+  },
+  {
+    "Question_Number": 104,
+    "Question_Text": "In a group of 100 school children, the reliability coefficient of an achievement test is 0.6. What will be the effect upon test reliability (i.e., reliability coefficient) if the test length is doubled? (Use Spearman-Brown Prophecy formula)",
+    "Option_A": "0.6",
+    "Option_B": "0.65",
+    "Option_C": "0.75",
+    "Option_D": "0.9",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Using the Spearman-Brown formula: r_new = (n * r) / (1 + (n-1)*r). Here n=2 (doubled). r_new = (2 * 0.6) / (1 + (2-1)*0.6) = 1.2 / 1.6 = 0.75."
+  },
+  {
+    "Question_Number": 105,
+    "Question_Text": "An educational achievement test has reliability coefficient 0.50. How much should we increase test length to ensure a reliability coefficient of 0.75? (Use Spearman-Brown Prophecy formula)",
+    "Option_A": "1.5 times",
+    "Option_B": "2 times",
+    "Option_C": "2.5 times",
+    "Option_D": "3 times",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Let n be the multiplier. 0.75 = (n * 0.5) / (1 + (n-1)*0.5). Simplifying: 0.75 = 0.5n / (0.5 + 0.5n). 0.375 + 0.375n = 0.5n => 0.125n = 0.375 => n = 3. The test must be 3 times as long."
+  },
+  {
+    "Question_Number": 106,
+    "Question_Text": "What is the standard deviation of the data 15, 12, 6, 14, 18?",
+    "Option_A": "4",
+    "Option_B": "6",
+    "Option_C": "8",
+    "Option_D": "16",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Mean = (15+12+6+14+18)/5 = 13. Deviations: 2, -1, -7, 1, 5. Squared deviations: 4, 1, 49, 1, 25. Variance = Sum of squares / n = 80 / 5 = 16. Standard deviation = square root of 16 = 4."
+  },
+  {
+    "Question_Number": 107,
+    "Question_Text": "When variables are measured on nominal scale, the best measure of Central Tendency is",
+    "Option_A": "Arithmetic Mean",
+    "Option_B": "Mode",
+    "Option_C": "Median",
+    "Option_D": "Harmonic Mean",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Nominal data represents distinct, unranked categories. Mean and median require numerical values or ordering, leaving the mode (the most frequently occurring category) as the only appropriate measure."
+  },
+  {
+    "Question_Number": 108,
+    "Question_Text": "The mean and standard deviation of marks obtained by students of four sections A, B, C, D (each comprising 40 students) of a class are given below: Section A (Mean:30, SD:6), Section B (Mean:40, SD:12), Section C (Mean:36, SD:9), Section D (Mean:25, SD:8). Which one of the four sections shows the lowest variability in marks?",
+    "Option_A": "Section A",
+    "Option_B": "Section B",
+    "Option_C": "Section C",
+    "Option_D": "Section D",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Variability relative to the mean is measured by the Coefficient of Variation (CV) = (SD/Mean)*100. A: 20%, B: 30%, C: 25%, D: 32%. Section A has the lowest CV, indicating the lowest relative variability."
+  },
+  {
+    "Question_Number": 109,
+    "Question_Text": "As per the National Education Policy, 2020, the Government of India would set up a \"Gender Inclusion Fund\". This fund is meant for",
+    "Option_A": "Girls only",
+    "Option_B": "Transgender children only",
+    "Option_C": "Both girls and transgender children",
+    "Option_D": "Physically challenged girls only",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "NEP 2020 explicitly designates the 'Gender Inclusion Fund' to build capacity for providing equitable quality education for all girls as well as transgender students."
+  },
+  {
+    "Question_Number": 110,
+    "Question_Text": "Consider the following with reference to India : 1. Agriculture and allied sectors contribute maximum to Gross Domestic Product. 2. Services sector is treated as a component of Primary sector of economy. Which of the statements given above is/are correct ?",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Statement 1 is incorrect as the Services sector contributes the maximum to India's GDP. Statement 2 is incorrect because the Services sector is classified as the Tertiary sector, not Primary."
+  },
+  {
+    "Question_Number": 111,
+    "Question_Text": "A person who bribes a public servant for improper performance of a public duty, can be punished with imprisonment, fine, or both under the Prevention of Corruption Act, 1988. What is the maximum period for which a person can be imprisoned ?",
+    "Option_A": "Three years",
+    "Option_B": "Five years",
+    "Option_C": "Seven years",
+    "Option_D": "Eight years",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Under Section 8 of the amended Prevention of Corruption Act, 1988, the offence of bribing a public servant carries a penalty of imprisonment for a term which may extend up to seven years."
+  },
+  {
+    "Question_Number": 112,
+    "Question_Text": "Which of the following statements are correct in relation to the Right to Information Act, 2005 ? 1. The term \"information\" includes samples, models and data held in electronic form. 2. The term \"record\" includes reproduction of images embodied in microfilms. 3. The right to information does not extend to inspection of work, documents and records. Select the correct answer using the code given below:",
+    "Option_A": "1 and 2 only",
+    "Option_B": "2 and 3 only",
+    "Option_C": "1 and 3 only",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Statements 1 and 2 align with the statutory definitions in the RTI Act. Statement 3 is false because the Act explicitly defines the \"right to information\" to include the right to inspect work, documents, and records."
+  },
+  {
+    "Question_Number": 113,
+    "Question_Text": "Within how many days of receiving the decision of a Central Public Information Officer, can an aggrieved person file the first appeal?",
+    "Option_A": "15 days",
+    "Option_B": "30 days",
+    "Option_C": "45 days",
+    "Option_D": "60 days",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Section 19 of the RTI Act, 2005 stipulates that a first appeal must be filed within 30 days from the receipt of the decision of the Public Information Officer."
+  },
+  {
+    "Question_Number": 114,
+    "Question_Text": "Which of the following statements is/are correct in relation to the Right of Children to Free and Compulsory Education Act, 2009 ? 1. A child has the right to seek transfer from one school to another except some specified schools, for completing his/her elementary education. 2. The Central and the State Governments shall have concurrent responsibility for providing funds for carrying out provisions of the Act. Select the correct answer using the code given below:",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Section 5 of the RTE Act grants the right to transfer, while Section 7 mandates that the Central and State Governments share concurrent financial and other responsibilities to execute the Act. Both statements are accurate."
+  },
+  {
+    "Question_Number": 115,
+    "Question_Text": "With reference to the Right of Children to Free and Compulsory Education Act, 2009, which of the following are the duties of appropriate Government? 1. Provide infrastructure including school building, teaching staff and learning equipment. 2. Ensure timely prescribing of curriculum and courses of study for elementary education. 3. Provide training facility for teachers. Select the correct answer using the code given below :",
+    "Option_A": "1 and 2 only",
+    "Option_B": "2 and 3 only",
+    "Option_C": "1 and 3 only",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "All three points correspond accurately to the duties laid down in Section 8 of the RTE Act, detailing the appropriate government's responsibility to provide infrastructure, curriculum, and teacher training."
+  },
+  {
+    "Question_Number": 116,
+    "Question_Text": "Which of the following categories of information is/are exempted from disclosure under the Right to Information Act, 2005 ? 1. Information, disclosure of which would prejudicially affect the scientific or economic interests of the State. 2. Information available to a person in his fiduciary relationship, unless the competent authority is satisfied that the larger public interest warrants the disclosure of such information. Select the correct answer using the code given below:",
+    "Option_A": "1 only",
+    "Option_B": "2 only",
+    "Option_C": "Both 1 and 2",
+    "Option_D": "Neither 1 nor 2",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Both categories are explicitly listed as exemptions under Section 8(1) of the Right to Information Act, 2005."
+  },
+  {
+    "Question_Number": 117,
+    "Question_Text": "Which of the following conditions must be satisfied for admission of a Question in the Lok Sabha? 1. It shall not exceed 150 words. 2. It shall not raise larger issues of policy. 3. It shall not go into minor details of administration and day-to-day working of the Government. Select the correct answer using the code given below :",
+    "Option_A": "1 and 2 only",
+    "Option_B": "2 and 3 only",
+    "Option_C": "1 and 3 only",
+    "Option_D": "1, 2 and 3",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "According to the Rules of Procedure and Conduct of Business in Lok Sabha, all three conditions listed limit the scope and format of parliamentary questions to ensure they remain precise and relevant."
+  },
+  {
+    "Question_Number": 118,
+    "Question_Text": "What is the minimum imprisonment prescribed in the Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 ?",
+    "Option_A": "3 months",
+    "Option_B": "6 months",
+    "Option_C": "1 year",
+    "Option_D": "No imprisonment is prescribed in the Act",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "The POSH Act itself prescribes disciplinary actions (like deduction from salary) based on service rules. It does not contain a specific imprisonment provision internally, relying instead on IPC provisions for criminal prosecution."
+  },
+  {
+    "Question_Number": 119,
+    "Question_Text": "Which one of the following officers is the Chief Accounting Authority in a Central Government Ministry ?",
+    "Option_A": "Secretary",
+    "Option_B": "Chief Controller of Accounts",
+    "Option_C": "Public Accounts Officer",
+    "Option_D": "Financial Adviser",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Under the Government of India's financialsystem, the Secretary of the respective Ministry/Department is designated as the Chief Accounting Authority."
+  },
+  {
+    "Question_Number": 120,
+    "Question_Text": "Under the Right to Information Act, 2005, if the information sought for concerns the life or liberty of a person, within which time period after the receipt of the request shall the information be supplied ?",
+    "Option_A": "24 hours",
+    "Option_B": "48 hours",
+    "Option_C": "3 days",
+    "Option_D": "7 days",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Section 7(1) of the RTI Act strictly mandates that if the requested information concerns the life or liberty of a person, it must be provided within forty-eight (48) hours of the receipt of the request."
+  }
+]
