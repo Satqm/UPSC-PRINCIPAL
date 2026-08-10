@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UPSC Principal Exam - Interactive MCQ Practice</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top center, #1b0a3f 0%, #05010a 100%);
+      color: #ffffff;
+      min-height: 100vh;
+      background-attachment: fixed;
+    }
+    
+    .glass-card {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    }
+    
+    .option-btn {
+      background: linear-gradient(145deg, #182260 0%, #0b0f33 100%);
+      border: 1px solid #3b82f6;
+      transition: all 0.2s ease-in-out;
+    }
+    
+    .option-btn:hover:not(:disabled) {
+      background: linear-gradient(145deg, #1e3a8a 0%, #172554 100%);
+      border-color: #f59e0b;
+      box-shadow: 0 0 15px rgba(245, 158, 11, 0.4);
+      transform: translateY(-2px);
+    }
+    
+    .option-selected {
+      background: linear-gradient(145deg, #d97706 0%, #92400e 100%) !important;
+      border-color: #fef08a !important;
+      animation: pulse 0.8s infinite alternate;
+    }
+    
+    .option-correct {
+      background: linear-gradient(145deg, #166534 0%, #14532d 100%) !important;
+      border-color: #4ade80 !important;
+      box-shadow: 0 0 20px rgba(34, 197, 94, 0.6);
+    }
+    
+    .option-wrong {
+      background: linear-gradient(145deg, #991b1b 0%, #7f1d1d 100%) !important;
+      border-color: #fca5a5 !important;
+      box-shadow: 0 0 20px rgba(239, 68, 68, 0.6);
+    }
+    
+    .glow-gold {
+      text-shadow: 0 0 10px #f59e0b, 0 0 20px #f59e0b;
+    }
+
+    /* Social Branding Icons */
+    .sf-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+      transition: all 0.3s ease;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .sf-icon.ig { border: 1px solid #e1306c; color: #e1306c; }
+    .sf-icon.ig:hover { background: #e1306c; color: #fff; box-shadow: 0 0 15px #e1306c; transform: translateY(-3px); }
+    
+    .sf-icon.li { border: 1px solid #0077b5; color: #0077b5; }
+    .sf-icon.li:hover { background: #0077b5; color: #fff; box-shadow: 0 0 15px #0077b5; transform: translateY(-3px); }
+    
+    .sf-icon.yt { border: 1px solid #ff0000; color: #ff0000; }
+    .sf-icon.yt:hover { background: #ff0000; color: #fff; box-shadow: 0 0 15px #ff0000; transform: translateY(-3px); }
+    
+    .sf-icon.tg { border: 1px solid #0088cc; color: #0088cc; }
+    .sf-icon.tg:hover { background: #0088cc; color: #fff; box-shadow: 0 0 15px #0088cc; transform: translateY(-3px); }
+
+    /* Scrollbar styling */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.4); }
+
+    /* Table Styling for Syllabus */
+    .syllabus-table th {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      border-bottom: 2px solid #f59e0b;
+    }
+    .syllabus-table td {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .syllabus-table tr:hover td {
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+  </style>
+</head>
+<body class="flex flex-col min-h-screen p-3 md:p-6 overflow-x-hidden">
+
+  <!-- Header -->
+  <header class="flex flex-wrap justify-between items-center gap-3 glass-card p-4 rounded-2xl max-w-5xl mx-auto w-full border-t-2 border-yellow-500/50">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-yellow-500/20 border-2 border-yellow-500 flex items-center justify-center text-yellow-400 text-sm md:text-base font-bold glow-gold shrink-0">
+        UPSC
+      </div>
+      <div>
+        <h1 class="text-base md:text-lg font-bold text-yellow-400 leading-tight">PRINCIPAL EXAM</h1>
+        <p class="text-[10px] md:text-xs text-gray-300 hidden sm:block">Interactive MCQs & Syllabus</p>
+      </div>
+    </div>
+
+    <!-- Right Controls: Lifelines & Reset -->
+    <div class="flex items-center gap-2 md:gap-3" id="header-controls">
+      <button onclick="retakeQuiz()" class="px-2.5 py-1.5 md:px-3 md:py-2 rounded-lg bg-red-900/40 border border-red-500/50 text-[10px] md:text-xs font-bold text-red-200 hover:bg-red-600 transition flex items-center gap-1.5">
+        <i class="fa-solid fa-rotate-right"></i> <span class="hidden sm:inline">Retake</span>
+      </button>
+
+      <button id="life-5050" onclick="use5050()" class="w-9 h-9 md:w-11 md:h-11 rounded-full bg-blue-900/80 border border-cyan-400 flex items-center justify-center text-[10px] md:text-xs font-bold hover:bg-cyan-500 hover:text-black transition">
+        50:50
+      </button>
+      <button id="life-poll" onclick="useAudiencePoll()" class="w-9 h-9 md:w-11 md:h-11 rounded-full bg-blue-900/80 border border-cyan-400 flex items-center justify-center text-xs md:text-sm font-bold hover:bg-cyan-500 hover:text-black transition">
+        <i class="fa-solid fa-chart-bar"></i>
+      </button>
+      <button id="life-expert" onclick="useExpertAdvice()" class="w-9 h-9 md:w-11 md:h-11 rounded-full bg-blue-900/80 border border-cyan-400 flex items-center justify-center text-xs md:text-sm font-bold hover:bg-cyan-500 hover:text-black transition">
+        <i class="fa-solid fa-user-tie"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mode & Tab Switcher -->
+  <div class="flex justify-center mt-5 max-w-5xl mx-auto w-full z-10 flex-wrap gap-2">
+    <div class="glass-card p-1.5 rounded-full flex flex-wrap justify-center gap-1 border border-yellow-500/30 bg-black/30">
+      <button id="btn-mode-v1" onclick="switchTab('exam-questions-v1')" class="px-4 md:px-5 py-2 rounded-full text-xs md:text-sm font-bold transition flex items-center gap-2">
+        <i class="fa-solid fa-book-open"></i> Set 1 (v1)
+      </button>
+      <button id="btn-mode-v2" onclick="switchTab('exam-questions-v2')" class="px-4 md:px-5 py-2 rounded-full text-xs md:text-sm font-bold transition flex items-center gap-2">
+        <i class="fa-solid fa-briefcase"></i> Set 2 (v2)
+      </button>
+      <button id="btn-mode-syllabus" onclick="switchTab('syllabus')" class="px-4 md:px-5 py-2 rounded-full text-xs md:text-sm font-bold transition flex items-center gap-2">
+        <i class="fa-solid fa-list-check"></i> View Syllabus
+      </button>
+    </div>
+  </div>
+
+  <!-- MAIN VIEW 1: Syllabus Tab -->
+  <main id="syllabus-container" class="hidden flex-grow flex-col justify-start max-w-5xl mx-auto w-full my-6 space-y-6">
+    <div class="glass-card bg-gradient-to-br from-blue-950/90 to-indigo-950/90 border-t-4 border-yellow-500 p-5 md:p-8 rounded-2xl shadow-2xl overflow-hidden">
+      <h2 class="text-2xl md:text-3xl font-bold text-yellow-400 mb-6 text-center glow-gold">UPSC Principal Exam Pattern & Syllabus</h2>
+      
+      <div class="overflow-x-auto rounded-xl border border-gray-700">
+        <table class="w-full text-left border-collapse syllabus-table min-w-[700px]">
+          <thead>
+            <tr>
+              <th class="p-4 text-sm md:text-base">Category / Subject Area</th>
+              <th class="p-4 text-sm md:text-base text-center">Approx. No. of Questions</th>
+              <th class="p-4 text-sm md:text-base text-center">Estimated Weightage</th>
+              <th class="p-4 text-sm md:text-base">Key High-Yield Topics Covered</th>
+            </tr>
+          </thead>
+          <tbody class="text-sm md:text-base text-gray-200">
+            <tr>
+              <td class="p-4 font-semibold text-blue-300">Management & Financial Administration</td>
+              <td class="p-4 text-center font-mono">25 – 30</td>
+              <td class="p-4 text-center font-mono text-yellow-300">62.5 – 75 Marks</td>
+              <td class="p-4 text-gray-300">CCS Conduct Rules, CCS (CCA) Rules, General Financial Rules (GFR), Budgeting, FR & SR, LTC, TA/DA rules, CGHS guidelines.</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-semibold text-blue-300">Educational Policies, Measurement & Evaluation</td>
+              <td class="p-4 text-center font-mono">20 – 25</td>
+              <td class="p-4 text-center font-mono text-yellow-300">50 – 62.5 Marks</td>
+              <td class="p-4 text-gray-300">NEP 2020, NCF, CCE, PARAKH, Foundational Literacy & Numeracy (FLN), Inclusive Education, Special Needs Education.</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-semibold text-blue-300">Office Procedures & Statutory Regulations</td>
+              <td class="p-4 text-center font-mono">15 – 20</td>
+              <td class="p-4 text-center font-mono text-yellow-300">37.5 – 50 Marks</td>
+              <td class="p-4 text-gray-300">RTI Act (2005), POCSO Act, POSH Act, Rights of PwD Act, Office Manual, File Movement & Maintenance.</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-semibold text-blue-300">Reasoning Ability & Quantitative Aptitude</td>
+              <td class="p-4 text-center font-mono">15 – 20</td>
+              <td class="p-4 text-center font-mono text-yellow-300">37.5 – 50 Marks</td>
+              <td class="p-4 text-gray-300">Data Interpretation, Percentage, Profit & Loss, Syllogisms, Blood Relations, Coding-Decoding, Time & Work.</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-semibold text-blue-300">General Knowledge & Current Affairs</td>
+              <td class="p-4 text-center font-mono">15 – 18</td>
+              <td class="p-4 text-center font-mono text-yellow-300">37.5 – 45 Marks</td>
+              <td class="p-4 text-gray-300">Social/Economic issues, Government Schemes, Educational Initiatives, Basic Indian Polity & Indian Economy.</td>
+            </tr>
+            <tr>
+              <td class="p-4 font-semibold text-blue-300">Language Skills (English & Hindi)</td>
+              <td class="p-4 text-center font-mono">12 – 15</td>
+              <td class="p-4 text-center font-mono text-yellow-300">30 – 37.5 Marks</td>
+              <td class="p-4 text-gray-300">Grammar, Vocabulary, Comprehension Passages, Idioms/Phrases, Sentence Correction.</td>
+            </tr>
+            <tr class="bg-yellow-500/10 font-bold border-t-2 border-yellow-500">
+              <td class="p-4 text-yellow-400">Total</td>
+              <td class="p-4 text-center text-yellow-400 font-mono">120 Questions</td>
+              <td class="p-4 text-center text-yellow-400 font-mono">300 Marks</td>
+              <td class="p-4 text-yellow-400">100%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- MAIN VIEW 2: Quiz Dashboard -->
+  <main id="quiz-container" class="flex-grow flex flex-col justify-center max-w-5xl mx-auto w-full my-6 space-y-6">
+    
+    <!-- Question Container -->
+    <div class="relative w-full">
+      <div class="glass-card bg-gradient-to-br from-blue-950/80 to-indigo-950/80 border-t-4 border-yellow-500 p-5 md:p-8 rounded-2xl min-h-[140px] flex items-center shadow-2xl">
+        <p id="question-text" class="text-[15px] md:text-[17px] font-medium text-gray-50 whitespace-pre-wrap text-justify w-full leading-loose tracking-wide">
+          Loading questions...
+        </p>
+      </div>
+    </div>
+
+    <!-- Options Grid -->
+    <div id="options-grid" class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5 w-full">
+      <!-- Options inserted dynamically -->
+    </div>
+  </main>
+
+  <!-- Bottom Section: Navigation & Branding -->
+  <footer id="quiz-footer" class="max-w-5xl mx-auto w-full space-y-5 mt-auto">
+    
+    <!-- Navigation Bar -->
+    <div class="flex justify-between items-center glass-card p-3 md:p-4 rounded-xl" id="quiz-nav-bar">
+      <button onclick="prevQuestion()" class="px-4 py-2 md:px-6 md:py-2.5 rounded-lg bg-gray-800 border border-gray-600 hover:bg-gray-700 text-xs md:text-sm font-semibold text-gray-300 transition flex items-center gap-2 shrink-0">
+        <i class="fa-solid fa-arrow-left"></i> <span class="hidden sm:inline">Prev</span>
+      </button>
+      
+      <!-- Clean, responsive tracker -->
+      <div class="text-xs md:text-sm text-yellow-400 font-mono tracking-widest font-bold whitespace-nowrap px-2" id="score-counter">
+        Q: - / -
+      </div>
+      
+      <button onclick="nextQuestion()" class="px-4 py-2 md:px-6 md:py-2.5 rounded-lg bg-gradient-to-r from-yellow-500 to-amber-600 hover:from-yellow-400 hover:to-amber-500 text-black text-xs md:text-sm font-bold transition flex items-center gap-2 shrink-0">
+        <span class="hidden sm:inline">Skip</span> <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <!-- Interactive Social Branding -->
+    <section class="flex flex-col items-center justify-center py-2 pb-6">
+      <div class="section-footer flex gap-5 md:gap-6">
+           <a href="https://www.instagram.com/" target="_blank" class="sf-icon ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+           <a href="https://www.linkedin.com/in/satyam-kumar5286o" target="_blank" class="sf-icon li" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+           <a href="https://youtube.com/@observe_with_satyam" target="_blank" class="sf-icon yt" title="YouTube"><i class="fab fa-youtube"></i></a>
+           <a href="https://t.me/CA_Protracker" target="_blank" class="sf-icon tg" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+      </div>
+    </section>
+  </footer>
+
+  <!-- End Screen / Call to Action -->
+  <div id="end-screen" class="hidden flex-grow flex-col items-center justify-center max-w-4xl mx-auto w-full text-center space-y-6 my-10 px-4">
+    <div class="text-yellow-400 text-6xl md:text-7xl glow-gold mb-2"><i class="fa-solid fa-trophy"></i></div>
+    <h1 class="text-3xl md:text-4xl font-bold text-white tracking-wide">Quiz Completed!</h1>
+    <p class="text-base md:text-lg text-gray-300">You have successfully attempted all the questions in this set.</p>
+    
+    <div class="glass-card bg-gradient-to-b from-blue-900/40 to-black/60 border border-yellow-500/30 rounded-2xl p-6 md:p-8 mt-4 w-full">
+      <h3 class="text-xl md:text-2xl font-bold text-yellow-400 mb-2">Developed with ❤️ by Satyam</h3>
+      <p class="text-sm md:text-base text-gray-300 mb-6">Master UPSC Principal Concepts seamlessly. Support the effort by subscribing!</p>
+      
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="https://youtube.com/@observe_with_satyam" target="_blank" class="px-6 py-3 rounded-full bg-red-600 hover:bg-red-700 text-white font-bold text-sm md:text-base transition flex items-center justify-center gap-3 shadow-lg shadow-red-600/30">
+          <i class="fab fa-youtube text-xl"></i> Subscribe on YouTube
+        </a>
+        <button onclick="retakeQuiz()" class="px-6 py-3 rounded-full bg-gray-700 hover:bg-gray-600 border border-gray-500 text-white font-bold text-sm md:text-base transition flex items-center justify-center gap-3">
+          <i class="fa-solid fa-rotate-right"></i> Retake Quiz
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Simple Correct/Incorrect Popup -->
+  <div id="explanation-modal" class="fixed inset-0 bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 z-50 hidden">
+    <div class="glass-card bg-gradient-to-b from-slate-900 to-[#0b0f33] border border-yellow-500/50 rounded-2xl max-w-sm md:max-w-lg w-full p-6 md:p-8 text-center space-y-5 shadow-2xl">
+      
+      <h2 id="modal-title" class="text-2xl md:text-3xl font-bold flex items-center justify-center gap-3">
+        <!-- Status Title injected here -->
+      </h2>
+      
+      <div id="modal-subtitle" class="text-sm md:text-base text-gray-200 leading-relaxed font-medium">
+        <!-- Subtitle injected here -->
+      </div>
+
+      <div class="pt-3">
+        <button id="modal-continue-btn" onclick="nextQuestion()" class="px-8 py-3.5 bg-gradient-to-r from-yellow-500 to-amber-600 text-black rounded-xl font-bold text-sm md:text-base hover:from-yellow-400 hover:to-amber-500 transition shadow-lg w-full">
+          Next Question
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio Synthesis Engine -->
+  <script>
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    
+    function playBeep(freq = 440, type = 'sine', duration = 0.15) {
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = type;
+      osc.frequency.value = freq;
+      gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start();
+      osc.stop(audioCtx.currentTime + duration);
+    }
+
+    function soundCorrect() {
+      playBeep(523.25, 'triangle', 0.2);
+      setTimeout(() => playBeep(659.25, 'triangle', 0.2), 150);
+      setTimeout(() => playBeep(783.99, 'triangle', 0.4), 300);
+    }
+
+    function soundWrong() {
+      playBeep(220, 'sawtooth', 0.3);
+      setTimeout(() => playBeep(180, 'sawtooth', 0.5), 250);
+    }
+  </script>
+
+  <!-- Quiz & Tab Logic -->
+  <script>
+    // System Defaults & State
+    let currentTab = localStorage.getItem('upscAppMode') || 'exam-questions-v1'; // v1, v2, or syllabus
+    let questionsData = [];
+    let currentIdx = 0;
+    let selectedOption = null;
+    let isAnswered = false;
+
+    // Update Mode Buttons UI visually
+    function updateTabUI() {
+      const btnV1 = document.getElementById('btn-mode-v1');
+      const btnV2 = document.getElementById('btn-mode-v2');
+      const btnSyllabus = document.getElementById('btn-mode-syllabus');
+      
+      const activeClass = "px-4 md:px-5 py-2 rounded-full text-xs md:text-sm font-bold bg-gradient-to-r from-yellow-500 to-amber-600 text-black transition shadow-lg shadow-yellow-500/20 flex items-center gap-2";
+      const inactiveClass = "px-4 md:px-5 py-2 rounded-full text-xs md:text-sm font-bold text-gray-400 hover:text-white transition flex items-center gap-2";
+
+      btnV1.className = currentTab === 'exam-questions-v1' ? activeClass : inactiveClass;
+      btnV2.className = currentTab === 'exam-questions-v2' ? activeClass : inactiveClass;
+      btnSyllabus.className = currentTab === 'syllabus' ? activeClass : inactiveClass;
+
+      // Toggle Views
+      const quizContainer = document.getElementById('quiz-container');
+      const quizNav = document.getElementById('quiz-nav-bar');
+      const headerControls = document.getElementById('header-controls');
+      const syllabusContainer = document.getElementById('syllabus-container');
+      const endScreen = document.getElementById('end-screen');
+
+      if (currentTab === 'syllabus') {
+        quizContainer.classList.add('hidden');
+        quizNav.classList.add('hidden');
+        headerControls.classList.add('hidden');
+        endScreen.classList.add('hidden');
+        syllabusContainer.classList.remove('hidden');
+        syllabusContainer.classList.add('flex');
+      } else {
+        syllabusContainer.classList.add('hidden');
+        syllabusContainer.classList.remove('flex');
+        quizNav.classList.remove('hidden');
+        headerControls.classList.remove('hidden');
+        
+        // Fetch questions for the selected tab if moving out of syllabus
+        fetchQuestions(); 
+      }
+    }
+
+    // Function to Switch Tabs
+    function switchTab(tabId) {
+      if (currentTab === tabId) return; 
+      
+      currentTab = tabId;
+      localStorage.setItem('upscAppMode', tabId);
+      
+      updateTabUI();
+      if(tabId !== 'syllabus') {
+        resetLifelines(); 
+      }
+    }
+
+    // Advanced JSON Parser to handle your exact custom JSON format
+    function normalizeData(rawData) {
+      return rawData.map(item => {
+        // If it's already in the normalized format, just return it
+        if(item.question && item.options) return item;
+
+        // If it's your specific custom format:
+        if(item.Question_Text) {
+          // Determine correct index (0=A, 1=B, 2=C, 3=D)
+          let cIndex = 0;
+          let ansStr = String(item.Correct_Answer).toUpperCase();
+          if (ansStr.includes("A")) cIndex = 0;
+          else if (ansStr.includes("B")) cIndex = 1;
+          else if (ansStr.includes("C")) cIndex = 2;
+          else if (ansStr.includes("D")) cIndex = 3;
+
+          return {
+            question: item.Question_Text,
+            options: [item.Option_A, item.Option_B, item.Option_C, item.Option_D],
+            correctOption: cIndex,
+            explanation: item.Brief_Explanation || "No additional explanation provided."
+          };
+        }
+        return item; // Fallback
+      });
+    }
+
+    async function fetchQuestions() {
+      if (currentTab === 'syllabus') return;
+
+      const url = `./${currentTab}.json`; 
+      
+      try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        
+        const rawData = await response.json();
+        
+        // Normalize the JSON format dynamically
+        questionsData = normalizeData(rawData);
+        
+        if (questionsData.length > 0) {
+          currentIdx = parseInt(localStorage.getItem(`upscProgress_${currentTab}`)) || 0;
+          if (currentIdx >= questionsData.length) currentIdx = 0;
+          initGame();
+        } else {
+          document.getElementById('question-text').innerText = "No questions found in this file!";
+        }
+      } catch (error) {
+        console.error(`Failed to load ${url}:`, error);
+        document.getElementById('quiz-container').classList.remove('hidden');
+        document.getElementById('end-screen').classList.add('hidden');
+        document.getElementById('question-text').innerText = `Waiting for ${url} to be uploaded. Make sure the file exists in the same folder.`;
+        document.getElementById('options-grid').innerHTML = '';
+      }
+    }
+
+    function initGame() {
+      document.getElementById('end-screen').classList.add('hidden');
+      document.getElementById('quiz-container').classList.remove('hidden');
+      loadQuestion();
+    }
+
+    function loadQuestion() {
+      isAnswered = false;
+      selectedOption = null;
+
+      // Save mode-specific progress
+      localStorage.setItem(`upscProgress_${currentTab}`, currentIdx);
+
+      const q = questionsData[currentIdx];
+      document.getElementById('question-text').innerHTML = `<span class="text-yellow-400 font-bold tracking-wider">Q${currentIdx + 1}.</span> ${q.question}`;
+      document.getElementById('score-counter').innerText = `Q: ${currentIdx + 1} / ${questionsData.length}`;
+
+      const grid = document.getElementById('options-grid');
+      grid.innerHTML = '';
+
+      q.options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.id = `opt-${idx}`;
+        btn.onclick = () => selectOption(idx);
+        btn.className = "option-btn text-left p-4 md:p-5 text-[14px] md:text-[15px] font-medium rounded-xl flex items-start gap-3 w-full";
+        
+        // Option labels A, B, C, D
+        const label = String.fromCharCode(65 + idx);
+        
+        btn.innerHTML = `<span class="text-yellow-400 font-bold shrink-0 mt-0.5">${label}.</span> <span class="leading-relaxed">${opt}</span>`;
+        grid.appendChild(btn);
+      });
+    }
+
+    function selectOption(idx) {
+      if (isAnswered) return;
+      playBeep(300, 'sine', 0.1);
+
+      const buttons = document.getElementById('options-grid').children;
+      for (let btn of buttons) btn.classList.remove('option-selected');
+
+      selectedOption = idx;
+      document.getElementById(`opt-${idx}`).classList.add('option-selected');
+
+      setTimeout(() => lockAnswer(idx), 600);
+    }
+
+    function lockAnswer(idx) {
+      if (isAnswered) return;
+      isAnswered = true;
+
+      const q = questionsData[currentIdx];
+      const selectedBtn = document.getElementById(`opt-${idx}`);
+      const correctBtn = document.getElementById(`opt-${q.correctOption}`);
+
+      selectedBtn.classList.remove('option-selected');
+
+      if (idx === q.correctOption) {
+        selectedBtn.classList.add('option-correct');
+        soundCorrect();
+        setTimeout(() => showExplanation(true), 1000);
+      } else {
+        selectedBtn.classList.add('option-wrong');
+        if (correctBtn) correctBtn.classList.add('option-correct');
+        soundWrong();
+        setTimeout(() => showExplanation(false), 1000);
+      }
+    }
+
+    function showExplanation(isCorrect) {
+      const q = questionsData[currentIdx];
+      const modal = document.getElementById('explanation-modal');
+      const title = document.getElementById('modal-title');
+      const subtitle = document.getElementById('modal-subtitle');
+      const continueBtn = document.getElementById('modal-continue-btn');
+
+      if (isCorrect) {
+        title.innerHTML = `<i class="fa-solid fa-circle-check text-green-400 text-3xl"></i> <span class="text-green-400">Awesome!</span>`;
+        subtitle.innerHTML = `You selected the right answer.`;
+        if (q.explanation) subtitle.innerHTML += `<br><br><div class="text-gray-300 text-xs md:text-sm text-left bg-black/40 p-4 rounded-xl border border-green-500/30"><b>Explanation:</b> ${q.explanation}</div>`;
+      } else {
+        title.innerHTML = `<i class="fa-solid fa-circle-xmark text-red-500 text-3xl"></i> <span class="text-red-500">Incorrect!</span>`;
+        subtitle.innerHTML = `The correct answer was:<br><br><div class="text-yellow-400 text-sm md:text-[15px] text-left bg-black/40 p-4 rounded-xl border border-yellow-500/30">${q.options[q.correctOption]}</div>`;
+        if (q.explanation) subtitle.innerHTML += `<br><div class="text-gray-300 text-xs md:text-sm text-left bg-black/40 p-4 rounded-xl border border-red-500/30 mt-2"><b>Explanation:</b> ${q.explanation}</div>`;
+      }
+
+      if (currentIdx === questionsData.length - 1) {
+        continueBtn.innerText = "Finish Quiz";
+      } else {
+        continueBtn.innerText = "Next Question";
+      }
+
+      modal.classList.remove('hidden');
+    }
+
+    function nextQuestion() {
+      document.getElementById('explanation-modal').classList.add('hidden');
+      
+      if (currentIdx < questionsData.length - 1) {
+        currentIdx++;
+        loadQuestion();
+      } else {
+        document.getElementById('quiz-container').classList.add('hidden');
+        document.getElementById('end-screen').classList.remove('hidden');
+        localStorage.setItem(`upscProgress_${currentTab}`, 0);
+      }
+    }
+
+    function prevQuestion() {
+      if (currentIdx > 0) {
+        currentIdx--;
+        loadQuestion();
+      }
+    }
+
+    function retakeQuiz() {
+      if(confirm("Are you sure you want to restart the quiz in the current set from Question 1?")) {
+        currentIdx = 0;
+        localStorage.setItem(`upscProgress_${currentTab}`, 0);
+        resetLifelines(); 
+        initGame();
+      }
+    }
+
+    function resetLifelines() {
+      const lifelineIds = ['life-5050', 'life-poll', 'life-expert'];
+      lifelineIds.forEach(id => {
+        const btn = document.getElementById(id);
+        if(btn) {
+          btn.disabled = false;
+          btn.classList.remove('opacity-40', 'cursor-not-allowed');
+        }
+      });
+    }
+
+    // Lifeline Functions
+    function use5050() {
+      if (isAnswered) return;
+      const q = questionsData[currentIdx];
+      const wrongIndices = [0, 1, 2, 3].filter(i => i !== q.correctOption);
+      
+      wrongIndices.sort(() => Math.random() - 0.5);
+      if (document.getElementById(`opt-${wrongIndices[0]}`)) {
+        document.getElementById(`opt-${wrongIndices[0]}`).style.opacity = '0.2';
+        document.getElementById(`opt-${wrongIndices[0]}`).disabled = true;
+      }
+      if (document.getElementById(`opt-${wrongIndices[1]}`)) {
+        document.getElementById(`opt-${wrongIndices[1]}`).style.opacity = '0.2';
+        document.getElementById(`opt-${wrongIndices[1]}`).disabled = true;
+      }
+
+      const btn = document.getElementById('life-5050');
+      btn.disabled = true;
+      btn.classList.add('opacity-40', 'cursor-not-allowed');
+    }
+
+    function useAudiencePoll() {
+      if (isAnswered) return;
+      const q = questionsData[currentIdx];
+      const optChar = ['A', 'B', 'C', 'D'][q.correctOption];
+      alert(`📊 Audience Poll Results:\nOption ${optChar} is leading with a massive majority!`);
+      const btn = document.getElementById('life-poll');
+      btn.disabled = true;
+      btn.classList.add('opacity-40', 'cursor-not-allowed');
+    }
+
+    function useExpertAdvice() {
+      if (isAnswered) return;
+      const q = questionsData[currentIdx];
+      const optChar = ['A', 'B', 'C', 'D'][q.correctOption];
+      alert(`👨‍🏫 Satyam's Advice:\n"Based on UPSC guidelines and standard rules, I strongly suggest going with Option (${optChar})."`);
+      const btn = document.getElementById('life-expert');
+      btn.disabled = true;
+      btn.classList.add('opacity-40', 'cursor-not-allowed');
+    }
+
+    // Initial load sequence
+    window.onload = () => {
+      updateTabUI();
+    };
+  </script>
+</body>
+</html>
