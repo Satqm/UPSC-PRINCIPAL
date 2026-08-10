@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>UPSC Principal Exam - Professional Simulator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top center, #0f172a 0%, #020617 100%);
+      color: #f8fafc;
+      min-height: 100vh;
+      background-attachment: fixed;
+      padding-bottom: 80px; /* Space for sticky footer on mobile */
+    }
+    
+    h1, h2, h3, .poppins { font-family: 'Poppins', sans-serif; }
+    
+    .glass-card {
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    }
+    
+    .option-btn {
+      background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+      border: 1px solid #334155;
+      transition: all 0.2s ease-in-out;
+    }
+    
+    .option-btn:hover:not(:disabled) {
+      background: linear-gradient(145deg, #2563eb 0%, #1d4ed8 100%);
+      border-color: #60a5fa;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+    }
+    
+    .option-selected {
+      background: linear-gradient(145deg, #d97706 0%, #b45309 100%) !important;
+      border-color: #fcd34d !important;
+    }
+    
+    .option-correct {
+      background: linear-gradient(145deg, #047857 0%, #064e3b 100%) !important;
+      border-color: #34d399 !important;
+      box-shadow: 0 0 15px rgba(52, 211, 153, 0.3);
+    }
+    
+    .option-wrong {
+      background: linear-gradient(145deg, #991b1b 0%, #7f1d1d 100%) !important;
+      border-color: #f87171 !important;
+      box-shadow: 0 0 15px rgba(248, 113, 113, 0.3);
+    }
+
+    .glow-gold { text-shadow: 0 0 10px #fbbf24, 0 0 20px #d97706; }
+    .glow-red { text-shadow: 0 0 10px #ef4444, 0 0 20px #b91c1c; }
+
+    /* Custom Scrollbars */
+    ::-webkit-scrollbar { width: 4px; height: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.4); }
+
+    /* Hide scrollbar for horizontal tabs on mobile but keep functionality */
+    .hide-scroll::-webkit-scrollbar { display: none; }
+    .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+
+    /* Table Styling */
+    .data-table th { background: rgba(59, 130, 246, 0.15); color: #93c5fd; border-bottom: 2px solid #3b82f6; white-space: nowrap; }
+    .data-table td { border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+    .data-table tr:hover td { background: rgba(255, 255, 255, 0.03); }
+
+    .pulse-animation { animation: pulse 1.5s infinite alternate; }
+    @keyframes pulse { 0% { transform: scale(1); } 100% { transform: scale(1.03); } }
+    
+    /* Sticky Footer specific for Mobile */
+    .mobile-sticky-footer {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 40;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(59, 130, 246, 0.3);
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen p-2 md:p-5 overflow-x-hidden">
+
+  <!-- Header -->
+  <header class="flex flex-wrap justify-between items-center gap-3 glass-card p-3 md:p-4 rounded-xl max-w-6xl mx-auto w-full border-t-2 border-blue-500/50">
+    <div class="flex items-center gap-2 md:gap-3">
+      <div class="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-blue-900/40 border border-blue-500 flex items-center justify-center text-blue-400 font-bold poppins shrink-0 text-sm md:text-base">
+        <i class="fa-solid fa-building-columns"></i>
+      </div>
+      <div>
+        <h1 class="text-sm md:text-lg font-bold text-blue-400 leading-tight">UPSC PRINCIPAL '26</h1>
+        <p class="text-[9px] md:text-xs text-gray-400">Professional Simulator</p>
+      </div>
+    </div>
+
+    <!-- Timer & Controls -->
+    <div class="flex items-center gap-2 md:gap-5" id="header-controls">
+      <div id="timer-display" class="font-mono text-sm md:text-xl font-bold text-red-400 glow-red px-2 py-1 md:px-3 md:py-1.5 bg-red-950/30 rounded-lg border border-red-500/30 flex items-center gap-1 md:gap-2">
+        <i class="fa-regular fa-clock"></i> <span>02:00:00</span>
+      </div>
+      <button onclick="submitExamEarly()" class="px-2 py-1.5 md:px-4 md:py-2 rounded-lg bg-green-900/40 border border-green-500 text-[10px] md:text-xs font-bold text-green-300 hover:bg-green-600 hover:text-white transition flex items-center gap-1.5">
+        <i class="fa-solid fa-check-double"></i> <span class="hidden sm:inline">Submit Test</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Dynamic Tab Switcher (Scrollable on Mobile) -->
+  <div class="flex justify-center md:justify-center mt-4 max-w-6xl mx-auto w-full z-10 overflow-x-auto hide-scroll pb-2">
+    <div id="tabs-container" class="glass-card p-1.5 rounded-xl flex whitespace-nowrap gap-2 border border-blue-500/30 bg-black/40 w-max md:w-auto">
+      <!-- Tabs injected by JS -->
+    </div>
+  </div>
+
+  <!-- MAIN VIEW 1: Dashboard & Progress Matrix -->
+  <main id="dashboard-container" class="flex-grow flex-col justify-start max-w-6xl mx-auto w-full my-4 space-y-5">
+    <div class="glass-card bg-slate-900/80 border-t-4 border-yellow-500 p-4 md:p-8 rounded-xl shadow-2xl">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-xl md:text-3xl font-bold text-yellow-400 poppins"><i class="fa-solid fa-chart-line"></i> Progress Matrix</h2>
+        <button onclick="clearHistory()" class="text-xs text-red-400 hover:text-red-300 border border-red-500/30 px-3 py-1 rounded-md"><i class="fa-solid fa-trash"></i> Clear</button>
+      </div>
+      
+      <!-- Top Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-8">
+        <div class="bg-black/40 p-3 md:p-4 rounded-xl border border-slate-700 text-center">
+          <div class="text-[10px] md:text-xs text-gray-400 uppercase tracking-widest mb-1">Tests Taken</div>
+          <div class="text-xl md:text-3xl font-bold text-white" id="dash-total-tests">0</div>
+        </div>
+        <div class="bg-black/40 p-3 md:p-4 rounded-xl border border-blue-900/50 text-center">
+          <div class="text-[10px] md:text-xs text-blue-300 uppercase tracking-widest mb-1">Avg Score</div>
+          <div class="text-xl md:text-3xl font-bold text-blue-400" id="dash-avg-score">0</div>
+        </div>
+        <div class="bg-black/40 p-3 md:p-4 rounded-xl border border-green-900/50 text-center">
+          <div class="text-[10px] md:text-xs text-green-300 uppercase tracking-widest mb-1">Highest Score</div>
+          <div class="text-xl md:text-3xl font-bold text-green-400" id="dash-high-score">0</div>
+        </div>
+        <div class="bg-black/40 p-3 md:p-4 rounded-xl border border-purple-900/50 text-center">
+          <div class="text-[10px] md:text-xs text-purple-300 uppercase tracking-widest mb-1">Accuracy</div>
+          <div class="text-xl md:text-3xl font-bold text-purple-400" id="dash-accuracy">0%</div>
+        </div>
+      </div>
+
+      <!-- History Table -->
+      <h3 class="text-lg md:text-xl font-bold text-white mb-3">Recent Attempts</h3>
+      <div class="overflow-x-auto rounded-lg border border-slate-700">
+        <table class="w-full text-left border-collapse data-table min-w-[600px]">
+          <thead>
+            <tr>
+              <th class="p-3 text-xs md:text-sm">Date & Time</th>
+              <th class="p-3 text-xs md:text-sm text-center">Set Attempted</th>
+              <th class="p-3 text-xs md:text-sm text-center">Correct</th>
+              <th class="p-3 text-xs md:text-sm text-center">Wrong</th>
+              <th class="p-3 text-xs md:text-sm text-center font-bold text-yellow-400">Final Score</th>
+            </tr>
+          </thead>
+          <tbody class="text-sm text-gray-300" id="history-table-body">
+            <!-- Injected by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- MAIN VIEW 2: Syllabus & Rules Tab -->
+  <main id="syllabus-container" class="hidden flex-grow flex-col justify-start max-w-6xl mx-auto w-full my-4 space-y-5">
+    <div class="glass-card bg-slate-900/80 border-t-4 border-blue-500 p-4 md:p-8 rounded-xl shadow-2xl">
+      <h2 class="text-xl md:text-3xl font-bold text-blue-400 mb-4 text-center poppins">Exam Pattern & Rules</h2>
+      
+      <div class="bg-blue-950/30 border border-blue-800 rounded-lg p-3 md:p-4 mb-6 text-xs md:text-base text-gray-300 leading-relaxed text-justify">
+        <p class="mb-2"><strong class="text-white">Overview:</strong> Objective (MCQ) format for UPSC Principal/Vice Principal Recruitment 2026.</p>
+        <p class="mb-2"><strong class="text-white">Structure:</strong> <strong>100 questions</strong> • <strong>300 maximum marks</strong> • <strong>120 minutes</strong>.</p>
+        <p><strong class="text-white">Scoring Scheme:</strong> <strong class="text-green-400">+3 marks</strong> for correct answers. Negative marking of <strong class="text-red-400">-1 mark</strong> for incorrect answers. Unattempted carry 0 marks.</p>
+      </div>
+      
+      <div class="overflow-x-auto rounded-lg border border-slate-700">
+        <table class="w-full text-left border-collapse data-table min-w-[600px]">
+          <thead>
+            <tr>
+              <th class="p-3 text-xs md:text-sm">Category / Subject Area</th>
+              <th class="p-3 text-xs md:text-sm text-center">Questions</th>
+              <th class="p-3 text-xs md:text-sm text-center">Marks</th>
+            </tr>
+          </thead>
+          <tbody class="text-xs md:text-sm text-gray-300">
+            <tr><td class="p-3 font-semibold text-blue-200">Management & Financial Admin</td><td class="p-3 text-center">25 – 30</td><td class="p-3 text-center text-blue-300">75 – 90</td></tr>
+            <tr><td class="p-3 font-semibold text-blue-200">Educational Policies & Evaluation</td><td class="p-3 text-center">20 – 25</td><td class="p-3 text-center text-blue-300">60 – 75</td></tr>
+            <tr><td class="p-3 font-semibold text-blue-200">Office Procedures & Regulations</td><td class="p-3 text-center">15 – 20</td><td class="p-3 text-center text-blue-300">45 – 60</td></tr>
+            <tr><td class="p-3 font-semibold text-blue-200">Reasoning & Quantitative Aptitude</td><td class="p-3 text-center">15 – 20</td><td class="p-3 text-center text-blue-300">45 – 60</td></tr>
+            <tr><td class="p-3 font-semibold text-blue-200">General Knowledge & Language</td><td class="p-3 text-center">15 – 18</td><td class="p-3 text-center text-blue-300">45 – 54</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- MAIN VIEW 3: Quiz Dashboard -->
+  <main id="quiz-container" class="hidden flex-grow flex-col justify-start max-w-6xl mx-auto w-full my-2 md:my-5 space-y-4">
+    <!-- Question Display -->
+    <div class="relative w-full">
+      <div class="glass-card bg-slate-900/90 border-t-2 border-blue-500 p-4 md:p-8 rounded-xl min-h-[120px] flex items-center shadow-xl">
+        <p id="question-text" class="text-[14px] md:text-[17px] font-medium text-gray-50 whitespace-pre-wrap text-justify w-full leading-relaxed">
+          Loading test environment...
+        </p>
+      </div>
+    </div>
+
+    <!-- Options Grid -->
+    <div id="options-grid" class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 w-full">
+      <!-- Options injected by JS -->
+    </div>
+  </main>
+
+  <!-- Sticky Mobile-Friendly Navigation & Branding -->
+  <footer id="quiz-footer" class="hidden mobile-sticky-footer">
+    <div class="max-w-6xl mx-auto w-full">
+      <!-- Live Score Tracker -->
+      <div class="flex justify-between items-center px-4 pt-2 text-[10px] md:text-sm text-gray-400 font-mono border-b border-white/5 pb-1">
+        <div>Live Marks: <span id="live-score-display" class="text-blue-400 font-bold">0</span> / 300</div>
+        <div><span class="text-green-400"><i class="fa-solid fa-check"></i> <span id="live-correct">0</span></span> &nbsp;|&nbsp; <span class="text-red-400"><i class="fa-solid fa-xmark"></i> <span id="live-wrong">0</span></span></div>
+      </div>
+
+      <!-- Navigation Bar -->
+      <div class="flex justify-between items-center p-2 md:p-3" id="quiz-nav-bar">
+        <button onclick="prevQuestion()" class="px-3 py-2 md:px-5 md:py-2.5 rounded-lg bg-slate-800 border border-slate-600 hover:bg-slate-700 text-xs md:text-sm font-semibold transition flex items-center gap-2 shrink-0">
+          <i class="fa-solid fa-arrow-left"></i> <span class="hidden sm:inline">Prev</span>
+        </button>
+        
+        <div class="text-xs md:text-base text-white font-mono font-bold px-3 py-1.5 rounded-lg border border-slate-600 bg-black/50" id="progress-counter">
+          Q: 0 / 100
+        </div>
+        
+        <button onclick="nextQuestion()" class="px-3 py-2 md:px-5 md:py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 border border-blue-400 text-white text-xs md:text-sm font-bold transition flex items-center gap-2 shrink-0 shadow-lg shadow-blue-600/20">
+          <span class="hidden sm:inline">Next</span> <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Final Analytics Screen -->
+  <div id="end-screen" class="hidden flex-grow flex-col items-center justify-center max-w-4xl mx-auto w-full text-center space-y-4 my-6 px-3">
+    <div class="text-blue-400 text-5xl md:text-7xl mb-2"><i class="fa-solid fa-square-poll-vertical"></i></div>
+    <h1 class="text-2xl md:text-4xl font-bold text-white poppins">Test Submitted!</h1>
+    
+    <div class="glass-card bg-slate-900/90 border border-blue-500/50 rounded-2xl p-5 md:p-8 mt-2 w-full shadow-2xl">
+      <h3 class="text-xl md:text-2xl font-bold text-white mb-5">Performance Report</h3>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-6">
+        <div class="bg-black/40 p-3 md:p-4 rounded-xl border border-slate-700">
+          <div class="text-[10px] md:text-xs text-gray-400 uppercase tracking-widest mb-1">Attempted</div>
+          <div class="text-xl md:text-2xl font-bold text-white" id="rep-attempted">0</div>
+        </div>
+        <div class="bg-black/40 p-3 md:p-4 rounded-xl border border-green-900/50">
+          <div class="text-[10px] md:text-xs text-green-400 uppercase tracking-widest mb-1">Correct (+3)</div>
+          <div class="text-xl md:text-2xl font-bold text-green-400" id="rep-correct">0</div>
+        </div>
+        <div class="bg-black/40 p-3 md:p-4 rounded-xl border border-red-900/50">
+          <div class="text-[10px] md:text-xs text-red-400 uppercase tracking-widest mb-1">Wrong (-1)</div>
+          <div class="text-xl md:text-2xl font-bold text-red-400" id="rep-wrong">0</div>
+        </div>
+        <div class="bg-blue-900/20 p-3 md:p-4 rounded-xl border border-blue-500/50 pulse-animation">
+          <div class="text-[10px] md:text-xs text-blue-300 uppercase tracking-widest mb-1">Total Score</div>
+          <div class="text-xl md:text-2xl font-bold text-blue-400"><span id="rep-score">0</span><span class="text-xs text-gray-500">/300</span></div>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-center gap-3">
+        <button onclick="showDashboard()" class="px-5 py-3 rounded-lg bg-yellow-600 hover:bg-yellow-500 text-white font-bold text-sm transition flex items-center justify-center gap-2">
+          <i class="fa-solid fa-chart-line"></i> View Matrix
+        </button>
+        <button onclick="location.reload()" class="px-5 py-3 rounded-lg bg-slate-700 hover:bg-slate-600 border border-slate-500 text-white font-bold text-sm transition flex items-center justify-center gap-2">
+          <i class="fa-solid fa-rotate-right"></i> Generate New Set
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Immediate Feedback Modal -->
+  <div id="explanation-modal" class="fixed inset-0 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 z-50 hidden">
+    <div class="glass-card bg-slate-900 border border-slate-600 rounded-2xl max-w-sm md:max-w-lg w-full p-5 md:p-6 text-center shadow-2xl overflow-y-auto max-h-[90vh]">
+      <h2 id="modal-title" class="text-xl md:text-2xl font-bold flex items-center justify-center gap-2 mb-3"></h2>
+      <div id="modal-subtitle" class="text-xs md:text-sm text-gray-300 leading-relaxed text-left"></div>
+      <div class="pt-4">
+        <button onclick="nextQuestion()" class="px-5 py-2.5 bg-blue-600 text-white rounded-lg font-bold w-full hover:bg-blue-500 transition shadow-lg text-sm md:text-base">
+          Continue Test
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio System -->
+  <script>
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    function playBeep(freq = 440, type = 'sine', duration = 0.15) {
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = type; osc.frequency.value = freq;
+      gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
+      osc.connect(gain); gain.connect(audioCtx.destination);
+      osc.start(); osc.stop(audioCtx.currentTime + duration);
+    }
+    function soundCorrect() { playBeep(600, 'triangle', 0.15); setTimeout(() => playBeep(800, 'triangle', 0.2), 100); }
+    function soundWrong() { playBeep(250, 'sawtooth', 0.2); setTimeout(() => playBeep(200, 'sawtooth', 0.3), 150); }
+  </script>
+
+  <!-- Core App Logic -->
+  <script>
+    // Data & State
+    let allQuestionsPool = [];
+    let chunkedSets = [];
+    let currentSetIndex = 0;
+    let currentQIndex = 0;
+    let isAnswered = false;
+    let sessionState = []; 
+    let stats = { correct: 0, wrong: 0 };
+    let timerInterval;
+    let timeRemaining = 120 * 60; // 120 Mins
+
+    // Fisher-Yates Shuffle for Dynamic Randomization
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    function normalizeData(rawData) {
+      return rawData.map(item => {
+        if(item.question && item.options) return item;
+        if(item.Question_Text) {
+          let cIndex = 0;
+          let ansStr = String(item.Correct_Answer).toUpperCase();
+          if (ansStr.includes("A")) cIndex = 0;
+          else if (ansStr.includes("B")) cIndex = 1;
+          else if (ansStr.includes("C")) cIndex = 2;
+          else if (ansStr.includes("D")) cIndex = 3;
+          return {
+            question: item.Question_Text,
+            options: [item.Option_A, item.Option_B, item.Option_C, item.Option_D],
+            correctOption: cIndex,
+            explanation: item.Brief_Explanation || "No explanation provided."
+          };
+        }
+        return item; 
+      });
+    }
+
+    async function initSystem() {
+      const files = ['exam-questions-v1.json', 'exam-questions-v2.json', 'exam-questions-v3.json'];
+      
+      for(let file of files) {
+        try {
+          const res = await fetch(file);
+          if(res.ok) {
+            const data = await res.json();
+            allQuestionsPool = allQuestionsPool.concat(normalizeData(data));
+          }
+        } catch (e) {
+          console.log(`Note: ${file} not found. Loading others.`);
+        }
+      }
+
+      if(allQuestionsPool.length === 0) {
+        document.getElementById('question-text').innerText = "Waiting for JSON files to be uploaded. Make sure exam-questions-v1.json exists.";
+        return;
+      }
+
+      // 1. Completely shuffle the master pool to prevent repeats dynamically
+      shuffleArray(allQuestionsPool);
+
+      // 2. Chunk into distinct 100-question sets
+      chunkedSets = [];
+      for(let i = 0; i < allQuestionsPool.length; i += 100) {
+        chunkedSets.push(allQuestionsPool.slice(i, i + 100));
+      }
+
+      buildTabs();
+      renderDashboardStats();
+      showDashboard(); // Land on Dashboard first
+    }
+
+    function buildTabs() {
+      const container = document.getElementById('tabs-container');
+      container.innerHTML = '';
+
+      // Dashboard Tab
+      const dashBtn = document.createElement('button');
+      dashBtn.id = 'tab-dashboard';
+      dashBtn.innerHTML = `<i class="fa-solid fa-chart-line"></i> Dashboard`;
+      dashBtn.onclick = showDashboard;
+      container.appendChild(dashBtn);
+
+      // Syllabus Tab
+      const sylBtn = document.createElement('button');
+      sylBtn.id = 'tab-syllabus';
+      sylBtn.innerHTML = `<i class="fa-solid fa-list-check"></i> Syllabus`;
+      sylBtn.onclick = showSyllabus;
+      container.appendChild(sylBtn);
+
+      // Dynamic Sets
+      chunkedSets.forEach((set, idx) => {
+        const btn = document.createElement('button');
+        btn.id = `tab-set-${idx}`;
+        btn.innerHTML = `<i class="fa-solid fa-play"></i> Start Set ${idx + 1} (${set.length} Qs)`;
+        btn.onclick = () => loadSet(idx);
+        container.appendChild(btn);
+      });
+      
+      updateTabStyles('tab-dashboard');
+    }
+
+    function updateTabStyles(activeId) {
+      const buttons = document.getElementById('tabs-container').children;
+      const activeClass = "px-4 py-2 rounded-lg text-xs md:text-sm font-bold bg-blue-600 text-white shadow-lg shadow-blue-500/30 flex items-center gap-2 shrink-0";
+      const inactiveClass = "px-4 py-2 rounded-lg text-xs md:text-sm font-bold text-gray-400 hover:text-white transition flex items-center gap-2 shrink-0 border border-transparent";
+      
+      for(let btn of buttons) {
+        btn.className = (btn.id === activeId) ? activeClass : inactiveClass;
+      }
+    }
+
+    // Tab Switching Logic
+    function showDashboard() {
+      updateTabStyles('tab-dashboard');
+      hideAllViews();
+      document.getElementById('dashboard-container').classList.remove('hidden');
+      document.getElementById('dashboard-container').classList.add('flex');
+      renderDashboardStats();
+    }
+
+    function showSyllabus() {
+      updateTabStyles('tab-syllabus');
+      hideAllViews();
+      document.getElementById('syllabus-container').classList.remove('hidden');
+      document.getElementById('syllabus-container').classList.add('flex');
+    }
+
+    function hideAllViews() {
+      document.getElementById('quiz-container').classList.add('hidden');
+      document.getElementById('quiz-footer').classList.add('hidden');
+      document.getElementById('quiz-footer').classList.remove('mobile-sticky-footer'); // hide sticky nav
+      document.getElementById('dashboard-container').classList.add('hidden');
+      document.getElementById('dashboard-container').classList.remove('flex');
+      document.getElementById('syllabus-container').classList.add('hidden');
+      document.getElementById('syllabus-container').classList.remove('flex');
+      document.getElementById('end-screen').classList.add('hidden');
+      document.getElementById('end-screen').classList.remove('flex');
+      clearInterval(timerInterval);
+    }
+
+    function loadSet(setIdx) {
+      if(!confirm(`Start Set ${setIdx + 1}? The timer will begin immediately.`)) return;
+      
+      currentSetIndex = setIdx;
+      currentQIndex = 0;
+      stats = { correct: 0, wrong: 0 };
+      sessionState = new Array(chunkedSets[setIdx].length).fill(null);
+      
+      updateTabStyles(`tab-set-${setIdx}`);
+      hideAllViews();
+      
+      document.getElementById('quiz-container').classList.remove('hidden');
+      document.getElementById('quiz-container').classList.add('flex');
+      document.getElementById('quiz-footer').classList.remove('hidden');
+      document.getElementById('quiz-footer').classList.add('mobile-sticky-footer'); 
+      document.getElementById('header-controls').classList.remove('hidden');
+
+      startTimer();
+      renderQuestion();
+      updateLiveScore();
+    }
+
+    // Matrix & History Functions
+    function getHistory() {
+      return JSON.parse(localStorage.getItem('upscPrincipalHistory')) || [];
+    }
+
+    function saveToHistory(finalScore, correct, wrong, setNum) {
+      let history = getHistory();
+      history.unshift({
+        date: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata', dateStyle: 'short', timeStyle: 'short' }),
+        set: setNum + 1,
+        score: finalScore,
+        correct: correct,
+        wrong: wrong,
+        attempted: correct + wrong
+      });
+      localStorage.setItem('upscPrincipalHistory', JSON.stringify(history));
+    }
+
+    function clearHistory() {
+      if(confirm("Are you sure you want to delete all past progress?")) {
+        localStorage.removeItem('upscPrincipalHistory');
+        renderDashboardStats();
+      }
+    }
+
+    function renderDashboardStats() {
+      const history = getHistory();
+      const tbody = document.getElementById('history-table-body');
+      tbody.innerHTML = '';
+
+      if (history.length === 0) {
+        document.getElementById('dash-total-tests').innerText = '0';
+        document.getElementById('dash-avg-score').innerText = '0';
+        document.getElementById('dash-high-score').innerText = '0';
+        document.getElementById('dash-accuracy').innerText = '0%';
+        tbody.innerHTML = `<tr><td colspan="5" class="p-4 text-center text-gray-500">No attempts recorded yet. Take a test!</td></tr>`;
+        return;
+      }
+
+      let totalScore = 0, highScore = -999, totalCorrect = 0, totalAttempted = 0;
+
+      history.forEach((h, i) => {
+        totalScore += h.score;
+        if(h.score > highScore) highScore = h.score;
+        totalCorrect += h.correct;
+        totalAttempted += h.attempted;
+
+        if (i < 10) { // Show last 10 attempts
+          tbody.innerHTML += `
+            <tr>
+              <td class="p-3 text-xs md:text-sm">${h.date}</td>
+              <td class="p-3 text-xs md:text-sm text-center">Set ${h.set}</td>
+              <td class="p-3 text-xs md:text-sm text-center text-green-400">${h.correct}</td>
+              <td class="p-3 text-xs md:text-sm text-center text-red-400">${h.wrong}</td>
+              <td class="p-3 text-xs md:text-sm text-center font-bold text-yellow-400">${h.score}</td>
+            </tr>`;
+        }
+      });
+
+      document.getElementById('dash-total-tests').innerText = history.length;
+      document.getElementById('dash-avg-score').innerText = Math.round(totalScore / history.length);
+      document.getElementById('dash-high-score').innerText = highScore;
+      
+      const accuracy = totalAttempted > 0 ? Math.round((totalCorrect / totalAttempted) * 100) : 0;
+      document.getElementById('dash-accuracy').innerText = `${accuracy}%`;
+    }
+
+    // Timer logic
+    function startTimer() {
+      clearInterval(timerInterval);
+      timeRemaining = 120 * 60; 
+      updateTimerDisplay();
+
+      timerInterval = setInterval(() => {
+        timeRemaining--;
+        updateTimerDisplay();
+        if(timeRemaining <= 0) {
+          clearInterval(timerInterval);
+          alert("Time is up! Submitting the test automatically.");
+          submitExamEarly();
+        }
+      }, 1000);
+    }
+
+    function updateTimerDisplay() {
+      const h = Math.floor(timeRemaining / 3600).toString().padStart(2, '0');
+      const m = Math.floor((timeRemaining % 3600) / 60).toString().padStart(2, '0');
+      const s = (timeRemaining % 60).toString().padStart(2, '0');
+      document.getElementById('timer-display').innerHTML = `<i class="fa-regular fa-clock"></i> <span>${h}:${m}:${s}</span>`;
+    }
+
+    // Question Logic
+    function renderQuestion() {
+      const currentSet = chunkedSets[currentSetIndex];
+      const q = currentSet[currentQIndex];
+      isAnswered = sessionState[currentQIndex] !== null;
+
+      document.getElementById('progress-counter').innerText = `Q: ${currentQIndex + 1}/${currentSet.length}`;
+      document.getElementById('question-text').innerHTML = `<span class="text-blue-400 font-bold">Q${currentQIndex + 1}.</span> ${q.question}`;
+
+      const grid = document.getElementById('options-grid');
+      grid.innerHTML = '';
+
+      q.options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.id = `opt-${idx}`;
+        const label = String.fromCharCode(65 + idx);
+        btn.innerHTML = `<span class="text-blue-400 font-bold w-6 text-left shrink-0">${label}.</span> <span class="text-left">${opt}</span>`;
+        
+        if(!isAnswered) {
+          btn.className = "option-btn p-3 md:p-4 text-[13px] md:text-[15px] font-medium rounded-xl flex items-start gap-2 w-full shadow-md";
+          btn.onclick = () => selectOption(idx);
+        } else {
+          btn.className = "option-btn p-3 md:p-4 text-[13px] md:text-[15px] font-medium rounded-xl flex items-start gap-2 w-full opacity-75 cursor-default";
+          if(idx === q.correctOption) {
+            btn.classList.add('option-correct', 'opacity-100');
+          } else if (idx === sessionState[currentQIndex].selected && !sessionState[currentQIndex].isCorrect) {
+            btn.classList.add('option-wrong', 'opacity-100');
+          }
+        }
+        grid.appendChild(btn);
+      });
+    }
+
+    function selectOption(idx) {
+      if (isAnswered) return;
+      playBeep(300, 'sine', 0.1);
+      
+      const q = chunkedSets[currentSetIndex][currentQIndex];
+      const isCorrect = (idx === q.correctOption);
+      
+      isAnswered = true;
+      sessionState[currentQIndex] = { selected: idx, isCorrect: isCorrect };
+      
+      if(isCorrect) stats.correct++;
+      else stats.wrong++;
+      
+      updateLiveScore();
+      document.getElementById(`opt-${idx}`).classList.add('option-selected');
+      
+      setTimeout(() => {
+        const selectedBtn = document.getElementById(`opt-${idx}`);
+        const correctBtn = document.getElementById(`opt-${q.correctOption}`);
+        selectedBtn.classList.remove('option-selected');
+        
+        if(isCorrect) {
+          selectedBtn.classList.add('option-correct');
+          soundCorrect();
+          setTimeout(() => showExplanation(true, q, idx), 700);
+        } else {
+          selectedBtn.classList.add('option-wrong');
+          if(correctBtn) correctBtn.classList.add('option-correct');
+          soundWrong();
+          setTimeout(() => showExplanation(false, q, idx), 700);
+        }
+      }, 400);
+    }
+
+    function updateLiveScore() {
+      document.getElementById('live-correct').innerText = stats.correct;
+      document.getElementById('live-wrong').innerText = stats.wrong;
+      const score = (stats.correct * 3) - (stats.wrong * 1);
+      document.getElementById('live-score-display').innerText = score;
+    }
+
+    function showExplanation(isCorrect, q, selectedIdx) {
+      const modal = document.getElementById('explanation-modal');
+      const title = document.getElementById('modal-title');
+      const subtitle = document.getElementById('modal-subtitle');
+
+      if (isCorrect) {
+        title.innerHTML = `<i class="fa-solid fa-circle-check text-green-400"></i> <span class="text-green-400">Correct! (+3)</span>`;
+        subtitle.innerHTML = `<div class="bg-black/50 p-3 md:p-4 rounded-lg border border-green-500/30 text-gray-200 text-xs md:text-sm mt-2"><b>Explanation:</b><br>${q.explanation}</div>`;
+      } else {
+        title.innerHTML = `<i class="fa-solid fa-circle-xmark text-red-500"></i> <span class="text-red-500">Wrong! (-1)</span>`;
+        subtitle.innerHTML = `
+          <div class="mb-2 text-xs md:text-sm">Correct Answer: <span class="text-green-400 font-bold">${q.options[q.correctOption]}</span></div>
+          <div class="bg-black/50 p-3 md:p-4 rounded-lg border border-red-500/30 text-gray-300 text-xs md:text-sm"><b>Explanation:</b><br>${q.explanation}</div>`;
+      }
+      modal.classList.remove('hidden');
+    }
+
+    function nextQuestion() {
+      document.getElementById('explanation-modal').classList.add('hidden');
+      if (currentQIndex < chunkedSets[currentSetIndex].length - 1) {
+        currentQIndex++;
+        renderQuestion();
+      } else {
+        submitExamEarly();
+      }
+    }
+
+    function prevQuestion() {
+      if (currentQIndex > 0) {
+        currentQIndex--;
+        renderQuestion();
+      }
+    }
+
+    function submitExamEarly() {
+      if(!confirm("Are you sure you want to submit the test and see your results?")) return;
+      
+      hideAllViews();
+      
+      const totalScore = (stats.correct * 3) - (stats.wrong * 1);
+      
+      document.getElementById('rep-attempted').innerText = stats.correct + stats.wrong;
+      document.getElementById('rep-correct').innerText = stats.correct;
+      document.getElementById('rep-wrong').innerText = stats.wrong;
+      document.getElementById('rep-score').innerText = totalScore;
+      
+      // Save to local storage for matrix tracking
+      saveToHistory(totalScore, stats.correct, stats.wrong, currentSetIndex);
+      
+      document.getElementById('end-screen').classList.remove('hidden');
+      document.getElementById('end-screen').classList.add('flex');
+    }
+
+    window.onload = initSystem;
+  </script>
+</body>
+</html>
