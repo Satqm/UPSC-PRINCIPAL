@@ -154,7 +154,7 @@
             border-top: 1px solid rgba(59, 130, 246, 0.3); padding-bottom: env(safe-area-inset-bottom, 8px);
         }
         
-        /* THIS IS THE CORE FIX: Match the ID to the HTML <main id="view-quiz"> */
+        /* THE CORE MOBILE FIX: Guarantees space at bottom of quiz container so footer doesn't hide options */
         #view-quiz { padding-bottom: 140px; }
         
         .toast {
@@ -381,7 +381,7 @@
 
         <div class="relative w-full">
             <div class="glass-card bg-slate-900/95 border-t-2 border-blue-500 p-4 md:p-6 rounded-2xl shadow-xl">
-                <p id="question-text" class="text-[15px] md:text-[18px] font-medium text-gray-50 whitespace-pre-wrap text-justify w-full leading-relaxed">Loading question...</p>
+                <p id="question-text" class="text-[15px] md:text-[18px] font-medium text-gray-50 whitespace-pre-wrap w-full leading-relaxed" style="word-break: break-word;">Loading question...</p>
             </div>
         </div>
         
@@ -442,7 +442,7 @@
         <div class="glass-card bg-slate-900 border border-slate-600 rounded-2xl max-w-md w-full p-5 md:p-6 shadow-2xl overflow-y-auto max-h-[85vh] relative" onclick="event.stopPropagation()">
             <button onclick="closeExplanation()" class="absolute top-3 right-3 w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white touch-manipulation"><i class="fa-solid fa-xmark"></i></button>
             <h2 id="modal-title" class="text-xl font-bold flex items-center gap-2 mb-3 mt-1"></h2>
-            <div id="modal-subtitle" class="text-sm text-gray-200 leading-relaxed text-left"></div>
+            <div id="modal-subtitle" class="text-sm text-gray-200 leading-relaxed text-left" style="word-break: break-word;"></div>
             <div class="pt-5 mt-4 border-t border-slate-700">
                 <button onclick="closeExplanationAndNext()" class="w-full py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-500 transition shadow-lg shadow-blue-600/30 text-sm touch-manipulation">Got it, Next Question <i class="fa-solid fa-arrow-right ml-1"></i></button>
             </div>
@@ -450,7 +450,6 @@
     </div>
 
     <script>
-        /* --- 1. Custom Dialog System --- */
         function showDialog(title, message, type = 'alert', onConfirm = null) {
             const overlay = document.getElementById('custom-dialog-overlay');
             document.getElementById('dialog-title').innerText = title;
@@ -479,12 +478,13 @@
             overlay.classList.add('active');
         }
 
-        /* --- 2. Authentic Data Fetching System --- */
         let allSetsData = [];
+        let setMetadata = [];
         
         function normalizeData(rawData) {
             return rawData.map(item => {
                 if (item.question && item.options) return item; 
+                // Maps standard formats including Hindi sets dynamically
                 if (item.Question_Text) {
                     let cIndex = 0;
                     const ansStr = String(item.Correct_Answer).toUpperCase();
@@ -503,35 +503,50 @@
             });
         }
 
-        async function loadAuthenticData() {
+        async function fetchAndProcess(files, langLabel) {
             let allQuestions = [];
-            const files = ['exam-questions-v1.json', 'exam-questions-v2.json', 'exam-questions-v3.json'];
-            
-            let filesLoaded = false;
             for (let file of files) {
                 try {
                     const res = await fetch(file);
                     if (res.ok) {
                         const data = await res.json();
                         allQuestions = allQuestions.concat(normalizeData(data));
-                        filesLoaded = true;
                     }
                 } catch (e) {
-                    console.log(`Could not load ${file} locally. Will use dynamic fallback generator if empty.`);
+                    console.log(`Could not load ${file}. Skipped.`);
                 }
             }
-
-            if (allQuestions.length === 0) {
+            
+            // Generate fallback data ONLY if English files totally fail to load (e.g., opened locally without a server)
+            if (allQuestions.length === 0 && langLabel === 'English') {
                 console.log("No JSON files found. Generating fallback data...");
                 allQuestions = generateFallbackData();
             }
 
-            // Chunk into sets of 120 (per your new Syllabus format)
-            let chunkedSets = [];
+            // Chunk into sets of 120
             for (let i = 0; i < allQuestions.length; i += 120) {
-                chunkedSets.push(allQuestions.slice(i, i + 120));
+                allSetsData.push(allQuestions.slice(i, i + 120));
+                setMetadata.push({ language: langLabel });
             }
-            allSetsData = chunkedSets;
+        }
+
+        async function loadAuthenticData() {
+            allSetsData = [];
+            setMetadata = [];
+            
+            // 1. Fetch and process English volumes
+            await fetchAndProcess([
+                'exam-questions-v1.json', 
+                'exam-questions-v2.json', 
+                'exam-questions-v3.json'
+            ], 'English');
+            
+            // 2. Fetch and process Hindi volumes
+            await fetchAndProcess([
+                'exam-questions-v1hindi.json',
+                'exam-questions-v2hindi.json',
+                'exam-questions-v3hindi.json'
+            ], 'Hindi');
         }
 
         function generateFallbackData() {
@@ -555,7 +570,6 @@
             return setQuestions;
         }
 
-        /* --- 3. IndexedDB Offline Storage System --- */
         const DB_NAME = "UPSC_Principal_Pro_DB";
         const DB_VERSION = 1;
         
@@ -621,7 +635,6 @@
             });
         }
 
-        /* --- 4. Main App Logic (Global State) --- */
         let currentSetIndex = 0;
         let currentQIndex = 0;
         let currentMode = 'practice'; // 'practice' or 'study'
@@ -749,10 +762,16 @@
                 if(isResumable) badge = '<div class="badge resume">Resume Session</div>';
                 else if(isCompleted) badge = '<div class="badge completed">Completed</div>';
 
+                // Language Metadata Integration
+                const lang = setMetadata[idx]?.language || 'English';
+                const isHindi = lang === 'Hindi';
+                const titleColor = isHindi ? 'text-orange-400' : 'text-blue-400';
+                const titleText = isHindi ? `Set ${idx + 1} (Hindi)` : `Set ${idx + 1}`;
+
                 grid.innerHTML += `
                     <div class="set-card">
                         ${badge}
-                        <div class="text-3xl font-bold text-blue-400 poppins mb-1">Set ${idx + 1}</div>
+                        <div class="text-3xl font-bold ${titleColor} poppins mb-1">${titleText}</div>
                         <div class="text-xs text-gray-400 mb-4">${set.length} Questions</div>
                         ${isCompleted ? `<div class="text-sm font-semibold mb-3">Highest Score: <span class="text-amber-400">${parseFloat(bestScore).toFixed(2)} / 300</span></div>` : '<div class="h-8"></div>'}
                         <div class="flex gap-2">
@@ -968,6 +987,32 @@
             document.getElementById('palette-panel').classList.remove('open');
         }
 
+        // Extremely Solid Global Swipe Mechanism (Ignores Vertical Scrolls)
+        let tsX = 0, tsY = 0;
+        window.addEventListener('touchstart', e => {
+            tsX = e.touches[0].clientX;
+            tsY = e.touches[0].clientY;
+        }, {passive: true});
+
+        window.addEventListener('touchend', e => {
+            if (!isTestActive) return;
+            const teX = e.changedTouches[0].clientX;
+            const teY = e.changedTouches[0].clientY;
+            const dx = teX - tsX;
+            const dy = teY - tsY;
+            
+            // Allow horizontal swipe dominance, heavily ignoring vertical scrolling 
+            // so regular page scrolling is never interrupted on mobile.
+            if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+                // Do not fire if swiping on the palette or a modal
+                if(e.target.closest('#palette-panel') || e.target.closest('#explanation-modal') || e.target.closest('.toast')) return;
+                
+                if (dx < 0) nextQuestion();
+                else prevQuestion();
+            }
+        }, {passive: true});
+
+
         function showCurrentExplanation() {
             const q = allSetsData[currentSetIndex][currentQIndex];
             showExplanationModal(true, q, q.correctOption, true);
@@ -1059,30 +1104,6 @@
             }
         }
 
-        let tsX = 0, tsY = 0;
-        window.addEventListener('touchstart', e => {
-            tsX = e.touches[0].clientX;
-            tsY = e.touches[0].clientY;
-        }, {passive: true});
-
-        window.addEventListener('touchend', e => {
-            if (!isTestActive) return;
-            const teX = e.changedTouches[0].clientX;
-            const teY = e.changedTouches[0].clientY;
-            const dx = teX - tsX;
-            const dy = teY - tsY;
-            
-            // Allow horizontal swipe dominance, heavily ignoring vertical scrolling 
-            // so regular page scrolling is never interrupted on mobile.
-            if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
-                // Do not fire if swiping on the palette or a modal
-                if(e.target.closest('#palette-panel') || e.target.closest('#explanation-modal') || e.target.closest('.toast')) return;
-                
-                if (dx < 0) nextQuestion();
-                else prevQuestion();
-            }
-        }, {passive: true});
-
         function requestSubmit() {
             const unans = sessionState.filter(s => s === null).length;
             let msg = currentMode === 'practice' 
@@ -1130,10 +1151,15 @@
                 tCorrect += h.correct;
                 tWrong += h.wrong;
                 tAttempted += h.attempted;
+                
+                // Get matching metadata label for the history
+                const lang = setMetadata[h.set]?.language || 'English';
+                const label = lang === 'Hindi' ? `Set ${h.set + 1} (Hindi)` : `Set ${h.set + 1}`;
+
                 tbody.innerHTML += `
                     <tr class="border-b border-white/5 hover:bg-white/5 transition">
                         <td class="p-3">${h.date}</td>
-                        <td class="p-3 text-center text-blue-300 font-bold">Set ${h.set + 1}</td>
+                        <td class="p-3 text-center text-blue-300 font-bold">${label}</td>
                         <td class="p-3 text-center text-green-400">${h.correct}</td>
                         <td class="p-3 text-center text-red-400">${h.wrong}</td>
                         <td class="p-3 text-center font-bold text-amber-400">${parseFloat(h.score).toFixed(2)}</td>
