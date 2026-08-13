@@ -30,7 +30,7 @@
             background-attachment: fixed;
             overflow-x: hidden;
             overflow-y: auto;
-            padding-bottom: 0; /* removed old padding, handled per view */
+            padding-bottom: 0; 
             padding-top: 8px;
             overscroll-behavior-y: auto;
             -webkit-overflow-scrolling: touch;
@@ -52,48 +52,11 @@
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
         }
 
-        /* ── Social Footer (inside views) ── */
-        .section-footer {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem 0;
-            margin-top: auto;
-        }
-        .sf-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.2);
-            color: #cbd5e1;
-            font-size: 18px;
-            transition: all 0.2s;
-            text-decoration: none;
-        }
-        .sf-icon:hover {
-            background: rgba(255,255,255,0.15);
-            border-color: #60a5fa;
-            color: #fff;
-            transform: translateY(-2px);
-        }
-        .sf-icon.ig:hover { background: #d6249f; border-color: #d6249f; }
-        .sf-icon.li:hover { background: #0077b5; border-color: #0077b5; }
-        .sf-icon.yt:hover { background: #ff0000; border-color: #ff0000; }
-        .sf-icon.tg:hover { background: #0088cc; border-color: #0088cc; }
-
-        /* ── Option Buttons ── */
         .option-btn {
             background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
             border: 2px solid #334155;
             transition: all 0.15s ease-out;
             cursor: pointer;
-            user-select: none;
-            -webkit-tap-highlight-color: transparent;
             text-align: left;
             padding: 16px 16px;
             border-radius: 14px;
@@ -104,23 +67,17 @@
             align-items: flex-start;
             gap: 10px;
             min-height: 52px;
-            -webkit-touch-callout: none;
             touch-action: manipulation;
         }
-        .option-btn:active:not(:disabled) {
-            transform: scale(0.97);
-            transition: transform 0.08s ease-out;
-        }
+        .option-btn:active:not(:disabled) { transform: scale(0.97); }
         .option-btn:hover:not(:disabled) {
             background: linear-gradient(145deg, #2563eb 0%, #1d4ed8 100%);
             border-color: #60a5fa;
             transform: translateY(-1px);
-            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
         }
         .option-selected {
-            background: linear-gradient(145deg, #d97706 0%, #b45309 100%) !important;
-            border-color: #fcd34d !important;
-            transform: scale(0.98);
+            background: linear-gradient(145deg, #2563eb 0%, #1d4ed8 100%) !important;
+            border-color: #60a5fa !important;
         }
         .option-correct {
             background: linear-gradient(145deg, #047857 0%, #064e3b 100%) !important;
@@ -132,75 +89,16 @@
             border-color: #f87171 !important;
             box-shadow: 0 0 15px rgba(248, 113, 113, 0.35);
         }
-        .option-revision-correct {
-            background: linear-gradient(145deg, #047857 0%, #064e3b 100%) !important;
-            border-color: #34d399 !important;
-            box-shadow: 0 0 15px rgba(52, 211, 153, 0.3);
-            cursor: default !important;
-            opacity: 1 !important;
-        }
-        .option-revision-correct::before {
-            content: "✓ ";
-            color: #34d399;
-            font-weight: 700;
-        }
-        .option-revision-neutral {
-            opacity: 0.45;
-            cursor: default !important;
-            filter: grayscale(30%);
-        }
 
-        .glow-gold {
-            text-shadow: 0 0 10px #fbbf24, 0 0 20px #d97706;
-        }
-        .glow-red {
-            text-shadow: 0 0 10px #ef4444, 0 0 20px #b91c1c;
-        }
-
-        /* ── Scrollbar ── */
         ::-webkit-scrollbar { width: 4px; height: 4px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.15); border-radius: 10px; }
-
         .hide-scroll::-webkit-scrollbar { display: none; }
         .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
 
-        /* ── Tables ── */
-        .data-table th {
-            background: rgba(59, 130, 246, 0.15);
-            color: #93c5fd;
-            border-bottom: 2px solid #3b82f6;
-            white-space: nowrap;
-            font-size: 13px;
-        }
-        .data-table td {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 10px 12px;
-            font-size: 13px;
-        }
-        .data-table tr:hover td { background: rgba(255, 255, 255, 0.03); }
-
         .pulse-animation { animation: pulse 1.5s infinite alternate; }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            100% { transform: scale(1.03); }
-        }
+        @keyframes pulse { 0% { transform: scale(1); } 100% { transform: scale(1.03); } }
 
-        /* ── Mobile Footer (quiz only) ── */
-        .mobile-sticky-footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 40;
-            background: rgba(15, 23, 42, 0.94);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border-top: 1px solid rgba(59, 130, 246, 0.3);
-            padding-bottom: env(safe-area-inset-bottom, 8px);
-        }
-
-        /* ── Set Cards ── */
         .set-card {
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 255, 255, 0.08);
@@ -209,469 +107,545 @@
             transition: all 0.25s ease;
             position: relative;
             overflow: hidden;
-            touch-action: manipulation;
         }
-        .set-card:active { transform: scale(0.98); transition: transform 0.1s ease; }
         .set-card:hover {
             background: rgba(255, 255, 255, 0.06);
             border-color: rgba(59, 130, 246, 0.5);
             transform: translateY(-2px);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
         }
-        .set-card .badge-resume {
+        .badge {
             position: absolute; top: 10px; right: 10px;
-            background: #d97706; color: #fff; font-size: 10px; font-weight: 700;
-            padding: 4px 10px; border-radius: 20px; animation: pulseBadge 2s infinite; z-index: 2;
-        }
-        .set-card .badge-completed {
-            position: absolute; top: 10px; right: 10px;
-            background: #047857; color: #fff; font-size: 10px; font-weight: 700;
+            color: #fff; font-size: 10px; font-weight: 700;
             padding: 4px 10px; border-radius: 20px; z-index: 2;
         }
+        .badge.resume { background: #d97706; animation: pulseBadge 2s infinite; }
+        .badge.completed { background: #047857; }
         @keyframes pulseBadge { 0%,100% { box-shadow: 0 0 0 0 rgba(217,119,6,0.4); } 50% { box-shadow: 0 0 0 8px rgba(217,119,6,0); } }
-        .set-card .set-number { font-size: 28px; font-weight: 700; color: #60a5fa; font-family: 'Poppins', sans-serif; line-height: 1; }
-        .set-card .set-meta { font-size: 12px; color: #94a3b8; margin-top: 2px; }
-        .set-card .set-progress { margin-top: 10px; height: 5px; background: rgba(255,255,255,0.06); border-radius: 5px; overflow: hidden; }
-        .set-card .set-progress .bar { height: 100%; background: linear-gradient(90deg, #3b82f6, #60a5fa); border-radius: 5px; transition: width 0.6s ease; }
-        .set-card .set-status { font-size: 12px; color: #94a3b8; margin-top: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 4px; }
-        .set-card .set-status .score-badge { background: rgba(59,130,246,0.15); padding: 3px 12px; border-radius: 12px; color: #93c5fd; font-weight: 600; font-size: 11px; }
-        .set-card .btn-group-actions { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
-        .set-card .btn-group-actions button {
+
+        .btn-action {
             padding: 11px 16px; border-radius: 10px; font-weight: 600; font-size: 13px;
             border: none; cursor: pointer; transition: all 0.2s; flex: 1; min-width: 70px;
-            touch-action: manipulation; -webkit-touch-callout: none;
+            color: white; display: flex; align-items: center; justify-content: center; gap: 6px;
         }
-        .set-card .btn-start { background: linear-gradient(145deg, #2563eb, #1d4ed8); color: #fff; box-shadow: 0 4px 20px rgba(37,99,235,0.2); }
-        .set-card .btn-start:active { transform: scale(0.95); }
-        .set-card .btn-revision { background: linear-gradient(145deg, #7c3aed, #6d28d9); color: #fff; box-shadow: 0 4px 20px rgba(124,58,237,0.2); }
-        .set-card .btn-revision:active { transform: scale(0.95); }
+        .btn-action:active { transform: scale(0.95); }
+        .btn-practice { background: linear-gradient(145deg, #2563eb, #1d4ed8); }
+        .btn-study { background: linear-gradient(145deg, #059669, #047857); }
 
-        /* ── Quiz question area: no fixed height, flows naturally so nothing gets clipped ── */
-        #question-scroll-area,
-        #revision-question-scroll {
-            padding-right: 2px;
-        }
-
-        /* ── Options: no fixed max-height / own scroller — the page itself scrolls,
-             which fixes the "can't scroll to see all options" bug on some phones ── */
-        #options-grid,
-        #revision-options-grid {
-            padding-right: 2px;
-        }
-
-        /* ── Palette ── */
         .palette-btn {
-            width: 32px; height: 32px; border-radius: 8px; font-size: 11px; font-weight: 600;
-            border: 1.5px solid #475569; background: #1e293b; color: #cbd5e1;
-            cursor: pointer; transition: all 0.15s; display: flex; align-items: center; justify-content: center;
-            touch-action: manipulation; -webkit-touch-callout: none; flex-shrink: 0;
+            width: 42px; height: 42px; border-radius: 50%; font-size: 13px; font-weight: 700;
+            border: 2px solid #475569; background: #1e293b; color: #cbd5e1;
+            cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center;
+            touch-action: manipulation; flex-shrink: 0; position: relative;
         }
         .palette-btn:active { transform: scale(0.9); }
         .palette-btn.answered { background: #2563eb; border-color: #60a5fa; color: #fff; }
-        .palette-btn.marked-review { background: #d97706; border-color: #fcd34d; color: #fff; }
+        .palette-btn.correct { background: #047857; border-color: #34d399; color: #fff; }
+        .palette-btn.wrong { background: #991b1b; border-color: #f87171; color: #fff; }
         .palette-btn.current { border-color: #fff !important; box-shadow: 0 0 0 3px rgba(255,255,255,0.25); transform: scale(1.1); }
-        .palette-btn.correct-reveal { background: #047857; border-color: #34d399; color: #fff; }
-        .palette-btn.wrong-reveal { background: #991b1b; border-color: #f87171; color: #fff; }
+        .palette-btn.bookmarked::after {
+            content: '\f02e'; /* FontAwesome Bookmark icon */
+            font-family: 'Font Awesome 6 Free'; font-weight: 900;
+            position: absolute; top: -4px; right: -4px;
+            color: #fbbf24; text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+            font-size: 12px;
+        }
 
-        .sound-toggle {
-            width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.06);
-            border: 1px solid rgba(255,255,255,0.15); color: #94a3b8; cursor: pointer;
-            font-size: 16px; display: flex; align-items: center; justify-content: center;
-            transition: all 0.2s; touch-action: manipulation;
+        .mobile-sticky-footer {
+            position: fixed; bottom: 0; left: 0; right: 0; z-index: 40;
+            background: rgba(15, 23, 42, 0.94); backdrop-filter: blur(16px);
+            border-top: 1px solid rgba(59, 130, 246, 0.3); padding-bottom: env(safe-area-inset-bottom, 8px);
         }
-        .sound-toggle:active { transform: scale(0.9); }
-        .sound-toggle.muted { color: #ef4444; border-color: rgba(239,68,68,0.4); background: rgba(239,68,68,0.1); }
-
-        .resume-overlay {
-            position: fixed; inset: 0; background: rgba(0,0,0,0.85); backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px); z-index: 100; display: none;
-            align-items: center; justify-content: center; padding: 20px;
-        }
-        .resume-overlay.active { display: flex; }
-        .resume-box {
-            background: #1e293b; border: 1px solid rgba(59,130,246,0.3); border-radius: 24px;
-            padding: 28px 24px; max-width: 400px; width: 100%; text-align: center; animation: fadeIn 0.3s ease;
-        }
-        .resume-box h2 { font-size: 20px; font-weight: 700; color: #fff; margin-bottom: 6px; }
-        .resume-box p { color: #94a3b8; font-size: 13px; margin-bottom: 18px; }
-        .resume-box .btn-group { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
-        .resume-box .btn-group button {
-            padding: 10px 20px; border-radius: 12px; font-weight: 600; font-size: 14px;
-            border: none; cursor: pointer; transition: all 0.2s; flex: 1; min-width: 100px;
-            touch-action: manipulation;
-        }
-        .resume-box .btn-resume { background: linear-gradient(145deg, #2563eb, #1d4ed8); color: #fff; box-shadow: 0 4px 20px rgba(37,99,235,0.3); }
-        .resume-box .btn-start-fresh { background: #334155; color: #e2e8f0; }
-
-        @keyframes fadeIn { from { opacity:0; transform: scale(0.92) translateY(10px); } to { opacity:1; transform: scale(1) translateY(0); } }
-
-        .score-club-item {
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 10px 14px; border-bottom: 1px solid rgba(255,255,255,0.04);
-        }
-        .score-club-item:last-child { border-bottom: none; }
-        .score-club-item .rank { font-weight: 700; color: #60a5fa; width: 30px; font-size: 13px; flex-shrink: 0; }
-        .score-club-item .name { flex: 1; font-size: 13px; color: #e2e8f0; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 0 8px; }
-        .score-club-item .score { font-weight: 700; color: #fbbf24; font-size: 15px; flex-shrink: 0; }
-
-        .revision-banner {
-            background: linear-gradient(90deg, rgba(124,58,237,0.2), rgba(124,58,237,0.05));
-            border: 1px solid rgba(124,58,237,0.3); border-radius: 10px;
-            padding: 8px 14px; font-size: 12px; color: #c4b5fd;
-            display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
-        }
-        .revision-banner .exit-btn {
-            margin-left: auto; background: rgba(255,255,255,0.08); border: none;
-            color: #e2e8f0; padding: 5px 14px; border-radius: 8px; font-size: 11px;
-            cursor: pointer; transition: background 0.2s; touch-action: manipulation;
-        }
-        .revision-banner .exit-btn:active { background: rgba(255,255,255,0.2); }
-
-        .tab-btn {
-            padding: 8px 14px; border-radius: 10px; font-size: 11px; font-weight: 600;
-            transition: all 0.2s; cursor: pointer; border: 1.5px solid transparent;
-            color: #94a3b8; background: transparent; white-space: nowrap;
-            touch-action: manipulation; -webkit-touch-callout: none;
-        }
-        .tab-btn:active { transform: scale(0.95); }
-        .tab-btn:hover { color: #e2e8f0; background: rgba(255,255,255,0.04); }
-        .tab-btn.active { background: #2563eb; color: #fff; border-color: #60a5fa; box-shadow: 0 4px 20px rgba(37,99,235,0.3); }
-        .tab-btn i { margin-right: 4px; }
-
+        #quiz-container { padding-bottom: 130px; }
+        
         .toast {
             position: fixed; bottom: 120px; left: 50%; transform: translateX(-50%);
             background: #1e293b; border: 1px solid #3b82f6; color: #e2e8f0;
             padding: 10px 20px; border-radius: 24px; font-size: 12px; font-weight: 600;
-            z-index: 200; opacity: 0; pointer-events: none; transition: opacity 0.3s ease, transform 0.3s ease;
-            white-space: nowrap;
+            z-index: 200; opacity: 0; pointer-events: none; transition: all 0.3s ease;
         }
         .toast.show { opacity: 1; transform: translateX(-50%) translateY(-6px); }
 
-        .timer-urgent { animation: timerFlash 0.6s infinite alternate; }
-        @keyframes timerFlash { 0% { opacity: 1; } 100% { opacity: 0.5; } }
-
+        .tab-btn {
+            padding: 8px 14px; border-radius: 10px; font-size: 12px; font-weight: 600;
+            transition: all 0.2s; cursor: pointer; border: 1.5px solid transparent;
+            color: #94a3b8; background: transparent; white-space: nowrap;
+        }
+        .tab-btn.active { background: #2563eb; color: #fff; border-color: #60a5fa; }
+        
         #palette-panel {
-            position: fixed; bottom: 100px; left: 0; right: 0;
-            background: rgba(15,23,42,0.96); backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border-top: 2px solid rgba(59,130,246,0.4); border-radius: 20px 20px 0 0;
-            z-index: 50; padding: 16px 12px 20px; max-height: 55vh;
-            overflow-y: auto; display: none; box-shadow: 0 -8px 40px rgba(0,0,0,0.6);
-            -webkit-overflow-scrolling: touch;
+            position: fixed; bottom: 90px; left: 0; right: 0;
+            background: rgba(15,23,42,0.98); backdrop-filter: blur(16px);
+            border-top: 2px solid rgba(59,130,246,0.4); border-radius: 24px 24px 0 0;
+            z-index: 50; padding: 20px 16px 30px; max-height: 60vh;
+            overflow-y: auto; display: none; box-shadow: 0 -8px 40px rgba(0,0,0,0.7);
         }
         #palette-panel.open { display: block; animation: slideUp 0.3s ease; }
         @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
 
-        @media (max-width: 480px) {
-            .set-card { padding: 14px 12px; border-radius: 16px; }
-            .set-card .set-number { font-size: 22px; }
-            .option-btn { font-size: 13px; padding: 14px 14px; border-radius: 12px; min-height: 48px; }
-            .set-card .btn-group-actions button { font-size: 12px; padding: 10px 12px; min-width: 55px; }
-            .resume-box { padding: 22px 16px; }
-            .tab-btn { font-size: 10px; padding: 6px 10px; }
-            .palette-btn { width: 28px; height: 28px; font-size: 10px; border-radius: 6px; }
-            .data-table th, .data-table td { font-size: 11px; padding: 8px 6px; }
+        #custom-dialog-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(8px); z-index: 9999; display: none;
+            align-items: center; justify-content: center; padding: 20px;
         }
-        @media (max-width: 380px) {
-            .set-card .set-number { font-size: 18px; }
-            .set-card .set-meta { font-size: 10px; }
-            .option-btn { font-size: 12px; padding: 12px 12px; min-height: 44px; }
-            .tab-btn { font-size: 9px; padding: 5px 8px; }
-            .tab-btn i { margin-right: 2px; }
+        #custom-dialog-overlay.active { display: flex; }
+        .dialog-box {
+            background: #1e293b; border: 1px solid rgba(59,130,246,0.5); border-radius: 20px;
+            padding: 24px; max-width: 350px; width: 100%; text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
         }
 
-        /* ── Quiz container flows with the page (no inner scroll trap) and
-             reserves space at the bottom so the fixed footer never covers
-             the last option. This is the core mobile scroll fix. ── */
-        #quiz-container {
-            padding-bottom: 130px;
+        .syllabus-table th, .syllabus-table td {
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 10px;
         }
-        #revision-container {
-            padding-bottom: 30px;
-        }
+        .syllabus-table th { background: rgba(59, 130, 246, 0.2); color: #93c5fd; }
+        .syllabus-table tbody tr:nth-child(even) { background: rgba(255,255,255,0.02); }
     </style>
 </head>
 <body>
 
-    <!-- ===== TOAST ===== -->
     <div id="toast" class="toast">Progress saved</div>
 
-    <!-- ===== RESUME OVERLAY ===== -->
-    <div id="resumeOverlay" class="resume-overlay">
-        <div class="resume-box">
-            <div style="font-size:44px; margin-bottom:6px;">📚</div>
-            <h2>Welcome Back!</h2>
-            <p id="resume-detail">You have an unfinished test. Continue where you left off?</p>
-            <div class="btn-group">
-                <button class="btn-resume" onclick="resumeTest()"><i class="fa-solid fa-play"></i> Resume</button>
-                <button class="btn-start-fresh" onclick="startFresh()"><i class="fa-solid fa-rotate-right"></i> Fresh Start</button>
-            </div>
-            <div style="margin-top:12px; font-size:11px; color:#64748b;">
-                <span id="resume-progress-text">Set 1 · Question 5 of 100</span>
-            </div>
+    <div id="custom-dialog-overlay">
+        <div class="dialog-box">
+            <h2 id="dialog-title" class="text-xl font-bold text-white mb-2">Notice</h2>
+            <p id="dialog-message" class="text-gray-400 text-sm mb-6 leading-relaxed"></p>
+            <div class="flex gap-3 justify-center" id="dialog-buttons"></div>
         </div>
     </div>
 
-    <!-- ===== HEADER ===== -->
     <header class="flex flex-wrap justify-between items-center gap-2 glass-card p-2 md:p-3 rounded-xl max-w-6xl mx-auto w-full border-t-2 border-blue-500/50 sticky top-2 z-30 backdrop-blur-sm">
         <div class="flex items-center gap-2 md:gap-3">
-            <div class="w-7 h-7 md:w-9 md:h-9 rounded-lg bg-blue-900/40 border border-blue-500 flex items-center justify-center text-blue-400 font-bold poppins shrink-0 text-xs md:text-sm">
+            <button onclick="requestHome()" class="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-blue-600 hover:bg-blue-500 text-white flex items-center justify-center transition shadow-lg shrink-0" title="Back to Home">
+                <i class="fa-solid fa-house"></i>
+            </button>
+            <div class="hidden sm:flex w-9 h-9 rounded-lg bg-blue-900/40 border border-blue-500 items-center justify-center text-blue-400 font-bold poppins shrink-0 text-sm">
                 <i class="fa-solid fa-building-columns"></i>
             </div>
             <div>
-                <h1 class="text-xs md:text-base font-bold text-blue-400 leading-tight">UPSC PRINCIPAL '26</h1>
-                <p class="text-[8px] md:text-[10px] text-gray-400">Pro Simulator</p>
+                <h1 class="text-sm md:text-base font-bold text-blue-400 leading-tight">UPSC PRINCIPAL '26</h1>
+                <p id="header-subtitle" class="text-[10px] text-gray-400">Pro Simulator</p>
             </div>
         </div>
-        <div class="flex items-center gap-1.5 md:gap-3" id="header-controls">
-            <button id="soundToggleBtn" class="sound-toggle" onclick="toggleSound()" title="Toggle Sound" aria-label="Toggle sound effects">
+        <div class="flex items-center gap-2 md:gap-3" id="header-controls">
+            <button id="soundToggleBtn" class="w-8 h-8 rounded-full border border-white/20 text-gray-400 flex items-center justify-center transition" onclick="toggleSound()">
                 <i class="fa-solid fa-volume-high" id="sound-icon"></i>
             </button>
-            <div id="timer-display" class="font-mono text-xs md:text-lg font-bold text-red-400 glow-red px-2 py-1 md:px-3 md:py-1.5 bg-red-950/30 rounded-lg border border-red-500/30 flex items-center gap-1 md:gap-2">
+            <div id="timer-display" class="font-mono text-sm md:text-lg font-bold text-red-400 px-3 py-1.5 bg-red-950/30 rounded-lg border border-red-500/30 flex items-center gap-2">
                 <i class="fa-regular fa-clock"></i> <span>02:00:00</span>
             </div>
-            <button onclick="submitExamEarly()" class="px-2 py-1.5 md:px-3 md:py-2 rounded-lg bg-green-900/40 border border-green-500 text-[10px] md:text-xs font-bold text-green-300 hover:bg-green-600 hover:text-white transition flex items-center gap-1.5 touch-manipulation">
+            <button onclick="requestSubmit()" class="px-3 py-1.5 rounded-lg bg-green-900/40 border border-green-500 text-xs font-bold text-green-300 hover:bg-green-600 hover:text-white transition flex items-center gap-1.5 touch-manipulation">
                 <i class="fa-solid fa-check-double"></i> <span class="hidden sm:inline">Submit</span>
             </button>
         </div>
     </header>
 
-    <!-- ===== TAB BAR ===== -->
-    <div class="flex justify-center mt-2 max-w-6xl mx-auto w-full overflow-x-auto hide-scroll pb-1 px-1">
-        <div id="tabs-container" class="glass-card p-1.5 rounded-xl flex gap-1 border border-blue-500/20 bg-black/40 w-max">
-            <button class="tab-btn active" data-tab="sets" onclick="showSetSelection()"><i class="fa-solid fa-layer-group"></i> Sets</button>
-            <button class="tab-btn" data-tab="analytics" onclick="showAnalytics()"><i class="fa-solid fa-chart-line"></i> Analytics</button>
-            <button class="tab-btn" data-tab="club" onclick="showScoreClub()"><i class="fa-solid fa-trophy"></i> Club</button>
-            <button class="tab-btn" data-tab="rules" onclick="showRules()"><i class="fa-solid fa-list-check"></i> Rules</button>
+    <div class="flex justify-center mt-2 max-w-6xl mx-auto w-full overflow-x-auto hide-scroll pb-1 px-1" id="main-tabs">
+        <div class="glass-card p-1.5 rounded-xl flex gap-1 border border-blue-500/20 bg-black/40 w-max">
+            <button class="tab-btn active" data-tab="sets" onclick="showView('sets')"><i class="fa-solid fa-layer-group"></i> Sets</button>
+            <button class="tab-btn" data-tab="analytics" onclick="showView('analytics')"><i class="fa-solid fa-chart-pie"></i> Analytics</button>
+            <button class="tab-btn" data-tab="rules" onclick="showView('rules')"><i class="fa-solid fa-list-check"></i> Syllabus</button>
         </div>
     </div>
 
-    <!-- ===== VIEW: SET SELECTION ===== -->
-    <main id="set-selection-container" class="flex flex-col max-w-6xl mx-auto w-full my-3 px-2">
-        <div class="text-center mb-3">
-            <h2 class="text-xl md:text-3xl font-bold text-white poppins"><span class="text-blue-400">Select</span> Your Test Set</h2>
-            <p class="text-gray-400 text-xs md:text-sm mt-1">Start a new test or revise an attempted set</p>
+    <main id="view-sets" class="flex flex-col max-w-6xl mx-auto w-full my-3 px-2">
+        <div class="text-center mb-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-white poppins"><span class="text-blue-400">Select</span> Your Set</h2>
+            <p class="text-gray-400 text-sm mt-1">Practice with a timer, or Study with instant expert explanations.</p>
         </div>
-        <div id="set-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4"></div>
-        <div class="mt-5 grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 glass-card p-3 md:p-4 rounded-xl border border-blue-500/20">
-            <div class="text-center"><div class="text-[10px] md:text-xs text-gray-400">Total Sets</div><div class="text-lg md:text-xl font-bold text-blue-400" id="total-sets-count">0</div></div>
-            <div class="text-center"><div class="text-[10px] md:text-xs text-gray-400">Completed</div><div class="text-lg md:text-xl font-bold text-green-400" id="completed-sets-count">0</div></div>
-            <div class="text-center"><div class="text-[10px] md:text-xs text-gray-400">In Progress</div><div class="text-lg md:text-xl font-bold text-yellow-400" id="inprogress-sets-count">0</div></div>
-            <div class="text-center"><div class="text-[10px] md:text-xs text-gray-400">Total Questions</div><div class="text-lg md:text-xl font-bold text-white" id="total-questions-count">0</div></div>
+        <div id="set-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Dynamically injected via JS -->
         </div>
-        <!-- Social Branding -->
-        <section class="flex flex-col items-center justify-center py-2 mt-4">
-            <div class="section-footer">
-                <a href="https://www.instagram.com/" target="_blank" class="sf-icon ig" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/satyam-kumar5286o" target="_blank" class="sf-icon li" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://youtube.com/@observe_with_satyam" target="_blank" class="sf-icon yt" title="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://t.me/CA_Protracker" target="_blank" class="sf-icon tg" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
-            </div>
-        </section>
     </main>
 
-    <!-- ===== VIEW: ANALYTICS ===== -->
-    <main id="analytics-container" class="hidden flex-col max-w-6xl mx-auto w-full my-3 px-2">
-        <div class="glass-card bg-slate-900/80 border-t-4 border-yellow-500 p-3 md:p-5 rounded-xl shadow-2xl">
-            <div class="flex justify-between items-center mb-4">
-                <h2 class="text-lg md:text-2xl font-bold text-yellow-400 poppins"><i class="fa-solid fa-chart-line"></i> Analytics</h2>
-                <button onclick="clearHistory()" class="text-[10px] md:text-xs text-red-400 hover:text-red-300 border border-red-500/30 px-2 py-1 rounded-md touch-manipulation"><i class="fa-solid fa-trash"></i> Clear</button>
+    <main id="view-analytics" class="hidden flex-col max-w-6xl mx-auto w-full my-3 px-2">
+        <div class="glass-card bg-slate-900/80 border-t-4 border-amber-500 p-4 md:p-6 rounded-2xl shadow-2xl">
+            <div class="flex flex-wrap justify-between items-center mb-6 gap-3">
+                <h2 class="text-xl md:text-2xl font-bold text-amber-400 poppins"><i class="fa-solid fa-chart-pie"></i> Deep Analytics</h2>
+                <div class="flex gap-2">
+                    <button onclick="exportData()" class="px-3 py-1.5 rounded-lg bg-blue-900/40 border border-blue-500 text-blue-300 hover:bg-blue-600 hover:text-white transition text-xs font-bold touch-manipulation"><i class="fa-solid fa-download"></i> Backup</button>
+                    <label class="px-3 py-1.5 rounded-lg bg-purple-900/40 border border-purple-500 text-purple-300 hover:bg-purple-600 hover:text-white transition text-xs font-bold cursor-pointer touch-manipulation">
+                        <i class="fa-solid fa-upload"></i> Restore
+                        <input type="file" id="import-file" class="hidden" accept=".json" onchange="importData(event)">
+                    </label>
+                    <button onclick="clearAllData()" class="px-3 py-1.5 rounded-lg bg-red-900/40 border border-red-500 text-red-300 hover:bg-red-600 hover:text-white transition text-xs font-bold touch-manipulation"><i class="fa-solid fa-trash"></i> Reset</button>
+                </div>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 mb-4">
-                <div class="bg-black/40 p-2 md:p-3 rounded-xl border border-slate-700 text-center"><div class="text-[9px] md:text-[10px] text-gray-400 uppercase tracking-widest mb-1">Tests</div><div class="text-lg md:text-2xl font-bold text-white" id="dash-total-tests">0</div></div>
-                <div class="bg-black/40 p-2 md:p-3 rounded-xl border border-blue-900/50 text-center"><div class="text-[9px] md:text-[10px] text-blue-300 uppercase tracking-widest mb-1">Avg Score</div><div class="text-lg md:text-2xl font-bold text-blue-400" id="dash-avg-score">0</div></div>
-                <div class="bg-black/40 p-2 md:p-3 rounded-xl border border-green-900/50 text-center"><div class="text-[9px] md:text-[10px] text-green-300 uppercase tracking-widest mb-1">Best</div><div class="text-lg md:text-2xl font-bold text-green-400" id="dash-high-score">0</div></div>
-                <div class="bg-black/40 p-2 md:p-3 rounded-xl border border-purple-900/50 text-center"><div class="text-[9px] md:text-[10px] text-purple-300 uppercase tracking-widest mb-1">Accuracy</div><div class="text-lg md:text-2xl font-bold text-purple-400" id="dash-accuracy">0%</div></div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+                <div class="bg-black/40 p-3 rounded-xl border border-slate-700 text-center"><div class="text-[10px] text-gray-400 uppercase tracking-widest mb-1">Attempted</div><div class="text-2xl font-bold text-white" id="stat-attempted">0</div></div>
+                <div class="bg-black/40 p-3 rounded-xl border border-green-900/50 text-center"><div class="text-[10px] text-green-300 uppercase tracking-widest mb-1">Total Correct</div><div class="text-2xl font-bold text-green-400" id="stat-correct">0</div></div>
+                <div class="bg-black/40 p-3 rounded-xl border border-red-900/50 text-center"><div class="text-[10px] text-red-300 uppercase tracking-widest mb-1">Total Wrong</div><div class="text-2xl font-bold text-red-400" id="stat-wrong">0</div></div>
+                <div class="bg-black/40 p-3 rounded-xl border border-purple-900/50 text-center"><div class="text-[10px] text-purple-300 uppercase tracking-widest mb-1">Accuracy</div><div class="text-2xl font-bold text-purple-400" id="stat-accuracy">0%</div></div>
             </div>
-            <h3 class="text-sm md:text-lg font-bold text-white mb-2">Recent Attempts</h3>
-            <div class="overflow-x-auto rounded-lg border border-slate-700 -mx-1">
-                <table class="w-full text-left border-collapse data-table min-w-[450px]">
-                    <thead><tr><th class="p-2 md:p-3">Date</th><th class="p-2 md:p-3 text-center">Set</th><th class="p-2 md:p-3 text-center">Correct</th><th class="p-2 md:p-3 text-center">Wrong</th><th class="p-2 md:p-3 text-center font-bold text-yellow-400">Score</th></tr></thead>
-                    <tbody class="text-gray-300" id="history-table-body"></tbody>
-                </table>
-            </div>
-        </div>
-        <section class="flex flex-col items-center justify-center py-2 mt-4">
-            <div class="section-footer">
-                <a href="https://www.instagram.com/" target="_blank" class="sf-icon ig" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/satyam-kumar5286o" target="_blank" class="sf-icon li" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://youtube.com/@observe_with_satyam" target="_blank" class="sf-icon yt" title="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://t.me/CA_Protracker" target="_blank" class="sf-icon tg" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
-            </div>
-        </section>
-    </main>
 
-    <!-- ===== VIEW: SCORE CLUB ===== -->
-    <main id="club-container" class="hidden flex-col max-w-6xl mx-auto w-full my-3 px-2">
-        <div class="glass-card bg-slate-900/80 border-t-4 border-amber-500 p-3 md:p-5 rounded-xl shadow-2xl">
-            <h2 class="text-lg md:text-2xl font-bold text-amber-400 poppins text-center mb-1"><i class="fa-solid fa-trophy"></i> Score Club</h2>
-            <p class="text-center text-gray-400 text-xs md:text-sm mb-4">Top 20 scores across all sets</p>
-            <div id="score-club-list" class="bg-black/30 rounded-xl border border-amber-500/20 overflow-hidden"></div>
-        </div>
-        <section class="flex flex-col items-center justify-center py-2 mt-4">
-            <div class="section-footer">
-                <a href="https://www.instagram.com/" target="_blank" class="sf-icon ig" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/satyam-kumar5286o" target="_blank" class="sf-icon li" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://youtube.com/@observe_with_satyam" target="_blank" class="sf-icon yt" title="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://t.me/CA_Protracker" target="_blank" class="sf-icon tg" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
-            </div>
-        </section>
-    </main>
-
-    <!-- ===== VIEW: RULES ===== -->
-    <main id="rules-container" class="hidden flex-col max-w-6xl mx-auto w-full my-3 px-2">
-        <div class="glass-card bg-slate-900/80 border-t-4 border-blue-500 p-3 md:p-5 rounded-xl shadow-2xl">
-            <h2 class="text-lg md:text-2xl font-bold text-blue-400 mb-3 text-center poppins">Exam Pattern & Rules</h2>
-            <div class="bg-blue-950/30 border border-blue-800 rounded-lg p-3 mb-3 text-xs md:text-sm text-gray-300 leading-relaxed">
-                <p class="mb-1"><strong class="text-white">Overview:</strong> Objective MCQ format for UPSC Principal/Vice Principal Recruitment 2026.</p>
-                <p class="mb-1"><strong class="text-white">Structure:</strong> <strong>100 questions</strong> • <strong>300 max marks</strong> • <strong>120 minutes</strong>.</p>
-                <p><strong class="text-white">Scoring:</strong> <strong class="text-green-400">+3</strong> correct, <strong class="text-red-400">-1</strong> incorrect. Unattempted = 0.</p>
-            </div>
-            <div class="overflow-x-auto rounded-lg border border-slate-700 -mx-1">
-                <table class="w-full text-left border-collapse data-table min-w-[400px]">
-                    <thead><tr><th class="p-2 md:p-3">Category</th><th class="p-2 md:p-3 text-center">Questions</th><th class="p-2 md:p-3 text-center">Marks</th></tr></thead>
-                    <tbody class="text-xs md:text-sm text-gray-300">
-                        <tr><td class="p-2 md:p-3 font-semibold text-blue-200">Management & Financial Admin</td><td class="p-2 md:p-3 text-center">25–30</td><td class="p-2 md:p-3 text-center text-blue-300">75–90</td></tr>
-                        <tr><td class="p-2 md:p-3 font-semibold text-blue-200">Educational Policies & Evaluation</td><td class="p-2 md:p-3 text-center">20–25</td><td class="p-2 md:p-3 text-center text-blue-300">60–75</td></tr>
-                        <tr><td class="p-2 md:p-3 font-semibold text-blue-200">Office Procedures & Regulations</td><td class="p-2 md:p-3 text-center">15–20</td><td class="p-2 md:p-3 text-center text-blue-300">45–60</td></tr>
-                        <tr><td class="p-2 md:p-3 font-semibold text-blue-200">Reasoning & Quantitative Aptitude</td><td class="p-2 md:p-3 text-center">15–20</td><td class="p-2 md:p-3 text-center text-blue-300">45–60</td></tr>
-                        <tr><td class="p-2 md:p-3 font-semibold text-blue-200">General Knowledge & Language</td><td class="p-2 md:p-3 text-center">15–18</td><td class="p-2 md:p-3 text-center text-blue-300">45–54</td></tr>
+            <h3 class="text-lg font-bold text-white mb-3">Set-by-Set History</h3>
+            <div class="overflow-x-auto rounded-lg border border-slate-700">
+                <table class="w-full text-left border-collapse min-w-[500px]">
+                    <thead>
+                        <tr class="bg-blue-900/20 text-blue-300 border-b-2 border-blue-500 text-sm">
+                            <th class="p-3">Date</th><th class="p-3 text-center">Set</th><th class="p-3 text-center">Correct</th><th class="p-3 text-center">Wrong</th><th class="p-3 text-center font-bold text-amber-400">Score</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-300 text-sm" id="history-table-body">
+                        <!-- History injected here -->
                     </tbody>
                 </table>
             </div>
         </div>
-        <section class="flex flex-col items-center justify-center py-2 mt-4">
-            <div class="section-footer">
-                <a href="https://www.instagram.com/" target="_blank" class="sf-icon ig" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/satyam-kumar5286o" target="_blank" class="sf-icon li" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://youtube.com/@observe_with_satyam" target="_blank" class="sf-icon yt" title="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://t.me/CA_Protracker" target="_blank" class="sf-icon tg" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
-            </div>
-        </section>
     </main>
 
-    <!-- ===== QUIZ VIEW ===== -->
-    <main id="quiz-container" class="hidden flex-col max-w-6xl mx-auto w-full my-2 px-2">
+    <main id="view-rules" class="hidden flex-col max-w-6xl mx-auto w-full my-3 px-2">
+        <div class="glass-card bg-slate-900/80 border-t-4 border-blue-500 p-4 md:p-6 rounded-2xl shadow-2xl text-sm text-gray-300 leading-relaxed">
+            <h2 class="text-xl md:text-2xl font-bold text-blue-400 mb-4 poppins text-center">Exam Syllabus & Pattern</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div class="bg-blue-950/30 border border-blue-800 rounded-xl p-4">
+                    <h3 class="text-white font-bold mb-2 flex items-center gap-2"><i class="fa-solid fa-stopwatch text-blue-400"></i> Practice Mode</h3>
+                    <p>Simulates the real exam environment. 120-minute timer. Answers are evaluated immediately upon selection. Score is recorded in Analytics.</p>
+                    <div class="mt-2 text-xs font-mono bg-black/40 p-2 rounded text-center"><span class="text-green-400">+2.5 Marks</span> | <span class="text-red-400">-0.83 Penalty (1/3rd)</span></div>
+                </div>
+                <div class="bg-emerald-950/30 border border-emerald-800 rounded-xl p-4">
+                    <h3 class="text-white font-bold mb-2 flex items-center gap-2"><i class="fa-solid fa-book-open text-emerald-400"></i> Study Mode</h3>
+                    <p>Designed for pure learning and revision. Correct answers are pre-highlighted in green. Access detailed explanations instantly via the "Expert Advice" button.</p>
+                    <div class="mt-2 text-xs font-mono bg-black/40 p-2 rounded text-center text-emerald-300">Untimed • No Scoring</div>
+                </div>
+            </div>
+
+            <h3 class="text-lg font-bold text-white mt-6 mb-3 border-b border-slate-700 pb-2">Detailed Section Breakdown</h3>
+            <div class="overflow-x-auto rounded-lg border border-slate-700">
+                <table class="w-full text-left border-collapse syllabus-table min-w-[700px] text-xs md:text-sm">
+                    <thead>
+                        <tr>
+                            <th>Category / Subject Area</th>
+                            <th class="text-center">Approx. No. of Questions</th>
+                            <th class="text-center">Estimated Marks</th>
+                            <th>Key High-Yield Topics Covered</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-300">
+                        <tr>
+                            <td class="font-semibold text-blue-200">Management & Financial Administration</td>
+                            <td class="text-center">25 – 30</td>
+                            <td class="text-center text-blue-300">~62.5 – 75</td>
+                            <td>CCS Conduct Rules, CCS (CCA) Rules, General Financial Rules (GFR), Budgeting, FR & SR, LTC, TA/DA rules, CGHS guidelines.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-blue-200">Educational Policies, Measurement & Evaluation</td>
+                            <td class="text-center">20 – 25</td>
+                            <td class="text-center text-blue-300">~50 – 62.5</td>
+                            <td>NEP 2020, NCF, CCE, PARAKH, Foundational Literacy & Numeracy (FLN), Inclusive Education, Special Needs Education.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-blue-200">Office Procedures & Statutory Regulations</td>
+                            <td class="text-center">15 – 20</td>
+                            <td class="text-center text-blue-300">~37.5 – 50</td>
+                            <td>RTI Act (2005), POCSO Act, POSH Act, Rights of PwD Act, Office Manual, File Movement & Maintenance.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-blue-200">Reasoning Ability & Quantitative Aptitude</td>
+                            <td class="text-center">15 – 20</td>
+                            <td class="text-center text-blue-300">~37.5 – 50</td>
+                            <td>Data Interpretation, Percentage, Profit & Loss, Syllogisms, Blood Relations, Coding-Decoding, Time & Work.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-blue-200">General Knowledge & Current Affairs</td>
+                            <td class="text-center">15 – 18</td>
+                            <td class="text-center text-blue-300">~37.5 – 45</td>
+                            <td>Social/Economic issues, Government Schemes, Educational Initiatives, Basic Indian Polity & Indian Economy.</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-blue-200">Language Skills (English & Hindi)</td>
+                            <td class="text-center">12 – 15</td>
+                            <td class="text-center text-blue-300">~30 – 37.5</td>
+                            <td>Grammar, Vocabulary, Comprehension Passages, Idioms/Phrases, Sentence Correction.</td>
+                        </tr>
+                        <tr class="bg-blue-900/40 font-bold text-white">
+                            <td>Total</td>
+                            <td class="text-center">120 Questions</td>
+                            <td class="text-center">300 Marks</td>
+                            <td class="text-center">100%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-center text-gray-400 text-xs mt-4">Swipe left/right anywhere on the screen during a test to navigate between questions smoothly.</p>
+        </div>
+    </main>
+
+    <main id="view-quiz" class="hidden flex-col max-w-6xl mx-auto w-full my-2 px-2 relative">
+        <div id="study-mode-banner" class="hidden bg-emerald-900/40 border border-emerald-500/50 text-emerald-300 px-4 py-2 rounded-xl mb-2 text-xs md:text-sm font-bold flex justify-between items-center">
+            <span><i class="fa-solid fa-book-open"></i> Study Mode Active</span>
+            <span class="font-normal opacity-80">Answers Pre-highlighted</span>
+        </div>
+
         <div class="relative w-full">
-            <div class="glass-card bg-slate-900/90 border-t-2 border-blue-500 p-3 md:p-5 rounded-xl shadow-xl">
-                <div id="question-scroll-area">
-                    <p id="question-text" class="text-[14px] md:text-[17px] font-medium text-gray-50 whitespace-pre-wrap text-justify w-full leading-relaxed">Loading...</p>
-                </div>
+            <div class="glass-card bg-slate-900/95 border-t-2 border-blue-500 p-4 md:p-6 rounded-2xl shadow-xl">
+                <p id="question-text" class="text-[15px] md:text-[18px] font-medium text-gray-50 whitespace-pre-wrap text-justify w-full leading-relaxed">Loading question...</p>
             </div>
         </div>
-        <div id="options-grid" class="mt-2 grid grid-cols-1 gap-2 w-full"></div>
-        <div class="flex items-center gap-2 mt-2 px-1">
-            <label class="flex items-center gap-2 cursor-pointer touch-manipulation" id="mark-review-label">
-                <input type="checkbox" id="mark-review-checkbox" onchange="toggleMarkReview()" class="w-4 h-4 accent-amber-500 rounded cursor-pointer">
-                <span class="text-xs md:text-sm text-amber-400 font-medium"><i class="fa-solid fa-bookmark"></i> Mark for Review</span>
+        
+        <div id="options-grid" class="mt-3 grid grid-cols-1 gap-2.5 w-full">
+            <!-- Options injected here -->
+        </div>
+        
+        <div class="flex items-center justify-between mt-4 px-1 gap-2">
+            <label class="flex items-center gap-2 cursor-pointer touch-manipulation">
+                <input type="checkbox" id="mark-review-checkbox" onchange="toggleBookmark()" class="w-5 h-5 accent-amber-500 rounded cursor-pointer">
+                <span class="text-sm text-amber-400 font-medium"><i class="fa-solid fa-bookmark"></i> Bookmark</span>
             </label>
+            
+            <button id="btn-expert-advice" onclick="showCurrentExplanation()" class="hidden px-4 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white rounded-xl text-sm font-bold shadow-lg shadow-purple-900/50 transition transform active:scale-95 touch-manipulation">
+                <i class="fa-solid fa-lightbulb text-yellow-300"></i> Expert Advice
+            </button>
         </div>
     </main>
 
-    <!-- ===== REVISION VIEW ===== -->
-    <main id="revision-container" class="hidden flex-col max-w-6xl mx-auto w-full my-2 px-2">
-        <div class="revision-banner">
-            <i class="fa-solid fa-rotate-right"></i>
-            <span><strong>Revision Mode</strong> — correct answers highlighted</span>
-            <button class="exit-btn" onclick="exitRevision()"><i class="fa-solid fa-xmark"></i> Exit</button>
-        </div>
-        <div class="relative w-full mt-2">
-            <div class="glass-card bg-slate-900/90 border-t-2 border-purple-500 p-3 md:p-5 rounded-xl shadow-xl">
-                <div id="revision-question-scroll">
-                    <p id="revision-question-text" class="text-[14px] md:text-[17px] font-medium text-gray-50 whitespace-pre-wrap text-justify w-full leading-relaxed">Loading...</p>
-                </div>
-            </div>
-        </div>
-        <div id="revision-options-grid" class="mt-2 grid grid-cols-1 gap-2 w-full"></div>
-        <div class="mt-2 flex justify-between items-center text-xs md:text-sm text-gray-400 px-1">
-            <span id="revision-progress">Q: 0/0</span>
-            <span class="text-purple-400"><i class="fa-regular fa-circle-check"></i> Correct answers shown</span>
-        </div>
-    </main>
-
-    <!-- ===== QUIZ FOOTER ===== -->
     <footer id="quiz-footer" class="hidden mobile-sticky-footer">
         <div class="max-w-6xl mx-auto w-full">
-            <div class="flex justify-between items-center px-3 pt-1 text-[9px] md:text-xs text-gray-400 font-mono border-b border-white/5 pb-1">
-                <div>Score: <span id="live-score-display" class="text-blue-400 font-bold">0</span>/300</div>
-                <div><span class="text-green-400">✓<span id="live-correct">0</span></span> <span class="text-red-400">✗<span id="live-wrong">0</span></span></div>
-                <div class="text-white/50" id="progress-counter">Q:0/100</div>
+            <div class="flex justify-between items-center px-4 pt-1.5 text-[10px] md:text-xs font-mono border-b border-white/5 pb-1.5">
+                <div id="footer-score-block" class="text-gray-400">Score: <span id="live-score-display" class="text-blue-400 font-bold text-sm">0</span>/300</div>
+                <div id="footer-stats-block"><span class="text-green-400 font-bold">✓ <span id="live-correct">0</span></span> &nbsp; <span class="text-red-400 font-bold">✗ <span id="live-wrong">0</span></span></div>
+                <div class="text-white/60 font-bold bg-white/10 px-2 py-0.5 rounded-md" id="progress-counter">Q: 0/120</div>
             </div>
-            <div class="flex justify-between items-center p-2 gap-2">
-                <button onclick="prevQuestion()" class="px-2 py-2 md:px-4 md:py-2.5 rounded-lg bg-slate-800 border border-slate-600 hover:bg-slate-700 text-xs md:text-sm font-semibold transition flex items-center gap-1 shrink-0 touch-manipulation min-w-[40px] justify-center">
-                    <i class="fa-solid fa-arrow-left"></i>
+            <div class="flex justify-between items-center p-2.5 gap-2 md:gap-3">
+                <button onclick="prevQuestion()" class="flex-1 py-3 rounded-xl bg-slate-800 border border-slate-600 hover:bg-slate-700 text-sm font-semibold transition flex items-center justify-center gap-2 touch-manipulation">
+                    <i class="fa-solid fa-arrow-left"></i> <span class="hidden sm:inline">Previous</span>
                 </button>
-                <button onclick="togglePalette()" class="px-2 py-2 md:px-4 md:py-2.5 rounded-lg bg-slate-800 border border-slate-500 hover:bg-slate-700 text-xs md:text-sm font-semibold transition flex items-center gap-1 shrink-0 touch-manipulation min-w-[44px] justify-center" aria-label="Question palette">
-                    <i class="fa-solid fa-grid-2"></i> <span class="hidden sm:inline">Palette</span>
+                <button onclick="togglePalette()" class="flex-1 py-3 rounded-xl bg-blue-900/40 border border-blue-500 hover:bg-blue-800 text-blue-300 flex items-center justify-center transition shadow-lg shrink-0 touch-manipulation gap-2" aria-label="Question palette">
+                    <i class="fa-solid fa-table-cells"></i> <span class="hidden sm:inline font-bold">Palette</span>
                 </button>
-                <button onclick="submitExamEarly()" class="px-2 py-2 md:px-4 md:py-2.5 rounded-lg bg-red-900/40 border border-red-500/50 text-red-300 hover:bg-red-600 hover:text-white text-xs md:text-sm font-bold transition flex items-center gap-1 shrink-0 touch-manipulation min-w-[44px] justify-center">
-                    <i class="fa-solid fa-flag-checkered"></i>
-                </button>
-                <button onclick="nextQuestion()" class="px-2 py-2 md:px-4 md:py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 border border-blue-400 text-white text-xs md:text-sm font-bold transition flex items-center gap-1 shrink-0 shadow-lg shadow-blue-600/20 touch-manipulation min-w-[44px] justify-center">
-                    <i class="fa-solid fa-arrow-right"></i>
+                <button onclick="nextQuestion()" class="flex-1 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 border border-blue-400 text-white text-sm font-bold transition flex items-center justify-center gap-2 shadow-lg shadow-blue-600/20 touch-manipulation">
+                    <span class="hidden sm:inline">Next</span> <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
         </div>
     </footer>
 
-    <!-- ===== QUESTION PALETTE PANEL ===== -->
     <div id="palette-panel">
-        <div class="flex justify-between items-center mb-3">
-            <h3 class="text-sm font-bold text-white">Question Palette</h3>
-            <button onclick="togglePalette()" class="text-gray-400 hover:text-white text-lg leading-none touch-manipulation p-1">&times;</button>
+        <div class="flex justify-between items-center mb-4 border-b border-slate-700 pb-3">
+            <h3 class="text-lg font-bold text-white poppins">Question Palette</h3>
+            <button onclick="togglePalette()" class="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-red-500/20 transition touch-manipulation">&times;</button>
         </div>
-        <div class="flex gap-3 text-[10px] text-gray-400 mb-3 flex-wrap">
-            <span><span class="inline-block w-3 h-3 rounded bg-[#2563eb] mr-1 align-middle"></span> Answered</span>
-            <span><span class="inline-block w-3 h-3 rounded bg-[#d97706] mr-1 align-middle"></span> Marked</span>
-            <span><span class="inline-block w-3 h-3 rounded bg-[#1e293b] border border-[#475569] mr-1 align-middle"></span> Unanswered</span>
+        <div class="flex gap-4 text-xs font-medium text-gray-300 mb-5 flex-wrap justify-center bg-black/40 p-3 rounded-xl">
+            <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-[#1e293b] border border-[#475569]"></span> Unattempted</span>
+            <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-[#047857]"></span> Correct</span>
+            <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-[#991b1b]"></span> Wrong</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-bookmark text-amber-400"></i> Bookmarked</span>
         </div>
-        <div id="palette-grid" class="flex flex-wrap gap-1.5 justify-center"></div>
+        <div id="palette-grid" class="flex flex-wrap gap-2.5 justify-center">
+            <!-- Palette buttons injected here -->
+        </div>
     </div>
 
-    <!-- ===== END SCREEN ===== -->
-    <div id="end-screen" class="hidden flex-col items-center justify-center max-w-4xl mx-auto w-full text-center space-y-3 my-4 px-3">
-        <div class="text-blue-400 text-4xl md:text-6xl mb-1"><i class="fa-solid fa-square-poll-vertical"></i></div>
-        <h1 class="text-xl md:text-3xl font-bold text-white poppins">Test Submitted!</h1>
-        <div class="glass-card bg-slate-900/90 border border-blue-500/50 rounded-2xl p-4 md:p-6 mt-2 w-full shadow-2xl">
-            <h3 class="text-lg md:text-xl font-bold text-white mb-4">Performance Report</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3 mb-4">
-                <div class="bg-black/40 p-2 md:p-3 rounded-xl border border-slate-700"><div class="text-[9px] md:text-[10px] text-gray-400 uppercase tracking-widest mb-1">Attempted</div><div class="text-lg md:text-xl font-bold text-white" id="rep-attempted">0</div></div>
-                <div class="bg-black/40 p-2 md:p-3 rounded-xl border border-green-900/50"><div class="text-[9px] md:text-[10px] text-green-400 uppercase tracking-widest mb-1">Correct (+3)</div><div class="text-lg md:text-xl font-bold text-green-400" id="rep-correct">0</div></div>
-                <div class="bg-black/40 p-2 md:p-3 rounded-xl border border-red-900/50"><div class="text-[9px] md:text-[10px] text-red-400 uppercase tracking-widest mb-1">Wrong (-1)</div><div class="text-lg md:text-xl font-bold text-red-400" id="rep-wrong">0</div></div>
-                <div class="bg-blue-900/20 p-2 md:p-3 rounded-xl border border-blue-500/50 pulse-animation"><div class="text-[9px] md:text-[10px] text-blue-300 uppercase tracking-widest mb-1">Score</div><div class="text-lg md:text-xl font-bold text-blue-400"><span id="rep-score">0</span><span class="text-[10px] text-gray-500">/300</span></div></div>
-            </div>
-            <div class="flex flex-wrap justify-center gap-2">
-                <button onclick="showSetSelection()" class="px-4 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs md:text-sm transition flex items-center gap-2 touch-manipulation"><i class="fa-solid fa-layer-group"></i> Back to Sets</button>
-                <button onclick="location.reload()" class="px-4 py-2.5 rounded-lg bg-slate-700 hover:bg-slate-600 border border-slate-500 text-white font-bold text-xs md:text-sm transition flex items-center gap-2 touch-manipulation"><i class="fa-solid fa-rotate-right"></i> New Set</button>
-            </div>
-        </div>
-        <section class="flex flex-col items-center justify-center py-2 mt-4">
-            <div class="section-footer">
-                <a href="https://www.instagram.com/" target="_blank" class="sf-icon ig" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/satyam-kumar5286o" target="_blank" class="sf-icon li" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://youtube.com/@observe_with_satyam" target="_blank" class="sf-icon yt" title="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://t.me/CA_Protracker" target="_blank" class="sf-icon tg" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
-            </div>
-        </section>
-    </div>
-
-    <!-- ===== EXPLANATION MODAL ===== -->
-    <div id="explanation-modal" class="fixed inset-0 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 z-50 hidden" onclick="dismissModal(event)">
-        <div class="glass-card bg-slate-900 border border-slate-600 rounded-2xl max-w-sm md:max-w-lg w-full p-4 md:p-5 text-center shadow-2xl overflow-y-auto max-h-[85vh]" onclick="event.stopPropagation()">
-            <h2 id="modal-title" class="text-lg md:text-xl font-bold flex items-center justify-center gap-2 mb-2"></h2>
-            <div id="modal-subtitle" class="text-xs md:text-sm text-gray-300 leading-relaxed text-left"></div>
-            <div class="pt-3">
-                <button onclick="nextQuestion()" class="px-4 py-2.5 bg-blue-600 text-white rounded-lg font-bold w-full hover:bg-blue-500 transition shadow-lg text-sm touch-manipulation">Continue Test</button>
+    <div id="explanation-modal" class="fixed inset-0 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 z-50 hidden" onclick="closeExplanation(event)">
+        <div class="glass-card bg-slate-900 border border-slate-600 rounded-2xl max-w-md w-full p-5 md:p-6 shadow-2xl overflow-y-auto max-h-[85vh] relative" onclick="event.stopPropagation()">
+            <button onclick="closeExplanation()" class="absolute top-3 right-3 w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white touch-manipulation"><i class="fa-solid fa-xmark"></i></button>
+            <h2 id="modal-title" class="text-xl font-bold flex items-center gap-2 mb-3 mt-1"></h2>
+            <div id="modal-subtitle" class="text-sm text-gray-200 leading-relaxed text-left"></div>
+            <div class="pt-5 mt-4 border-t border-slate-700">
+                <button onclick="closeExplanationAndNext()" class="w-full py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-500 transition shadow-lg shadow-blue-600/30 text-sm touch-manipulation">Got it, Next Question <i class="fa-solid fa-arrow-right ml-1"></i></button>
             </div>
         </div>
     </div>
 
-    <!-- ===== AUDIO & APP LOGIC ===== -->
     <script>
+        /* --- 1. Custom Dialog System --- */
+        function showDialog(title, message, type = 'alert', onConfirm = null) {
+            const overlay = document.getElementById('custom-dialog-overlay');
+            document.getElementById('dialog-title').innerText = title;
+            document.getElementById('dialog-message').innerText = message;
+            
+            const btnContainer = document.getElementById('dialog-buttons');
+            btnContainer.innerHTML = '';
+            
+            if (type === 'confirm') {
+                const cancelBtn = document.createElement('button');
+                cancelBtn.className = 'px-4 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 text-white text-sm font-bold flex-1 touch-manipulation';
+                cancelBtn.innerText = 'Cancel';
+                cancelBtn.onclick = () => overlay.classList.remove('active');
+                btnContainer.appendChild(cancelBtn);
+            }
+            
+            const okBtn = document.createElement('button');
+            okBtn.className = 'px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold flex-1 shadow-lg touch-manipulation';
+            okBtn.innerText = type === 'confirm' ? 'Confirm' : 'OK';
+            okBtn.onclick = () => {
+                overlay.classList.remove('active');
+                if (onConfirm) onConfirm();
+            };
+            btnContainer.appendChild(okBtn);
+            
+            overlay.classList.add('active');
+        }
+
+        /* --- 2. Data Fetching (Authentic JSON files) --- */
+        let allSetsData = [];
+        
+        function normalizeData(rawData) {
+            return rawData.map(item => {
+                if (item.question && item.options) return item; 
+                if (item.Question_Text) {
+                    let cIndex = 0;
+                    const ansStr = String(item.Correct_Answer).toUpperCase();
+                    if (ansStr.includes("A")) cIndex = 0;
+                    else if (ansStr.includes("B")) cIndex = 1;
+                    else if (ansStr.includes("C")) cIndex = 2;
+                    else if (ansStr.includes("D")) cIndex = 3;
+                    return { 
+                        question: item.Question_Text, 
+                        options: [item.Option_A, item.Option_B, item.Option_C, item.Option_D], 
+                        correctOption: cIndex, 
+                        explanation: item.Brief_Explanation || "No explanation provided." 
+                    };
+                }
+                return item;
+            });
+        }
+
+        async function loadAuthenticData() {
+            let allQuestions = [];
+            const files = ['exam-questions-v1.json', 'exam-questions-v2.json', 'exam-questions-v3.json'];
+            
+            let filesLoaded = false;
+            for (let file of files) {
+                try {
+                    const res = await fetch(file);
+                    if (res.ok) {
+                        const data = await res.json();
+                        allQuestions = allQuestions.concat(normalizeData(data));
+                        filesLoaded = true;
+                    }
+                } catch (e) {
+                    console.log(`Could not load ${file}. Falling back to dynamic generator if necessary.`);
+                }
+            }
+
+            // Fallback Generator if JSON files aren't available locally
+            if (allQuestions.length === 0) {
+                showToast("JSON not found. Loading complete simulated data.");
+                allQuestions = generateFallbackData();
+            }
+
+            // Chunk the master list into sets of 120 questions each (Matching new syllabus)
+            let chunkedSets = [];
+            for (let i = 0; i < allQuestions.length; i += 120) {
+                chunkedSets.push(allQuestions.slice(i, i + 120));
+            }
+            // If the last set is too small, just let it be, but ideally we have a multiple of 120.
+            allSetsData = chunkedSets;
+        }
+
+        function generateFallbackData() {
+            const subjects = [
+                "Management & Financial Admin", 
+                "Educational Policies, Measurement", 
+                "Office Procedures & Regulations", 
+                "Reasoning Ability", 
+                "General Knowledge",
+                "Language Skills"
+            ];
+            let setQuestions = [];
+            // Generate 600 questions for 5 sets of 120
+            for (let q = 1; q <= 600; q++) { 
+                let sub = subjects[q % subjects.length];
+                let correctAnswer = q % 4;
+                setQuestions.push({
+                    question: `[${sub}] This is an authentic placeholder question designed to simulate the UPSC Principal Exam format. Which of the following statements is accurate?`,
+                    options: [
+                        "The policy states that implementation takes 5 years.", 
+                        "The primary responsibility falls under the CCS rules.", 
+                        "According to NEP 2020, foundational literacy is key.", 
+                        "None of the above statements are entirely correct."
+                    ],
+                    correctOption: correctAnswer,
+                    explanation: `Option ${String.fromCharCode(65+correctAnswer)} is correct. This detailed explanation covers the nuances of ${sub} to help you understand the theoretical framework behind the rules.`
+                });
+            }
+            return setQuestions;
+        }
+
+        /* --- 3. IndexedDB Wrapper --- */
+        const DB_NAME = "UPSC_Principal_Pro_DB";
+        const DB_VERSION = 1;
+        
+        function openDB() {
+            return new Promise((resolve, reject) => {
+                const req = indexedDB.open(DB_NAME, DB_VERSION);
+                req.onupgradeneeded = (e) => {
+                    const db = e.target.result;
+                    if (!db.objectStoreNames.contains('progress')) db.createObjectStore('progress'); 
+                    if (!db.objectStoreNames.contains('history')) db.createObjectStore('history', { autoIncrement: true });
+                };
+                req.onsuccess = () => resolve(req.result);
+                req.onerror = () => reject(req.error);
+            });
+        }
+        
+        async function idbSet(storeName, key, val) {
+            const db = await openDB();
+            return new Promise((resolve, reject) => {
+                const tx = db.transaction(storeName, 'readwrite');
+                tx.objectStore(storeName).put(val, key);
+                tx.oncomplete = () => resolve();
+                tx.onerror = () => reject(tx.error);
+            });
+        }
+        
+        async function idbGet(storeName, key) {
+            const db = await openDB();
+            return new Promise((resolve, reject) => {
+                const req = db.transaction(storeName, 'readonly').objectStore(storeName).get(key);
+                req.onsuccess = () => resolve(req.result);
+                req.onerror = () => reject(req.error);
+            });
+        }
+
+        async function idbAddHistory(record) {
+            const db = await openDB();
+            return new Promise((resolve, reject) => {
+                const tx = db.transaction('history', 'readwrite');
+                tx.objectStore('history').add(record);
+                tx.oncomplete = () => resolve();
+                tx.onerror = () => reject(tx.error);
+            });
+        }
+
+        async function idbGetAllHistory() {
+            const db = await openDB();
+            return new Promise((resolve, reject) => {
+                const req = db.transaction('history', 'readonly').objectStore('history').getAll();
+                req.onsuccess = () => resolve(req.result || []);
+                req.onerror = () => reject(req.error);
+            });
+        }
+
+        async function idbClearAll() {
+            const db = await openDB();
+            return new Promise((resolve, reject) => {
+                const tx = db.transaction(['progress', 'history'], 'readwrite');
+                tx.objectStore('progress').clear();
+                tx.objectStore('history').clear();
+                tx.oncomplete = () => resolve();
+                tx.onerror = () => reject(tx.error);
+            });
+        }
+
+        /* --- 4. Global State & App Logic --- */
+        let currentSetIndex = 0;
+        let currentQIndex = 0;
+        let currentMode = 'practice'; // 'practice' or 'study'
+        let sessionState = []; 
+        let bookmarked = new Set();
+        let stats = { correct: 0, wrong: 0 };
+        let timerInterval;
+        let timeRemaining = 120 * 60; // 120 minutes
+        let isTestActive = false;
         let soundEnabled = true;
+
         const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
-        function playBeep(freq = 440, type = 'sine', duration = 0.15) {
+        function playBeep(freq, type, duration) {
             if (!soundEnabled) return;
             if (audioCtx.state === 'suspended') audioCtx.resume();
             const osc = audioCtx.createOscillator();
@@ -685,21 +659,17 @@
             osc.start();
             osc.stop(audioCtx.currentTime + duration);
         }
-
         function soundCorrect() { playBeep(600, 'triangle', 0.12); setTimeout(() => playBeep(800, 'triangle', 0.18), 80); }
         function soundWrong() { playBeep(250, 'sawtooth', 0.18); setTimeout(() => playBeep(200, 'sawtooth', 0.25), 120); }
 
         function toggleSound() {
             soundEnabled = !soundEnabled;
             const icon = document.getElementById('sound-icon');
-            const btn = document.getElementById('soundToggleBtn');
             if (soundEnabled) {
                 icon.className = 'fa-solid fa-volume-high';
-                btn.classList.remove('muted');
                 showToast('Sound ON');
             } else {
                 icon.className = 'fa-solid fa-volume-xmark';
-                btn.classList.add('muted');
                 showToast('Sound OFF');
             }
         }
@@ -709,739 +679,534 @@
             toast.textContent = msg;
             toast.classList.add('show');
             clearTimeout(toast._timeout);
-            toast._timeout = setTimeout(() => toast.classList.remove('show'), 1500);
+            toast._timeout = setTimeout(() => toast.classList.remove('show'), 2000);
         }
 
-        function dismissModal(event) {
-            if (event.target === document.getElementById('explanation-modal')) {
-                document.getElementById('explanation-modal').classList.add('hidden');
+        async function initApp() {
+            await loadAuthenticData();
+            renderSetCards();
+            showView('sets');
+            const savedState = await idbGet('progress', 'current');
+            if (savedState && savedState.isTestActive) {
+                showDialog('Resume Session', `You have an active ${savedState.mode} session on Set ${savedState.setIndex + 1}. Continue?`, 'confirm', () => {
+                    resumeSession(savedState);
+                });
             }
         }
 
-        // ── DATA & STATE ──
-        let allQuestionsPool = [];
-        let chunkedSets = [];
-        let currentSetIndex = 0;
-        let currentQIndex = 0;
-        let isAnswered = false;
-        let sessionState = [];
-        let markedForReview = new Set();
-        let stats = { correct: 0, wrong: 0 };
-        let timerInterval;
-        let timeRemaining = 120 * 60;
-        let isTestActive = false;
-        let isRevisionMode = false;
-        let revisionSetIndex = -1;
-
-        function shuffleArray(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
-        }
-
-        function normalizeData(rawData) {
-            return rawData.map(item => {
-                if (item.question && item.options) return item;
-                if (item.Question_Text) {
-                    let cIndex = 0;
-                    const ansStr = String(item.Correct_Answer).toUpperCase();
-                    if (ansStr.includes("A")) cIndex = 0;
-                    else if (ansStr.includes("B")) cIndex = 1;
-                    else if (ansStr.includes("C")) cIndex = 2;
-                    else if (ansStr.includes("D")) cIndex = 3;
-                    return { question: item.Question_Text, options: [item.Option_A, item.Option_B, item.Option_C, item.Option_D], correctOption: cIndex, explanation: item.Brief_Explanation || "No explanation provided." };
-                }
-                return item;
-            });
-        }
-
-        const STORAGE_KEY = 'upscPrincipalProgress';
-
-        function saveProgress() {
-            if (!isTestActive || isRevisionMode) return;
-            const data = {
-                setIndex: currentSetIndex,
-                qIndex: currentQIndex,
-                sessionState: sessionState.map(s => s ? { selected: s.selected, isCorrect: s.isCorrect } : null),
-                markedForReview: Array.from(markedForReview),
-                stats: { correct: stats.correct, wrong: stats.wrong },
-                timeRemaining: timeRemaining,
-                timestamp: Date.now(),
-                totalSets: chunkedSets.length,
-                setLength: chunkedSets[currentSetIndex] ? chunkedSets[currentSetIndex].length : 0
-            };
-            try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch (e) {}
-        }
-
-        function loadProgress() {
-            try {
-                const raw = localStorage.getItem(STORAGE_KEY);
-                if (!raw) return null;
-                const data = JSON.parse(raw);
-                if (typeof data.setIndex !== 'number' || typeof data.qIndex !== 'number' || !Array.isArray(data.sessionState) || !data.stats) return null;
-                return data;
-            } catch (e) { return null; }
-        }
-
-        function clearProgress() { localStorage.removeItem(STORAGE_KEY); }
-        function hasSavedProgress() { return !!loadProgress(); }
-
-        function getHistory() { return JSON.parse(localStorage.getItem('upscPrincipalHistory')) || []; }
-        function saveToHistory(finalScore, correct, wrong, setNum) {
-            let history = getHistory();
-            history.unshift({
-                date: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata', dateStyle: 'short', timeStyle: 'short' }),
-                set: setNum + 1,
-                score: finalScore,
-                correct: correct,
-                wrong: wrong,
-                attempted: correct + wrong
-            });
-            localStorage.setItem('upscPrincipalHistory', JSON.stringify(history));
-        }
-
-        function clearHistory() {
-            if (confirm("Delete all past progress and history?")) {
-                localStorage.removeItem('upscPrincipalHistory');
-                renderDashboardStats();
-                renderSetCards();
-                renderScoreClub();
-                showToast('History cleared');
-            }
-        }
-
-        function getAttemptedSets() {
-            const history = getHistory();
-            const setMap = {};
-            history.forEach(h => {
-                const key = h.set - 1;
-                if (!setMap[key]) setMap[key] = [];
-                setMap[key].push(h);
-            });
-            return setMap;
-        }
-
-        function getBestScoreForSet(setIdx) {
-            const history = getHistory();
-            let best = -1;
-            history.forEach(h => { if (h.set - 1 === setIdx && h.score > best) best = h.score; });
-            return best;
-        }
-
-        function isSetAttempted(setIdx) { return getHistory().some(h => h.set - 1 === setIdx); }
-
-        function showResumeOverlay() {
-            const overlay = document.getElementById('resumeOverlay');
-            const progress = loadProgress();
-            if (!progress) { overlay.classList.remove('active'); return; }
-            const setNum = progress.setIndex + 1;
-            const total = progress.setLength || 100;
-            const qNum = Math.min(progress.qIndex + 1, total);
-            document.getElementById('resume-progress-text').textContent = `Set ${setNum} · Question ${qNum} of ${total}`;
-            document.getElementById('resume-detail').textContent = `You left off on Set ${setNum} at question ${qNum}. Continue where you left off?`;
-            overlay.classList.add('active');
-        }
-
-        function resumeTest() {
-            document.getElementById('resumeOverlay').classList.remove('active');
-            const progress = loadProgress();
-            if (!progress) { showSetSelection(); return; }
-            currentSetIndex = progress.setIndex;
-            currentQIndex = progress.qIndex;
-            sessionState = progress.sessionState.map(s => s ? { selected: s.selected, isCorrect: s.isCorrect } : null);
-            markedForReview = new Set(progress.markedForReview || []);
-            stats = { correct: progress.stats.correct, wrong: progress.stats.wrong };
-            timeRemaining = progress.timeRemaining || 120 * 60;
-            if (!chunkedSets[currentSetIndex]) { showSetSelection(); return; }
-            launchTestFromResume();
-        }
-
-        function startFresh() {
-            document.getElementById('resumeOverlay').classList.remove('active');
-            clearProgress();
-            showSetSelection();
-        }
-
-        function launchTestFromResume() {
-            isRevisionMode = false;
-            hideAllViews();
-            document.getElementById('quiz-container').classList.remove('hidden');
-            document.getElementById('quiz-container').classList.add('flex');
-            document.getElementById('quiz-footer').classList.remove('hidden');
-            document.getElementById('quiz-footer').classList.add('mobile-sticky-footer');
-            document.getElementById('header-controls').classList.remove('hidden');
-            document.getElementById('mark-review-label').style.display = 'flex';
-            isTestActive = true;
-            startTimer();
-            renderQuestion();
-            updateLiveScore();
-            renderPalette();
-            saveProgress();
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            document.querySelector('[data-tab="sets"]')?.classList.add('active');
-            window.scrollTo(0, 0);
-        }
-
-        async function initSystem() {
-            const files = ['exam-questions-v1.json', 'exam-questions-v2.json', 'exam-questions-v3.json'];
-            for (let file of files) {
-                try {
-                    const res = await fetch(file);
-                    if (res.ok) {
-                        const data = await res.json();
-                        allQuestionsPool = allQuestionsPool.concat(normalizeData(data));
-                    }
-                } catch (e) { console.log(`Note: ${file} not found.`); }
-            }
-            if (allQuestionsPool.length === 0) {
-                document.getElementById('question-text').innerText = "⚠️ No question files found. Please upload exam-questions-v1.json (or v2/v3).";
+        function showView(viewId) {
+            if (isTestActive && viewId !== 'quiz') {
+                showDialog('Leave Session?', 'Your test is active. Exiting will pause the test, but you can resume it from the Sets menu.', 'confirm', () => {
+                    pauseSession();
+                    executeShowView(viewId);
+                });
                 return;
             }
-            shuffleArray(allQuestionsPool);
-            chunkedSets = [];
-            for (let i = 0; i < allQuestionsPool.length; i += 100) {
-                chunkedSets.push(allQuestionsPool.slice(i, i + 100));
-            }
-            renderSetCards();
-            renderDashboardStats();
-            renderScoreClub();
-            if (hasSavedProgress()) {
-                setTimeout(showResumeOverlay, 400);
+            executeShowView(viewId);
+        }
+
+        function executeShowView(viewId) {
+            ['view-sets', 'view-analytics', 'view-rules', 'view-quiz'].forEach(id => {
+                document.getElementById(id).classList.add('hidden');
+                document.getElementById(id).classList.remove('flex');
+            });
+            document.getElementById(`view-${viewId}`).classList.remove('hidden');
+            document.getElementById(`view-${viewId}`).classList.add('flex');
+            
+            if (viewId === 'quiz') {
+                document.getElementById('main-tabs').classList.add('hidden');
+                document.getElementById('quiz-footer').classList.remove('hidden');
+                document.getElementById('quiz-footer').classList.add('mobile-sticky-footer');
             } else {
-                showSetSelection();
+                document.getElementById('main-tabs').classList.remove('hidden');
+                document.getElementById('quiz-footer').classList.add('hidden');
+                document.getElementById('quiz-footer').classList.remove('mobile-sticky-footer');
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                const activeTab = document.querySelector(`[data-tab="${viewId}"]`);
+                if(activeTab) activeTab.classList.add('active');
+            }
+            
+            if (viewId === 'analytics') renderAnalytics();
+            window.scrollTo(0,0);
+        }
+
+        function requestHome() {
+            if (isTestActive) {
+                showDialog('Warning', 'Exiting now will pause your session. You can resume later.', 'confirm', () => {
+                    pauseSession();
+                    executeShowView('sets');
+                });
+            } else {
+                executeShowView('sets');
             }
         }
 
-        function renderSetCards() {
+        async function renderSetCards() {
             const grid = document.getElementById('set-cards-grid');
             grid.innerHTML = '';
-            const attemptedMap = getAttemptedSets();
-            let totalQ = 0;
-            chunkedSets.forEach((set, idx) => {
-                totalQ += set.length;
-                const attempted = isSetAttempted(idx);
-                const best = getBestScoreForSet(idx);
-                const hasProgress = (() => { const p = loadProgress(); return p && p.setIndex === idx; })();
+            const history = await idbGetAllHistory();
+            const savedState = await idbGet('progress', 'current');
 
-                const card = document.createElement('div');
-                card.className = 'set-card';
-                let badgeHTML = '';
-                if (hasProgress) badgeHTML = '<span class="badge-resume">⏳ Resume</span>';
-                else if (attempted) badgeHTML = '<span class="badge-completed">✓ Done</span>';
+            allSetsData.forEach((set, idx) => {
+                const setHistory = history.filter(h => h.set === idx);
+                let bestScore = -999;
+                setHistory.forEach(h => { if(h.score > bestScore) bestScore = h.score; });
+                
+                const isResumable = savedState && savedState.isTestActive && savedState.setIndex === idx;
+                const isCompleted = setHistory.length > 0;
 
-                card.innerHTML = `
-                    ${badgeHTML}
-                    <div class="set-number">Set ${idx + 1}</div>
-                    <div class="set-meta">${set.length} questions</div>
-                    ${attempted ? `<div class="set-status"><span>Best: ${best > -1 ? best : '—'}</span><span class="score-badge">${best > -1 ? best + '/300' : '—'}</span></div>` : '<div class="set-status"><span>&nbsp;</span></div>'}
-                    <div class="set-progress"><div class="bar" style="width:${attempted ? 100 : 0}%"></div></div>
-                    <div class="btn-group-actions">
-                        <button class="btn-start" onclick="startSet(${idx})"><i class="fa-solid fa-play"></i> ${hasProgress ? 'Resume' : 'Start'}</button>
-                        ${attempted ? `<button class="btn-revision" onclick="startRevision(${idx})"><i class="fa-solid fa-rotate-right"></i> Revise</button>` : ''}
-                    </div>`;
-                grid.appendChild(card);
+                let badge = '';
+                if(isResumable) badge = '<div class="badge resume">Resume Session</div>';
+                else if(isCompleted) badge = '<div class="badge completed">Completed</div>';
+
+                grid.innerHTML += `
+                    <div class="set-card">
+                        ${badge}
+                        <div class="text-3xl font-bold text-blue-400 poppins mb-1">Set ${idx + 1}</div>
+                        <div class="text-xs text-gray-400 mb-4">${set.length} Questions</div>
+                        ${isCompleted ? `<div class="text-sm font-semibold mb-3">Highest Score: <span class="text-amber-400">${parseFloat(bestScore).toFixed(2)} / 300</span></div>` : '<div class="h-8"></div>'}
+                        <div class="flex gap-2">
+                            <button onclick="startSession(${idx}, 'practice')" class="btn-action btn-practice touch-manipulation"><i class="fa-solid fa-stopwatch"></i> Practice</button>
+                            <button onclick="startSession(${idx}, 'study')" class="btn-action btn-study touch-manipulation"><i class="fa-solid fa-book-open"></i> Study</button>
+                        </div>
+                    </div>
+                `;
             });
-            document.getElementById('total-sets-count').textContent = chunkedSets.length;
-            document.getElementById('completed-sets-count').textContent = Object.keys(attemptedMap).length;
-            document.getElementById('inprogress-sets-count').textContent = hasSavedProgress() ? 1 : 0;
-            document.getElementById('total-questions-count').textContent = totalQ;
         }
 
-        function startSet(idx) {
-            const p = loadProgress();
-            if (p && p.setIndex === idx) { showResumeOverlay(); return; }
-            if (p && p.setIndex !== idx) {
-                if (!confirm(`Start Set ${idx + 1}? This will discard your saved progress on Set ${p.setIndex + 1}.`)) return;
-                clearProgress();
+        async function startSession(setIdx, mode) {
+            const savedState = await idbGet('progress', 'current');
+            if (savedState && savedState.isTestActive && savedState.setIndex !== setIdx) {
+                showDialog('Start New?', `This will override your paused ${savedState.mode} session on Set ${savedState.setIndex + 1}.`, 'confirm', () => {
+                    initNewSession(setIdx, mode);
+                });
+            } else if (savedState && savedState.isTestActive && savedState.setIndex === setIdx && savedState.mode === mode) {
+                resumeSession(savedState);
+            } else {
+                initNewSession(setIdx, mode);
             }
-            if (!p && !confirm(`Start Set ${idx + 1}? The 120-minute timer will begin immediately.`)) return;
-            currentSetIndex = idx;
+        }
+
+        function initNewSession(setIdx, mode) {
+            currentSetIndex = setIdx;
+            currentMode = mode;
             currentQIndex = 0;
+            sessionState = new Array(allSetsData[setIdx].length).fill(null);
+            bookmarked = new Set();
             stats = { correct: 0, wrong: 0 };
-            sessionState = new Array(chunkedSets[idx].length).fill(null);
-            markedForReview = new Set();
-            isTestActive = true;
-            isRevisionMode = false;
             timeRemaining = 120 * 60;
-            launchTestFromResume();
+            isTestActive = true;
+            
+            setupQuizUI(mode);
+            executeShowView('quiz');
+            renderQuestion();
+            updateFooterStats();
+            saveProgress();
         }
 
-        function startRevision(idx) {
-            if (!isSetAttempted(idx)) { alert("Take the test first before revising."); return; }
-            if (isTestActive) {
-                if (!confirm("A test is in progress. Exit and start revision?")) return;
-                clearProgress();
-                isTestActive = false;
+        function resumeSession(state) {
+            currentSetIndex = state.setIndex;
+            currentMode = state.mode;
+            currentQIndex = state.qIndex;
+            sessionState = state.sessionState;
+            bookmarked = new Set(state.bookmarked);
+            stats = state.stats;
+            timeRemaining = state.timeRemaining;
+            isTestActive = true;
+
+            setupQuizUI(currentMode);
+            executeShowView('quiz');
+            renderQuestion();
+            updateFooterStats();
+        }
+
+        function setupQuizUI(mode) {
+            document.getElementById('header-subtitle').innerText = mode === 'practice' ? 'Practice Mode' : 'Study Mode';
+            const banner = document.getElementById('study-mode-banner');
+            const expertBtn = document.getElementById('btn-expert-advice');
+            const timerUI = document.getElementById('timer-display');
+            
+            if (mode === 'study') {
+                banner.classList.remove('hidden');
+                expertBtn.classList.remove('hidden');
+                timerUI.classList.add('opacity-50');
                 clearInterval(timerInterval);
+                timerUI.innerHTML = `<i class="fa-solid fa-infinity"></i> <span>Study</span>`;
+            } else {
+                banner.classList.add('hidden');
+                expertBtn.classList.add('hidden');
+                timerUI.classList.remove('opacity-50');
+                startTimer();
             }
-            revisionSetIndex = idx;
-            isRevisionMode = true;
+        }
+
+        async function saveProgress() {
+            if (!isTestActive) return;
+            const state = {
+                isTestActive, setIndex: currentSetIndex, mode: currentMode,
+                qIndex: currentQIndex, sessionState, bookmarked: Array.from(bookmarked),
+                stats, timeRemaining, timestamp: Date.now()
+            };
+            await idbSet('progress', 'current', state);
+        }
+
+        async function pauseSession() {
             isTestActive = false;
             clearInterval(timerInterval);
-            hideAllViews();
-            document.getElementById('revision-container').classList.remove('hidden');
-            document.getElementById('revision-container').classList.add('flex');
-            document.getElementById('header-controls').classList.add('hidden');
-            document.getElementById('palette-panel').classList.remove('open');
-            currentQIndex = 0;
-            renderRevisionQuestion();
-            window.scrollTo(0, 0);
-        }
-
-        function exitRevision() {
-            isRevisionMode = false;
-            revisionSetIndex = -1;
-            hideAllViews();
-            showSetSelection();
-        }
-
-        function renderRevisionQuestion() {
-            const set = chunkedSets[revisionSetIndex];
-            if (!set || currentQIndex >= set.length) {
-                showToast('✅ Revision complete!');
-                setTimeout(exitRevision, 600);
-                return;
-            }
-            const q = set[currentQIndex];
-            document.getElementById('revision-progress').textContent = `Q: ${currentQIndex + 1}/${set.length}`;
-            document.getElementById('revision-question-text').innerHTML = `<span class="text-purple-400 font-bold">Q${currentQIndex + 1}.</span> ${q.question}`;
-            const grid = document.getElementById('revision-options-grid');
-            grid.innerHTML = '';
-            q.options.forEach((opt, idx) => {
-                const btn = document.createElement('button');
-                const label = String.fromCharCode(65 + idx);
-                const isCorrect = (idx === q.correctOption);
-                btn.innerHTML = `<span class="text-blue-400 font-bold w-6 text-left shrink-0">${label}.</span> <span>${opt}</span>`;
-                btn.className = `option-btn ${isCorrect ? 'option-revision-correct' : 'option-revision-neutral'}`;
-                btn.disabled = true;
-                btn.style.cursor = 'default';
-                grid.appendChild(btn);
-            });
-            window.scrollTo(0, 0);
-        }
-
-        function nextRevisionQuestion() {
-            const set = chunkedSets[revisionSetIndex];
-            if (!set) { exitRevision(); return; }
-            if (currentQIndex < set.length - 1) { currentQIndex++; renderRevisionQuestion(); }
-            else { showToast('🎉 End of revision!'); setTimeout(exitRevision, 600); }
-        }
-
-        function prevRevisionQuestion() {
-            if (currentQIndex > 0) { currentQIndex--; renderRevisionQuestion(); }
-        }
-
-        function startTimer() {
-            clearInterval(timerInterval);
-            updateTimerDisplay();
-            timerInterval = setInterval(() => {
-                timeRemaining--;
-                updateTimerDisplay();
-                if (timeRemaining % 15 === 0) saveProgress();
-                if (timeRemaining <= 300 && timeRemaining > 0) {
-                    document.getElementById('timer-display').classList.add('timer-urgent');
-                }
-                if (timeRemaining <= 0) {
-                    clearInterval(timerInterval);
-                    showToast('⏰ Time\'s up! Auto-submitting...');
-                    setTimeout(submitExamEarly, 800);
-                }
-            }, 1000);
-        }
-
-        function updateTimerDisplay() {
-            const h = Math.floor(timeRemaining / 3600).toString().padStart(2, '0');
-            const m = Math.floor((timeRemaining % 3600) / 60).toString().padStart(2, '0');
-            const s = (timeRemaining % 60).toString().padStart(2, '0');
-            document.getElementById('timer-display').innerHTML = `<i class="fa-regular fa-clock"></i> <span>${h}:${m}:${s}</span>`;
+            await saveProgress();
+            renderSetCards();
         }
 
         function renderQuestion() {
-            const currentSet = chunkedSets[currentSetIndex];
-            if (!currentSet || currentQIndex >= currentSet.length) { submitExamEarly(); return; }
-            const q = currentSet[currentQIndex];
-            isAnswered = sessionState[currentQIndex] !== null;
+            const set = allSetsData[currentSetIndex];
+            const q = set[currentQIndex];
+            const isAnswered = sessionState[currentQIndex] !== null;
 
-            document.getElementById('progress-counter').innerText = `Q: ${currentQIndex + 1}/${currentSet.length}`;
-            document.getElementById('question-text').innerHTML = `<span class="text-blue-400 font-bold">Q${currentQIndex + 1}.</span> ${q.question}`;
-            document.getElementById('mark-review-checkbox').checked = markedForReview.has(currentQIndex);
+            document.getElementById('progress-counter').innerText = `Q: ${currentQIndex + 1}/${set.length}`;
+            document.getElementById('question-text').innerHTML = `<span class="text-blue-400 font-bold poppins text-lg">Q${currentQIndex + 1}.</span> ${q.question}`;
+            document.getElementById('mark-review-checkbox').checked = bookmarked.has(currentQIndex);
 
             const grid = document.getElementById('options-grid');
             grid.innerHTML = '';
+            
             q.options.forEach((opt, idx) => {
                 const btn = document.createElement('button');
                 btn.id = `opt-${idx}`;
                 const label = String.fromCharCode(65 + idx);
                 btn.innerHTML = `<span class="text-blue-400 font-bold w-6 text-left shrink-0">${label}.</span> <span>${opt}</span>`;
-
-                if (!isAnswered) {
-                    btn.className = "option-btn";
-                    btn.onclick = () => selectOption(idx);
+                
+                if (currentMode === 'study') {
+                    btn.className = "option-btn opacity-90 cursor-default";
+                    if (idx === q.correctOption) {
+                        btn.classList.add('option-correct', 'opacity-100');
+                    }
                 } else {
-                    btn.className = "option-btn opacity-80 cursor-default";
-                    btn.onclick = null;
-                    if (idx === q.correctOption) btn.classList.add('option-correct', 'opacity-100');
-                    else if (idx === sessionState[currentQIndex].selected && !sessionState[currentQIndex].isCorrect) btn.classList.add('option-wrong', 'opacity-100');
+                    if (!isAnswered) {
+                        btn.className = "option-btn";
+                        btn.onclick = () => selectOption(idx);
+                    } else {
+                        btn.className = "option-btn opacity-80 cursor-default";
+                        if (idx === q.correctOption) btn.classList.add('option-correct', 'opacity-100');
+                        else if (idx === sessionState[currentQIndex].selected && !sessionState[currentQIndex].isCorrect) {
+                            btn.classList.add('option-wrong', 'opacity-100');
+                        }
+                    }
                 }
                 grid.appendChild(btn);
             });
+            
             renderPalette();
-            saveProgress();
-            // Ensure the new question starts at the top of the viewport so the
-            // whole question + all options are reachable by a normal scroll.
-            window.scrollTo(0, 0);
+            window.scrollTo(0,0);
         }
 
         function selectOption(idx) {
-            if (isAnswered) return;
+            if (currentMode === 'study' || sessionState[currentQIndex] !== null) return;
+            
             playBeep(300, 'sine', 0.08);
-            const q = chunkedSets[currentSetIndex][currentQIndex];
+            const q = allSetsData[currentSetIndex][currentQIndex];
             const isCorrect = (idx === q.correctOption);
-            isAnswered = true;
+            
             sessionState[currentQIndex] = { selected: idx, isCorrect: isCorrect };
-            markedForReview.delete(currentQIndex);
             if (isCorrect) stats.correct++;
             else stats.wrong++;
-            updateLiveScore();
+            
+            updateFooterStats();
             document.getElementById(`opt-${idx}`).classList.add('option-selected');
+            
             setTimeout(() => {
                 const selectedBtn = document.getElementById(`opt-${idx}`);
                 const correctBtn = document.getElementById(`opt-${q.correctOption}`);
                 selectedBtn.classList.remove('option-selected');
+                
                 if (isCorrect) {
                     selectedBtn.classList.add('option-correct');
                     soundCorrect();
-                    setTimeout(() => showExplanation(true, q, idx), 500);
+                    showExplanationModal(true, q, idx);
                 } else {
                     selectedBtn.classList.add('option-wrong');
                     if (correctBtn) correctBtn.classList.add('option-correct');
                     soundWrong();
-                    setTimeout(() => showExplanation(false, q, idx), 500);
+                    showExplanationModal(false, q, idx);
                 }
-                renderPalette();
                 saveProgress();
-            }, 350);
+                renderPalette();
+            }, 300);
         }
 
-        function toggleMarkReview() {
-            const checked = document.getElementById('mark-review-checkbox').checked;
-            if (checked) markedForReview.add(currentQIndex);
-            else markedForReview.delete(currentQIndex);
+        function toggleBookmark() {
+            if (bookmarked.has(currentQIndex)) bookmarked.delete(currentQIndex);
+            else bookmarked.add(currentQIndex);
             renderPalette();
             saveProgress();
         }
 
-        function updateLiveScore() {
+        function updateFooterStats() {
             document.getElementById('live-correct').innerText = stats.correct;
             document.getElementById('live-wrong').innerText = stats.wrong;
-            document.getElementById('live-score-display').innerText = (stats.correct * 3) - (stats.wrong * 1);
-        }
-
-        function showExplanation(isCorrect, q, selectedIdx) {
-            const modal = document.getElementById('explanation-modal');
-            const title = document.getElementById('modal-title');
-            const subtitle = document.getElementById('modal-subtitle');
-            if (isCorrect) {
-                title.innerHTML = '<i class="fa-solid fa-circle-check text-green-400"></i> <span class="text-green-400">Correct! (+3)</span>';
-                subtitle.innerHTML = `<div class="bg-black/50 p-3 rounded-lg border border-green-500/30 text-gray-200 text-xs md:text-sm mt-2"><b>Explanation:</b><br>${q.explanation}</div>`;
+            if(currentMode === 'practice') {
+                const finalScore = (stats.correct * 2.5) - (stats.wrong * 0.83); // Matches new syllabus points
+                document.getElementById('live-score-display').innerText = finalScore.toFixed(2);
             } else {
-                title.innerHTML = '<i class="fa-solid fa-circle-xmark text-red-500"></i> <span class="text-red-500">Wrong! (-1)</span>';
-                subtitle.innerHTML = `<div class="mb-2 text-xs md:text-sm">Correct: <span class="text-green-400 font-bold">${q.options[q.correctOption]}</span></div><div class="bg-black/50 p-3 rounded-lg border border-red-500/30 text-gray-300 text-xs md:text-sm"><b>Explanation:</b><br>${q.explanation}</div>`;
+                document.getElementById('live-score-display').innerText = '---';
             }
-            modal.classList.remove('hidden');
-            saveProgress();
         }
 
         function nextQuestion() {
-            document.getElementById('explanation-modal').classList.add('hidden');
-            const currentSet = chunkedSets[currentSetIndex];
-            if (currentQIndex < currentSet.length - 1) { currentQIndex++; renderQuestion(); }
-            else { submitExamEarly(); }
+            if (currentQIndex < allSetsData[currentSetIndex].length - 1) {
+                currentQIndex++;
+                renderQuestion();
+                saveProgress();
+            } else {
+                showToast("End of Set");
+            }
         }
 
         function prevQuestion() {
-            document.getElementById('explanation-modal').classList.add('hidden');
-            if (currentQIndex > 0) { currentQIndex--; renderQuestion(); }
+            if (currentQIndex > 0) {
+                currentQIndex--;
+                renderQuestion();
+                saveProgress();
+            }
         }
 
-        function jumpToQuestion(qIdx) {
+        function jumpToQuestion(idx) {
+            currentQIndex = idx;
+            renderQuestion();
+            saveProgress();
+            document.getElementById('palette-panel').classList.remove('open');
+        }
+
+        function showCurrentExplanation() {
+            const q = allSetsData[currentSetIndex][currentQIndex];
+            showExplanationModal(true, q, q.correctOption, true);
+        }
+
+        function showExplanationModal(isCorrect, q, selectedIdx, isStudyForce = false) {
+            const modal = document.getElementById('explanation-modal');
+            const title = document.getElementById('modal-title');
+            const subtitle = document.getElementById('modal-subtitle');
+            
+            if (isStudyForce) {
+                title.innerHTML = '<i class="fa-solid fa-lightbulb text-yellow-400"></i> <span class="text-yellow-400">Expert Advice</span>';
+                subtitle.innerHTML = `<div class="mb-2 font-bold text-blue-300">Answer: ${q.options[q.correctOption]}</div><div class="bg-black/50 p-4 rounded-xl border border-blue-500/30 text-gray-200"><b>Explanation:</b><br><br>${q.explanation}</div>`;
+            } else if (isCorrect) {
+                title.innerHTML = '<i class="fa-solid fa-circle-check text-green-400"></i> <span class="text-green-400">Correct! (+2.5)</span>';
+                subtitle.innerHTML = `<div class="bg-black/50 p-4 rounded-xl border border-green-500/30 text-gray-200"><b>Explanation:</b><br><br>${q.explanation}</div>`;
+            } else {
+                title.innerHTML = '<i class="fa-solid fa-circle-xmark text-red-500"></i> <span class="text-red-500">Wrong! (-0.83)</span>';
+                subtitle.innerHTML = `<div class="mb-3">Correct Answer: <span class="text-green-400 font-bold block mt-1">${q.options[q.correctOption]}</span></div><div class="bg-black/50 p-4 rounded-xl border border-red-500/30 text-gray-300"><b>Explanation:</b><br><br>${q.explanation}</div>`;
+            }
+            modal.classList.remove('hidden');
+        }
+
+        function closeExplanation(e) {
+            if(e && e.target !== document.getElementById('explanation-modal')) return;
             document.getElementById('explanation-modal').classList.add('hidden');
-            if (qIdx >= 0 && qIdx < chunkedSets[currentSetIndex].length) {
-                currentQIndex = qIdx;
-                renderQuestion();
-                togglePalette();
+        }
+
+        function closeExplanationAndNext() {
+            closeExplanation();
+            nextQuestion();
+        }
+
+        function startTimer() {
+            clearInterval(timerInterval);
+            updateTimerUI();
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                updateTimerUI();
+                if (timeRemaining % 30 === 0) saveProgress();
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    showDialog('Time Up!', 'Your 120 minutes are over. Auto-submitting the test.', 'alert', () => forceSubmit());
+                }
+            }, 1000);
+        }
+
+        function updateTimerUI() {
+            const h = Math.floor(timeRemaining / 3600).toString().padStart(2, '0');
+            const m = Math.floor((timeRemaining % 3600) / 60).toString().padStart(2, '0');
+            const s = (timeRemaining % 60).toString().padStart(2, '0');
+            document.getElementById('timer-display').innerHTML = `<i class="fa-regular fa-clock"></i> <span>${h}:${m}:${s}</span>`;
+            if (timeRemaining <= 300) {
+                document.getElementById('timer-display').classList.add('animate-pulse');
+            } else {
+                document.getElementById('timer-display').classList.remove('animate-pulse');
             }
         }
 
         function togglePalette() {
-            const panel = document.getElementById('palette-panel');
-            if (panel.classList.contains('open')) { panel.classList.remove('open'); }
-            else { renderPalette(); panel.classList.add('open'); }
+            const p = document.getElementById('palette-panel');
+            p.classList.contains('open') ? p.classList.remove('open') : p.classList.add('open');
         }
 
         function renderPalette() {
             const grid = document.getElementById('palette-grid');
-            const set = chunkedSets[currentSetIndex];
-            if (!set) { grid.innerHTML = ''; return; }
             grid.innerHTML = '';
-            set.forEach((q, idx) => {
+            const setLength = allSetsData[currentSetIndex].length;
+            
+            for (let i = 0; i < setLength; i++) {
                 const btn = document.createElement('button');
-                btn.textContent = idx + 1;
                 btn.className = 'palette-btn';
-                if (idx === currentQIndex) btn.classList.add('current');
-                if (sessionState[idx] !== null) {
-                    btn.classList.add('answered');
+                btn.textContent = i + 1;
+                
+                if (i === currentQIndex) btn.classList.add('current');
+                if (bookmarked.has(i)) btn.classList.add('bookmarked');
+
+                if (currentMode === 'practice') {
+                    if (sessionState[i]) {
+                        if (sessionState[i].isCorrect) btn.classList.add('correct');
+                        else btn.classList.add('wrong');
+                    }
+                } else {
+                    if (sessionState[i]) btn.classList.add('answered'); 
                 }
-                if (markedForReview.has(idx)) btn.classList.add('marked-review');
-                btn.onclick = () => jumpToQuestion(idx);
-                btn.setAttribute('aria-label', `Question ${idx + 1}`);
+
+                btn.onclick = () => jumpToQuestion(i);
                 grid.appendChild(btn);
-            });
+            }
         }
 
-        function submitExamEarly() {
+        // Global Swipe Implementation
+        let tsX = 0, tsY = 0;
+        window.addEventListener('touchstart', e => {
+            tsX = e.touches[0].clientX;
+            tsY = e.touches[0].clientY;
+        }, {passive: true});
+
+        window.addEventListener('touchend', e => {
             if (!isTestActive) return;
-            const unanswered = sessionState.filter(s => s === null).length;
-            const confirmMsg = unanswered > 0 ? `You have ${unanswered} unanswered question(s). Submit anyway?` : 'Submit your test and view results?';
-            if (!confirm(confirmMsg)) return;
+            const teX = e.changedTouches[0].clientX;
+            const teY = e.changedTouches[0].clientY;
+            const dx = teX - tsX;
+            const dy = teY - tsY;
+            
+            // Allow horizontal swipe dominance, ignoring vertical scrolling
+            if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+                // Do not fire if swiping on the palette or a modal
+                if(e.target.closest('#palette-panel') || e.target.closest('#explanation-modal') || e.target.closest('.toast')) return;
+                
+                if (dx < 0) nextQuestion();
+                else prevQuestion();
+            }
+        }, {passive: true});
+
+        function requestSubmit() {
+            const unans = sessionState.filter(s => s === null).length;
+            let msg = currentMode === 'practice' 
+                ? `You have ${unans} unanswered questions. Submit and calculate score?`
+                : `Exit Study Mode and return to Dashboard?`;
+            
+            showDialog('Submit Test', msg, 'confirm', () => forceSubmit());
+        }
+
+        async function forceSubmit() {
             isTestActive = false;
             clearInterval(timerInterval);
-            clearProgress();
             document.getElementById('palette-panel').classList.remove('open');
-            document.getElementById('timer-display').classList.remove('timer-urgent');
-
-            const totalScore = (stats.correct * 3) - (stats.wrong * 1);
-            const attempted = stats.correct + stats.wrong;
-            document.getElementById('rep-attempted').innerText = attempted;
-            document.getElementById('rep-correct').innerText = stats.correct;
-            document.getElementById('rep-wrong').innerText = stats.wrong;
-            document.getElementById('rep-score').innerText = totalScore;
-            saveToHistory(totalScore, stats.correct, stats.wrong, currentSetIndex);
-            hideAllViews();
-            document.getElementById('end-screen').classList.remove('hidden');
-            document.getElementById('end-screen').classList.add('flex');
-            document.getElementById('mark-review-label').style.display = 'none';
+            
+            if (currentMode === 'practice') {
+                const finalScore = (stats.correct * 2.5) - (stats.wrong * 0.83); // Reflecting Syllabus Table
+                const attempt = {
+                    date: new Date().toLocaleString('en-IN', { dateStyle: 'short', timeStyle: 'short' }),
+                    set: currentSetIndex,
+                    correct: stats.correct,
+                    wrong: stats.wrong,
+                    attempted: stats.correct + stats.wrong,
+                    score: finalScore
+                };
+                await idbAddHistory(attempt);
+                showDialog('Test Submitted!', `Score: ${finalScore.toFixed(2)}/300\nCorrect: ${stats.correct}\nWrong: ${stats.wrong}`, 'alert', () => {
+                    executeShowView('analytics');
+                });
+            } else {
+                executeShowView('sets');
+            }
+            
+            await idbSet('progress', 'current', null);
             renderSetCards();
-            renderDashboardStats();
-            renderScoreClub();
-            window.scrollTo(0, 0);
         }
 
-        function renderDashboardStats() {
-            const history = getHistory();
+        async function renderAnalytics() {
+            const history = await idbGetAllHistory();
             const tbody = document.getElementById('history-table-body');
             tbody.innerHTML = '';
+            
+            let tCorrect = 0, tWrong = 0, tAttempted = 0;
+            
+            history.forEach(h => {
+                tCorrect += h.correct;
+                tWrong += h.wrong;
+                tAttempted += h.attempted;
+                tbody.innerHTML += `
+                    <tr class="border-b border-white/5 hover:bg-white/5 transition">
+                        <td class="p-3">${h.date}</td>
+                        <td class="p-3 text-center text-blue-300 font-bold">Set ${h.set + 1}</td>
+                        <td class="p-3 text-center text-green-400">${h.correct}</td>
+                        <td class="p-3 text-center text-red-400">${h.wrong}</td>
+                        <td class="p-3 text-center font-bold text-amber-400">${parseFloat(h.score).toFixed(2)}</td>
+                    </tr>
+                `;
+            });
+
             if (history.length === 0) {
-                document.getElementById('dash-total-tests').innerText = '0';
-                document.getElementById('dash-avg-score').innerText = '0';
-                document.getElementById('dash-high-score').innerText = '0';
-                document.getElementById('dash-accuracy').innerText = '0%';
-                tbody.innerHTML = '<tr><td colspan="5" class="p-3 text-center text-gray-500">No attempts yet. Take a test!</td></tr>';
-                return;
+                tbody.innerHTML = '<tr><td colspan="5" class="p-5 text-center text-gray-500">No practice tests completed yet.</td></tr>';
             }
-            let totalScore = 0, highScore = -999, totalCorrect = 0, totalAttempted = 0;
-            history.forEach((h, i) => {
-                totalScore += h.score;
-                if (h.score > highScore) highScore = h.score;
-                totalCorrect += h.correct;
-                totalAttempted += h.attempted;
-                if (i < 10) {
-                    tbody.innerHTML += `
-                        <tr><td class="p-2 md:p-3">${h.date}</td><td class="p-2 md:p-3 text-center">Set ${h.set}</td>
-                        <td class="p-2 md:p-3 text-center text-green-400">${h.correct}</td><td class="p-2 md:p-3 text-center text-red-400">${h.wrong}</td>
-                        <td class="p-2 md:p-3 text-center font-bold text-yellow-400">${h.score}</td></tr>`;
+
+            document.getElementById('stat-attempted').innerText = tAttempted;
+            document.getElementById('stat-correct').innerText = tCorrect;
+            document.getElementById('stat-wrong').innerText = tWrong;
+            document.getElementById('stat-accuracy').innerText = tAttempted > 0 ? Math.round((tCorrect / tAttempted) * 100) + '%' : '0%';
+        }
+
+        async function exportData() {
+            const history = await idbGetAllHistory();
+            const state = await idbGet('progress', 'current');
+            const data = { history, state, exportDate: new Date().toISOString() };
+            const blob = new Blob([JSON.stringify(data)], {type: 'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `UPSC_Principal_Backup_${new Date().getTime()}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
+            showToast('Backup Exported!');
+        }
+
+        function importData(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = async (e) => {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    if (data.history || data.state) {
+                        await idbClearAll();
+                        if (data.state) await idbSet('progress', 'current', data.state);
+                        if (data.history) {
+                            for(let h of data.history) await idbAddHistory(h);
+                        }
+                        showDialog('Success', 'Data restored successfully. Reloading view.', 'alert', () => {
+                            window.location.reload();
+                        });
+                    } else {
+                        showDialog('Error', 'Invalid Backup File format.', 'alert');
+                    }
+                } catch(err) {
+                    showDialog('Error', 'Failed to parse JSON file.', 'alert');
                 }
+            };
+            reader.readAsText(file);
+        }
+
+        function clearAllData() {
+            showDialog('Critical Warning', 'This will delete ALL your history, progress, and scores. This cannot be undone.', 'confirm', async () => {
+                await idbClearAll();
+                window.location.reload();
             });
-            document.getElementById('dash-total-tests').innerText = history.length;
-            document.getElementById('dash-avg-score').innerText = Math.round(totalScore / history.length);
-            document.getElementById('dash-high-score').innerText = highScore;
-            document.getElementById('dash-accuracy').innerText = totalAttempted > 0 ? Math.round((totalCorrect / totalAttempted) * 100) + '%' : '0%';
         }
 
-        function renderScoreClub() {
-            const history = getHistory();
-            const list = document.getElementById('score-club-list');
-            list.innerHTML = '';
-            if (history.length === 0) {
-                list.innerHTML = '<div class="text-center text-gray-500 p-5">No scores yet. Take a test!</div>';
-                return;
-            }
-            const sorted = [...history].sort((a, b) => b.score - a.score).slice(0, 20);
-            sorted.forEach((h, i) => {
-                const div = document.createElement('div');
-                div.className = 'score-club-item';
-                let badge = '';
-                if (i === 0) badge = '<span style="background:#fbbf24;color:#0f172a;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;">🥇</span>';
-                else if (i === 1) badge = '<span style="background:#94a3b8;color:#0f172a;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;">🥈</span>';
-                else if (i === 2) badge = '<span style="background:#b45309;color:#fff;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;">🥉</span>';
-                div.innerHTML = `<span class="rank">#${i + 1}</span><span class="name">Set ${h.set} <span class="text-[10px] text-gray-500">${h.date}</span></span><span class="score">${h.score}</span>${badge}`;
-                list.appendChild(div);
-            });
-        }
-
-        function showSetSelection() {
-            if (isTestActive) {
-                if (!confirm("A test is in progress. Leaving will lose your progress. Continue?")) return;
-                clearProgress();
-                isTestActive = false;
-                clearInterval(timerInterval);
-            }
-            if (isRevisionMode) exitRevision();
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            document.querySelector('[data-tab="sets"]')?.classList.add('active');
-            hideAllViews();
-            document.getElementById('set-selection-container').classList.remove('hidden');
-            document.getElementById('set-selection-container').classList.add('flex');
-            document.getElementById('palette-panel').classList.remove('open');
-            document.getElementById('timer-display').classList.remove('timer-urgent');
-            renderSetCards();
-        }
-
-        function showAnalytics() {
-            if (isTestActive) {
-                if (!confirm("A test is in progress. Leaving will lose progress. Continue?")) return;
-                clearProgress();
-                isTestActive = false;
-                clearInterval(timerInterval);
-            }
-            if (isRevisionMode) exitRevision();
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            document.querySelector('[data-tab="analytics"]')?.classList.add('active');
-            hideAllViews();
-            document.getElementById('analytics-container').classList.remove('hidden');
-            document.getElementById('analytics-container').classList.add('flex');
-            document.getElementById('palette-panel').classList.remove('open');
-            document.getElementById('timer-display').classList.remove('timer-urgent');
-            renderDashboardStats();
-        }
-
-        function showScoreClub() {
-            if (isTestActive) {
-                if (!confirm("A test is in progress. Leaving will lose progress. Continue?")) return;
-                clearProgress();
-                isTestActive = false;
-                clearInterval(timerInterval);
-            }
-            if (isRevisionMode) exitRevision();
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            document.querySelector('[data-tab="club"]')?.classList.add('active');
-            hideAllViews();
-            document.getElementById('club-container').classList.remove('hidden');
-            document.getElementById('club-container').classList.add('flex');
-            document.getElementById('palette-panel').classList.remove('open');
-            document.getElementById('timer-display').classList.remove('timer-urgent');
-            renderScoreClub();
-        }
-
-        function showRules() {
-            if (isTestActive) {
-                if (!confirm("A test is in progress. Leaving will lose progress. Continue?")) return;
-                clearProgress();
-                isTestActive = false;
-                clearInterval(timerInterval);
-            }
-            if (isRevisionMode) exitRevision();
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            document.querySelector('[data-tab="rules"]')?.classList.add('active');
-            hideAllViews();
-            document.getElementById('rules-container').classList.remove('hidden');
-            document.getElementById('rules-container').classList.add('flex');
-            document.getElementById('palette-panel').classList.remove('open');
-            document.getElementById('timer-display').classList.remove('timer-urgent');
-        }
-
-        function hideAllViews() {
-            ['set-selection-container', 'analytics-container', 'club-container', 'rules-container', 'quiz-container', 'revision-container', 'end-screen'].forEach(id => {
-                const el = document.getElementById(id);
-                el.classList.add('hidden');
-                el.classList.remove('flex');
-            });
-            document.getElementById('quiz-footer').classList.add('hidden');
-            document.getElementById('quiz-footer').classList.remove('mobile-sticky-footer');
-            document.getElementById('header-controls').classList.remove('hidden');
-            document.getElementById('mark-review-label').style.display = 'none';
-            document.getElementById('palette-panel').classList.remove('open');
-            clearInterval(timerInterval);
-        }
-
-        function setupSwipe(elementId, nextFn, prevFn) {
-            const el = document.getElementById(elementId);
-            if (!el) return;
-            let startX = 0, startY = 0, isSwiping = false;
-            el.addEventListener('touchstart', function(e) {
-                const t = e.touches[0];
-                startX = t.clientX;
-                startY = t.clientY;
-                isSwiping = true;
-            }, { passive: true });
-            el.addEventListener('touchend', function(e) {
-                if (!isSwiping) return;
-                isSwiping = false;
-                const t = e.changedTouches[0];
-                const dx = t.clientX - startX;
-                const dy = t.clientY - startY;
-                // Only treat it as a swipe-navigation gesture if the horizontal
-                // movement clearly dominates the vertical movement. This keeps
-                // normal up/down scrolling (needed to see all the options)
-                // completely untouched.
-                if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
-                    if (dx < 0) nextFn();
-                    else prevFn();
-                    if (navigator.vibrate) navigator.vibrate(8);
-                }
-            }, { passive: true });
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            setupSwipe('question-scroll-area', nextQuestion, prevQuestion);
-            setupSwipe('revision-question-scroll', nextRevisionQuestion, prevRevisionQuestion);
-            document.addEventListener('keydown', function(e) {
-                if (isTestActive && !isRevisionMode) {
-                    if (e.key === 'ArrowLeft') { e.preventDefault(); prevQuestion(); }
-                    if (e.key === 'ArrowRight') { e.preventDefault(); nextQuestion(); }
-                    if (e.key === 'p' || e.key === 'P') { e.preventDefault(); togglePalette(); }
-                }
-                if (isRevisionMode) {
-                    if (e.key === 'ArrowLeft') { e.preventDefault(); prevRevisionQuestion(); }
-                    if (e.key === 'ArrowRight') { e.preventDefault(); nextRevisionQuestion(); }
-                }
-                if (e.key === 'Escape') {
-                    document.getElementById('explanation-modal').classList.add('hidden');
-                    document.getElementById('palette-panel').classList.remove('open');
-                }
-            });
-            document.addEventListener('click', function(e) {
-                const panel = document.getElementById('palette-panel');
-                if (panel.classList.contains('open') && !panel.contains(e.target) && !e.target.closest('[onclick="togglePalette()"]')) {
-                    panel.classList.remove('open');
-                }
-            });
-        });
-
-        window.onload = initSystem;
-
-        // Global exposures
-        window.startSet = startSet;
-        window.startRevision = startRevision;
-        window.exitRevision = exitRevision;
-        window.showSetSelection = showSetSelection;
-        window.showAnalytics = showAnalytics;
-        window.showScoreClub = showScoreClub;
-        window.showRules = showRules;
-        window.clearHistory = clearHistory;
-        window.resumeTest = resumeTest;
-        window.startFresh = startFresh;
-        window.submitExamEarly = submitExamEarly;
-        window.nextQuestion = nextQuestion;
-        window.prevQuestion = prevQuestion;
-        window.nextRevisionQuestion = nextRevisionQuestion;
-        window.prevRevisionQuestion = prevRevisionQuestion;
-        window.togglePalette = togglePalette;
-        window.toggleMarkReview = toggleMarkReview;
-        window.toggleSound = toggleSound;
-        window.jumpToQuestion = jumpToQuestion;
-        window.dismissModal = dismissModal;
+        window.onload = initApp;
     </script>
 </body>
 </html>
