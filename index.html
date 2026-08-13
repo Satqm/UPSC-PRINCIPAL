@@ -34,8 +34,6 @@
             padding-top: 8px;
             overscroll-behavior-y: auto;
             -webkit-overflow-scrolling: touch;
-            user-select: none;
-            -webkit-user-select: none;
             display: flex;
             flex-direction: column;
         }
@@ -155,7 +153,9 @@
             background: rgba(15, 23, 42, 0.94); backdrop-filter: blur(16px);
             border-top: 1px solid rgba(59, 130, 246, 0.3); padding-bottom: env(safe-area-inset-bottom, 8px);
         }
-        #quiz-container { padding-bottom: 130px; }
+        
+        /* THIS IS THE CORE FIX: Match the ID to the HTML <main id="view-quiz"> */
+        #view-quiz { padding-bottom: 140px; }
         
         .toast {
             position: fixed; bottom: 120px; left: 50%; transform: translateX(-50%);
@@ -198,7 +198,7 @@
             border: 1px solid rgba(255,255,255,0.1);
             padding: 10px;
         }
-        .syllabus-table th { background: rgba(59, 130, 246, 0.2); color: #93c5fd; }
+        .syllabus-table th { background: rgba(59, 130, 246, 0.2); color: #93c5fd; font-weight: 600; }
         .syllabus-table tbody tr:nth-child(even) { background: rgba(255,255,255,0.02); }
     </style>
 </head>
@@ -318,46 +318,46 @@
                     <thead>
                         <tr>
                             <th>Category / Subject Area</th>
-                            <th class="text-center">Approx. No. of Questions</th>
-                            <th class="text-center">Estimated Marks</th>
+                            <th class="text-center">Approximate No. of Questions</th>
+                            <th class="text-center">Estimated Weightage / Marks</th>
                             <th>Key High-Yield Topics Covered</th>
                         </tr>
                     </thead>
                     <tbody class="text-gray-300">
                         <tr>
                             <td class="font-semibold text-blue-200">Management & Financial Administration</td>
-                            <td class="text-center">25 – 30</td>
-                            <td class="text-center text-blue-300">~62.5 – 75</td>
+                            <td class="text-center">25 – 30 Questions</td>
+                            <td class="text-center text-blue-300">~62.5 – 75 Marks</td>
                             <td>CCS Conduct Rules, CCS (CCA) Rules, General Financial Rules (GFR), Budgeting, FR & SR, LTC, TA/DA rules, CGHS guidelines.</td>
                         </tr>
                         <tr>
                             <td class="font-semibold text-blue-200">Educational Policies, Measurement & Evaluation</td>
-                            <td class="text-center">20 – 25</td>
-                            <td class="text-center text-blue-300">~50 – 62.5</td>
+                            <td class="text-center">20 – 25 Questions</td>
+                            <td class="text-center text-blue-300">~50 – 62.5 Marks</td>
                             <td>NEP 2020, NCF, CCE, PARAKH, Foundational Literacy & Numeracy (FLN), Inclusive Education, Special Needs Education.</td>
                         </tr>
                         <tr>
                             <td class="font-semibold text-blue-200">Office Procedures & Statutory Regulations</td>
-                            <td class="text-center">15 – 20</td>
-                            <td class="text-center text-blue-300">~37.5 – 50</td>
+                            <td class="text-center">15 – 20 Questions</td>
+                            <td class="text-center text-blue-300">~37.5 – 50 Marks</td>
                             <td>RTI Act (2005), POCSO Act, POSH Act, Rights of PwD Act, Office Manual, File Movement & Maintenance.</td>
                         </tr>
                         <tr>
                             <td class="font-semibold text-blue-200">Reasoning Ability & Quantitative Aptitude</td>
-                            <td class="text-center">15 – 20</td>
-                            <td class="text-center text-blue-300">~37.5 – 50</td>
+                            <td class="text-center">15 – 20 Questions</td>
+                            <td class="text-center text-blue-300">~37.5 – 50 Marks</td>
                             <td>Data Interpretation, Percentage, Profit & Loss, Syllogisms, Blood Relations, Coding-Decoding, Time & Work.</td>
                         </tr>
                         <tr>
                             <td class="font-semibold text-blue-200">General Knowledge & Current Affairs</td>
-                            <td class="text-center">15 – 18</td>
-                            <td class="text-center text-blue-300">~37.5 – 45</td>
+                            <td class="text-center">15 – 18 Questions</td>
+                            <td class="text-center text-blue-300">~37.5 – 45 Marks</td>
                             <td>Social/Economic issues, Government Schemes, Educational Initiatives, Basic Indian Polity & Indian Economy.</td>
                         </tr>
                         <tr>
                             <td class="font-semibold text-blue-200">Language Skills (English & Hindi)</td>
-                            <td class="text-center">12 – 15</td>
-                            <td class="text-center text-blue-300">~30 – 37.5</td>
+                            <td class="text-center">12 – 15 Questions</td>
+                            <td class="text-center text-blue-300">~30 – 37.5 Marks</td>
                             <td>Grammar, Vocabulary, Comprehension Passages, Idioms/Phrases, Sentence Correction.</td>
                         </tr>
                         <tr class="bg-blue-900/40 font-bold text-white">
@@ -479,7 +479,7 @@
             overlay.classList.add('active');
         }
 
-        /* --- 2. Data Fetching (Authentic JSON files) --- */
+        /* --- 2. Authentic Data Fetching System --- */
         let allSetsData = [];
         
         function normalizeData(rawData) {
@@ -517,36 +517,26 @@
                         filesLoaded = true;
                     }
                 } catch (e) {
-                    console.log(`Could not load ${file}. Falling back to dynamic generator if necessary.`);
+                    console.log(`Could not load ${file} locally. Will use dynamic fallback generator if empty.`);
                 }
             }
 
-            // Fallback Generator if JSON files aren't available locally
             if (allQuestions.length === 0) {
-                showToast("JSON not found. Loading complete simulated data.");
+                console.log("No JSON files found. Generating fallback data...");
                 allQuestions = generateFallbackData();
             }
 
-            // Chunk the master list into sets of 120 questions each (Matching new syllabus)
+            // Chunk into sets of 120 (per your new Syllabus format)
             let chunkedSets = [];
             for (let i = 0; i < allQuestions.length; i += 120) {
                 chunkedSets.push(allQuestions.slice(i, i + 120));
             }
-            // If the last set is too small, just let it be, but ideally we have a multiple of 120.
             allSetsData = chunkedSets;
         }
 
         function generateFallbackData() {
-            const subjects = [
-                "Management & Financial Admin", 
-                "Educational Policies, Measurement", 
-                "Office Procedures & Regulations", 
-                "Reasoning Ability", 
-                "General Knowledge",
-                "Language Skills"
-            ];
+            const subjects = ["Management & Financial Admin", "Educational Policies, Measurement", "Office Procedures & Regulations", "Reasoning Ability", "General Knowledge", "Language Skills"];
             let setQuestions = [];
-            // Generate 600 questions for 5 sets of 120
             for (let q = 1; q <= 600; q++) { 
                 let sub = subjects[q % subjects.length];
                 let correctAnswer = q % 4;
@@ -565,7 +555,7 @@
             return setQuestions;
         }
 
-        /* --- 3. IndexedDB Wrapper --- */
+        /* --- 3. IndexedDB Offline Storage System --- */
         const DB_NAME = "UPSC_Principal_Pro_DB";
         const DB_VERSION = 1;
         
@@ -631,7 +621,7 @@
             });
         }
 
-        /* --- 4. Global State & App Logic --- */
+        /* --- 4. Main App Logic (Global State) --- */
         let currentSetIndex = 0;
         let currentQIndex = 0;
         let currentMode = 'practice'; // 'practice' or 'study'
@@ -876,11 +866,13 @@
                 btn.innerHTML = `<span class="text-blue-400 font-bold w-6 text-left shrink-0">${label}.</span> <span>${opt}</span>`;
                 
                 if (currentMode === 'study') {
+                    // Study Mode Pre-Highlighting
                     btn.className = "option-btn opacity-90 cursor-default";
                     if (idx === q.correctOption) {
                         btn.classList.add('option-correct', 'opacity-100');
                     }
                 } else {
+                    // Practice Mode Logic
                     if (!isAnswered) {
                         btn.className = "option-btn";
                         btn.onclick = () => selectOption(idx);
@@ -944,7 +936,7 @@
             document.getElementById('live-correct').innerText = stats.correct;
             document.getElementById('live-wrong').innerText = stats.wrong;
             if(currentMode === 'practice') {
-                const finalScore = (stats.correct * 2.5) - (stats.wrong * 0.83); // Matches new syllabus points
+                const finalScore = (stats.correct * 2.5) - (stats.wrong * 0.83);
                 document.getElementById('live-score-display').innerText = finalScore.toFixed(2);
             } else {
                 document.getElementById('live-score-display').innerText = '---';
@@ -1067,7 +1059,6 @@
             }
         }
 
-        // Global Swipe Implementation
         let tsX = 0, tsY = 0;
         window.addEventListener('touchstart', e => {
             tsX = e.touches[0].clientX;
@@ -1081,8 +1072,9 @@
             const dx = teX - tsX;
             const dy = teY - tsY;
             
-            // Allow horizontal swipe dominance, ignoring vertical scrolling
-            if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+            // Allow horizontal swipe dominance, heavily ignoring vertical scrolling 
+            // so regular page scrolling is never interrupted on mobile.
+            if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
                 // Do not fire if swiping on the palette or a modal
                 if(e.target.closest('#palette-panel') || e.target.closest('#explanation-modal') || e.target.closest('.toast')) return;
                 
@@ -1106,7 +1098,7 @@
             document.getElementById('palette-panel').classList.remove('open');
             
             if (currentMode === 'practice') {
-                const finalScore = (stats.correct * 2.5) - (stats.wrong * 0.83); // Reflecting Syllabus Table
+                const finalScore = (stats.correct * 2.5) - (stats.wrong * 0.83);
                 const attempt = {
                     date: new Date().toLocaleString('en-IN', { dateStyle: 'short', timeStyle: 'short' }),
                     set: currentSetIndex,
