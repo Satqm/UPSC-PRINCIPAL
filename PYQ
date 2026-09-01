@@ -1,0 +1,1342 @@
+[
+  {
+    "Question_Number": "1 (English)",
+    "Question_Text": "Which one of the following statements regarding 'DESH-Stack e-portal' is correct?[cite: 1]",
+    "Option_A": "It is a portal through which citizens will be skilled so that they can improve their livelihood opportunities.[cite: 1]",
+    "Option_B": "It is a portal to enable a single window access to services being provided by the various Government entities.[cite: 1]",
+    "Option_C": "It is a portal to provide an online platform available to citizens day and night to lodge their grievances to the public authorities on any subject related to service delivery.[cite: 1]",
+    "Option_D": "It is a portal to create a common online market platform in the country to facilitate pan-India trade in agricultural commodities.[cite: 1]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The DESH-Stack e-portal (Digital Ecosystem for Skilling and Livelihood) was announced in the Union Budget 2022-23 to empower citizens to skill, reskill, or upskill through online training."
+  },
+  {
+    "Question_Number": "1 (Hindi)",
+    "Question_Text": "\"देश-स्टैक ई-पोर्टल (DESH-Stack e-portal)\" के संबंध में निम्नलिखित कथनों में से कौन-सा सही है ?[cite: 1]",
+    "Option_A": "यह एक पोर्टल है, जिसके माध्यम से नागरिक कुशल बनेंगे, ताकि वे अपनी आजीविका के अवसरों में सुधार कर सकें ।[cite: 1]",
+    "Option_B": "यह एक पोर्टल है, जो विविध सरकारी संस्थाओं (एन्टिटि) द्वारा उपलब्ध कराई जा रही सेवाओं के लिए एकल खिड़की पहुँच (सिंगल विंडो ऐक्सेस) को सरल बनाएगा ।[cite: 1]",
+    "Option_C": "यह एक पोर्टल है, जो सेवा सुपुर्दगी से संबंधित किसी विषय पर लोक प्राधिकारियों को अपनी शिकायतें दर्ज कराने के लिए नागरिकों को दिन और रात एक ऑनलाइन प्लैटफॉर्म उपलब्ध कराएगा ।[cite: 1]",
+    "Option_D": "यह एक पोर्टल है, जो कृषि पण्य में अखिल-भारतीय व्यापार को बढ़ावा देने के लिए देश में एक साझा ऑनलाइन बाज़ार प्लैटफॉर्म का निर्माण करेगा ।[cite: 1]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "देश-स्टैक ई-पोर्टल (डिजिटल इकोसिस्टम फॉर स्किलिंग एंड लाइवलीहुड) की घोषणा केंद्रीय बजट 2022-23 में की गई थी, जिसका उद्देश्य ऑनलाइन प्रशिक्षण के माध्यम से नागरिकों को कुशल, पुनः कुशल या उन्नत बनाना है।"
+  },
+  {
+    "Question_Number": "2 (English)",
+    "Question_Text": "Consider the following agricultural produce:\n1. Cereals\n2. Cotton\n3. Onions\n4. Potatoes\n5. Pulses\nWhich of the above categories of agricultural produce are covered under Minimum Support Price (MSP)?[cite: 1]",
+    "Option_A": "1, 2 and 5 only[cite: 1]",
+    "Option_B": "2, 3 and 4 only[cite: 1]",
+    "Option_C": "1, 3, 4 and 5 only[cite: 1]",
+    "Option_D": "1, 2, 3, 4 and 5[cite: 1]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The Government of India mandates Minimum Support Prices (MSP) for 22 mandated crops, which include Cereals, Pulses, and commercial crops like Cotton. Onions and Potatoes are not covered under the standard MSP regime."
+  },
+  {
+    "Question_Number": "2 (Hindi)",
+    "Question_Text": "निम्नलिखित कृषि उत्पादों पर विचार कीजिए :\n1. अनाज\n2. कपास\n3. प्याज\n4. आलू\n5. दाल\nकृषि उत्पाद की उपर्युक्त श्रेणियों में से कौन-सी श्रेणियाँ, न्यूनतम समर्थन मूल्य (MSP) के अंतर्गत शामिल हैं ?[cite: 1]",
+    "Option_A": "केवल 1, 2 और 5[cite: 1]",
+    "Option_B": "केवल 2, 3 और 4[cite: 1]",
+    "Option_C": "केवल 1, 3, 4 और 5[cite: 1]",
+    "Option_D": "1, 2, 3, 4 और 5[cite: 1]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "भारत सरकार 22 अनिवार्य फसलों के लिए न्यूनतम समर्थन मूल्य (MSP) अनिवार्य करती है, जिसमें अनाज, दालें और कपास जैसी व्यावसायिक फसलें शामिल हैं। प्याज और आलू MSP व्यवस्था के अंतर्गत नहीं आते हैं।"
+  },
+  {
+    "Question_Number": "3 (English)",
+    "Question_Text": "In which one of the following National Parks of India is there a proposal to reintroduce cheetah from Africa?[cite: 1]",
+    "Option_A": "Bandhavgarh National Park[cite: 1]",
+    "Option_B": "Kanha National Park[cite: 1]",
+    "Option_C": "Kuno National Park[cite: 1]",
+    "Option_D": "Manas National Park[cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Under the Cheetah Reintroduction Project, African cheetahs from Namibia and South Africa were relocated to Kuno National Park in Madhya Pradesh due to its suitable habitat."
+  },
+  {
+    "Question_Number": "3 (Hindi)",
+    "Question_Text": "भारत के निम्नलिखित राष्ट्रीय उद्यानों (नेशनल पार्कों) में से किसमें चीता को अफ्रीका से लाकर फिर से बसाने का प्रस्ताव है ?[cite: 1]",
+    "Option_A": "बांधवगढ़ राष्ट्रीय उद्यान[cite: 1]",
+    "Option_B": "कान्हा राष्ट्रीय उद्यान[cite: 1]",
+    "Option_C": "कुनो राष्ट्रीय उद्यान[cite: 1]",
+    "Option_D": "मानस राष्ट्रीय उद्यान[cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "चीता पुनर्वास परियोजना के तहत, नामीबिया और दक्षिण अफ्रीका से अफ्रीकी चीतों को उनके अनुकूल आवास के कारण मध्य प्रदेश के कुनो राष्ट्रीय उद्यान में स्थानांतरित किया गया था।"
+  },
+  {
+    "Question_Number": "4 (English)",
+    "Question_Text": "Which one of the following Indian musical instruments is traditionally made of buffalo horn?[cite: 1]",
+    "Option_A": "Kurum Kuzhal[cite: 1]",
+    "Option_B": "Nadaswaram[cite: 1]",
+    "Option_C": "Pungi[cite: 1]",
+    "Option_D": "Not completely captured in source[cite: 1]",
+    "Correct_Answer": "Option D (Pepa - inferred from context, though missing in OCR text)",
+    "Brief_Explanation": "Traditionally, the 'Pepa', an instrument used in Bihu music of Assam, is crafted from buffalo horn. The provided text cuts off the final option, but among standard Indian instruments, the Pepa fits this exact description."
+  },
+  {
+    "Question_Number": "4 (Hindi)",
+    "Question_Text": "निम्नलिखित भारतीय वाद्य-यंत्रों में से कौन-सा, पारंपरिक रूप से भैंस की सींग से बनता है ?[cite: 1]",
+    "Option_A": "कुरुम कुज़ल[cite: 1]",
+    "Option_B": "नादस्वरम[cite: 1]",
+    "Option_C": "पुंगी[cite: 1]",
+    "Option_D": "स्रोत में उपलब्ध नहीं[cite: 1]",
+    "Correct_Answer": "Option D (पेपा - संदर्भ से अनुमानित)",
+    "Brief_Explanation": "असम में बिहू उत्सव के दौरान बजाया जाने वाला 'पेपा' पारंपरिक रूप से भैंस की सींग से बनाया जाता है। यद्यपि स्रोत में चौथा विकल्प नहीं छपा है, सही उत्तर वही है।"
+  },
+  {
+    "Question_Number": "5 (English)",
+    "Question_Text": "Which one of the following countries pledged to invest $ 42 billion in India over the next five years?[cite: 1]",
+    "Option_A": "Australia[cite: 1]",
+    "Option_B": "France[cite: 1]",
+    "Option_C": "Japan[cite: 1]",
+    "Option_D": "United Kingdom[cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "In March 2022, Japanese Prime Minister Fumio Kishida announced a target of 5 trillion yen (approximately $42 billion USD at the time) in public and private investment in India over the following five years."
+  },
+  {
+    "Question_Number": "5 (Hindi)",
+    "Question_Text": "निम्नलिखित देशों में से किसने भारत में अगले पाँच वर्षों में $ 42 बिलियन निवेश करने का वचन दिया है ?[cite: 1]",
+    "Option_A": "ऑस्ट्रेलिया[cite: 1]",
+    "Option_B": "फ्रांस[cite: 1]",
+    "Option_C": "जापान[cite: 1]",
+    "Option_D": "यूनाइटेड किंग्डम[cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "मार्च 2022 में, जापानी प्रधान मंत्री फुमियो किशिदा ने अगले पांच वर्षों में भारत में सार्वजनिक और निजी निवेश में 5 ट्रिलियन येन (लगभग $ 42 बिलियन) का लक्ष्य घोषित किया था।"
+  },
+  {
+    "Question_Number": "6 (English)",
+    "Question_Text": "Consider the following statements regarding PM-KISAN Scheme:<br><ol><li>Under the scheme, landholding farmer families are given a financial support of 6,000 per year.</li><li>The tenants of agricultural lands can avail the financial benefits under the scheme by submitting the documentary proof of their tenancy.</li><li>Under this scheme, Aadhar validation is not compulsory.</li></ol>Which of the statements given above is/are correct?[cite: 1]",
+    "Option_A": "1 only[cite: 1]",
+    "Option_B": "2 only[cite: 1]",
+    "Option_C": "2 and 3[cite: 1]",
+    "Option_D": "1 and 2[cite: 1]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Statement 1 is correct: PM-KISAN provides 6,000 per year to landholding farmers. Statement 2 is incorrect: Tenant farmers are explicitly excluded; the scheme is only for landowners. Statement 3 is incorrect: Aadhaar validation is mandatory to receive installments."
+  },
+  {
+    "Question_Number": "6 (Hindi)",
+    "Question_Text": "PM-KISAN योजना के संबंध में निम्नलिखित कथनों पर विचार कीजिए :<br><ol><li>इस योजना के अधीन, भूमिधारक किसान परिवारों को प्रति वर्ष ₹ 6,000 की वित्तीय सहायता प्रदान की जाती है।</li><li>कृषि-भूमि के अभिधारी इस योजना के अधीन यह वित्तीय लाभ अपने अभिधारण का दस्तावेज़ी प्रमाण प्रस्तुत कर प्राप्त कर सकते हैं ।</li><li>इस योजना के अधीन, आधार अधि-प्रमाणन अनिवार्य नहीं है।</li></ol>उपर्युक्त कथनों में से कौन-सा/कौन-से सही है/हैं ?[cite: 1]",
+    "Option_A": "केवल 1[cite: 1]",
+    "Option_B": "केवल 2[cite: 1]",
+    "Option_C": "2 और 3[cite: 1]",
+    "Option_D": "1 और 2[cite: 1]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "कथन 1 सही है क्योंकि इसमें भूमिधारक किसानों को ₹ 6,000 वार्षिक मिलते हैं। कथन 2 गलत है क्योंकि किरायेदार किसानों (अभिधारी) को इसमें शामिल नहीं किया गया है। कथन 3 गलत है क्योंकि आधार सत्यापन अनिवार्य है।"
+  },
+  {
+    "Question_Number": "7 (English)",
+    "Question_Text": "The terms \"Patan Patola\" and \"Madurai Sungudi\" are related to:[cite: 1]",
+    "Option_A": "Brassware[cite: 1]",
+    "Option_B": "Fabrics[cite: 1]",
+    "Option_C": "Building designs[cite: 1]",
+    "Option_D": "Wooden handicrafts[cite: 1]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Patan Patola is a double ikat woven sari from Gujarat, and Madurai Sungudi is a traditional cotton fabric from Tamil Nadu known for its tie-and-dye method. Both are forms of traditional fabrics."
+  },
+  {
+    "Question_Number": "7 (Hindi)",
+    "Question_Text": "\"पाटन पटोला\" और \"मदुरै सुंगुडी” किससे संबंधित हैं ?[cite: 1]",
+    "Option_A": "पीतल के बर्तन[cite: 1]",
+    "Option_B": "कपड़ा[cite: 1]",
+    "Option_C": "भवन डिज़ाइन[cite: 1]",
+    "Option_D": "काष्ठ हस्तशिल्प[cite: 1]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "पाटन पटोला गुजरात की एक प्रसिद्ध बुनी हुई रेशमी साड़ी है और मदुरै सुंगुडी तमिलनाडु का एक पारंपरिक सूती कपड़ा है। इसलिए, दोनों कपड़े (Fabrics) से संबंधित हैं।"
+  },
+  {
+    "Question_Number": "8 (English)",
+    "Question_Text": "Consider the following pairs:<br><table><tr><th>Festival</th><th>Popular in State</th></tr><tr><td>1. Chhau</td><td>Karnataka</td></tr><tr><td>2. Domahi</td><td>Odisha</td></tr><tr><td>3. Hornbill</td><td>Nagaland</td></tr><tr><td>4. Wanchuwa</td><td>Assam</td></tr></table><br>Which of the pairs given above are correctly matched?[cite: 1]",
+    "Option_A": "1 and 2[cite: 1]",
+    "Option_B": "1 and 3[cite: 1]",
+    "Option_C": "2 and 4[cite: 1]",
+    "Option_D": "3 and 4[cite: 1]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Chhau is primarily a classical dance-festival from Eastern India (Jharkhand, Odisha, West Bengal), not Karnataka. Domahi is celebrated in Assam/Bengal. Hornbill is the famous festival of Nagaland. Wanchuwa is celebrated by the Tiwa tribe in Assam. Thus, only 3 and 4 are correct."
+  },
+  {
+    "Question_Number": "8 (Hindi)",
+    "Question_Text": "निम्नलिखित युग्मों पर विचार कीजिए :<br><table><tr><th>त्योहार</th><th>राज्य में लोकप्रिय</th></tr><tr><td>1. छाऊ</td><td>कर्नाटक</td></tr><tr><td>2. दोमाही</td><td>ओडिशा</td></tr><tr><td>3. हॉर्नबिल</td><td>नागालैंड</td></tr><tr><td>4. वांचुवा</td><td>असम</td></tr></table><br>उपर्युक्त युग्मों में से कौन-से सही सुमेलित हैं ?[cite: 1]",
+    "Option_A": "1 और 2[cite: 1]",
+    "Option_B": "1 और 3[cite: 1]",
+    "Option_C": "2 और 4[cite: 1]",
+    "Option_D": "3 और 4[cite: 1]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "छाऊ पूर्वी भारत (झारखंड, ओडिशा, बंगाल) से संबंधित है। दोमाही मुख्य रूप से असम में मनाया जाता है। हॉर्नबिल नागालैंड का प्रमुख त्योहार है और वांचुवा असम (तिवा जनजाति) में मनाया जाता है। अतः 3 और 4 सही हैं।"
+  },
+  {
+    "Question_Number": "9 (English)",
+    "Question_Text": "Consider the following pairs:<br><table><tr><th>Area</th><th>Description</th></tr><tr><td>1. Kaas Pathar</td><td>Plateau of flowers</td></tr><tr><td>2. Rann of Kutch</td><td>Salt desert</td></tr><tr><td>3. Sundarbans</td><td>Mangrove forest</td></tr></table><br>Which of the pairs given above are correctly matched?[cite: 1]",
+    "Option_A": "1 and 2 only[cite: 1]",
+    "Option_B": "2 and 3 only[cite: 1]",
+    "Option_C": "1 and 3 only[cite: 1]",
+    "Option_D": "1, 2 and 3[cite: 1]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Kaas Pathar (Maharashtra) is famously known as the plateau of flowers. The Rann of Kutch (Gujarat) is a vast salt marsh/desert. The Sundarbans (West Bengal) is the largest continuous mangrove forest in the world. All three pairs match correctly."
+  },
+  {
+    "Question_Number": "9 (Hindi)",
+    "Question_Text": "निम्नलिखित युग्मों पर विचार कीजिए :<br><table><tr><th>क्षेत्र</th><th>विवरण</th></tr><tr><td>1. कास पठार</td><td>फूलों का पठार</td></tr><tr><td>2. कच्छ का रण</td><td>लवण मरुभूमि</td></tr><tr><td>3. सुंदरबन</td><td>मैंग्रोव वन</td></tr></table><br>उपर्युक्त युग्मों में से कौन-से सही सुमेलित हैं ?[cite: 1]",
+    "Option_A": "केवल 1 और 2[cite: 1]",
+    "Option_B": "केवल 2 और 3[cite: 1]",
+    "Option_C": "केवल 1 और 3[cite: 1]",
+    "Option_D": "1, 2 और 3[cite: 1]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "कास पठार (महाराष्ट्र) फूलों के पठार के रूप में जाना जाता है। कच्छ का रण (गुजरात) एक प्रसिद्ध नमक का रेगिस्तान है। सुंदरबन (पश्चिम बंगाल) दुनिया का सबसे बड़ा मैंग्रोव वन है। तीनों युग्म सही हैं।"
+  },
+  {
+    "Question_Number": "10 (English)",
+    "Question_Text": "Consider the following statements regarding cryptocurrencies in India:<br><ol><li>Transactions involving cryptocurrencies are not done through commercial banks.</li><li>There are no cryptocurrency exchanges in India.</li><li>Cryptocurrencies cannot be used in money laundering.</li><li>Cryptocurrencies cannot be regulated by any financial sector regulator.</li></ol>Which of the statements given above are correct?[cite: 1]",
+    "Option_A": "1, 2 and 3 only[cite: 1]",
+    "Option_B": "2, 3 and 4 only[cite: 1]",
+    "Option_C": "1 and 4 only[cite: 1]",
+    "Option_D": "1, 2, 3 and 4[cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Statement 2 is false (exchanges like WazirX operate in India). Statement 3 is false (they are frequently misused for money laundering). Statement 1 is generally true functionally within formal banking bans/limitations at the time, and Statement 4 reflects the core issue that decentralized assets cannot be traditionally regulated by a single nation's central bank without legislative overrides, making 1 and 4 the most logically correct pair."
+  },
+  {
+    "Question_Number": "10 (Hindi)",
+    "Question_Text": "भारत में क्रिप्टोमुद्राओं (क्रिप्टोकरेंसी) के संबंध में निम्नलिखित कथनों पर विचार कीजिए :<br><ol><li>क्रिप्टोमुद्राओं वाले लेन-देन वाणिज्यिक बैंकों के द्वारा नहीं किए जाते हैं।</li><li>भारत में कोई क्रिप्टोमुद्रा विनिमय प्रतिष्ठान (एक्सचेंज) नहीं हैं।</li><li>धन शोधन में क्रिप्टोमुद्राओं का उपयोग नहीं किया जा सकता ।</li><li>किसी वित्तीय सेक्टर विनियामक द्वारा क्रिप्टोमुद्राएँ विनियमित नहीं की जा सकतीं ।</li></ol>उपर्युक्त कथनों में से कौन-से सही हैं ?[cite: 1]",
+    "Option_A": "केवल 1, 2 और 3[cite: 1]",
+    "Option_B": "केवल 2, 3 और 4[cite: 1]",
+    "Option_C": "केवल 1 और 4[cite: 1]",
+    "Option_D": "1, 2, 3 और 4[cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "कथन 2 गलत है (भारत में वज़ीरएक्स जैसे एक्सचेंज हैं)। कथन 3 गलत है (उनका मनी लॉन्ड्रिंग में उपयोग किया जा सकता है)। कथन 1 और 4 अधिक सटीक रूप से क्रिप्टोकरेंसी के विकेंद्रीकृत स्वभाव और पारंपरिक बैंकिंग से उनके अलगाव को दर्शाते हैं।"
+  },
+  {
+    "Question_Number": "11 (English)",
+    "Question_Text": "A company buys four commodities C1, C2, C3 and C4 to produce a product. The following chart shows the old and the new prices of these commodities in per unit.<br><br><table border='1' cellpadding='5'><tr><th></th><th>C1</th><th>C2</th><th>C3</th><th>C4</th></tr><tr><td><b>Old rates</b></td><td>1000</td><td>850</td><td>640</td><td>4</td></tr><tr><td><b>New rates</b></td><td>1200</td><td>900</td><td>800</td><td>12</td></tr></table><br>To produce 100 units of the product it requires 2, 4, 5 and 20 units of C1, C2, C3 and C4 respectively. If there is no change in the labour charges, what is the change in the production cost per unit of the product?[cite: 1]",
+    "Option_A": "₹1.56[cite: 1]",
+    "Option_B": "₹15.60[cite: 1]",
+    "Option_C": "₹156[cite: 1]",
+    "Option_D": "₹1560[cite: 1]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Old Cost for 100 units = (2 x 1000) + (4 x 850) + (5 x 640) + (20 x 4) = 2000 + 3400 + 3200 + 80 = ₹8,680. New Cost for 100 units = (2 x 1200) + (4 x 900) + (5 x 800) + (20 x 12) = 2400 + 3600 + 4000 + 240 = ₹10,240. Increase for 100 units = 10,240 - 8,680 = ₹1,560. Increase per unit = 1560 / 100 = ₹15.60."
+  },
+  {
+    "Question_Number": "11 (Hindi)",
+    "Question_Text": "कोई कंपनी किसी उत्पाद का उत्पादन करने के लिए चार वस्तुओं C1, C2, C3 और C4 की खरीद करती है। नीचे दी गई सारणी में इन वस्तुओं की पुरानी और नई कीमतें ₹ प्रति यूनिट में दर्शाई गई हैं।<br><br><table border='1' cellpadding='5'><tr><th></th><th>C1</th><th>C2</th><th>C3</th><th>C4</th></tr><tr><td><b>पुरानी दरें</b></td><td>1000</td><td>850</td><td>640</td><td>4</td></tr><tr><td><b>नई दरें</b></td><td>1200</td><td>900</td><td>800</td><td>12</td></tr></table><br>उत्पाद की 100 यूनिटों का उत्पादन करने के लिए C1, C2, C3 और C4 की क्रमश: 2, 4, 5 और 20 यूनिटें लगती हैं। यदि मज़दूरी में किसी प्रकार का परिवर्तन नहीं होता है, तो उत्पाद की प्रति यूनिट उत्पादन लागत में क्या परिवर्तन आएगा ?[cite: 1]",
+    "Option_A": "₹1.56[cite: 1]",
+    "Option_B": "₹ 15.60[cite: 1]",
+    "Option_C": "₹ 156[cite: 1]",
+    "Option_D": "₹ 1560[cite: 1]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "100 यूनिट की पुरानी लागत = (2×1000) + (4×850) + (5×640) + (20×4) = 8680 रुपये। नई लागत = (2×1200) + (4×900) + (5×800) + (20×12) = 10240 रुपये। 100 यूनिट की कुल वृद्धि = 10240 - 8680 = 1560 रुपये। अतः प्रति यूनिट वृद्धि = 1560/100 = 15.60 रुपये।"
+  },
+  {
+    "Question_Number": "12 (English)",
+    "Question_Text": "The mother of E is F, and the mother of B is A. The spouse of D is A and the spouse of B is F. What is the relation of D with E?[cite: 1]",
+    "Option_A": "Father's father[cite: 1]",
+    "Option_B": "Mother's father[cite: 1]",
+    "Option_C": "Mother's mother[cite: 1]",
+    "Option_D": "Father's mother[cite: 1]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "F is the mother of E. B is the spouse of F, meaning B is the father of E. A is the mother of B. D is the spouse of A, meaning D is the father of B. Since D is the father of B, and B is the father of E, D is the father's father to E."
+  },
+  {
+    "Question_Number": "12 (Hindi)",
+    "Question_Text": "E की माता F है, और B की माता A है। D का पति/की पत्नी (स्पाउस) A है और B का पति/की पत्नी F है। D का E के साथ क्या संबंध है ?[cite: 1]",
+    "Option_A": "पिता का पिता[cite: 1]",
+    "Option_B": "माता का पिता[cite: 1]",
+    "Option_C": "माता की माता[cite: 1]",
+    "Option_D": "पिता की माता[cite: 1]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "F, E की माता है और B, F का पति है; इसका मतलब है कि B, E का पिता है। A, B की माता है और D, A का पति है; इसलिए D, B का पिता है। अतः, D, E के पिता का पिता (दादा) है।"
+  },
+  {
+    "Question_Number": "13 (English)",
+    "Question_Text": "A newspaper distributing agency supplies one latest issue of a daily newspaper if 20 old issues of the same newspaper are returned to the agency. One person had exactly 8000 old issues of the newspaper. For how long can this person receive the latest issue of the newspaper without making any payment, if he returns all the issues he receives?[cite: 1]",
+    "Option_A": "400 days[cite: 1]",
+    "Option_B": "420 days[cite: 1]",
+    "Option_C": "421 days[cite: 1]",
+    "Option_D": "425 days[cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "First exchange: 8000 / 20 = 400 latest issues (for 400 days). Once these 400 issues become old, he can exchange them again: 400 / 20 = 20 latest issues (for another 20 days). Finally, when these 20 issues become old, he can exchange them one last time: 20 / 20 = 1 latest issue (for 1 day). Total days = 400 + 20 + 1 = 421 days."
+  },
+  {
+    "Question_Number": "13 (Hindi)",
+    "Question_Text": "किसी समाचार-पत्र वितरण एजेंसी को यदि उसी समाचार-पत्र के पुराने अंकों के 20 अंक वापस लौटाए जाएँ तो वह दैनिक समाचार-पत्र के एक नवीनतम अंक की आपूर्ति करती है। एक व्यक्ति के पास इस समाचार-पत्र के ठीक 8000 पुराने अंक हैं। यदि वह उसे प्राप्त होने वाले सभी अंकों को वापस लौटाता है, तो वह कितनी अवधि तक कोई भुगतान किए बिना समाचार-पत्र के नवीनतम अंक प्राप्त कर सकता है ?[cite: 1]",
+    "Option_A": "400 दिन[cite: 1]",
+    "Option_B": "420 दिन[cite: 1]",
+    "Option_C": "421 दिन[cite: 1]",
+    "Option_D": "425 दिन[cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "पहला विनिमय: 8000 / 20 = 400 नए अंक (400 दिनों के लिए)। जब ये 400 अंक पुराने हो जाएंगे, तो वह इन्हें फिर से बदल सकता है: 400 / 20 = 20 नए अंक (20 दिनों के लिए)। अंततः, इन 20 पुराने अंकों को वह 1 बार और बदल सकता है: 20 / 20 = 1 नया अंक (1 दिन के लिए)। कुल दिन = 400 + 20 + 1 = 421 दिन।"
+  },
+  {
+    "Question_Number": "14 (English)",
+    "Question_Text": "Which one of the following diagrams is the best representation of cricketers, players and business persons?[cite: 1]",
+    "Option_A": "[Diagram A][cite: 1]",
+    "Option_B": "[Diagram B][cite: 1]",
+    "Option_C": "[Diagram C][cite: 1]",
+    "Option_D": "[Diagram D][cite: 1]",
+    "Correct_Answer": "Option C (Diagram showing one circle completely inside another, with a third circle intersecting both)",
+    "Brief_Explanation": "All 'cricketers' are a sub-category of 'players', meaning the circle for cricketers must be completely enclosed within the circle for players. 'Business persons' can be cricketers, non-cricketing players, or neither, so their circle must intersect both the cricketers' circle and the players' circle, while also having an area outside them."
+  },
+  {
+    "Question_Number": "14 (Hindi)",
+    "Question_Text": "निम्नलिखित आरेखों में से कौन-सा, क्रिकेट खिलाड़ियों, खिलाड़ियों और व्यवसायियों को सर्वोत्तम रूप से निरूपित करता है ?[cite: 1]",
+    "Option_A": "[आरेख A][cite: 1]",
+    "Option_B": "[आरेख B][cite: 1]",
+    "Option_C": "[आरेख C][cite: 1]",
+    "Option_D": "[आरेख D][cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "सभी 'क्रिकेट खिलाड़ी', 'खिलाड़ियों' का एक उप-समूह हैं, जिसका अर्थ है कि क्रिकेटरों का वृत्त पूरी तरह से खिलाड़ियों के वृत्त के अंदर होना चाहिए। 'व्यवसायी' क्रिकेट खिलाड़ी, अन्य खिलाड़ी, या दोनों में से कोई भी नहीं हो सकते हैं, इसलिए उनका वृत्त क्रिकेटरों और खिलाड़ियों दोनों के वृत्तों को काटना चाहिए।"
+  },
+  {
+    "Question_Number": "15 (English)",
+    "Question_Text": "Consider the following pairs of words:<br><ol><li>Cotton and hard</li><li>Rubber and brittle</li></ol>Which one of the following pairs is analogous to (1) and (2)?[cite: 1]",
+    "Option_A": "Fire and slow[cite: 1]",
+    "Option_B": "Steel and cold[cite: 1]",
+    "Option_C": "Ocean and tiny[cite: 1]",
+    "Option_D": "Moon and new[cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The words in each pair (Cotton vs Hard, Rubber vs Brittle) represent highly contrasting/opposite characteristics, as cotton is soft and rubber is flexible. Following this logic of extreme antonyms, 'Ocean' (which is vast/massive) paired with 'tiny' perfectly matches this analogous relationship."
+  },
+  {
+    "Question_Number": "15 (Hindi)",
+    "Question_Text": "निम्नलिखित शब्द-युग्मों पर विचार कीजिए :<br><ol><li>कपास और कठोर</li><li>रबड़ और भंगुर</li></ol>निम्नलिखित में से कौन-सा शब्द-युग्म (1) और (2) के सदृश है ?[cite: 1]",
+    "Option_A": "अग्नि और मंद[cite: 1]",
+    "Option_B": "इस्पात और शीतल[cite: 1]",
+    "Option_C": "महासागर और लघु[cite: 1]",
+    "Option_D": "चंद्रमा और नया[cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "प्रत्येक जोड़े में शब्द (कपास-कठोर, रबड़-भंगुर) विपरीत विशेषताओं को दर्शाते हैं (कपास मुलायम होता है, रबड़ लचीला होता है)। इसी तरह, 'महासागर' (जो विशाल होता है) के साथ 'लघु' (छोटा) का मेल भी इस विलोम संबंध (Antonyms) को पूर्णतः दर्शाता है।"
+  },
+  {
+    "Question_Number": "16 (English)",
+    "Question_Text": "Consider the following statement:<br>\"Every X is Y, but every X is not Z.\"<br>Which one of the following is true with respect to the above statement?[cite: 1]",
+    "Option_A": "Not every Y is Z[cite: 1]",
+    "Option_B": "Not every Z is X[cite: 1]",
+    "Option_C": "Not every Z is Y[cite: 1]",
+    "Option_D": "Not every Y is X[cite: 1]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "If 'every X is Y', it means X is a subset of Y. If 'every X is not Z' (meaning some X are not Z), those particular X's which are not Z are still part of Y. Therefore, since there are some elements in Y (the ones that are X) that are not Z, it must be true that 'Not every Y is Z'."
+  },
+  {
+    "Question_Number": "16 (Hindi)",
+    "Question_Text": "निम्नलिखित कथन पर विचार कीजिए :<br>\"प्रत्येक X, Y है, किंतु प्रत्येक X, Z नहीं है।\"<br>उपर्युक्त कथन के संबंध में, निम्नलिखित में से कौन-सा कथन सही है ?[cite: 1]",
+    "Option_A": "प्रत्येक Y, Z नहीं है[cite: 1]",
+    "Option_B": "प्रत्येक Z, X नहीं है[cite: 1]",
+    "Option_C": "प्रत्येक Z, Y नहीं है[cite: 1]",
+    "Option_D": "प्रत्येक Y, X नहीं है[cite: 1]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "चूंकि 'प्रत्येक X, Y है', इसका मतलब है कि सभी X, Y के अंतर्गत आते हैं। लेकिन 'प्रत्येक X, Z नहीं है' (अर्थात कुछ X ऐसे हैं जो Z नहीं हैं)। वे X जो Z नहीं हैं, वे Y का हिस्सा अवश्य हैं। अतः यह निष्कर्ष निकलता है कि 'प्रत्येक Y, Z नहीं है' (Y के कुछ हिस्से Z नहीं हैं)।"
+  },
+  {
+    "Question_Number": "17 (English)",
+    "Question_Text": "Two identical circles C<sub>1</sub> and C<sub>2</sub> with centres O<sub>1</sub> and O<sub>2</sub> respectively, intersect such that C<sub>1</sub> passes through O<sub>2</sub> and C<sub>2</sub> passes through O<sub>1</sub>. If the points of intersection of C<sub>1</sub> and C<sub>2</sub> are P and Q, what is the measure of the angle &ang;PO<sub>1</sub>Q?[cite: 1]",
+    "Option_A": "90&deg;[cite: 1]",
+    "Option_B": "120&deg;[cite: 1]",
+    "Option_C": "145&deg;[cite: 1]",
+    "Option_D": "150&deg;[cite: 1]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Since the circles are identical and pass through each other's centers, the distance O<sub>1</sub>O<sub>2</sub> equals the radius 'r'. The distance from center O<sub>1</sub> to intersection P is also 'r', as is O<sub>2</sub> to P. Therefore, triangle PO<sub>1</sub>O<sub>2</sub> is an equilateral triangle, meaning &ang;PO<sub>1</sub>O<sub>2</sub> = 60&deg;. By symmetry, triangle QO<sub>1</sub>O<sub>2</sub> is also equilateral, so &ang;QO<sub>1</sub>O<sub>2</sub> = 60&deg;. Adding them together, &ang;PO<sub>1</sub>Q = 60&deg; + 60&deg; = 120&deg;."
+  },
+  {
+    "Question_Number": "17 (Hindi)",
+    "Question_Text": "दो सर्वसम वृत्त C<sub>1</sub> और C<sub>2</sub> जिनका केंद्र क्रमशः O<sub>1</sub> और O<sub>2</sub> है, इस प्रकार प्रतिच्छेदन करते हैं कि C<sub>1</sub>, O<sub>2</sub> से होकर गुज़रता है तथा C<sub>2</sub>, O<sub>1</sub> से होकर गुज़रता है। यदि C<sub>1</sub> और C<sub>2</sub> के प्रतिच्छेद-बिंदु P और Q हैं, तो कोण &ang;PO<sub>1</sub>Q की माप क्या है ?[cite: 1]",
+    "Option_A": "90&deg;[cite: 1]",
+    "Option_B": "120&deg;[cite: 1]",
+    "Option_C": "145&deg;[cite: 1]",
+    "Option_D": "150&deg;[cite: 1]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "चूंकि वृत्त समान हैं और एक-दूसरे के केंद्रों से गुजरते हैं, केंद्र O<sub>1</sub> और O<sub>2</sub> के बीच की दूरी त्रिज्या 'r' के बराबर है। O<sub>1</sub> से P और O<sub>2</sub> से P की दूरी भी 'r' है। इसलिए त्रिभुज PO<sub>1</sub>O<sub>2</sub> एक समबाहु त्रिभुज है, जिसका कोण &ang;PO<sub>1</sub>O<sub>2</sub> = 60&deg; है। इसी प्रकार, नीचे का त्रिभुज QO<sub>1</sub>O<sub>2</sub> भी समबाहु होगा, जहाँ &ang;QO<sub>1</sub>O<sub>2</sub> = 60&deg;। कुल कोण &ang;PO<sub>1</sub>Q = 60&deg; + 60&deg; = 120&deg; होगा।"
+  },
+  {
+    "Question_Number": "18 (English)",
+    "Question_Text": "All the students of a class are standing in a row, each one facing the north. The position of the tallest student is 47<sup>th</sup> from the left and 14<sup>th</sup> from the right. How many students are there in the class?[cite: 1]",
+    "Option_A": "59[cite: 1]",
+    "Option_B": "60[cite: 1]",
+    "Option_C": "61[cite: 1]",
+    "Option_D": "62[cite: 1]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "To find the total number of students in the row, add the positions from both ends and subtract 1 (because the tallest student is counted twice). Total = (Position from left + Position from right) - 1 = (47 + 14) - 1 = 61 - 1 = 60."
+  },
+  {
+    "Question_Number": "18 (Hindi)",
+    "Question_Text": "किसी कक्षा के सभी छात्र एक पंक्ति में खड़े हैं, जिनमें से प्रत्येक उत्तर की ओर अभिमुखी है। सबसे लंबा छात्र बायीं ओर से 47वें और दायीं ओर से 14वें स्थान पर खड़ा है। कक्षा में कितने छात्र हैं ?[cite: 1]",
+    "Option_A": "59[cite: 1]",
+    "Option_B": "60[cite: 1]",
+    "Option_C": "61[cite: 1]",
+    "Option_D": "62[cite: 1]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "पंक्ति में कुल छात्रों की संख्या ज्ञात करने के लिए, दोनों छोर से स्थान को जोड़ें और 1 घटाएं (क्योंकि सबसे लंबे छात्र को दो बार गिना गया है)। कुल संख्या = (बाएं से स्थान + दाएं से स्थान) - 1 = (47 + 14) - 1 = 60।"
+  },
+  {
+    "Question_Number": "19 (English)",
+    "Question_Text": "There are four boys A, B, C and D. The boy A is taller than B, but shorter than C. The boy D is not the tallest one, whereas B is not the shortest one. Then which of the following statements is/are true?<br>P &equiv; D is the shortest one.<br>Q &equiv; C is the tallest one.[cite: 1]",
+    "Option_A": "P only[cite: 1]",
+    "Option_B": "Q only[cite: 1]",
+    "Option_C": "Both P and Q[cite: 1]",
+    "Option_D": "Neither P nor Q[cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "From 'A is taller than B, but shorter than C', we get the sequence C > A > B. We are told B is not the shortest, so D must be the shortest (C > A > B > D). This also satisfies 'D is not the tallest'. Therefore, D is the shortest (Statement P is true) and C is the tallest (Statement Q is true)."
+  },
+  {
+    "Question_Number": "19 (Hindi)",
+    "Question_Text": "A, B, C और D चार लड़के हैं। A लड़के की लम्बाई B से अधिक है, किंतु C से कम है। D सबसे लंबा लड़का नहीं है, जबकि B लम्बाई में सबसे छोटा नहीं है । तो निम्नलिखित कथनों में से कौन-सा/कौन-से सही है/हैं ?<br>P &equiv; D लंबाई में सबसे छोटा है।<br>Q &equiv; C सबसे लम्बा है।[cite: 1]",
+    "Option_A": "केवल P[cite: 1]",
+    "Option_B": "केवल Q[cite: 1]",
+    "Option_C": "P और Q दोनों[cite: 1]",
+    "Option_D": "न तो P, न ही Q[cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "'A, B से लंबा है, किंतु C से कम है' से क्रम C > A > B बनता है। चूँकि B सबसे छोटा नहीं है, अतः D को सबसे छोटा होना चाहिए (क्रम: C > A > B > D)। यह 'D सबसे लंबा नहीं है' शर्त को भी पूरा करता है। अतः, D सबसे छोटा है (P सत्य है) और C सबसे लंबा है (Q सत्य है)।"
+  },
+  {
+    "Question_Number": "20 (English)",
+    "Question_Text": "Pump P<sub>1</sub> can empty out a swimming pool in 1 hour. Pump P<sub>2</sub> can do this job in 1 hour and 30 minutes, whereas pump P<sub>3</sub> can do the same job in 2 hours. If all the three pumps are used simultaneously, how much time will they take to empty out the pool?[cite: 1]",
+    "Option_A": "Less than 30 minutes[cite: 1]",
+    "Option_B": "More than 30 minutes but less than 35 minutes[cite: 1]",
+    "Option_C": "More than 35 minutes but less than 40 minutes[cite: 1]",
+    "Option_D": "More than 40 minutes[cite: 1]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "In 1 minute, P<sub>1</sub> empties 1/60 of the pool, P<sub>2</sub> empties 1/90, and P<sub>3</sub> empties 1/120. Combined rate per minute = 1/60 + 1/90 + 1/120. Using a common denominator of 360, this is 6/360 + 4/360 + 3/360 = 13/360 per minute. Total time to empty the pool = 360/13 minutes &asymp; 27.69 minutes. This is less than 30 minutes."
+  },
+  {
+    "Question_Number": "20 (Hindi)",
+    "Question_Text": "एक तरणताल को पंप P<sub>1</sub> एक घंटे में खाली कर सकता है। पंप P<sub>2</sub> इस कार्य को 1 घंटा 30 मिनट में कर सकता है, जबकि पंप P<sub>3</sub> इसी कार्य को 2 घंटे में कर सकता है। यदि तीनों पंपों को एक साथ उपयोग किया जाए, तो तरणताल को खाली करने में कितना समय लगेगा ?[cite: 1]",
+    "Option_A": "30 मिनट से कम[cite: 1]",
+    "Option_B": "30 मिनट से अधिक, किंतु 35 मिनट से कम[cite: 1]",
+    "Option_C": "35 मिनट से अधिक, किंतु 40 मिनट से कम[cite: 1]",
+    "Option_D": "40 मिनट से अधिक[cite: 1]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "1 मिनट में P<sub>1</sub> 1/60 काम करता है, P<sub>2</sub> 1/90 और P<sub>3</sub> 1/120 काम करता है। संयुक्त दर = (1/60) + (1/90) + (1/120) = (6+4+3)/360 = 13/360। कुल समय = 360/13 मिनट = लगभग 27.69 मिनट, जो कि 30 मिनट से कम है।"
+  },
+  {
+    "Question_Number": "21 (English)",
+    "Question_Text": "Which one of the following parts of the sentence \"Mr. Chandran has been selected as one of the member of the committee\" has an error?[cite: 1]",
+    "Option_A": "Mr. Chandran has been[cite: 1]",
+    "Option_B": "selected as[cite: 1]",
+    "Option_C": "one of the member[cite: 1]",
+    "Option_D": "of the committee[cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The grammatical rule states that the phrase 'one of the' must always be followed by a plural noun. Therefore, 'one of the member' is incorrect and should be corrected to 'one of the members'."
+  },
+  {
+    "Question_Number": "22 (English)",
+    "Question_Text": "Which one of the following is the most appropriate meaning of the idiom 'Paper tiger'?[cite: 1]",
+    "Option_A": "A person or an organization that seems powerful, but is not[cite: 1]",
+    "Option_B": "A tiger in a paper[cite: 1]",
+    "Option_C": "Papers relating to lives and welfare of tigers[cite: 1]",
+    "Option_D": "Papers needed for the conservation of tigers in a country[cite: 1]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The idiom 'Paper tiger' translates from a traditional Chinese phrase and refers to something or someone that outwardly appears threatening, powerful, or dangerous but is actually ineffectual and unable to withstand a challenge."
+  },
+  {
+    "Question_Number": "23 (English)",
+    "Question_Text": "Which one of the following parts of the sentence \"The importance, relevant, and beauty of the classical languages of India cannot be overlooked\" has an error?[cite: 1]",
+    "Option_A": "The importance, relevant, and beauty[cite: 1]",
+    "Option_B": "of the classical languages[cite: 1]",
+    "Option_C": "of India[cite: 1]",
+    "Option_D": "cannot be overlooked[cite: 1]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The sentence lists nouns linked by 'and'. 'Importance' and 'beauty' are nouns, but 'relevant' is an adjective. To maintain parallel structure, the noun form 'relevance' should be used instead of 'relevant'."
+  },
+  {
+    "Question_Number": "24 (English)",
+    "Question_Text": "Which one of the following is the most appropriate meaning of the idiom 'Call it a day'?[cite: 1]",
+    "Option_A": "At the end of the day, particularly in the evening[cite: 1]",
+    "Option_B": "Calling a day as fruitful[cite: 1]",
+    "Option_C": "Leaving the workplace[cite: 1]",
+    "Option_D": "To stop doing something, particularly some work[cite: 1]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "The idiom 'Call it a day' is commonly used to declare that one has finished working on a task or that the workday is officially over, regardless of the actual time of day."
+  },
+  {
+    "Question_Number": "25 (English)",
+    "Question_Text": "Which one of the following parts of the sentence \"Children are unable to learn optimally when they were undernourished\" has an error?[cite: 1]",
+    "Option_A": "Children are[cite: 1]",
+    "Option_B": "unable to learn optimally[cite: 1]",
+    "Option_C": "when they were[cite: 1]",
+    "Option_D": "undernourished[cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The sentence starts in the present tense ('Children are unable'), stating a general ongoing fact. Therefore, the second clause should also align with the present tense by using 'when they are' instead of the past tense 'when they were'."
+  },
+  {
+    "Question_Number": "26 (English)",
+    "Question_Text": "Which one of the following is the most appropriate meaning of the idiom 'Smell a rat'?[cite: 1]",
+    "Option_A": "To start thinking about the smell of a rat[cite: 1]",
+    "Option_B": "To start believing that something is wrong about a situation[cite: 1]",
+    "Option_C": "To find the truth that someone is hiding[cite: 1]",
+    "Option_D": "To believe that all rats can sense the smell of anything[cite: 1]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The idiom 'Smell a rat' means to begin to suspect trickery, deception, or that something is not quite right in a given situation."
+  },
+  {
+    "Question_Number": "27 (English)",
+    "Question_Text": "<b>Directions for the following 2 (two) items:</b><br>Read the following passage and answer the items that follow the passage:<br><i>Hornbills were among many wildlife species that were hunted in the North-eastern part of India. The great hornbill, in particular, was hunted for its beak that was used in the traditional headgear, but now many people have switched to using artificial beaks made of fibreglass. Hornbills are particularly vulnerable during the breeding season when the female hornbill seals herself inside a tree cavity during a long incubation and fledging period that lasts almost four months. While hunting hornbills during the breeding season has been taboo here, there have been instances of violations in the past, mostly by outsiders. The trees that hornbills nest in are also at the risk of being cut down.</i><br><br>Why are the hornbills vulnerable during the breeding season?[cite: 1]",
+    "Option_A": "Because they can be easily found and killed[cite: 1]",
+    "Option_B": "Because they can't be found easily[cite: 1]",
+    "Option_C": "Hunters can track them with their noise during the incubation period[cite: 1]",
+    "Option_D": "Hornbills are ferocious during the incubation period[cite: 1]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The passage clearly states that the female hornbill seals herself inside a tree cavity for almost four months during the breeding season. This immobility makes them sitting ducks, meaning they are easily found, trapped, and killed if the tree is located or cut down."
+  },
+  {
+    "Question_Number": "28 (English)",
+    "Question_Text": "Which one of the following words is similar in meaning to the word 'taboo' in the passage?[cite: 1]",
+    "Option_A": "Acceptable[cite: 1]",
+    "Option_B": "Forbidden[cite: 1]",
+    "Option_C": "Superstition[cite: 1]",
+    "Option_D": "Permissible[cite: 1]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "A 'taboo' refers to a social, religious, or cultural prohibition against a particular practice. Therefore, 'Forbidden' is the closest synonym in this context."
+  },
+  {
+    "Question_Number": "29 (Hindi)",
+    "Question_Text": "<b>निम्नलिखित 3 (तीन) प्रश्नांशों के लिए निर्देश :</b><br>निम्नलिखित परिच्छेद को पढ़िए और परिच्छेद के नीचे आने वाले प्रश्नों का उत्तर दीजिए :<br><i>\"भारतीय परंपरा में चाणक्य एक अद्भुत व्यक्तित्व है। चणक मुनि के गोत्र में उत्पन्न होने के कारण इन्हें चाणक्य कहा जाता है । प्रतापी नंद वंश को केवल बुद्धिबल से नष्ट करके अपने शिष्य चन्द्रगुप्त को संपूर्ण भारतवर्ष का सम्राट बनाने वाले इस अकिंचन ब्राह्मण की कथा अनेक पुराणों में वर्णित है... इसमें केवल बुद्धि बल से प्रबल शत्रुओं को नष्ट करके चंद्रगुप्त को सिंहासनाधीन बनाकर स्वयं अंत तक अकिंचन बने रहने वाले तेजस्वी ब्राह्मण चाणक्य का अत्यंत तेजस्वी व्यक्तित्व प्रकट हुआ है। इस गुरु और मंत्री ब्राह्मण के सामने सम्राट भी कुछ नहीं कर पाता था । प्रतापी नंद वंश के साथ ही साथ उस समय के अन्य शक्तिशाली राजाओं को केवल बुद्धिबल से समाप्त करने वाला यह महान राजनीतिज्ञ आधुनिक साहित्य में भी अपनी गरिमा के साथ प्रेरक व्यक्तित्व के रूप में काम करता रहा है।\"</i><br><br>प्रतापी नंद वंश के साथ ही उस समय के अन्य शक्तिशाली राजाओं को केवल बुद्धिबल से समाप्त करने वाला यह महान राजनीतिज्ञ आधुनिक साहित्य में भी अपनी गरिमा के साथ प्रेरक व्यक्तित्व के रूप में काम करता रहा है। कथन में 'बुद्धिबल' का निहितार्थ है :[cite: 1]",
+    "Option_A": "भौतिक बल[cite: 1]",
+    "Option_B": "विद्या रूपी ज्ञान और मेधा का बल[cite: 1]",
+    "Option_C": "नैतिक बल[cite: 1]",
+    "Option_D": "शस्त्र और शास्त्रार्थ का बल[cite: 1]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "गद्यांश के संदर्भ में 'बुद्धिबल' से तात्पर्य चाणक्य के ज्ञान, मेधा (बुद्धिमत्ता), और कूटनीतिक कौशल से है, जिसके प्रयोग से उन्होंने शक्तिशाली राजाओं को परास्त किया, न कि भौतिक या शारीरिक बल से।"
+  },
+  {
+    "Question_Number": "30 (Hindi)",
+    "Question_Text": "चाणक्य अपने बुद्धि बल से शत्रुओं को नष्ट करके चंद्रगुप्त को सिंहासनाधीन बनाकर स्वयं अंत तक अकिंचन बने रहे । कथन में 'अकिंचन' का निहितार्थ है :[cite: 1]",
+    "Option_A": "कंचन युक्त[cite: 1]",
+    "Option_B": "धन-वैभव के बिना रहना[cite: 1]",
+    "Option_C": "धन-बल की लालसा में होना[cite: 1]",
+    "Option_D": "सिंहासन के अधीन न रहना[cite: 1]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "'अकिंचन' का शाब्दिक अर्थ है 'जिसके पास कुछ न हो' अर्थात् अत्यंत निर्धन। यहाँ इसका अर्थ है कि चाणक्य ने सत्ता और धन-वैभव का त्याग कर सादगीपूर्ण जीवन व्यतीत किया।"
+  },
+  {
+    "Question_Number": "31 (Hindi)",
+    "Question_Text": "'स्कंदपुराण' में इन्हें नंद वंश का उच्छेदकर्ता कहा गया है। यहाँ 'उच्छेदकर्ता' का अभिप्राय है :[cite: 1]",
+    "Option_A": "छेदन करने वाला[cite: 1]",
+    "Option_B": "नंद वंश का समूल नाश करने वाला[cite: 1]",
+    "Option_C": "नंद वंश का पोषण करने वाला[cite: 1]",
+    "Option_D": "नंद वंश की स्थापना करने वाला[cite: 1]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "'उच्छेद' का अर्थ होता है जड़ से उखाड़ फेंकना। अतः 'उच्छेदकर्ता' का तात्पर्य नंद वंश का समूल नाश करने वाले व्यक्ति से है।"
+  },
+  {
+    "Question_Number": "32 (Hindi)",
+    "Question_Text": "निम्नलिखित में से कौन-सा 'सदाशय' शब्द का संधि-विच्छेद है ?[cite: 1]",
+    "Option_A": "सदा + शय[cite: 1]",
+    "Option_B": "सद् + आशय[cite: 1]",
+    "Option_C": "सदाश + अय[cite: 1]",
+    "Option_D": "सत् + आशय[cite: 1]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "'सदाशय' में व्यंजन संधि है। इसका सही संधि-विच्छेद 'सत् + आशय' होता है। संधि नियम के अनुसार, 'त्' के बाद स्वर आने पर 'त्' अपने वर्ग के तीसरे वर्ण 'द्' में बदल जाता है।"
+  },
+  {
+    "Question_Number": "33 (Hindi)",
+    "Question_Text": "निम्नलिखित में से कौन-सा 'उद्घाटन' शब्द का संधि-विच्छेद है ?[cite: 1]",
+    "Option_A": "उद् + घाटन[cite: 1]",
+    "Option_B": "उत् + घाटन[cite: 1]",
+    "Option_C": "उद्घ + आटन[cite: 1]",
+    "Option_D": "अमान्य विकल्प (OCR त्रुटि)[cite: 1]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "'उद्घाटन' का सही संधि-विच्छेद 'उत् + घाटन' है (व्यंजन संधि)। 'त्' के बाद घोष वर्ण आने पर 'त्' अपने वर्ग के तीसरे वर्ण 'द्' में परिवर्तित हो जाता है।"
+  },
+  {
+    "Question_Number": "34 (Hindi)",
+    "Question_Text": "निम्नलिखित युग्मों में से कौन-सा सही सुमेलित युग्म नहीं है ?<br><table><tr><th>(हिंदी मुहावरे)</th><th>(अर्थ)</th></tr><tr><td>(a) छक्के छुड़ाना</td><td>हिम्मत पस्त कर देना</td></tr><tr><td>(b) नाक भौं सिकोड़ना</td><td>तंग करना</td></tr><tr><td>(c) नाक बचाना</td><td>इज्जत बचाना</td></tr><tr><td>(d) नाक में दम करना</td><td>बहुत परेशान करना</td></tr></table>[cite: 1]",
+    "Option_A": "छक्के छुड़ाना : हिम्मत पस्त कर देना[cite: 1]",
+    "Option_B": "नाक भौं सिकोड़ना : तंग करना[cite: 1]",
+    "Option_C": "नाक बचाना : इज्जत बचाना[cite: 1]",
+    "Option_D": "नाक में दम करना : बहुत परेशान करना[cite: 1]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "'नाक भौं सिकोड़ना' मुहावरे का सही अर्थ घृणा, अप्रसन्नता या असंतोष प्रकट करना होता है, न कि 'तंग करना'। अतः यह युग्म सुमेलित नहीं है।"
+  },
+  {
+    "Question_Number": "35 (Hindi)",
+    "Question_Text": "निम्नलिखित युग्मों में से कौन-सा सही सुमेलित युग्म नहीं है ?<br><table><tr><th>(हिंदी मुहावरे)</th><th>(अर्थ)</th></tr><tr><td>(a) फूटे ढोल की तरह गले पड़ना</td><td>अनचाहा बोझ बनना</td></tr><tr><td>(b) फूटे मुँह से</td><td>बेरुखी से</td></tr><tr><td>(c) फूला न समाना</td><td>उत्साहहीन होना</td></tr><tr><td>(d) फूट डालना</td><td>बैर कराना</td></tr></table>[cite: 1]",
+    "Option_A": "फूटे ढोल की तरह गले पड़ना : अनचाहा बोझ बनना[cite: 1]",
+    "Option_B": "फूटे मुँह से : बेरुखी से[cite: 1]",
+    "Option_C": "फूला न समाना : उत्साहहीन होना[cite: 1]",
+    "Option_D": "फूट डालना : बैर कराना[cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "'फूला न समाना' का अर्थ होता है अत्यधिक प्रसन्न या खुश होना। 'उत्साहहीन होना' इसका विलोम है, अतः यह युग्म गलत है।"
+  },
+  {
+    "Question_Number": "36 (Hindi)",
+    "Question_Text": "निम्नलिखित युग्मों में से कौन-सा सही सुमेलित युग्म नहीं है ?<br><table><tr><th>(हिंदी मुहावरे)</th><th>(अर्थ)</th></tr><tr><td>(a) बांछें खिलना</td><td>बहुत सुंदर होना</td></tr><tr><td>(b) बहती गंगा में हाथ धोना</td><td>सब के साथ अनायास स्वयं भी लाभ उठा लेना</td></tr><tr><td>(c) बहत्तर घाट का पानी पिए होना</td><td>बहुत धूर्त और अनुभवी होना</td></tr><tr><td>(d) बाज़ी मार लेना</td><td>स्पर्धा में सफल होना</td></tr></table>[cite: 1]",
+    "Option_A": "बांछें खिलना : बहुत सुंदर होना[cite: 1]",
+    "Option_B": "बहती गंगा में हाथ धोना : सब के साथ अनायास स्वयं भी लाभ उठा लेना[cite: 1]",
+    "Option_C": "बहत्तर घाट का पानी पिए होना : बहुत धूर्त और अनुभवी होना[cite: 1]",
+    "Option_D": "बाज़ी मार लेना : स्पर्धा में सफल होना[cite: 1]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "'बांछें खिलना' का अर्थ है बहुत अधिक प्रसन्न होना या खुशी से गदगद होना। 'बहुत सुंदर होना' इसका अर्थ नहीं है।"
+  },
+  {
+    "Question_Number": "37 (English)",
+    "Question_Text": "The Evaluation of Pupils' learning difficulties during instruction is known as:[cite: 1]",
+    "Option_A": "Placement[cite: 1]",
+    "Option_B": "Formative[cite: 1]",
+    "Option_C": "Diagnostic[cite: 1]",
+    "Option_D": "Summative[cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Diagnostic evaluation is specifically conducted to identify learning difficulties, persistent misconceptions, and root causes of a student's academic weaknesses during instruction."
+  },
+  {
+    "Question_Number": "37 (Hindi)",
+    "Question_Text": "शिक्षण (इंस्ट्रक्शन) के दौरान छात्रों की अधिगम कठिनाइयों के मूल्यांकन को क्या कहते हैं ?[cite: 1]",
+    "Option_A": "स्थानन (प्लेसमेंट)[cite: 1]",
+    "Option_B": "निर्माणात्मक (फॉर्मेटिव)[cite: 1]",
+    "Option_C": "नैदानिक (डाइग्नोस्टिक)[cite: 1]",
+    "Option_D": "संकलक (समेटिव)[cite: 1]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "शिक्षण के दौरान छात्रों को सीखने में आ रही समस्याओं (अधिगम कठिनाइयों) और कमियों की पहचान करने के लिए 'नैदानिक मूल्यांकन' (Diagnostic Evaluation) किया जाता है।"
+  },
+  {
+    "Question_Number": "38 (English)",
+    "Question_Text": "Which one of the following statements indicate the formative evaluation?[cite: 1]",
+    "Option_A": "Pupils' entry performance in a sequence of instruction[cite: 1]",
+    "Option_B": "Pupils' learning progress during instruction[cite: 1]",
+    "Option_C": "Pupils' learning difficulties during instruction[cite: 1]",
+    "Option_D": "Pupils' achievement at the end of instruction[cite: 1]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Formative evaluation is an ongoing process used by teachers and students to track learning progress during instruction, providing feedback to improve the educational experience."
+  },
+  {
+    "Question_Number": "38 (Hindi)",
+    "Question_Text": "निम्नलिखित कथनों में से कौन-सा, निर्माणात्मक मूल्यांकन को दर्शाता है ?[cite: 1]",
+    "Option_A": "अनुदेशन अनुक्रम (सीक्वेंस ऑफ इंस्ट्रक्शन) में छात्रों का प्रारंभिक निष्पादन[cite: 1]",
+    "Option_B": "अनुदेशन के दौरान छात्रों की अधिगम प्रगति[cite: 1]",
+    "Option_C": "अनुदेशन के दौरान छात्रों की अधिगम कठिनाइयाँ[cite: 1]",
+    "Option_D": "अनुदेशन के अंत में छात्रों की उपलब्धि[cite: 1]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "निर्माणात्मक (Formative) मूल्यांकन शिक्षण प्रक्रिया (अनुदेशन) के दौरान किया जाता है, जिसका मुख्य उद्देश्य छात्रों की 'अधिगम प्रगति' को मापना और निरंतर फीडबैक प्रदान करना है।"
+  },
+  {
+    "Question_Number": "39 (English)",
+    "Question_Text": "Which of the following are the components of evaluation?<br><ol><li>Qualitative descriptions</li><li>Quantitative descriptions</li><li>Value judgments</li><li>Graphical descriptions</li></ol>Select the correct answer using the code given below:[cite: 2]",
+    "Option_A": "1, 2 and 4[cite: 2]",
+    "Option_B": "2, 3 and 4[cite: 2]",
+    "Option_C": "1, 3 and 4[cite: 2]",
+    "Option_D": "1, 2 and 3[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Evaluation in education is a comprehensive process that includes quantitative measurement (tests/scores), qualitative assessment (observations/descriptions), and making value judgments based on those assessments. Graphical description is merely a presentation tool, not a core component."
+  },
+  {
+    "Question_Number": "39 (Hindi)",
+    "Question_Text": "निम्नलिखित में से मूल्यांकन के घटक कौन-से हैं ?<br><ol><li>गुणात्मक वर्णन</li><li>परिमाणात्मक वर्णन</li><li>मूल्य निर्धारण</li><li>आलेखीय (ग्राफिकल) वर्णन</li></ol>नीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए :[cite: 2]",
+    "Option_A": "1, 2 और 4[cite: 2]",
+    "Option_B": "2, 3 और 4[cite: 2]",
+    "Option_C": "1, 3 और 4[cite: 2]",
+    "Option_D": "1, 2 और 3[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "मूल्यांकन (Evaluation) में मुख्य रूप से परिमाणात्मक माप (अंक), गुणात्मक वर्णन (अवलोकन) और उन मापों के आधार पर 'मूल्य निर्धारण' शामिल होता है। ग्राफिकल वर्णन केवल डेटा दर्शाने का एक तरीका है, मूल्यांकन का मूल घटक नहीं।"
+  },
+  {
+    "Question_Number": "40 (English)",
+    "Question_Text": "Split-Half method is used for determining which one of the following characteristics of a test?[cite: 2]",
+    "Option_A": "Validity[cite: 2]",
+    "Option_B": "Reliability[cite: 2]",
+    "Option_C": "Usability[cite: 2]",
+    "Option_D": "Objectivity[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The Split-Half method is a measure of internal consistency, which is a method used to determine test reliability by splitting a test into two halves and correlating the scores of the two halves."
+  },
+  {
+    "Question_Number": "40 (Hindi)",
+    "Question_Text": "किसी परीक्षण की निम्नलिखित में से कौन-सी विशेषता का निर्धारण करने के लिए विभक्तार्ध (स्प्लिट-हाफ) पद्धति का प्रयोग किया जाता है ?[cite: 2]",
+    "Option_A": "वैधता[cite: 2]",
+    "Option_B": "विश्वसनीयता[cite: 2]",
+    "Option_C": "उपयोगिता[cite: 2]",
+    "Option_D": "वस्तुनिष्ठता[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "विभक्तार्ध (स्प्लिट-हाफ) पद्धति आंतरिक संगति (Internal consistency) का आकलन करती है, जो किसी परीक्षण की 'विश्वसनीयता' (Reliability) निर्धारित करने की एक प्रमुख विधि है।"
+  },
+  {
+    "Question_Number": "41 (English)",
+    "Question_Text": "Which of the following categories in the taxonomy of educational objectives are the parts of the Affective Domain?<br><ol><li>Application</li><li>Valuing</li><li>Organization</li><li>Adaptation</li><li>Comprehension</li></ol>Select the correct answer using the code given below:[cite: 2]",
+    "Option_A": "1 and 4[cite: 2]",
+    "Option_B": "2 and 3[cite: 2]",
+    "Option_C": "1 and 5[cite: 2]",
+    "Option_D": "4 and 5[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "According to Krathwohl's taxonomy of the Affective Domain, the levels are Receiving, Responding, Valuing, Organization, and Characterization. 'Application' and 'Comprehension' belong to the Cognitive Domain, and 'Adaptation' to the Psychomotor Domain."
+  },
+  {
+    "Question_Number": "41 (Hindi)",
+    "Question_Text": "शैक्षणिक उद्देश्यों की वर्गिकी में निम्नलिखित श्रेणियों में से कौन-सी श्रेणियाँ, भावात्मक क्षेत्र के भाग हैं ?<br><ol><li>अनुप्रयोग</li><li>मूल्यांकन (Valuing)</li><li>आयोजन (Organization)</li><li>अनुकूलन</li><li>बोधन</li></ol>नीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए :[cite: 2]",
+    "Option_A": "1 और 4[cite: 2]",
+    "Option_B": "2 और 3[cite: 2]",
+    "Option_C": "1 और 5[cite: 2]",
+    "Option_D": "4 और 5[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "ब्लूम और क्रैथवोहल के अनुसार, भावात्मक क्षेत्र (Affective Domain) में ग्रहण करना, अनुक्रिया, मूल्यांकन (Valuing), आयोजन (Organization), और चरित्रीकरण शामिल हैं। अनुप्रयोग और बोधन संज्ञानात्मक क्षेत्र के हिस्से हैं।"
+  },
+  {
+    "Question_Number": "42 (English)",
+    "Question_Text": "Verbal comprehension is:[cite: 2]",
+    "Option_A": "Identifying similarities and differences in words, letters, numbers and geometric figures[cite: 2]",
+    "Option_B": "Demonstrating an understanding of the meaning of words, sentences and directions[cite: 2]",
+    "Option_C": "Identifying similarities and differences in spoken words or sounds[cite: 2]",
+    "Option_D": "Identifying letters of the alphabet, words and numerals[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Comprehension fundamentally refers to the ability to grasp meaning. Thus, verbal comprehension is specifically the ability to understand the meaning of spoken or written language (words, sentences, and directions)."
+  },
+  {
+    "Question_Number": "42 (Hindi)",
+    "Question_Text": "शाब्दिक बोधन क्या है ?[cite: 2]",
+    "Option_A": "शब्दों, वर्णों, संख्याओं और ज्यामितिक आकृतियों में समानताओं एवं विभेदों की पहचान करना[cite: 2]",
+    "Option_B": "शब्दों, वाक्यों और निदेशनों के अर्थ का बोध प्रदर्शित करना[cite: 2]",
+    "Option_C": "उच्चरित शब्दों या ध्वनियों में समानताओं एवं विभेदों की पहचान करना[cite: 2]",
+    "Option_D": "वर्णमाला के अक्षरों, शब्दों और अंकों की पहचान करना[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "'बोधन' (Comprehension) का अर्थ होता है समझना। अतः शाब्दिक बोधन का सटीक अर्थ शब्दों, वाक्यों और निर्देशों के अर्थ को समझना (बोध प्रदर्शित करना) है।"
+  },
+  {
+    "Question_Number": "43 (English)",
+    "Question_Text": "Which one of the following is the main advantage of using a table of specifications when preparing an achievement test?[cite: 2]",
+    "Option_A": "It reduces the amount of time required[cite: 2]",
+    "Option_B": "It makes the construction of test items easier[cite: 2]",
+    "Option_C": "It decreases the objectivity of the test[cite: 2]",
+    "Option_D": "It improves the sampling of content[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "A table of specifications (also known as a test blueprint) helps ensure content validity by matching instructional objectives with course content, thus greatly improving the balanced sampling of the content in the test."
+  },
+  {
+    "Question_Number": "43 (Hindi)",
+    "Question_Text": "उपलब्धि परीक्षण तैयार करते समय विशिष्टि-तालिका का प्रयोग करने का निम्नलिखित में से कौन-सा मुख्य लाभ है?[cite: 2]",
+    "Option_A": "यह अपेक्षित समय की मात्रा को कम करता है[cite: 2]",
+    "Option_B": "यह परीक्षण की मदें तैयार करना आसान बनाता है[cite: 2]",
+    "Option_C": "यह परीक्षण की वस्तुनिष्ठता को कम करता है[cite: 2]",
+    "Option_D": "यह विषय-वस्तु के प्रतिचयन में सुधार लाता है[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "विशिष्टि-तालिका (Table of Specifications/Blueprint) का मुख्य उद्देश्य परीक्षण की सामग्री-वैधता सुनिश्चित करना है, जिससे विषय-वस्तु के विभिन्न हिस्सों का सही अनुपात में प्रतिचयन (Sampling) हो सके।"
+  },
+  {
+    "Question_Number": "44 (English)",
+    "Question_Text": "Which one of the following categories in the taxonomy of educational objectives indicates the highest level of learning?[cite: 2]",
+    "Option_A": "Analysis[cite: 2]",
+    "Option_B": "Application[cite: 2]",
+    "Option_C": "Synthesis[cite: 2]",
+    "Option_D": "Comprehension[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "In Bloom's original Cognitive Taxonomy, the levels from lowest to highest are Knowledge, Comprehension, Application, Analysis, Synthesis, and Evaluation. Among the provided options, Synthesis represents the highest level."
+  },
+  {
+    "Question_Number": "44 (Hindi)",
+    "Question_Text": "शैक्षणिक उद्देश्यों की वर्गिकी की निम्नलिखित श्रेणियों में से कौन-सी श्रेणी, अधिगम के उच्चतम स्तर को सूचित करती है ?[cite: 2]",
+    "Option_A": "विश्लेषण[cite: 2]",
+    "Option_B": "अनुप्रयोग[cite: 2]",
+    "Option_C": "संश्लेषण[cite: 2]",
+    "Option_D": "बोधन[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "ब्लूम की मूल टैक्सोनॉमी के अनुसार अधिगम के स्तर (नीचे से ऊपर) हैं: ज्ञान, बोध, अनुप्रयोग, विश्लेषण, संश्लेषण और मूल्यांकन। दिए गए विकल्पों में 'संश्लेषण' (Synthesis) सबसे उच्च स्तर पर है।"
+  },
+  {
+    "Question_Number": "45 (English)",
+    "Question_Text": "Which one of the following measurement scales has an absolute zero point?[cite: 2]",
+    "Option_A": "Ordinal[cite: 2]",
+    "Option_B": "Nominal[cite: 2]",
+    "Option_C": "Ratio[cite: 2]",
+    "Option_D": "Interval[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The ratio scale contains all the properties of the interval scale with the addition of an absolute (true) zero point, meaning a zero indicates a complete absence of the variable being measured."
+  },
+  {
+    "Question_Number": "45 (Hindi)",
+    "Question_Text": "निम्नलिखित में से कौन-सी मापनी (मेज़रमेंट स्केल) में निरपेक्ष शून्य बिंदु होता है ?[cite: 2]",
+    "Option_A": "क्रमसूचक[cite: 2]",
+    "Option_B": "नाममात्र[cite: 2]",
+    "Option_C": "अनुपात[cite: 2]",
+    "Option_D": "अंतराल[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "अनुपात मापनी (Ratio scale) में एक निरपेक्ष (परम) शून्य बिंदु होता है, जिसका अर्थ है कि शून्य होने पर गुण पूरी तरह से अनुपस्थित होता है।"
+  },
+  {
+    "Question_Number": "46 (English)",
+    "Question_Text": "Which one of the following is a parametric test?[cite: 2]",
+    "Option_A": "Sign test[cite: 2]",
+    "Option_B": "t-test[cite: 2]",
+    "Option_C": "Median test[cite: 2]",
+    "Option_D": "Chi-square test[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "A t-test is a parametric statistical test because it assumes the data follows a specific distribution (usually normal) and involves population parameters like mean. The Sign, Median, and Chi-square tests are non-parametric."
+  },
+  {
+    "Question_Number": "46 (Hindi)",
+    "Question_Text": "निम्नलिखित में से कौन-सा, प्राचल परीक्षण (पैरामेट्रिक टेस्ट) है ?[cite: 2]",
+    "Option_A": "संकेत-चिह्न परीक्षण[cite: 2]",
+    "Option_B": "टी-परीक्षण[cite: 2]",
+    "Option_C": "माध्यिका परीक्षण[cite: 2]",
+    "Option_D": "काई-वर्ग (Chi-square) परीक्षण[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "टी-परीक्षण (t-test) एक प्राचल (पैरामेट्रिक) परीक्षण है, क्योंकि यह डेटा के सामान्य वितरण (Normal distribution) पर आधारित होता है। अन्य तीन गैर-प्राचल (नॉन-पैरामेट्रिक) परीक्षण हैं।"
+  },
+  {
+    "Question_Number": "47 (English)",
+    "Question_Text": "Which one of the following is not an assumption of a parametric test?[cite: 2]",
+    "Option_A": "Normal distribution[cite: 2]",
+    "Option_B": "Randomization[cite: 2]",
+    "Option_C": "Homogeneity[cite: 2]",
+    "Option_D": "Discontinuity[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Parametric tests generally assume that variables are measured on a continuous scale (interval or ratio), follow a normal distribution, have homogeneity of variance, and use randomization. Discontinuity is not an assumption."
+  },
+  {
+    "Question_Number": "47 (Hindi)",
+    "Question_Text": "निम्नलिखित में से कौन-सा, प्राचल परीक्षण की अभिधारणा नहीं है?[cite: 2]",
+    "Option_A": "प्रसामान्य बंटन[cite: 2]",
+    "Option_B": "यादृच्छिकीकरण[cite: 2]",
+    "Option_C": "समजातीयता[cite: 2]",
+    "Option_D": "असांतत्य[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "प्राचल परीक्षणों (Parametric tests) की मान्यताएँ प्रसामान्य बंटन (Normal distribution), समजातीयता (Homogeneity), यादृच्छिकीकरण (Randomization) और सतत डेटा (Continuous data) हैं। 'असांतत्य' (Discontinuity) इसकी मान्यता नहीं है।"
+  },
+  {
+    "Question_Number": "48 (English)",
+    "Question_Text": "Which one of the following tests should be conducted by a teacher in order to identify the strength and weakness of the students in an area of study?[cite: 2]",
+    "Option_A": "Achievement test[cite: 2]",
+    "Option_B": "Aptitude test[cite: 2]",
+    "Option_C": "Diagnostic test[cite: 2]",
+    "Option_D": "Reasoning test[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "A diagnostic test is specifically designed to pinpoint specific strengths and weaknesses in a student's learning profile to guide future remedial instruction."
+  },
+  {
+    "Question_Number": "48 (Hindi)",
+    "Question_Text": "किसी अध्ययन क्षेत्र में विद्यार्थियों के सामर्थ्य और कमजोरियों का अभिनिर्धारण करने के उद्देश्य से अध्यापक को निम्नलिखित में से कौन-सा परीक्षण करना चाहिए ?[cite: 2]",
+    "Option_A": "उपलब्धि परीक्षण[cite: 2]",
+    "Option_B": "अभिक्षमता परीक्षण[cite: 2]",
+    "Option_C": "नैदानिक परीक्षण[cite: 2]",
+    "Option_D": "तर्क परीक्षण[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "विद्यार्थियों की विशिष्ट शक्तियों और कमजोरियों की पहचान करने और अधिगम की कमियों को दूर करने के लिए 'नैदानिक परीक्षण' (Diagnostic test) का उपयोग किया जाता है।"
+  },
+  {
+    "Question_Number": "49 (English)",
+    "Question_Text": "Which one of the following does not belong to the category of probability sample?[cite: 2]",
+    "Option_A": "Random sample[cite: 2]",
+    "Option_B": "Stratified sample[cite: 2]",
+    "Option_C": "Purposive sample[cite: 2]",
+    "Option_D": "Systematic sample[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Purposive sampling relies on the judgment of the researcher when choosing members of the population to participate in the study. Therefore, it is a non-probability sampling method."
+  },
+  {
+    "Question_Number": "49 (Hindi)",
+    "Question_Text": "निम्नलिखित में से कौन-सा, प्रायिकता प्रतिदर्श की श्रेणी में शामिल नहीं है ?[cite: 2]",
+    "Option_A": "यादृच्छिक प्रतिदर्श[cite: 2]",
+    "Option_B": "स्तरित प्रतिदर्श[cite: 2]",
+    "Option_C": "सोद्देश्य प्रतिदर्श[cite: 2]",
+    "Option_D": "सुयोजित प्रतिदर्श[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "सोद्देश्य प्रतिदर्श (Purposive sample) एक गैर-प्रायिकता (Non-probability) प्रतिचयन विधि है क्योंकि इसमें अनुसंधानकर्ता अपने उद्देश्य के अनुसार जानबूझकर प्रतिदर्श का चयन करता है, जबकि अन्य तीनों प्रायिकता प्रतिदर्श विधियाँ हैं।"
+  },
+  {
+    "Question_Number": "50 (English)",
+    "Question_Text": "Which one of the following is included within the range of M &plusmn; 1&sigma; in a normal distribution curve?[cite: 2]",
+    "Option_A": "68.13%[cite: 2]",
+    "Option_B": "68.26%[cite: 2]",
+    "Option_C": "66.28%[cite: 2]",
+    "Option_D": "66.26%[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "According to the empirical rule (68-95-99.7 rule) in statistics, approximately 68.26% of the data falls within one standard deviation (M &plusmn; 1&sigma;) from the mean in a normal distribution."
+  },
+  {
+    "Question_Number": "50 (Hindi)",
+    "Question_Text": "किसी प्रसामान्य बंटन वक्र में M &plusmn; 1&sigma; के परास (रेंज) में निम्नलिखित में से कौन-सा शामिल है ?[cite: 2]",
+    "Option_A": "68.13%[cite: 2]",
+    "Option_B": "68.26%[cite: 2]",
+    "Option_C": "66.28%[cite: 2]",
+    "Option_D": "66.26%[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "प्रसामान्य बंटन वक्र (Normal distribution curve) में, माध्य (M) से एक मानक विचलन (&plusmn; 1&sigma;) के अंतर्गत लगभग 68.26% डेटा शामिल होता है।"
+  },
+  {
+    "Question_Number": "51 (English)",
+    "Question_Text": "Which one of the following tests is used for personality diagnosis?[cite: 2]",
+    "Option_A": "Aptitude test[cite: 2]",
+    "Option_B": "Projective test[cite: 2]",
+    "Option_C": "Intelligence test[cite: 2]",
+    "Option_D": "Achievement test[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Projective tests (such as the Rorschach Inkblot Test or TAT) are psychological tests in which words, images, or situations are presented to a person to evaluate underlying personality dynamics."
+  },
+  {
+    "Question_Number": "51 (Hindi)",
+    "Question_Text": "व्यक्तित्व निदान के लिए निम्नलिखित परीक्षणों में से किसका प्रयोग किया जाता है ?[cite: 2]",
+    "Option_A": "अभिक्षमता परीक्षण[cite: 2]",
+    "Option_B": "प्रक्षेपी परीक्षण[cite: 2]",
+    "Option_C": "बुद्धि परीक्षण[cite: 2]",
+    "Option_D": "उपलब्धि परीक्षण[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "प्रक्षेपी परीक्षण (Projective tests) का प्रयोग किसी व्यक्ति के अचेतन विचारों, भावनाओं और व्यक्तित्व गतिशीलता के निदान के लिए किया जाता है।"
+  },
+  {
+    "Question_Number": "52 (English)",
+    "Question_Text": "Thurstone's equal appearing intervals scale is used for measuring the:[cite: 2]",
+    "Option_A": "Aptitude[cite: 2]",
+    "Option_B": "Attitude[cite: 2]",
+    "Option_C": "Achievement[cite: 2]",
+    "Option_D": "Creativity[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Louis Thurstone introduced the 'Method of Equal-Appearing Intervals' specifically as a technique for measuring attitudes towards a given concept or issue."
+  },
+  {
+    "Question_Number": "52 (Hindi)",
+    "Question_Text": "थर्स्टन की तुल्याभासी अंतराल मापनी का प्रयोग किसे मापने के लिए किया जाता है ?[cite: 2]",
+    "Option_A": "अभिक्षमता[cite: 2]",
+    "Option_B": "अभिवृत्ति[cite: 2]",
+    "Option_C": "उपलब्धि[cite: 2]",
+    "Option_D": "सृजनशीलता[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "लुइस थर्स्टन की 'समान दिखने वाले अंतराल (Equal Appearing Intervals)' विधि को विशेष रूप से लोगों की 'अभिवृत्ति' (Attitude) मापने के लिए विकसित किया गया था।"
+  },
+  {
+    "Question_Number": "53 (English)",
+    "Question_Text": "Which one of the following variables does not fall into continuous series?[cite: 2]",
+    "Option_A": "Age[cite: 2]",
+    "Option_B": "Time[cite: 2]",
+    "Option_C": "Class size[cite: 2]",
+    "Option_D": "Weight[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Class size (e.g., number of students) is a discrete variable because it must be a whole number; you cannot have a fraction of a student. Age, time, and weight can take on any fractional value and are thus continuous."
+  },
+  {
+    "Question_Number": "53 (Hindi)",
+    "Question_Text": "निम्नलिखित चरों में से कौन-सा, सतत श्रेणी में नहीं आता है ?[cite: 2]",
+    "Option_A": "आयु[cite: 2]",
+    "Option_B": "समय[cite: 2]",
+    "Option_C": "कक्षा-आकार[cite: 2]",
+    "Option_D": "वज़न[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "कक्षा का आकार एक असतत (Discrete) चर है क्योंकि छात्रों की संख्या हमेशा एक पूर्ण संख्या होगी। आयु, समय, और वज़न अंश (दशमलव) में हो सकते हैं, इसलिए ये सतत (Continuous) चर हैं।"
+  },
+  {
+    "Question_Number": "54 (English)",
+    "Question_Text": "Which of the following are standard scores?<br><ol><li>T-score</li><li>Z-score</li><li>Stanine score</li><li>Mean score</li></ol>Select the correct answer using the code given below:[cite: 2]",
+    "Option_A": "1 and 2 only[cite: 2]",
+    "Option_B": "2 and 4 only[cite: 2]",
+    "Option_C": "1 and 3 only[cite: 2]",
+    "Option_D": "1, 2 and 3[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Standard scores are transformed scores used to compare data points from different distributions. T-scores, Z-scores, and Stanine scores are all examples of standard scores. A Mean score is a measure of central tendency, not a standardized score of an individual point."
+  },
+  {
+    "Question_Number": "54 (Hindi)",
+    "Question_Text": "निम्नलिखित में से कौन-से मानक प्राप्तांक (स्टैंडर्ड स्कोर) हैं ?<br><ol><li>T-प्राप्तांक</li><li>Z-प्राप्तांक</li><li>स्टेनाइन प्राप्तांक</li><li>माध्य प्राप्तांक</li></ol>नीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए :[cite: 2]",
+    "Option_A": "केवल 1 और 2[cite: 2]",
+    "Option_B": "केवल 2 और 4[cite: 2]",
+    "Option_C": "केवल 1 और 3[cite: 2]",
+    "Option_D": "1, 2 और 3[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "T-स्कोर, Z-स्कोर, और स्टेनाइन स्कोर सभी मानक प्राप्तांक (Standard scores) के प्रकार हैं जो डेटा की तुलना करने में मदद करते हैं। 'माध्य प्राप्तांक' केंद्रीय प्रवृत्ति की माप है, मानक प्राप्तांक नहीं।"
+  },
+  {
+    "Question_Number": "55 (English)",
+    "Question_Text": "Which one of the following is used to determine the test performance in terms of certain psychological traits?[cite: 2]",
+    "Option_A": "Content validity[cite: 2]",
+    "Option_B": "Construct validity[cite: 2]",
+    "Option_C": "Criterion validity[cite: 2]",
+    "Option_D": "Predictive validity[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Construct validity refers to how well a test measures an abstract concept or theoretical construct, such as a psychological trait (e.g., anxiety, intelligence, or introversion)."
+  },
+  {
+    "Question_Number": "55 (Hindi)",
+    "Question_Text": "कुछ मनोवैज्ञानिक लक्षणों के संदर्भ में परीक्षण निष्पादन का निर्धारण करने के लिए निम्नलिखित में से किसका प्रयोग किया जाता है ?[cite: 2]",
+    "Option_A": "विषय-वस्तु वैधता[cite: 2]",
+    "Option_B": "निर्मित वैधता (कन्स्ट्रक्ट वैलिडिटी)[cite: 2]",
+    "Option_C": "निकष वैधता[cite: 2]",
+    "Option_D": "प्रागुक्ति वैधता[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "निर्मित वैधता (Construct validity) का उपयोग यह निर्धारित करने के लिए किया जाता है कि एक परीक्षण उस मनोवैज्ञानिक लक्षण (जैसे बुद्धि, चिंता, आदि) को कितनी अच्छी तरह से मापता है जिसे मापने का वह दावा करता है।"
+  },
+  {
+    "Question_Number": "56 (English)",
+    "Question_Text": "Match List I with List II and select the correct answer using the code given below the Lists:<br>List I (Basic skill):<br>A. Reading<br>B. Language<br>C. Mathematics<br>D. Study skills<br><br>List II (Sub test):<br>1. Reading maps<br>2. Computation<br>3. Expression<br>4. Comprehension<br><br>Code: A B C D[cite: 2]",
+    "Option_A": "4 3 2 1[cite: 2]",
+    "Option_B": "4 2 3 1[cite: 2]",
+    "Option_C": "1 3 2 4[cite: 2]",
+    "Option_D": "1 2 3 4[cite: 2]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Reading aligns with Comprehension (4); Language aligns with Expression (3); Mathematics aligns with Computation (2); Study skills align with Reading maps (1). Therefore, the correct matching code is 4 3 2 1."
+  },
+  {
+    "Question_Number": "56 (Hindi)",
+    "Question_Text": "सूची I को सूची II के साथ सुमेलित कीजिए और सूचियों के नीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए :<br>सूची I (आधारभूत कौशल):<br>A. पठन<br>B. भाषा<br>C. गणित<br>D. अध्ययन कौशल<br><br>सूची II (उप परीक्षण):<br>1. मानचित्र पठन<br>2. अभिकलन<br>3. अभिव्यक्ति<br>4. बोधन<br><br>कूट : A B C D[cite: 2]",
+    "Option_A": "4 3 2 1[cite: 2]",
+    "Option_B": "4 2 3 1[cite: 2]",
+    "Option_C": "1 3 2 4[cite: 2]",
+    "Option_D": "1 2 3 4[cite: 2]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "पठन कौशल का मूल्यांकन 'बोधन' (Comprehension) द्वारा होता है (A-4)। भाषा का संबंध 'अभिव्यक्ति' (Expression) से है (B-3)। गणित का संबंध 'अभिकलन' (Computation) से है (C-2)। अध्ययन कौशल का संबंध 'मानचित्र पठन' से है (D-1)। अतः सही कूट 4 3 2 1 है।"
+  },
+  {
+    "Question_Number": "57 (English)",
+    "Question_Text": "Match List I with List II and select the correct answer using the code given below the Lists:<br>List I (General test):<br>A. Content-oriented achievement test<br>B. School-oriented aptitude test<br>C. Culture-oriented verbal aptitude test<br>D. Culture-oriented non-verbal aptitude test<br><br>List II (Learning measured):<br>1. Verbal, numerical and general problem solving abilities derived from culture<br>2. Knowledge of subject matter<br>3. Abstract reasoning abilities based on picture classification<br>4. Arithmetic reasoning<br><br>Code: A B C D[cite: 2]",
+    "Option_A": "2 1 4 3[cite: 2]",
+    "Option_B": "3 4 1 2[cite: 2]",
+    "Option_C": "3 4 1 2[cite: 2]",
+    "Option_D": "2 4 1 3[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "A 'Content-oriented achievement test' evaluates the 'Knowledge of subject matter' (A-2). A 'School-oriented aptitude test' typically assesses academic readiness like 'Arithmetic reasoning' (B-4). 'Culture-oriented verbal aptitude' matches with 'Verbal... abilities derived from culture' (C-1). 'Culture-oriented non-verbal aptitude' aligns with 'Abstract reasoning... based on picture classification' (D-3). Thus, 2 4 1 3 is correct."
+  },
+  {
+    "Question_Number": "57 (Hindi)",
+    "Question_Text": "सूची I को सूची II के साथ सुमेलित कीजिए और सूचियों के नीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए :<br>सूची I (सामान्य परीक्षण):<br>A. विषय-वस्तु-अभिमुखी उपलब्धि परीक्षण<br>B. विद्यालय-अभिमुखी अभिक्षमता परीक्षण<br>C. संस्कृति-अभिमुखी शाब्दिक अभिक्षमता परीक्षण<br>D. संस्कृति-अभिमुखी अ-शाब्दिक अभिक्षमता परीक्षण<br><br>सूची II (मापित अधिगम):<br>1. संस्कृति से प्राप्त शाब्दिक, संख्यात्मक और सामान्य समस्या समाधान क्षमता<br>2. विषय-वस्तु का ज्ञान<br>3. चित्र वर्गीकरण पर आधारित सामान्य तर्क क्षमता<br>4. अंकगणितीय तर्क<br><br>कूट : A B C D[cite: 2]",
+    "Option_A": "2 1 4 3[cite: 2]",
+    "Option_B": "3 4 1 2[cite: 2]",
+    "Option_C": "3 4 1 2[cite: 2]",
+    "Option_D": "2 4 1 3[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "विषय-वस्तु-अभिमुखी परीक्षण 'विषय-वस्तु का ज्ञान' मापता है (A-2)। विद्यालय-अभिमुखी परीक्षण 'अंकगणितीय तर्क' जैसे अकादमिक कौशल मापता है (B-4)। संस्कृति-अभिमुखी शाब्दिक परीक्षण 'संस्कृति से प्राप्त शाब्दिक... क्षमता' मापता है (C-1)। संस्कृति-अभिमुखी अ-शाब्दिक परीक्षण 'चित्र वर्गीकरण पर आधारित सामान्य तर्क' मापता है (D-3)। अतः कूट 2 4 1 3 सही है।"
+  },
+  {
+    "Question_Number": "58 (English)",
+    "Question_Text": "Which one of the following measures is used to determine the greatest stability of the scores?[cite: 2]",
+    "Option_A": "Mean[cite: 2]",
+    "Option_B": "Median[cite: 2]",
+    "Option_C": "Mode[cite: 2]",
+    "Option_D": "Range[cite: 2]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "In statistics, the 'Mean' is considered the most stable measure of central tendency because it takes every single score in the distribution into account, minimizing the fluctuation caused by sampling variations compared to the median or mode."
+  },
+  {
+    "Question_Number": "58 (Hindi)",
+    "Question_Text": "प्राप्तांकों (स्कोर) के अधिकतम स्थायित्व को निर्धारित करने के लिए निम्नलिखित में से कौन-सी माप प्रयुक्त होती है ?[cite: 2]",
+    "Option_A": "माध्य[cite: 2]",
+    "Option_B": "माध्यिका[cite: 2]",
+    "Option_C": "बहुलक[cite: 2]",
+    "Option_D": "परास[cite: 2]",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "सांख्यिकी में, 'माध्य' (Mean) को केंद्रीय प्रवृत्ति का सबसे स्थिर (stable) माप माना जाता है क्योंकि यह वितरण के प्रत्येक प्राप्तांक पर आधारित होता है और प्रतिचयन (sampling) में उतार-चढ़ाव से सबसे कम प्रभावित होता है।"
+  },
+  {
+    "Question_Number": "59 (English)",
+    "Question_Text": "Which of the following are the major methodological approaches in qualitative research?<br>1. Post-positivist approach<br>2. Critical approach<br>3. Causal-comparative approach<br>4. Interpretive approach<br>Select the correct answer using the code given below:[cite: 2]",
+    "Option_A": "1, 2 and 4[cite: 2]",
+    "Option_B": "2 and 3 only[cite: 2]",
+    "Option_C": "3 and 4 only[cite: 2]",
+    "Option_D": "2 and 4 only[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "The Interpretive and Critical approaches are core paradigms of qualitative research, focusing on understanding meaning and power structures. Conversely, Post-positivist and Causal-comparative approaches are primarily associated with quantitative, empirical research methodologies."
+  },
+  {
+    "Question_Number": "59 (Hindi)",
+    "Question_Text": "निम्नलिखित में से कौन-से उपागम, गुणात्मक अनुसंधान में प्रमुख कार्यप्रणालीगत उपागम हैं ?<br>1. उत्तर-प्रत्यक्षवादी (पोस्ट पॉजिटिविस्ट) उपागम<br>2. समीक्षात्मक उपागम<br>3. कारणात्मक-तुलनात्मक उपागम<br>4. व्याख्यात्मक उपागम<br>नीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए :[cite: 2]",
+    "Option_A": "1, 2 और 4[cite: 2]",
+    "Option_B": "केवल 2 और 3[cite: 2]",
+    "Option_C": "केवल 3 और 4[cite: 2]",
+    "Option_D": "केवल 2 और 4[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "समीक्षात्मक (Critical) और व्याख्यात्मक (Interpretive) उपागम मुख्य रूप से गुणात्मक अनुसंधान (Qualitative Research) से जुड़े हैं। उत्तर-प्रत्यक्षवादी और कारणात्मक-तुलनात्मक उपागम मात्रात्मक (Quantitative) अनुसंधान का हिस्सा होते हैं।"
+  },
+  {
+    "Question_Number": "60 (English)",
+    "Question_Text": "Which one of the following statements in context of basic principles of Achievement test is not correct?[cite: 2]",
+    "Option_A": "It should be used to improve students learning.[cite: 2]",
+    "Option_B": "It should be designed to fit the particular uses to be made of the results.[cite: 2]",
+    "Option_C": "It can be used as a standardized tool for measurement.[cite: 2]",
+    "Option_D": "It should measure clearly defined learning outcomes.[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "While achievement tests measure defined learning outcomes and are used to improve learning, classifying them strictly as 'standardized tools for measurement' as a basic foundational principle is incorrect. Teacher-made achievement tests are highly contextual and not standardized, which is perfectly acceptable and common."
+  },
+  {
+    "Question_Number": "60 (Hindi)",
+    "Question_Text": "उपलब्धि परीक्षण के आधारभूत सिद्धांतों के संदर्भ में निम्नलिखित कथनों में से कौन-सा सही नहीं है?[cite: 2]",
+    "Option_A": "इसका प्रयोग विद्यार्थी अधिगम में सुधार के लिए किया जाना चाहिए ।[cite: 2]",
+    "Option_B": "इसे परिणामों से तैयार किए जाने वाले विशेष उपयोगों के उपयुक्त होने के लिए अभिकल्पित किया जाना चाहिए ।[cite: 2]",
+    "Option_C": "इसका प्रयोग मापन के लिए मानकीकृत उपकरण के रूप में किया जा सकता है।[cite: 2]",
+    "Option_D": "इसे स्पष्ट रूप से परिभाषित अधिगम परिणामों का मापन करना चाहिए ।[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "उपलब्धि परीक्षण का मुख्य उद्देश्य विशिष्ट अधिगम परिणामों को मापना और कक्षा शिक्षण में सुधार करना है। शिक्षक-निर्मित परीक्षण मानकीकृत नहीं होते हैं, अतः 'मानकीकृत उपकरण' होना इसका अनिवार्य या आधारभूत सिद्धांत नहीं है।"
+  },
+  {
+    "Question_Number": "61 (English)",
+    "Question_Text": "Which one of the following should not be there in unstructured In-depth interviews?[cite: 2]",
+    "Option_A": "Interviewee-focused listening[cite: 2]",
+    "Option_B": "Agenda-focused listening[cite: 2]",
+    "Option_C": "Non-interruptive listening[cite: 2]",
+    "Option_D": "Interviewee-centred open and non-judgmental listening[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Unstructured in-depth interviews are designed to be fluid, open-ended, and driven by the interviewee's responses. Applying 'Agenda-focused listening' imposes a rigid structure and preconceptions, which contradicts the fundamental nature of an unstructured interview."
+  },
+  {
+    "Question_Number": "61 (Hindi)",
+    "Question_Text": "निम्नलिखित में से कौन-सा, असंरचित गहन साक्षात्कारों में नहीं होना चाहिए ?[cite: 2]",
+    "Option_A": "साक्षात्कारदाता-केंद्रित श्रवण[cite: 2]",
+    "Option_B": "कार्यसूची-केंद्रित श्रवण[cite: 2]",
+    "Option_C": "निर्बाध श्रवण[cite: 2]",
+    "Option_D": "साक्षात्कारदाता-केंद्रित मुक्त और अनिर्णयात्मक श्रवण[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "असंरचित (Unstructured) साक्षात्कार लचीले और खुले होते हैं, जिनमें चर्चा साक्षात्कारदाता की प्रतिक्रियाओं पर निर्भर करती है। 'कार्यसूची-केंद्रित श्रवण' एक पूर्वनिर्धारित और कठोर रूपरेखा थोपता है, जो असंरचित पद्धति के विरुद्ध है।"
+  },
+  {
+    "Question_Number": "62 (English)",
+    "Question_Text": "Which one among the following is not a method of establishing probability?[cite: 2]",
+    "Option_A": "Empirical approach[cite: 2]",
+    "Option_B": "Differential approach[cite: 2]",
+    "Option_C": "Mathematical approach[cite: 2]",
+    "Option_D": "Intuitive approach[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Probability can be established mathematically (classical/theoretical), empirically (experimental frequency), or intuitively (subjective probability). The 'Differential approach' relates to calculus and psychology, not to establishing fundamental probability."
+  },
+  {
+    "Question_Number": "62 (Hindi)",
+    "Question_Text": "निम्नलिखित में से कौन-सी पद्धति, प्रायिकता को स्थापित करने की पद्धति नहीं है ?[cite: 2]",
+    "Option_A": "आनुभविक उपागम[cite: 2]",
+    "Option_B": "विभेदक उपागम[cite: 2]",
+    "Option_C": "गणितीय उपागम[cite: 2]",
+    "Option_D": "अंतःप्रज्ञात्मक उपागम[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "प्रायिकता (Probability) को गणितीय, आनुभविक (Empirical) और अंतःप्रज्ञात्मक (Intuitive/Subjective) तरीकों से स्थापित किया जा सकता है। 'विभेदक उपागम' (Differential approach) प्रायिकता ज्ञात करने का मानक तरीका नहीं है।"
+  },
+  {
+    "Question_Number": "63 (English)",
+    "Question_Text": "The comparison of a pupil's performance on a test with that of another pupil's in some appropriate reference group is called:[cite: 2]",
+    "Option_A": "Objective testing[cite: 2]",
+    "Option_B": "Criterion-referenced testing[cite: 2]",
+    "Option_C": "Norm-referenced testing[cite: 2]",
+    "Option_D": "Subjective testing[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Norm-referenced testing compares a student's score against the performance results of a statistically selected group of test-takers (the norm group), contrasting with criterion-referenced testing which measures against a fixed set of standards."
+  },
+  {
+    "Question_Number": "63 (Hindi)",
+    "Question_Text": "कोई उपयुक्त संदर्भ-समूह में, किसी परीक्षण में छात्र के निष्पादन की किसी अन्य छात्र के निष्पादन से तुलना को क्या कहते हैं ?[cite: 2]",
+    "Option_A": "वस्तुनिष्ठ परीक्षण[cite: 2]",
+    "Option_B": "निकष-संदर्भित परीक्षण[cite: 2]",
+    "Option_C": "मानक-संदर्भित परीक्षण[cite: 2]",
+    "Option_D": "व्यक्तिनिष्ठ परीक्षण[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "जब किसी छात्र के प्रदर्शन की तुलना अन्य छात्रों के समूह (संदर्भ-समूह) से की जाती है (जैसे पर्सेंटाइल रैंक), तो इसे 'मानक-संदर्भित परीक्षण' (Norm-referenced testing) कहा जाता है।"
+  },
+  {
+    "Question_Number": "64 (English)",
+    "Question_Text": "Consider the following statements regarding Psychological tests:<br>1. A psychological test is essentially an objective and standardized measure of a sample of behaviour.<br>2. Standardization implies variety of procedures in administrating and scoring the test.<br>3. The determination of validity requires independent, external criteria of whatever the test is designed to measure.<br>Which of the statements given above are correct?[cite: 2]",
+    "Option_A": "1 and 2 only[cite: 2]",
+    "Option_B": "2 and 3 only[cite: 2]",
+    "Option_C": "1 and 3 only[cite: 2]",
+    "Option_D": "1, 2 and 3[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Statement 1 is the classic definition of a psychological test. Statement 3 accurately describes criterion validity. Statement 2 is incorrect because standardization implies 'uniformity' and consistency in procedures and scoring, not a 'variety' of procedures."
+  },
+  {
+    "Question_Number": "64 (Hindi)",
+    "Question_Text": "मनोवैज्ञानिक परीक्षणों के संबंध में निम्नलिखित कथनों पर विचार कीजिए :<br>1. किसी मनोवैज्ञानिक परीक्षण अनिवार्य रूप से किसी व्यवहार प्रतिदर्श का वस्तुनिष्ठ और मानकीकृत माप होता है।<br>2. मानकीकरण में, परीक्षण के संचालन (एडमिनिस्ट्रेटिंग) और समंकन (स्कोरिंग) की विविध पद्धतियाँ निहित होती हैं।<br>3. परीक्षण जिसके भी मापन के लिए अभिकल्पित किया गया है, उसकी वैधता के निर्धारण के लिए स्वतंत्र, बाह्य मानदंड अपेक्षित होता है ।<br>उपर्युक्त कथनों में से कौन-से सही हैं ?[cite: 2]",
+    "Option_A": "केवल 1 और 2[cite: 2]",
+    "Option_B": "केवल 2 और 3[cite: 2]",
+    "Option_C": "केवल 1 और 3[cite: 2]",
+    "Option_D": "1, 2 और 3[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "कथन 1 और 3 सत्य हैं। कथन 2 गलत है क्योंकि मानकीकरण (Standardization) का अर्थ है प्रशासन और स्कोरिंग में 'एकरूपता' (Uniformity) बनाए रखना, न कि 'विविध पद्धतियाँ' अपनाना।"
+  },
+  {
+    "Question_Number": "65 (English)",
+    "Question_Text": "Group tests are used primarily in:<br>1. Educational systems<br>2. Government services<br>3. Industry and Military services<br>4. Clinics<br>Select the correct answer using the code given below:[cite: 2]",
+    "Option_A": "1, 2 and 4[cite: 2]",
+    "Option_B": "2 and 3 only[cite: 2]",
+    "Option_C": "1 and 4 only[cite: 2]",
+    "Option_D": "1, 2 and 3[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Group tests are highly efficient for mass screenings in Education, Government, and the Military. Clinics, however, primarily rely on individualized, one-on-one psychological testing to deeply assess a specific patient's cognitive or emotional state."
+  },
+  {
+    "Question_Number": "65 (Hindi)",
+    "Question_Text": "समूह परीक्षणों का प्रयोग मुख्यतः किसमें किया जाता है ?<br>1. शैक्षणिक प्रणालियाँ<br>2. सरकारी सेवाएँ<br>3. उद्योग और सैन्य सेवाएँ<br>4. निदानशालाएँ (क्लिनिक्स)<br>नीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए :[cite: 2]",
+    "Option_A": "1, 2 और 4[cite: 2]",
+    "Option_B": "केवल 2 और 3[cite: 2]",
+    "Option_C": "केवल 1 और 4[cite: 2]",
+    "Option_D": "1, 2 और 3[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "समूह परीक्षणों (Group tests) का उपयोग बड़े पैमाने पर स्क्रीनिंग के लिए शैक्षणिक प्रणालियों, सरकारी सेवाओं और सैन्य सेवाओं में किया जाता है। निदानशालाओं (Clinics) में आमतौर पर गहन मूल्यांकन के लिए व्यक्तिगत परीक्षणों का उपयोग किया जाता है।"
+  },
+  {
+    "Question_Number": "66 (English)",
+    "Question_Text": "Which one of the following educational institutions of ancient times is not a part of independent India?[cite: 2]",
+    "Option_A": "Nalanda[cite: 2]",
+    "Option_B": "Vikramshila[cite: 2]",
+    "Option_C": "Vallabhi[cite: 2]",
+    "Option_D": "Takshashila[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Takshashila (Taxila) was an ancient university situated in the northwestern region of the Indian subcontinent, which is geographically located in present-day Pakistan, not independent India."
+  },
+  {
+    "Question_Number": "66 (Hindi)",
+    "Question_Text": "प्राचीन काल के निम्नलिखित शैक्षणिक संस्थानों में से कौन-सा, स्वतंत्र भारत का भाग नहीं है ?[cite: 2]",
+    "Option_A": "नालंदा[cite: 2]",
+    "Option_B": "विक्रमशिला[cite: 2]",
+    "Option_C": "वल्लभी[cite: 2]",
+    "Option_D": "तक्षशिला[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "तक्षशिला प्राचीन काल का एक प्रमुख शिक्षा केंद्र था, लेकिन भौगोलिक रूप से यह वर्तमान में पाकिस्तान के पंजाब प्रांत में स्थित है। नालंदा, विक्रमशिला और वल्लभी आधुनिक भारत का हिस्सा हैं।"
+  },
+  {
+    "Question_Number": "67 (English)",
+    "Question_Text": "The task of preparation of the National Curriculum Framework (2005) was accomplished by:[cite: 2]",
+    "Option_A": "National Steering Committee only[cite: 2]",
+    "Option_B": "Twenty-one National Focus Groups only[cite: 2]",
+    "Option_C": "National Steering Committee and three National Focus Groups[cite: 2]",
+    "Option_D": "National Steering Committee and twenty-one National Focus Groups[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "The drafting of the NCF 2005 was spearheaded by a National Steering Committee (chaired by Prof. Yash Pal) supported by 21 National Focus Groups covering distinct areas of the curriculum, systemic issues, and national concerns."
+  },
+  {
+    "Question_Number": "67 (Hindi)",
+    "Question_Text": "राष्ट्रीय पाठ्यक्रम ढाँचा (2005) तैयार करने का कार्य किसके द्वारा पूरा किया गया ?[cite: 2]",
+    "Option_A": "केवल राष्ट्रीय संचालन समिति[cite: 2]",
+    "Option_B": "केवल इक्कीस राष्ट्रीय फोकस समूह[cite: 2]",
+    "Option_C": "राष्ट्रीय संचालन समिति और तीन राष्ट्रीय फोकस समूह[cite: 2]",
+    "Option_D": "राष्ट्रीय संचालन समिति और इक्कीस राष्ट्रीय फोकस समूह[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "एनसीएफ 2005 (NCF 2005) का निर्माण प्रो. यशपाल की अध्यक्षता में एक राष्ट्रीय संचालन समिति (National Steering Committee) और विभिन्न विषयों पर गहन अध्ययन के लिए गठित 21 राष्ट्रीय फोकस समूहों (National Focus Groups) के संयुक्त प्रयासों द्वारा किया गया था।"
+  },
+  {
+    "Question_Number": "68 (English)",
+    "Question_Text": "As per the Right of Children to Free and Compulsory Education Act, 2009, an all-weather school building should consist of:<br>1. Separate toilets for boys and girls<br>2. An easy access without barrier<br>3. A common room for teachers and School Management Committee members<br>4. A kitchen where mid-day meal is cooked in the school<br>Select the correct answer using the code given below:[cite: 2]",
+    "Option_A": "2 and 3 only[cite: 2]",
+    "Option_B": "1, 2 and 4[cite: 2]",
+    "Option_C": "1, 2 and 3[cite: 2]",
+    "Option_D": "1, 3 and 4[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The RTE Act 2009 Schedule establishes norms for an all-weather school building, explicitly requiring barrier-free access, separate toilets for boys and girls, and a kitchen for mid-day meals. It requires an office-cum-store/head teacher's room, but it does not mandate a 'common room for teachers and SMC members'."
+  },
+  {
+    "Question_Number": "68 (Hindi)",
+    "Question_Text": "निःशुल्क और अनिवार्य बाल शिक्षा का अधिकार अधिनियम, 2009 के अनुसार, सभी मौसम वाले भवन में क्या होने चाहिए ?<br>1. लड़कों और लड़कियों के लिए पृथक् शौचालय<br>2. बाधा-मुक्त आसान पहुँच<br>3. शिक्षकों और विद्यालय प्रबंध समिति के सदस्यों के लिए विनोद-कक्ष (कॉमन रूम)<br>4. जहाँ दोपहर का भोजन स्कूल में पकाया जाता है, वहाँ एक रसोई<br>नीचे दिए गए कूट का प्रयोग कर सही उत्तर चुनिए :[cite: 2]",
+    "Option_A": "केवल 2 और 3[cite: 2]",
+    "Option_B": "1, 2 और 4[cite: 2]",
+    "Option_C": "1, 2 और 3[cite: 2]",
+    "Option_D": "1, 3 और 4[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "आरटीई अधिनियम (RTE Act) 2009 की अनुसूची के अनुसार स्कूल भवन में बाधा-मुक्त पहुँच, लड़के-लड़कियों के लिए अलग शौचालय और मिड-डे मील के लिए रसोईघर अनिवार्य है। 'शिक्षकों और SMC के लिए कॉमन रूम' का कोई वैधानिक उल्लेख नहीं है।"
+  },
+  {
+    "Question_Number": "69 (English)",
+    "Question_Text": "According to the Right of Children to Free and Compulsory Education Act, 2009, the vacancies of teachers in a State-owned school shall not exceed :[cite: 2]",
+    "Option_A": "Two percent of the total sanctioned strength[cite: 2]",
+    "Option_B": "Five percent of the total sanctioned strength[cite: 2]",
+    "Option_C": "Ten percent of the total sanctioned strength[cite: 2]",
+    "Option_D": "Fifteen percent of the total sanctioned strength[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Under Section 26 of the RTE Act, 2009, the appointing authority must ensure that the vacancy of teachers in a school under its control shall not exceed 10% of the total sanctioned strength."
+  },
+  {
+    "Question_Number": "69 (Hindi)",
+    "Question_Text": "निःशुल्क और अनिवार्य बाल शिक्षा का अधिकार अधिनियम, 2009 के अनुसार, राज्य के स्वामित्व वाले विद्यालयों में शिक्षकों के रिक्त पद कितने से अधिक नहीं होंगे ?[cite: 2]",
+    "Option_A": "कुल स्वीकृत पद संख्या के दो प्रतिशत[cite: 2]",
+    "Option_B": "कुल स्वीकृत पद संख्या के पाँच प्रतिशत[cite: 2]",
+    "Option_C": "कुल स्वीकृत पद संख्या के दस प्रतिशत[cite: 2]",
+    "Option_D": "कुल स्वीकृत पद संख्या के पंद्रह प्रतिशत[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "आरटीई (RTE) अधिनियम, 2009 की धारा 26 के अनुसार, राज्य के स्वामित्व वाले या सहायता प्राप्त किसी भी विद्यालय में शिक्षकों की रिक्तियाँ कुल स्वीकृत पद संख्या के 10 प्रतिशत (Ten percent) से अधिक नहीं होनी चाहिए।"
+  },
+  {
+    "Question_Number": "70 (English)",
+    "Question_Text": "Under the Right of Children to Free and Compulsory Education Act, 2009, which one of the following may not be a part of consideration while laying down the curriculum and evaluation procedure for elementary education?[cite: 2]",
+    "Option_A": "Conformity with the values enshrined in the Constitution[cite: 2]",
+    "Option_B": "Building up children's knowledge, potentiality and talent[cite: 2]",
+    "Option_C": "Making the children free of fear, trauma and anxiety[cite: 2]",
+    "Option_D": "Universal School System[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Section 29 of the RTE Act explicitly states that the academic authority shall consider conformity with constitutional values, all-round development/building up knowledge, and making the child free of fear and trauma. 'Universal School System' is a broader policy goal, not a specific statutory consideration for laying down curriculum under this section."
+  },
+  {
+    "Question_Number": "70 (Hindi)",
+    "Question_Text": "निःशुल्क और अनिवार्य बाल शिक्षा का अधिकार अधिनियम, 2009 के अधीन, प्रारंभिक शिक्षा के लिए पाठ्यक्रम और मूल्यांकन प्रक्रिया अधिकथित करते समय निम्नलिखित में से कौन-सा, विचारार्थ विषय का भाग नहीं हो सकता ?[cite: 2]",
+    "Option_A": "संविधान में प्रतिष्ठापित मूल्यों से अनुरूपता[cite: 2]",
+    "Option_B": "बच्चों के ज्ञान, अंतः शक्ति और योग्यता का निर्माण करना[cite: 2]",
+    "Option_C": "बच्चों को भय, मानसिक अभिघात और चिंता मुक्त बनाना[cite: 2]",
+    "Option_D": "सार्वभौम स्कूल प्रणाली[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "आरटीई अधिनियम की धारा 29 के अनुसार, पाठ्यक्रम बनाते समय संवैधानिक मूल्यों (A), बच्चों के ज्ञान और प्रतिभा के विकास (B), और बच्चों को भयमुक्त बनाने (C) पर विचार किया जाना चाहिए। 'सार्वभौम स्कूल प्रणाली' (Universal School System) एक वृहद नीतिगत अवधारणा है, जो सीधे पाठ्यक्रम निर्धारण प्रक्रिया का हिस्सा नहीं है।"
+  },
+  {
+    "Question_Number": "71 (English)",
+    "Question_Text": "As per the Right of Children to Free and Compulsory Education Act, 2009, if a child happens to fail in the regular examination at the end of the eighth class, he or she can be given an additional opportunity for re-examination within a period of:[cite: 2]",
+    "Option_A": "One month from the date of declaration of the result[cite: 2]",
+    "Option_B": "Two months from the date of declaration of the result[cite: 2]",
+    "Option_C": "Six months from the date of declaration of the result[cite: 2]",
+    "Option_D": "Nine months from the date of declaration of the result[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "According to the 2019 amendment to Section 16 of the RTE Act, if a child fails the examination held at the end of class 5 or 8, they shall be granted an additional opportunity to pass a re-examination within a period of two months from the declaration of results."
+  },
+  {
+    "Question_Number": "71 (Hindi)",
+    "Question_Text": "निःशुल्क और अनिवार्य बाल शिक्षा का अधिकार अधिनियम, 2009 के अनुसार, यदि कोई बालक/बालिका आठवीं कक्षा के अंत में, नियमित परीक्षा में असफल हो जाता है / जाती है, तो उसे कितनी अवधि के भीतर पुनःपरीक्षा देने का अतिरिक्त अवसर दिया जा सकता है ?[cite: 2]",
+    "Option_A": "परिणाम घोषित किए जाने की तारीख से एक माह[cite: 2]",
+    "Option_B": "परिणाम घोषित किए जाने की तारीख से दो माह[cite: 2]",
+    "Option_C": "परिणाम घोषित किए जाने की तारीख से छह माह[cite: 2]",
+    "Option_D": "परिणाम घोषित किए जाने की तारीख से नौ माह[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "आरटीई संशोधन अधिनियम 2019 (धारा 16) के तहत, यदि कोई बच्चा कक्षा 5 या 8 की अंतिम परीक्षा में अनुत्तीर्ण हो जाता है, तो उसे परिणाम घोषित होने की तारीख से दो महीने की अवधि के भीतर पुनः परीक्षा उत्तीर्ण करने का अवसर दिया जाएगा।"
+  },
+  {
+    "Question_Number": "72 (English)",
+    "Question_Text": "Which one of the following age groups of children is entitled to free and compulsory education as per the Right of Children to Free and Compulsory Education Act, 2009?[cite: 2]",
+    "Option_A": "Six to sixteen years[cite: 2]",
+    "Option_B": "Four to fourteen years[cite: 2]",
+    "Option_C": "Six to fourteen years[cite: 2]",
+    "Option_D": "Four to sixteen years[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The RTE Act 2009 guarantees the fundamental right to free and compulsory education for all children belonging to the age group of 6 to 14 years."
+  },
+  {
+    "Question_Number": "72 (Hindi)",
+    "Question_Text": "निःशुल्क और अनिवार्य बाल शिक्षा का अधिकार अधिनियम, 2009 के अनुसार, बालकों के निम्नलिखित आयु-वर्गों में से कौन-सा अनिवार्य शिक्षा का हकदार है ?[cite: 2]",
+    "Option_A": "छह से सोलह वर्ष[cite: 2]",
+    "Option_B": "चार से चौदह वर्ष[cite: 2]",
+    "Option_C": "छह से चौदह वर्ष[cite: 2]",
+    "Option_D": "चार से सोलह वर्ष[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "आरटीई (RTE) अधिनियम, 2009 भारतीय संविधान के अनुच्छेद 21A के तहत 6 से 14 वर्ष के आयु वर्ग के सभी बच्चों को निःशुल्क और अनिवार्य शिक्षा का मौलिक अधिकार प्रदान करता है।"
+  },
+  {
+    "Question_Number": "73 (English)",
+    "Question_Text": "As per the Right of Children to Free and Compulsory Education Act, 2009, which one of the following is not the function of the School Management Committee ?[cite: 2]",
+    "Option_A": "Preparing and recommending the school development plan[cite: 2]",
+    "Option_B": "Monitoring the working of the school[cite: 2]",
+    "Option_C": "Monitoring the utilization of the grants received[cite: 2]",
+    "Option_D": "Preparing the norms and standards for the school[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Under Section 21 of the RTE Act, the functions of the SMC include monitoring school working, preparing the School Development Plan, and monitoring grant utilization. Preparing the basic 'norms and standards' for schools is the duty of the central/state government (as listed in the Act's Schedule), not the individual SMC."
+  },
+  {
+    "Question_Number": "73 (Hindi)",
+    "Question_Text": "निःशुल्क और अनिवार्य बाल शिक्षा का अधिकार अधिनियम, 2009 के अनुसार, निम्नलिखित में से कौन-सा, विद्यालय प्रबंध समिति का कार्य नहीं है?[cite: 2]",
+    "Option_A": "विद्यालय विकास योजना तैयार करना और उसकी सिफारिश करना[cite: 2]",
+    "Option_B": "विद्यालय के कार्यकारण को मॉनीटर करना[cite: 2]",
+    "Option_C": "प्राप्त अनुदानों के उपयोग को मॉनीटर करना[cite: 2]",
+    "Option_D": "विद्यालय के प्रतिमानकों और मानकों को तैयार करना[cite: 2]",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "आरटीई अधिनियम की धारा 21 के अनुसार विद्यालय प्रबंध समिति (SMC) के कार्यों में विद्यालय के कामकाज की निगरानी, अनुदान के उपयोग की निगरानी और विद्यालय विकास योजना बनाना शामिल है। 'प्रतिमानकों और मानकों' (Norms and Standards) को तैयार करने का कार्य सरकार का होता है, न कि SMC का।"
+  },
+  {
+    "Question_Number": "74 (English)",
+    "Question_Text": "As per the Right of Children to Free and Compulsory Education Act, 2009, what is the minimum number of working hours per week for the teacher?[cite: 2]",
+    "Option_A": "Forty-five hours excluding preparation hours[cite: 2]",
+    "Option_B": "Forty-five hours including preparation hours[cite: 2]",
+    "Option_C": "Forty hours excluding preparation hours[cite: 2]",
+    "Option_D": "Forty hours including preparation hours[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The Schedule of the RTE Act 2009 states that the minimum number of working hours per week for a teacher is 45 hours, which explicitly includes teaching and preparation hours."
+  },
+  {
+    "Question_Number": "74 (Hindi)",
+    "Question_Text": "निःशुल्क और अनिवार्य बाल शिक्षा का अधिकार अधिनियम, 2009 के अनुसार, शिक्षक के लिए प्रति सप्ताह कार्य-घंटों की न्यूनतम संख्या कितनी है ?[cite: 2]",
+    "Option_A": "तैयारी के घंटों को छोड़ कर पैंतालीस घंटे[cite: 2]",
+    "Option_B": "तैयारी के घंटों को मिला कर पैंतालीस घंटे[cite: 2]",
+    "Option_C": "तैयारी के घंटों को छोड़ कर चालीस घंटे[cite: 2]",
+    "Option_D": "तैयारी के घंटों को मिला कर चालीस घंटे[cite: 2]",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "आरटीई अधिनियम 2009 की अनुसूची के अनुसार, एक शिक्षक के लिए शिक्षण और तैयारी (Preparation) के घंटे मिलाकर प्रति सप्ताह न्यूनतम कार्य-घंटों की संख्या 45 घंटे निर्धारित की गई है।"
+  },
+  {
+    "Question_Number": "75 (English)",
+    "Question_Text": "As per the Right of Children to Free and Compulsory Education Rules, 2010, the State Advisory Council is chaired ex-officio by:[cite: 2]",
+    "Option_A": "The Principal Secretary of School Education in the appropriate Government[cite: 2]",
+    "Option_B": "The Chief Secretary in the appropriate Government[cite: 2]",
+    "Option_C": "The Minister in-charge of School Education in the appropriate Government[cite: 2]",
+    "Option_D": "The Secretary in-charge of Elementary Education in the appropriate Government[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "As per the Right of Children to Free and Compulsory Education Rules, the State Advisory Council consists of members appointed by the State Government and is chaired ex-officio by the Minister in-charge of the Ministry/Department of School Education in the State Government."
+  },
+  {
+    "Question_Number": "75 (Hindi)",
+    "Question_Text": "निःशुल्क और अनिवार्य बाल शिक्षा का अधिकार नियम, 2010 के अनुसार, राज्य सलाहकार परिषद् का पदेन अध्यक्ष कौन होगा ?[cite: 2]",
+    "Option_A": "समुचित सरकार में विद्यालय शिक्षा का प्रधान सचिव[cite: 2]",
+    "Option_B": "समुचित सरकार में मुख्य सचिव[cite: 2]",
+    "Option_C": "समुचित सरकार में विद्यालय शिक्षा का प्रभारी मंत्री[cite: 2]",
+    "Option_D": "समुचित सरकार में प्रारंभिक शिक्षा का प्रभारी सचिव[cite: 2]",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "आरटीई नियम 2010 (और संबंधित राज्य नियमों) के अंतर्गत, राज्य सलाहकार परिषद् (State Advisory Council) का पदेन अध्यक्ष राज्य सरकार में विद्यालय शिक्षा (School Education) का प्रभारी मंत्री होता है।"
+  },
+
