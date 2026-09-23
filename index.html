@@ -8,159 +8,82 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        html, body {
-            height: auto;
-            min-height: 100%;
-        }
-
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+        html, body { height: auto; min-height: 100%; }
         body {
             font-family: 'Inter', sans-serif;
             background: radial-gradient(circle at top center, #0f172a 0%, #020617 100%);
-            color: #f8fafc;
-            min-height: 100vh;
-            min-height: 100dvh;
-            background-attachment: fixed;
-            overflow-x: hidden;
-            overflow-y: auto;
-            padding-bottom: 0; 
-            padding-top: 8px;
-            overscroll-behavior-y: auto;
-            -webkit-overflow-scrolling: touch;
-            display: flex;
-            flex-direction: column;
+            color: #f8fafc; min-height: 100vh; min-height: 100dvh;
+            background-attachment: fixed; overflow-x: hidden; overflow-y: auto;
+            padding-bottom: 0; padding-top: 8px;
+            overscroll-behavior-y: auto; -webkit-overflow-scrolling: touch;
+            display: flex; flex-direction: column;
         }
-
-        h1, h2, h3, .poppins {
-            font-family: 'Poppins', sans-serif;
-        }
-
+        h1, h2, h3, .poppins { font-family: 'Poppins', sans-serif; }
         .glass-card {
             background: rgba(255, 255, 255, 0.02);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.08);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
         }
-
         .option-btn {
             background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
-            border: 2px solid #334155;
-            transition: all 0.15s ease-out;
-            cursor: pointer;
-            text-align: left;
-            padding: 16px 16px;
-            border-radius: 14px;
-            font-size: 14px;
-            color: #f1f5f9;
-            width: 100%;
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            min-height: 52px;
-            touch-action: manipulation;
+            border: 2px solid #334155; transition: all 0.15s ease-out;
+            cursor: pointer; text-align: left; padding: 14px 16px;
+            border-radius: 12px; font-size: 14px; color: #f1f5f9;
+            width: 100%; display: flex; align-items: flex-start; gap: 10px; min-height: 48px;
         }
-        .option-btn:active:not(:disabled) { transform: scale(0.97); }
-        .option-btn:hover:not(:disabled) {
-            background: linear-gradient(145deg, #2563eb 0%, #1d4ed8 100%);
-            border-color: #60a5fa;
-            transform: translateY(-1px);
-        }
-        .option-selected {
-            background: linear-gradient(145deg, #2563eb 0%, #1d4ed8 100%) !important;
-            border-color: #60a5fa !important;
-        }
-        .option-correct {
-            background: linear-gradient(145deg, #047857 0%, #064e3b 100%) !important;
-            border-color: #34d399 !important;
-            box-shadow: 0 0 15px rgba(52, 211, 153, 0.35);
-        }
-        .option-wrong {
-            background: linear-gradient(145deg, #991b1b 0%, #7f1d1d 100%) !important;
-            border-color: #f87171 !important;
-            box-shadow: 0 0 15px rgba(248, 113, 113, 0.35);
-        }
-
+        .option-btn:active:not(:disabled) { transform: scale(0.98); }
+        .option-btn:hover:not(:disabled) { background: linear-gradient(145deg, #2563eb 0%, #1d4ed8 100%); border-color: #60a5fa; }
+        .option-selected { background: linear-gradient(145deg, #2563eb 0%, #1d4ed8 100%) !important; border-color: #60a5fa !important; }
+        .option-correct { background: linear-gradient(145deg, #047857 0%, #064e3b 100%) !important; border-color: #34d399 !important; box-shadow: 0 0 15px rgba(52, 211, 153, 0.35); }
+        .option-wrong { background: linear-gradient(145deg, #991b1b 0%, #7f1d1d 100%) !important; border-color: #f87171 !important; box-shadow: 0 0 15px rgba(248, 113, 113, 0.35); }
         ::-webkit-scrollbar { width: 4px; height: 4px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.15); border-radius: 10px; }
         .hide-scroll::-webkit-scrollbar { display: none; }
         .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
-
-        .pulse-animation { animation: pulse 1.5s infinite alternate; }
-        @keyframes pulse { 0% { transform: scale(1); } 100% { transform: scale(1.03); } }
-
         .set-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 20px;
-            padding: 20px 18px;
-            transition: all 0.25s ease;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px; padding: 20px 18px; transition: all 0.25s ease;
+            position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;
         }
-        .set-card:hover {
-            background: rgba(255, 255, 255, 0.06);
-            border-color: rgba(59, 130, 246, 0.5);
-            transform: translateY(-2px);
-        }
-        .badge {
-            position: absolute; top: 10px; right: 10px;
-            color: #fff; font-size: 10px; font-weight: 700;
-            padding: 4px 10px; border-radius: 20px; z-index: 2;
-        }
+        .set-card:hover { background: rgba(255, 255, 255, 0.06); border-color: rgba(59, 130, 246, 0.5); transform: translateY(-2px); }
+        .badge { position: absolute; top: 10px; right: 10px; color: #fff; font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 20px; z-index: 2; }
         .badge.resume { background: #d97706; animation: pulseBadge 2s infinite; }
         .badge.completed { background: #047857; }
         @keyframes pulseBadge { 0%,100% { box-shadow: 0 0 0 0 rgba(217,119,6,0.4); } 50% { box-shadow: 0 0 0 8px rgba(217,119,6,0); } }
-
         .btn-action {
-            padding: 11px 16px; border-radius: 10px; font-weight: 600; font-size: 13px;
-            border: none; cursor: pointer; transition: all 0.2s; flex: 1; min-width: 70px;
-            color: white; display: flex; align-items: center; justify-content: center; gap: 6px;
-            touch-action: manipulation;
+            padding: 10px 14px; border-radius: 10px; font-weight: 600; font-size: 12px;
+            border: none; cursor: pointer; transition: all 0.2s; flex: 1; min-width: 60px;
+            color: white; display: flex; align-items: center; justify-content: center; gap: 5px;
         }
-        .btn-action:active { transform: scale(0.95); }
+        .btn-action:active { transform: scale(0.96); }
         .btn-practice { background: linear-gradient(145deg, #2563eb, #1d4ed8); }
         .btn-study { background: linear-gradient(145deg, #059669, #047857); }
-        .btn-master { background: linear-gradient(145deg, #7c3aed, #6d28d9); }
-
+        .btn-studyall { background: linear-gradient(145deg, #7c3aed, #6d28d9); }
         .palette-btn {
-            width: 42px; height: 42px; border-radius: 50%; font-size: 13px; font-weight: 700;
+            width: 40px; height: 40px; border-radius: 50%; font-size: 12px; font-weight: 700;
             border: 2px solid #475569; background: #1e293b; color: #cbd5e1;
             cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center;
-            touch-action: manipulation; flex-shrink: 0; position: relative;
+            flex-shrink: 0; position: relative;
         }
-        .palette-btn:active { transform: scale(0.9); }
+        .palette-btn:hover { border-color: #94a3b8; }
         .palette-btn.answered { background: #2563eb; border-color: #60a5fa; color: #fff; }
         .palette-btn.correct { background: #047857; border-color: #34d399; color: #fff; }
         .palette-btn.wrong { background: #991b1b; border-color: #f87171; color: #fff; }
         .palette-btn.current { border-color: #fff !important; box-shadow: 0 0 0 3px rgba(255,255,255,0.25); transform: scale(1.1); }
         .palette-btn.bookmarked::after {
-            content: '\f02e'; /* FontAwesome Bookmark icon */
-            font-family: 'Font Awesome 6 Free'; font-weight: 900;
-            position: absolute; top: -4px; right: -4px;
-            color: #fbbf24; text-shadow: 0 1px 3px rgba(0,0,0,0.8);
-            font-size: 12px;
+            content: '\f02e'; font-family: 'Font Awesome 6 Free'; font-weight: 900;
+            position: absolute; top: -4px; right: -4px; color: #fbbf24;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8); font-size: 11px;
         }
-
         .mobile-sticky-footer {
             position: fixed; bottom: 0; left: 0; right: 0; z-index: 40;
-            background: rgba(15, 23, 42, 0.94); backdrop-filter: blur(16px);
-            border-top: 1px solid rgba(59, 130, 246, 0.3); padding-bottom: env(safe-area-inset-bottom, 8px);
+            background: rgba(15, 23, 42, 0.96); backdrop-filter: blur(16px);
+            border-top: 1px solid rgba(59, 130, 246, 0.3); padding-bottom: env(safe-area-inset-bottom, 6px);
         }
-        
-        #view-quiz, #view-masterstudy { padding-bottom: 140px; }
-        
+        #view-quiz { padding-bottom: 140px; }
         .toast {
             position: fixed; bottom: 120px; left: 50%; transform: translateX(-50%);
             background: #1e293b; border: 1px solid #3b82f6; color: #e2e8f0;
@@ -168,24 +91,21 @@
             z-index: 200; opacity: 0; pointer-events: none; transition: all 0.3s ease;
         }
         .toast.show { opacity: 1; transform: translateX(-50%) translateY(-6px); }
-
         .tab-btn {
             padding: 8px 14px; border-radius: 10px; font-size: 12px; font-weight: 600;
             transition: all 0.2s; cursor: pointer; border: 1.5px solid transparent;
             color: #94a3b8; background: transparent; white-space: nowrap;
         }
         .tab-btn.active { background: #2563eb; color: #fff; border-color: #60a5fa; }
-        
-        #palette-panel {
+        #palette-panel, #con-palette-panel {
             position: fixed; bottom: 90px; left: 0; right: 0;
             background: rgba(15,23,42,0.98); backdrop-filter: blur(16px);
             border-top: 2px solid rgba(59,130,246,0.4); border-radius: 24px 24px 0 0;
-            z-index: 50; padding: 20px 16px 30px; max-height: 60vh;
+            z-index: 60; padding: 20px 16px 30px; max-height: 60vh;
             overflow-y: auto; display: none; box-shadow: 0 -8px 40px rgba(0,0,0,0.7);
         }
-        #palette-panel.open { display: block; animation: slideUp 0.3s ease; }
+        #palette-panel.open, #con-palette-panel.open { display: block; animation: slideUp 0.3s ease; }
         @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
-
         #custom-dialog-overlay {
             position: fixed; inset: 0; background: rgba(0,0,0,0.8);
             backdrop-filter: blur(8px); z-index: 9999; display: none;
@@ -197,131 +117,147 @@
             padding: 24px; max-width: 350px; width: 100%; text-align: center;
             box-shadow: 0 10px 40px rgba(0,0,0,0.6);
         }
-
-        .syllabus-table th, .syllabus-table td {
-            border: 1px solid rgba(255,255,255,0.1);
-            padding: 10px;
-        }
+        .syllabus-table th, .syllabus-table td { border: 1px solid rgba(255,255,255,0.1); padding: 10px; }
         .syllabus-table th { background: rgba(59, 130, 246, 0.2); color: #93c5fd; font-weight: 600; }
         .syllabus-table tbody tr:nth-child(even) { background: rgba(255,255,255,0.02); }
-
-        /* Master Study / Full Board Styling */
-        .master-q-card {
-            background: rgba(0,0,0,0.3);
-            border: 1px solid rgba(148,163,184,0.15);
-            border-radius: 16px;
-            padding: 20px;
-            margin-bottom: 20px;
-            transition: all 0.2s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-        .master-q-card:hover {
-            border-color: rgba(139, 92, 246, 0.5);
-            background: rgba(30, 27, 75, 0.2);
-        }
-        .master-q-title {
-            font-size: 16px; font-weight: 600; color: #e2e8f0;
-            margin-bottom: 16px; line-height: 1.7;
-            word-break: break-word;
-        }
-        .master-opt {
-            padding: 12px 16px; border-radius: 12px; margin-bottom: 8px;
-            font-size: 14px; border: 1px solid rgba(148,163,184,0.2);
-            background: rgba(15,23,42,0.6); color: #cbd5e1;
-            transition: all 0.2s;
-            word-break: break-word;
-            display: flex; align-items: flex-start; gap: 10px;
-        }
-        .master-opt.correct {
-            background: rgba(4,120,87,0.25);
-            border-color: rgba(52,211,153,0.6);
-            color: #a7f3d0; font-weight: 600;
-            box-shadow: 0 0 10px rgba(52,211,153,0.1);
-        }
-        .master-exp-box {
-            background: rgba(30, 27, 75, 0.5);
-            border: 1px solid rgba(139, 92, 246, 0.4);
-            border-radius: 12px; padding: 16px; margin-top: 16px;
-            font-size: 13px; color: #d1d5db; line-height: 1.7;
-            word-break: break-word;
-        }
-        .master-exp-box b { color: #c4b5fd; }
-
-        /* HTML Content Styling (Tables, Lists, etc.) */
-        .master-q-title table, .master-opt table, .master-exp-box table {
-            width: 100%; border-collapse: collapse; margin: 12px 0;
-            font-size: 13px; background: rgba(0,0,0,0.4);
-            border-radius: 8px; overflow: hidden;
-        }
-        .master-q-title th, .master-opt th, .master-exp-box th,
-        .master-q-title td, .master-opt td, .master-exp-box td {
-            border: 1px solid rgba(255,255,255,0.15); padding: 10px 12px; text-align: center;
-        }
-        .master-q-title th, .master-opt th, .master-exp-box th {
-            background: rgba(59, 130, 246, 0.25); color: #93c5fd; font-weight: 600;
-        }
-        .master-q-title ul, .master-q-title ol, 
-        .master-opt ul, .master-opt ol, 
-        .master-exp-box ul, .master-exp-box ol {
-            padding-left: 24px; margin-bottom: 10px;
-        }
-        .master-q-title li, .master-opt li, .master-exp-box li {
-            margin-bottom: 6px; list-style-type: disc;
-        }
-        .master-q-title ol, .master-opt ol, .master-exp-box ol { list-style-type: decimal; }
-        .master-q-title p, .master-opt p, .master-exp-box p { margin-bottom: 10px; }
-
         .review-item {
-            background: rgba(127,29,29,0.12);
-            border: 1px solid rgba(248,113,113,0.25);
-            border-radius: 14px;
-            padding: 14px;
-            margin-bottom: 12px;
+            background: rgba(127,29,29,0.12); border: 1px solid rgba(248,113,113,0.25);
+            border-radius: 14px; padding: 14px; margin-bottom: 12px;
         }
         .review-item .opt-line {
             border-radius: 8px; padding: 7px 10px; font-size: 12px;
-            border: 1px solid rgba(148,163,184,0.2);
-            background: rgba(15,23,42,0.6);
-            color: #cbd5e1;
-            margin-bottom: 5px;
+            border: 1px solid rgba(148,163,184,0.2); background: rgba(15,23,42,0.6);
+            color: #cbd5e1; margin-bottom: 5px;
         }
         .review-item .opt-line.correct {
-            background: rgba(4,120,87,0.25);
-            border-color: rgba(52,211,153,0.6);
-            color: #a7f3d0;
-            font-weight: 600;
+            background: rgba(4,120,87,0.25); border-color: rgba(52,211,153,0.6);
+            color: #a7f3d0; font-weight: 600;
         }
         .review-badge {
             display: inline-block; background: rgba(153,27,27,0.5); color: #fca5a5;
             border: 1px solid rgba(248,113,113,0.5);
             font-size: 10px; padding: 2px 8px; border-radius: 20px; font-weight: 700;
         }
-
-        /* TV Master Study Specific */
-        .tv-nav-btn {
-            padding: 12px 24px; border-radius: 12px; font-weight: bold; font-size: 16px;
+        #view-consolidated {
+            position: fixed; inset: 0; z-index: 45;
+            background: radial-gradient(circle at top center, #0f172a 0%, #020617 100%);
+            display: none; flex-direction: column;
+            padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+        }
+        #view-consolidated.flex { display: flex; }
+        .con-header {
+            flex-shrink: 0; padding: 8px 12px;
+            border-bottom: 1px solid rgba(148,163,184,0.15);
+            display: flex; align-items: center; justify-content: space-between;
+            gap: 8px; background: rgba(15,23,42,0.85); backdrop-filter: blur(10px);
+            flex-wrap: wrap;
+        }
+        .con-nav-btn {
+            padding: 8px 12px; border-radius: 10px; font-weight: 700; font-size: 12px;
             background: #1e293b; border: 2px solid #475569; color: white;
-            display: flex; align-items: center; gap: 8px; transition: all 0.2s;
-            cursor: pointer; touch-action: manipulation;
+            display: flex; align-items: center; gap: 5px; transition: all 0.2s; cursor: pointer;
+            white-space: nowrap;
         }
-        .tv-nav-btn:hover { background: #334155; border-color: #94a3b8; }
-        .tv-nav-btn:active { transform: scale(0.95); }
-        .tv-nav-btn:disabled { opacity: 0.4; cursor: not-allowed; }
-        .jump-input {
-            background: #0f172a; border: 2px solid #475569; color: white;
-            padding: 10px 16px; border-radius: 12px; font-size: 16px;
-            width: 100px; text-align: center; font-weight: bold;
+        .con-nav-btn:hover { background: #334155; border-color: #94a3b8; }
+        .con-nav-btn:active { transform: scale(0.96); }
+        .con-nav-btn.highlight {
+            background: linear-gradient(145deg, #7c3aed, #6d28d9);
+            border-color: #a78bfa;
+            animation: paletteGlow 2s infinite;
         }
-        .jump-input:focus { outline: none; border-color: #60a5fa; }
+        @keyframes paletteGlow {
+            0%, 100% { box-shadow: 0 0 8px rgba(139, 92, 246, 0.5); }
+            50% { box-shadow: 0 0 16px rgba(139, 92, 246, 0.9); }
+        }
+        .con-body {
+            flex: 1; min-height: 0; display: flex; flex-direction: column;
+            padding: 10px 12px; gap: 8px; overflow: hidden;
+        }
+        .con-question-card {
+            flex-shrink: 0; max-height: 32vh; overflow-y: auto;
+            background: rgba(30,41,59,0.6); border: 1px solid rgba(59,130,246,0.35);
+            border-radius: 12px; padding: 12px 14px;
+        }
+        .con-question-text {
+            font-size: clamp(13px, 1.5vw, 16px); line-height: 1.5;
+            color: #f1f5f9; font-weight: 500; word-break: break-word;
+        }
+        .con-options { flex-shrink: 0; display: flex; flex-direction: column; gap: 6px; }
+        .con-opt {
+            padding: 9px 12px; border-radius: 10px;
+            border: 1.5px solid rgba(148,163,184,0.2);
+            background: rgba(15,23,42,0.65); color: #cbd5e1;
+            font-size: clamp(12px, 1.4vw, 14px); line-height: 1.4;
+            display: flex; align-items: flex-start; gap: 8px; word-break: break-word;
+        }
+        .con-opt.correct {
+            background: linear-gradient(145deg, rgba(4,120,87,0.35), rgba(6,78,59,0.35));
+            border-color: #34d399; color: #d1fae5; font-weight: 600;
+        }
+        .con-exp-card {
+            flex: 1; min-height: 0; overflow-y: auto;
+            background: rgba(30, 27, 75, 0.4); border: 1px solid rgba(139, 92, 246, 0.4);
+            border-radius: 12px; padding: 12px 14px;
+        }
+        .con-exp-title {
+            font-size: 12px; font-weight: 700; color: #c4b5fd;
+            margin-bottom: 6px; display: flex; align-items: center; gap: 6px;
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .con-exp-text {
+            font-size: clamp(12px, 1.4vw, 14px); line-height: 1.55;
+            color: #cbd5e1; word-break: break-word;
+        }
+        .con-footer {
+            flex-shrink: 0; padding: 8px 12px;
+            border-top: 1px solid rgba(148,163,184,0.15);
+            background: rgba(15,23,42,0.85); backdrop-filter: blur(10px);
+            display: flex; align-items: center; justify-content: space-between; gap: 8px;
+        }
+        .con-jump-input {
+            background: #0f172a; border: 1.5px solid #475569; color: white;
+            padding: 8px 10px; border-radius: 10px; font-size: 13px;
+            width: 70px; text-align: center; font-weight: 700;
+        }
+        .con-jump-input:focus { outline: none; border-color: #60a5fa; }
         .shortcut-badge {
-            background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.4);
-            color: #93c5fd; font-size: 11px; padding: 4px 8px; border-radius: 6px;
-            font-family: monospace; font-weight: bold;
+            background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.4);
+            color: #93c5fd; font-size: 10px; padding: 3px 7px; border-radius: 5px;
+            font-family: monospace; font-weight: 700; white-space: nowrap;
+        }
+        .con-question-text table, .con-exp-text table, .option-btn table {
+            width: 100%; border-collapse: collapse; margin: 8px 0;
+            font-size: 0.9em; background: rgba(0,0,0,0.35); border-radius: 6px; overflow: hidden;
+        }
+        .con-question-text th, .con-exp-text th, .option-btn th,
+        .con-question-text td, .con-exp-text td, .option-btn td {
+            border: 1px solid rgba(255,255,255,0.15); padding: 7px 10px; text-align: center;
+        }
+        .con-question-text th, .con-exp-text th, .option-btn th {
+            background: rgba(59, 130, 246, 0.25); color: #93c5fd; font-weight: 600;
+        }
+        .con-question-text ul, .con-question-text ol,
+        .con-exp-text ul, .con-exp-text ol, .option-btn ul, .option-btn ol {
+            padding-left: 20px; margin: 6px 0;
+        }
+        .con-question-text li, .con-exp-text li, .option-btn li {
+            margin-bottom: 3px; list-style-type: disc;
+        }
+        .con-question-text ol, .con-exp-text ol, .option-btn ol { list-style-type: decimal; }
+        .study-explanation-box {
+            background: rgba(30, 27, 75, 0.4); border: 1px solid rgba(139, 92, 246, 0.4);
+            border-radius: 14px; padding: 14px; margin-top: 12px;
+        }
+        /* Memory badge on set cards */
+        .memory-hint {
+            display: inline-flex; align-items: center; gap: 4px;
+            background: rgba(124, 58, 237, 0.2); border: 1px solid rgba(139, 92, 246, 0.4);
+            color: #c4b5fd; font-size: 10px; padding: 3px 8px; border-radius: 20px;
+            margin-top: 4px; font-weight: 600;
         }
     </style>
 </head>
 <body>
-
     <div id="toast" class="toast">Progress saved</div>
 
     <div id="custom-dialog-overlay">
@@ -337,22 +273,19 @@
             <button onclick="requestHome()" class="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-blue-600 hover:bg-blue-500 text-white flex items-center justify-center transition shadow-lg shrink-0" title="Back to Home">
                 <i class="fa-solid fa-house"></i>
             </button>
-            <div class="hidden sm:flex w-9 h-9 rounded-lg bg-blue-900/40 border border-blue-500 items-center justify-center text-blue-400 font-bold poppins shrink-0 text-sm">
-                <i class="fa-solid fa-building-columns"></i>
-            </div>
             <div>
                 <h1 class="text-sm md:text-base font-bold text-blue-400 leading-tight">UPSC PRINCIPAL '26</h1>
                 <p id="header-subtitle" class="text-[10px] text-gray-400">Pro Simulator</p>
             </div>
         </div>
-        <div class="flex items-center gap-2 md:gap-3" id="header-controls">
+        <div class="flex items-center gap-2 md:gap-3">
             <button id="soundToggleBtn" class="w-8 h-8 rounded-full border border-white/20 text-gray-400 flex items-center justify-center transition" onclick="toggleSound()">
                 <i class="fa-solid fa-volume-high" id="sound-icon"></i>
             </button>
             <div id="timer-display" class="font-mono text-sm md:text-lg font-bold text-red-400 px-3 py-1.5 bg-red-950/30 rounded-lg border border-red-500/30 flex items-center gap-2">
                 <i class="fa-regular fa-clock"></i> <span>02:00:00</span>
             </div>
-            <button onclick="requestSubmit()" class="px-3 py-1.5 rounded-lg bg-green-900/40 border border-green-500 text-xs font-bold text-green-300 hover:bg-green-600 hover:text-white transition flex items-center gap-1.5 touch-manipulation">
+            <button onclick="requestSubmit()" class="px-3 py-1.5 rounded-lg bg-green-900/40 border border-green-500 text-xs font-bold text-green-300 hover:bg-green-600 hover:text-white transition flex items-center gap-1.5">
                 <i class="fa-solid fa-check-double"></i> <span class="hidden sm:inline">Submit</span>
             </button>
         </div>
@@ -361,8 +294,6 @@
     <div class="flex justify-center mt-2 max-w-6xl mx-auto w-full overflow-x-auto hide-scroll pb-1 px-1" id="main-tabs">
         <div class="glass-card p-1.5 rounded-xl flex gap-1 border border-blue-500/20 bg-black/40 w-max">
             <button class="tab-btn active" data-tab="sets" onclick="showView('sets')"><i class="fa-solid fa-layer-group"></i> Sets</button>
-            <button class="tab-btn" data-tab="masterstudy" onclick="showView('masterstudy')"><i class="fa-solid fa-tv"></i> Master Study (TV)</button>
-            <button class="tab-btn" data-tab="fullboard" onclick="showView('fullboard')"><i class="fa-solid fa-list"></i> Scroll View</button>
             <button class="tab-btn" data-tab="review" onclick="showView('review')"><i class="fa-solid fa-rotate-left"></i> Review <span id="review-tab-count" class="ml-1 text-[10px] font-bold bg-red-600/70 text-white px-1.5 py-0.5 rounded-full hidden">0</span></button>
             <button class="tab-btn" data-tab="analytics" onclick="showView('analytics')"><i class="fa-solid fa-chart-pie"></i> Analytics</button>
             <button class="tab-btn" data-tab="rules" onclick="showView('rules')"><i class="fa-solid fa-list-check"></i> Syllabus</button>
@@ -372,103 +303,22 @@
     <main id="view-sets" class="flex flex-col max-w-6xl mx-auto w-full my-3 px-2">
         <div class="text-center mb-4">
             <h2 class="text-2xl md:text-3xl font-bold text-white poppins"><span class="text-blue-400">Select</span> Your Set</h2>
-            <p class="text-gray-400 text-sm mt-1">Practice with a timer, or Study with instant expert explanations.</p>
+            <p class="text-gray-400 text-sm mt-1">Practice with a timer, Study one question at a time, or Study All at once.</p>
         </div>
-        <div id="set-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <!-- Dynamically injected via JS -->
-        </div>
+        <div id="set-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
     </main>
 
-    <!-- MASTER STUDY VIEW (TV OPTIMIZED) -->
-    <main id="view-masterstudy" class="hidden flex-col max-w-6xl mx-auto w-full my-2 px-2 relative">
-        <div class="flex flex-wrap justify-between items-center gap-2 mb-3 sticky top-0 z-20 bg-slate-900/95 py-2 backdrop-blur-md rounded-xl border-b border-slate-700 px-3">
-            <div class="flex items-center gap-3">
-                <h2 id="masterstudy-title" class="text-lg md:text-xl font-bold text-purple-400 poppins"><i class="fa-solid fa-tv"></i> Master Study</h2>
-                <span id="master-study-progress" class="text-xs font-mono bg-black/40 px-2 py-1 rounded-md border border-slate-700 text-gray-300">Q: 1/120</span>
-                <span id="master-study-set-lang" class="text-[10px] px-2 py-0.5 rounded-full border font-bold"></span>
-            </div>
-            <div class="flex items-center gap-2">
-                <input id="master-jump-input" type="number" placeholder="Q #" min="1" class="jump-input" onkeydown="if(event.key==='Enter') jumpToMasterQuestion(this.value)" />
-                <button onclick="jumpToMasterQuestion(document.getElementById('master-jump-input').value)" class="px-3 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold transition"><i class="fa-solid fa-arrow-right"></i></button>
-                <button onclick="showView('sets')" class="px-3 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 text-white text-xs font-bold transition"><i class="fa-solid fa-home"></i></button>
-            </div>
-        </div>
-
-        <div class="relative w-full">
-            <div class="glass-card bg-slate-900/95 border-t-2 border-purple-500 p-4 md:p-6 rounded-2xl shadow-xl">
-                <p id="master-question-text" class="text-[15px] md:text-[18px] font-medium text-gray-50 whitespace-pre-wrap w-full leading-relaxed" style="word-break: break-word;">Loading question...</p>
-            </div>
-        </div>
-        
-        <div id="master-options-grid" class="mt-3 grid grid-cols-1 gap-2.5 w-full">
-            <!-- Options injected here -->
-        </div>
-
-        <!-- Always Visible Expert Advice -->
-        <div id="master-expert-advice-container" class="mt-3 w-full">
-            <div class="study-explanation-box">
-                <div class="font-bold text-purple-400 mb-2 flex items-center gap-2 text-lg">
-                    <i class="fa-solid fa-lightbulb text-yellow-400"></i> Expert Advice:
-                </div>
-                <div id="master-expert-advice-text" class="text-sm md:text-base text-gray-300 leading-relaxed" style="word-break: break-word;">
-                    Loading explanation...
-                </div>
-            </div>
-        </div>
-
-        <!-- TV Navigation Controls -->
-        <div class="flex flex-wrap items-center justify-between gap-3 mt-4 px-1">
-            <button onclick="masterPrev()" class="tv-nav-btn"><i class="fa-solid fa-arrow-left"></i> Previous</button>
-            
-            <div class="flex items-center gap-2">
-                <span class="text-xs text-gray-500 hidden sm:inline">Shortcuts:</span>
-                <span class="shortcut-badge">1-4 Select</span>
-                <span class="shortcut-badge">◀ ▶ Nav</span>
-                <span class="shortcut-badge">Enter Jump</span>
-            </div>
-
-            <button onclick="masterNext()" class="tv-nav-btn">Next <i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-        
-        <!-- Master Palette Button -->
-        <div class="flex justify-center mt-3">
-            <button onclick="toggleMasterPalette()" class="px-6 py-3 rounded-xl bg-blue-900/40 border border-blue-500 hover:bg-blue-800 text-blue-300 flex items-center justify-center transition shadow-lg gap-2 font-bold w-full max-w-xs">
-                <i class="fa-solid fa-table-cells"></i> Open Question Palette
-            </button>
-        </div>
-    </main>
-
-    <!-- FULL BOARD (SCROLL VIEW) -->
-    <main id="view-fullboard" class="hidden flex-col max-w-6xl mx-auto w-full my-3 px-2">
-        <div class="glass-card bg-slate-900/80 border-t-4 border-blue-500 p-4 md:p-6 rounded-2xl shadow-2xl">
-            <div class="flex flex-wrap justify-between items-center gap-3 mb-4">
-                <h2 class="text-xl md:text-2xl font-bold text-blue-400 poppins"><i class="fa-solid fa-list"></i> Scroll View</h2>
-                <div class="text-xs text-gray-400"><i class="fa-solid fa-circle-info"></i> Continuous list of all questions.</div>
-            </div>
-            <div class="relative mb-4">
-                <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 text-sm"></i>
-                <input id="fullboard-search" oninput="filterFullBoard()" type="text" placeholder="Search question or explanation..." class="w-full bg-black/50 border border-slate-700 focus:border-blue-500 outline-none rounded-xl pl-9 pr-3 py-2.5 text-sm text-white placeholder-gray-500 transition" />
-            </div>
-            <div id="fullboard-content" class="space-y-6 max-h-[75vh] overflow-y-auto pr-1">
-                <!-- Injected -->
-            </div>
-        </div>
-    </main>
-
-    <!-- REVIEW (INCORRECT QUESTIONS) VIEW -->
     <main id="view-review" class="hidden flex-col max-w-6xl mx-auto w-full my-3 px-2">
         <div class="glass-card bg-slate-900/80 border-t-4 border-red-500 p-4 md:p-6 rounded-2xl shadow-2xl">
             <div class="flex flex-wrap justify-between items-center gap-3 mb-4">
                 <h2 class="text-xl md:text-2xl font-bold text-red-400 poppins"><i class="fa-solid fa-rotate-left"></i> To Be Reviewed</h2>
                 <div class="flex items-center gap-2">
                     <span class="text-xs text-gray-400">Total: <b id="review-count" class="text-red-400">0</b></span>
-                    <button onclick="clearReviewAll()" class="px-3 py-1.5 rounded-lg bg-red-900/40 border border-red-500 text-red-300 hover:bg-red-600 hover:text-white transition text-xs font-bold touch-manipulation"><i class="fa-solid fa-trash"></i> Clear All</button>
+                    <button onclick="clearReviewAll()" class="px-3 py-1.5 rounded-lg bg-red-900/40 border border-red-500 text-red-300 hover:bg-red-600 hover:text-white transition text-xs font-bold"><i class="fa-solid fa-trash"></i> Clear All</button>
                 </div>
             </div>
-            <p class="text-xs text-gray-400 mb-4 leading-relaxed"><i class="fa-solid fa-lightbulb text-amber-400"></i> Every question you answered incorrectly in Practice Mode is collected here automatically, across all sets and sessions.</p>
-            <div id="review-content" class="max-h-[70vh] overflow-y-auto pr-1">
-                <!-- Injected -->
-            </div>
+            <p class="text-xs text-gray-400 mb-4 leading-relaxed"><i class="fa-solid fa-lightbulb text-amber-400"></i> Every question you answered incorrectly in Practice Mode is collected here automatically.</p>
+            <div id="review-content" class="max-h-[70vh] overflow-y-auto pr-1"></div>
         </div>
     </main>
 
@@ -477,22 +327,20 @@
             <div class="flex flex-wrap justify-between items-center mb-6 gap-3">
                 <h2 class="text-xl md:text-2xl font-bold text-amber-400 poppins"><i class="fa-solid fa-chart-pie"></i> Deep Analytics</h2>
                 <div class="flex gap-2">
-                    <button onclick="exportData()" class="px-3 py-1.5 rounded-lg bg-blue-900/40 border border-blue-500 text-blue-300 hover:bg-blue-600 hover:text-white transition text-xs font-bold touch-manipulation"><i class="fa-solid fa-download"></i> Backup</button>
-                    <label class="px-3 py-1.5 rounded-lg bg-purple-900/40 border border-purple-500 text-purple-300 hover:bg-purple-600 hover:text-white transition text-xs font-bold cursor-pointer touch-manipulation">
+                    <button onclick="exportData()" class="px-3 py-1.5 rounded-lg bg-blue-900/40 border border-blue-500 text-blue-300 hover:bg-blue-600 hover:text-white transition text-xs font-bold"><i class="fa-solid fa-download"></i> Backup</button>
+                    <label class="px-3 py-1.5 rounded-lg bg-purple-900/40 border border-purple-500 text-purple-300 hover:bg-purple-600 hover:text-white transition text-xs font-bold cursor-pointer">
                         <i class="fa-solid fa-upload"></i> Restore
                         <input type="file" id="import-file" class="hidden" accept=".json" onchange="importData(event)">
                     </label>
-                    <button onclick="clearAllData()" class="px-3 py-1.5 rounded-lg bg-red-900/40 border border-red-500 text-red-300 hover:bg-red-600 hover:text-white transition text-xs font-bold touch-manipulation"><i class="fa-solid fa-trash"></i> Reset</button>
+                    <button onclick="clearAllData()" class="px-3 py-1.5 rounded-lg bg-red-900/40 border border-red-500 text-red-300 hover:bg-red-600 hover:text-white transition text-xs font-bold"><i class="fa-solid fa-trash"></i> Reset</button>
                 </div>
             </div>
-            
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
                 <div class="bg-black/40 p-3 rounded-xl border border-slate-700 text-center"><div class="text-[10px] text-gray-400 uppercase tracking-widest mb-1">Attempted</div><div class="text-2xl font-bold text-white" id="stat-attempted">0</div></div>
                 <div class="bg-black/40 p-3 rounded-xl border border-green-900/50 text-center"><div class="text-[10px] text-green-300 uppercase tracking-widest mb-1">Total Correct</div><div class="text-2xl font-bold text-green-400" id="stat-correct">0</div></div>
                 <div class="bg-black/40 p-3 rounded-xl border border-red-900/50 text-center"><div class="text-[10px] text-red-300 uppercase tracking-widest mb-1">Total Wrong</div><div class="text-2xl font-bold text-red-400" id="stat-wrong">0</div></div>
                 <div class="bg-black/40 p-3 rounded-xl border border-purple-900/50 text-center"><div class="text-[10px] text-purple-300 uppercase tracking-widest mb-1">Accuracy</div><div class="text-2xl font-bold text-purple-400" id="stat-accuracy">0%</div></div>
             </div>
-
             <h3 class="text-lg font-bold text-white mb-3">Set-by-Set History</h3>
             <div class="overflow-x-auto rounded-lg border border-slate-700">
                 <table class="w-full text-left border-collapse min-w-[500px]">
@@ -501,9 +349,7 @@
                             <th class="p-3">Date</th><th class="p-3 text-center">Set</th><th class="p-3 text-center">Correct</th><th class="p-3 text-center">Wrong</th><th class="p-3 text-center font-bold text-amber-400">Score</th>
                         </tr>
                     </thead>
-                    <tbody class="text-gray-300 text-sm" id="history-table-body">
-                        <!-- History injected here -->
-                    </tbody>
+                    <tbody class="text-gray-300 text-sm" id="history-table-body"></tbody>
                 </table>
             </div>
         </div>
@@ -512,78 +358,33 @@
     <main id="view-rules" class="hidden flex-col max-w-6xl mx-auto w-full my-3 px-2">
         <div class="glass-card bg-slate-900/80 border-t-4 border-blue-500 p-4 md:p-6 rounded-2xl shadow-2xl text-sm text-gray-300 leading-relaxed">
             <h2 class="text-xl md:text-2xl font-bold text-blue-400 mb-4 poppins text-center">Exam Syllabus & Pattern</h2>
-            
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 <div class="bg-blue-950/30 border border-blue-800 rounded-xl p-4">
                     <h3 class="text-white font-bold mb-2 flex items-center gap-2"><i class="fa-solid fa-stopwatch text-blue-400"></i> Practice Mode</h3>
-                    <p>Simulates the real exam environment. 120-minute timer. Answers are evaluated immediately upon selection. Score is recorded in Analytics.</p>
-                    <div class="mt-2 text-xs font-mono bg-black/40 p-2 rounded text-center"><span class="text-green-400">+2.5 Marks</span> | <span class="text-red-400">-0.83 Penalty (1/3rd)</span></div>
+                    <p>Simulates the real exam environment. 120-minute timer. Answers evaluated immediately.</p>
+                    <div class="mt-2 text-xs font-mono bg-black/40 p-2 rounded text-center"><span class="text-green-400">+2.5 Marks</span> | <span class="text-red-400">-0.83 Penalty</span></div>
                 </div>
                 <div class="bg-emerald-950/30 border border-emerald-800 rounded-xl p-4">
-                    <h3 class="text-white font-bold mb-2 flex items-center gap-2"><i class="fa-solid fa-book-open text-emerald-400"></i> Study Mode</h3>
-                    <p>Designed for pure learning and revision. Correct answers are pre-highlighted in green. Access detailed explanations instantly via the "Expert Advice" button.</p>
+                    <h3 class="text-white font-bold mb-2 flex items-center gap-2"><i class="fa-solid fa-book-open text-emerald-400"></i> Study / Study All</h3>
+                    <p>Correct answers pre-highlighted. Expert Advice shown immediately. Study All remembers your position.</p>
                     <div class="mt-2 text-xs font-mono bg-black/40 p-2 rounded text-center text-emerald-300">Untimed • No Scoring</div>
                 </div>
             </div>
-
             <h3 class="text-lg font-bold text-white mt-6 mb-3 border-b border-slate-700 pb-2">Detailed Section Breakdown</h3>
             <div class="overflow-x-auto rounded-lg border border-slate-700">
                 <table class="w-full text-left border-collapse syllabus-table min-w-[700px] text-xs md:text-sm">
-                    <thead>
-                        <tr>
-                            <th>Category / Subject Area</th>
-                            <th class="text-center">Approximate No. of Questions</th>
-                            <th class="text-center">Estimated Weightage / Marks</th>
-                            <th>Key High-Yield Topics Covered</th>
-                        </tr>
-                    </thead>
+                    <thead><tr><th>Category / Subject Area</th><th class="text-center">Approx. Q's</th><th class="text-center">Weightage / Marks</th><th>Key High-Yield Topics</th></tr></thead>
                     <tbody class="text-gray-300">
-                        <tr>
-                            <td class="font-semibold text-blue-200">Management & Financial Administration</td>
-                            <td class="text-center">25 – 30 Questions</td>
-                            <td class="text-center text-blue-300">~62.5 – 75 Marks</td>
-                            <td>CCS Conduct Rules, CCS (CCA) Rules, General Financial Rules (GFR), Budgeting, FR & SR, LTC, TA/DA rules, CGHS guidelines.</td>
-                        </tr>
-                        <tr>
-                            <td class="font-semibold text-blue-200">Educational Policies, Measurement & Evaluation</td>
-                            <td class="text-center">20 – 25 Questions</td>
-                            <td class="text-center text-blue-300">~50 – 62.5 Marks</td>
-                            <td>NEP 2020, NCF, CCE, PARAKH, Foundational Literacy & Numeracy (FLN), Inclusive Education, Special Needs Education.</td>
-                        </tr>
-                        <tr>
-                            <td class="font-semibold text-blue-200">Office Procedures & Statutory Regulations</td>
-                            <td class="text-center">15 – 20 Questions</td>
-                            <td class="text-center text-blue-300">~37.5 – 50 Marks</td>
-                            <td>RTI Act (2005), POCSO Act, POSH Act, Rights of PwD Act, Office Manual, File Movement & Maintenance.</td>
-                        </tr>
-                        <tr>
-                            <td class="font-semibold text-blue-200">Reasoning Ability & Quantitative Aptitude</td>
-                            <td class="text-center">15 – 20 Questions</td>
-                            <td class="text-center text-blue-300">~37.5 – 50 Marks</td>
-                            <td>Data Interpretation, Percentage, Profit & Loss, Syllogisms, Blood Relations, Coding-Decoding, Time & Work.</td>
-                        </tr>
-                        <tr>
-                            <td class="font-semibold text-blue-200">General Knowledge & Current Affairs</td>
-                            <td class="text-center">15 – 18 Questions</td>
-                            <td class="text-center text-blue-300">~37.5 – 45 Marks</td>
-                            <td>Social/Economic issues, Government Schemes, Educational Initiatives, Basic Indian Polity & Indian Economy.</td>
-                        </tr>
-                        <tr>
-                            <td class="font-semibold text-blue-200">Language Skills (English & Hindi)</td>
-                            <td class="text-center">12 – 15 Questions</td>
-                            <td class="text-center text-blue-300">~30 – 37.5 Marks</td>
-                            <td>Grammar, Vocabulary, Comprehension Passages, Idioms/Phrases, Sentence Correction.</td>
-                        </tr>
-                        <tr class="bg-blue-900/40 font-bold text-white">
-                            <td>Total</td>
-                            <td class="text-center">120 Questions</td>
-                            <td class="text-center">300 Marks</td>
-                            <td class="text-center">100%</td>
-                        </tr>
+                        <tr><td class="font-semibold text-blue-200">Management & Financial Administration</td><td class="text-center">25 – 30</td><td class="text-center text-blue-300">~62.5 – 75</td><td>CCS Conduct Rules, CCS (CCA) Rules, GFR, Budgeting, FR & SR, LTC, TA/DA, CGHS.</td></tr>
+                        <tr><td class="font-semibold text-blue-200">Educational Policies, Measurement & Evaluation</td><td class="text-center">20 – 25</td><td class="text-center text-blue-300">~50 – 62.5</td><td>NEP 2020, NCF, CCE, PARAKH, FLN, Inclusive Education, Special Needs Education.</td></tr>
+                        <tr><td class="font-semibold text-blue-200">Office Procedures & Statutory Regulations</td><td class="text-center">15 – 20</td><td class="text-center text-blue-300">~37.5 – 50</td><td>RTI Act (2005), POCSO Act, POSH Act, Rights of PwD Act, Office Manual.</td></tr>
+                        <tr><td class="font-semibold text-blue-200">Reasoning Ability & Quantitative Aptitude</td><td class="text-center">15 – 20</td><td class="text-center text-blue-300">~37.5 – 50</td><td>Data Interpretation, Percentage, Profit & Loss, Syllogisms, Blood Relations, Coding.</td></tr>
+                        <tr><td class="font-semibold text-blue-200">General Knowledge & Current Affairs</td><td class="text-center">15 – 18</td><td class="text-center text-blue-300">~37.5 – 45</td><td>Social/Economic issues, Government Schemes, Educational Initiatives, Polity.</td></tr>
+                        <tr><td class="font-semibold text-blue-200">Language Skills (English & Hindi)</td><td class="text-center">12 – 15</td><td class="text-center text-blue-300">~30 – 37.5</td><td>Grammar, Vocabulary, Comprehension, Idioms/Phrases, Sentence Correction.</td></tr>
+                        <tr class="bg-blue-900/40 font-bold text-white"><td>Total</td><td class="text-center">120</td><td class="text-center">300</td><td class="text-center">100%</td></tr>
                     </tbody>
                 </table>
             </div>
-            <p class="text-center text-gray-400 text-xs mt-4">Swipe left/right anywhere on the screen during a test to navigate between questions smoothly.</p>
         </div>
     </main>
 
@@ -592,28 +393,20 @@
             <span><i class="fa-solid fa-book-open"></i> Study Mode Active</span>
             <span class="font-normal opacity-80">Answers Pre-highlighted</span>
         </div>
-
         <div class="relative w-full">
             <div class="glass-card bg-slate-900/95 border-t-2 border-blue-500 p-4 md:p-6 rounded-2xl shadow-xl">
                 <p id="question-text" class="text-[15px] md:text-[18px] font-medium text-gray-50 whitespace-pre-wrap w-full leading-relaxed" style="word-break: break-word;">Loading question...</p>
             </div>
         </div>
-        
-        <div id="options-grid" class="mt-3 grid grid-cols-1 gap-2.5 w-full">
-            <!-- Options injected here -->
-        </div>
-
-        <!-- Study Mode Explanation Box (Injected Dynamically) -->
+        <div id="options-grid" class="mt-3 grid grid-cols-1 gap-2.5 w-full"></div>
         <div id="study-explanation-container" class="hidden mt-3 w-full"></div>
-        
         <div class="flex items-center justify-between mt-4 px-1 gap-2">
-            <label class="flex items-center gap-2 cursor-pointer touch-manipulation">
+            <label class="flex items-center gap-2 cursor-pointer">
                 <input type="checkbox" id="mark-review-checkbox" onchange="toggleBookmark()" class="w-5 h-5 accent-amber-500 rounded cursor-pointer">
                 <span class="text-sm text-amber-400 font-medium"><i class="fa-solid fa-bookmark"></i> Bookmark</span>
             </label>
-            
-            <button id="btn-expert-advice" onclick="showCurrentExplanation()" class="hidden px-4 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white rounded-xl text-sm font-bold shadow-lg shadow-purple-900/50 transition transform active:scale-95 touch-manipulation">
-                <i class="fa-solid fa-lightbulb text-yellow-300"></i> Open Expert Advice Modal
+            <button id="btn-expert-advice" onclick="showCurrentExplanation()" class="hidden px-4 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white rounded-xl text-sm font-bold shadow-lg transition active:scale-95">
+                <i class="fa-solid fa-lightbulb text-yellow-300"></i> Expert Advice
             </button>
         </div>
     </main>
@@ -621,18 +414,18 @@
     <footer id="quiz-footer" class="hidden mobile-sticky-footer">
         <div class="max-w-6xl mx-auto w-full">
             <div class="flex justify-between items-center px-4 pt-1.5 text-[10px] md:text-xs font-mono border-b border-white/5 pb-1.5">
-                <div id="footer-score-block" class="text-gray-400">Score: <span id="live-score-display" class="text-blue-400 font-bold text-sm">0</span>/300</div>
-                <div id="footer-stats-block"><span class="text-green-400 font-bold">✓ <span id="live-correct">0</span></span> &nbsp; <span class="text-red-400 font-bold">✗ <span id="live-wrong">0</span></span></div>
+                <div class="text-gray-400">Score: <span id="live-score-display" class="text-blue-400 font-bold text-sm">0</span>/300</div>
+                <div><span class="text-green-400 font-bold">✓ <span id="live-correct">0</span></span> &nbsp; <span class="text-red-400 font-bold">✗ <span id="live-wrong">0</span></span></div>
                 <div class="text-white/60 font-bold bg-white/10 px-2 py-0.5 rounded-md" id="progress-counter">Q: 0/120</div>
             </div>
-            <div class="flex justify-between items-center p-2.5 gap-2 md:gap-3">
-                <button onclick="prevQuestion()" class="flex-1 py-3 rounded-xl bg-slate-800 border border-slate-600 hover:bg-slate-700 text-sm font-semibold transition flex items-center justify-center gap-2 touch-manipulation">
+            <div class="flex justify-between items-center p-2.5 gap-2">
+                <button onclick="prevQuestion()" class="flex-1 py-3 rounded-xl bg-slate-800 border border-slate-600 hover:bg-slate-700 text-sm font-semibold transition flex items-center justify-center gap-2">
                     <i class="fa-solid fa-arrow-left"></i> <span class="hidden sm:inline">Previous</span>
                 </button>
-                <button onclick="togglePalette()" class="flex-1 py-3 rounded-xl bg-blue-900/40 border border-blue-500 hover:bg-blue-800 text-blue-300 flex items-center justify-center transition shadow-lg shrink-0 touch-manipulation gap-2" aria-label="Question palette">
+                <button onclick="togglePalette()" class="flex-1 py-3 rounded-xl bg-blue-900/40 border border-blue-500 hover:bg-blue-800 text-blue-300 flex items-center justify-center transition gap-2">
                     <i class="fa-solid fa-table-cells"></i> <span class="hidden sm:inline font-bold">Palette</span>
                 </button>
-                <button onclick="nextQuestion()" class="flex-1 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 border border-blue-400 text-white text-sm font-bold transition flex items-center justify-center gap-2 shadow-lg shadow-blue-600/20 touch-manipulation">
+                <button onclick="nextQuestion()" class="flex-1 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 border border-blue-400 text-white text-sm font-bold transition flex items-center justify-center gap-2">
                     <span class="hidden sm:inline">Next</span> <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
@@ -642,7 +435,7 @@
     <div id="palette-panel">
         <div class="flex justify-between items-center mb-4 border-b border-slate-700 pb-3">
             <h3 class="text-lg font-bold text-white poppins">Question Palette</h3>
-            <button onclick="togglePalette()" class="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-red-500/20 transition touch-manipulation">&times;</button>
+            <button onclick="togglePalette()" class="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white transition">&times;</button>
         </div>
         <div class="flex gap-4 text-xs font-medium text-gray-300 mb-5 flex-wrap justify-center bg-black/40 p-3 rounded-xl">
             <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-[#1e293b] border border-[#475569]"></span> Unattempted</span>
@@ -650,104 +443,118 @@
             <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-[#991b1b]"></span> Wrong</span>
             <span class="flex items-center gap-1.5"><i class="fa-solid fa-bookmark text-amber-400"></i> Bookmarked</span>
         </div>
-        <div id="palette-grid" class="flex flex-wrap gap-2.5 justify-center">
-            <!-- Palette buttons injected here -->
+        <div id="palette-grid" class="flex flex-wrap gap-2.5 justify-center"></div>
+    </div>
+
+    <!-- CONSOLIDATED STUDY ALL VIEW -->
+    <div id="view-consolidated" class="hidden">
+        <div class="con-header">
+            <div class="flex items-center gap-2">
+                <button onclick="closeConsolidated()" class="con-nav-btn"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                <div class="flex items-center gap-2 ml-1">
+                    <span id="con-set-label" class="text-sm font-bold poppins text-purple-400">Set 1</span>
+                    <span id="con-lang-badge" class="text-[10px] px-2 py-0.5 rounded-full border font-bold">English</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-2 flex-wrap">
+                <span id="con-progress" class="text-xs font-mono bg-black/40 px-2.5 py-1.5 rounded-md border border-slate-700 text-gray-300">Q: 1/120</span>
+                <input id="con-jump-input" type="number" placeholder="#" min="1" class="con-jump-input" onkeydown="if(event.key==='Enter') jumpConsolidated(this.value)" />
+                <button onclick="jumpConsolidated(document.getElementById('con-jump-input').value)" class="con-nav-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                <button onclick="toggleConPalette()" class="con-nav-btn highlight"><i class="fa-solid fa-table-cells"></i> Palette</button>
+            </div>
+        </div>
+
+        <div class="con-body">
+            <div class="con-question-card">
+                <p id="con-question-text" class="con-question-text"></p>
+            </div>
+            <div id="con-options" class="con-options"></div>
+            <div class="con-exp-card">
+                <div class="con-exp-title"><i class="fa-solid fa-lightbulb text-yellow-400"></i> Expert Advice</div>
+                <div id="con-exp-text" class="con-exp-text"></div>
+            </div>
+        </div>
+
+        <div class="con-footer">
+            <button onclick="conPrev()" class="con-nav-btn"><i class="fa-solid fa-arrow-left"></i> Prev <span class="shortcut-badge ml-1">0</span></button>
+            <div class="hidden sm:flex items-center gap-2">
+                <span class="shortcut-badge">0 Prev</span>
+                <span class="shortcut-badge">9 Next</span>
+                <span class="shortcut-badge">Esc Back</span>
+            </div>
+            <button onclick="conNext()" class="con-nav-btn">Next <span class="shortcut-badge ml-1">9</span> <i class="fa-solid fa-arrow-right"></i></button>
         </div>
     </div>
 
-    <!-- Master Palette Panel -->
-    <div id="master-palette-panel" class="fixed inset-0 bg-black/80 backdrop-blur-md z-50 hidden items-center justify-center p-4" onclick="toggleMasterPalette(event)">
-        <div class="glass-card bg-slate-900 border border-purple-500/50 rounded-2xl max-w-2xl w-full p-6 shadow-2xl max-h-[80vh] overflow-y-auto" onclick="event.stopPropagation()">
-            <div class="flex justify-between items-center mb-4 border-b border-slate-700 pb-3">
-                <h3 class="text-lg font-bold text-purple-400 poppins">Master Study Palette</h3>
-                <button onclick="toggleMasterPalette()" class="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white transition">&times;</button>
-            </div>
-            <p class="text-xs text-gray-400 mb-4">Click any number to jump to that question in the Master Study flow.</p>
-            <div id="master-palette-grid" class="flex flex-wrap gap-2.5 justify-center">
-                <!-- Injected -->
-            </div>
+    <div id="con-palette-panel">
+        <div class="flex justify-between items-center mb-4 border-b border-slate-700 pb-3">
+            <h3 class="text-lg font-bold text-white poppins">Jump to Question</h3>
+            <button onclick="toggleConPalette()" class="w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white transition">&times;</button>
         </div>
+        <div id="con-palette-grid" class="flex flex-wrap gap-2.5 justify-center"></div>
     </div>
 
-    <div id="explanation-modal" class="fixed inset-0 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 z-50 hidden" onclick="closeExplanation(event)">
+    <div id="explanation-modal" class="fixed inset-0 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 z-[70] hidden" onclick="closeExplanation(event)">
         <div class="glass-card bg-slate-900 border border-slate-600 rounded-2xl max-w-md w-full p-5 md:p-6 shadow-2xl overflow-y-auto max-h-[85vh] relative" onclick="event.stopPropagation()">
-            <button onclick="closeExplanation()" class="absolute top-3 right-3 w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white touch-manipulation"><i class="fa-solid fa-xmark"></i></button>
+            <button onclick="closeExplanation()" class="absolute top-3 right-3 w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
             <h2 id="modal-title" class="text-xl font-bold flex items-center gap-2 mb-3 mt-1"></h2>
             <div id="modal-subtitle" class="text-sm text-gray-200 leading-relaxed text-left" style="word-break: break-word;"></div>
             <div class="pt-5 mt-4 border-t border-slate-700">
-                <button onclick="closeExplanationAndNext()" class="w-full py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-500 transition shadow-lg shadow-blue-600/30 text-sm touch-manipulation">Got it, Next Question <i class="fa-solid fa-arrow-right ml-1"></i></button>
+                <button onclick="closeExplanationAndNext()" class="w-full py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-500 transition text-sm">Got it, Next Question <i class="fa-solid fa-arrow-right ml-1"></i></button>
             </div>
         </div>
     </div>
 
-    <!-- Floating Back to Top -->
-    <div id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-        <i class="fa-solid fa-arrow-up"></i>
-    </div>
-
     <script>
-        /* =========================================================
-           UTILITIES
-           ========================================================= */
+        /* ===== UTILITIES ===== */
         function sanitizeHtml(html) {
             if (!html) return '';
             const temp = document.createElement('div');
             temp.innerHTML = String(html);
-            const scripts = temp.querySelectorAll('script');
-            scripts.forEach(s => s.remove());
+            temp.querySelectorAll('script').forEach(s => s.remove());
             return temp.innerHTML;
         }
-
         function hashString(str) {
             let hash = 0;
             const s = String(str);
-            for (let i = 0; i < s.length; i++) {
-                const ch = s.charCodeAt(i);
-                hash = ((hash << 5) - hash) + ch;
-                hash = hash & hash;
-            }
+            for (let i = 0; i < s.length; i++) { hash = ((hash << 5) - hash) + s.charCodeAt(i); hash = hash & hash; }
             return 'q_' + Math.abs(hash).toString(36) + '_' + s.length;
         }
-
         function showDialog(title, message, type = 'alert', onConfirm = null) {
             const overlay = document.getElementById('custom-dialog-overlay');
             document.getElementById('dialog-title').innerText = title;
             document.getElementById('dialog-message').innerText = message;
-            
             const btnContainer = document.getElementById('dialog-buttons');
             btnContainer.innerHTML = '';
-            
             if (type === 'confirm') {
                 const cancelBtn = document.createElement('button');
-                cancelBtn.className = 'px-4 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 text-white text-sm font-bold flex-1 touch-manipulation';
+                cancelBtn.className = 'px-4 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 text-white text-sm font-bold flex-1';
                 cancelBtn.innerText = 'Cancel';
                 cancelBtn.onclick = () => overlay.classList.remove('active');
                 btnContainer.appendChild(cancelBtn);
             }
-            
             const okBtn = document.createElement('button');
-            okBtn.className = 'px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold flex-1 shadow-lg touch-manipulation';
+            okBtn.className = 'px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold flex-1 shadow-lg';
             okBtn.innerText = type === 'confirm' ? 'Confirm' : 'OK';
-            okBtn.onclick = () => {
-                overlay.classList.remove('active');
-                if (onConfirm) onConfirm();
-            };
+            okBtn.onclick = () => { overlay.classList.remove('active'); if (onConfirm) onConfirm(); };
             btnContainer.appendChild(okBtn);
-            
             overlay.classList.add('active');
         }
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            toast.textContent = msg;
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => toast.classList.remove('show'), 2000);
+        }
 
-        /* =========================================================
-           DATA LOADING
-           ========================================================= */
+        /* ===== DATA LOADING ===== */
         let allSetsData = [];
         let setMetadata = [];
-        let masterQuestions = []; // Flattened array for Master Study
-        let currentMasterIndex = 0;
-        
+
         function normalizeData(rawData) {
             return rawData.map(item => {
-                if (item.question && item.options) return item; 
+                if (item.question && item.options) return item;
                 if (item.Question_Text) {
                     let cIndex = 0;
                     const ansStr = String(item.Correct_Answer).toUpperCase();
@@ -755,17 +562,16 @@
                     else if (ansStr.includes("B")) cIndex = 1;
                     else if (ansStr.includes("C")) cIndex = 2;
                     else if (ansStr.includes("D")) cIndex = 3;
-                    return { 
-                        question: item.Question_Text, 
-                        options: [item.Option_A, item.Option_B, item.Option_C, item.Option_D], 
-                        correctOption: cIndex, 
-                        explanation: item.Brief_Explanation || "No explanation provided." 
+                    return {
+                        question: item.Question_Text,
+                        options: [item.Option_A, item.Option_B, item.Option_C, item.Option_D],
+                        correctOption: cIndex,
+                        explanation: item.Brief_Explanation || "No explanation provided."
                     };
                 }
                 return item;
             });
         }
-
         async function fetchAndProcess(files, langLabel) {
             let allQuestions = [];
             for (let file of files) {
@@ -774,98 +580,54 @@
                     if (res.ok) {
                         const data = await res.json();
                         allQuestions = allQuestions.concat(normalizeData(data));
-                        console.log(`Loaded ${file} (${langLabel}): ${data.length} questions`);
-                    } else {
-                        console.log(`Skipped ${file}: HTTP ${res.status}`);
                     }
-                } catch (e) {
-                    console.log(`Could not load ${file}. Skipped.`);
-                }
+                } catch (e) {}
             }
-            
-            if (allQuestions.length === 0 && langLabel === 'English') {
-                console.log("No JSON files found. Generating fallback data...");
-                allQuestions = generateFallbackData();
-            }
-
+            if (allQuestions.length === 0 && langLabel === 'English') allQuestions = generateFallbackData();
             for (let i = 0; i < allQuestions.length; i += 120) {
-                const set = allQuestions.slice(i, i + 120);
-                allSetsData.push(set);
+                allSetsData.push(allQuestions.slice(i, i + 120));
                 setMetadata.push({ language: langLabel });
-                
-                // Add to masterQuestions
-                set.forEach((q, qIdx) => {
-                    masterQuestions.push({
-                        ...q,
-                        setIndex: allSetsData.length - 1,
-                        qIndex: qIdx,
-                        language: langLabel
-                    });
-                });
             }
         }
-
         async function loadAuthenticData() {
-            allSetsData = [];
-            setMetadata = [];
-            masterQuestions = [];
-            
-            await fetchAndProcess([
-                'exam-questions-v1.json', 
-                'exam-questions-v2.json', 
-                'exam-questions-v3.json',
-                'exam-question'
-            ], 'English');
-            
-            await fetchAndProcess([
-                'exam-questions-v1hindi.json',
-                'exam-questions-v2hindi.json',
-                'exam-questions-v3hindi.json',
-                'exam-questions-v4hindi.json'
-            ], 'Hindi');
+            allSetsData = []; setMetadata = [];
+            await fetchAndProcess(['exam-questions-v1.json', 'exam-questions-v2.json', 'exam-questions-v3.json', 'exam-question'], 'English');
+            await fetchAndProcess(['exam-questions-v1hindi.json', 'exam-questions-v2hindi.json', 'exam-questions-v3hindi.json', 'exam-questions-v4hindi.json'], 'Hindi');
         }
-
         function generateFallbackData() {
-            const subjects = ["Management & Financial Admin", "Educational Policies, Measurement", "Office Procedures & Regulations", "Reasoning Ability", "General Knowledge", "Language Skills"];
-            let setQuestions = [];
-            for (let q = 1; q <= 600; q++) { 
+            const subjects = ["Management", "Educational Policies", "Office Procedures", "Reasoning", "GK", "Language"];
+            let qs = [];
+            for (let q = 1; q <= 600; q++) {
                 let sub = subjects[q % subjects.length];
                 let correctAnswer = q % 4;
-                setQuestions.push({
-                    question: `[${sub}] This is an authentic placeholder question designed to simulate the UPSC Principal Exam format. Which of the following statements is accurate?`,
-                    options: [
-                        "The policy states that implementation takes 5 years.", 
-                        "The primary responsibility falls under the CCS rules.", 
-                        "According to NEP 2020, foundational literacy is key.", 
-                        "None of the above statements are entirely correct."
-                    ],
+                qs.push({
+                    question: `[${sub}] Sample question ${q}. Which statement is correct?`,
+                    options: ["Option A statement", "Option B statement", "Option C statement", "Option D statement"],
                     correctOption: correctAnswer,
-                    explanation: `Option ${String.fromCharCode(65+correctAnswer)} is correct. This detailed explanation covers the nuances of ${sub} to help you understand the theoretical framework behind the rules.`
+                    explanation: `Option ${String.fromCharCode(65 + correctAnswer)} is correct. Detailed explanation for ${sub}.`
                 });
             }
-            return setQuestions;
+            return qs;
         }
 
-        /* =========================================================
-           INDEXEDDB (v2 — adds wrongQuestions store)
-           ========================================================= */
+        /* ===== INDEXEDDB ===== */
         const DB_NAME = "UPSC_Principal_Pro_DB";
-        const DB_VERSION = 2;
-        
+        const DB_VERSION = 3; // bumped for new 'consolidated' store
+
         function openDB() {
             return new Promise((resolve, reject) => {
                 const req = indexedDB.open(DB_NAME, DB_VERSION);
                 req.onupgradeneeded = (e) => {
                     const db = e.target.result;
-                    if (!db.objectStoreNames.contains('progress')) db.createObjectStore('progress'); 
+                    if (!db.objectStoreNames.contains('progress')) db.createObjectStore('progress');
                     if (!db.objectStoreNames.contains('history')) db.createObjectStore('history', { autoIncrement: true });
                     if (!db.objectStoreNames.contains('wrongQuestions')) db.createObjectStore('wrongQuestions');
+                    if (!db.objectStoreNames.contains('consolidated')) db.createObjectStore('consolidated');
                 };
                 req.onsuccess = () => resolve(req.result);
                 req.onerror = () => reject(req.error);
             });
         }
-        
         async function idbSet(storeName, key, val) {
             const db = await openDB();
             return new Promise((resolve, reject) => {
@@ -875,7 +637,6 @@
                 tx.onerror = () => reject(tx.error);
             });
         }
-        
         async function idbGet(storeName, key) {
             const db = await openDB();
             return new Promise((resolve, reject) => {
@@ -884,7 +645,6 @@
                 req.onerror = () => reject(req.error);
             });
         }
-
         async function idbDelete(storeName, key) {
             const db = await openDB();
             return new Promise((resolve, reject) => {
@@ -894,7 +654,6 @@
                 tx.onerror = () => reject(tx.error);
             });
         }
-
         async function idbGetAll(storeName) {
             const db = await openDB();
             return new Promise((resolve, reject) => {
@@ -903,7 +662,6 @@
                 req.onerror = () => reject(req.error);
             });
         }
-
         async function idbAddHistory(record) {
             const db = await openDB();
             return new Promise((resolve, reject) => {
@@ -913,70 +671,69 @@
                 tx.onerror = () => reject(tx.error);
             });
         }
-
         async function idbGetAllHistory() { return idbGetAll('history'); }
         async function idbGetAllWrong() { return idbGetAll('wrongQuestions'); }
-
         async function idbClearAll() {
             const db = await openDB();
             return new Promise((resolve, reject) => {
-                const tx = db.transaction(['progress', 'history', 'wrongQuestions'], 'readwrite');
-                tx.objectStore('progress').clear();
-                tx.objectStore('history').clear();
-                tx.objectStore('wrongQuestions').clear();
+                const stores = ['progress', 'history', 'wrongQuestions', 'consolidated'];
+                const tx = db.transaction(stores, 'readwrite');
+                stores.forEach(s => tx.objectStore(s).clear());
                 tx.oncomplete = () => resolve();
                 tx.onerror = () => reject(tx.error);
             });
         }
 
-        /* =========================================================
-           WRONG QUESTION RECORDING
-           ========================================================= */
+        /* ===== CONSOLIDATED POSITION MEMORY ===== */
+        async function saveConPos() {
+            try {
+                await idbSet('consolidated', 'pos_' + conSetIdx, { setIdx: conSetIdx, qIdx: conQIdx, timestamp: Date.now() });
+            } catch(e) { console.warn('saveConPos failed', e); }
+        }
+        async function loadConPos(setIdx) {
+            try {
+                const saved = await idbGet('consolidated', 'pos_' + setIdx);
+                if (saved && typeof saved.qIdx === 'number') return saved.qIdx;
+            } catch(e) {}
+            return null;
+        }
+        async function clearConPos(setIdx) {
+            try { await idbDelete('consolidated', 'pos_' + setIdx); } catch(e) {}
+        }
+
+        /* ===== WRONG QUESTION RECORDING ===== */
         async function recordWrongQuestion(q, setIdx, qIdx) {
             try {
                 const key = hashString(q.question);
                 const existing = await idbGet('wrongQuestions', key);
                 const nowIso = new Date().toISOString();
                 const record = {
-                    key,
-                    question: q.question,
-                    options: q.options,
-                    correctOption: q.correctOption,
-                    explanation: q.explanation || '',
-                    setIndex: setIdx,
-                    qIndex: qIdx,
+                    key, question: q.question, options: q.options,
+                    correctOption: q.correctOption, explanation: q.explanation || '',
+                    setIndex: setIdx, qIndex: qIdx,
                     firstAttempt: existing ? existing.firstAttempt : nowIso,
                     lastAttempt: nowIso,
                     count: existing ? ((existing.count || 1) + 1) : 1
                 };
                 await idbSet('wrongQuestions', key, record);
                 updateReviewBadge();
-            } catch (err) {
-                console.warn('Could not record wrong question:', err);
-            }
+            } catch (err) {}
         }
-
         async function updateReviewBadge() {
             try {
                 const items = await idbGetAllWrong();
                 const badge = document.getElementById('review-tab-count');
                 if (!badge) return;
-                if (items.length > 0) {
-                    badge.textContent = items.length;
-                    badge.classList.remove('hidden');
-                } else {
-                    badge.classList.add('hidden');
-                }
+                if (items.length > 0) { badge.textContent = items.length; badge.classList.remove('hidden'); }
+                else badge.classList.add('hidden');
             } catch(e) {}
         }
 
-        /* =========================================================
-           SESSION STATE
-           ========================================================= */
+        /* ===== SESSION STATE ===== */
         let currentSetIndex = 0;
         let currentQIndex = 0;
         let currentMode = 'practice';
-        let sessionState = []; 
+        let sessionState = [];
         let bookmarked = new Set();
         let stats = { correct: 0, wrong: 0 };
         let timerInterval;
@@ -985,66 +742,37 @@
         let soundEnabled = true;
 
         const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-
         function playBeep(freq, type, duration) {
             if (!soundEnabled) return;
             if (audioCtx.state === 'suspended') audioCtx.resume();
             const osc = audioCtx.createOscillator();
             const gain = audioCtx.createGain();
-            osc.type = type;
-            osc.frequency.value = freq;
+            osc.type = type; osc.frequency.value = freq;
             gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
             gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
-            osc.connect(gain);
-            gain.connect(audioCtx.destination);
-            osc.start();
-            osc.stop(audioCtx.currentTime + duration);
+            osc.connect(gain); gain.connect(audioCtx.destination);
+            osc.start(); osc.stop(audioCtx.currentTime + duration);
         }
         function soundCorrect() { playBeep(600, 'triangle', 0.12); setTimeout(() => playBeep(800, 'triangle', 0.18), 80); }
         function soundWrong() { playBeep(250, 'sawtooth', 0.18); setTimeout(() => playBeep(200, 'sawtooth', 0.25), 120); }
-
         function toggleSound() {
             soundEnabled = !soundEnabled;
-            const icon = document.getElementById('sound-icon');
-            if (soundEnabled) {
-                icon.className = 'fa-solid fa-volume-high';
-                showToast('Sound ON');
-            } else {
-                icon.className = 'fa-solid fa-volume-xmark';
-                showToast('Sound OFF');
-            }
+            document.getElementById('sound-icon').className = soundEnabled ? 'fa-solid fa-volume-high' : 'fa-solid fa-volume-xmark';
+            showToast(soundEnabled ? 'Sound ON' : 'Sound OFF');
         }
 
-        function showToast(msg) {
-            const toast = document.getElementById('toast');
-            toast.textContent = msg;
-            toast.classList.add('show');
-            clearTimeout(toast._timeout);
-            toast._timeout = setTimeout(() => toast.classList.remove('show'), 2000);
-        }
-
-        /* =========================================================
-           INIT
-           ========================================================= */
+        /* ===== INIT ===== */
         async function initApp() {
             await loadAuthenticData();
-            renderSetCards();
+            await renderSetCards();
             updateReviewBadge();
-            showView('sets');
-            const savedState = await idbGet('progress', 'current');
-            if (savedState && savedState.isTestActive) {
-                showDialog('Resume Session', `You have an active ${savedState.mode} session on Set ${savedState.setIndex + 1}. Continue?`, 'confirm', () => {
-                    resumeSession(savedState);
-                });
-            }
+            executeShowView('sets');
         }
 
-        /* =========================================================
-           VIEW NAVIGATION
-           ========================================================= */
+        /* ===== VIEW NAVIGATION ===== */
         function showView(viewId) {
             if (isTestActive && viewId !== 'quiz') {
-                showDialog('Leave Session?', 'Your test is active. Exiting will pause the test, but you can resume it from the Sets menu.', 'confirm', () => {
+                showDialog('Leave Session?', 'Your test is active. Exiting will pause the test.', 'confirm', () => {
                     pauseSession();
                     executeShowView(viewId);
                 });
@@ -1052,67 +780,61 @@
             }
             executeShowView(viewId);
         }
-
         function executeShowView(viewId) {
-            ['view-sets', 'view-analytics', 'view-rules', 'view-quiz', 'view-masterstudy', 'view-fullboard', 'view-review'].forEach(id => {
+            ['view-sets', 'view-analytics', 'view-rules', 'view-quiz', 'view-review'].forEach(id => {
                 const el = document.getElementById(id);
                 if (!el) return;
                 el.classList.add('hidden');
                 el.classList.remove('flex');
             });
+            document.getElementById('view-consolidated').classList.add('hidden');
+            document.getElementById('view-consolidated').classList.remove('flex');
+
             const target = document.getElementById(`view-${viewId}`);
-            if (target) {
-                target.classList.remove('hidden');
-                target.classList.add('flex');
-            }
-            
+            if (target) { target.classList.remove('hidden'); target.classList.add('flex'); }
+
             if (viewId === 'quiz') {
                 document.getElementById('main-tabs').classList.add('hidden');
                 document.getElementById('quiz-footer').classList.remove('hidden');
-                document.getElementById('quiz-footer').classList.add('mobile-sticky-footer');
             } else {
                 document.getElementById('main-tabs').classList.remove('hidden');
                 document.getElementById('quiz-footer').classList.add('hidden');
-                document.getElementById('quiz-footer').classList.remove('mobile-sticky-footer');
                 document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
                 const activeTab = document.querySelector(`[data-tab="${viewId}"]`);
                 if(activeTab) activeTab.classList.add('active');
             }
-            
             if (viewId === 'analytics') renderAnalytics();
-            if (viewId === 'masterstudy') renderMasterQuestion();
-            if (viewId === 'fullboard') renderFullBoard();
             if (viewId === 'review') renderReview();
             window.scrollTo(0,0);
         }
-
         function requestHome() {
             if (isTestActive) {
-                showDialog('Warning', 'Exiting now will pause your session. You can resume later.', 'confirm', () => {
+                showDialog('Warning', 'Exiting now will pause your session.', 'confirm', () => {
                     pauseSession();
                     executeShowView('sets');
                 });
-            } else {
-                executeShowView('sets');
-            }
+            } else executeShowView('sets');
         }
 
-        /* =========================================================
-           SET CARDS
-           ========================================================= */
+        /* ===== SET CARDS (with memory hint) ===== */
         async function renderSetCards() {
             const grid = document.getElementById('set-cards-grid');
             grid.innerHTML = '';
             const history = await idbGetAllHistory();
             const savedState = await idbGet('progress', 'current');
 
-            allSetsData.forEach((set, idx) => {
+            for (let idx = 0; idx < allSetsData.length; idx++) {
+                const set = allSetsData[idx];
                 const setHistory = history.filter(h => h.set === idx);
                 let bestScore = -999;
                 setHistory.forEach(h => { if(h.score > bestScore) bestScore = h.score; });
-                
+
                 const isResumable = savedState && savedState.isTestActive && savedState.setIndex === idx;
                 const isCompleted = setHistory.length > 0;
+
+                // Check for consolidated memory
+                const conPos = await loadConPos(idx);
+                const hasMemory = conPos !== null && conPos > 0;
 
                 let badge = '';
                 if(isResumable) badge = '<div class="badge resume">Resume Session</div>';
@@ -1123,42 +845,40 @@
                 const titleColor = isHindi ? 'text-orange-400' : 'text-blue-400';
                 const titleText = isHindi ? `Set ${idx + 1} (Hindi)` : `Set ${idx + 1}`;
 
+                const memoryHint = hasMemory ? `<div class="memory-hint"><i class="fa-solid fa-bookmark"></i> Study-All memory: Resume from Q${conPos + 1}</div>` : '';
+
                 grid.innerHTML += `
                     <div class="set-card">
                         <div>
                             ${badge}
                             <div class="text-3xl font-bold ${titleColor} poppins mb-1">${titleText}</div>
-                            <div class="text-xs text-gray-400 mb-4">${set.length} Questions</div>
-                            ${isCompleted ? `<div class="text-sm font-semibold mb-3">Highest Score: <span class="text-amber-400">${parseFloat(bestScore).toFixed(2)} / 300</span></div>` : '<div class="h-8"></div>'}
+                            <div class="text-xs text-gray-400 mb-3">${set.length} Questions</div>
+                            ${isCompleted ? `<div class="text-sm font-semibold mb-2">Highest: <span class="text-amber-400">${parseFloat(bestScore).toFixed(2)} / 300</span></div>` : '<div class="h-6"></div>'}
+                            ${memoryHint}
                         </div>
-                        <div class="mt-2">
+                        <div class="mt-3">
                             <div class="flex gap-2 mb-2">
-                                <button onclick="startSession(${idx}, 'practice')" class="btn-action btn-practice"><i class="fa-solid fa-stopwatch"></i> Practice</button>
-                                <button onclick="startSession(${idx}, 'study')" class="btn-action btn-study"><i class="fa-solid fa-book-open"></i> Study</button>
+                                <button onclick="event.stopPropagation(); startSession(${idx}, 'practice')" class="btn-action btn-practice"><i class="fa-solid fa-stopwatch"></i> Practice</button>
+                                <button onclick="event.stopPropagation(); startSession(${idx}, 'study')" class="btn-action btn-study"><i class="fa-solid fa-book-open"></i> Study</button>
                             </div>
-                            <button onclick="startMasterStudy(${idx})" class="btn-action btn-master w-full"><i class="fa-solid fa-tv"></i> Study All / Review Set</button>
+                            <button onclick="event.stopPropagation(); openConsolidated(${idx})" class="btn-action btn-studyall w-full"><i class="fa-solid fa-book-reader"></i> Study All / Review Set</button>
                         </div>
                     </div>
                 `;
-            });
-        }
-
-        /* =========================================================
-           SESSION LIFECYCLE
-           ========================================================= */
-        async function startSession(setIdx, mode) {
-            const savedState = await idbGet('progress', 'current');
-            if (savedState && savedState.isTestActive && savedState.setIndex !== setIdx) {
-                showDialog('Start New?', `This will override your paused ${savedState.mode} session on Set ${savedState.setIndex + 1}.`, 'confirm', () => {
-                    initNewSession(setIdx, mode);
-                });
-            } else if (savedState && savedState.isTestActive && savedState.setIndex === setIdx && savedState.mode === mode) {
-                resumeSession(savedState);
-            } else {
-                initNewSession(setIdx, mode);
             }
         }
 
+        /* ===== SESSION ===== */
+        async function startSession(setIdx, mode) {
+            try {
+                const savedState = await idbGet('progress', 'current');
+                if (savedState && savedState.isTestActive && savedState.setIndex === setIdx && savedState.mode === mode) {
+                    resumeSession(savedState);
+                    return;
+                }
+            } catch(e) {}
+            initNewSession(setIdx, mode);
+        }
         function initNewSession(setIdx, mode) {
             currentSetIndex = setIdx;
             currentMode = mode;
@@ -1168,14 +888,12 @@
             stats = { correct: 0, wrong: 0 };
             timeRemaining = 120 * 60;
             isTestActive = true;
-            
             setupQuizUI(mode);
             executeShowView('quiz');
             renderQuestion();
             updateFooterStats();
             saveProgress();
         }
-
         function resumeSession(state) {
             currentSetIndex = state.setIndex;
             currentMode = state.mode;
@@ -1185,23 +903,19 @@
             stats = state.stats;
             timeRemaining = state.timeRemaining;
             isTestActive = true;
-
             setupQuizUI(currentMode);
             executeShowView('quiz');
             renderQuestion();
             updateFooterStats();
         }
-
         function setupQuizUI(mode) {
             document.getElementById('header-subtitle').innerText = mode === 'practice' ? 'Practice Mode' : 'Study Mode';
             const banner = document.getElementById('study-mode-banner');
             const expertBtn = document.getElementById('btn-expert-advice');
             const timerUI = document.getElementById('timer-display');
-            
             if (mode === 'study') {
                 banner.classList.remove('hidden');
                 expertBtn.classList.remove('hidden');
-                expertBtn.innerHTML = '<i class="fa-solid fa-lightbulb text-yellow-300"></i> Open Expert Advice Modal';
                 timerUI.classList.add('opacity-50');
                 clearInterval(timerInterval);
                 timerUI.innerHTML = `<i class="fa-solid fa-infinity"></i> <span>Study</span>`;
@@ -1212,7 +926,6 @@
                 startTimer();
             }
         }
-
         async function saveProgress() {
             if (!isTestActive) return;
             const state = {
@@ -1222,40 +935,32 @@
             };
             await idbSet('progress', 'current', state);
         }
-
         async function pauseSession() {
             isTestActive = false;
             clearInterval(timerInterval);
             await saveProgress();
-            renderSetCards();
+            await renderSetCards();
         }
 
-        /* =========================================================
-           QUESTION RENDERING (QUIZ MODE)
-           ========================================================= */
+        /* ===== QUESTION RENDERING ===== */
         function renderQuestion() {
             const set = allSetsData[currentSetIndex];
             const q = set[currentQIndex];
             const isAnswered = sessionState[currentQIndex] !== null;
-
             document.getElementById('progress-counter').innerText = `Q: ${currentQIndex + 1}/${set.length}`;
             document.getElementById('question-text').innerHTML = `<span class="text-blue-400 font-bold poppins text-lg">Q${currentQIndex + 1}.</span> ${sanitizeHtml(q.question)}`;
             document.getElementById('mark-review-checkbox').checked = bookmarked.has(currentQIndex);
 
             const grid = document.getElementById('options-grid');
             grid.innerHTML = '';
-            
             q.options.forEach((opt, idx) => {
                 const btn = document.createElement('button');
                 btn.id = `opt-${idx}`;
                 const label = String.fromCharCode(65 + idx);
                 btn.innerHTML = `<span class="text-blue-400 font-bold w-6 text-left shrink-0">${label}.</span> <span>${sanitizeHtml(opt)}</span>`;
-                
                 if (currentMode === 'study') {
                     btn.className = "option-btn opacity-90 cursor-default";
-                    if (idx === q.correctOption) {
-                        btn.classList.add('option-correct', 'opacity-100');
-                    }
+                    if (idx === q.correctOption) btn.classList.add('option-correct', 'opacity-100');
                 } else {
                     if (!isAnswered) {
                         btn.className = "option-btn";
@@ -1263,9 +968,7 @@
                     } else {
                         btn.className = "option-btn opacity-80 cursor-default";
                         if (idx === q.correctOption) btn.classList.add('option-correct', 'opacity-100');
-                        else if (idx === sessionState[currentQIndex].selected && !sessionState[currentQIndex].isCorrect) {
-                            btn.classList.add('option-wrong', 'opacity-100');
-                        }
+                        else if (idx === sessionState[currentQIndex].selected && !sessionState[currentQIndex].isCorrect) btn.classList.add('option-wrong', 'opacity-100');
                     }
                 }
                 grid.appendChild(btn);
@@ -1274,44 +977,30 @@
             const studyExpContainer = document.getElementById('study-explanation-container');
             if (currentMode === 'study') {
                 studyExpContainer.classList.remove('hidden');
-                studyExpContainer.innerHTML = `
-                    <div class="study-explanation-box">
-                        <div class="font-bold text-purple-400 mb-2 flex items-center gap-2">
-                            <i class="fa-solid fa-lightbulb text-yellow-400"></i> Expert Advice:
-                        </div>
-                        <div class="text-sm text-gray-300 leading-relaxed" style="word-break: break-word;">
-                            ${sanitizeHtml(q.explanation || 'No explanation provided.')}
-                        </div>
-                    </div>
-                `;
+                studyExpContainer.innerHTML = `<div class="study-explanation-box">
+                    <div class="font-bold text-purple-400 mb-2 flex items-center gap-2"><i class="fa-solid fa-lightbulb text-yellow-400"></i> Expert Advice:</div>
+                    <div class="text-sm text-gray-300 leading-relaxed" style="word-break: break-word;">${sanitizeHtml(q.explanation || 'No explanation provided.')}</div>
+                </div>`;
             } else {
                 studyExpContainer.classList.add('hidden');
                 studyExpContainer.innerHTML = '';
             }
-            
             renderPalette();
             window.scrollTo(0,0);
         }
-
         function selectOption(idx) {
             if (currentMode === 'study' || sessionState[currentQIndex] !== null) return;
-            
             playBeep(300, 'sine', 0.08);
             const q = allSetsData[currentSetIndex][currentQIndex];
             const isCorrect = (idx === q.correctOption);
-            
-            sessionState[currentQIndex] = { selected: idx, isCorrect: isCorrect };
-            if (isCorrect) stats.correct++;
-            else stats.wrong++;
-            
+            sessionState[currentQIndex] = { selected: idx, isCorrect };
+            if (isCorrect) stats.correct++; else stats.wrong++;
             updateFooterStats();
-            document.getElementById(`opt-${idx}`).classList.add('option-selected');
-            
+            const selectedBtn = document.getElementById(`opt-${idx}`);
+            selectedBtn.classList.add('option-selected');
             setTimeout(() => {
-                const selectedBtn = document.getElementById(`opt-${idx}`);
                 const correctBtn = document.getElementById(`opt-${q.correctOption}`);
                 selectedBtn.classList.remove('option-selected');
-                
                 if (isCorrect) {
                     selectedBtn.classList.add('option-correct');
                     soundCorrect();
@@ -1327,296 +1016,296 @@
                 renderPalette();
             }, 300);
         }
-
         function toggleBookmark() {
             if (bookmarked.has(currentQIndex)) bookmarked.delete(currentQIndex);
             else bookmarked.add(currentQIndex);
             renderPalette();
             saveProgress();
         }
-
         function updateFooterStats() {
             document.getElementById('live-correct').innerText = stats.correct;
             document.getElementById('live-wrong').innerText = stats.wrong;
             if(currentMode === 'practice') {
                 const finalScore = (stats.correct * 2.5) - (stats.wrong * 0.83);
                 document.getElementById('live-score-display').innerText = finalScore.toFixed(2);
-            } else {
-                document.getElementById('live-score-display').innerText = '---';
-            }
+            } else document.getElementById('live-score-display').innerText = '---';
         }
-
         function nextQuestion() {
-            if (currentQIndex < allSetsData[currentSetIndex].length - 1) {
-                currentQIndex++;
-                renderQuestion();
-                saveProgress();
-            } else {
-                showToast("End of Set");
-            }
+            if (currentQIndex < allSetsData[currentSetIndex].length - 1) { currentQIndex++; renderQuestion(); saveProgress(); }
+            else showToast("End of Set");
         }
-
         function prevQuestion() {
-            if (currentQIndex > 0) {
-                currentQIndex--;
-                renderQuestion();
-                saveProgress();
-            }
+            if (currentQIndex > 0) { currentQIndex--; renderQuestion(); saveProgress(); }
         }
-
         function jumpToQuestion(idx) {
-            currentQIndex = idx;
-            renderQuestion();
-            saveProgress();
+            currentQIndex = idx; renderQuestion(); saveProgress();
             document.getElementById('palette-panel').classList.remove('open');
         }
 
-        /* =========================================================
-           MASTER STUDY (TV OPTIMIZED - ALL SETS FLATTENED)
-           ========================================================= */
-        function startMasterStudy(setIdx = null) {
-            if (setIdx !== null) {
-                // Find the index in masterQuestions for the first question of this set
-                const targetIndex = masterQuestions.findIndex(q => q.setIndex === setIdx && q.qIndex === 0);
-                if (targetIndex !== -1) {
-                    currentMasterIndex = targetIndex;
+        /* ===== EXPLANATION MODAL ===== */
+        function showCurrentExplanation() {
+            const q = allSetsData[currentSetIndex][currentQIndex];
+            showExplanationModal(true, q, q.correctOption, true);
+        }
+        function showExplanationModal(isCorrect, q, selectedIdx, isStudyForce = false) {
+            const modal = document.getElementById('explanation-modal');
+            const title = document.getElementById('modal-title');
+            const subtitle = document.getElementById('modal-subtitle');
+            if (isStudyForce) {
+                title.innerHTML = '<i class="fa-solid fa-lightbulb text-yellow-400"></i> <span class="text-yellow-400">Expert Advice</span>';
+                subtitle.innerHTML = `<div class="mb-2 font-bold text-blue-300">Answer: ${sanitizeHtml(q.options[q.correctOption])}</div><div class="bg-black/50 p-4 rounded-xl border border-blue-500/30 text-gray-200"><b>Explanation:</b><br><br>${sanitizeHtml(q.explanation)}</div>`;
+            } else if (isCorrect) {
+                title.innerHTML = '<i class="fa-solid fa-circle-check text-green-400"></i> <span class="text-green-400">Correct! (+2.5)</span>';
+                subtitle.innerHTML = `<div class="bg-black/50 p-4 rounded-xl border border-green-500/30 text-gray-200"><b>Explanation:</b><br><br>${sanitizeHtml(q.explanation)}</div>`;
+            } else {
+                title.innerHTML = '<i class="fa-solid fa-circle-xmark text-red-500"></i> <span class="text-red-500">Wrong! (-0.83)</span>';
+                subtitle.innerHTML = `<div class="mb-3">Correct Answer: <span class="text-green-400 font-bold block mt-1">${sanitizeHtml(q.options[q.correctOption])}</span></div><div class="bg-black/50 p-4 rounded-xl border border-red-500/30 text-gray-300"><b>Explanation:</b><br><br>${sanitizeHtml(q.explanation)}</div>`;
+            }
+            modal.classList.remove('hidden');
+        }
+        function closeExplanation(e) {
+            if(e && e.target !== document.getElementById('explanation-modal')) return;
+            document.getElementById('explanation-modal').classList.add('hidden');
+        }
+        function closeExplanationAndNext() { closeExplanation(); nextQuestion(); }
+
+        /* ===== TIMER ===== */
+        function startTimer() {
+            clearInterval(timerInterval);
+            updateTimerUI();
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                updateTimerUI();
+                if (timeRemaining % 30 === 0) saveProgress();
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    showDialog('Time Up!', 'Your 120 minutes are over. Auto-submitting the test.', 'alert', () => forceSubmit());
                 }
-            } else {
-                currentMasterIndex = 0;
-            }
-            executeShowView('masterstudy');
+            }, 1000);
+        }
+        function updateTimerUI() {
+            const h = Math.floor(timeRemaining / 3600).toString().padStart(2, '0');
+            const m = Math.floor((timeRemaining % 3600) / 60).toString().padStart(2, '0');
+            const s = (timeRemaining % 60).toString().padStart(2, '0');
+            document.getElementById('timer-display').innerHTML = `<i class="fa-regular fa-clock"></i> <span>${h}:${m}:${s}</span>`;
         }
 
-        function renderMasterQuestion() {
-            if (masterQuestions.length === 0) return;
-            if (currentMasterIndex < 0) currentMasterIndex = 0;
-            if (currentMasterIndex >= masterQuestions.length) currentMasterIndex = masterQuestions.length - 1;
-
-            const q = masterQuestions[currentMasterIndex];
-            const setIdx = q.setIndex;
-            const lang = q.language;
-            const isHindi = lang === 'Hindi';
-
-            // Update Header
-            document.getElementById('master-study-progress').innerText = `Q: ${currentMasterIndex + 1} / ${masterQuestions.length}`;
-            const langBadge = document.getElementById('master-study-set-lang');
-            langBadge.innerText = `Set ${setIdx + 1} (${lang})`;
-            langBadge.className = `text-[10px] px-2 py-0.5 rounded-full border font-bold ${isHindi ? 'bg-orange-900/50 text-orange-300 border-orange-500/40' : 'bg-blue-900/50 text-blue-300 border-blue-500/40'}`;
-            
-            // Update Question Text
-            document.getElementById('master-question-text').innerHTML = `<span class="text-blue-400 font-bold poppins text-lg">Q${q.qIndex + 1}.</span> ${sanitizeHtml(q.question)}`;
-
-            // Update Options
-            const grid = document.getElementById('master-options-grid');
+        /* ===== PALETTE (Quiz) ===== */
+        function togglePalette() { document.getElementById('palette-panel').classList.toggle('open'); }
+        function renderPalette() {
+            const grid = document.getElementById('palette-grid');
             grid.innerHTML = '';
-            q.options.forEach((opt, idx) => {
-                const btn = document.createElement('button');
-                btn.id = `master-opt-${idx}`;
-                const label = String.fromCharCode(65 + idx);
-                btn.innerHTML = `<span class="text-blue-400 font-bold w-8 text-left shrink-0 text-lg">${label}.</span> <span class="text-base">${sanitizeHtml(opt)}</span>`;
-                
-                // In Master Study, answers are pre-highlighted (Study Mode)
-                btn.className = "option-btn opacity-90 cursor-default";
-                if (idx === q.correctOption) {
-                    btn.classList.add('option-correct', 'opacity-100');
-                }
-                grid.appendChild(btn);
-            });
-
-            // Update Expert Advice
-            document.getElementById('master-expert-advice-text').innerHTML = sanitizeHtml(q.explanation || 'No explanation provided.');
-
-            // Update Jump Input Placeholder
-            document.getElementById('master-jump-input').placeholder = `Q # (1-${masterQuestions.length})`;
-            
-            // Render Master Palette if open
-            if (document.getElementById('master-palette-panel').classList.contains('flex')) {
-                renderMasterPalette();
-            }
-        }
-
-        function masterNext() {
-            if (currentMasterIndex < masterQuestions.length - 1) {
-                currentMasterIndex++;
-                renderMasterQuestion();
-                window.scrollTo({top: 0, behavior: 'smooth'});
-            } else {
-                showToast("End of Master Study");
-            }
-        }
-
-        function masterPrev() {
-            if (currentMasterIndex > 0) {
-                currentMasterIndex--;
-                renderMasterQuestion();
-                window.scrollTo({top: 0, behavior: 'smooth'});
-            } else {
-                showToast("Start of Master Study");
-            }
-        }
-
-        function jumpToMasterQuestion(val) {
-            const num = parseInt(val);
-            if (!isNaN(num) && num >= 1 && num <= masterQuestions.length) {
-                currentMasterIndex = num - 1;
-                renderMasterQuestion();
-                window.scrollTo({top: 0, behavior: 'smooth'});
-            } else {
-                showToast(`Please enter a number between 1 and ${masterQuestions.length}`);
-            }
-        }
-
-        function toggleMasterPalette(e) {
-            if (e && e.target !== document.getElementById('master-palette-panel')) return;
-            const panel = document.getElementById('master-palette-panel');
-            if (panel.classList.contains('hidden')) {
-                panel.classList.remove('hidden');
-                panel.classList.add('flex');
-                renderMasterPalette();
-            } else {
-                panel.classList.add('hidden');
-                panel.classList.remove('flex');
-            }
-        }
-
-        function renderMasterPalette() {
-            const grid = document.getElementById('master-palette-grid');
-            grid.innerHTML = '';
-            masterQuestions.forEach((q, idx) => {
+            const setLength = allSetsData[currentSetIndex].length;
+            for (let i = 0; i < setLength; i++) {
                 const btn = document.createElement('button');
                 btn.className = 'palette-btn';
-                btn.textContent = idx + 1;
-                if (idx === currentMasterIndex) btn.classList.add('current');
-                // In Master Study, all are technically "correct" as it's study mode
-                btn.classList.add('correct'); 
-                btn.onclick = () => {
-                    currentMasterIndex = idx;
-                    renderMasterQuestion();
-                    toggleMasterPalette();
-                };
+                btn.textContent = i + 1;
+                if (i === currentQIndex) btn.classList.add('current');
+                if (bookmarked.has(i)) btn.classList.add('bookmarked');
+                if (currentMode === 'practice') {
+                    if (sessionState[i]) { if (sessionState[i].isCorrect) btn.classList.add('correct'); else btn.classList.add('wrong'); }
+                } else { if (sessionState[i]) btn.classList.add('answered'); }
+                btn.onclick = () => jumpToQuestion(i);
                 grid.appendChild(btn);
-            });
-            // Scroll to current item
-            setTimeout(() => {
-                const currentBtn = grid.querySelector('.palette-btn.current');
-                if (currentBtn) currentBtn.scrollIntoView({ block: 'center' });
-            }, 100);
+            }
         }
 
-        // Keyboard Shortcuts for Master Study
-        document.addEventListener('keydown', (e) => {
-            const activeView = document.querySelector('main.flex:not(.hidden)')?.id;
-            if (activeView !== 'view-masterstudy') return;
-            
-            // Ignore if typing in input
-            if (document.activeElement.tagName === 'INPUT') return;
+        /* ===== SUBMIT ===== */
+        function requestSubmit() {
+            const unans = sessionState.filter(s => s === null).length;
+            let msg = currentMode === 'practice' ? `You have ${unans} unanswered questions. Submit?` : `Exit Study Mode?`;
+            showDialog('Submit Test', msg, 'confirm', () => forceSubmit());
+        }
+        async function forceSubmit() {
+            isTestActive = false;
+            clearInterval(timerInterval);
+            document.getElementById('palette-panel').classList.remove('open');
+            if (currentMode === 'practice') {
+                const finalScore = (stats.correct * 2.5) - (stats.wrong * 0.83);
+                const attempt = {
+                    date: new Date().toLocaleString('en-IN', { dateStyle: 'short', timeStyle: 'short' }),
+                    set: currentSetIndex, correct: stats.correct, wrong: stats.wrong,
+                    attempted: stats.correct + stats.wrong, score: finalScore
+                };
+                await idbAddHistory(attempt);
+                showDialog('Test Submitted!', `Score: ${finalScore.toFixed(2)}/300\nCorrect: ${stats.correct}\nWrong: ${stats.wrong}`, 'alert', () => executeShowView('analytics'));
+            } else {
+                executeShowView('sets');
+            }
+            await idbSet('progress', 'current', null);
+            await renderSetCards();
+            updateReviewBadge();
+        }
 
-            if (e.key === 'ArrowLeft') {
-                e.preventDefault();
-                masterPrev();
-            } else if (e.key === 'ArrowRight') {
-                e.preventDefault();
-                masterNext();
-            } else if (e.key >= '1' && e.key <= '4') {
-                const optIdx = parseInt(e.key) - 1;
-                const btn = document.getElementById(`master-opt-${optIdx}`);
-                if (btn) {
-                    // Just animate the button to show selection
-                    btn.style.transform = 'scale(0.95)';
-                    setTimeout(() => btn.style.transform = '', 150);
-                }
-            } else if (e.key === 'Enter') {
-                const jumpInput = document.getElementById('master-jump-input');
-                if (document.activeElement === jumpInput) {
-                    jumpToMasterQuestion(jumpInput.value);
+        /* ===== CONSOLIDATED STUDY ALL VIEW ===== */
+        let conSetIdx = 0;
+        let conQIdx = 0;
+
+        async function openConsolidated(setIdx) {
+            conSetIdx = setIdx;
+            // Restore memory position
+            const savedQ = await loadConPos(setIdx);
+            if (savedQ !== null && savedQ > 0) {
+                conQIdx = savedQ;
+                showToast(`Resumed from Q${conQIdx + 1}`);
+            } else {
+                conQIdx = 0;
+            }
+            const view = document.getElementById('view-consolidated');
+            view.classList.remove('hidden');
+            view.classList.add('flex');
+            document.getElementById('main-tabs').classList.add('hidden');
+            document.getElementById('quiz-footer').classList.add('hidden');
+            await renderConsolidated();
+        }
+        function closeConsolidated() {
+            document.getElementById('view-consolidated').classList.add('hidden');
+            document.getElementById('view-consolidated').classList.remove('flex');
+            document.getElementById('con-palette-panel').classList.remove('open');
+            executeShowView('sets');
+        }
+        async function renderConsolidated() {
+            if (allSetsData.length === 0) return;
+            if (conSetIdx < 0) conSetIdx = 0;
+            if (conSetIdx >= allSetsData.length) conSetIdx = allSetsData.length - 1;
+            const set = allSetsData[conSetIdx];
+            if (conQIdx < 0) conQIdx = 0;
+            if (conQIdx >= set.length) conQIdx = set.length - 1;
+            const q = set[conQIdx];
+
+            const lang = setMetadata[conSetIdx]?.language || 'English';
+            const isHindi = lang === 'Hindi';
+
+            document.getElementById('con-set-label').textContent = `Set ${conSetIdx + 1}`;
+            const langBadge = document.getElementById('con-lang-badge');
+            langBadge.textContent = lang;
+            langBadge.className = `text-[10px] px-2 py-0.5 rounded-full border font-bold ${isHindi ? 'bg-orange-900/50 text-orange-300 border-orange-500/40' : 'bg-blue-900/50 text-blue-300 border-blue-500/40'}`;
+            document.getElementById('con-progress').textContent = `Q: ${conQIdx + 1}/${set.length}`;
+
+            document.getElementById('con-question-text').innerHTML = `<span class="text-blue-400 font-bold">Q${conQIdx + 1}.</span> ${sanitizeHtml(q.question)}`;
+
+            const optContainer = document.getElementById('con-options');
+            optContainer.innerHTML = '';
+            q.options.forEach((opt, idx) => {
+                const div = document.createElement('div');
+                const label = String.fromCharCode(65 + idx);
+                const isCorrect = idx === q.correctOption;
+                div.className = `con-opt ${isCorrect ? 'correct' : ''}`;
+                div.innerHTML = `<span class="font-bold shrink-0 ${isCorrect ? 'text-emerald-300' : 'text-blue-400'}">${label}.</span><span class="flex-1">${sanitizeHtml(opt)}</span>${isCorrect ? '<i class="fa-solid fa-circle-check shrink-0 mt-0.5"></i>' : ''}`;
+                optContainer.appendChild(div);
+            });
+
+            document.getElementById('con-exp-text').innerHTML = sanitizeHtml(q.explanation || 'No explanation provided.');
+            document.querySelector('.con-question-card').scrollTop = 0;
+            document.querySelector('.con-exp-card').scrollTop = 0;
+
+            if (document.getElementById('con-palette-panel').classList.contains('open')) renderConPalette();
+
+            document.getElementById('con-jump-input').placeholder = `1-${set.length}`;
+
+            // Save memory position
+            await saveConPos();
+        }
+        function conPrev() {
+            if (conQIdx > 0) { conQIdx--; renderConsolidated(); }
+            else showToast('Start of Set');
+        }
+        function conNext() {
+            const set = allSetsData[conSetIdx];
+            if (conQIdx < set.length - 1) { conQIdx++; renderConsolidated(); }
+            else showToast('End of Set');
+        }
+        function jumpConsolidated(val) {
+            const num = parseInt(val);
+            const set = allSetsData[conSetIdx];
+            if (!isNaN(num) && num >= 1 && num <= set.length) {
+                conQIdx = num - 1;
+                renderConsolidated();
+                document.getElementById('con-jump-input').value = '';
+            } else showToast(`Enter 1 to ${set.length}`);
+        }
+        function toggleConPalette() {
+            const p = document.getElementById('con-palette-panel');
+            if (p.classList.contains('open')) p.classList.remove('open');
+            else { p.classList.add('open'); renderConPalette(); }
+        }
+        function renderConPalette() {
+            const grid = document.getElementById('con-palette-grid');
+            grid.innerHTML = '';
+            const set = allSetsData[conSetIdx];
+            for (let i = 0; i < set.length; i++) {
+                const btn = document.createElement('button');
+                btn.className = 'palette-btn';
+                btn.textContent = i + 1;
+                if (i === conQIdx) btn.classList.add('current');
+                btn.classList.add('correct');
+                btn.onclick = () => {
+                    conQIdx = i;
+                    renderConsolidated();
+                    toggleConPalette();
+                };
+                grid.appendChild(btn);
+            }
+            setTimeout(() => {
+                const cur = grid.querySelector('.palette-btn.current');
+                if (cur) cur.scrollIntoView({ block: 'center' });
+            }, 50);
+        }
+
+        /* ===== KEYBOARD SHORTCUTS (0 = Prev, 9 = Next) ===== */
+        document.addEventListener('keydown', (e) => {
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+            const conView = document.getElementById('view-consolidated');
+            if (conView && conView.classList.contains('flex')) {
+                if (e.key === '0' || e.key === 'Numpad0' || e.key === 'ArrowLeft') { e.preventDefault(); conPrev(); }
+                else if (e.key === '9' || e.key === 'Numpad9' || e.key === 'ArrowRight') { e.preventDefault(); conNext(); }
+                else if (e.key === 'Escape' || e.key === 'Backspace') { e.preventDefault(); closeConsolidated(); }
+                return;
+            }
+            const quizView = document.getElementById('view-quiz');
+            if (quizView && !quizView.classList.contains('hidden')) {
+                if (e.key === '0' || e.key === 'Numpad0') { e.preventDefault(); prevQuestion(); }
+                else if (e.key === '9' || e.key === 'Numpad9') { e.preventDefault(); nextQuestion(); }
+                else if (currentMode === 'practice' && ['1','2','3','4'].includes(e.key)) {
+                    const idx = parseInt(e.key) - 1;
+                    const btn = document.getElementById(`opt-${idx}`);
+                    if (btn && btn.onclick) { e.preventDefault(); btn.click(); }
                 }
             }
         });
 
-        /* =========================================================
-           FULL BOARD (SCROLL VIEW)
-           ========================================================= */
-        function renderFullBoard() {
-            const container = document.getElementById('fullboard-content');
-            if (!container) return;
-            let html = '';
-            let totalQ = 0;
-            
-            allSetsData.forEach((set, sIdx) => {
-                const lang = setMetadata[sIdx]?.language || 'English';
-                const isHindi = lang === 'Hindi';
-                const badgeColor = isHindi ? 'bg-orange-900/50 text-orange-300 border-orange-500/40' : 'bg-blue-900/50 text-blue-300 border-blue-500/40';
-                
-                html += `<div class="mb-10">
-                    <div class="flex items-center gap-3 mb-4 sticky top-0 z-10 bg-slate-900/95 py-3 backdrop-blur-md rounded-xl px-3 border-b border-slate-700">
-                        <h3 class="text-xl font-bold poppins ${isHindi ? 'text-orange-400' : 'text-blue-400'}">Set ${sIdx + 1}</h3>
-                        <span class="text-[10px] px-2 py-0.5 rounded-full border ${badgeColor} font-bold">${lang}</span>
-                        <span class="text-xs text-gray-500 ml-auto">${set.length} Questions</span>
-                    </div>
-                    <div class="space-y-4">`;
-                
-                set.forEach((q, qIdx) => {
-                    totalQ++;
-                    const searchStr = (String(q.question).replace(/<[^>]*>?/gm, '') + ' ' + String(q.explanation).replace(/<[^>]*>?/gm, '')).toLowerCase().replace(/"/g, '&quot;');
-                    
-                    let optionsHtml = '';
-                    q.options.forEach((opt, oi) => {
-                        const isCorrect = oi === q.correctOption;
-                        optionsHtml += `<div class="master-opt ${isCorrect ? 'correct' : ''}">
-                            <span class="font-bold mr-2">${String.fromCharCode(65 + oi)}.</span> 
-                            <span>${sanitizeHtml(opt)}</span>
-                            ${isCorrect ? '<i class="fa-solid fa-circle-check float-right mt-1 ml-auto shrink-0"></i>' : ''}
-                        </div>`;
-                    });
-
-                    html += `<div class="master-q-card" data-search="${searchStr}">
-                        <div class="master-q-title">
-                            <span class="text-blue-400 font-bold mr-2">Q${qIdx + 1}.</span> ${sanitizeHtml(q.question)}
-                        </div>
-                        <div class="mb-2">${optionsHtml}</div>
-                        <div class="master-exp-box">
-                            <div class="font-bold text-purple-400 mb-2 flex items-center gap-2">
-                                <i class="fa-solid fa-lightbulb text-yellow-400"></i> Expert Advice:
-                            </div>
-                            <div>${sanitizeHtml(q.explanation || 'No explanation provided.')}</div>
-                        </div>
-                    </div>`;
-                });
-                
-                html += `</div></div>`;
+        /* ===== ANALYTICS ===== */
+        async function renderAnalytics() {
+            const history = await idbGetAllHistory();
+            const tbody = document.getElementById('history-table-body');
+            tbody.innerHTML = '';
+            let tCorrect = 0, tWrong = 0, tAttempted = 0;
+            history.forEach(h => {
+                tCorrect += h.correct; tWrong += h.wrong; tAttempted += h.attempted;
+                const lang = setMetadata[h.set]?.language || 'English';
+                const label = lang === 'Hindi' ? `Set ${h.set + 1} (Hindi)` : `Set ${h.set + 1}`;
+                tbody.innerHTML += `<tr class="border-b border-white/5 hover:bg-white/5 transition">
+                    <td class="p-3">${h.date}</td>
+                    <td class="p-3 text-center text-blue-300 font-bold">${label}</td>
+                    <td class="p-3 text-center text-green-400">${h.correct}</td>
+                    <td class="p-3 text-center text-red-400">${h.wrong}</td>
+                    <td class="p-3 text-center font-bold text-amber-400">${parseFloat(h.score).toFixed(2)}</td>
+                </tr>`;
             });
-            
-            if (totalQ === 0) {
-                html = '<div class="text-center py-12 text-gray-500"><i class="fa-solid fa-inbox text-5xl mb-3 opacity-40"></i><p>No questions loaded. Check your JSON files.</p></div>';
-            } else {
-                html = `<div class="text-xs text-gray-400 mb-3 px-1"><i class="fa-solid fa-database"></i> Showing <b class="text-blue-300">${totalQ}</b> questions across <b class="text-blue-300">${allSetsData.length}</b> sets.</div>` + html;
-            }
-            
-            container.innerHTML = html;
-            container.scrollTop = 0;
+            if (history.length === 0) tbody.innerHTML = '<tr><td colspan="5" class="p-5 text-center text-gray-500">No practice tests completed yet.</td></tr>';
+            document.getElementById('stat-attempted').innerText = tAttempted;
+            document.getElementById('stat-correct').innerText = tCorrect;
+            document.getElementById('stat-wrong').innerText = tWrong;
+            document.getElementById('stat-accuracy').innerText = tAttempted > 0 ? Math.round((tCorrect / tAttempted) * 100) + '%' : '0%';
         }
 
-        function filterFullBoard() {
-            const q = document.getElementById('fullboard-search').value.toLowerCase().trim();
-            document.querySelectorAll('#fullboard-content [data-search]').forEach(el => {
-                if (!q) {
-                    el.style.display = '';
-                } else {
-                    el.style.display = el.dataset.search.includes(q) ? '' : 'none';
-                }
-            });
-        }
-
-        /* =========================================================
-           REVIEW (INCORRECT QUESTIONS)
-           ========================================================= */
+        /* ===== REVIEW ===== */
         async function renderReview() {
             const container = document.getElementById('review-content');
             const items = await idbGetAllWrong();
-            
             document.getElementById('review-count').textContent = items.length;
             updateReviewBadge();
-            
             if (items.length === 0) {
                 container.innerHTML = `<div class="text-center py-12 text-gray-500">
                     <i class="fa-solid fa-circle-check text-5xl mb-3 text-green-500/40"></i>
@@ -1625,19 +1314,12 @@
                 </div>`;
                 return;
             }
-            
-            items.sort((a, b) => {
-                const av = a.lastAttempt || a.firstAttempt || '';
-                const bv = b.lastAttempt || b.firstAttempt || '';
-                return bv.localeCompare(av);
-            });
-            
+            items.sort((a, b) => (b.lastAttempt || '').localeCompare(a.lastAttempt || ''));
             let html = '';
             items.forEach(item => {
                 const lang = setMetadata[item.setIndex]?.language || 'English';
                 const langTag = lang === 'Hindi' ? '<span class="text-[10px] text-orange-400 font-bold ml-1">(Hindi)</span>' : '';
                 const attemptCount = item.count && item.count > 1 ? `<span class="review-badge ml-2">Missed ${item.count}×</span>` : `<span class="review-badge ml-2">Missed once</span>`;
-                
                 const optLines = item.options.map((opt, oi) => {
                     const isCorrect = oi === item.correctOption;
                     return `<div class="opt-line ${isCorrect ? 'correct' : ''}">
@@ -1645,15 +1327,14 @@
                         ${isCorrect ? '<i class="fa-solid fa-circle-check ml-1"></i>' : ''}
                     </div>`;
                 }).join('');
-                
                 html += `<div class="review-item">
                     <div class="flex justify-between items-start gap-2 mb-2 flex-wrap">
                         <div class="text-[11px] text-gray-400 flex items-center flex-wrap">
-                            <i class="fa-solid fa-layer-group mr-1 text-red-400"></i> Set ${item.setIndex + 1}${langTag} 
+                            <i class="fa-solid fa-layer-group mr-1 text-red-400"></i> Set ${item.setIndex + 1}${langTag}
                             <span class="mx-1.5">•</span> Q${item.qIndex + 1}
                             ${attemptCount}
                         </div>
-                        <button onclick="removeReviewItem('${item.key}')" class="text-red-400 hover:text-white text-xs shrink-0 px-2 py-1 rounded-md bg-red-900/30 hover:bg-red-600 transition touch-manipulation" title="Mark as reviewed">
+                        <button onclick="removeReviewItem('${item.key}')" class="text-red-400 hover:text-white text-xs shrink-0 px-2 py-1 rounded-md bg-red-900/30 hover:bg-red-600 transition">
                             <i class="fa-solid fa-check"></i> Reviewed
                         </button>
                     </div>
@@ -1673,76 +1354,33 @@
                     ` : ''}
                 </div>`;
             });
-            
             container.innerHTML = html;
         }
-
         async function removeReviewItem(key) {
             await idbDelete('wrongQuestions', key);
             showToast('Marked as reviewed');
             renderReview();
         }
-
         function clearReviewAll() {
-            if (!confirm('Clear all incorrectly-answered questions from the review list? This cannot be undone.')) return;
-            showDialog('Clear Review List?', 'This will remove all items from "To Be Reviewed". Your test history remains intact.', 'confirm', async () => {
+            showDialog('Clear Review List?', 'This will remove all items from "To Be Reviewed".', 'confirm', async () => {
                 const db = await openDB();
                 const tx = db.transaction('wrongQuestions', 'readwrite');
                 tx.objectStore('wrongQuestions').clear();
-                tx.oncomplete = () => {
-                    showToast('Review list cleared');
-                    renderReview();
-                };
+                tx.oncomplete = () => { showToast('Review list cleared'); renderReview(); };
             });
         }
 
-        /* =========================================================
-           ANALYTICS
-           ========================================================= */
-        async function renderAnalytics() {
-            const history = await idbGetAllHistory();
-            const tbody = document.getElementById('history-table-body');
-            tbody.innerHTML = '';
-            
-            let tCorrect = 0, tWrong = 0, tAttempted = 0;
-            
-            history.forEach(h => {
-                tCorrect += h.correct;
-                tWrong += h.wrong;
-                tAttempted += h.attempted;
-                
-                const lang = setMetadata[h.set]?.language || 'English';
-                const label = lang === 'Hindi' ? `Set ${h.set + 1} (Hindi)` : `Set ${h.set + 1}`;
-
-                tbody.innerHTML += `
-                    <tr class="border-b border-white/5 hover:bg-white/5 transition">
-                        <td class="p-3">${h.date}</td>
-                        <td class="p-3 text-center text-blue-300 font-bold">${label}</td>
-                        <td class="p-3 text-center text-green-400">${h.correct}</td>
-                        <td class="p-3 text-center text-red-400">${h.wrong}</td>
-                        <td class="p-3 text-center font-bold text-amber-400">${parseFloat(h.score).toFixed(2)}</td>
-                    </tr>
-                `;
-            });
-
-            if (history.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="5" class="p-5 text-center text-gray-500">No practice tests completed yet.</td></tr>';
-            }
-
-            document.getElementById('stat-attempted').innerText = tAttempted;
-            document.getElementById('stat-correct').innerText = tCorrect;
-            document.getElementById('stat-wrong').innerText = tWrong;
-            document.getElementById('stat-accuracy').innerText = tAttempted > 0 ? Math.round((tCorrect / tAttempted) * 100) + '%' : '0%';
-        }
-
-        /* =========================================================
-           BACKUP / RESTORE / RESET
-           ========================================================= */
+        /* ===== BACKUP / RESTORE ===== */
         async function exportData() {
             const history = await idbGetAllHistory();
             const wrongItems = await idbGetAllWrong();
             const state = await idbGet('progress', 'current');
-            const data = { history, wrongQuestions: wrongItems, state, exportDate: new Date().toISOString() };
+            const conPositions = [];
+            for (let i = 0; i < allSetsData.length; i++) {
+                const p = await loadConPos(i);
+                if (p !== null) conPositions.push({ setIdx: i, qIdx: p });
+            }
+            const data = { history, wrongQuestions: wrongItems, state, consolidatedPositions: conPositions, exportDate: new Date().toISOString() };
             const blob = new Blob([JSON.stringify(data)], {type: 'application/json'});
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
@@ -1752,7 +1390,6 @@
             URL.revokeObjectURL(url);
             showToast('Backup Exported!');
         }
-
         function importData(event) {
             const file = event.target.files[0];
             if (!file) return;
@@ -1763,29 +1400,17 @@
                     if (data.history || data.state || data.wrongQuestions) {
                         await idbClearAll();
                         if (data.state) await idbSet('progress', 'current', data.state);
-                        if (data.history) {
-                            for(let h of data.history) await idbAddHistory(h);
-                        }
-                        if (data.wrongQuestions) {
-                            for(let w of data.wrongQuestions) {
-                                if (w && w.key) await idbSet('wrongQuestions', w.key, w);
-                            }
-                        }
-                        showDialog('Success', 'Data restored successfully. Reloading view.', 'alert', () => {
-                            window.location.reload();
-                        });
-                    } else {
-                        showDialog('Error', 'Invalid Backup File format.', 'alert');
-                    }
-                } catch(err) {
-                    showDialog('Error', 'Failed to parse JSON file.', 'alert');
-                }
+                        if (data.history) for(let h of data.history) await idbAddHistory(h);
+                        if (data.wrongQuestions) for(let w of data.wrongQuestions) if (w && w.key) await idbSet('wrongQuestions', w.key, w);
+                        if (data.consolidatedPositions) for(let p of data.consolidatedPositions) await idbSet('consolidated', 'pos_' + p.setIdx, { setIdx: p.setIdx, qIdx: p.qIdx, timestamp: Date.now() });
+                        showDialog('Success', 'Data restored successfully. Reloading view.', 'alert', () => window.location.reload());
+                    } else showDialog('Error', 'Invalid Backup File format.', 'alert');
+                } catch(err) { showDialog('Error', 'Failed to parse JSON file.', 'alert'); }
             };
             reader.readAsText(file);
         }
-
         function clearAllData() {
-            showDialog('Critical Warning', 'This will delete ALL your history, progress, scores and review items. This cannot be undone.', 'confirm', async () => {
+            showDialog('Critical Warning', 'This will delete ALL your history, progress, scores and review items.', 'confirm', async () => {
                 await idbClearAll();
                 window.location.reload();
             });
