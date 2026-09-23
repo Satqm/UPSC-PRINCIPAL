@@ -154,7 +154,6 @@
             border-top: 1px solid rgba(59, 130, 246, 0.3); padding-bottom: env(safe-area-inset-bottom, 8px);
         }
         
-        /* THE CORE MOBILE FIX: Guarantees space at bottom of quiz container so footer doesn't hide options */
         #view-quiz { padding-bottom: 140px; }
         
         .toast {
@@ -201,12 +200,12 @@
         .syllabus-table th { background: rgba(59, 130, 246, 0.2); color: #93c5fd; font-weight: 600; }
         .syllabus-table tbody tr:nth-child(even) { background: rgba(255,255,255,0.02); }
 
-        /* Master Read / Review styling */
+        /* Full Board / Master Read styling */
         .mr-item {
             background: rgba(0,0,0,0.3);
             border: 1px solid rgba(148,163,184,0.15);
             border-radius: 12px;
-            padding: 12px 14px;
+            padding: 16px;
             transition: all 0.15s;
         }
         .mr-item:hover { border-color: rgba(59,130,246,0.5); background: rgba(30,58,138,0.15); }
@@ -235,6 +234,30 @@
             border: 1px solid rgba(248,113,113,0.5);
             font-size: 10px; padding: 2px 8px; border-radius: 20px; font-weight: 700;
         }
+        
+        /* Full Board specific */
+        .board-question {
+            font-size: 15px; font-weight: 600; color: #e2e8f0;
+            margin-bottom: 12px; line-height: 1.6;
+        }
+        .board-option {
+            padding: 10px 14px; border-radius: 10px; margin-bottom: 6px;
+            font-size: 14px; border: 1px solid transparent;
+            background: rgba(15,23,42,0.5); color: #cbd5e1;
+            transition: all 0.2s;
+        }
+        .board-option.correct {
+            background: rgba(4,120,87,0.2);
+            border-color: rgba(52,211,153,0.5);
+            color: #a7f3d0; font-weight: 600;
+        }
+        .board-explanation {
+            background: rgba(30,27,75,0.3);
+            border: 1px solid rgba(139,92,246,0.3);
+            border-radius: 10px; padding: 14px; margin-top: 12px;
+            font-size: 13px; color: #d1d5db; line-height: 1.6;
+        }
+        .board-explanation b { color: #c4b5fd; }
     </style>
 </head>
 <body>
@@ -278,7 +301,7 @@
     <div class="flex justify-center mt-2 max-w-6xl mx-auto w-full overflow-x-auto hide-scroll pb-1 px-1" id="main-tabs">
         <div class="glass-card p-1.5 rounded-xl flex gap-1 border border-blue-500/20 bg-black/40 w-max">
             <button class="tab-btn active" data-tab="sets" onclick="showView('sets')"><i class="fa-solid fa-layer-group"></i> Sets</button>
-            <button class="tab-btn" data-tab="masterread" onclick="showView('masterread')"><i class="fa-solid fa-book"></i> Master Read</button>
+            <button class="tab-btn" data-tab="fullboard" onclick="showView('fullboard')"><i class="fa-solid fa-chalkboard"></i> Full Board</button>
             <button class="tab-btn" data-tab="review" onclick="showView('review')"><i class="fa-solid fa-rotate-left"></i> Review <span id="review-tab-count" class="ml-1 text-[10px] font-bold bg-red-600/70 text-white px-1.5 py-0.5 rounded-full hidden">0</span></button>
             <button class="tab-btn" data-tab="analytics" onclick="showView('analytics')"><i class="fa-solid fa-chart-pie"></i> Analytics</button>
             <button class="tab-btn" data-tab="rules" onclick="showView('rules')"><i class="fa-solid fa-list-check"></i> Syllabus</button>
@@ -295,18 +318,18 @@
         </div>
     </main>
 
-    <!-- MASTER READ VIEW -->
-    <main id="view-masterread" class="hidden flex-col max-w-6xl mx-auto w-full my-3 px-2">
+    <!-- FULL BOARD VIEW -->
+    <main id="view-fullboard" class="hidden flex-col max-w-6xl mx-auto w-full my-3 px-2">
         <div class="glass-card bg-slate-900/80 border-t-4 border-purple-500 p-4 md:p-6 rounded-2xl shadow-2xl">
             <div class="flex flex-wrap justify-between items-center gap-3 mb-4">
-                <h2 class="text-xl md:text-2xl font-bold text-purple-400 poppins"><i class="fa-solid fa-book"></i> Master Read</h2>
-                <div class="text-xs text-gray-400"><i class="fa-solid fa-circle-info"></i> Every question from every set with its answer.</div>
+                <h2 class="text-xl md:text-2xl font-bold text-purple-400 poppins"><i class="fa-solid fa-chalkboard"></i> Full Board</h2>
+                <div class="text-xs text-gray-400"><i class="fa-solid fa-circle-info"></i> All questions, options, answers & explanations.</div>
             </div>
             <div class="relative mb-4">
                 <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 text-sm"></i>
-                <input id="master-search" oninput="filterMasterRead()" type="text" placeholder="Search question or answer..." class="w-full bg-black/50 border border-slate-700 focus:border-purple-500 outline-none rounded-xl pl-9 pr-3 py-2.5 text-sm text-white placeholder-gray-500 transition" />
+                <input id="fullboard-search" oninput="filterFullBoard()" type="text" placeholder="Search question or explanation..." class="w-full bg-black/50 border border-slate-700 focus:border-purple-500 outline-none rounded-xl pl-9 pr-3 py-2.5 text-sm text-white placeholder-gray-500 transition" />
             </div>
-            <div id="master-read-content" class="space-y-5 max-h-[70vh] overflow-y-auto pr-1">
+            <div id="fullboard-content" class="space-y-6 max-h-[70vh] overflow-y-auto pr-1">
                 <!-- Injected -->
             </div>
         </div>
@@ -524,13 +547,7 @@
         /* =========================================================
            UTILITIES
            ========================================================= */
-        function escapeHtml(text) {
-            if (text === undefined || text === null) return '';
-            const div = document.createElement('div');
-            div.textContent = String(text);
-            return div.innerHTML;
-        }
-
+        // We no longer use escapeHtml for question/options/explanation to allow proper HTML rendering
         function hashString(str) {
             let hash = 0;
             const s = String(str);
@@ -629,7 +646,7 @@
             allSetsData = [];
             setMetadata = [];
             
-            // ---- ENGLISH SETS (existing + newly added exam-question) ----
+            // ---- ENGLISH SETS ----
             await fetchAndProcess([
                 'exam-questions-v1.json', 
                 'exam-questions-v2.json', 
@@ -637,7 +654,7 @@
                 'exam-question'
             ], 'English');
             
-            // ---- HINDI SETS (existing + newly added exam-questions-v2hindi.json) ----
+            // ---- HINDI SETS ----
             await fetchAndProcess([
                 'exam-questions-v1hindi.json',
                 'exam-questions-v2hindi.json',
@@ -875,7 +892,7 @@
         }
 
         function executeShowView(viewId) {
-            ['view-sets', 'view-analytics', 'view-rules', 'view-quiz', 'view-masterread', 'view-review'].forEach(id => {
+            ['view-sets', 'view-analytics', 'view-rules', 'view-quiz', 'view-fullboard', 'view-review'].forEach(id => {
                 const el = document.getElementById(id);
                 if (!el) return;
                 el.classList.add('hidden');
@@ -901,7 +918,7 @@
             }
             
             if (viewId === 'analytics') renderAnalytics();
-            if (viewId === 'masterread') renderMasterRead();
+            if (viewId === 'fullboard') renderFullBoard();
             if (viewId === 'review') renderReview();
             window.scrollTo(0,0);
         }
@@ -1053,7 +1070,8 @@
             const isAnswered = sessionState[currentQIndex] !== null;
 
             document.getElementById('progress-counter').innerText = `Q: ${currentQIndex + 1}/${set.length}`;
-            document.getElementById('question-text').innerHTML = `<span class="text-blue-400 font-bold poppins text-lg">Q${currentQIndex + 1}.</span> ${escapeHtml(q.question)}`;
+            // Rendering HTML directly to support <br>, <ol>, <li> etc.
+            document.getElementById('question-text').innerHTML = `<span class="text-blue-400 font-bold poppins text-lg">Q${currentQIndex + 1}.</span> ${q.question}`;
             document.getElementById('mark-review-checkbox').checked = bookmarked.has(currentQIndex);
 
             const grid = document.getElementById('options-grid');
@@ -1063,7 +1081,8 @@
                 const btn = document.createElement('button');
                 btn.id = `opt-${idx}`;
                 const label = String.fromCharCode(65 + idx);
-                btn.innerHTML = `<span class="text-blue-400 font-bold w-6 text-left shrink-0">${label}.</span> <span>${escapeHtml(opt)}</span>`;
+                // Rendering HTML directly
+                btn.innerHTML = `<span class="text-blue-400 font-bold w-6 text-left shrink-0">${label}.</span> <span>${opt}</span>`;
                 
                 if (currentMode === 'study') {
                     btn.className = "option-btn opacity-90 cursor-default";
@@ -1207,13 +1226,13 @@
             
             if (isStudyForce) {
                 title.innerHTML = '<i class="fa-solid fa-lightbulb text-yellow-400"></i> <span class="text-yellow-400">Expert Advice</span>';
-                subtitle.innerHTML = `<div class="mb-2 font-bold text-blue-300">Answer: ${escapeHtml(q.options[q.correctOption])}</div><div class="bg-black/50 p-4 rounded-xl border border-blue-500/30 text-gray-200"><b>Explanation:</b><br><br>${escapeHtml(q.explanation)}</div>`;
+                subtitle.innerHTML = `<div class="mb-2 font-bold text-blue-300">Answer: ${q.options[q.correctOption]}</div><div class="bg-black/50 p-4 rounded-xl border border-blue-500/30 text-gray-200"><b>Explanation:</b><br><br>${q.explanation}</div>`;
             } else if (isCorrect) {
                 title.innerHTML = '<i class="fa-solid fa-circle-check text-green-400"></i> <span class="text-green-400">Correct! (+2.5)</span>';
-                subtitle.innerHTML = `<div class="bg-black/50 p-4 rounded-xl border border-green-500/30 text-gray-200"><b>Explanation:</b><br><br>${escapeHtml(q.explanation)}</div>`;
+                subtitle.innerHTML = `<div class="bg-black/50 p-4 rounded-xl border border-green-500/30 text-gray-200"><b>Explanation:</b><br><br>${q.explanation}</div>`;
             } else {
                 title.innerHTML = '<i class="fa-solid fa-circle-xmark text-red-500"></i> <span class="text-red-500">Wrong! (-0.83)</span>';
-                subtitle.innerHTML = `<div class="mb-3">Correct Answer: <span class="text-green-400 font-bold block mt-1">${escapeHtml(q.options[q.correctOption])}</span></div><div class="bg-black/50 p-4 rounded-xl border border-red-500/30 text-gray-300"><b>Explanation:</b><br><br>${escapeHtml(q.explanation)}</div>`;
+                subtitle.innerHTML = `<div class="mb-3">Correct Answer: <span class="text-green-400 font-bold block mt-1">${q.options[q.correctOption]}</span></div><div class="bg-black/50 p-4 rounded-xl border border-red-500/30 text-gray-300"><b>Explanation:</b><br><br>${q.explanation}</div>`;
             }
             modal.classList.remove('hidden');
         }
@@ -1372,10 +1391,10 @@
         }
 
         /* =========================================================
-           MASTER READ
+           FULL BOARD (Replaces Master Read)
            ========================================================= */
-        function renderMasterRead() {
-            const container = document.getElementById('master-read-content');
+        function renderFullBoard() {
+            const container = document.getElementById('fullboard-content');
             if (!container) return;
             let html = '';
             let totalQ = 0;
@@ -1385,26 +1404,39 @@
                 const isHindi = lang === 'Hindi';
                 const badgeColor = isHindi ? 'bg-orange-900/50 text-orange-300 border-orange-500/40' : 'bg-blue-900/50 text-blue-300 border-blue-500/40';
                 
-                html += `<div class="mb-5">
-                    <div class="flex items-center gap-2 mb-3 sticky top-0 z-10 bg-slate-900/95 py-2 backdrop-blur-sm rounded-lg px-2">
+                html += `<div class="mb-8">
+                    <div class="flex items-center gap-2 mb-4 sticky top-0 z-10 bg-slate-900/95 py-2 backdrop-blur-sm rounded-lg px-2 border-b border-slate-700">
                         <h3 class="text-lg font-bold poppins ${isHindi ? 'text-orange-400' : 'text-blue-400'}">Set ${sIdx + 1}</h3>
                         <span class="text-[10px] px-2 py-0.5 rounded-full border ${badgeColor} font-bold">${lang}</span>
                         <span class="text-xs text-gray-500 ml-auto">${set.length} Questions</span>
                     </div>
-                    <div class="space-y-2">`;
+                    <div class="space-y-6">`;
                 
                 set.forEach((q, qIdx) => {
                     totalQ++;
                     const answer = q.options[q.correctOption];
-                    const searchStr = (String(q.question) + ' ' + String(answer)).toLowerCase().replace(/"/g, '&quot;');
+                    // Create a searchable string (strip HTML tags for search)
+                    const searchStr = (String(q.question).replace(/<[^>]*>?/gm, '') + ' ' + String(answer) + ' ' + String(q.explanation).replace(/<[^>]*>?/gm, '')).toLowerCase().replace(/"/g, '&quot;');
+                    
+                    let optionsHtml = '';
+                    q.options.forEach((opt, oi) => {
+                        const isCorrect = oi === q.correctOption;
+                        optionsHtml += `<div class="board-option ${isCorrect ? 'correct' : ''}">
+                            <span class="font-bold mr-2">${String.fromCharCode(65 + oi)}.</span> ${opt}
+                            ${isCorrect ? '<i class="fa-solid fa-circle-check float-right mt-1"></i>' : ''}
+                        </div>`;
+                    });
+
                     html += `<div class="mr-item" data-search="${searchStr}">
-                        <div class="flex items-start gap-2 mb-2">
-                            <span class="text-blue-400 font-bold text-xs shrink-0 mt-0.5">Q${qIdx + 1}</span>
-                            <div class="text-sm text-gray-200 leading-relaxed flex-1" style="word-break: break-word;">${escapeHtml(q.question)}</div>
+                        <div class="board-question">
+                            <span class="text-blue-400 font-bold mr-2">Q${qIdx + 1}.</span> ${q.question}
                         </div>
-                        <div class="flex items-start gap-2 pl-6">
-                            <i class="fa-solid fa-circle-check text-green-400 text-xs mt-0.5 shrink-0"></i>
-                            <div class="text-sm text-green-300 font-semibold leading-relaxed flex-1" style="word-break: break-word;">${escapeHtml(answer)}</div>
+                        <div class="mb-2">${optionsHtml}</div>
+                        <div class="board-explanation">
+                            <div class="font-bold text-purple-400 mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-lightbulb text-yellow-400"></i> Expert Advice:
+                            </div>
+                            <div>${q.explanation || 'No explanation provided.'}</div>
                         </div>
                     </div>`;
                 });
@@ -1415,16 +1447,15 @@
             if (totalQ === 0) {
                 html = '<div class="text-center py-12 text-gray-500"><i class="fa-solid fa-inbox text-5xl mb-3 opacity-40"></i><p>No questions loaded. Check your JSON files.</p></div>';
             } else {
-                // Insert summary bar at top
                 html = `<div class="text-xs text-gray-400 mb-3 px-1"><i class="fa-solid fa-database"></i> Showing <b class="text-purple-300">${totalQ}</b> questions across <b class="text-purple-300">${allSetsData.length}</b> sets.</div>` + html;
             }
             
             container.innerHTML = html;
         }
 
-        function filterMasterRead() {
-            const q = document.getElementById('master-search').value.toLowerCase().trim();
-            document.querySelectorAll('#master-read-content [data-search]').forEach(el => {
+        function filterFullBoard() {
+            const q = document.getElementById('fullboard-search').value.toLowerCase().trim();
+            document.querySelectorAll('#fullboard-content [data-search]').forEach(el => {
                 if (!q) {
                     el.style.display = '';
                 } else {
@@ -1468,7 +1499,7 @@
                 const optLines = item.options.map((opt, oi) => {
                     const isCorrect = oi === item.correctOption;
                     return `<div class="opt-line ${isCorrect ? 'correct' : ''}">
-                        <span class="font-bold">${String.fromCharCode(65 + oi)}.</span> ${escapeHtml(opt)}
+                        <span class="font-bold">${String.fromCharCode(65 + oi)}.</span> ${opt}
                         ${isCorrect ? '<i class="fa-solid fa-circle-check ml-1"></i>' : ''}
                     </div>`;
                 }).join('');
@@ -1485,7 +1516,7 @@
                         </button>
                     </div>
                     <div class="text-sm text-gray-100 mb-3 leading-relaxed" style="word-break: break-word;">
-                        <span class="text-blue-400 font-bold mr-1">Q.</span>${escapeHtml(item.question)}
+                        <span class="text-blue-400 font-bold mr-1">Q.</span>${item.question}
                     </div>
                     <div class="mb-2">${optLines}</div>
                     ${item.explanation ? `
@@ -1494,7 +1525,7 @@
                                 <i class="fa-solid fa-lightbulb text-yellow-400"></i> Show Explanation
                             </summary>
                             <div class="bg-black/40 p-3 rounded-lg mt-2 leading-relaxed border border-purple-500/20" style="word-break: break-word;">
-                                ${escapeHtml(item.explanation)}
+                                ${item.explanation}
                             </div>
                         </details>
                     ` : ''}
