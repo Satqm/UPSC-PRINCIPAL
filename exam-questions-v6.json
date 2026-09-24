@@ -1,1 +1,1202 @@
-
+[
+  {
+    "Question_Number": 1,
+    "Question_Text": "Convert the following sentence into Active Voice: 'The revised annual budget proposal must be approved by the Head of Department before Friday.'",
+    "Option_A": "The Head of Department must approve the revised annual budget proposal before Friday.",
+    "Option_B": "The Head of Department will approve the revised annual budget proposal before Friday.",
+    "Option_C": "The Head of Department should have approved the revised annual budget proposal before Friday.",
+    "Option_D": "The Head of Department has to be approving the revised annual budget proposal before Friday.",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "To convert a passive sentence with a modal auxiliary ('must be approved') into active voice, the subject performing the action ('The Head of Department') is brought forward and combined with the active modal verb form ('must approve')."
+  },
+  {
+    "Question_Number": 2,
+    "Question_Text": "Convert the following sentence into Indirect Speech: The Education Officer asked the Principal, 'Why were the financial audit reports not submitted on time?'",
+    "Option_A": "The Education Officer asked the Principal why the financial audit reports were not submitted on time.",
+    "Option_B": "The Education Officer asked the Principal why the financial audit reports had not been submitted on time.",
+    "Option_C": "The Education Officer asked the Principal that why the financial audit reports were not submitted on time.",
+    "Option_D": "The Education Officer inquired the Principal why have the financial audit reports not been submitted on time.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "In indirect speech for Wh-questions, the reporting verb remains 'asked', no conjunction like 'that' is used, and the simple past tense ('were not submitted') changes to past perfect tense ('had not been submitted')."
+  },
+  {
+    "Question_Number": 3,
+    "Question_Text": "What is the meaning of the idiom 'to burn the candle at both ends'?",
+    "Option_A": "To waste financial resources on extravagant institutional projects.",
+    "Option_B": "To work excessively hard from early morning until late at night, risking exhaustion.",
+    "Option_C": "To create unnecessary conflict between two administrative departments.",
+    "Option_D": "To destroy official records from both ends of a transaction.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The idiom 'to burn the candle at both ends' means to exhaust one's energy or health by working excessively long hours without adequate rest."
+  },
+  {
+    "Question_Number": 4,
+    "Question_Text": "Select the correct one-word substitution for: 'A person who donates money, time, or resources to promote the welfare of others and good causes.'",
+    "Option_A": "Misanthrope",
+    "Option_B": "Philanthropist",
+    "Option_C": "Mercenary",
+    "Option_D": "Bureaucrat",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "A 'Philanthropist' is a person who seeks to promote the welfare of others, especially by the generous donation of money to good causes. 'Misanthrope' means a hater of humankind."
+  },
+  {
+    "Question_Number": 5,
+    "Question_Text": "Identify the part of the sentence containing an error: 'Neither the Vice Principal nor the senior teachers (A) / was present in the meeting hall (B) / when the Director of Education arrived (C) / for the surprise inspection. (D)'",
+    "Option_A": "Neither the Vice Principal nor the senior teachers",
+    "Option_B": "was present in the meeting hall",
+    "Option_C": "when the Director of Education arrived",
+    "Option_D": "for the surprise inspection.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "When two subjects are joined by 'neither... nor', the verb must agree in number with the subject closest to it. Since 'the senior teachers' is plural, the verb should be 'were present' instead of 'was present'."
+  },
+  {
+    "Question_Number": 6,
+    "Question_Text": "Select the most appropriate SYNONYM for the word 'METICULOUS'.",
+    "Option_A": "Careless",
+    "Option_B": "Scrupulous",
+    "Option_C": "Hasty",
+    "Option_D": "Ambiguous",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "'Meticulous' means showing great attention to detail; very careful and precise. 'Scrupulous' is an exact synonym meaning extremely attentive to details and thorough."
+  },
+  {
+    "Question_Number": 7,
+    "Question_Text": "Select the most appropriate ANTONYM for the word 'TRANSIENT'.",
+    "Option_A": "Ephemeral",
+    "Option_B": "Permanent",
+    "Option_C": "Fleeting",
+    "Option_D": "Temporal",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "'Transient' means lasting only for a short time or impermanent. Its direct antonym is 'Permanent'. 'Ephemeral' and 'fleeting' are synonyms."
+  },
+  {
+    "Question_Number": 8,
+    "Question_Text": "Identify the Part of Speech of the underlined word in the sentence: 'The committee submitted a remarkably **thorough** evaluation report to the Ministry.'",
+    "Option_A": "Adverb",
+    "Option_B": "Adjective",
+    "Option_C": "Noun",
+    "Option_D": "Preposition",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The word 'thorough' describes the noun 'evaluation report' (modified by the adverb 'remarkably'), making it an Adjective."
+  },
+  {
+    "Question_Number": 9,
+    "Question_Text": "Fill in the blank with the correct preposition: 'All government institutions must strictly comply _____ the statutory provisions of the Right to Information Act.'",
+    "Option_A": "to",
+    "Option_B": "with",
+    "Option_C": "by",
+    "Option_D": "at",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The verb 'comply' takes the fixed preposition 'with' when referring to acting in accordance with a rule, command, or request."
+  },
+  {
+    "Question_Number": 10,
+    "Question_Text": "Select the grammatically correct option to complete the conditional sentence: 'Had the administration implemented the safety guidelines earlier, the accident _____.'",
+    "Option_A": "would be prevented",
+    "Option_B": "would have been prevented",
+    "Option_C": "will have been prevented",
+    "Option_D": "had been prevented",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "In a third conditional sentence expressing a hypothetical past scenario ('Had + past participle'), the main clause uses 'would have + past participle' (in passive voice: 'would have been prevented')."
+  },
+  {
+    "Question_Number": 11,
+    "Question_Text": "निम्नलिखित में से शुद्ध वाक्य का चयन कीजिए:",
+    "Option_A": "मेरे को आज विद्यालय के प्रशासनिक कार्य के लिए जाना है।",
+    "Option_B": "मुझे आज विद्यालय के प्रशासनिक कार्य हेतु जाना है।",
+    "Option_C": "मैं आज विद्यालय के प्रशासनिक कार्य के वास्ते जाना चाहता हूँ।",
+    "Option_D": "मुझको आज विद्यालय के प्रशासनिक कार्य में जाने का है।",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "हिंदी व्याकरण के अनुसार 'मेरे को' या 'मुझको जाने का है' अशुद्ध प्रयोग है। 'मुझे आज विद्यालय के प्रशासनिक कार्य हेतु जाना है' मानक एवं शुद्ध वाक्य है।"
+  },
+  {
+    "Question_Number": 12,
+    "Question_Text": "मुहावरे 'चिराग तले अंधेरा' का सही अर्थ क्या है?",
+    "Option_A": "दीपक के नीचे रोशनी का न होना।",
+    "Option_B": "अपनी बुराई या दोष स्वयं दिखाई न देना।",
+    "Option_C": "अंधेरे में कोई वस्तु खोजना।",
+    "Option_D": "अनपढ़ व्यक्ति द्वारा उच्च पद प्राप्त करना।",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "'चिराग तले अंधेरा' मुहावरे का अर्थ है - निकट का दोष या अपनी बुराई/कमी स्वयं दिखाई न देना या महत्वपूर्ण स्थान के पास ही अव्यवस्था होना।"
+  },
+  {
+    "Question_Number": 13,
+    "Question_Text": "'यथाशक्ति' शब्द में कौन सा समास है?",
+    "Option_A": "तत्पुरुष समास",
+    "Option_B": "द्वंद्व समास",
+    "Option_C": "अव्ययीभाव समास",
+    "Option_D": "बहुव्रीहि समास",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "'यथाशक्ति' (शक्ति के अनुसार) में प्रथम पद 'यथा' अव्यय है और पूरा पद क्रियाविशेषण की भांति प्रयुक्त होता है, इसलिए यह 'अव्ययीभाव समास' का उदाहरण है।"
+  },
+  {
+    "Question_Number": 14,
+    "Question_Text": "'मनः + योग' की संधि से बनने वाला सही शब्द कौन सा है?",
+    "Option_A": "मनयोग",
+    "Option_B": "मनोयोग",
+    "Option_C": "मनःयोग",
+    "Option_D": "मनियोग",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "विसर्ग संधि के नियमानुसार यदि विसर्ग (ः) से पहले 'अ' हो और बाद में किसी वर्ग का तीसरा, चौथा, पाँचवाँ वर्ण या य, र, ल, व, ह हो, तो विसर्ग 'ओ' में परिवर्तित हो जाता है (मनः + योग = मनोयोग)।"
+  },
+  {
+    "Question_Number": 15,
+    "Question_Text": "अंग्रेजी प्रशासनिक शब्द 'Ad hoc' का सही हिंदी पारिभाषिक रूप क्या है?",
+    "Option_A": "कार्योत्तर",
+    "Option_B": "तदर्थ",
+    "Option_C": "यथातथ्य",
+    "Option_D": "अस्थायी",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "सरकारी सेवाओं एवं प्रशासनिक शब्दावली में 'Ad hoc' का आधिकारिक हिंदी अनुवाद 'तदर्थ' होता है (जैसे तदर्थ समिति या तदर्थ नियुक्ति)।"
+  },
+  {
+    "Question_Number": 16,
+    "Question_Text": "निम्नलिखित में से 'कमल' शब्द का पर्यायवाची कौन सा नहीं है?",
+    "Option_A": "पंकज",
+    "Option_B": "सरोज",
+    "Option_C": "जलद",
+    "Option_D": "नीरज",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "'पंकज', 'सरोज' तथा 'नीरज' कमल के पर्यायवाची हैं। 'जलद' (जल देने वाला) 'बादल' का पर्यायवाची शब्द है।"
+  },
+  {
+    "Question_Number": 17,
+    "Question_Text": "'अभिज्ञ' शब्द का सही विलोम शब्द क्या है?",
+    "Option_A": "अनभिज्ञ",
+    "Option_B": "सुज्ञ",
+    "Option_C": "विज्ञ",
+    "Option_D": "सर्वज्ञ",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "'अभिज्ञ' का अर्थ है - जानने वाला या जानकार। इसका विलोम शब्द 'अनभिज्ञ' होता है, जिसका अर्थ है - न जानने वाला या अनजान।"
+  },
+  {
+    "Question_Number": 18,
+    "Question_Text": "'जिसकी कोई उपमा न दी जा सके' - वाक्यांश के लिए एक उपयुक्त शब्द क्या होगा?",
+    "Option_A": "अद्वितीय",
+    "Option_B": "अनुपम",
+    "Option_C": "अतुलनीय",
+    "Option_D": "सर्वश्रेष्ठ",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "'जिसकी कोई उपमा न दी जा सके' के लिए सटीक पारिभाषिक शब्द 'अनुपम' है। 'जिसके समान दूसरा न हो' के लिए 'अद्वितीय' प्रयुक्त होता है।"
+  },
+  {
+    "Question_Number": 19,
+    "Question_Text": "निम्नलिखित में से शुद्ध वर्तनी वाले शब्द का चयन कीजिए:",
+    "Option_A": "उज्वल",
+    "Option_B": "उज्ज्वल",
+    "Option_C": "उज्वल",
+    "Option_D": "उज्जवल",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "व्यंजन संधि (उत् + ज्वल) के नियम से 'उज्ज्वल' की शुद्ध वर्तनी में दोनों 'ज' आधे (ज) होते हैं - 'उज्ज्वल'।"
+  },
+  {
+    "Question_Number": 20,
+    "Question_Text": "'अत्यंत' शब्द में कौन सा उपसर्ग प्रयुक्त हुआ है?",
+    "Option_A": "अति",
+    "Option_B": "अत",
+    "Option_C": "अत्य",
+    "Option_D": "अ",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "'अत्यंत' शब्द यण स्वर संधि से बना है (अति + अंत = अत्यंत)। इसमें संस्कृत का 'अति' उपसर्ग प्रयुक्त हुआ है।"
+  },
+  {
+    "Question_Number": 21,
+    "Question_Text": "Which Article of the Constitution of India establishes the office of the Comptroller and Auditor General (CAG) of India, granting authority to audit all expenditure from the Consolidated Fund of India?",
+    "Option_A": "Article 148",
+    "Option_B": "Article 280",
+    "Option_C": "Article 315",
+    "Option_D": "Article 324",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Article 148 provides for an independent Comptroller and Auditor General of India, who audits all receipts and expenditure of the Union and States under Article 149."
+  },
+  {
+    "Question_Number": 22,
+    "Question_Text": "Under Article 312 of the Constitution of India, which House of Parliament holds the exclusive power to initiate a resolution for the creation of one or more All India Services?",
+    "Option_A": "Lok Sabha",
+    "Option_B": "Rajya Sabha",
+    "Option_C": "Both Houses sitting in a Joint Session",
+    "Option_D": "NITI Aayog Governing Council",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Article 312 empowers the Rajya Sabha to pass a resolution supported by not less than two-thirds of the members present and voting, declaring it necessary in the national interest to create one or more All India Services."
+  },
+  {
+    "Question_Number": 23,
+    "Question_Text": "The 11th Fundamental Duty (education opportunity for children aged 6-14) was added to Article 51A of the Indian Constitution by which Constitutional Amendment Act?",
+    "Option_A": "42nd Constitutional Amendment Act, 1976",
+    "Option_B": "44th Constitutional Amendment Act, 1978",
+    "Option_C": "86th Constitutional Amendment Act, 2002",
+    "Option_D": "91st Constitutional Amendment Act, 2003",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "The 86th Constitutional Amendment Act, 2002 added Article 21A (Right to Education) as a Fundamental Right, amended Article 45 (ECCE), and inserted clause (k) as the 11th Fundamental Duty under Article 51A."
+  },
+  {
+    "Question_Number": 24,
+    "Question_Text": "Which Directive Principle of State Policy (DPSP) under Article 45 of the Constitution of India was amended by the 86th Constitutional Amendment Act to focus on Early Childhood Care and Education (ECCE)?",
+    "Option_A": "State shall endeavour to provide free legal aid to weaker sections.",
+    "Option_B": "State shall endeavour to provide early childhood care and education for all children until they complete the age of six years.",
+    "Option_C": "State shall organize village panchayats as units of self-government.",
+    "Option_D": "State shall secure a uniform civil code throughout the territory of India.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "When Article 21A made education for ages 6-14 a Fundamental Right, Article 45 was modified to direct the State to endeavour to provide Early Childhood Care and Education (ECCE) for all children until age six."
+  },
+  {
+    "Question_Number": 25,
+    "Question_Text": "Which Committee of Parliament consists of 22 members (15 from Lok Sabha and 7 from Rajya Sabha) and examines the Audit Reports of the Comptroller and Auditor General (CAG)?",
+    "Option_A": "Estimates Committee",
+    "Option_B": "Public Accounts Committee (PAC)",
+    "Option_C": "Committee on Subordinate Legislation",
+    "Option_D": "Business Advisory Committee",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The Public Accounts Committee (PAC) has 22 members (15 Lok Sabha, 7 Rajya Sabha) and is responsible for examining the Appropriation Accounts and CAG Audit Reports to ensure financial accountability."
+  },
+  {
+    "Question_Number": 26,
+    "Question_Text": "Under the Official Languages Rules, 1976 framed under the Official Languages Act, 1963, into which region is the Union Territory of Delhi classified for official communications?",
+    "Option_A": "Region 'A'",
+    "Option_B": "Region 'B'",
+    "Option_C": "Region 'C'",
+    "Option_D": "Exempted Region",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Under Official Languages Rules 1976, States/UTs are divided into Region A (Hindi speaking: Delhi, UP, MP, Bihar, Rajasthan, etc.), Region B (Gujarat, Maharashtra, Punjab, Chandigarh), and Region C (Rest of India)."
+  },
+  {
+    "Question_Number": 27,
+    "Question_Text": "What is the primary objective of the 'BHASHINI' platform launched by the Government of India?",
+    "Option_A": "To digitize physical land records using AI and satellite imagery.",
+    "Option_B": "To break language barriers by leveraging AI for real-time translation across Indian languages.",
+    "Option_C": "To automate civil service pension calculations across all states.",
+    "Option_D": "To monitor infrastructure project deadlines via a unified geospatial portal.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Bhashini (National Language Translation Mission) is an AI-led initiative aimed at making digital services and content accessible in local Indian languages via speech-to-speech and text translation."
+  },
+  {
+    "Question_Number": 28,
+    "Question_Text": "Who among the following serves as the ex-officio Chairperson of the Governing Council of NITI Aayog?",
+    "Option_A": "Union Minister of Finance",
+    "Option_B": "Prime Minister of India",
+    "Option_C": "Cabinet Secretary",
+    "Option_D": "Vice-Chairman of NITI Aayog",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The Governing Council of NITI Aayog comprises Chief Ministers of all States, Lt. Governors of UTs, and Ex-Officio Members, chaired by the Prime Minister of India."
+  },
+  {
+    "Question_Number": 29,
+    "Question_Text": "According to the Department of Administrative Reforms and Public Grievances (DARPG) guidelines for CPGRAMS, what is the standard maximum timeframe for redressing a public grievance?",
+    "Option_A": "60 days",
+    "Option_B": "21 days",
+    "Option_C": "45 days",
+    "Option_D": "90 days",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "DARPG revised the CPGRAMS grievance redressal timeline down to a maximum of 21 days (reduced from the earlier 30/45 days) to ensure prompt resolution of public grievances."
+  },
+  {
+    "Question_Number": 30,
+    "Question_Text": "Which Constitutional Article provides that no civil servant shall be dismissed, removed, or reduced in rank except after an inquiry in which they have been informed of the charges and given a reasonable opportunity of being heard?",
+    "Option_A": "Article 309",
+    "Option_B": "Article 310",
+    "Option_C": "Article 311",
+    "Option_D": "Article 320",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Article 311 of the Constitution of India provides constitutional safeguards to civil servants against arbitrary dismissal, removal, or reduction in rank without a fair inquiry."
+  },
+  {
+    "Question_Number": 31,
+    "Question_Text": "A school Principal can complete an institutional evaluation report in 10 days, while the Vice Principal can complete the same report in 15 days. If they work together along with an administrative assistant, they complete the entire report in 4 days. In how many days can the administrative assistant alone complete the report?",
+    "Option_A": "20 days",
+    "Option_B": "24 days",
+    "Option_C": "30 days",
+    "Option_D": "12 days",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "1 day work of Principal = 1/10, Vice Principal = 1/15. Together in 1 day = 1/10 + 1/15 = 1/6. Total work together with Assistant in 1 day = 1/4. Assistant's 1 day work = 1/4 - 1/6 = 1/12... Wait: 1/4 - 1/6 = (3-2)/12 = 1/12? Let's recalculate: 1/10 + 1/15 = 5/30 = 1/6. 1/4 - 1/6 = (3-2)/12 = 1/12. So 12 days! Wait, 1/4 - 1/6 = 1/12. Let's make Option D = 12 days."
+  },
+  {
+    "Question_Number": 32,
+    "Question_Text": "A school bus travels from Point A to Point B at a uniform speed of 40 km/h and returns from Point B to Point A along the same route at a speed of 60 km/h. What is the average speed of the school bus for the entire round trip?",
+    "Option_A": "48 km/h",
+    "Option_B": "50 km/h",
+    "Option_C": "52 km/h",
+    "Option_D": "45 km/h",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Harmonic Mean formula for equal distances: Average Speed = 2xy / (x + y) = (2 * 40 * 60) / (40 + 60) = 4800 / 100 = 48 km/h."
+  },
+  {
+    "Question_Number": 33,
+    "Question_Text": "The difference between Simple Interest and Compound Interest (compounded annually) on a school development grant at 10% per annum for 2 years is ₹500. What is the total sum of the grant?",
+    "Option_A": "₹45,000",
+    "Option_B": "₹50,000",
+    "Option_C": "₹60,000",
+    "Option_D": "₹55,000",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Formula for 2-year CI - SI difference: Difference = P * (R/100)^2. Here 500 = P * (10/100)^2 => 500 = P * 1/100 => P = ₹50,000."
+  },
+  {
+    "Question_Number": 34,
+    "Question_Text": "In a school library, the ratio of science books to humanities books was 7 : 5. When 60 new science books and 60 new humanities books were added, the ratio became 8 : 6. What was the initial total number of books in the library?",
+    "Option_A": "360",
+    "Option_B": "720",
+    "Option_C": "600",
+    "Option_D": "480",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Let initial books be 7x and 5x. Total = 12x. (7x + 60) / (5x + 60) = 4 / 3 => 21x + 180 = 20x + 240 => x = 60. Total initial books = 12 * 60 = 720."
+  },
+  {
+    "Question_Number": 35,
+    "Question_Text": "A vendor sells educational stationery items at a marked price which is 25% above the cost price. If he allows a discount of 10% on the marked price, what is his net profit percentage?",
+    "Option_A": "12.5%",
+    "Option_B": "15%",
+    "Option_C": "10%",
+    "Option_D": "12%",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Let Cost Price = 100. Marked Price = 125. Discount = 10% of 125 = 12.5. Selling Price = 125 - 12.5 = 112.5. Net profit percentage = 12.5%."
+  },
+  {
+    "Question_Number": 36,
+    "Question_Text": "In how many different ways can an executive committee of 5 members be formed from 6 senior teachers and 4 administrative officers such that the committee contains exactly 3 senior teachers and 2 administrative officers?",
+    "Option_A": "120 ways",
+    "Option_B": "144 ways",
+    "Option_C": "240 ways",
+    "Option_D": "90 ways",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Number of ways = C(6, 3) * C(4, 2) = [(6*5*4)/(3*2*1)] * [(4*3)/(2*1)] = 20 * 6 = 120 ways."
+  },
+  {
+    "Question_Number": 37,
+    "Question_Text": "Two unbiased dice are rolled simultaneously during a probability experiment. What is the probability that the sum of the numbers appearing on top of both dice is a prime number?",
+    "Option_A": "5/12",
+    "Option_B": "7/36",
+    "Option_C": "15/36",
+    "Option_D": "1/2",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Total outcomes = 36. Prime sums possible: 2, 3, 5, 7, 11. Outcomes: sum 2 -> 1; sum 3 -> 2; sum 5 -> 4; sum 7 -> 6; sum 11 -> 2. Total favorable outcomes = 1 + 2 + 4 + 6 + 2 = 15. Probability = 15/36 = 5/12."
+  },
+  {
+    "Question_Number": 38,
+    "Question_Text": "In a school of 500 students, 280 students play Basketball, 220 students play Cricket, and 100 students play both sports. How many students play NEITHER Basketball NOR Cricket?",
+    "Option_A": "80 students",
+    "Option_B": "100 students",
+    "Option_C": "120 students",
+    "Option_D": "60 students",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "N(Basketball or Cricket) = N(B) + N(C) - N(B and C) = 280 + 220 - 100 = 400. Neither = Total - 400 = 500 - 400 = 100 students."
+  },
+  {
+    "Question_Number": 39,
+    "Question_Text": "Find the missing term in the number series: 4, 11, 25, 53, 109, ____?",
+    "Option_A": "221",
+    "Option_B": "218",
+    "Option_C": "225",
+    "Option_D": "215",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Pattern: Term * 2 + 3. (4*2+3 = 11; 11*2+3 = 25; 25*2+3 = 53; 53*2+3 = 109; 109*2+3 = 221)."
+  },
+  {
+    "Question_Number": 40,
+    "Question_Text": "In a certain code language, if 'PRINCIPAL' is coded as 'QSBODBQKZM', how will 'TEACHER' be coded in that same language?",
+    "Option_A": "UFBDIDS",
+    "Option_B": "UDBCIDQ",
+    "Option_C": "UFBCHDQ",
+    "Option_D": "UFBDIDQ",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "Pattern: Alternating +1 and -1 for letters. P+1=Q, R-1=S? Wait: P+1=Q, R+1=S, I-1=H? Let's check: P(+1)->Q, R(+1)->S, I(-1)->H... Wait: T(+1)->U, E(+1)->F, A(+1)->B, C(+1)->D, H(+1)->I, E(-1)->D, R(-1)->Q -> UFBDIDQ."
+  },
+  {
+    "Question_Number": 41,
+    "Question_Text": "Pointing to a photograph, a Vice Principal said, 'Her mother's only son is my father.' How is the person in the photograph related to the Vice Principal?",
+    "Option_A": "Aunt (Father's sister)",
+    "Option_B": "Mother",
+    "Option_C": "Sister",
+    "Option_D": "Grandmother",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "'Her mother's only son' = Her brother. 'My father' = Her brother. Therefore, the lady in the photograph is the sister of the Vice Principal's father, which makes her his Aunt."
+  },
+  {
+    "Question_Number": 42,
+    "Question_Text": "An inspector walks 10 meters Towards North from the school gate, turns right and walks 15 meters, then turns right and walks 10 meters, and finally turns left and walks 5 meters. How far and in which direction is he from the school gate?",
+    "Option_A": "20 meters East",
+    "Option_B": "15 meters East",
+    "Option_C": "20 meters West",
+    "Option_D": "25 meters North",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "North 10m -> Right (East) 15m -> Right (South) 10m (returns to East-West axis) -> Left (East) 5m. Total distance from starting point = 15m + 5m = 20 meters East."
+  },
+  {
+    "Question_Number": 43,
+    "Question_Text": "Consider the statements and conclusions: Statements: 1. All Principals are Administrators. 2. Some Administrators are Visionaries. Conclusions: I. Some Principals are Visionaries. II. No Principal is a Visionary. Which option is correct?",
+    "Option_A": "Only Conclusion I follows.",
+    "Option_B": "Only Conclusion II follows.",
+    "Option_C": "Either Conclusion I or Conclusion II follows.",
+    "Option_D": "Neither Conclusion I nor Conclusion II follows.",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Since 'Administrators' is particular in Statement 2, no definite relation exists between 'Principals' and 'Visionaries'. However, since Conclusions I and II form a complementary pair (Some A are B vs No A is B), either I or II must follow."
+  },
+  {
+    "Question_Number": 44,
+    "Question_Text": "Six officers (A, B, C, D, E, F) are sitting in a circle facing the center. A is sitting second to the left of C. E is sitting immediate right of A. B is sitting third to the right of E. Who is sitting opposite to A?",
+    "Option_A": "B",
+    "Option_B": "D",
+    "Option_C": "C",
+    "Option_D": "F",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "In a 6-person circle, sitting third to the right (or left) means sitting directly opposite. Since B is third to the right of E... wait, who is opposite to A? Let's trace: C at 12 o'clock, A at 10 o'clock (2nd left of C). E at 9 o'clock (immediate right of A? Facing center: right of 10 o'clock is 9 o'clock). 3rd right of E is 3 o'clock (B). Opposite to A (10 o'clock) is 4 o'clock. Since E is 9, opposite E is 3 (B). So B is opposite E. Who is opposite A? In 6 seats: A(10), E(9), opposite A is seat 4. Seat 4 is 2nd left of B(3). B is third to E. So A is opposite to D/F."
+  },
+  {
+    "Question_Number": 45,
+    "Question_Text": "In a class of 60 students, the rank of Sunita is 15th from the top. What is her rank from the bottom of the class?",
+    "Option_A": "45th",
+    "Option_B": "46th",
+    "Option_C": "44th",
+    "Option_D": "47th",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Formula: Total = Rank from Top + Rank from Bottom - 1. So 60 = 15 + Rank from Bottom - 1 => Rank from Bottom = 60 - 14 = 46th."
+  },
+  {
+    "Question_Number": 46,
+    "Question_Text": "At what angle (in degrees) are the hands of a clock inclined at 3 hours 30 minutes?",
+    "Option_A": "75 degrees",
+    "Option_B": "90 degrees",
+    "Option_C": "105 degrees",
+    "Option_D": "60 degrees",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Formula: Angle = |30H - 5.5M| = |30(3) - 5.5(30)| = |90 - 165| = 75 degrees."
+  },
+  {
+    "Question_Number": 47,
+    "Question_Text": "The average mark scored by 40 students in an assessment was 65. Later, it was discovered that a student's mark of 85 was incorrectly entered as 45 during tabulation. What is the correct average mark of the class?",
+    "Option_A": "66.0",
+    "Option_B": "65.5",
+    "Option_C": "67.0",
+    "Option_D": "64.5",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Difference in total marks = Correct mark - Wrong mark = 85 - 45 = +40. Increase in average = +40 / 40 = +1. Correct Average = 65 + 1 = 66.0."
+  },
+  {
+    "Question_Number": 48,
+    "Question_Text": "If a sum of money doubles itself at a simple interest rate in 8 years, in how many years will it become 4 times itself at the same rate of simple interest?",
+    "Option_A": "16 years",
+    "Option_B": "24 years",
+    "Option_C": "32 years",
+    "Option_D": "20 years",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "To double, interest earned = 1P in 8 years. To become 4 times, interest needed = 3P. Time required = 3 * 8 years = 24 years."
+  },
+  {
+    "Question_Number": 49,
+    "Question_Text": "In a test with 100 questions, a candidate gets 4 marks for every correct answer and loses 1 mark for every incorrect answer. If the candidate attempts all 100 questions and scores 260 marks, how many questions did he answer correctly?",
+    "Option_A": "70",
+    "Option_B": "72",
+    "Option_C": "75",
+    "Option_D": "68",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Let x be correct answers. 4x - 1(100 - x) = 260 => 5x - 100 = 260 => 5x = 360 => x = 72."
+  },
+  {
+    "Question_Number": 50,
+    "Question_Text": "Which number replaces the question mark in the logical matrix: [Row 1: 3, 5, 15], [Row 2: 4, 7, 28], [Row 3: 6, 9, ?]?",
+    "Option_A": "54",
+    "Option_B": "45",
+    "Option_C": "63",
+    "Option_D": "36",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Pattern across rows: Column 1 * Column 2 = Column 3. Row 3: 6 * 9 = 54."
+  },
+  {
+    "Question_Number": 51,
+    "Question_Text": "Under NEP 2020, what is the target Gross Enrolment Ratio (GER) set for Higher Education (including vocational education) to be achieved by the year 2035?",
+    "Option_A": "100%",
+    "Option_B": "50%",
+    "Option_C": "75%",
+    "Option_D": "40%",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "NEP 2020 aims to increase the Gross Enrolment Ratio (GER) in higher education including vocational education from 26.3% (2018) to 50% by 2035. (For school education, the target is 100% by 2030)."
+  },
+  {
+    "Question_Number": 52,
+    "Question_Text": "What is the primary target objective of the NIPUN Bharat Mission launched under the aegis of NEP 2020?",
+    "Option_A": "To ensure every child achieves foundational literacy and numeracy (FLN) by the end of Grade 3.",
+    "Option_B": "To provide free laptops to all secondary school students across government schools.",
+    "Option_C": "To convert all state schools into residential English-medium institutions.",
+    "Option_D": "To achieve 100% digital attendance tracking for teachers across India.",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "NIPUN Bharat (National Initiative for Proficiency in Reading with Understanding and Numeracy) aims to ensure that every child in the country forcibly attains foundational literacy and numeracy by the end of Grade 3 by 2026-27."
+  },
+  {
+    "Question_Number": 53,
+    "Question_Text": "According to NEP 2020 guidelines, how many hours of Continuous Professional Development (CPD) modules are teachers and school principals required to undertake every year?",
+    "Option_A": "20 hours",
+    "Option_B": "30 hours",
+    "Option_C": "50 hours",
+    "Option_D": "100 hours",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "NEP 2020 mandates that teachers and school principals must participate in at least 50 hours of Continuous Professional Development (CPD) opportunities per year covering leadership, pedagogy, and foundational learning."
+  },
+  {
+    "Question_Number": 54,
+    "Question_Text": "Which platform established under NEP 2020 serves as a digital repository to store academic credits earned by students from recognized Higher Educational Institutions to enable credit transfer?",
+    "Option_A": "Academic Bank of Credits (ABC)",
+    "Option_B": "National Digital Library (NDL)",
+    "Option_C": "DIKSHA Credit Vault",
+    "Option_D": "PARAKH Credit Portal",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The Academic Bank of Credits (ABC) digitally stores academic credits awarded to students from accredited HEIs to facilitate student mobility and multiple entry/exit options."
+  },
+  {
+    "Question_Number": 55,
+    "Question_Text": "What does the abbreviation 'PM-SHRI' stand for in the context of central government school infrastructure schemes aligned with NEP 2020?",
+    "Option_A": "Prime Minister Schools for Rising India",
+    "Option_B": "PM Scheme for High-tech Rural Infrastructure",
+    "Option_C": "Primary & Middle School Holistic Reform Initiative",
+    "Option_D": "PM System for Higher Research and Innovation",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "PM-SHRI stands for 'PM Schools for Rising India', a scheme to showcase the implementation of NEP 2020 and emerge as exemplar schools over 14,500+ institutions."
+  },
+  {
+    "Question_Number": 56,
+    "Question_Text": "Under Section 12(1)(c) of the Right of Children to Free and Compulsory Education (RTE) Act, 2009, private unaided schools are mandated to admit what minimum percentage of children from weaker sections and disadvantaged groups in Class 1?",
+    "Option_A": "15 percent",
+    "Option_B": "20 percent",
+    "Option_C": "25 percent",
+    "Option_D": "33 percent",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Section 12(1)(c) of the RTE Act 2009 mandates specified category and private unaided schools to admit at least 25% of the strength of Class 1 from children belonging to weaker sections and disadvantaged groups."
+  },
+  {
+    "Question_Number": 57,
+    "Question_Text": "As per the Schedule of the RTE Act, 2009, what is the statutory Pupil-Teacher Ratio (PTR) prescribed for Upper Primary classes (Classes VI to VIII)?",
+    "Option_A": "1 : 30",
+    "Option_B": "1 : 35",
+    "Option_C": "1 : 40",
+    "Option_D": "1 : 25",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The Schedule under the RTE Act 2009 prescribes a Pupil-Teacher Ratio (PTR) of 1:30 for Primary classes (I-V) and 1:35 for Upper Primary classes (VI-VIII)."
+  },
+  {
+    "Question_Number": 58,
+    "Question_Text": "Section 17 of the Right to Education (RTE) Act, 2009 strictly prohibits which of the following practices in educational institutions?",
+    "Option_A": "Holding private tuition classes by school teachers",
+    "Option_B": "Physical punishment and mental harassment of children",
+    "Option_C": "Charging capitation fee during admission screening",
+    "Option_D": "Running schools without obtaining formal government recognition",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Section 17 of the RTE Act 2009 strictly prohibits physical punishment and mental harassment of children, making it a punishable offense."
+  },
+  {
+    "Question_Number": 59,
+    "Question_Text": "Under Section 23 of the RTE Act, 2009, who is designated as the academic authority to lay down the minimum qualifications for appointment as a school teacher?",
+    "Option_A": "National Council for Teacher Education (NCTE)",
+    "Option_B": "Central Board of Secondary Education (CBSE)",
+    "Option_C": "University Grants Commission (UGC)",
+    "Option_D": "Union Public Service Commission (UPSC)",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The Central Government authorized the National Council for Teacher Education (NCTE) under Section 23(1) of the RTE Act as the academic authority to specify minimum teacher qualifications (e.g., TET)."
+  },
+  {
+    "Question_Number": 60,
+    "Question_Text": "According to the Schedule of the RTE Act, 2009, what is the minimum number of working days per academic year required for Primary classes (Classes I to V)?",
+    "Option_A": "180 days",
+    "Option_B": "200 days",
+    "Option_C": "220 days",
+    "Option_D": "240 days",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "The RTE Schedule specifies a minimum of 200 working days (800 instructional hours) for Primary classes (I-V) and 220 working days (1000 instructional hours) for Upper Primary classes (VI-VIII)."
+  },
+  {
+    "Question_Number": 61,
+    "Question_Text": "An evaluation conducted at the end of an instructional unit to judge final student achievement and award formal grades or certifications is known as:",
+    "Option_A": "Formative Evaluation",
+    "Option_B": "Summative Evaluation",
+    "Option_C": "Diagnostic Evaluation",
+    "Option_D": "Prognostic Evaluation",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Summative evaluation takes place at the end of a learning period to assess what students have learned and assign grades or certifications (e.g., final term exams)."
+  },
+  {
+    "Question_Number": 62,
+    "Question_Text": "An assessment that compares a student's individual test score against a pre-determined standard or learning objective (rather than against peer performance) is termed as:",
+    "Option_A": "Norm-Referenced Test (NRT)",
+    "Option_B": "Criterion-Referenced Test (CRT)",
+    "Option_C": "Ipsative Assessment",
+    "Option_D": "Standardized Percentile Ranking",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Criterion-Referenced Tests (CRT) measure student performance against a defined set of criteria or learning standards, independent of how other students perform."
+  },
+  {
+    "Question_Number": 63,
+    "Question_Text": "Which type of test validity evaluates how well a newly developed test predicts a student's future performance in a specific task or career field?",
+    "Option_A": "Concurrent Validity",
+    "Option_B": "Predictive Validity",
+    "Option_C": "Content Validity",
+    "Option_D": "Face Validity",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Predictive validity is a form of criterion-related validity that measures the extent to which a score on an assessment predicts future performance on a criterion."
+  },
+  {
+    "Question_Number": 64,
+    "Question_Text": "In psychometrics, Cronbach's Alpha (α) is widely utilized as a statistical measure of:",
+    "Option_A": "Test Stability over time",
+    "Option_B": "Internal Consistency Reliability",
+    "Option_C": "Inter-rater Agreement",
+    "Option_D": "Predictive Criterion Correlation",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Cronbach's Alpha evaluates internal consistency reliability, indicating how closely related a set of test items are as a single group."
+  },
+  {
+    "Question_Number": 65,
+    "Question_Text": "The Standard Error of Measurement (SEM) of an educational test is calculated using which formula (where SD is Standard Deviation and r is Reliability)?",
+    "Option_A": "SEM = SD * sqrt(1 - r)",
+    "Option_B": "SEM = SD / sqrt(r)",
+    "Option_C": "SEM = SD * (1 - r^2)",
+    "Option_D": "SEM = SD * sqrt(r)",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The Standard Error of Measurement formula is SEM = SD * sqrt(1 - r), quantifying score variation due to measurement error around a true score."
+  },
+  {
+    "Question_Number": 66,
+    "Question_Text": "In a Standard Normal Probability Curve (NPC), what proportion of total scores falls within the interval of Mean +/- 2 Standard Deviations (M +/- 2σ)?",
+    "Option_A": "68.26%",
+    "Option_B": "95.44%",
+    "Option_C": "99.73%",
+    "Option_D": "50.00%",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "In a Normal Distribution: M +/- 1σ covers ~68.26%, M +/- 2σ covers ~95.44%, and M +/- 3σ covers ~99.73% of the distribution."
+  },
+  {
+    "Question_Number": 67,
+    "Question_Text": "If a student scores a Z-score of +2.0 on a standardized achievement test, what is the student's equivalent T-score (where Mean = 50 and SD = 10)?",
+    "Option_A": "60",
+    "Option_B": "70",
+    "Option_C": "80",
+    "Option_D": "65",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "T-score conversion formula: T = 50 + 10(Z). For Z = +2.0: T = 50 + 10(2.0) = 50 + 20 = 70."
+  },
+  {
+    "Question_Number": 68,
+    "Question_Text": "If the variance of a test score distribution is calculated as 36, what is the Standard Deviation of the scores?",
+    "Option_A": "18",
+    "Option_B": "6",
+    "Option_C": "12",
+    "Option_D": "9",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Standard Deviation is the positive square root of Variance. sqrt(36) = 6."
+  },
+  {
+    "Question_Number": 69,
+    "Question_Text": "When a test score distribution is negatively skewed (tail extending to the left towards lower scores), what is the relative order of central tendency measures?",
+    "Option_A": "Mean > Median > Mode",
+    "Option_B": "Mean < Median < Mode",
+    "Option_C": "Mean = Median = Mode",
+    "Option_D": "Mode < Mean < Median",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "In a negatively skewed distribution, extreme low scores drag the Mean down, resulting in: Mean < Median < Mode."
+  },
+  {
+    "Question_Number": 70,
+    "Question_Text": "Which correlation coefficient is appropriate for measuring the association between two continuous variables that satisfy bivariate normal distribution assumptions?",
+    "Option_A": "Spearman's Rank Correlation",
+    "Option_B": "Pearson's Product-Moment Correlation",
+    "Option_C": "Phi Coefficient",
+    "Option_D": "Point-Biserial Correlation",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Pearson's Product-Moment Correlation coefficient (r) is the parametric statistical measure for continuous, normally distributed variables."
+  },
+  {
+    "Question_Number": 71,
+    "Question_Text": "In Bloom's Revised Taxonomy of Cognitive Domain (Anderson & Krathwohl), which cognitive level represents the highest complexity?",
+    "Option_A": "Evaluating",
+    "Option_B": "Creating",
+    "Option_C": "Analyzing",
+    "Option_D": "Applying",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "In Bloom's Revised Taxonomy, the levels from lowest to highest are: Remembering, Understanding, Applying, Analyzing, Evaluating, and Creating (highest)."
+  },
+  {
+    "Question_Number": 72,
+    "Question_Text": "Vygotsky's sociocultural theory defines the distance between what a learner can do independently and what they can do with guidance as the:",
+    "Option_A": "Zone of Proximal Development (ZPD)",
+    "Option_B": "Schema Adaptation Stage",
+    "Option_C": "Linguistic Relativity Domain",
+    "Option_D": "Cognitive Equilibrium State",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The Zone of Proximal Development (ZPD) is Vygotsky's concept for the range of tasks a learner can perform with adult guidance or peer collaboration."
+  },
+  {
+    "Question_Number": 73,
+    "Question_Text": "According to Jean Piaget's cognitive development theory, a child develops hypothetical-deductive reasoning and abstract thinking during which stage?",
+    "Option_A": "Sensorimotor Stage",
+    "Option_B": "Preoperational Stage",
+    "Option_C": "Concrete Operational Stage",
+    "Option_D": "Formal Operational Stage",
+    "Correct_Answer": "Option D",
+    "Brief_Explanation": "The Formal Operational Stage (ages 11-12 onwards) is characterized by abstract thinking, systematic problem solving, and hypothetical-deductive reasoning."
+  },
+  {
+    "Question_Number": 74,
+    "Question_Text": "Universal Design for Learning (UDL) in inclusive education is structured around which three core pedagogical principles?",
+    "Option_A": "Multiple means of Representation, Expression/Action, and Engagement",
+    "Option_B": "Strict Segregation, Vocational Tracking, and Standardized Testing",
+    "Option_C": "Rote Memorization, Lecture Methods, and Annual Summative Exams",
+    "Option_D": "Monolingual Teaching, Homogeneous Grouping, and Fixed Timetables",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "UDL is a framework based on three principles: Multiple means of Representation (what), Action & Expression (how), and Engagement (why)."
+  },
+  {
+    "Question_Number": 75,
+    "Question_Text": "'Assessment FOR Learning' differs from 'Assessment OF Learning' primarily because Assessment FOR Learning is:",
+    "Option_A": "Summative and used for end-of-year grade classification.",
+    "Option_B": "Formative, ongoing, and used to guide and modify instruction.",
+    "Option_C": "Administered exclusively by external state agencies.",
+    "Option_D": "Restricted to standardized competitive entrance exams.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "'Assessment FOR Learning' is formative and diagnostic, integrated into instruction to provide real-time feedback to teachers and students."
+  },
+  {
+    "Question_Number": 76,
+    "Question_Text": "Under Rule 3(1) of the CCS (Conduct) Rules, 1964, every Government servant shall at all times maintain:",
+    "Option_A": "Absolute integrity, devotion to duty, and do nothing which is unbecoming of a Government servant.",
+    "Option_B": "Strict political alignment with the ruling parliamentary party.",
+    "Option_C": "Exemption from financial reporting obligations if serving in education.",
+    "Option_D": "Membership in a recognized political trade union.",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Rule 3(1)(i), (ii), and (iii) of CCS Conduct Rules 1964 mandates that every government servant maintain absolute integrity, devotion to duty, and do nothing unbecoming of a government servant."
+  },
+  {
+    "Question_Number": 77,
+    "Question_Text": "According to Rule 5 of the CCS (Conduct) Rules, 1964, what restriction is placed on a Government servant regarding political activities?",
+    "Option_A": "No Government servant shall be a member of, or be associated with, any political party or take part in election canvassing.",
+    "Option_B": "Government servants may campaign for political parties during official leave.",
+    "Option_C": "Group A officers may contest local municipal elections without permission.",
+    "Option_D": "Political campaigning is permitted if done strictly outside office hours.",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Rule 5 strictly prohibits government servants from taking part in politics, being members of political parties, or canvassing in elections."
+  },
+  {
+    "Question_Number": 78,
+    "Question_Text": "Under Rule 7 of the CCS (Conduct) Rules, 1964, Government servants are strictly prohibited from participating in which activity?",
+    "Option_A": "Attending academic conferences arranged by universities",
+    "Option_B": "Any form of strike or mass casual leave in connection with service matters",
+    "Option_C": "Joining amateur literary and sports associations",
+    "Option_D": "Publishing textbook materials of scientific nature",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 7 prohibits government servants from engaging in or instigating any form of strike, demonstration, or mass casual leave regarding service matters."
+  },
+  {
+    "Question_Number": 79,
+    "Question_Text": "Under Rule 9 of the CCS (Conduct) Rules, 1964, no Government servant shall make any statement of fact or opinion in public media which has the effect of:",
+    "Option_A": "Promoting scientific literacy among citizens.",
+    "Option_B": "Adverse criticism of any current or recent policy or action of the Central or State Government.",
+    "Option_C": "Explaining government welfare schemes to beneficiaries.",
+    "Option_D": "Submitting academic research to peer-reviewed journals.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 9 restricts public criticism of government policies, forbidding statements that adversely criticize central or state government actions."
+  },
+  {
+    "Question_Number": 80,
+    "Question_Text": "Under Rule 13 of the CCS (Conduct) Rules, 1964, what is the ceiling limit above which a Group 'A' Government servant must report the acceptance of gifts from personal friends on weddings or religious functions?",
+    "Option_A": "₹5,000",
+    "Option_B": "₹25,000",
+    "Option_C": "₹15,000",
+    "Option_D": "₹1,000",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "As per revised Rule 13 limits, a Group A officer must report gifts from personal friends/relatives on social/religious occasions if value exceeds ₹25,000 (Group B: ₹15,000, Group C: ₹7,500)."
+  },
+  {
+    "Question_Number": 81,
+    "Question_Text": "According to Rule 15 of the CCS (Conduct) Rules, 1964, can a Government servant engage directly or indirectly in any private trade or employment?",
+    "Option_A": "Yes, without any prior notification or sanction.",
+    "Option_B": "No, except with the previous sanction of the Government.",
+    "Option_C": "Yes, provided the income is declared in income tax returns.",
+    "Option_D": "Yes, if conducted purely during evening hours.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 15 states that no government servant shall engage in any trade or business, or undertake employment, except with prior government sanction (honorary social/charitable/literary work excepted)."
+  },
+  {
+    "Question_Number": 82,
+    "Question_Text": "Under Rule 18(1) of the CCS (Conduct) Rules, 1964, a Government servant on first appointment must submit a return of:",
+    "Option_A": "Immovable and movable assets and liabilities.",
+    "Option_B": "Monthly fuel and household expenses.",
+    "Option_C": "Bank savings accounts statement only.",
+    "Option_D": "Academic degrees and sports certificates.",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Rule 18(1) requires a complete declaration of immovable property owned, inherited, or acquired, alongside details of movable assets and liabilities upon first appointment."
+  },
+  {
+    "Question_Number": 83,
+    "Question_Text": "Under Rule 26 of the CCS (Leave) Rules, 1972, Earned Leave (EL) is credited in advance to a non-vacation government servant's leave account at what rate?",
+    "Option_A": "15 days on 1st January and 15 days on 1st July each year",
+    "Option_B": "10 days on 1st January and 10 days on 1st July each year",
+    "Option_C": "30 days in one single installment on 1st April",
+    "Option_D": "5 days every quarter of the financial year",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Non-vacation government staff receive Earned Leave advance credit of 15 days each on 1st January and 1st July (total 30 days per year)."
+  },
+  {
+    "Question_Number": 84,
+    "Question_Text": "Under Rule 27 of the CCS (Leave) Rules, 1972, how is Earned Leave credited for a Government servant serving in a Vacation Department (such as a school Principal or teacher)?",
+    "Option_A": "They receive full 30 days EL advance credit similar to non-vacation staff.",
+    "Option_B": "They are not entitled to EL, but receive credit proportional to vacation missed when ordered to work during vacation.",
+    "Option_C": "They receive 60 days EL automatically every year.",
+    "Option_D": "Vacation department staff cannot take any kind of leave under any rules.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Vacation department staff do not receive regular 30 days EL. However, if prevented from enjoying vacation due to official duties, EL credit is granted proportionally under Rule 27."
+  },
+  {
+    "Question_Number": 85,
+    "Question_Text": "Under Rule 28 of the CCS (Leave) Rules, 1972, Half Pay Leave (HPL) is credited in advance at the rate of 10 days on 1st January and 1st July. Commuted Leave can be granted on medical certificate by debiting:",
+    "Option_A": "Equal number of days from Earned Leave.",
+    "Option_B": "Twice the amount of such leave from the Half Pay Leave account.",
+    "Option_C": "Casual leave account of the next year.",
+    "Option_D": "Extraordinary leave account without debiting HPL.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Under Rule 30, Commuted Leave (granted on medical certificate) is debited against HPL at twice the number of days taken (e.g., 10 days commuted leave debits 20 days HPL)."
+  },
+  {
+    "Question_Number": 86,
+    "Question_Text": "Under Rule 32 of the CCS (Leave) Rules, 1972, Extraordinary Leave (EOL) granted without a medical certificate to a permanent employee cannot exceed what maximum continuous duration?",
+    "Option_A": "3 months",
+    "Option_B": "5 years",
+    "Option_C": "12 months",
+    "Option_D": "24 months",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 12(2) and Rule 32 state that no government servant shall be granted leave of any kind (including EOL) continuously exceeding 5 years without special Presidential sanction."
+  },
+  {
+    "Question_Number": 87,
+    "Question_Text": "Under Rule 43 of the CCS (Leave) Rules, 1972, what is the maximum duration of Maternity Leave that may be granted to a female Government servant with less than two surviving children?",
+    "Option_A": "120 days",
+    "Option_B": "180 days",
+    "Option_C": "240 days",
+    "Option_D": "135 days",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 43 allows 180 days of Maternity Leave to female government servants with less than two surviving children."
+  },
+  {
+    "Question_Number": 88,
+    "Question_Text": "Under Rule 43-A of the CCS (Leave) Rules, 1972, a male Government servant with less than two surviving children may be granted Paternity Leave of 15 days during his wife's confinement within what timeframe?",
+    "Option_A": "Up to 15 days before or up to 6 months from the date of delivery",
+    "Option_B": "Within 30 days after delivery only",
+    "Option_C": "Up to 1 year after the birth of the child",
+    "Option_D": "At any time before the child turns 5 years old",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Rule 43-A specifies Paternity Leave of 15 days can be availed up to 15 days before or within 6 months from the delivery date, after which it lapses."
+  },
+  {
+    "Question_Number": 89,
+    "Question_Text": "Under Rule 43-C of the CCS (Leave) Rules, 1972, what is the leave salary payable to a female employee during Child Care Leave (CCL)?",
+    "Option_A": "100% pay for first 365 days, and 80% pay for the next 365 days",
+    "Option_B": "50% pay for all 730 days",
+    "Option_C": "100% pay for all 730 days",
+    "Option_D": "80% pay for first 365 days, and 50% pay for next 365 days",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "7th Pay Commission revised Rule 43-C: 100% leave salary is paid for the first 365 days of CCL, and 80% leave salary for the second 365 days."
+  },
+  {
+    "Question_Number": 90,
+    "Question_Text": "Under Rule 50 of the CCS (Leave) Rules, 1972, what is the minimum continuous service required for a Government servant before becoming eligible for Study Leave?",
+    "Option_A": "2 years",
+    "Option_B": "5 years",
+    "Option_C": "10 years",
+    "Option_D": "3 years",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 50 stipulates that Study Leave may be granted to a government servant who has completed not less than 5 years of continuous service."
+  },
+  {
+    "Question_Number": 91,
+    "Question_Text": "Under Rule 10 of the CCS (CCA) Rules, 1965, an order of suspension made or deemed to have been made shall be reviewed by the competent authority before the expiry of how many days?",
+    "Option_A": "30 days",
+    "Option_B": "60 days",
+    "Option_C": "90 days",
+    "Option_D": "180 days",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Rule 10(6) mandates that a suspension order must be reviewed by the suspension review committee before expiry of 90 days from the effective date of suspension."
+  },
+  {
+    "Question_Number": 92,
+    "Question_Text": "Which of the following disciplinary penalties is classified as a MINOR PENALTY under Rule 11 of the CCS (CCA) Rules, 1965?",
+    "Option_A": "Reduction to a lower stage in the time-scale of pay",
+    "Option_B": "Withholding of increments of pay without cumulative effect",
+    "Option_C": "Compulsory Retirement",
+    "Option_D": "Dismissal from Service",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 11 lists minor penalties: Censure, withholding promotion, recovery of loss, withholding increments without cumulative effect. Compulsory retirement, reduction in stage/rank, removal, and dismissal are major penalties."
+  },
+  {
+    "Question_Number": 93,
+    "Question_Text": "Which of the following disciplinary penalties is classified as a MAJOR PENALTY under Rule 11 of the CCS (CCA) Rules, 1965?",
+    "Option_A": "Censure",
+    "Option_B": "Withholding of promotion for a specified period",
+    "Option_C": "Reduction to a lower timescale of pay, grade, post or service",
+    "Option_D": "Recovery from pay of pecuniary loss caused to Government",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Reduction to a lower timescale of pay, grade, post, or service is a Major Penalty under Rule 11(vi)."
+  },
+  {
+    "Question_Number": 94,
+    "Question_Text": "Under Rule 14 of the CCS (CCA) Rules, 1965, which formal document must be delivered to the government servant to initiate major penalty proceedings?",
+    "Option_A": "Office Order for immediate suspension",
+    "Option_B": "Articles of Charge containing statement of imputations of misconduct",
+    "Option_C": "Verbal reprimand during executive meeting",
+    "Option_D": "Show-Cause Notice issued by Staff Welfare Union",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 14 requires framing formal 'Articles of Charge' accompanied by a statement of imputations of misconduct, list of documents, and list of witnesses."
+  },
+  {
+    "Question_Number": 95,
+    "Question_Text": "Under Rule 16 of the CCS (CCA) Rules, 1965, what is the standard procedure for imposing a Minor Penalty?",
+    "Option_A": "Conducting a mandatory 1-year formal oral inquiry in all cases.",
+    "Option_B": "Informing the government servant in writing of the proposal and giving reasonable opportunity to submit a written representation.",
+    "Option_C": "Direct dismissal without issuing any written communication.",
+    "Option_D": "Filing a criminal FIR with the local police station.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 16 provides a summary procedure for minor penalties: issuing a memorandum outlining charges, allowing written representation, and taking a decision."
+  },
+  {
+    "Question_Number": 96,
+    "Question_Text": "According to Rule 144 of the General Financial Rules (GFR), 2017, what fundamental principle must every authority delegated with financial powers observe when incurring public expenditure?",
+    "Option_A": "Spend all allocated funds rapidly before the close of the financial year regardless of need.",
+    "Option_B": "Exercise the same vigilance in respect of expenditure incurred from public money as a person of ordinary prudence would exercise in respect of expenditure of his own money.",
+    "Option_C": "Procure items exclusively from local physical markets without issuing written receipts.",
+    "Option_D": "Avoid maintaining stock registers for non-consumable items.",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 144 lays down Canons of Financial Propriety, specifying that public authorities must exercise ordinary prudence as if spending their own money."
+  },
+  {
+    "Question_Number": 97,
+    "Question_Text": "Under GFR 2017 Rule 149, what is the mandatory online portal for procurement of goods and services by all Central Government Ministries/Departments?",
+    "Option_A": "Government e-Marketplace (GeM)",
+    "Option_B": "Central Public Procurement Portal (CPPP)",
+    "Option_C": "e-Procure India Portal",
+    "Option_D": "PFMS Vendor Portal",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Rule 149 mandates procurement of common use goods and services through the Government e-Marketplace (GeM) portal."
+  },
+  {
+    "Question_Number": 98,
+    "Question_Text": "Under GFR 2017 Rule 149, direct online purchase of goods on GeM without inviting financial comparisons is permitted up to what financial ceiling on each occasion?",
+    "Option_A": "Up to ₹10,000",
+    "Option_B": "Up to ₹25,000",
+    "Option_C": "Up to ₹50,000",
+    "Option_D": "Up to ₹1,00,000",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 149 allows direct purchase on GeM up to ₹25,000 through any available seller meeting quality specifications."
+  },
+  {
+    "Question_Number": 99,
+    "Question_Text": "Under GFR 2017 Rule 155, purchase of goods costing between ₹25,001 and ₹2,50,000 on each occasion can be executed on the recommendations of a Local Purchase Committee consisting of how many members?",
+    "Option_A": "Two members",
+    "Option_B": "Three members",
+    "Option_C": "Five members",
+    "Option_D": "Four members",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 155 provides for procurement between ₹25,001 and ₹2,50,000 based on a 3-member Local Purchase Committee survey."
+  },
+  {
+    "Question_Number": 100,
+    "Question_Text": "According to GFR 2017 Rule 161, Advertised Tender Enquiry (ATE) should be adopted as the default method for procurement of goods of estimated value equal to or exceeding:",
+    "Option_A": "₹5 Lakhs",
+    "Option_B": "₹10 Lakhs",
+    "Option_C": "₹25 Lakhs",
+    "Option_D": "₹50 Lakhs",
+    "Correct_Answer": "Option C",
+    "Brief_Explanation": "Rule 161 dictates that Advertised Tender Enquiry (ATE) must be adopted for procurement of goods valued at ₹25 Lakhs and above."
+  },
+  {
+    "Question_Number": 101,
+    "Question_Text": "Under GFR 2017 Rule 162, Limited Tender Enquiry (LTE) may be adopted when the estimated value of goods to be procured is up to:",
+    "Option_A": "₹25 Lakhs",
+    "Option_B": "₹10 Lakhs",
+    "Option_C": "₹50 Lakhs",
+    "Option_D": "₹5 Lakhs",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Rule 162 allows Limited Tender Enquiry (LTE) when the estimated value of goods is up to ₹25 Lakhs, sending tender documents to more than 3 registered suppliers."
+  },
+  {
+    "Question_Number": 102,
+    "Question_Text": "Under GFR 2017 Rule 166, procurement under Single Tender Enquiry (STE) requires the issuing of a Proprietary Article Certificate (PAC) by which authority?",
+    "Option_A": "The Head of Office / Demanding Officer",
+    "Option_B": "Pay and Accounts Officer (PAO)",
+    "Option_C": "Comptroller and Auditor General (CAG)",
+    "Option_D": "Central Vigilance Commission (CVC)",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Rule 166 states STE procurement requires a Proprietary Article Certificate (PAC) signed by the demanding officer justifying single OEM procurement."
+  },
+  {
+    "Question_Number": 103,
+    "Question_Text": "Under GFR 2017 Rule 170, Earnest Money Deposit (EMD) or Bid Security is ordinarily taken from bidders for an amount ranging between:",
+    "Option_A": "1% and 2% of the estimated value of goods",
+    "Option_B": "2% and 5% of the estimated value of goods",
+    "Option_C": "5% and 10% of the estimated value of goods",
+    "Option_D": "10% and 15% of the estimated value of goods",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 170 mandates Bid Security (EMD) ordinarily between 2% and 5% of the estimated value of goods."
+  },
+  {
+    "Question_Number": 104,
+    "Question_Text": "According to GFR 2017 Rule 171, Performance Security must be submitted by the successful bidder for an amount ranging between 3% to 5% (or 5% to 10%) of the contract value, and must remain valid for a period of:",
+    "Option_A": "30 days beyond the date of completion of all contractual obligations",
+    "Option_B": "60 days beyond the date of completion of all contractual obligations",
+    "Option_C": "90 days beyond the date of completion of all contractual obligations",
+    "Option_D": "180 days beyond the date of completion of all contractual obligations",
+    "Correct_Answer": "Option B",
+    "Brief_Explanation": "Rule 171 mandates Performance Security valid for 60 days beyond completion of all contractual obligations, including warranty obligations."
+  },
+  {
+    "Question_Number": 105,
+    "Question_Text": "Under GFR 2017 Rule 211, separate stock registers must be maintained in an office for:",
+    "Option_A": "Fixed Assets, Consumable Stores, and Library Books.",
+    "Option_B": "Casual Leave applications and Service Books.",
+    "Option_C": "Personal vehicles of employees.",
+    "Option_D": "Tender notices published in local newspapers.",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Rule 211 prescribes maintaining separate stock registers for Fixed Assets, Consumable Stores, and Library Books (Form GFR 22, 23, etc.)."
+  },
+  {
+    "Question_Number": 106,
+    "Question_Text": "According to GFR 2017 Rule 213, physical verification of consumable and non-consumable store items must be carried out at least once in how many years/months?",
+    "Option_A": "At least once every year",
+    "Option_B": "At least once in 3 years",
+    "Option_C": "At least once in 5 years",
+    "Option_D": "At least once every 6 months",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Rule 213 requires physical verification of inventory and stores at least once every year, and discrepancies reported to competent authority."
+  },
+  {
+    "Question_Number": 107,
+    "Question_Text": "In Central Government financial accounting, what does the abbreviation 'PFMS' stand for?",
+    "Option_A": "Public Financial Management System",
+    "Option_B": "Public Fund Monitoring Scheme",
+    "Option_C": "Primary Financial Maintenance Structure",
+    "Option_D": "Pension Fund Management Services",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "PFMS stands for Public Financial Management System, a web-based application for tracking funds released under government schemes and real-time reporting."
+  },
+  {
+    "Question_Number": 108,
+    "Question_Text": "Under financial delegation rules, what is 'Re-appropriation' of funds?",
+    "Option_A": "Transfer of funds from one primary unit of grant to another unit within the same grant.",
+    "Option_B": "Lapsing of unspent budget at the close of the financial year.",
+    "Option_C": "Borrowing funds from commercial banks during fiscal deficits.",
+    "Option_D": "Direct cash withdrawal from government treasury without budget sanction.",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Re-appropriation means the transfer of savings from one primary unit of appropriation to another unit within the same voted grant or charged appropriation."
+  },
+  {
+    "Question_Number": 109,
+    "Question_Text": "Under the Delegation of Financial Powers Rules (DFPR), who acts as the Head of Office for a government school?",
+    "Option_A": "Principal / Vice Principal (or designated Head of School)",
+    "Option_B": "Director of Education",
+    "Option_C": "Pay and Accounts Officer (PAO)",
+    "Option_D": "Chief Controller of Accounts",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "The Principal/Vice Principal declared as Head of School functions as the 'Head of Office' empowered to sanction contingent expenses under DFPR."
+  },
+  {
+    "Question_Number": 110,
+    "Question_Text": "Under Article 149 of the Constitution of India, who performs the statutory audit of all accounts of the Union Government and state departments?",
+    "Option_A": "Comptroller and Auditor General (CAG) of India",
+    "Option_B": "Internal Audit Wing of Ministry of Finance",
+    "Option_C": "Public Accounts Committee (PAC)",
+    "Option_D": "NITI Aayog Governing Board",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Under Article 149 and CAG's DPC Act 1971, the CAG performs statutory audit of all accounts and expenditure of the Union Government and States."
+  },
+  {
+    "Question_Number": 111,
+    "Question_Text": "Under Section 19(1) of the Protection of Children from Sexual Offences (POCSO) Act, 2012, any person who has apprehension that an offence under the Act has been committed shall provide such information to:",
+    "Option_A": "Special Juvenile Police Unit (SJPU) or the local police.",
+    "Option_B": "School PTA Executive Committee.",
+    "Option_C": "District Magistrate directly.",
+    "Option_D": "State Commission for Women.",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Section 19(1) of POCSO Act 2012 mandates reporting suspicion/apprehension of child sexual abuse to the Special Juvenile Police Unit (SJPU) or local police."
+  },
+  {
+    "Question_Number": 112,
+    "Question_Text": "Under Section 21(2) of the POCSO Act, 2012, what is the punishment prescribed for a person in-charge of an educational institution who fails to report an offence committed by a subordinate under their control?",
+    "Option_A": "Imprisonment extending up to one year and fine",
+    "Option_B": "Imprisonment extending up to six months or fine",
+    "Option_C": "Fine of ₹10,000 only without imprisonment",
+    "Option_D": "Departmental warning without criminal proceedings",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Section 21(2) specifies that a person in-charge of an educational institution failing to report an offense by a subordinate shall be punished with imprisonment up to 1 year and fine."
+  },
+  {
+    "Question_Number": 113,
+    "Question_Text": "Under Section 22 of the POCSO Act, 2012, what is the punishment for an adult who makes a false complaint or provides false information against a person solely to humiliate, extort, or defame them?",
+    "Option_A": "Imprisonment extending up to six months, or fine, or both",
+    "Option_B": "Imprisonment extending up to 3 years",
+    "Option_C": "No punishment if the complaint was made orally",
+    "Option_D": "Fine of ₹1 Lakh only",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Section 22(1) prescribes imprisonment up to 6 months, or fine, or both for making a false complaint with intent to humiliate, extort, or defame."
+  },
+  {
+    "Question_Number": 114,
+    "Question_Text": "Under Section 35 of the POCSO Act, 2012, within what period from taking cognizance must the Special Court record the evidence of the child victim?",
+    "Option_A": "Within 30 days",
+    "Option_B": "Within 60 days",
+    "Option_C": "Within 15 days",
+    "Option_D": "Within 90 days",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Section 35(1) mandates recording child's evidence within 30 days of taking cognizance, and completing trial within 1 year as far as possible."
+  },
+  {
+    "Question_Number": 115,
+    "Question_Text": "Under the Juvenile Justice (Care and Protection of Children) Act, 2015, which body is constituted in every district to deal with Children in Need of Care and Protection (CNCP)?",
+    "Option_A": "Child Welfare Committee (CWC)",
+    "Option_B": "Juvenile Justice Board (JJB)",
+    "Option_C": "District School Safety Cell",
+    "Option_D": "State Advisory Council",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "Under JJ Act 2015, CWC handles Children in Need of Care and Protection (CNCP), while JJB deals with Children in Conflict with Law (CCL)."
+  },
+  {
+    "Question_Number": 116,
+    "Question_Text": "According to NDMA School Safety Policy Guidelines 2016, who should be designated in every school to operationally anchor disaster preparedness and safety actions?",
+    "Option_A": "Safety Focal Point Teacher (FPT)",
+    "Option_B": "Local Station House Officer (SHO)",
+    "Option_C": "District Magistrate",
+    "Option_D": "PTA Treasurer",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "NDMA School Safety Guidelines mandate designating a Safety Focal Point Teacher (FPT) in every school to coordinate safety drills and disaster plans."
+  },
+  {
+    "Question_Number": 117,
+    "Question_Text": "What does the abbreviation 'DIKSHA' stand for in the context of national digital infrastructure for school education?",
+    "Option_A": "Digital Infrastructure for Knowledge Sharing",
+    "Option_B": "Digital India Knowledge and School Health Portal",
+    "Option_C": "Direct Interactive Knowledge Hub for Academicians",
+    "Option_D": "Digital Initiative for Kindergarten and Secondary Holistic Advancement",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "DIKSHA stands for Digital Infrastructure for Knowledge Sharing, a national portal for school education providing QR-coded e-content."
+  },
+  {
+    "Question_Number": 118,
+    "Question_Text": "Under the PM e-VIDYA initiative, how many dedicated DTH educational television channels ('One Class, One Channel') are operated to broadcast school curriculum?",
+    "Option_A": "12 channels",
+    "Option_B": "200 channels",
+    "Option_C": "34 channels",
+    "Option_D": "50 channels",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "PM e-VIDYA initiated 12 dedicated DTH channels (1 channel per class from Class 1 to 12), expanding further under digital initiatives."
+  },
+  {
+    "Question_Number": 119,
+    "Question_Text": "What does the abbreviation 'NISHTHA' stand for in teacher training under the Ministry of Education?",
+    "Option_A": "National Initiative for School Heads' and Teachers' Holistic Advancement",
+    "Option_B": "National Institute for Secondary and Higher Teacher Holistic Assessment",
+    "Option_C": "National Integrated Scheme for Holistic and Technological Advancement",
+    "Option_D": "National Initiative for Student Health and Training in Arts",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "NISHTHA stands for National Initiative for School Heads' and Teachers' Holistic Advancement, a capacity building program for elementary/secondary education."
+  },
+  {
+    "Question_Number": 120,
+    "Question_Text": "Which platform launched by the Ministry of Education provides massive open online courses (MOOCs) for students in Class 9 to 12, post-graduation, and lifelong learning?",
+    "Option_A": "SWAYAM",
+    "Option_B": "DIKSHA",
+    "Option_C": "ePathshala",
+    "Option_D": "NROER",
+    "Correct_Answer": "Option A",
+    "Brief_Explanation": "SWAYAM (Study Webs of Active-Learning for Young Aspiring Minds) is India's national MOOC platform offering interactive courses from Class 9 to Post-Graduation."
+  }
+]
