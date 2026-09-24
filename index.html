@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+        /* ===== TV / LARGE SCREEN TYPOGRAPHY SCALING ===== */
+        html { font-size: 16px; }
+        @media (min-width: 1500px) { html { font-size: 17.5px; } }
+        @media (min-width: 1900px) { html { font-size: 19.5px; } }
+        @media (min-width: 2400px) { html { font-size: 22px; } }
+        @media (min-width: 3000px) { html { font-size: 25px; } }
+
         * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
         html, body { height: auto; min-height: 100%; }
         body {
@@ -15,11 +23,14 @@
             background: radial-gradient(circle at top center, #0f172a 0%, #020617 100%);
             color: #f8fafc; min-height: 100vh; min-height: 100dvh;
             background-attachment: fixed; overflow-x: hidden; overflow-y: auto;
-            padding-bottom: 0; padding-top: 8px;
+            padding-bottom: 0; padding-top: 0.5rem;
             overscroll-behavior-y: auto; -webkit-overflow-scrolling: touch;
             display: flex; flex-direction: column;
+            font-size: 1rem; line-height: 1.55;
+            letter-spacing: 0.1px;
         }
-        h1, h2, h3, .poppins { font-family: 'Poppins', sans-serif; }
+        h1, h2, h3, .poppins { font-family: 'Poppins', sans-serif; letter-spacing: 0.2px; }
+
         .glass-card {
             background: rgba(255, 255, 255, 0.02);
             backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
@@ -29,83 +40,94 @@
         .option-btn {
             background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
             border: 2px solid #334155; transition: all 0.15s ease-out;
-            cursor: pointer; text-align: left; padding: 14px 16px;
-            border-radius: 12px; font-size: 14px; color: #f1f5f9;
-            width: 100%; display: flex; align-items: flex-start; gap: 10px; min-height: 48px;
+            cursor: pointer; text-align: left; padding: 0.95rem 1.05rem;
+            border-radius: 12px; font-size: 1rem; color: #f1f5f9;
+            width: 100%; display: flex; align-items: flex-start; gap: 0.65rem; min-height: 3.2rem;
+            line-height: 1.5;
         }
-        .option-btn:active:not(:disabled) { transform: scale(0.98); }
+        .option-btn:active:not(:disabled) { transform: scale(0.985); }
         .option-btn:hover:not(:disabled) { background: linear-gradient(145deg, #2563eb 0%, #1d4ed8 100%); border-color: #60a5fa; }
         .option-selected { background: linear-gradient(145deg, #2563eb 0%, #1d4ed8 100%) !important; border-color: #60a5fa !important; }
         .option-correct { background: linear-gradient(145deg, #047857 0%, #064e3b 100%) !important; border-color: #34d399 !important; box-shadow: 0 0 15px rgba(52, 211, 153, 0.35); }
         .option-wrong { background: linear-gradient(145deg, #991b1b 0%, #7f1d1d 100%) !important; border-color: #f87171 !important; box-shadow: 0 0 15px rgba(248, 113, 113, 0.35); }
-        ::-webkit-scrollbar { width: 4px; height: 4px; }
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
         ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.15); border-radius: 10px; }
+        ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.18); border-radius: 10px; }
         .hide-scroll::-webkit-scrollbar { display: none; }
         .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+
         .set-card {
             background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 20px; padding: 20px 18px; transition: all 0.25s ease;
+            border-radius: 20px; padding: 1.25rem 1.1rem; transition: all 0.25s ease;
             position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;
         }
         .set-card:hover { background: rgba(255, 255, 255, 0.06); border-color: rgba(59, 130, 246, 0.5); transform: translateY(-2px); }
-        .badge { position: absolute; top: 10px; right: 10px; color: #fff; font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 20px; z-index: 2; }
+        .badge { position: absolute; top: 10px; right: 10px; color: #fff; font-size: 0.66rem; font-weight: 700; padding: 4px 10px; border-radius: 20px; z-index: 2; }
         .badge.resume { background: #d97706; animation: pulseBadge 2s infinite; }
         .badge.completed { background: #047857; }
         @keyframes pulseBadge { 0%,100% { box-shadow: 0 0 0 0 rgba(217,119,6,0.4); } 50% { box-shadow: 0 0 0 8px rgba(217,119,6,0); } }
         .btn-action {
-            padding: 10px 14px; border-radius: 10px; font-weight: 600; font-size: 12px;
+            padding: 0.7rem 0.9rem; border-radius: 10px; font-weight: 600; font-size: 0.82rem;
             border: none; cursor: pointer; transition: all 0.2s; flex: 1; min-width: 60px;
-            color: white; display: flex; align-items: center; justify-content: center; gap: 5px;
+            color: white; display: flex; align-items: center; justify-content: center; gap: 0.4rem;
         }
         .btn-action:active { transform: scale(0.96); }
         .btn-practice { background: linear-gradient(145deg, #2563eb, #1d4ed8); }
         .btn-study { background: linear-gradient(145deg, #059669, #047857); }
         .btn-studyall { background: linear-gradient(145deg, #7c3aed, #6d28d9); }
+        .btn-unseen { background: linear-gradient(145deg, #0891b2, #0e7490); }
+
         .palette-btn {
-            width: 40px; height: 40px; border-radius: 50%; font-size: 12px; font-weight: 700;
+            width: 2.7rem; height: 2.7rem; border-radius: 50%; font-size: 0.8rem; font-weight: 700;
             border: 2px solid #475569; background: #1e293b; color: #cbd5e1;
             cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center;
             flex-shrink: 0; position: relative;
         }
+        .palette-btn.dense { width: 2.2rem; height: 2.2rem; font-size: 0.68rem; }
         .palette-btn:hover { border-color: #94a3b8; }
         .palette-btn.answered { background: #2563eb; border-color: #60a5fa; color: #fff; }
         .palette-btn.correct { background: #047857; border-color: #34d399; color: #fff; }
         .palette-btn.wrong { background: #991b1b; border-color: #f87171; color: #fff; }
-        .palette-btn.current { border-color: #fff !important; box-shadow: 0 0 0 3px rgba(255,255,255,0.25); transform: scale(1.1); }
+        .palette-btn.current { border-color: #fff !important; box-shadow: 0 0 0 3px rgba(255,255,255,0.3); transform: scale(1.1); }
         .palette-btn.bookmarked::after {
             content: '\f02e'; font-family: 'Font Awesome 6 Free'; font-weight: 900;
             position: absolute; top: -4px; right: -4px; color: #fbbf24;
-            text-shadow: 0 1px 3px rgba(0,0,0,0.8); font-size: 11px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8); font-size: 0.7rem;
         }
+
         .mobile-sticky-footer {
             position: fixed; bottom: 0; left: 0; right: 0; z-index: 40;
             background: rgba(15, 23, 42, 0.96); backdrop-filter: blur(16px);
             border-top: 1px solid rgba(59, 130, 246, 0.3); padding-bottom: env(safe-area-inset-bottom, 6px);
         }
-        #view-quiz { padding-bottom: 140px; }
+        #view-quiz { padding-bottom: 9.5rem; }
+
         .toast {
-            position: fixed; bottom: 120px; left: 50%; transform: translateX(-50%);
+            position: fixed; bottom: 8rem; left: 50%; transform: translateX(-50%);
             background: #1e293b; border: 1px solid #3b82f6; color: #e2e8f0;
-            padding: 10px 20px; border-radius: 24px; font-size: 12px; font-weight: 600;
+            padding: 0.7rem 1.4rem; border-radius: 24px; font-size: 0.82rem; font-weight: 600;
             z-index: 200; opacity: 0; pointer-events: none; transition: all 0.3s ease;
+            max-width: 90vw; text-align: center;
         }
         .toast.show { opacity: 1; transform: translateX(-50%) translateY(-6px); }
+
         .tab-btn {
-            padding: 8px 14px; border-radius: 10px; font-size: 12px; font-weight: 600;
+            padding: 0.55rem 0.95rem; border-radius: 10px; font-size: 0.82rem; font-weight: 600;
             transition: all 0.2s; cursor: pointer; border: 1.5px solid transparent;
             color: #94a3b8; background: transparent; white-space: nowrap;
         }
         .tab-btn.active { background: #2563eb; color: #fff; border-color: #60a5fa; }
+
         #palette-panel, #con-palette-panel {
-            position: fixed; bottom: 90px; left: 0; right: 0;
+            position: fixed; bottom: 5.5rem; left: 0; right: 0;
             background: rgba(15,23,42,0.98); backdrop-filter: blur(16px);
             border-top: 2px solid rgba(59,130,246,0.4); border-radius: 24px 24px 0 0;
-            z-index: 60; padding: 20px 16px 30px; max-height: 60vh;
+            z-index: 60; padding: 1.25rem 1rem 1.9rem; max-height: 62vh;
             overflow-y: auto; display: none; box-shadow: 0 -8px 40px rgba(0,0,0,0.7);
         }
         #palette-panel.open, #con-palette-panel.open { display: block; animation: slideUp 0.3s ease; }
         @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
+
         #custom-dialog-overlay {
             position: fixed; inset: 0; background: rgba(0,0,0,0.8);
             backdrop-filter: blur(8px); z-index: 9999; display: none;
@@ -114,20 +136,22 @@
         #custom-dialog-overlay.active { display: flex; }
         .dialog-box {
             background: #1e293b; border: 1px solid rgba(59,130,246,0.5); border-radius: 20px;
-            padding: 24px; max-width: 350px; width: 100%; text-align: center;
+            padding: 1.5rem; max-width: 26rem; width: 100%; text-align: center;
             box-shadow: 0 10px 40px rgba(0,0,0,0.6);
         }
-        .syllabus-table th, .syllabus-table td { border: 1px solid rgba(255,255,255,0.1); padding: 10px; }
+
+        .syllabus-table th, .syllabus-table td { border: 1px solid rgba(255,255,255,0.1); padding: 0.7rem; }
         .syllabus-table th { background: rgba(59, 130, 246, 0.2); color: #93c5fd; font-weight: 600; }
         .syllabus-table tbody tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+
         .review-item {
             background: rgba(127,29,29,0.12); border: 1px solid rgba(248,113,113,0.25);
-            border-radius: 14px; padding: 14px; margin-bottom: 12px;
+            border-radius: 14px; padding: 1rem; margin-bottom: 0.85rem;
         }
         .review-item .opt-line {
-            border-radius: 8px; padding: 7px 10px; font-size: 12px;
+            border-radius: 8px; padding: 0.5rem 0.7rem; font-size: 0.85rem;
             border: 1px solid rgba(148,163,184,0.2); background: rgba(15,23,42,0.6);
-            color: #cbd5e1; margin-bottom: 5px;
+            color: #cbd5e1; margin-bottom: 0.35rem; line-height: 1.5;
         }
         .review-item .opt-line.correct {
             background: rgba(4,120,87,0.25); border-color: rgba(52,211,153,0.6);
@@ -136,8 +160,9 @@
         .review-badge {
             display: inline-block; background: rgba(153,27,27,0.5); color: #fca5a5;
             border: 1px solid rgba(248,113,113,0.5);
-            font-size: 10px; padding: 2px 8px; border-radius: 20px; font-weight: 700;
+            font-size: 0.68rem; padding: 2px 8px; border-radius: 20px; font-weight: 700;
         }
+
         #view-consolidated {
             position: fixed; inset: 0; z-index: 45;
             background: radial-gradient(circle at top center, #0f172a 0%, #020617 100%);
@@ -146,24 +171,27 @@
         }
         #view-consolidated.flex { display: flex; }
         .con-header {
-            flex-shrink: 0; padding: 8px 12px;
+            flex-shrink: 0; padding: 0.55rem 0.8rem;
             border-bottom: 1px solid rgba(148,163,184,0.15);
             display: flex; align-items: center; justify-content: space-between;
-            gap: 8px; background: rgba(15,23,42,0.85); backdrop-filter: blur(10px);
+            gap: 0.6rem; background: rgba(15,23,42,0.9); backdrop-filter: blur(10px);
             flex-wrap: wrap;
         }
         .con-nav-btn {
-            padding: 8px 12px; border-radius: 10px; font-weight: 700; font-size: 12px;
+            padding: 0.55rem 0.8rem; border-radius: 10px; font-weight: 700; font-size: 0.82rem;
             background: #1e293b; border: 2px solid #475569; color: white;
-            display: flex; align-items: center; gap: 5px; transition: all 0.2s; cursor: pointer;
+            display: flex; align-items: center; gap: 0.35rem; transition: all 0.2s; cursor: pointer;
             white-space: nowrap;
         }
         .con-nav-btn:hover { background: #334155; border-color: #94a3b8; }
         .con-nav-btn:active { transform: scale(0.96); }
         .con-nav-btn.highlight {
             background: linear-gradient(145deg, #7c3aed, #6d28d9);
-            border-color: #a78bfa;
-            animation: paletteGlow 2s infinite;
+            border-color: #a78bfa; animation: paletteGlow 2s infinite;
+        }
+        .con-nav-btn.on {
+            background: linear-gradient(145deg, #0891b2, #0e7490);
+            border-color: #22d3ee; color: #fff;
         }
         @keyframes paletteGlow {
             0%, 100% { box-shadow: 0 0 8px rgba(139, 92, 246, 0.5); }
@@ -171,24 +199,24 @@
         }
         .con-body {
             flex: 1; min-height: 0; display: flex; flex-direction: column;
-            padding: 10px 12px; gap: 8px; overflow: hidden;
+            padding: 0.7rem 0.85rem; gap: 0.6rem; overflow: hidden;
         }
         .con-question-card {
-            flex-shrink: 0; max-height: 32vh; overflow-y: auto;
+            flex-shrink: 0; max-height: 34vh; overflow-y: auto;
             background: rgba(30,41,59,0.6); border: 1px solid rgba(59,130,246,0.35);
-            border-radius: 12px; padding: 12px 14px;
+            border-radius: 12px; padding: 0.85rem 1rem;
         }
         .con-question-text {
-            font-size: clamp(13px, 1.5vw, 16px); line-height: 1.5;
+            font-size: clamp(1rem, 1.35vw, 1.35rem); line-height: 1.6;
             color: #f1f5f9; font-weight: 500; word-break: break-word;
         }
-        .con-options { flex-shrink: 0; display: flex; flex-direction: column; gap: 6px; }
+        .con-options { flex-shrink: 0; display: flex; flex-direction: column; gap: 0.45rem; }
         .con-opt {
-            padding: 9px 12px; border-radius: 10px;
+            padding: 0.7rem 0.9rem; border-radius: 10px;
             border: 1.5px solid rgba(148,163,184,0.2);
             background: rgba(15,23,42,0.65); color: #cbd5e1;
-            font-size: clamp(12px, 1.4vw, 14px); line-height: 1.4;
-            display: flex; align-items: flex-start; gap: 8px; word-break: break-word;
+            font-size: clamp(0.9rem, 1.25vw, 1.2rem); line-height: 1.5;
+            display: flex; align-items: flex-start; gap: 0.6rem; word-break: break-word;
         }
         .con-opt.correct {
             background: linear-gradient(145deg, rgba(4,120,87,0.35), rgba(6,78,59,0.35));
@@ -197,63 +225,111 @@
         .con-exp-card {
             flex: 1; min-height: 0; overflow-y: auto;
             background: rgba(30, 27, 75, 0.4); border: 1px solid rgba(139, 92, 246, 0.4);
-            border-radius: 12px; padding: 12px 14px;
+            border-radius: 12px; padding: 0.85rem 1rem;
         }
         .con-exp-title {
-            font-size: 12px; font-weight: 700; color: #c4b5fd;
-            margin-bottom: 6px; display: flex; align-items: center; gap: 6px;
-            text-transform: uppercase; letter-spacing: 0.5px;
+            font-size: 0.8rem; font-weight: 700; color: #c4b5fd;
+            margin-bottom: 0.4rem; display: flex; align-items: center; gap: 0.4rem;
+            text-transform: uppercase; letter-spacing: 0.6px;
         }
         .con-exp-text {
-            font-size: clamp(12px, 1.4vw, 14px); line-height: 1.55;
+            font-size: clamp(0.88rem, 1.2vw, 1.15rem); line-height: 1.65;
             color: #cbd5e1; word-break: break-word;
         }
         .con-footer {
-            flex-shrink: 0; padding: 8px 12px;
+            flex-shrink: 0; padding: 0.55rem 0.8rem;
             border-top: 1px solid rgba(148,163,184,0.15);
-            background: rgba(15,23,42,0.85); backdrop-filter: blur(10px);
-            display: flex; align-items: center; justify-content: space-between; gap: 8px;
+            background: rgba(15,23,42,0.9); backdrop-filter: blur(10px);
+            display: flex; align-items: center; justify-content: space-between; gap: 0.6rem;
         }
         .con-jump-input {
             background: #0f172a; border: 1.5px solid #475569; color: white;
-            padding: 8px 10px; border-radius: 10px; font-size: 13px;
-            width: 70px; text-align: center; font-weight: 700;
+            padding: 0.5rem 0.6rem; border-radius: 10px; font-size: 0.85rem;
+            width: 5.2rem; text-align: center; font-weight: 700;
         }
         .con-jump-input:focus { outline: none; border-color: #60a5fa; }
         .shortcut-badge {
             background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.4);
-            color: #93c5fd; font-size: 10px; padding: 3px 7px; border-radius: 5px;
+            color: #93c5fd; font-size: 0.68rem; padding: 3px 7px; border-radius: 5px;
             font-family: monospace; font-weight: 700; white-space: nowrap;
         }
-        .con-question-text table, .con-exp-text table, .option-btn table {
+
+        .con-question-text table, .con-exp-text table, .option-btn table, .review-item table {
             width: 100%; border-collapse: collapse; margin: 8px 0;
-            font-size: 0.9em; background: rgba(0,0,0,0.35); border-radius: 6px; overflow: hidden;
+            font-size: 0.92em; background: rgba(0,0,0,0.35); border-radius: 6px; overflow: hidden;
         }
-        .con-question-text th, .con-exp-text th, .option-btn th,
-        .con-question-text td, .con-exp-text td, .option-btn td {
+        .con-question-text th, .con-exp-text th, .option-btn th, .review-item th,
+        .con-question-text td, .con-exp-text td, .option-btn td, .review-item td {
             border: 1px solid rgba(255,255,255,0.15); padding: 7px 10px; text-align: center;
         }
-        .con-question-text th, .con-exp-text th, .option-btn th {
+        .con-question-text th, .con-exp-text th, .option-btn th, .review-item th {
             background: rgba(59, 130, 246, 0.25); color: #93c5fd; font-weight: 600;
         }
         .con-question-text ul, .con-question-text ol,
-        .con-exp-text ul, .con-exp-text ol, .option-btn ul, .option-btn ol {
+        .con-exp-text ul, .con-exp-text ol, .option-btn ul, .option-btn ol, .review-item ul, .review-item ol {
             padding-left: 20px; margin: 6px 0;
         }
-        .con-question-text li, .con-exp-text li, .option-btn li {
+        .con-question-text li, .con-exp-text li, .option-btn li, .review-item li {
             margin-bottom: 3px; list-style-type: disc;
         }
-        .con-question-text ol, .con-exp-text ol, .option-btn ol { list-style-type: decimal; }
+        .con-question-text ol, .con-exp-text ol, .option-btn ol, .review-item ol { list-style-type: decimal; }
+
         .study-explanation-box {
             background: rgba(30, 27, 75, 0.4); border: 1px solid rgba(139, 92, 246, 0.4);
-            border-radius: 14px; padding: 14px; margin-top: 12px;
+            border-radius: 14px; padding: 1rem; margin-top: 0.75rem;
         }
-        /* Memory badge on set cards */
         .memory-hint {
-            display: inline-flex; align-items: center; gap: 4px;
+            display: inline-flex; align-items: center; gap: 0.3rem;
             background: rgba(124, 58, 237, 0.2); border: 1px solid rgba(139, 92, 246, 0.4);
-            color: #c4b5fd; font-size: 10px; padding: 3px 8px; border-radius: 20px;
+            color: #c4b5fd; font-size: 0.68rem; padding: 3px 8px; border-radius: 20px;
             margin-top: 4px; font-weight: 600;
+        }
+
+        /* ===== DIGITAL CLOCK ===== */
+        .clock-chip {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            background: rgba(6, 182, 212, 0.12);
+            border: 1px solid rgba(34, 211, 238, 0.45);
+            color: #67e8f9; font-family: 'Poppins', monospace; font-weight: 700;
+            padding: 0.35rem 0.7rem; border-radius: 10px;
+            font-size: 0.85rem; letter-spacing: 0.6px;
+            text-shadow: 0 0 10px rgba(34,211,238,0.35);
+            white-space: nowrap;
+        }
+
+        /* ===== UNSEEN / PROGRESS BARS ===== */
+        .progress-track {
+            width: 100%; height: 0.6rem; border-radius: 999px;
+            background: rgba(148,163,184,0.18); overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%; border-radius: 999px;
+            background: linear-gradient(90deg, #06b6d4, #3b82f6);
+            transition: width 0.4s ease;
+        }
+        .unseen-row {
+            background: rgba(255,255,255,0.03); border: 1px solid rgba(148,163,184,0.15);
+            border-radius: 14px; padding: 0.85rem 1rem;
+            display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; justify-content: space-between;
+        }
+        .unseen-row:hover { background: rgba(255,255,255,0.055); border-color: rgba(34,211,238,0.4); }
+
+        .global-action-card {
+            background: linear-gradient(135deg, rgba(124,58,237,0.18), rgba(37,99,235,0.18));
+            border: 1.5px solid rgba(139,92,246,0.45);
+            border-radius: 20px; padding: 1.1rem 1.25rem;
+            display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.85rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 30px rgba(124,58,237,0.15);
+        }
+
+        /* Focus visibility for TV / keyboard users */
+        button:focus-visible, input:focus-visible, label:focus-within {
+            outline: 3px solid #38bdf8; outline-offset: 2px; border-radius: 10px;
+        }
+
+        @media (max-width: 640px) {
+            .clock-chip { font-size: 0.72rem; padding: 0.3rem 0.5rem; }
         }
     </style>
 </head>
@@ -268,18 +344,21 @@
         </div>
     </div>
 
-    <header class="flex flex-wrap justify-between items-center gap-2 glass-card p-2 md:p-3 rounded-xl max-w-6xl mx-auto w-full border-t-2 border-blue-500/50 sticky top-2 z-30 backdrop-blur-sm">
+    <header class="flex flex-wrap justify-between items-center gap-2 glass-card p-2 md:p-3 rounded-xl max-w-6xl mx-auto w-full border-t-2 border-blue-500/50 sticky top-1 z-30 backdrop-blur-sm">
         <div class="flex items-center gap-2 md:gap-3">
-            <button onclick="requestHome()" class="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-blue-600 hover:bg-blue-500 text-white flex items-center justify-center transition shadow-lg shrink-0" title="Back to Home">
-                <i class="fa-solid fa-house"></i>
+            <button onclick="requestHome()" class="w-9 h-9 md:w-11 md:h-11 rounded-lg bg-blue-600 hover:bg-blue-500 text-white flex items-center justify-center transition shadow-lg shrink-0" title="Back to Home">
+                <i class="fa-solid fa-house text-base md:text-lg"></i>
             </button>
             <div>
                 <h1 class="text-sm md:text-base font-bold text-blue-400 leading-tight">UPSC PRINCIPAL '26</h1>
-                <p id="header-subtitle" class="text-[10px] text-gray-400">Pro Simulator</p>
+                <p id="header-subtitle" class="text-[0.65rem] text-gray-400">Pro Simulator</p>
             </div>
         </div>
-        <div class="flex items-center gap-2 md:gap-3">
-            <button id="soundToggleBtn" class="w-8 h-8 rounded-full border border-white/20 text-gray-400 flex items-center justify-center transition" onclick="toggleSound()">
+        <div class="flex items-center gap-2 md:gap-3 flex-wrap">
+            <div class="clock-chip" title="Current Time">
+                <i class="fa-regular fa-clock"></i> <span class="clock-display">--:--:--</span>
+            </div>
+            <button id="soundToggleBtn" class="w-9 h-9 rounded-full border border-white/20 text-gray-400 flex items-center justify-center transition" onclick="toggleSound()">
                 <i class="fa-solid fa-volume-high" id="sound-icon"></i>
             </button>
             <div id="timer-display" class="font-mono text-sm md:text-lg font-bold text-red-400 px-3 py-1.5 bg-red-950/30 rounded-lg border border-red-500/30 flex items-center gap-2">
@@ -294,7 +373,8 @@
     <div class="flex justify-center mt-2 max-w-6xl mx-auto w-full overflow-x-auto hide-scroll pb-1 px-1" id="main-tabs">
         <div class="glass-card p-1.5 rounded-xl flex gap-1 border border-blue-500/20 bg-black/40 w-max">
             <button class="tab-btn active" data-tab="sets" onclick="showView('sets')"><i class="fa-solid fa-layer-group"></i> Sets</button>
-            <button class="tab-btn" data-tab="review" onclick="showView('review')"><i class="fa-solid fa-rotate-left"></i> Review <span id="review-tab-count" class="ml-1 text-[10px] font-bold bg-red-600/70 text-white px-1.5 py-0.5 rounded-full hidden">0</span></button>
+            <button class="tab-btn" data-tab="unseen" onclick="showView('unseen')"><i class="fa-solid fa-eye-slash"></i> Unattempted <span id="unseen-tab-count" class="ml-1 text-[0.65rem] font-bold bg-cyan-600/70 text-white px-1.5 py-0.5 rounded-full hidden">0</span></button>
+            <button class="tab-btn" data-tab="review" onclick="showView('review')"><i class="fa-solid fa-rotate-left"></i> Review <span id="review-tab-count" class="ml-1 text-[0.65rem] font-bold bg-red-600/70 text-white px-1.5 py-0.5 rounded-full hidden">0</span></button>
             <button class="tab-btn" data-tab="analytics" onclick="showView('analytics')"><i class="fa-solid fa-chart-pie"></i> Analytics</button>
             <button class="tab-btn" data-tab="rules" onclick="showView('rules')"><i class="fa-solid fa-list-check"></i> Syllabus</button>
         </div>
@@ -302,10 +382,35 @@
 
     <main id="view-sets" class="flex flex-col max-w-6xl mx-auto w-full my-3 px-2">
         <div class="text-center mb-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-white poppins"><span class="text-blue-400">Select</span> Your Set</h2>
-            <p class="text-gray-400 text-sm mt-1">Practice with a timer, Study one question at a time, or Study All at once.</p>
+            <h2 class="text-2xl md:text-4xl font-bold text-white poppins"><span class="text-blue-400">Select</span> Your Set</h2>
+            <p class="text-gray-400 text-sm md:text-base mt-1">Practice with a timer, Study one question at a time, or Study All at once.</p>
         </div>
+        <div id="global-actions"></div>
         <div id="set-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </main>
+
+    <!-- ===== UNATTEMPTED / UNSEEN VIEW ===== -->
+    <main id="view-unseen" class="hidden flex-col max-w-6xl mx-auto w-full my-3 px-2">
+        <div class="glass-card bg-slate-900/80 border-t-4 border-cyan-500 p-4 md:p-6 rounded-2xl shadow-2xl">
+            <div class="flex flex-wrap justify-between items-center gap-3 mb-3">
+                <h2 class="text-xl md:text-2xl font-bold text-cyan-400 poppins"><i class="fa-solid fa-eye-slash"></i> Unattempted Questions</h2>
+                <div class="flex items-center gap-2 flex-wrap">
+                    <button onclick="openConsolidated(0,'all',true)" class="px-3 py-2 rounded-lg bg-cyan-900/40 border border-cyan-500 text-cyan-200 hover:bg-cyan-600 hover:text-white transition text-xs font-bold">
+                        <i class="fa-solid fa-book-reader"></i> Review All Unattempted
+                    </button>
+                    <button onclick="markAllSeen()" class="px-3 py-2 rounded-lg bg-slate-800 border border-slate-600 text-gray-300 hover:bg-slate-700 hover:text-white transition text-xs font-bold">
+                        <i class="fa-solid fa-check-double"></i> Mark All Seen
+                    </button>
+                </div>
+            </div>
+            <p class="text-xs md:text-sm text-gray-400 mb-4 leading-relaxed">
+                <i class="fa-solid fa-lightbulb text-amber-400"></i>
+                A question is marked <b class="text-cyan-300">viewed</b> the moment it appears in <b>Practice</b> mode.
+                Everything below has never been opened by you yet — perfect for a first-time sweep.
+            </p>
+            <div id="unseen-summary" class="mb-5"></div>
+            <div id="unseen-list" class="max-h-[65vh] overflow-y-auto pr-1 space-y-2.5"></div>
+        </div>
     </main>
 
     <main id="view-review" class="hidden flex-col max-w-6xl mx-auto w-full my-3 px-2">
@@ -317,7 +422,7 @@
                     <button onclick="clearReviewAll()" class="px-3 py-1.5 rounded-lg bg-red-900/40 border border-red-500 text-red-300 hover:bg-red-600 hover:text-white transition text-xs font-bold"><i class="fa-solid fa-trash"></i> Clear All</button>
                 </div>
             </div>
-            <p class="text-xs text-gray-400 mb-4 leading-relaxed"><i class="fa-solid fa-lightbulb text-amber-400"></i> Every question you answered incorrectly in Practice Mode is collected here automatically.</p>
+            <p class="text-xs md:text-sm text-gray-400 mb-4 leading-relaxed"><i class="fa-solid fa-lightbulb text-amber-400"></i> Every question you answered incorrectly in Practice Mode is collected here automatically.</p>
             <div id="review-content" class="max-h-[70vh] overflow-y-auto pr-1"></div>
         </div>
     </main>
@@ -326,7 +431,7 @@
         <div class="glass-card bg-slate-900/80 border-t-4 border-amber-500 p-4 md:p-6 rounded-2xl shadow-2xl">
             <div class="flex flex-wrap justify-between items-center mb-6 gap-3">
                 <h2 class="text-xl md:text-2xl font-bold text-amber-400 poppins"><i class="fa-solid fa-chart-pie"></i> Deep Analytics</h2>
-                <div class="flex gap-2">
+                <div class="flex gap-2 flex-wrap">
                     <button onclick="exportData()" class="px-3 py-1.5 rounded-lg bg-blue-900/40 border border-blue-500 text-blue-300 hover:bg-blue-600 hover:text-white transition text-xs font-bold"><i class="fa-solid fa-download"></i> Backup</button>
                     <label class="px-3 py-1.5 rounded-lg bg-purple-900/40 border border-purple-500 text-purple-300 hover:bg-purple-600 hover:text-white transition text-xs font-bold cursor-pointer">
                         <i class="fa-solid fa-upload"></i> Restore
@@ -336,10 +441,10 @@
                 </div>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
-                <div class="bg-black/40 p-3 rounded-xl border border-slate-700 text-center"><div class="text-[10px] text-gray-400 uppercase tracking-widest mb-1">Attempted</div><div class="text-2xl font-bold text-white" id="stat-attempted">0</div></div>
-                <div class="bg-black/40 p-3 rounded-xl border border-green-900/50 text-center"><div class="text-[10px] text-green-300 uppercase tracking-widest mb-1">Total Correct</div><div class="text-2xl font-bold text-green-400" id="stat-correct">0</div></div>
-                <div class="bg-black/40 p-3 rounded-xl border border-red-900/50 text-center"><div class="text-[10px] text-red-300 uppercase tracking-widest mb-1">Total Wrong</div><div class="text-2xl font-bold text-red-400" id="stat-wrong">0</div></div>
-                <div class="bg-black/40 p-3 rounded-xl border border-purple-900/50 text-center"><div class="text-[10px] text-purple-300 uppercase tracking-widest mb-1">Accuracy</div><div class="text-2xl font-bold text-purple-400" id="stat-accuracy">0%</div></div>
+                <div class="bg-black/40 p-3 rounded-xl border border-slate-700 text-center"><div class="text-[0.65rem] text-gray-400 uppercase tracking-widest mb-1">Attempted</div><div class="text-2xl font-bold text-white" id="stat-attempted">0</div></div>
+                <div class="bg-black/40 p-3 rounded-xl border border-green-900/50 text-center"><div class="text-[0.65rem] text-green-300 uppercase tracking-widest mb-1">Total Correct</div><div class="text-2xl font-bold text-green-400" id="stat-correct">0</div></div>
+                <div class="bg-black/40 p-3 rounded-xl border border-red-900/50 text-center"><div class="text-[0.65rem] text-red-300 uppercase tracking-widest mb-1">Total Wrong</div><div class="text-2xl font-bold text-red-400" id="stat-wrong">0</div></div>
+                <div class="bg-black/40 p-3 rounded-xl border border-purple-900/50 text-center"><div class="text-[0.65rem] text-purple-300 uppercase tracking-widest mb-1">Accuracy</div><div class="text-2xl font-bold text-purple-400" id="stat-accuracy">0%</div></div>
             </div>
             <h3 class="text-lg font-bold text-white mb-3">Set-by-Set History</h3>
             <div class="overflow-x-auto rounded-lg border border-slate-700">
@@ -357,7 +462,7 @@
 
     <main id="view-rules" class="hidden flex-col max-w-6xl mx-auto w-full my-3 px-2">
         <div class="glass-card bg-slate-900/80 border-t-4 border-blue-500 p-4 md:p-6 rounded-2xl shadow-2xl text-sm text-gray-300 leading-relaxed">
-            <h2 class="text-xl md:text-2xl font-bold text-blue-400 mb-4 poppins text-center">Exam Syllabus & Pattern</h2>
+            <h2 class="text-xl md:text-2xl font-bold text-blue-400 mb-4 poppins text-center">Exam Syllabus &amp; Pattern</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 <div class="bg-blue-950/30 border border-blue-800 rounded-xl p-4">
                     <h3 class="text-white font-bold mb-2 flex items-center gap-2"><i class="fa-solid fa-stopwatch text-blue-400"></i> Practice Mode</h3>
@@ -370,17 +475,26 @@
                     <div class="mt-2 text-xs font-mono bg-black/40 p-2 rounded text-center text-emerald-300">Untimed • No Scoring</div>
                 </div>
             </div>
+            <h3 class="text-lg font-bold text-white mb-3 border-b border-slate-700 pb-2">Keyboard Shortcuts</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6 text-xs md:text-sm">
+                <div class="bg-black/30 border border-slate-700 rounded-xl p-3 flex items-center gap-3"><span class="shortcut-badge">1 2 3 4</span> Choose option A–D (Practice)</div>
+                <div class="bg-black/30 border border-slate-700 rounded-xl p-3 flex items-center gap-3"><span class="shortcut-badge">0</span> Previous question</div>
+                <div class="bg-black/30 border border-slate-700 rounded-xl p-3 flex items-center gap-3"><span class="shortcut-badge">9</span> Next question</div>
+                <div class="bg-black/30 border border-slate-700 rounded-xl p-3 flex items-center gap-3"><span class="shortcut-badge">7 / 8</span> Next when Expert Advice is open</div>
+                <div class="bg-black/30 border border-slate-700 rounded-xl p-3 flex items-center gap-3"><span class="shortcut-badge">Esc</span> Close popup / go back</div>
+                <div class="bg-black/30 border border-slate-700 rounded-xl p-3 flex items-center gap-3"><span class="shortcut-badge">Enter</span> Confirm / next question</div>
+            </div>
             <h3 class="text-lg font-bold text-white mt-6 mb-3 border-b border-slate-700 pb-2">Detailed Section Breakdown</h3>
             <div class="overflow-x-auto rounded-lg border border-slate-700">
                 <table class="w-full text-left border-collapse syllabus-table min-w-[700px] text-xs md:text-sm">
                     <thead><tr><th>Category / Subject Area</th><th class="text-center">Approx. Q's</th><th class="text-center">Weightage / Marks</th><th>Key High-Yield Topics</th></tr></thead>
                     <tbody class="text-gray-300">
-                        <tr><td class="font-semibold text-blue-200">Management & Financial Administration</td><td class="text-center">25 – 30</td><td class="text-center text-blue-300">~62.5 – 75</td><td>CCS Conduct Rules, CCS (CCA) Rules, GFR, Budgeting, FR & SR, LTC, TA/DA, CGHS.</td></tr>
-                        <tr><td class="font-semibold text-blue-200">Educational Policies, Measurement & Evaluation</td><td class="text-center">20 – 25</td><td class="text-center text-blue-300">~50 – 62.5</td><td>NEP 2020, NCF, CCE, PARAKH, FLN, Inclusive Education, Special Needs Education.</td></tr>
-                        <tr><td class="font-semibold text-blue-200">Office Procedures & Statutory Regulations</td><td class="text-center">15 – 20</td><td class="text-center text-blue-300">~37.5 – 50</td><td>RTI Act (2005), POCSO Act, POSH Act, Rights of PwD Act, Office Manual.</td></tr>
-                        <tr><td class="font-semibold text-blue-200">Reasoning Ability & Quantitative Aptitude</td><td class="text-center">15 – 20</td><td class="text-center text-blue-300">~37.5 – 50</td><td>Data Interpretation, Percentage, Profit & Loss, Syllogisms, Blood Relations, Coding.</td></tr>
-                        <tr><td class="font-semibold text-blue-200">General Knowledge & Current Affairs</td><td class="text-center">15 – 18</td><td class="text-center text-blue-300">~37.5 – 45</td><td>Social/Economic issues, Government Schemes, Educational Initiatives, Polity.</td></tr>
-                        <tr><td class="font-semibold text-blue-200">Language Skills (English & Hindi)</td><td class="text-center">12 – 15</td><td class="text-center text-blue-300">~30 – 37.5</td><td>Grammar, Vocabulary, Comprehension, Idioms/Phrases, Sentence Correction.</td></tr>
+                        <tr><td class="font-semibold text-blue-200">Management &amp; Financial Administration</td><td class="text-center">25 – 30</td><td class="text-center text-blue-300">~62.5 – 75</td><td>CCS Conduct Rules, CCS (CCA) Rules, GFR, Budgeting, FR &amp; SR, LTC, TA/DA, CGHS.</td></tr>
+                        <tr><td class="font-semibold text-blue-200">Educational Policies, Measurement &amp; Evaluation</td><td class="text-center">20 – 25</td><td class="text-center text-blue-300">~50 – 62.5</td><td>NEP 2020, NCF, CCE, PARAKH, FLN, Inclusive Education, Special Needs Education.</td></tr>
+                        <tr><td class="font-semibold text-blue-200">Office Procedures &amp; Statutory Regulations</td><td class="text-center">15 – 20</td><td class="text-center text-blue-300">~37.5 – 50</td><td>RTI Act (2005), POCSO Act, POSH Act, Rights of PwD Act, Office Manual.</td></tr>
+                        <tr><td class="font-semibold text-blue-200">Reasoning Ability &amp; Quantitative Aptitude</td><td class="text-center">15 – 20</td><td class="text-center text-blue-300">~37.5 – 50</td><td>Data Interpretation, Percentage, Profit &amp; Loss, Syllogisms, Blood Relations, Coding.</td></tr>
+                        <tr><td class="font-semibold text-blue-200">General Knowledge &amp; Current Affairs</td><td class="text-center">15 – 18</td><td class="text-center text-blue-300">~37.5 – 45</td><td>Social/Economic issues, Government Schemes, Educational Initiatives, Polity.</td></tr>
+                        <tr><td class="font-semibold text-blue-200">Language Skills (English &amp; Hindi)</td><td class="text-center">12 – 15</td><td class="text-center text-blue-300">~30 – 37.5</td><td>Grammar, Vocabulary, Comprehension, Idioms/Phrases, Sentence Correction.</td></tr>
                         <tr class="bg-blue-900/40 font-bold text-white"><td>Total</td><td class="text-center">120</td><td class="text-center">300</td><td class="text-center">100%</td></tr>
                     </tbody>
                 </table>
@@ -395,12 +509,12 @@
         </div>
         <div class="relative w-full">
             <div class="glass-card bg-slate-900/95 border-t-2 border-blue-500 p-4 md:p-6 rounded-2xl shadow-xl">
-                <p id="question-text" class="text-[15px] md:text-[18px] font-medium text-gray-50 whitespace-pre-wrap w-full leading-relaxed" style="word-break: break-word;">Loading question...</p>
+                <p id="question-text" class="text-[1.02rem] md:text-[1.2rem] font-medium text-gray-50 whitespace-pre-wrap w-full leading-relaxed" style="word-break: break-word;">Loading question...</p>
             </div>
         </div>
         <div id="options-grid" class="mt-3 grid grid-cols-1 gap-2.5 w-full"></div>
         <div id="study-explanation-container" class="hidden mt-3 w-full"></div>
-        <div class="flex items-center justify-between mt-4 px-1 gap-2">
+        <div class="flex items-center justify-between mt-4 px-1 gap-2 flex-wrap">
             <label class="flex items-center gap-2 cursor-pointer">
                 <input type="checkbox" id="mark-review-checkbox" onchange="toggleBookmark()" class="w-5 h-5 accent-amber-500 rounded cursor-pointer">
                 <span class="text-sm text-amber-400 font-medium"><i class="fa-solid fa-bookmark"></i> Bookmark</span>
@@ -413,20 +527,20 @@
 
     <footer id="quiz-footer" class="hidden mobile-sticky-footer">
         <div class="max-w-6xl mx-auto w-full">
-            <div class="flex justify-between items-center px-4 pt-1.5 text-[10px] md:text-xs font-mono border-b border-white/5 pb-1.5">
+            <div class="flex justify-between items-center px-4 pt-1.5 text-[0.68rem] md:text-xs font-mono border-b border-white/5 pb-1.5 gap-2 flex-wrap">
                 <div class="text-gray-400">Score: <span id="live-score-display" class="text-blue-400 font-bold text-sm">0</span>/300</div>
                 <div><span class="text-green-400 font-bold">✓ <span id="live-correct">0</span></span> &nbsp; <span class="text-red-400 font-bold">✗ <span id="live-wrong">0</span></span></div>
                 <div class="text-white/60 font-bold bg-white/10 px-2 py-0.5 rounded-md" id="progress-counter">Q: 0/120</div>
             </div>
             <div class="flex justify-between items-center p-2.5 gap-2">
                 <button onclick="prevQuestion()" class="flex-1 py-3 rounded-xl bg-slate-800 border border-slate-600 hover:bg-slate-700 text-sm font-semibold transition flex items-center justify-center gap-2">
-                    <i class="fa-solid fa-arrow-left"></i> <span class="hidden sm:inline">Previous</span>
+                    <i class="fa-solid fa-arrow-left"></i> <span class="hidden sm:inline">Previous</span> <span class="shortcut-badge hidden md:inline">0</span>
                 </button>
                 <button onclick="togglePalette()" class="flex-1 py-3 rounded-xl bg-blue-900/40 border border-blue-500 hover:bg-blue-800 text-blue-300 flex items-center justify-center transition gap-2">
                     <i class="fa-solid fa-table-cells"></i> <span class="hidden sm:inline font-bold">Palette</span>
                 </button>
                 <button onclick="nextQuestion()" class="flex-1 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 border border-blue-400 text-white text-sm font-bold transition flex items-center justify-center gap-2">
-                    <span class="hidden sm:inline">Next</span> <i class="fa-solid fa-arrow-right"></i>
+                    <span class="hidden sm:inline">Next</span> <i class="fa-solid fa-arrow-right"></i> <span class="shortcut-badge hidden md:inline">9</span>
                 </button>
             </div>
         </div>
@@ -446,20 +560,21 @@
         <div id="palette-grid" class="flex flex-wrap gap-2.5 justify-center"></div>
     </div>
 
-    <!-- CONSOLIDATED STUDY ALL VIEW -->
+    <!-- ================= CONSOLIDATED STUDY / REVIEW VIEW ================= -->
     <div id="view-consolidated" class="hidden">
         <div class="con-header">
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2 flex-wrap">
                 <button onclick="closeConsolidated()" class="con-nav-btn"><i class="fa-solid fa-arrow-left"></i> Back</button>
-                <div class="flex items-center gap-2 ml-1">
-                    <span id="con-set-label" class="text-sm font-bold poppins text-purple-400">Set 1</span>
-                    <span id="con-lang-badge" class="text-[10px] px-2 py-0.5 rounded-full border font-bold">English</span>
-                </div>
+                <span id="con-set-label" class="text-sm md:text-base font-bold poppins text-purple-400">Set 1</span>
+                <span id="con-lang-badge" class="text-[0.65rem] px-2 py-0.5 rounded-full border font-bold">English</span>
+                <span id="con-origin" class="text-[0.65rem] px-2 py-0.5 rounded-full border border-slate-600 bg-black/40 text-gray-300 font-bold">Q1</span>
             </div>
             <div class="flex items-center gap-2 flex-wrap">
+                <div class="clock-chip"><i class="fa-regular fa-clock"></i> <span class="clock-display">--:--:--</span></div>
+                <button id="con-unseen-toggle" onclick="toggleConUnseen()" class="con-nav-btn" title="Show only questions you have never opened"><i class="fa-solid fa-eye-slash"></i> Unseen only</button>
                 <span id="con-progress" class="text-xs font-mono bg-black/40 px-2.5 py-1.5 rounded-md border border-slate-700 text-gray-300">Q: 1/120</span>
-                <input id="con-jump-input" type="number" placeholder="#" min="1" class="con-jump-input" onkeydown="if(event.key==='Enter') jumpConsolidated(this.value)" />
-                <button onclick="jumpConsolidated(document.getElementById('con-jump-input').value)" class="con-nav-btn"><i class="fa-solid fa-arrow-right"></i></button>
+                <input id="con-jump-input" type="number" placeholder="#" min="1" class="con-jump-input" onkeydown="if(event.key==='Enter'){event.preventDefault();jumpConsolidated(this.value);}" />
+                <button onclick="jumpConsolidated(document.getElementById('con-jump-input').value)" class="con-nav-btn" title="Jump"><i class="fa-solid fa-arrow-right"></i></button>
                 <button onclick="toggleConPalette()" class="con-nav-btn highlight"><i class="fa-solid fa-table-cells"></i> Palette</button>
             </div>
         </div>
@@ -495,23 +610,36 @@
     </div>
 
     <div id="explanation-modal" class="fixed inset-0 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 z-[70] hidden" onclick="closeExplanation(event)">
-        <div class="glass-card bg-slate-900 border border-slate-600 rounded-2xl max-w-md w-full p-5 md:p-6 shadow-2xl overflow-y-auto max-h-[85vh] relative" onclick="event.stopPropagation()">
-            <button onclick="closeExplanation()" class="absolute top-3 right-3 w-8 h-8 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+        <div class="glass-card bg-slate-900 border border-slate-600 rounded-2xl max-w-lg w-full p-5 md:p-6 shadow-2xl overflow-y-auto max-h-[88vh] relative" onclick="event.stopPropagation()">
+            <button onclick="closeExplanation()" class="absolute top-3 right-3 w-9 h-9 bg-slate-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
             <h2 id="modal-title" class="text-xl font-bold flex items-center gap-2 mb-3 mt-1"></h2>
-            <div id="modal-subtitle" class="text-sm text-gray-200 leading-relaxed text-left" style="word-break: break-word;"></div>
-            <div class="pt-5 mt-4 border-t border-slate-700">
-                <button onclick="closeExplanationAndNext()" class="w-full py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-500 transition text-sm">Got it, Next Question <i class="fa-solid fa-arrow-right ml-1"></i></button>
+            <div id="modal-subtitle" class="text-sm md:text-base text-gray-200 leading-relaxed text-left" style="word-break: break-word;"></div>
+            <div class="pt-4 mt-4 border-t border-slate-700">
+                <button onclick="closeExplanationAndNext()" class="w-full py-3.5 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-500 transition text-sm md:text-base">
+                    Got it, Next Question <i class="fa-solid fa-arrow-right ml-1"></i>
+                </button>
+                <div class="text-center text-[0.7rem] text-gray-500 mt-2.5">
+                    Press <span class="shortcut-badge">7</span> or <span class="shortcut-badge">8</span> for next &nbsp;•&nbsp;
+                    <span class="shortcut-badge">Esc</span> to close
+                </div>
             </div>
         </div>
     </div>
 
     <script>
-        /* ===== UTILITIES ===== */
+        /* =====================================================================
+           UTILITIES
+        ===================================================================== */
         function sanitizeHtml(html) {
             if (!html) return '';
             const temp = document.createElement('div');
             temp.innerHTML = String(html);
             temp.querySelectorAll('script').forEach(s => s.remove());
+            temp.querySelectorAll('*').forEach(el => {
+                [...el.attributes].forEach(a => {
+                    if (/^on/i.test(a.name)) el.removeAttribute(a.name);
+                });
+            });
             return temp.innerHTML;
         }
         function hashString(str) {
@@ -545,55 +673,174 @@
             toast.textContent = msg;
             toast.classList.add('show');
             clearTimeout(toast._timeout);
-            toast._timeout = setTimeout(() => toast.classList.remove('show'), 2000);
+            toast._timeout = setTimeout(() => toast.classList.remove('show'), 2200);
         }
 
-        /* ===== DATA LOADING ===== */
+        /* =====================================================================
+           DIGITAL CLOCK  (visible on every view)
+        ===================================================================== */
+        function updateClocks() {
+            const now = new Date();
+            let h = now.getHours();
+            const ampm = h >= 12 ? 'PM' : 'AM';
+            h = h % 12; if (h === 0) h = 12;
+            const str = `${String(h).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}:${String(now.getSeconds()).padStart(2,'0')} ${ampm}`;
+            document.querySelectorAll('.clock-display').forEach(el => { el.textContent = str; });
+        }
+        setInterval(updateClocks, 1000);
+
+        /* =====================================================================
+           DATA LOADING  — ALL QUESTION SOURCES
+        ===================================================================== */
+        const ENGLISH_FILES = [
+            'exam-questions-v1.json',
+            'exam-questions-v2.json',
+            'exam-questions-v3.json',
+            'exam-question-v4.json',
+            'exam-questions-v5.json',
+            'exam-questions-v6.json'
+        ];
+        const MIXED_FILES = [
+            'exam-questions-exam-e-h.json'
+        ];
+        const HINDI_FILES = [
+            'exam-questions-v1hindi.json',
+            'exam-questions-v2hindi.json',
+            'exam-questions-v3hindi.json',
+            'exam-questions-v4hindi.json'
+        ];
+        const QUESTIONS_PER_SET = 120;
+
         let allSetsData = [];
         let setMetadata = [];
+        let setKeyCache = [];
 
-        function normalizeData(rawData) {
-            return rawData.map(item => {
-                if (item.question && item.options) return item;
-                if (item.Question_Text) {
-                    let cIndex = 0;
-                    const ansStr = String(item.Correct_Answer).toUpperCase();
-                    if (ansStr.includes("A")) cIndex = 0;
-                    else if (ansStr.includes("B")) cIndex = 1;
-                    else if (ansStr.includes("C")) cIndex = 2;
-                    else if (ansStr.includes("D")) cIndex = 3;
-                    return {
-                        question: item.Question_Text,
-                        options: [item.Option_A, item.Option_B, item.Option_C, item.Option_D],
-                        correctOption: cIndex,
-                        explanation: item.Brief_Explanation || "No explanation provided."
-                    };
+        function normLang(l) { return /hindi|hin/i.test(String(l || '')) ? 'Hindi' : 'English'; }
+
+        function toOptionIndex(val) {
+            if (typeof val === 'number' && val >= 0 && val <= 3) return val;
+            const s = String(val == null ? '' : val).toUpperCase();
+            const m = s.match(/[ABCD]/);
+            if (m) return m[0].charCodeAt(0) - 65;
+            const n = parseInt(s.replace(/[^0-9-]/g, ''), 10);
+            if (!isNaN(n)) {
+                if (n >= 0 && n <= 3) return n;
+                if (n >= 1 && n <= 4) return n - 1;
+            }
+            return 0;
+        }
+
+        function normalizeOne(item) {
+            if (!item || typeof item !== 'object') return null;
+
+            // Modern format: { question, options: [...], correctOption, explanation }
+            if (item.question && Array.isArray(item.options)) {
+                const opts = item.options.map(o => o == null ? '' : String(o));
+                if (opts.length < 2) return null;
+                return {
+                    question: String(item.question),
+                    options: opts,
+                    correctOption: toOptionIndex(item.correctOption ?? item.correct_answer ?? item.answer ?? item.correct),
+                    explanation: item.explanation || item.Explanation || item.explaintion || 'No explanation provided.'
+                };
+            }
+            // Legacy CSV-ish format
+            if (item.Question_Text) {
+                const opts = [item.Option_A, item.Option_B, item.Option_C, item.Option_D].map(o => o == null ? '' : String(o));
+                return {
+                    question: String(item.Question_Text),
+                    options: opts,
+                    correctOption: toOptionIndex(item.Correct_Answer),
+                    explanation: item.Brief_Explanation || item.Explanation || 'No explanation provided.'
+                };
+            }
+            // Options as object {A,B,C,D}
+            if (item.question && item.options && typeof item.options === 'object') {
+                const o = item.options;
+                const opts = [o.A ?? o.a ?? '', o.B ?? o.b ?? '', o.C ?? o.c ?? '', o.D ?? o.d ?? ''].map(String);
+                return {
+                    question: String(item.question),
+                    options: opts,
+                    correctOption: toOptionIndex(item.correctOption ?? item.answer),
+                    explanation: item.explanation || item.Explanation || 'No explanation provided.'
+                };
+            }
+            return null;
+        }
+
+        /* Pull questions out of any JSON shape */
+        function extractQuestions(parsed, defaultLang) {
+            const out = [];
+            const pushAll = (arr, lang) => {
+                if (!Array.isArray(arr)) return;
+                arr.forEach(raw => {
+                    const l = (raw && (raw.language || raw.Language || raw.lang)) || lang;
+                    out.push({ raw, lang: l });
+                });
+            };
+            if (Array.isArray(parsed)) { pushAll(parsed, defaultLang); return out; }
+            if (parsed && typeof parsed === 'object') {
+                const direct = ['questions', 'Questions', 'data', 'Data', 'items', 'Items', 'mcqs', 'MCQs'];
+                for (const k of direct) {
+                    if (Array.isArray(parsed[k])) { pushAll(parsed[k], parsed.language || defaultLang); return out; }
                 }
-                return item;
-            });
-        }
-        async function fetchAndProcess(files, langLabel) {
-            let allQuestions = [];
-            for (let file of files) {
-                try {
-                    const res = await fetch(file);
-                    if (res.ok) {
-                        const data = await res.json();
-                        allQuestions = allQuestions.concat(normalizeData(data));
+                for (const k of Object.keys(parsed)) {
+                    if (Array.isArray(parsed[k])) {
+                        let lang = defaultLang;
+                        if (/hindi|hin/i.test(k)) lang = 'Hindi';
+                        else if (/english|eng/i.test(k)) lang = 'English';
+                        pushAll(parsed[k], lang);
                     }
-                } catch (e) {}
+                }
             }
-            if (allQuestions.length === 0 && langLabel === 'English') allQuestions = generateFallbackData();
-            for (let i = 0; i < allQuestions.length; i += 120) {
-                allSetsData.push(allQuestions.slice(i, i + 120));
-                setMetadata.push({ language: langLabel });
+            return out;
+        }
+
+        async function loadFromFiles(files, defaultLang, buckets) {
+            for (const file of files) {
+                try {
+                    const res = await fetch(file, { cache: 'no-store' });
+                    if (!res.ok) { console.warn('Skipped (not found):', file); continue; }
+                    const parsed = await res.json();
+                    const items = extractQuestions(parsed, defaultLang);
+                    let good = 0;
+                    for (const it of items) {
+                        const q = normalizeOne(it.raw);
+                        if (!q) continue;
+                        if (!q.question || !Array.isArray(q.options) || q.options.length < 2) continue;
+                        if (q.correctOption >= q.options.length) q.correctOption = 0;
+                        buckets[normLang(it.lang)].push(q);
+                        good++;
+                    }
+                    console.log(`✔ ${file}: ${good} questions loaded`);
+                } catch (e) {
+                    console.warn('Could not load', file, e && e.message);
+                }
             }
         }
+
         async function loadAuthenticData() {
-            allSetsData = []; setMetadata = [];
-            await fetchAndProcess(['exam-questions-v1.json', 'exam-questions-v2.json', 'exam-questions-v3.json', 'exam-question'], 'English');
-            await fetchAndProcess(['exam-questions-v1hindi.json', 'exam-questions-v2hindi.json', 'exam-questions-v3hindi.json', 'exam-questions-v4hindi.json'], 'Hindi');
+            allSetsData = []; setMetadata = []; setKeyCache = [];
+            const buckets = { English: [], Hindi: [] };
+
+            await loadFromFiles(ENGLISH_FILES, 'English', buckets);
+            await loadFromFiles(MIXED_FILES, 'English', buckets);
+            await loadFromFiles(HINDI_FILES, 'Hindi', buckets);
+
+            if (buckets.English.length === 0 && buckets.Hindi.length === 0) {
+                buckets.English = generateFallbackData();
+            }
+
+            ['English', 'Hindi'].forEach(lang => {
+                const arr = buckets[lang];
+                for (let i = 0; i < arr.length; i += QUESTIONS_PER_SET) {
+                    allSetsData.push(arr.slice(i, i + QUESTIONS_PER_SET));
+                    setMetadata.push({ language: lang });
+                }
+            });
+            console.log(`TOTAL SETS: ${allSetsData.length}`);
         }
+
         function generateFallbackData() {
             const subjects = ["Management", "Educational Policies", "Office Procedures", "Reasoning", "GK", "Language"];
             let qs = [];
@@ -610,9 +857,19 @@
             return qs;
         }
 
-        /* ===== INDEXEDDB ===== */
+        function getSetKeys(s) {
+            if (!setKeyCache[s]) setKeyCache[s] = allSetsData[s].map(q => hashString(q.question));
+            return setKeyCache[s];
+        }
+        function totalQuestionCount() {
+            return allSetsData.reduce((a, b) => a + b.length, 0);
+        }
+
+        /* =====================================================================
+           INDEXEDDB
+        ===================================================================== */
         const DB_NAME = "UPSC_Principal_Pro_DB";
-        const DB_VERSION = 3; // bumped for new 'consolidated' store
+        const DB_VERSION = 4;
 
         function openDB() {
             return new Promise((resolve, reject) => {
@@ -623,6 +880,7 @@
                     if (!db.objectStoreNames.contains('history')) db.createObjectStore('history', { autoIncrement: true });
                     if (!db.objectStoreNames.contains('wrongQuestions')) db.createObjectStore('wrongQuestions');
                     if (!db.objectStoreNames.contains('consolidated')) db.createObjectStore('consolidated');
+                    if (!db.objectStoreNames.contains('seen')) db.createObjectStore('seen');
                 };
                 req.onsuccess = () => resolve(req.result);
                 req.onerror = () => reject(req.error);
@@ -676,7 +934,7 @@
         async function idbClearAll() {
             const db = await openDB();
             return new Promise((resolve, reject) => {
-                const stores = ['progress', 'history', 'wrongQuestions', 'consolidated'];
+                const stores = ['progress', 'history', 'wrongQuestions', 'consolidated', 'seen'];
                 const tx = db.transaction(stores, 'readwrite');
                 stores.forEach(s => tx.objectStore(s).clear());
                 tx.oncomplete = () => resolve();
@@ -684,24 +942,67 @@
             });
         }
 
-        /* ===== CONSOLIDATED POSITION MEMORY ===== */
-        async function saveConPos() {
+        /* =====================================================================
+           SEEN  (unattempted tracking)
+        ===================================================================== */
+        let seenKeys = new Set();
+
+        async function loadSeenKeys() {
             try {
-                await idbSet('consolidated', 'pos_' + conSetIdx, { setIdx: conSetIdx, qIdx: conQIdx, timestamp: Date.now() });
-            } catch(e) { console.warn('saveConPos failed', e); }
+                const all = await idbGetAll('seen');
+                seenKeys = new Set(all.map(x => x && x.key).filter(Boolean));
+            } catch (e) { seenKeys = new Set(); }
         }
-        async function loadConPos(setIdx) {
+        async function markSeen(q, setIdx, qIdx) {
+            const key = hashString(q.question);
+            if (seenKeys.has(key)) return;
+            seenKeys.add(key);
+            try { await idbSet('seen', key, { key, setIndex: setIdx, qIndex: qIdx, firstSeen: Date.now() }); } catch (e) {}
+            updateUnseenBadge();
+        }
+        async function updateUnseenBadge() {
             try {
-                const saved = await idbGet('consolidated', 'pos_' + setIdx);
-                if (saved && typeof saved.qIdx === 'number') return saved.qIdx;
-            } catch(e) {}
-            return null;
-        }
-        async function clearConPos(setIdx) {
-            try { await idbDelete('consolidated', 'pos_' + setIdx); } catch(e) {}
+                let total = 0, seen = 0;
+                for (let s = 0; s < allSetsData.length; s++) {
+                    const keys = getSetKeys(s);
+                    total += keys.length;
+                    for (const k of keys) if (seenKeys.has(k)) seen++;
+                }
+                const unseen = total - seen;
+                const badge = document.getElementById('unseen-tab-count');
+                if (!badge) return;
+                if (unseen > 0) { badge.textContent = unseen; badge.classList.remove('hidden'); }
+                else badge.classList.add('hidden');
+            } catch (e) {}
         }
 
-        /* ===== WRONG QUESTION RECORDING ===== */
+        /* =====================================================================
+           CONSOLIDATED POSITION MEMORY
+        ===================================================================== */
+        function conPosKey(mode, setIdx, unseenOnly) {
+            if (mode === 'all') return 'pos_all' + (unseenOnly ? '_u' : '');
+            return 'pos_set_' + setIdx + (unseenOnly ? '_u' : '');
+        }
+        async function saveConPos() {
+            try {
+                const item = conItems[conQIdx];
+                if (!item) return;
+                await idbSet('consolidated', conPosKey(conMode, conSetIdx, conUnseenOnly), {
+                    mode: conMode, setIdx: item.setIdx, qIdx: item.qIdx, timestamp: Date.now()
+                });
+            } catch (e) {}
+        }
+        async function loadConPos(mode, setIdx, unseenOnly = false) {
+            try {
+                const saved = await idbGet('consolidated', conPosKey(mode, setIdx, unseenOnly));
+                if (saved && typeof saved.qIdx === 'number') return saved;
+            } catch (e) {}
+            return null;
+        }
+
+        /* =====================================================================
+           WRONG QUESTION RECORDING
+        ===================================================================== */
         async function recordWrongQuestion(q, setIdx, qIdx) {
             try {
                 const key = hashString(q.question);
@@ -726,10 +1027,12 @@
                 if (!badge) return;
                 if (items.length > 0) { badge.textContent = items.length; badge.classList.remove('hidden'); }
                 else badge.classList.add('hidden');
-            } catch(e) {}
+            } catch (e) {}
         }
 
-        /* ===== SESSION STATE ===== */
+        /* =====================================================================
+           SESSION STATE
+        ===================================================================== */
         let currentSetIndex = 0;
         let currentQIndex = 0;
         let currentMode = 'practice';
@@ -744,14 +1047,16 @@
         const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         function playBeep(freq, type, duration) {
             if (!soundEnabled) return;
-            if (audioCtx.state === 'suspended') audioCtx.resume();
-            const osc = audioCtx.createOscillator();
-            const gain = audioCtx.createGain();
-            osc.type = type; osc.frequency.value = freq;
-            gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
-            gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
-            osc.connect(gain); gain.connect(audioCtx.destination);
-            osc.start(); osc.stop(audioCtx.currentTime + duration);
+            try {
+                if (audioCtx.state === 'suspended') audioCtx.resume();
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = type; osc.frequency.value = freq;
+                gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
+                osc.connect(gain); gain.connect(audioCtx.destination);
+                osc.start(); osc.stop(audioCtx.currentTime + duration);
+            } catch (e) {}
         }
         function soundCorrect() { playBeep(600, 'triangle', 0.12); setTimeout(() => playBeep(800, 'triangle', 0.18), 80); }
         function soundWrong() { playBeep(250, 'sawtooth', 0.18); setTimeout(() => playBeep(200, 'sawtooth', 0.25), 120); }
@@ -761,15 +1066,22 @@
             showToast(soundEnabled ? 'Sound ON' : 'Sound OFF');
         }
 
-        /* ===== INIT ===== */
+        /* =====================================================================
+           INIT
+        ===================================================================== */
         async function initApp() {
+            updateClocks();
+            await loadSeenKeys();
             await loadAuthenticData();
             await renderSetCards();
             updateReviewBadge();
+            updateUnseenBadge();
             executeShowView('sets');
         }
 
-        /* ===== VIEW NAVIGATION ===== */
+        /* =====================================================================
+           VIEW NAVIGATION
+        ===================================================================== */
         function showView(viewId) {
             if (isTestActive && viewId !== 'quiz') {
                 showDialog('Leave Session?', 'Your test is active. Exiting will pause the test.', 'confirm', () => {
@@ -781,7 +1093,7 @@
             executeShowView(viewId);
         }
         function executeShowView(viewId) {
-            ['view-sets', 'view-analytics', 'view-rules', 'view-quiz', 'view-review'].forEach(id => {
+            ['view-sets', 'view-analytics', 'view-rules', 'view-quiz', 'view-review', 'view-unseen'].forEach(id => {
                 const el = document.getElementById(id);
                 if (!el) return;
                 el.classList.add('hidden');
@@ -801,11 +1113,12 @@
                 document.getElementById('quiz-footer').classList.add('hidden');
                 document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
                 const activeTab = document.querySelector(`[data-tab="${viewId}"]`);
-                if(activeTab) activeTab.classList.add('active');
+                if (activeTab) activeTab.classList.add('active');
             }
             if (viewId === 'analytics') renderAnalytics();
             if (viewId === 'review') renderReview();
-            window.scrollTo(0,0);
+            if (viewId === 'unseen') renderUnseen();
+            window.scrollTo(0, 0);
         }
         function requestHome() {
             if (isTestActive) {
@@ -816,44 +1129,83 @@
             } else executeShowView('sets');
         }
 
-        /* ===== SET CARDS (with memory hint) ===== */
+        /* =====================================================================
+           SET CARDS
+        ===================================================================== */
         async function renderSetCards() {
             const grid = document.getElementById('set-cards-grid');
             grid.innerHTML = '';
             const history = await idbGetAllHistory();
             const savedState = await idbGet('progress', 'current');
+            const totalQ = totalQuestionCount();
+
+            /* ---- Global actions card ---- */
+            document.getElementById('global-actions').innerHTML = `
+                <div class="global-action-card">
+                    <div>
+                        <div class="text-lg md:text-xl font-bold text-white poppins flex items-center gap-2">
+                            <i class="fa-solid fa-book-reader text-purple-400"></i> All Questions Mega Review
+                        </div>
+                        <div class="text-xs md:text-sm text-gray-400 mt-1">
+                            Every question from every set merged into one flow &mdash;
+                            <b class="text-purple-300">${totalQ}</b> questions • ${allSetsData.length} sets
+                        </div>
+                    </div>
+                    <div class="flex gap-2 flex-wrap">
+                        <button onclick="openConsolidated(0,'all',false)" class="btn-action btn-studyall" style="flex:0 0 auto;padding:0.8rem 1.1rem;">
+                            <i class="fa-solid fa-layer-group"></i> Review All ${totalQ}
+                        </button>
+                        <button onclick="openConsolidated(0,'all',true)" class="btn-action btn-unseen" style="flex:0 0 auto;padding:0.8rem 1.1rem;">
+                            <i class="fa-solid fa-eye-slash"></i> Only Unattempted
+                        </button>
+                    </div>
+                </div>`;
 
             for (let idx = 0; idx < allSetsData.length; idx++) {
                 const set = allSetsData[idx];
                 const setHistory = history.filter(h => h.set === idx);
                 let bestScore = -999;
-                setHistory.forEach(h => { if(h.score > bestScore) bestScore = h.score; });
+                setHistory.forEach(h => { if (h.score > bestScore) bestScore = h.score; });
 
                 const isResumable = savedState && savedState.isTestActive && savedState.setIndex === idx;
                 const isCompleted = setHistory.length > 0;
 
-                // Check for consolidated memory
-                const conPos = await loadConPos(idx);
-                const hasMemory = conPos !== null && conPos > 0;
+                const conPos = await loadConPos('set', idx, false);
+                const hasMemory = conPos !== null;
+
+                const keys = getSetKeys(idx);
+                let seenCount = 0;
+                for (const k of keys) if (seenKeys.has(k)) seenCount++;
+                const unseenCount = set.length - seenCount;
+                const pct = set.length ? Math.round((seenCount / set.length) * 100) : 0;
 
                 let badge = '';
-                if(isResumable) badge = '<div class="badge resume">Resume Session</div>';
-                else if(isCompleted) badge = '<div class="badge completed">Completed</div>';
+                if (isResumable) badge = '<div class="badge resume">Resume Session</div>';
+                else if (isCompleted) badge = '<div class="badge completed">Completed</div>';
 
                 const lang = setMetadata[idx]?.language || 'English';
                 const isHindi = lang === 'Hindi';
                 const titleColor = isHindi ? 'text-orange-400' : 'text-blue-400';
                 const titleText = isHindi ? `Set ${idx + 1} (Hindi)` : `Set ${idx + 1}`;
 
-                const memoryHint = hasMemory ? `<div class="memory-hint"><i class="fa-solid fa-bookmark"></i> Study-All memory: Resume from Q${conPos + 1}</div>` : '';
+                const memoryHint = hasMemory
+                    ? `<div class="memory-hint"><i class="fa-solid fa-bookmark"></i> Study-All memory: Q${(conPos.qIdx || 0) + 1}</div>`
+                    : '';
 
                 grid.innerHTML += `
                     <div class="set-card">
                         <div>
                             ${badge}
                             <div class="text-3xl font-bold ${titleColor} poppins mb-1">${titleText}</div>
-                            <div class="text-xs text-gray-400 mb-3">${set.length} Questions</div>
-                            ${isCompleted ? `<div class="text-sm font-semibold mb-2">Highest: <span class="text-amber-400">${parseFloat(bestScore).toFixed(2)} / 300</span></div>` : '<div class="h-6"></div>'}
+                            <div class="text-xs text-gray-400 mb-2">${set.length} Questions</div>
+                            ${isCompleted ? `<div class="text-sm font-semibold mb-2">Highest: <span class="text-amber-400">${parseFloat(bestScore).toFixed(2)} / 300</span></div>` : '<div class="h-5"></div>'}
+                            <div class="mb-1 flex justify-between text-[0.7rem] text-gray-400">
+                                <span><i class="fa-solid fa-eye text-cyan-400"></i> Viewed ${seenCount}</span>
+                                <span class="${unseenCount > 0 ? 'text-cyan-300 font-bold' : 'text-emerald-400'}">
+                                    ${unseenCount > 0 ? `<i class="fa-solid fa-eye-slash"></i> Unseen ${unseenCount}` : '<i class="fa-solid fa-circle-check"></i> All viewed'}
+                                </span>
+                            </div>
+                            <div class="progress-track mb-1"><div class="progress-fill" style="width:${pct}%"></div></div>
                             ${memoryHint}
                         </div>
                         <div class="mt-3">
@@ -861,14 +1213,19 @@
                                 <button onclick="event.stopPropagation(); startSession(${idx}, 'practice')" class="btn-action btn-practice"><i class="fa-solid fa-stopwatch"></i> Practice</button>
                                 <button onclick="event.stopPropagation(); startSession(${idx}, 'study')" class="btn-action btn-study"><i class="fa-solid fa-book-open"></i> Study</button>
                             </div>
-                            <button onclick="event.stopPropagation(); openConsolidated(${idx})" class="btn-action btn-studyall w-full"><i class="fa-solid fa-book-reader"></i> Study All / Review Set</button>
+                            <div class="flex gap-2">
+                                <button onclick="event.stopPropagation(); openConsolidated(${idx})" class="btn-action btn-studyall"><i class="fa-solid fa-book-reader"></i> Study All</button>
+                                <button onclick="event.stopPropagation(); openConsolidated(${idx},'set',true)" class="btn-action btn-unseen" title="Only questions never opened"><i class="fa-solid fa-eye-slash"></i> Unseen</button>
+                            </div>
                         </div>
                     </div>
                 `;
             }
         }
 
-        /* ===== SESSION ===== */
+        /* =====================================================================
+           SESSION
+        ===================================================================== */
         async function startSession(setIdx, mode) {
             try {
                 const savedState = await idbGet('progress', 'current');
@@ -876,7 +1233,7 @@
                     resumeSession(savedState);
                     return;
                 }
-            } catch(e) {}
+            } catch (e) {}
             initNewSession(setIdx, mode);
         }
         function initNewSession(setIdx, mode) {
@@ -942,11 +1299,14 @@
             await renderSetCards();
         }
 
-        /* ===== QUESTION RENDERING ===== */
+        /* =====================================================================
+           QUESTION RENDERING
+        ===================================================================== */
         function renderQuestion() {
             const set = allSetsData[currentSetIndex];
             const q = set[currentQIndex];
             const isAnswered = sessionState[currentQIndex] !== null;
+
             document.getElementById('progress-counter').innerText = `Q: ${currentQIndex + 1}/${set.length}`;
             document.getElementById('question-text').innerHTML = `<span class="text-blue-400 font-bold poppins text-lg">Q${currentQIndex + 1}.</span> ${sanitizeHtml(q.question)}`;
             document.getElementById('mark-review-checkbox').checked = bookmarked.has(currentQIndex);
@@ -979,14 +1339,18 @@
                 studyExpContainer.classList.remove('hidden');
                 studyExpContainer.innerHTML = `<div class="study-explanation-box">
                     <div class="font-bold text-purple-400 mb-2 flex items-center gap-2"><i class="fa-solid fa-lightbulb text-yellow-400"></i> Expert Advice:</div>
-                    <div class="text-sm text-gray-300 leading-relaxed" style="word-break: break-word;">${sanitizeHtml(q.explanation || 'No explanation provided.')}</div>
+                    <div class="text-sm md:text-base text-gray-300 leading-relaxed" style="word-break: break-word;">${sanitizeHtml(q.explanation || 'No explanation provided.')}</div>
                 </div>`;
             } else {
                 studyExpContainer.classList.add('hidden');
                 studyExpContainer.innerHTML = '';
             }
+
+            /* Mark as viewed in practice mode */
+            if (currentMode === 'practice') markSeen(q, currentSetIndex, currentQIndex);
+
             renderPalette();
-            window.scrollTo(0,0);
+            window.scrollTo(0, 0);
         }
         function selectOption(idx) {
             if (currentMode === 'study' || sessionState[currentQIndex] !== null) return;
@@ -1025,7 +1389,7 @@
         function updateFooterStats() {
             document.getElementById('live-correct').innerText = stats.correct;
             document.getElementById('live-wrong').innerText = stats.wrong;
-            if(currentMode === 'practice') {
+            if (currentMode === 'practice') {
                 const finalScore = (stats.correct * 2.5) - (stats.wrong * 0.83);
                 document.getElementById('live-score-display').innerText = finalScore.toFixed(2);
             } else document.getElementById('live-score-display').innerText = '---';
@@ -1042,7 +1406,9 @@
             document.getElementById('palette-panel').classList.remove('open');
         }
 
-        /* ===== EXPLANATION MODAL ===== */
+        /* =====================================================================
+           EXPLANATION MODAL
+        ===================================================================== */
         function showCurrentExplanation() {
             const q = allSetsData[currentSetIndex][currentQIndex];
             showExplanationModal(true, q, q.correctOption, true);
@@ -1064,12 +1430,19 @@
             modal.classList.remove('hidden');
         }
         function closeExplanation(e) {
-            if(e && e.target !== document.getElementById('explanation-modal')) return;
+            if (e && e.target !== document.getElementById('explanation-modal')) return;
             document.getElementById('explanation-modal').classList.add('hidden');
         }
-        function closeExplanationAndNext() { closeExplanation(); nextQuestion(); }
+        function closeExplanationAndNext() {
+            document.getElementById('explanation-modal').classList.add('hidden');
+            const conView = document.getElementById('view-consolidated');
+            if (conView && conView.classList.contains('flex')) conNext();
+            else nextQuestion();
+        }
 
-        /* ===== TIMER ===== */
+        /* =====================================================================
+           TIMER
+        ===================================================================== */
         function startTimer() {
             clearInterval(timerInterval);
             updateTimerUI();
@@ -1090,15 +1463,18 @@
             document.getElementById('timer-display').innerHTML = `<i class="fa-regular fa-clock"></i> <span>${h}:${m}:${s}</span>`;
         }
 
-        /* ===== PALETTE (Quiz) ===== */
+        /* =====================================================================
+           PALETTE (Quiz)
+        ===================================================================== */
         function togglePalette() { document.getElementById('palette-panel').classList.toggle('open'); }
         function renderPalette() {
             const grid = document.getElementById('palette-grid');
             grid.innerHTML = '';
             const setLength = allSetsData[currentSetIndex].length;
+            const dense = setLength > 200;
             for (let i = 0; i < setLength; i++) {
                 const btn = document.createElement('button');
-                btn.className = 'palette-btn';
+                btn.className = 'palette-btn' + (dense ? ' dense' : '');
                 btn.textContent = i + 1;
                 if (i === currentQIndex) btn.classList.add('current');
                 if (bookmarked.has(i)) btn.classList.add('bookmarked');
@@ -1110,7 +1486,9 @@
             }
         }
 
-        /* ===== SUBMIT ===== */
+        /* =====================================================================
+           SUBMIT
+        ===================================================================== */
         function requestSubmit() {
             const unans = sessionState.filter(s => s === null).length;
             let msg = currentMode === 'practice' ? `You have ${unans} unanswered questions. Submit?` : `Exit Study Mode?`;
@@ -1135,53 +1513,113 @@
             await idbSet('progress', 'current', null);
             await renderSetCards();
             updateReviewBadge();
+            updateUnseenBadge();
         }
 
-        /* ===== CONSOLIDATED STUDY ALL VIEW ===== */
+        /* =====================================================================
+           CONSOLIDATED VIEW  (single set OR all sets merged)
+        ===================================================================== */
+        let conMode = 'set';
         let conSetIdx = 0;
         let conQIdx = 0;
+        let conItems = [];
+        let conUnseenOnly = false;
+        let conPaletteBuilt = false;
 
-        async function openConsolidated(setIdx) {
-            conSetIdx = setIdx;
-            // Restore memory position
-            const savedQ = await loadConPos(setIdx);
-            if (savedQ !== null && savedQ > 0) {
-                conQIdx = savedQ;
-                showToast(`Resumed from Q${conQIdx + 1}`);
-            } else {
-                conQIdx = 0;
+        function buildConItems() {
+            conItems = [];
+            const startSet = (conMode === 'all') ? 0 : conSetIdx;
+            const endSet = (conMode === 'all') ? allSetsData.length - 1 : conSetIdx;
+            for (let s = startSet; s <= endSet; s++) {
+                const set = allSetsData[s];
+                const keys = getSetKeys(s);
+                const lang = setMetadata[s]?.language || 'English';
+                for (let i = 0; i < set.length; i++) {
+                    if (conUnseenOnly && seenKeys.has(keys[i])) continue;
+                    conItems.push({ q: set[i], setIdx: s, qIdx: i, lang });
+                }
             }
+        }
+
+        async function openConsolidated(setIdx, mode = 'set', unseenOnly = false) {
+            if (allSetsData.length === 0) { showToast('No questions loaded'); return; }
+            conMode = mode;
+            conSetIdx = setIdx;
+            conUnseenOnly = !!unseenOnly;
+            buildConItems();
+
+            if (conItems.length === 0) {
+                showToast(conUnseenOnly ? '🎉 Nothing left unattempted here!' : 'No questions available');
+                return;
+            }
+
+            const saved = await loadConPos(conMode, conSetIdx, conUnseenOnly);
+            let startIdx = 0;
+            if (saved) {
+                const found = conItems.findIndex(it => it.setIdx === saved.setIdx && it.qIdx === saved.qIdx);
+                if (found > 0) { startIdx = found; showToast(`Resumed from Q${found + 1}`); }
+            }
+            conQIdx = startIdx;
+
             const view = document.getElementById('view-consolidated');
             view.classList.remove('hidden');
             view.classList.add('flex');
             document.getElementById('main-tabs').classList.add('hidden');
             document.getElementById('quiz-footer').classList.add('hidden');
-            await renderConsolidated();
+
+            document.getElementById('con-unseen-toggle').classList.toggle('on', conUnseenOnly);
+            conPaletteBuilt = false;
+            document.getElementById('con-palette-panel').classList.remove('open');
+            renderConsolidated();
         }
+
         function closeConsolidated() {
             document.getElementById('view-consolidated').classList.add('hidden');
             document.getElementById('view-consolidated').classList.remove('flex');
             document.getElementById('con-palette-panel').classList.remove('open');
             executeShowView('sets');
         }
+
+        async function toggleConUnseen() {
+            const savedItem = conItems[conQIdx];
+            conUnseenOnly = !conUnseenOnly;
+            buildConItems();
+            if (conItems.length === 0) {
+                showToast(conUnseenOnly ? '🎉 Nothing left unattempted!' : 'No questions');
+                conUnseenOnly = !conUnseenOnly;
+                buildConItems();
+                return;
+            }
+            let idx = 0;
+            if (savedItem) {
+                const found = conItems.findIndex(it => it.setIdx === savedItem.setIdx && it.qIdx === savedItem.qIdx);
+                idx = found >= 0 ? found : 0;
+            }
+            conQIdx = idx;
+            document.getElementById('con-unseen-toggle').classList.toggle('on', conUnseenOnly);
+            conPaletteBuilt = false;
+            renderConsolidated();
+            showToast(conUnseenOnly ? `Unseen only: ${conItems.length} questions` : `Showing all: ${conItems.length} questions`);
+        }
+
         async function renderConsolidated() {
-            if (allSetsData.length === 0) return;
-            if (conSetIdx < 0) conSetIdx = 0;
-            if (conSetIdx >= allSetsData.length) conSetIdx = allSetsData.length - 1;
-            const set = allSetsData[conSetIdx];
+            if (!conItems.length) return;
             if (conQIdx < 0) conQIdx = 0;
-            if (conQIdx >= set.length) conQIdx = set.length - 1;
-            const q = set[conQIdx];
+            if (conQIdx >= conItems.length) conQIdx = conItems.length - 1;
 
-            const lang = setMetadata[conSetIdx]?.language || 'English';
-            const isHindi = lang === 'Hindi';
+            const item = conItems[conQIdx];
+            const q = item.q;
+            const isHindi = item.lang === 'Hindi';
 
-            document.getElementById('con-set-label').textContent = `Set ${conSetIdx + 1}`;
+            document.getElementById('con-set-label').textContent =
+                conMode === 'all' ? 'All Questions' : `Set ${conSetIdx + 1}`;
+            document.getElementById('con-origin').textContent = `Set ${item.setIdx + 1} • Q${item.qIdx + 1}`;
+
             const langBadge = document.getElementById('con-lang-badge');
-            langBadge.textContent = lang;
-            langBadge.className = `text-[10px] px-2 py-0.5 rounded-full border font-bold ${isHindi ? 'bg-orange-900/50 text-orange-300 border-orange-500/40' : 'bg-blue-900/50 text-blue-300 border-blue-500/40'}`;
-            document.getElementById('con-progress').textContent = `Q: ${conQIdx + 1}/${set.length}`;
+            langBadge.textContent = item.lang;
+            langBadge.className = `text-[0.65rem] px-2 py-0.5 rounded-full border font-bold ${isHindi ? 'bg-orange-900/50 text-orange-300 border-orange-500/40' : 'bg-blue-900/50 text-blue-300 border-blue-500/40'}`;
 
+            document.getElementById('con-progress').textContent = `Q: ${conQIdx + 1}/${conItems.length}`;
             document.getElementById('con-question-text').innerHTML = `<span class="text-blue-400 font-bold">Q${conQIdx + 1}.</span> ${sanitizeHtml(q.question)}`;
 
             const optContainer = document.getElementById('con-options');
@@ -1191,7 +1629,7 @@
                 const label = String.fromCharCode(65 + idx);
                 const isCorrect = idx === q.correctOption;
                 div.className = `con-opt ${isCorrect ? 'correct' : ''}`;
-                div.innerHTML = `<span class="font-bold shrink-0 ${isCorrect ? 'text-emerald-300' : 'text-blue-400'}">${label}.</span><span class="flex-1">${sanitizeHtml(opt)}</span>${isCorrect ? '<i class="fa-solid fa-circle-check shrink-0 mt-0.5"></i>' : ''}`;
+                div.innerHTML = `<span class="font-bold shrink-0 ${isCorrect ? 'text-emerald-300' : 'text-blue-400'}">${label}.</span><span class="flex-1">${sanitizeHtml(opt)}</span>${isCorrect ? '<i class="fa-solid fa-circle-check shrink-0 mt-1"></i>' : ''}`;
                 optContainer.appendChild(div);
             });
 
@@ -1199,83 +1637,119 @@
             document.querySelector('.con-question-card').scrollTop = 0;
             document.querySelector('.con-exp-card').scrollTop = 0;
 
-            if (document.getElementById('con-palette-panel').classList.contains('open')) renderConPalette();
+            const jumpInput = document.getElementById('con-jump-input');
+            jumpInput.placeholder = `1-${conItems.length}`;
+            jumpInput.max = conItems.length;
 
-            document.getElementById('con-jump-input').placeholder = `1-${set.length}`;
-
-            // Save memory position
+            updateConPaletteCurrent();
             await saveConPos();
         }
+
         function conPrev() {
             if (conQIdx > 0) { conQIdx--; renderConsolidated(); }
-            else showToast('Start of Set');
+            else showToast('Start of list');
         }
         function conNext() {
-            const set = allSetsData[conSetIdx];
-            if (conQIdx < set.length - 1) { conQIdx++; renderConsolidated(); }
-            else showToast('End of Set');
+            if (conQIdx < conItems.length - 1) { conQIdx++; renderConsolidated(); }
+            else showToast('End of list');
         }
         function jumpConsolidated(val) {
-            const num = parseInt(val);
-            const set = allSetsData[conSetIdx];
-            if (!isNaN(num) && num >= 1 && num <= set.length) {
+            const num = parseInt(val, 10);
+            if (!isNaN(num) && num >= 1 && num <= conItems.length) {
                 conQIdx = num - 1;
                 renderConsolidated();
                 document.getElementById('con-jump-input').value = '';
-            } else showToast(`Enter 1 to ${set.length}`);
+            } else showToast(`Enter 1 to ${conItems.length}`);
         }
         function toggleConPalette() {
             const p = document.getElementById('con-palette-panel');
             if (p.classList.contains('open')) p.classList.remove('open');
-            else { p.classList.add('open'); renderConPalette(); }
+            else {
+                p.classList.add('open');
+                renderConPalette(true);
+            }
         }
-        function renderConPalette() {
+        function renderConPalette(force = false) {
             const grid = document.getElementById('con-palette-grid');
+            if (conPaletteBuilt && !force) { updateConPaletteCurrent(); return; }
             grid.innerHTML = '';
-            const set = allSetsData[conSetIdx];
-            for (let i = 0; i < set.length; i++) {
+            const dense = conItems.length > 300;
+            const frag = document.createDocumentFragment();
+            for (let i = 0; i < conItems.length; i++) {
                 const btn = document.createElement('button');
-                btn.className = 'palette-btn';
+                btn.className = 'palette-btn correct' + (dense ? ' dense' : '');
+                btn.dataset.idx = i;
                 btn.textContent = i + 1;
                 if (i === conQIdx) btn.classList.add('current');
-                btn.classList.add('correct');
                 btn.onclick = () => {
                     conQIdx = i;
                     renderConsolidated();
-                    toggleConPalette();
+                    document.getElementById('con-palette-panel').classList.remove('open');
                 };
-                grid.appendChild(btn);
+                frag.appendChild(btn);
             }
+            grid.appendChild(frag);
+            conPaletteBuilt = true;
             setTimeout(() => {
                 const cur = grid.querySelector('.palette-btn.current');
                 if (cur) cur.scrollIntoView({ block: 'center' });
-            }, 50);
+            }, 60);
+        }
+        function updateConPaletteCurrent() {
+            const grid = document.getElementById('con-palette-grid');
+            if (!conPaletteBuilt || !grid.children.length) return;
+            const prev = grid.querySelector('.palette-btn.current');
+            if (prev) prev.classList.remove('current');
+            const cur = grid.querySelector(`.palette-btn[data-idx="${conQIdx}"]`);
+            if (cur) cur.classList.add('current');
         }
 
-        /* ===== KEYBOARD SHORTCUTS (0 = Prev, 9 = Next) ===== */
+        /* =====================================================================
+           KEYBOARD SHORTCUTS
+        ===================================================================== */
         document.addEventListener('keydown', (e) => {
             if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
+            /* ---- Modal open: 7 / 8 / Enter / Space => next question ---- */
+            const modal = document.getElementById('explanation-modal');
+            if (modal && !modal.classList.contains('hidden')) {
+                if (['7', '8', 'Numpad7', 'Numpad8', 'Enter', ' '].includes(e.key)) {
+                    e.preventDefault();
+                    closeExplanationAndNext();
+                } else if (e.key === 'Escape') {
+                    e.preventDefault();
+                    document.getElementById('explanation-modal').classList.add('hidden');
+                }
+                return;
+            }
+
+            /* ---- Consolidated view ---- */
             const conView = document.getElementById('view-consolidated');
             if (conView && conView.classList.contains('flex')) {
                 if (e.key === '0' || e.key === 'Numpad0' || e.key === 'ArrowLeft') { e.preventDefault(); conPrev(); }
                 else if (e.key === '9' || e.key === 'Numpad9' || e.key === 'ArrowRight') { e.preventDefault(); conNext(); }
+                else if (e.key === '7' || e.key === 'Numpad7') { e.preventDefault(); conNext(); }
+                else if (e.key === '8' || e.key === 'Numpad8') { e.preventDefault(); conNext(); }
                 else if (e.key === 'Escape' || e.key === 'Backspace') { e.preventDefault(); closeConsolidated(); }
                 return;
             }
+
+            /* ---- Quiz view ---- */
             const quizView = document.getElementById('view-quiz');
             if (quizView && !quizView.classList.contains('hidden')) {
                 if (e.key === '0' || e.key === 'Numpad0') { e.preventDefault(); prevQuestion(); }
                 else if (e.key === '9' || e.key === 'Numpad9') { e.preventDefault(); nextQuestion(); }
-                else if (currentMode === 'practice' && ['1','2','3','4'].includes(e.key)) {
-                    const idx = parseInt(e.key) - 1;
+                else if (currentMode === 'practice' && ['1', '2', '3', '4'].includes(e.key)) {
+                    const idx = parseInt(e.key, 10) - 1;
                     const btn = document.getElementById(`opt-${idx}`);
                     if (btn && btn.onclick) { e.preventDefault(); btn.click(); }
                 }
             }
         });
 
-        /* ===== ANALYTICS ===== */
+        /* =====================================================================
+           ANALYTICS
+        ===================================================================== */
         async function renderAnalytics() {
             const history = await idbGetAllHistory();
             const tbody = document.getElementById('history-table-body');
@@ -1300,7 +1774,96 @@
             document.getElementById('stat-accuracy').innerText = tAttempted > 0 ? Math.round((tCorrect / tAttempted) * 100) + '%' : '0%';
         }
 
-        /* ===== REVIEW ===== */
+        /* =====================================================================
+           UNATTEMPTED (UNSEEN) VIEW
+        ===================================================================== */
+        async function renderUnseen() {
+            const list = document.getElementById('unseen-list');
+            const summary = document.getElementById('unseen-summary');
+            let totalQ = 0, totalSeen = 0;
+            const rows = [];
+            for (let s = 0; s < allSetsData.length; s++) {
+                const keys = getSetKeys(s);
+                let seen = 0;
+                for (const k of keys) if (seenKeys.has(k)) seen++;
+                totalQ += keys.length; totalSeen += seen;
+                rows.push({ s, len: keys.length, seen, unseen: keys.length - seen });
+            }
+            const totalUnseen = totalQ - totalSeen;
+            const pct = totalQ ? Math.round((totalSeen / totalQ) * 100) : 0;
+
+            summary.innerHTML = `
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-3">
+                    <div class="bg-black/40 p-3 rounded-xl border border-slate-700 text-center">
+                        <div class="text-[0.65rem] text-gray-400 uppercase tracking-widest mb-1">Total Questions</div>
+                        <div class="text-2xl font-bold text-white">${totalQ}</div>
+                    </div>
+                    <div class="bg-black/40 p-3 rounded-xl border border-emerald-900/50 text-center">
+                        <div class="text-[0.65rem] text-emerald-300 uppercase tracking-widest mb-1">Viewed</div>
+                        <div class="text-2xl font-bold text-emerald-400">${totalSeen}</div>
+                    </div>
+                    <div class="bg-black/40 p-3 rounded-xl border border-cyan-900/50 text-center">
+                        <div class="text-[0.65rem] text-cyan-300 uppercase tracking-widest mb-1">Never Opened</div>
+                        <div class="text-2xl font-bold text-cyan-400">${totalUnseen}</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="progress-track"><div class="progress-fill" style="width:${pct}%"></div></div>
+                    <span class="text-xs font-bold text-cyan-300 whitespace-nowrap">${pct}% covered</span>
+                </div>`;
+
+            if (totalUnseen === 0) {
+                list.innerHTML = `<div class="text-center py-12 text-gray-500">
+                    <i class="fa-solid fa-circle-check text-5xl mb-3 text-emerald-500/50"></i>
+                    <p class="font-semibold text-gray-300">Every question has been opened at least once. Outstanding!</p>
+                </div>`;
+            } else {
+                list.innerHTML = rows.filter(r => r.unseen > 0).map(r => {
+                    const lang = setMetadata[r.s]?.language || 'English';
+                    const isHindi = lang === 'Hindi';
+                    const p = r.len ? Math.round((r.seen / r.len) * 100) : 0;
+                    return `
+                    <div class="unseen-row">
+                        <div class="flex-1 min-w-[200px]">
+                            <div class="font-bold text-base md:text-lg ${isHindi ? 'text-orange-400' : 'text-blue-400'}">
+                                Set ${r.s + 1} ${isHindi ? '<span class="text-[0.7rem] text-orange-300">(Hindi)</span>' : ''}
+                            </div>
+                            <div class="text-xs text-gray-400 mt-0.5">${r.seen} viewed • <b class="text-cyan-300">${r.unseen} unattempted</b></div>
+                            <div class="progress-track mt-2"><div class="progress-fill" style="width:${p}%"></div></div>
+                        </div>
+                        <button onclick="openConsolidated(${r.s},'set',true)" class="btn-action btn-unseen" style="flex:0 0 auto;padding:0.65rem 1rem;">
+                            <i class="fa-solid fa-eye-slash"></i> Open ${r.unseen} Unseen
+                        </button>
+                    </div>`;
+                }).join('');
+            }
+            updateUnseenBadge();
+        }
+
+        async function markAllSeen() {
+            showDialog('Mark All As Seen?', 'This will mark every question as viewed and clear the unattempted list.', 'confirm', async () => {
+                const db = await openDB();
+                const tx = db.transaction('seen', 'readwrite');
+                const store = tx.objectStore('seen');
+                const now = Date.now();
+                for (let s = 0; s < allSetsData.length; s++) {
+                    const keys = getSetKeys(s);
+                    for (let i = 0; i < keys.length; i++) {
+                        store.put({ key: keys[i], setIndex: s, qIndex: i, firstSeen: now }, keys[i]);
+                    }
+                }
+                tx.oncomplete = async () => {
+                    await loadSeenKeys();
+                    showToast('All questions marked as viewed');
+                    renderUnseen();
+                    renderSetCards();
+                };
+            });
+        }
+
+        /* =====================================================================
+           REVIEW (wrong questions)
+        ===================================================================== */
         async function renderReview() {
             const container = document.getElementById('review-content');
             const items = await idbGetAllWrong();
@@ -1318,7 +1881,7 @@
             let html = '';
             items.forEach(item => {
                 const lang = setMetadata[item.setIndex]?.language || 'English';
-                const langTag = lang === 'Hindi' ? '<span class="text-[10px] text-orange-400 font-bold ml-1">(Hindi)</span>' : '';
+                const langTag = lang === 'Hindi' ? '<span class="text-[0.65rem] text-orange-400 font-bold ml-1">(Hindi)</span>' : '';
                 const attemptCount = item.count && item.count > 1 ? `<span class="review-badge ml-2">Missed ${item.count}×</span>` : `<span class="review-badge ml-2">Missed once</span>`;
                 const optLines = item.options.map((opt, oi) => {
                     const isCorrect = oi === item.correctOption;
@@ -1329,21 +1892,21 @@
                 }).join('');
                 html += `<div class="review-item">
                     <div class="flex justify-between items-start gap-2 mb-2 flex-wrap">
-                        <div class="text-[11px] text-gray-400 flex items-center flex-wrap">
+                        <div class="text-[0.7rem] text-gray-400 flex items-center flex-wrap">
                             <i class="fa-solid fa-layer-group mr-1 text-red-400"></i> Set ${item.setIndex + 1}${langTag}
                             <span class="mx-1.5">•</span> Q${item.qIndex + 1}
                             ${attemptCount}
                         </div>
-                        <button onclick="removeReviewItem('${item.key}')" class="text-red-400 hover:text-white text-xs shrink-0 px-2 py-1 rounded-md bg-red-900/30 hover:bg-red-600 transition">
+                        <button onclick="removeReviewItem('${item.key}')" class="text-red-400 hover:text-white text-xs shrink-0 px-2.5 py-1.5 rounded-md bg-red-900/30 hover:bg-red-600 transition">
                             <i class="fa-solid fa-check"></i> Reviewed
                         </button>
                     </div>
-                    <div class="text-sm text-gray-100 mb-3 leading-relaxed" style="word-break: break-word;">
+                    <div class="text-sm md:text-base text-gray-100 mb-3 leading-relaxed" style="word-break: break-word;">
                         <span class="text-blue-400 font-bold mr-1">Q.</span>${sanitizeHtml(item.question)}
                     </div>
                     <div class="mb-2">${optLines}</div>
                     ${item.explanation ? `
-                        <details class="text-xs text-gray-300 mt-2">
+                        <details class="text-xs md:text-sm text-gray-300 mt-2">
                             <summary class="cursor-pointer text-purple-300 font-semibold select-none py-1">
                                 <i class="fa-solid fa-lightbulb text-yellow-400"></i> Show Explanation
                             </summary>
@@ -1370,18 +1933,29 @@
             });
         }
 
-        /* ===== BACKUP / RESTORE ===== */
+        /* =====================================================================
+           BACKUP / RESTORE
+        ===================================================================== */
         async function exportData() {
             const history = await idbGetAllHistory();
             const wrongItems = await idbGetAllWrong();
             const state = await idbGet('progress', 'current');
+            const seenItems = await idbGetAll('seen');
             const conPositions = [];
             for (let i = 0; i < allSetsData.length; i++) {
-                const p = await loadConPos(i);
-                if (p !== null) conPositions.push({ setIdx: i, qIdx: p });
+                const p = await loadConPos('set', i, false);
+                if (p) conPositions.push({ setIdx: i, qIdx: p.qIdx });
             }
-            const data = { history, wrongQuestions: wrongItems, state, consolidatedPositions: conPositions, exportDate: new Date().toISOString() };
-            const blob = new Blob([JSON.stringify(data)], {type: 'application/json'});
+            const allPos = await loadConPos('all', 0, false);
+            const allPosUnseen = await loadConPos('all', 0, true);
+            const data = {
+                history, wrongQuestions: wrongItems, state, seen: seenItems,
+                consolidatedPositions: conPositions,
+                allPosition: allPos || null,
+                allPositionUnseen: allPosUnseen || null,
+                exportDate: new Date().toISOString()
+            };
+            const blob = new Blob([JSON.stringify(data)], { type: 'application/json' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
@@ -1397,25 +1971,33 @@
             reader.onload = async (e) => {
                 try {
                     const data = JSON.parse(e.target.result);
-                    if (data.history || data.state || data.wrongQuestions) {
+                    if (data.history || data.state || data.wrongQuestions || data.seen) {
                         await idbClearAll();
                         if (data.state) await idbSet('progress', 'current', data.state);
-                        if (data.history) for(let h of data.history) await idbAddHistory(h);
-                        if (data.wrongQuestions) for(let w of data.wrongQuestions) if (w && w.key) await idbSet('wrongQuestions', w.key, w);
-                        if (data.consolidatedPositions) for(let p of data.consolidatedPositions) await idbSet('consolidated', 'pos_' + p.setIdx, { setIdx: p.setIdx, qIdx: p.qIdx, timestamp: Date.now() });
+                        if (data.history) for (let h of data.history) await idbAddHistory(h);
+                        if (data.wrongQuestions) for (let w of data.wrongQuestions) if (w && w.key) await idbSet('wrongQuestions', w.key, w);
+                        if (data.seen) for (let s of data.seen) if (s && s.key) await idbSet('seen', s.key, s);
+                        if (data.consolidatedPositions) for (let p of data.consolidatedPositions) {
+                            await idbSet('consolidated', conPosKey('set', p.setIdx, false), { mode: 'set', setIdx: p.setIdx, qIdx: p.qIdx, timestamp: Date.now() });
+                        }
+                        if (data.allPosition) await idbSet('consolidated', conPosKey('all', 0, false), data.allPosition);
+                        if (data.allPositionUnseen) await idbSet('consolidated', conPosKey('all', 0, true), data.allPositionUnseen);
                         showDialog('Success', 'Data restored successfully. Reloading view.', 'alert', () => window.location.reload());
                     } else showDialog('Error', 'Invalid Backup File format.', 'alert');
-                } catch(err) { showDialog('Error', 'Failed to parse JSON file.', 'alert'); }
+                } catch (err) { showDialog('Error', 'Failed to parse JSON file.', 'alert'); }
             };
             reader.readAsText(file);
         }
         function clearAllData() {
-            showDialog('Critical Warning', 'This will delete ALL your history, progress, scores and review items.', 'confirm', async () => {
+            showDialog('Critical Warning', 'This will delete ALL your history, progress, scores, viewed-markers and review items.', 'confirm', async () => {
                 await idbClearAll();
                 window.location.reload();
             });
         }
 
+        /* =====================================================================
+           BOOT
+        ===================================================================== */
         window.onload = initApp;
     </script>
 </body>
