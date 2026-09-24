@@ -103,7 +103,6 @@ h1, h2, h3, .poppins { font-family: 'Poppins', sans-serif; }
     padding-bottom: max(env(safe-area-inset-bottom, 0px), 4px);
 }
 
-/* FIX: increased padding so last option not hidden by sticky footer */
 #view-quiz { padding-bottom: 13rem; }
 @media (max-width: 640px) {
     #view-quiz { padding-bottom: 14rem; }
@@ -333,7 +332,6 @@ h1, h2, h3, .poppins { font-family: 'Poppins', sans-serif; }
     box-shadow: 0 0 30px rgba(124,58,237,0.15);
 }
 
-/* Fix for footer being too cramped on mobile */
 .quiz-footer-row {
     display: flex; justify-content: space-between; align-items: center;
     padding: 0.5rem 0.75rem; gap: 0.5rem;
@@ -350,6 +348,137 @@ button:focus-visible, input:focus-visible, label:focus-within {
 @media (max-width: 640px) {
     .clock-chip { font-size: 0.75rem; padding: 0.3rem 0.55rem; }
     .option-btn { font-size: 1rem; padding: 0.95rem 1rem; }
+}
+
+/* =====================================================================
+   Interview Prep Section
+===================================================================== */
+.iv-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(148,163,184,0.2);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    margin-bottom: 0.7rem;
+}
+.iv-card:hover { border-color: rgba(168,85,247,0.5); background: rgba(255,255,255,0.05); }
+.iv-card-header {
+    padding: 0.9rem 1.1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.75rem;
+    background: rgba(15,23,42,0.5);
+    user-select: none;
+}
+.iv-card-header:hover { background: rgba(30,41,59,0.7); }
+.iv-card-title { font-weight: 700; color: #e9d5ff; font-size: 1rem; line-height: 1.45; flex: 1; }
+.iv-card-meta { font-size: 0.72rem; color: #94a3b8; margin-top: 0.35rem; display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; }
+.iv-chevron { transition: transform 0.25s; color: #a78bfa; flex-shrink: 0; font-size: 0.95rem; margin-top: 0.15rem; }
+.iv-card.open .iv-chevron { transform: rotate(180deg); }
+.iv-card-body {
+    padding: 1rem 1.1rem;
+    border-top: 1px solid rgba(148,163,184,0.15);
+    display: none;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: #cbd5e1;
+}
+.iv-card.open .iv-card-body { display: block; animation: ivFade 0.2s ease; }
+@keyframes ivFade { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+.iv-section-title {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #c4b5fd;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin: 0.9rem 0 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid rgba(168,85,247,0.15);
+}
+.iv-section-title:first-child { margin-top: 0; }
+
+.iv-list { padding-left: 1.2rem; margin: 0.3rem 0 0.5rem; }
+.iv-list li { margin-bottom: 0.4rem; list-style-type: disc; color: #cbd5e1; font-size: 0.88rem; }
+.iv-list.ordered { list-style-type: decimal; }
+
+.iv-badge {
+    display: inline-block;
+    font-size: 0.66rem;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+}
+.iv-badge.case { background: rgba(168,85,247,0.2); color: #d8b4fe; border: 1px solid rgba(168,85,247,0.45); }
+.iv-badge.q { background: rgba(59,130,246,0.2); color: #93c5fd; border: 1px solid rgba(59,130,246,0.45); }
+.iv-badge.lang { background: rgba(6,182,212,0.15); color: #67e8f9; border: 1px solid rgba(34,211,238,0.35); }
+.iv-badge.src { background: rgba(245,158,11,0.15); color: #fcd34d; border: 1px solid rgba(245,158,11,0.35); font-family: monospace; text-transform: none; }
+
+.iv-sub-card {
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 0.7rem 0.9rem;
+    margin: 0.5rem 0;
+    border-left: 3px solid rgba(168,85,247,0.6);
+}
+.iv-sub-card.blue { border-left-color: rgba(59,130,246,0.6); }
+.iv-sub-card.green { border-left-color: rgba(34,197,94,0.6); }
+.iv-sub-card.amber { border-left-color: rgba(245,158,11,0.6); }
+.iv-sub-card.rose { border-left-color: rgba(244,63,94,0.6); }
+.iv-label { font-weight: 700; color: #e2e8f0; font-size: 0.82rem; margin-bottom: 0.3rem; display: flex; align-items: center; gap: 0.35rem; }
+.iv-text { color: #cbd5e1; font-size: 0.88rem; line-height: 1.65; }
+
+.iv-q-item {
+    background: rgba(59,130,246,0.08);
+    border: 1px solid rgba(59,130,246,0.2);
+    border-radius: 8px;
+    padding: 0.55rem 0.8rem;
+    margin: 0.4rem 0;
+    font-size: 0.88rem;
+    color: #dbeafe;
+    line-height: 1.55;
+}
+.iv-tag {
+    display: inline-block;
+    background: rgba(34,211,238,0.12);
+    border: 1px solid rgba(34,211,238,0.3);
+    color: #67e8f9;
+    font-size: 0.72rem;
+    padding: 2px 8px;
+    border-radius: 6px;
+    margin: 0.15rem 0.25rem 0.15rem 0;
+    font-weight: 600;
+}
+.iv-pitfall {
+    background: rgba(244,63,94,0.08);
+    border-left: 3px solid rgba(244,63,94,0.55);
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    margin: 0.35rem 0;
+    font-size: 0.85rem;
+    color: #fecdd3;
+}
+.iv-stat-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(168,85,247,0.12);
+    border: 1px solid rgba(168,85,247,0.35);
+    color: #d8b4fe;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
 }
 </style>
 </head>
@@ -397,6 +526,7 @@ button:focus-visible, input:focus-visible, label:focus-within {
         <button class="tab-btn" data-tab="review" onclick="showView('review')"><i class="fa-solid fa-rotate-left"></i> Review <span id="review-tab-count" class="ml-1 text-[0.65rem] font-bold bg-red-600/70 text-white px-1.5 py-0.5 rounded-full hidden">0</span></button>
         <button class="tab-btn" data-tab="analytics" onclick="showView('analytics')"><i class="fa-solid fa-chart-pie"></i> Analytics</button>
         <button class="tab-btn" data-tab="rules" onclick="showView('rules')"><i class="fa-solid fa-list-check"></i> Syllabus</button>
+        <button class="tab-btn" data-tab="interview" onclick="showView('interview')"><i class="fa-solid fa-user-tie"></i> Interview Prep</button>
     </div>
 </div>
 
@@ -526,6 +656,28 @@ button:focus-visible, input:focus-visible, label:focus-within {
                 </tbody>
             </table>
         </div>
+    </div>
+</main>
+
+<main id="view-interview" class="hidden flex-col max-w-6xl mx-auto w-full my-3 px-2">
+    <div class="glass-card bg-slate-900/80 border-t-4 border-purple-500 p-4 md:p-6 rounded-2xl shadow-2xl">
+        <div class="flex flex-wrap justify-between items-center gap-3 mb-4">
+            <h2 class="text-xl md:text-2xl font-bold text-purple-400 poppins">
+                <i class="fa-solid fa-user-tie"></i> Interview &amp; Case Study Prep
+            </h2>
+            <div class="flex gap-2 flex-wrap" id="interview-filter-btns">
+                <button class="tab-btn active" data-ifilter="all" onclick="setInterviewFilter('all')">All</button>
+                <button class="tab-btn" data-ifilter="cases" onclick="setInterviewFilter('cases')">Case Studies</button>
+                <button class="tab-btn" data-ifilter="questions" onclick="setInterviewFilter('questions')">Interview Qs</button>
+            </div>
+        </div>
+        <div class="mb-4">
+            <input type="text" id="interview-search" placeholder="Search scenarios, rules, questions..."
+                   class="w-full bg-black/40 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-gray-200 focus:border-purple-500 focus:outline-none"
+                   oninput="renderInterview()">
+        </div>
+        <div id="interview-stats" class="text-xs text-gray-400 mb-3"></div>
+        <div id="interview-content" class="space-y-3 max-h-[75vh] overflow-y-auto pr-1"></div>
     </div>
 </main>
 
@@ -724,7 +876,20 @@ function updateClocks() {
 setInterval(updateClocks, 1000);
 
 /* =====================================================================
-   DATA LOADING
+   ⭐⭐⭐  CONFIG — EDIT ONLY THIS PART TO ADD / REMOVE FILES  ⭐⭐⭐
+=====================================================================
+
+   ↓↓↓ MCQ QUESTION FILES (Set-based, multiple choice) ↓↓↓
+   Each file must be a JSON array of MCQ objects shaped like:
+   {
+     "Question_Text": "...",
+     "Option_A": "...", "Option_B": "...", "Option_C": "...", "Option_D": "...",
+     "Correct_Answer": "Option A",
+     "Brief_Explanation": "..."
+   }
+   (Or the alternate shapes: {question, options[], correctOption, explanation}
+    or {question, options:{A,B,C,D}, correctOption, explanation}.)
+
 ===================================================================== */
 const ENGLISH_FILES = [
     'exam-questions-v1.json',
@@ -733,7 +898,7 @@ const ENGLISH_FILES = [
     'exam-question-v4.json',
     'exam-questions-v5.json',
     'exam-questions-v6.json',
-    'exam-questions-v7.json'   // ← add this line
+    'exam-questions-v7.json'
 ];
 const MIXED_FILES = ['exam-questions-exam-e-h.json'];
 const HINDI_FILES = [
@@ -742,8 +907,34 @@ const HINDI_FILES = [
     'exam-questions-v3hindi.json',
     'exam-questions-v4hindi.json'
 ];
+
+/* ---------------------------------------------------------------------
+   ↓↓↓ INTERVIEW / CASE-STUDY FILES (Subjective, no MCQ) ↓↓↓
+
+   Add or remove filenames here — that's the ONLY edit needed.
+   Each file must be a JSON object shaped like:
+
+   {
+     "Case_Studies": [ { ... }, { ... } ],        // optional
+     "Interview_Questions": [ { ... }, { ... } ]  // optional
+   }
+
+   Both keys are optional; a file may contain only one type.
+   All files are merged into a single Interview Prep view.
+   Each card shows the source filename so you can trace it.
+--------------------------------------------------------------------- */
+const INTERVIEW_FILES = [
+    'interview.json',
+    // 'interview-2.json',       // ← uncomment / add more as needed
+    // 'interview-cases-batch2.json',
+    // 'interview-questions-v2.json',
+];
+
 const QUESTIONS_PER_SET = 120;
 
+/* =====================================================================
+   DATA LOADING (MCQ)
+===================================================================== */
 let allSetsData = [];
 let setMetadata = [];
 let setKeyCache = [];
@@ -1086,6 +1277,7 @@ function toggleSound() {
 async function initApp() {
     updateClocks();
     await loadSeenKeys();
+    await loadInterviewData();   // ← NEW: load interview/case-study files
     await loadAuthenticData();
     await renderSetCards();
     updateReviewBadge();
@@ -1107,7 +1299,7 @@ function showView(viewId) {
     executeShowView(viewId);
 }
 function executeShowView(viewId) {
-    ['view-sets', 'view-analytics', 'view-rules', 'view-quiz', 'view-review', 'view-unseen'].forEach(id => {
+    ['view-sets', 'view-analytics', 'view-rules', 'view-quiz', 'view-review', 'view-unseen', 'view-interview'].forEach(id => {
         const el = document.getElementById(id);
         if (!el) return;
         el.classList.add('hidden');
@@ -1132,6 +1324,7 @@ function executeShowView(viewId) {
     if (viewId === 'analytics') renderAnalytics();
     if (viewId === 'review') renderReview();
     if (viewId === 'unseen') renderUnseen();
+    if (viewId === 'interview') renderInterview();
     window.scrollTo(0, 0);
 }
 function requestHome() {
@@ -1237,7 +1430,7 @@ async function renderSetCards() {
 }
 
 /* =====================================================================
-   SESSION  —  CRITICAL FIX: saveProgress ALWAYS saves
+   SESSION
 ===================================================================== */
 async function startSession(setIdx, mode) {
     try {
@@ -1298,7 +1491,6 @@ function setupQuizUI(mode) {
     }
 }
 
-/* FIX: always save, no early return */
 async function saveProgress() {
     if (!allSetsData[currentSetIndex]) return;
     const state = {
@@ -1310,11 +1502,9 @@ async function saveProgress() {
 }
 
 async function pauseSession() {
-    // Save current state BEFORE flipping the active flag
     await saveProgress();
     isTestActive = false;
     clearInterval(timerInterval);
-    // Save again with paused state
     const state = {
         isTestActive: false, setIndex: currentSetIndex, mode: currentMode,
         qIndex: currentQIndex, sessionState, bookmarked: Array.from(bookmarked),
@@ -1510,7 +1700,7 @@ function renderPalette() {
 }
 
 /* =====================================================================
-   SUBMIT  —  now preserves history and offers post-practice review
+   SUBMIT
 ===================================================================== */
 function requestSubmit() {
     const unans = sessionState.filter(s => s === null).length;
@@ -1534,7 +1724,6 @@ async function forceSubmit() {
         });
     }
 
-    // Save last session for post-review (even after "completion")
     try {
         await idbSet('lastSession', 'last_' + currentSetIndex + '_' + wasMode, {
             setIdx: currentSetIndex, mode: wasMode, sessionState, stats,
@@ -1556,7 +1745,6 @@ async function forceSubmit() {
         };
         await idbAddHistory(attempt);
 
-        // Save the final state but keep isTestActive false so it can't be resumed as "active"
         const finalState = {
             isTestActive: false, setIndex: currentSetIndex, mode: 'practice',
             qIndex: currentQIndex, sessionState, bookmarked: Array.from(bookmarked),
@@ -1588,7 +1776,7 @@ async function forceSubmit() {
 }
 
 /* =====================================================================
-   CONSOLIDATED VIEW  —  with filters + custom items
+   CONSOLIDATED VIEW
 ===================================================================== */
 let conMode = 'set';
 let conSetIdx = 0;
@@ -1601,7 +1789,7 @@ let conPaletteBuilt = false;
 
 function buildConItems() {
     conItems = [];
-    if (conMode === 'custom') return; // custom items are set externally
+    if (conMode === 'custom') return;
     const startSet = (conMode === 'all') ? 0 : conSetIdx;
     const endSet = (conMode === 'all') ? allSetsData.length - 1 : conSetIdx;
     for (let s = startSet; s <= endSet; s++) {
@@ -1611,7 +1799,6 @@ function buildConItems() {
         for (let i = 0; i < set.length; i++) {
             if (conUnseenOnly && seenKeys.has(keys[i])) continue;
             if (conWrongOnly) {
-                // filter based on current progress state's sessionState for this set
                 if (!(currentSessionWrongSet.has(s + ':' + i))) continue;
             }
             conItems.push({ q: set[i], setIdx: s, qIdx: i, lang });
@@ -1619,7 +1806,6 @@ function buildConItems() {
     }
 }
 
-// Keep a set of wrong questions from the *last active* session to support "wrong filter"
 let currentSessionWrongSet = new Set();
 function refreshCurrentSessionWrong() {
     currentSessionWrongSet = new Set();
@@ -1682,8 +1868,7 @@ function closeConsolidated() {
     document.getElementById('view-consolidated').classList.add('hidden');
     document.getElementById('view-consolidated').classList.remove('flex');
     document.getElementById('con-palette-panel').classList.remove('open');
-    if (conMode === 'custom') executeShowView('sets');
-    else executeShowView('sets');
+    executeShowView('sets');
 }
 
 async function toggleConFilter(kind) {
@@ -1822,12 +2007,11 @@ function updateConPaletteCurrent() {
 }
 
 /* =====================================================================
-   REVIEW TAB  —  one-by-one practice of wrong questions
+   REVIEW TAB
 ===================================================================== */
 async function startReviewWrong() {
     const items = await idbGetAllWrong();
     if (!items.length) { showToast('No wrong questions to review'); return; }
-    // Build a custom consolidated list — pick one entry per unique question
     const list = items.map(it => ({
         q: {
             question: it.question,
@@ -2123,6 +2307,240 @@ function clearAllData() {
         await idbClearAll();
         window.location.reload();
     });
+}
+
+/* =====================================================================
+   INTERVIEW PREP  (Case Studies + Interview Questions)
+   Loads every file listed in INTERVIEW_FILES (defined at top of script)
+   and merges them into one view. Zero configuration beyond that list.
+===================================================================== */
+let interviewData = { Case_Studies: [], Interview_Questions: [] };
+let interviewFilter = 'all';
+
+function escapeHtml(str) {
+    if (str == null) return '';
+    return String(str)
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+async function loadInterviewData() {
+    const merged = { Case_Studies: [], Interview_Questions: [] };
+    if (!Array.isArray(INTERVIEW_FILES) || INTERVIEW_FILES.length === 0) {
+        console.log('ℹ No interview files configured.');
+        interviewData = merged;
+        return;
+    }
+    for (const file of INTERVIEW_FILES) {
+        try {
+            const res = await fetch(file, { cache: 'no-store' });
+            if (!res.ok) { console.warn('Skipped interview file (HTTP ' + res.status + '):', file); continue; }
+            const parsed = await res.json();
+            let addedCases = 0, addedQs = 0;
+            if (Array.isArray(parsed.Case_Studies)) {
+                parsed.Case_Studies.forEach(c => {
+                    if (c && typeof c === 'object') { c._sourceFile = file; merged.Case_Studies.push(c); addedCases++; }
+                });
+            }
+            if (Array.isArray(parsed.Interview_Questions)) {
+                parsed.Interview_Questions.forEach(q => {
+                    if (q && typeof q === 'object') { q._sourceFile = file; merged.Interview_Questions.push(q); addedQs++; }
+                });
+            }
+            console.log(`✔ ${file}: +${addedCases} cases, +${addedQs} questions`);
+        } catch (e) {
+            console.warn('Could not load interview file', file, e && e.message);
+        }
+    }
+    interviewData = merged;
+    console.log(`TOTAL INTERVIEW: ${merged.Case_Studies.length} case studies, ${merged.Interview_Questions.length} interview questions`);
+}
+
+function setInterviewFilter(f) {
+    interviewFilter = f;
+    document.querySelectorAll('#interview-filter-btns .tab-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.ifilter === f);
+    });
+    renderInterview();
+}
+
+function toggleIvCard(headerEl) {
+    const card = headerEl.closest('.iv-card');
+    if (card) card.classList.toggle('open');
+}
+
+function renderInterview() {
+    const container = document.getElementById('interview-content');
+    const statsEl = document.getElementById('interview-stats');
+    if (!container) return;
+
+    if (!interviewData || (!interviewData.Case_Studies.length && !interviewData.Interview_Questions.length)) {
+        statsEl.innerHTML = '';
+        container.innerHTML = `<div class="text-center py-12 text-gray-500">
+            <i class="fa-solid fa-file-circle-question text-4xl mb-3 text-purple-500/40"></i>
+            <p class="font-semibold text-gray-300">No interview data loaded</p>
+            <p class="text-xs mt-2 text-gray-500 leading-relaxed">
+                Add filenames to the <b class="text-purple-300">INTERVIEW_FILES</b> list at the top of the &lt;script&gt; tag.<br>
+                Each file should be a JSON object with keys <b class="text-purple-300">Case_Studies</b> and/or <b class="text-purple-300">Interview_Questions</b>.<br>
+                Place those files in the same folder as this HTML.
+            </p>
+        </div>`;
+        return;
+    }
+
+    const search = (document.getElementById('interview-search')?.value || '').toLowerCase().trim();
+    const showCases = interviewFilter === 'all' || interviewFilter === 'cases';
+    const showQs    = interviewFilter === 'all' || interviewFilter === 'questions';
+
+    let html = '';
+    let caseShown = 0, qShown = 0;
+
+    if (showCases) {
+        interviewData.Case_Studies.forEach(c => {
+            if (search && !JSON.stringify(c).toLowerCase().includes(search)) return;
+            caseShown++;
+            html += renderCaseStudyCard(c);
+        });
+    }
+    if (showQs) {
+        interviewData.Interview_Questions.forEach(q => {
+            if (search && !JSON.stringify(q).toLowerCase().includes(search)) return;
+            qShown++;
+            html += renderInterviewQCard(q);
+        });
+    }
+
+    statsEl.innerHTML = `
+        <span class="iv-stat-pill"><i class="fa-solid fa-briefcase"></i> ${caseShown} Case Studies shown</span>
+        <span class="iv-stat-pill"><i class="fa-solid fa-comments"></i> ${qShown} Interview Qs shown</span>
+        ${search ? `<span class="iv-stat-pill" style="background:rgba(34,211,238,0.12);border-color:rgba(34,211,238,0.35);color:#67e8f9;"><i class="fa-solid fa-search"></i> "${escapeHtml(search)}"</span>` : ''}
+    `;
+
+    if (!html) {
+        container.innerHTML = `<div class="text-center py-12 text-gray-500">
+            <i class="fa-solid fa-search text-4xl mb-3 text-gray-600"></i>
+            <p class="font-semibold text-gray-400">No matches found</p>
+        </div>`;
+        return;
+    }
+    container.innerHTML = html;
+}
+
+function renderCaseStudyCard(c) {
+    const num   = c.Case_Number ?? '';
+    const title = escapeHtml(c.Title || 'Untitled Case Study');
+    const src   = escapeHtml(c._sourceFile || '');
+    const stakeholders = Array.isArray(c.Stakeholders) ? c.Stakeholders : [];
+    const anchors = Array.isArray(c.Legal_Policy_Anchors) ? c.Legal_Policy_Anchors : [];
+    const probing = Array.isArray(c.Questions) ? c.Questions : [];
+    const maf = c.Model_Answer_Framework || {};
+    const rubric = Array.isArray(c.Evaluation_Rubric) ? c.Evaluation_Rubric : [];
+    const pitfalls = Array.isArray(c.Common_Pitfalls) ? c.Common_Pitfalls : [];
+
+    const listOf = (arr, ordered) => arr.length
+        ? `<ul class="iv-list ${ordered ? 'ordered' : ''}">${arr.map(x => `<li>${escapeHtml(x)}</li>`).join('')}</ul>`
+        : `<div class="iv-text" style="opacity:0.55;">—</div>`;
+
+    const mafBlock = (key, label, colour) => maf[key]
+        ? `<div class="iv-sub-card ${colour}">
+             <div class="iv-label"><i class="fa-solid fa-angle-right"></i> ${label}</div>
+             <div class="iv-text">${escapeHtml(maf[key])}</div>
+           </div>`
+        : '';
+
+    return `
+    <div class="iv-card">
+        <div class="iv-card-header" onclick="toggleIvCard(this)">
+            <div style="flex:1;min-width:0;">
+                <div class="iv-card-title">
+                    <span class="iv-badge case" style="margin-right:0.5rem;">Case ${num}</span>
+                    ${title}
+                </div>
+                <div class="iv-card-meta">
+                    ${src ? `<span class="iv-badge src">${src}</span>` : ''}
+                    <span><i class="fa-solid fa-users"></i> ${stakeholders.length} stakeholders</span>
+                    <span><i class="fa-solid fa-scale-balanced"></i> ${anchors.length} legal anchors</span>
+                    <span><i class="fa-solid fa-circle-question"></i> ${probing.length} probing Qs</span>
+                </div>
+            </div>
+            <i class="fa-solid fa-chevron-down iv-chevron"></i>
+        </div>
+        <div class="iv-card-body">
+            <div class="iv-section-title"><i class="fa-solid fa-book"></i> Scenario</div>
+            <div class="iv-text">${escapeHtml(c.Scenario || '')}</div>
+
+            <div class="iv-section-title"><i class="fa-solid fa-users"></i> Stakeholders</div>
+            ${listOf(stakeholders, false)}
+
+            <div class="iv-section-title"><i class="fa-solid fa-scale-balanced"></i> Legal &amp; Policy Anchors</div>
+            ${listOf(anchors, false)}
+
+            <div class="iv-section-title"><i class="fa-solid fa-circle-question"></i> Probing Questions</div>
+            ${probing.map((q, i) => `<div class="iv-q-item"><b>Q${i + 1}.</b> ${escapeHtml(q)}</div>`).join('') || '<div class="iv-text" style="opacity:0.55;">—</div>'}
+
+            <div class="iv-section-title"><i class="fa-solid fa-lightbulb"></i> Model Answer Framework</div>
+            ${mafBlock('Immediate_Action', 'Immediate Action', 'rose')}
+            ${mafBlock('Legal_Compliance', 'Legal Compliance', 'blue')}
+            ${mafBlock('Administrative_Steps', 'Administrative Steps', 'amber')}
+            ${mafBlock('Communication', 'Communication', 'green')}
+            ${mafBlock('Long_Term_Prevention', 'Long-Term Prevention', '')}
+
+            <div class="iv-section-title"><i class="fa-solid fa-clipboard-check"></i> Evaluation Rubric</div>
+            ${listOf(rubric, false)}
+
+            <div class="iv-section-title"><i class="fa-solid fa-triangle-exclamation"></i> Common Pitfalls</div>
+            ${pitfalls.length ? pitfalls.map(p => `<div class="iv-pitfall"><i class="fa-solid fa-xmark"></i> ${escapeHtml(p)}</div>`).join('') : '<div class="iv-text" style="opacity:0.55;">—</div>'}
+        </div>
+    </div>`;
+}
+
+function renderInterviewQCard(q) {
+    const num = q.Q_Number ?? '';
+    const cat = escapeHtml(q.Category || 'General');
+    const question = escapeHtml(q.Question || '');
+    const src = escapeHtml(q._sourceFile || '');
+    const expected = escapeHtml(q.Expected_Approach || '');
+    const model = escapeHtml(q.Model_Answer || '');
+    const keyPhrases = Array.isArray(q.Key_Phrases) ? q.Key_Phrases : [];
+    const followUps = Array.isArray(q.Follow_Ups) ? q.Follow_Ups : [];
+    const pitfalls = Array.isArray(q.Pitfalls) ? q.Pitfalls : [];
+
+    return `
+    <div class="iv-card">
+        <div class="iv-card-header" onclick="toggleIvCard(this)">
+            <div style="flex:1;min-width:0;">
+                <div class="iv-card-title">
+                    <span class="iv-badge q" style="margin-right:0.5rem;">Q ${num}</span>
+                    ${question}
+                </div>
+                <div class="iv-card-meta">
+                    ${src ? `<span class="iv-badge src">${src}</span>` : ''}
+                    <span class="iv-badge lang">${cat}</span>
+                    <span><i class="fa-solid fa-list"></i> ${followUps.length} follow-ups</span>
+                    <span><i class="fa-solid fa-triangle-exclamation"></i> ${pitfalls.length} pitfalls</span>
+                </div>
+            </div>
+            <i class="fa-solid fa-chevron-down iv-chevron"></i>
+        </div>
+        <div class="iv-card-body">
+            <div class="iv-section-title"><i class="fa-solid fa-compass"></i> Expected Approach</div>
+            <div class="iv-text">${expected || '—'}</div>
+
+            <div class="iv-section-title"><i class="fa-solid fa-comment-dots"></i> Model Answer</div>
+            <div class="iv-sub-card blue">
+                <div class="iv-text">${model || '—'}</div>
+            </div>
+
+            <div class="iv-section-title"><i class="fa-solid fa-key"></i> Key Phrases To Use</div>
+            <div>${keyPhrases.length ? keyPhrases.map(k => `<span class="iv-tag">${escapeHtml(k)}</span>`).join('') : '<span class="iv-text" style="opacity:0.55;">—</span>'}</div>
+
+            <div class="iv-section-title"><i class="fa-solid fa-arrows-turn-right"></i> Follow-Up Questions</div>
+            ${followUps.length ? followUps.map((f, i) => `<div class="iv-q-item"><b>${i + 1}.</b> ${escapeHtml(f)}</div>`).join('') : '<div class="iv-text" style="opacity:0.55;">—</div>'}
+
+            <div class="iv-section-title"><i class="fa-solid fa-triangle-exclamation"></i> Common Pitfalls</div>
+            ${pitfalls.length ? pitfalls.map(p => `<div class="iv-pitfall"><i class="fa-solid fa-xmark"></i> ${escapeHtml(p)}</div>`).join('') : '<div class="iv-text" style="opacity:0.55;">—</div>'}
+        </div>
+    </div>`;
 }
 
 /* =====================================================================
