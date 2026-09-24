@@ -185,6 +185,13 @@ const MIXED_FILES   = [ 'mixed-file.json' ];
 const HINDI_FILES   = [ 'hindi-1.json', 'hindi-2.json' ];
 ```
 
+const INTERVIEW_FILES = [
+    'interview.json',
+    'interview-2.json',
+    'interview-cases-round2.json',
+    'interview-hindi.json',
+];
+
 ### Adjust Timer
 In `initNewSession` and `startTimer`, change `timeRemaining = 120 * 60;` (seconds).
 
